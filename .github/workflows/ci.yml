@@ -19,7 +19,9 @@ jobs:
           - ProxSDP
     steps:
       - uses: actions/checkout@v2
-      - run: echo "::set-output name=folderschanged::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | xargs)"
+        with:
+          fetch-depth: 0
+      - run: echo "::set-output name=folderschanged::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | xargs)"
         id: folderschangedid
       - uses: julia-actions/setup-julia@v1
         with:
