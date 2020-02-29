@@ -4,7 +4,7 @@ on:
   - pull_request
 jobs:
   test:
-    name: Julia ${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }}
+    name: ${{ matrix.solver }} tests
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -17,6 +17,7 @@ jobs:
         solver:
           - SCS
           - ProxSDP
+          - CSDP
     steps:
       - uses: actions/checkout@v2
         with:
