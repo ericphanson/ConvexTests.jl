@@ -18,7 +18,7 @@ jobs:
           - SCS
           - ProxSDP
     steps:
-      - run: echo "::set-output name=folderschanged::$(git diff-tree --name-only HEAD HEAD~2 | tr '\n' ',')"
+      - run: echo "::set-output name=folderschanged::$(git diff-tree --name-only ${{ github.event.before }} ${{ github.sha }} | tr '\n' ',')"
         id: folderschangedid
       - uses: actions/checkout@v2
         if: contains(steps.folderschangedid.outputs.folderschanged, matrix.solver)
