@@ -27,4 +27,4 @@ jobs:
           using Pkg;
           Pkg.instantiate();'
       - run: julia --project=${{ matrix.solver }} ${{ matrix.solver }}/test.jl
-      - continue-on-error: true
+        continue-on-error: true
