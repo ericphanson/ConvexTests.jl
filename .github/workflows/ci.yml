@@ -26,4 +26,5 @@ jobs:
       - run: julia --project=${{ matrix.solver }} -e '
           using Pkg;
           Pkg.instantiate();'
-      - run: julia --project={{ matrix.solver }} {{ matrix.solver }}/test.jl
+      - run: julia --project=${{ matrix.solver }} ${{ matrix.solver }}/test.jl
+      - continue-on-error: true
