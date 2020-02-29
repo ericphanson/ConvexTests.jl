@@ -18,10 +18,9 @@ jobs:
           - SCS
           - ProxSDP
     steps:
+      - uses: actions/checkout@v2
       - run: echo "::set-output name=folderschanged::$(git diff-tree --name-only ${{ github.event.before }} ${{ github.sha }} | tr '\n' ',')"
         id: folderschangedid
-      - uses: actions/checkout@v2
-        if: contains(steps.folderschangedid.outputs.folderschanged, matrix.solver)
       - uses: julia-actions/setup-julia@v1
         with:
           version: ${{ matrix.version }}
