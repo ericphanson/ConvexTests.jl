@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: echo "::set-output name=folderschanged::$(git diff-tree --name-only HEAD HEAD~2 | tr '\n' ',')"
   test:
-    if: contains(jobs.folders.outputs.folderschanged, ${{ matrix.solver }})
+    if: contains(jobs.folders.outputs.folderschanged, matrix.solver)
     name: Julia ${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }}
     runs-on: ${{ matrix.os }}
     strategy:
