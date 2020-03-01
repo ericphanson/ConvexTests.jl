@@ -4,671 +4,507 @@
 
 ```@raw html
 <table>
-<tr class = "header headerLastRow">
-<th style = "text-align: right; ">testset</th>
-<th style = "text-align: right; ">pass</th>
-<th style = "text-align: right; ">fail</th>
-<th style = "text-align: right; ">error</th>
-<th style = "text-align: right; ">broken</th>
-<th style = "text-align: right; ">total</th>
-</tr>
-<tr>
-<td style = "text-align: left; ">ProxSDP tests</td>
-<td style = "color: green; text-align: center; ">306</td>
-<td style = "color: red; text-align: center; ">86</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">392</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;constant</td>
-<td style = "color: green; text-align: center; ">17</td>
-<td style = "color: red; text-align: center; ">11</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">28</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;constant_Issue_166</td>
-<td style = "text-align: center; ">0</td>
-<td style = "color: red; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;constant_Issue_228</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">1</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">2</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;constant_fix!_with_vectors</td>
-<td style = "color: green; text-align: center; ">2</td>
-<td style = "color: red; text-align: center; ">7</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;constant_fix!_with_complex_numbers</td>
-<td style = "color: green; text-align: center; ">9</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;constant_Test_double_fix!</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;constant_fix!_and_multiply</td>
-<td style = "color: green; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">2</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;affine</td>
-<td style = "color: green; text-align: center; ">120</td>
-<td style = "color: red; text-align: center; ">19</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">139</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_satisfy_problems</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">4</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_transpose_atom</td>
-<td style = "color: green; text-align: center; ">7</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_diag_atom</td>
-<td style = "color: green; text-align: center; ">6</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">6</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_conv_atom</td>
-<td style = "color: green; text-align: center; ">6</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">6</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_dot_multiply_atom</td>
-<td style = "color: green; text-align: center; ">13</td>
-<td style = "color: red; text-align: center; ">6</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">19</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_hcat_atom</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">4</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_vcat_atom</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">4</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_index_atom</td>
-<td style = "color: green; text-align: center; ">9</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_permuteddims_matrix</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">4</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_Partial_transpose</td>
-<td style = "color: green; text-align: center; ">9</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_add_atom</td>
-<td style = "color: green; text-align: center; ">9</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_dot_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_dot_atom_for_matrix_variables</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_dualvalue</td>
-<td style = "color: green; text-align: center; ">5</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">5</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_Diagonal_atom</td>
-<td style = "color: green; text-align: center; ">6</td>
-<td style = "color: red; text-align: center; ">1</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">7</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_sum_atom</td>
-<td style = "color: green; text-align: center; ">9</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_reshape_atom</td>
-<td style = "color: green; text-align: center; ">7</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_multiply_atom</td>
-<td style = "color: green; text-align: center; ">12</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">12</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_kron_atom</td>
-<td style = "color: green; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">2</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_trace_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;affine_negate_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;socp</td>
-<td style = "color: green; text-align: center; ">57</td>
-<td style = "color: red; text-align: center; ">40</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">97</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_dual_minimal_norm_solutions</td>
-<td style = "color: green; text-align: center; ">12</td>
-<td style = "color: red; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">15</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_sum_squares_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_fix_and_free_addition</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_inv_pos_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "color: red; text-align: center; ">6</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_quad_over_lin_atom</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_quad_form_atom</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">6</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_fix_multiplication</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_huber_atom</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_rational_norm_dual_norm</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">4</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">5</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_rational_norm_atom_sum</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_rational_norm_atom</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_square_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "color: red; text-align: center; ">6</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_dual_frobenius_norm_atom</td>
-<td style = "color: green; text-align: center; ">5</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">5</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_sqrt_atom</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_dual_norm_2_atom</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "color: red; text-align: center; ">11</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">15</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_geo_mean_atom</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">4</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;socp_norm_consistent_with_Base_for_matrix_variables</td>
-<td style = "color: green; text-align: center; ">8</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">8</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;lp</td>
-<td style = "color: green; text-align: center; ">47</td>
-<td style = "color: red; text-align: center; ">15</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">62</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_dual_abs_atom</td>
-<td style = "color: green; text-align: center; ">12</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">12</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_dual_norm_inf_atom</td>
-<td style = "color: green; text-align: center; ">5</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">5</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_hinge_loss_atom</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_maximum_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_min_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_minimum_atom</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">6</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_sumlargest_atom</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">6</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_dotsort_atom</td>
-<td style = "color: green; text-align: center; ">2</td>
-<td style = "color: red; text-align: center; ">5</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">7</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_max_atom</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "color: red; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_neg_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_sumsmallest_atom</td>
-<td style = "color: green; text-align: center; ">2</td>
-<td style = "color: red; text-align: center; ">4</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">6</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_pos_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;lp_dual_norm_1_atom</td>
-<td style = "color: green; text-align: center; ">5</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">5</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;sdp</td>
-<td style = "color: green; text-align: center; ">65</td>
-<td style = "color: red; text-align: center; ">1</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">66</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_socp_abs_atom</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">4</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_matrix_frac_atom_both_arguments_variable</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Complex_Variable_with_complex_equality_constraints</td>
-<td style = "color: green; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">2</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_kron_atom</td>
-<td style = "color: green; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">2</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_nuclear_norm_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_sum_largest_eigs</td>
-<td style = "color: green; text-align: center; ">5</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">5</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_socp_sumsquares_atom</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">4</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_operator_norm_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Issue_198</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Complex_Semidefinite_constraint</td>
-<td style = "color: green; text-align: center; ">2</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">2</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_lambda_min_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Partial_trace</td>
-<td style = "color: green; text-align: center; ">9</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">9</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Real_Variables_with_complex_equality_constraints</td>
-<td style = "color: green; text-align: center; ">1</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">1</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_sdp_constraints</td>
-<td style = "text-align: center; ">0</td>
-<td style = "color: red; text-align: center; ">1</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">1</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_sigma_max_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_dual_lambda_max_atom</td>
-<td style = "color: green; text-align: center; ">6</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">6</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_matrix_frac_atom</td>
-<td style = "color: green; text-align: center; ">3</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">3</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_socp_norm2_atom</td>
-<td style = "color: green; text-align: center; ">4</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">4</td>
-</tr>
-<tr>
-<td style = "text-align: left; ">&nbsp;&nbsp;sdp_sdp_variables</td>
-<td style = "color: green; text-align: center; ">5</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">0</td>
-<td style = "text-align: center; ">5</td>
-</tr>
-</table>
+<tr class="header">
+<td style="text-align:left;border-right: solid 2px;">testset</td>
+<td style="text-align:center;">pass</td>
+<td style="text-align:center;">fail</td>
+<td style="text-align:center;">error</td>
+<td style="text-align:center;">broken</td>
+<td style="text-align:center;">total</td>
+</tr>
+<tr><td style="text-align:left;border-right: solid 2px;">ProxSDP tests</td>
+<td style="text-align:center;color:green;">306</td>
+<td style="text-align:center;color:red;">86</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">392</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;constant</td>
+<td style="text-align:center;color:green;">17</td>
+<td style="text-align:center;color:red;">11</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">28</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_Issue_166</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_Issue_228</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_fix!_with_vectors</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;color:red;">7</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_fix!_with_complex_numbers</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_Test_double_fix!</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_fix!_and_multiply</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;affine</td>
+<td style="text-align:center;color:green;">120</td>
+<td style="text-align:center;color:red;">19</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">139</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_satisfy_problems</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_transpose_atom</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_diag_atom</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_conv_atom</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dot_multiply_atom</td>
+<td style="text-align:center;color:green;">13</td>
+<td style="text-align:center;color:red;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">19</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_hcat_atom</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_vcat_atom</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_index_atom</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_permuteddims_matrix</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_Partial_transpose</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_add_atom</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dot_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dot_atom_for_matrix_variables</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dualvalue</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_Diagonal_atom</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">7</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_sum_atom</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_reshape_atom</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_multiply_atom</td>
+<td style="text-align:center;color:green;">12</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">12</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_kron_atom</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_trace_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_negate_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;socp</td>
+<td style="text-align:center;color:green;">57</td>
+<td style="text-align:center;color:red;">40</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">97</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_dual_minimal_norm_solutions</td>
+<td style="text-align:center;color:green;">12</td>
+<td style="text-align:center;color:red;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">15</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_sum_squares_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_fix_and_free_addition</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_inv_pos_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;color:red;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_quad_over_lin_atom</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_quad_form_atom</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_fix_multiplication</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_huber_atom</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_rational_norm_dual_norm</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_rational_norm_atom_sum</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_rational_norm_atom</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_square_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;color:red;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_dual_frobenius_norm_atom</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_sqrt_atom</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_dual_norm_2_atom</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;color:red;">11</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">15</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_geo_mean_atom</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp_norm_consistent_with_Base_for_matrix_variables</td>
+<td style="text-align:center;color:green;">8</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">8</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;lp</td>
+<td style="text-align:center;color:green;">47</td>
+<td style="text-align:center;color:red;">15</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">62</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_dual_abs_atom</td>
+<td style="text-align:center;color:green;">12</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">12</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_dual_norm_inf_atom</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_hinge_loss_atom</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_maximum_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_min_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_minimum_atom</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_sumlargest_atom</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_dotsort_atom</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;color:red;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">7</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_max_atom</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_neg_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_sumsmallest_atom</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;color:red;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_pos_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_dual_norm_1_atom</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;sdp</td>
+<td style="text-align:center;color:green;">65</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">66</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_socp_abs_atom</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_matrix_frac_atom_both_arguments_variable</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Variable_with_complex_equality_constraints</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_kron_atom</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_nuclear_norm_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_sum_largest_eigs</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_socp_sumsquares_atom</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_operator_norm_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Issue_198</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Semidefinite_constraint</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_lambda_min_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Partial_trace</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Real_Variables_with_complex_equality_constraints</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">1</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_sdp_constraints</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">1</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_sigma_max_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_dual_lambda_max_atom</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_matrix_frac_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_socp_norm2_atom</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_sdp_variables</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr></table>
 ```
 
 ## Errors
@@ -677,17 +513,17 @@
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:16
   Expression: ≈(problem.optval, evaluate(sum(c * β)), atol=atol, rtol=rtol)
-   Evaluated: -25.613530213958807 ≈ -24.88700637524881 (atol=0.001, rtol=0.0)
+   Evaluated: -29.87455897376645 ≈ -29.38329040893552 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:17
   Expression: ≈(problem.optval, 0.0, atol=atol, rtol=rtol)
-   Evaluated: -25.613530213958807 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: -29.87455897376645 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:18
   Expression: ≈(β.value, zeros(5), atol=atol, rtol=rtol)
-   Evaluated: [-0.3722256304305871; -0.3722256304305871; … ; -0.3722256304305871; -0.3722256304305871] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-0.4380696601047913; -0.4380696601047913; … ; -0.4380696601047913; -0.4380696601047913] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_228:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:30
@@ -732,12 +568,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:194
   Expression: ≈(p.optval, s, atol=atol, rtol=rtol)
-   Evaluated: 9.709127251210111 ≈ 10.366081516857228 (atol=0.001, rtol=0.0)
+   Evaluated: 18.414272676445126 ≈ 14.162455296927492 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:195
   Expression: ≈((evaluate(c * x' * d + d' * x * c' + (c * ((((x')')')')' * d)'))[1], s, atol=atol, rtol=rtol)
-   Evaluated: 9.55208492614848 ≈ 10.366081516857228 (atol=0.001, rtol=0.0)
+   Evaluated: 18.78946845302364 ≈ 14.162455296927492 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:332
@@ -1072,12 +908,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
   Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9584666706202514 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9524794592568451 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
   Expression: ≈(evaluate(maximum(max(x, y))), max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9864210934393427 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9825602654879232 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:183
