@@ -15,6 +15,7 @@ makedocs(;
         "Home" => "index.md",
         "SCS" => "SCS.md",
         "ProxSDP" => "ProxSDP.md",
+        "COSMO" => "COSMO.md",
     ],
 )
 
