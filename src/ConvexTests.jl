@@ -1,9 +1,12 @@
 module ConvexTests
+
 export do_tests
+
 using TableTestSets
 using Convex
 using Convex.ProblemDepot: run_tests
 using Test
+
 function do_tests(name, opt; exclude::Vector{Regex} = Regex[])
     results = @testset TableTestSet "$name tests" begin
         run_tests(; exclude = exclude) do p
