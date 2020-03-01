@@ -24,12 +24,12 @@ jobs:
           arch: ${{ matrix.arch }}
       - run: julia --project=${{ matrix.solver }} -e '
           using Pkg;
-          Pkg.add(PackageSpec(url="https://github.com/ericphanson/TableTestSets.jl"))
-          Pkg.develop(PackageSpec(path=pwd()))
+          Pkg.add(PackageSpec(url="https://github.com/ericphanson/TableTestSets.jl"));
+          Pkg.develop(PackageSpec(path=pwd()));
           Pkg.instantiate();'
       - run: julia --project=${{ matrix.solver }} ${{ matrix.solver }}/test.jl
         continue-on-error: true
-      - name: Commit report
+      - name: Commit test results
         run: |
           git config --global user.name 'Eric P. Hanson'
           git config --global user.email '5846501+ericphanson@users.noreply.github.com'
@@ -46,10 +46,10 @@ jobs:
           version: '1.3'
       - run: |
           julia --project=docs -e '
-            using Pkg
-            Pkg.add(PackageSpec(url="https://github.com/ericphanson/TableTestSets.jl"))
-            Pkg.develop(PackageSpec(path=pwd()))
-            Pkg.instantiate()'
+            using Pkg;
+            Pkg.add(PackageSpec(url="https://github.com/ericphanson/TableTestSets.jl"));
+            Pkg.develop(PackageSpec(path=pwd()));
+            Pkg.instantiate();'
       - run: julia --project=docs docs/make.jl
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
