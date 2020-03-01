@@ -674,17 +674,17 @@
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:16
   Expression: ≈(problem.optval, evaluate(sum(c * β)), atol=atol, rtol=rtol)
-   Evaluated: -14.406543706512355 ≈ -14.108655635235598 (atol=0.001, rtol=0.0)
+   Evaluated: -29.27719973537402 ≈ -28.627291213370853 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:17
   Expression: ≈(problem.optval, 0.0, atol=atol, rtol=rtol)
-   Evaluated: -14.406543706512355 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: -29.27719973537402 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:18
   Expression: ≈(β.value, zeros(5), atol=atol, rtol=rtol)
-   Evaluated: [-0.19036727023093236; -0.19036727023093236; … ; -0.19036727023093236; -0.19036727023093236] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-0.4247160890862542; -0.4247160890862542; … ; -0.4247160890862542; -0.4247160890862542] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_228:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:30
@@ -729,12 +729,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:194
   Expression: ≈(p.optval, s, atol=atol, rtol=rtol)
-   Evaluated: 17.824083900486663 ≈ 14.491001835508353 (atol=0.001, rtol=0.0)
+   Evaluated: 16.726833987735304 ≈ 13.8060696071072 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:195
   Expression: ≈((evaluate(c * x' * d + d' * x * c' + (c * ((((x')')')')' * d)'))[1], s, atol=atol, rtol=rtol)
-   Evaluated: 17.902892502286186 ≈ 14.491001835508353 (atol=0.001, rtol=0.0)
+   Evaluated: 16.84945166006205 ≈ 13.8060696071072 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:332
@@ -1069,12 +1069,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
   Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9480617395958664 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9472650739375278 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
   Expression: ≈(evaluate(maximum(max(x, y))), max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9825988636879092 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9817365326794771 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:183
