@@ -1,2 +1,231 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>SCS · ConvexTests.jl</title><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/SCS.html"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="assets/documenter.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-dark.css" data-theme-name="documenter-dark"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit">ConvexTests.jl</span></div><form class="docs-search" action="search.html"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="index.html">Home</a></li><li class="is-active"><a class="tocitem" href="SCS.html">SCS</a><ul class="internal"><li><a class="tocitem" href="#Tests-1"><span>Tests</span></a></li><li><a class="tocitem" href="#Stacktraces-1"><span>Stacktraces</span></a></li></ul></li><li><a class="tocitem" href="ProxSDP.html">ProxSDP</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href="SCS.html">SCS</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href="SCS.html">SCS</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/SCS.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><h1 id="SCS-1"><a class="docs-heading-anchor" href="#SCS-1">SCS</a><a class="docs-heading-anchor-permalink" href="#SCS-1" title="Permalink"></a></h1><h2 id="Tests-1"><a class="docs-heading-anchor" href="#Tests-1">Tests</a><a class="docs-heading-anchor-permalink" href="#Tests-1" title="Permalink"></a></h2><p>&lt;table&gt; &lt;tr class = &quot;header headerLastRow&quot;&gt; &lt;th style = &quot;text-align: right; &quot;&gt;testset&lt;/th&gt; &lt;th style = &quot;text-align: right; &quot;&gt;pass&lt;/th&gt; &lt;th style = &quot;text-align: right; &quot;&gt;fail&lt;/th&gt; &lt;th style = &quot;text-align: right; &quot;&gt;error&lt;/th&gt; &lt;th style = &quot;text-align: right; &quot;&gt;broken&lt;/th&gt; &lt;th style = &quot;text-align: right; &quot;&gt;total&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;SCS tests&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;421&lt;/td&gt; &lt;td style = &quot;color: red; text-align: center; &quot;&gt;1&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;422&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;constant&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;28&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;28&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;affine&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;139&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;139&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;exp&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;27&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;27&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;socp&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;97&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;97&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;lp&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;62&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;62&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;sdp<em>and</em>exp&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;3&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;sdp&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;65&lt;/td&gt; &lt;td style = &quot;color: red; text-align: center; &quot;&gt;1&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;66&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp<em>socp</em>abs<em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;4&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;4&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>matrix<em>frac</em>atom<em>both</em>arguments<em>variable&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;3&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>Complex<em>Variable</em>with<em>complex</em>equality<em>constraints&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;2&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;2&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>kron<em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;2&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;2&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>nuclear<em>norm</em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;3&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp<em>sum</em>largest<em>eigs&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;5&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;5&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>socp<em>sumsquares</em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;4&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;4&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp<em>operator</em>norm<em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;3&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>Issue<em>198&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;3&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>Complex<em>Semidefinite</em>constraint&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;2&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;2&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp<em>lambda</em>min<em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;3&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>Partial<em>trace&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;9&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;9&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>Real<em>Variables</em>with<em>complex</em>equality<em>constraints&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;1&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;1&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>sdp<em>constraints&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;color: red; text-align: center; &quot;&gt;1&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;1&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>sigma<em>max</em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;3&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp<em>dual</em>lambda<em>max</em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;6&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;6&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp<em>matrix</em>frac<em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;3&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp</em>socp<em>norm2</em>atom&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;4&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;4&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style = &quot;text-align: left; &quot;&gt;&amp;nbsp;&amp;nbsp;sdp<em>sdp</em>variables&lt;/td&gt; &lt;td style = &quot;color: green; text-align: center; &quot;&gt;5&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;0&lt;/td&gt; &lt;td style = &quot;text-align: center; &quot;&gt;5&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</p><h2 id="Stacktraces-1"><a class="docs-heading-anchor" href="#Stacktraces-1">Stacktraces</a><a class="docs-heading-anchor-permalink" href="#Stacktraces-1" title="Permalink"></a></h2><p>Error in testset sdp<em>sdp</em>constraints: Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:69   Expression: ≈(p.optval, 1, atol=atol, rtol=rtol)    Evaluated: Inf ≈ 1 (atol=0.001, rtol=0.0)</p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="index.html">« Home</a><a class="docs-footer-nextpage" href="ProxSDP.html">ProxSDP »</a></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Sunday 1 March 2020 06:26">Sunday 1 March 2020</span>. Using Julia version 1.3.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>SCS · ConvexTests.jl</title><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/SCS.html"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="assets/documenter.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-dark.css" data-theme-name="documenter-dark"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit">ConvexTests.jl</span></div><form class="docs-search" action="search.html"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="index.html">Home</a></li><li class="is-active"><a class="tocitem" href="SCS.html">SCS</a><ul class="internal"><li><a class="tocitem" href="#Tests-1"><span>Tests</span></a></li><li><a class="tocitem" href="#Errors-1"><span>Errors</span></a></li></ul></li><li><a class="tocitem" href="ProxSDP.html">ProxSDP</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href="SCS.html">SCS</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href="SCS.html">SCS</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/SCS.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><h1 id="SCS-1"><a class="docs-heading-anchor" href="#SCS-1">SCS</a><a class="docs-heading-anchor-permalink" href="#SCS-1" title="Permalink"></a></h1><h2 id="Tests-1"><a class="docs-heading-anchor" href="#Tests-1">Tests</a><a class="docs-heading-anchor-permalink" href="#Tests-1" title="Permalink"></a></h2><table>
+<tr class = "header headerLastRow">
+<th style = "text-align: right; ">testset</th>
+<th style = "text-align: right; ">pass</th>
+<th style = "text-align: right; ">fail</th>
+<th style = "text-align: right; ">error</th>
+<th style = "text-align: right; ">broken</th>
+<th style = "text-align: right; ">total</th>
+</tr>
+<tr>
+<td style = "text-align: left; ">SCS tests</td>
+<td style = "color: green; text-align: center; ">421</td>
+<td style = "color: red; text-align: center; ">1</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">422</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;constant</td>
+<td style = "color: green; text-align: center; ">28</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">28</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;affine</td>
+<td style = "color: green; text-align: center; ">139</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">139</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;exp</td>
+<td style = "color: green; text-align: center; ">27</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">27</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;socp</td>
+<td style = "color: green; text-align: center; ">97</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">97</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;lp</td>
+<td style = "color: green; text-align: center; ">62</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">62</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;sdp_and_exp</td>
+<td style = "color: green; text-align: center; ">3</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">3</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;sdp</td>
+<td style = "color: green; text-align: center; ">65</td>
+<td style = "color: red; text-align: center; ">1</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">66</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_socp_abs_atom</td>
+<td style = "color: green; text-align: center; ">4</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">4</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_matrix_frac_atom_both_arguments_variable</td>
+<td style = "color: green; text-align: center; ">3</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">3</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Complex_Variable_with_complex_equality_constraints</td>
+<td style = "color: green; text-align: center; ">2</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">2</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_kron_atom</td>
+<td style = "color: green; text-align: center; ">2</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">2</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_nuclear_norm_atom</td>
+<td style = "color: green; text-align: center; ">3</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">3</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_sum_largest_eigs</td>
+<td style = "color: green; text-align: center; ">5</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">5</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_socp_sumsquares_atom</td>
+<td style = "color: green; text-align: center; ">4</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">4</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_operator_norm_atom</td>
+<td style = "color: green; text-align: center; ">3</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">3</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Issue_198</td>
+<td style = "color: green; text-align: center; ">3</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">3</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Complex_Semidefinite_constraint</td>
+<td style = "color: green; text-align: center; ">2</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">2</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_lambda_min_atom</td>
+<td style = "color: green; text-align: center; ">3</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">3</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Partial_trace</td>
+<td style = "color: green; text-align: center; ">9</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">9</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_Real_Variables_with_complex_equality_constraints</td>
+<td style = "color: green; text-align: center; ">1</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">1</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_sdp_constraints</td>
+<td style = "text-align: center; ">0</td>
+<td style = "color: red; text-align: center; ">1</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">1</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_sigma_max_atom</td>
+<td style = "color: green; text-align: center; ">3</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">3</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_dual_lambda_max_atom</td>
+<td style = "color: green; text-align: center; ">6</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">6</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_matrix_frac_atom</td>
+<td style = "color: green; text-align: center; ">3</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">3</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_socp_norm2_atom</td>
+<td style = "color: green; text-align: center; ">4</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">4</td>
+</tr>
+<tr>
+<td style = "text-align: left; ">&nbsp;&nbsp;sdp_sdp_variables</td>
+<td style = "color: green; text-align: center; ">5</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">0</td>
+<td style = "text-align: center; ">5</td>
+</tr>
+</table><h2 id="Errors-1"><a class="docs-heading-anchor" href="#Errors-1">Errors</a><a class="docs-heading-anchor-permalink" href="#Errors-1" title="Permalink"></a></h2>Error in testset sdp_sdp_constraints:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:69
+  Expression: ≈(p.optval, 1, atol=atol, rtol=rtol)
+   Evaluated: Inf ≈ 1 (atol=0.001, rtol=0.0)
+</article><nav class="docs-footer"><a class="docs-footer-prevpage" href="index.html">« Home</a><a class="docs-footer-nextpage" href="ProxSDP.html">ProxSDP »</a></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Sunday 1 March 2020 06:47">Sunday 1 March 2020</span>. Using Julia version 1.3.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
