@@ -233,7 +233,7 @@
 
 ## Errors
 
-```@raw html
+```julia
 Error in testset sdp_sdp_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:69
   Expression: ≈(p.optval, 1, atol=atol, rtol=rtol)
