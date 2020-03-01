@@ -17,6 +17,7 @@ jobs:
         solver:
           - SCS
           - ProxSDP
+          - COSMO
     steps:
       - uses: actions/checkout@v2
       - uses: julia-actions/setup-julia@v1
