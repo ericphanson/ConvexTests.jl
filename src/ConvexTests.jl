@@ -26,7 +26,7 @@ function do_tests(name, opt; exclude::Vector{Regex} = Regex[])
         println(io)
         println(io, "## Errors")
         println(io)
-        println(io, "```@raw html")
+        println(io, "```julia")
         TableTestSets.print_test_errors(io, results)
         println(io, "```")
     end
