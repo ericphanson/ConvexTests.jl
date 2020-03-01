@@ -14,6 +14,7 @@ makedocs(;
     pages=[
         "Home" => "index.md",
         "SCS" => "SCS.md",
+        "ProxSDP" => "ProxSDP.md",
     ],
 )
 
