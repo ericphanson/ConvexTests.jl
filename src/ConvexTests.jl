@@ -20,11 +20,15 @@ function do_tests(name, opt; exclude::Vector{Regex} = Regex[])
         println(io)
         println(io, "## Tests")
         println(io)
+        println(io, "```@raw html")
         html_table(io, results; standalone = false)
+        println(io, "```")
         println(io)
-        println(io, "## Stacktraces")
+        println(io, "## Errors")
         println(io)
+        println(io, "```@raw html")
         TableTestSets.print_test_errors(io, results)
+        println(io, "```")
     end
     nothing
 end
