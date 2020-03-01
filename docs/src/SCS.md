@@ -2,6 +2,7 @@
 
 ## Tests
 
+```@raw html
 <table>
 <tr class = "header headerLastRow">
 <th style = "text-align: right; ">testset</th>
@@ -228,11 +229,14 @@
 <td style = "text-align: center; ">5</td>
 </tr>
 </table>
+```
 
-## Stacktraces
+## Errors
 
+```julia
 Error in testset sdp_sdp_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:69
   Expression: ≈(p.optval, 1, atol=atol, rtol=rtol)
    Evaluated: Inf ≈ 1 (atol=0.001, rtol=0.0)
 
+```
