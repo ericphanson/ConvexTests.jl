@@ -6,7 +6,8 @@
 Uses the Convex.jl [Problem Depot](https://www.juliaopt.org/Convex.jl/stable/problem_depot/) to test various
 optimization solvers. See the
 [docs](https://ericphanson.github.io/ConvexTests.jl/dev) for the test results. Uses <https://github.com/ericphanson/TableTestSets.jl> for
-printing the test results to HTML tables (and GitHub actions to run everything).
+printing the test results to HTML tables (and GitHub actions to run everything). This is meant to help solver developers test against
+a variety of problems and see where things can be improved.
 
 Note that some of the problems are fairly strange (e.g. only one feasible
 point), which can be difficult for solvers to handle.
