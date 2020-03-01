@@ -35,7 +35,8 @@ jobs:
         run: |
           git config --global user.name 'Eric P. Hanson'
           git config --global user.email '5846501+ericphanson@users.noreply.github.com'
-          git commit -am "Automated update for ${{ matrix.solver }}"
+          git add *.md
+          git commit -m "Automated update for ${{ matrix.solver }}"
           git push
   docs:
     needs: test
