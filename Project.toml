@@ -1,0 +1,9 @@
+name = "ConvexTests"
+uuid = "cb7cb77b-aa64-41ee-9be8-cb42f39823db"
+authors = ["Eric <5846501+ericphanson@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+Convex = "f65535da-76fb-5f13-bab9-19810c17039a"
+TableTestSets = "f9bf3ced-5811-49c3-be57-f5a2c1e23f47"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
