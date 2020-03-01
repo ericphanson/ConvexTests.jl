@@ -17,6 +17,7 @@ jobs:
         solver:
           - SCS
           - ProxSDP
+          - CSDP
     steps:
       - uses: actions/checkout@v2
       - uses: julia-actions/setup-julia@v1
@@ -30,14 +31,15 @@ jobs:
             Pkg.develop(PackageSpec(path=pwd()));
             Pkg.instantiate();'
       - run: julia --project=${{ matrix.solver }} ${{ matrix.solver }}/test.jl
-        continue-on-error: true
       - name: Commit test results
         run: |
           git config --global user.name 'Eric P. Hanson'
           git config --global user.email '5846501+ericphanson@users.noreply.github.com'
           git add docs/src/${{ matrix.solver }}.md
-          git commit -m "Automated update for ${{ matrix.solver }}"
-          git push
+          if [ -n "$( git diff --cached --exit-code)" ]; then
+            git commit -m "Automated update for ${{ matrix.solver }}"
+            git push
+          fi
   docs:
     needs: test
     name: Documentation
