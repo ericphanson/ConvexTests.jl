@@ -5,20 +5,43 @@ export do_tests
 using TableTestSets
 using Convex
 using Convex.ProblemDepot: run_tests
-using Test
+using Test, Pkg, InteractiveUtils, Dates
 
-function do_tests(name, opt; exclude::Vector{Regex} = Regex[])
-    results = @testset TableTestSet "$name tests" begin
-        run_tests(; exclude = exclude) do p
-            solve!(p, opt)
+
+function do_tests(name, opt; exclude::Vector{Regex} = Regex[], append = false, description = "")
+    results, t = @timed begin
+        @testset TableTestSet "$name tests" begin
+            run_tests(; exclude = exclude) do p
+                solve!(p, opt)
+            end
         end
     end
+    duration = Dates.CompoundPeriod(Dates.Second(t)) |> canonicalize
+    filename = joinpath(@__DIR__, "..", "docs", "src", "$(name).md")
 
-    file = joinpath(@__DIR__, "..", "docs", "src", "$(name).md")
-    open(file, "w") do io
+    open(filename, write=true, append=append) do io
         println(io, "# $name")
+
+        datestr = Dates.format(Dates.now(), "U d, Y at H:M")
+
+        println(io, "These tests were run on $(datestr).")
+        println(io)
+        if !isempty(description)
+            println(io, description)
+        end
+        println(io)
+        if !isempty(exclude)
+            println(io, "Excluded problems and classes of problems:")
+            println(io, "```julia")
+            println(io, exclude)
+            println(io, "```")
+        else
+            println(io, "No problems excluded.")
+        end
         println(io)
         println(io, "## Tests")
+        println(io)
+        println(io, "Tests took $(duration) to run.")
         println(io)
         println(io, "```@raw html")
         html_table(io, results; standalone = false)
@@ -29,6 +52,20 @@ function do_tests(name, opt; exclude::Vector{Regex} = Regex[])
         println(io, "```julia")
         TableTestSets.print_test_errors(io, results)
         println(io, "```")
+        println(io)
+        println(io, "# Version information")
+        println(io, "`versioninfo()`:")
+        println(io, "```julia")
+        versioninfo(io)
+        println(io, "```")
+        println(io)
+        println(io, "Manifest:")
+        println(io, "```julia")
+        redirect_stdout(io) do
+            Pkg.status(;mode = Pkg.PKGMODE_MANIFEST)
+        end
+        println(io, "```")
+
     end
     nothing
 end

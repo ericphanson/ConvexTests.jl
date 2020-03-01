@@ -1,6 +1,15 @@
 using ConvexTests
 using Documenter
 
+function mkpages()
+    list = ["Home" => "index.md",]
+    for file in sort(readdir(joinpath(@__DIR__, "src")))
+        file == "index.md" && continue
+        push!(list, splitext(file)[1] => file)
+    end
+    list
+end
+
 makedocs(;
     modules=[ConvexTests],
     authors="Eric P. Hanson",
@@ -11,12 +20,7 @@ makedocs(;
         canonical="https://ericphanson.github.io/ConvexTests.jl",
         assets=String[],
     ),
-    pages=[
-        "Home" => "index.md",
-        "SCS" => "SCS.md",
-        "ProxSDP" => "ProxSDP.md",
-        "COSMO" => "COSMO.md",
-    ],
+    pages = mkpages(),
 )
 
 deploydocs(;
