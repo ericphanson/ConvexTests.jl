@@ -1,5 +1,5 @@
 # COSMO
-These tests were run on March 2, 2020 at 18:20 (UTC).
+These tests were run on March 2, 2020 at 18:30 (UTC).
 
 Tests run with `eps_abs=1e-6` and `eps_rel=1e-6`.
 
@@ -10,7 +10,7 @@ Regex[r"mip", r"dual", r"benchmark"]
 
 ## Tests
 
-Tests took 2 minutes, 1 second to run.
+Tests took 2 minutes, 7 seconds to run.
 
 ```@raw html
 <table>
@@ -149,8 +149,8 @@ Tests took 2 minutes, 1 second to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_min_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -173,8 +173,8 @@ Tests took 2 minutes, 1 second to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_max_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -356,11 +356,6 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
   
 
 Error in testset lp_min_atom:
-Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:114
-  Expression: ≈(p.optval, min(min_a, min_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.007293096282937853 ≈ 0.01 (atol=0.01, atol=0.001, rtol=0.0)
-
-Error in testset lp_min_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:115
   Test threw exception
   Expression: ≈(evaluate(minimum(min(x, y))), min(min_a, min_b), atol=10atol, atol=atol, rtol=rtol)
@@ -398,6 +393,11 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [10] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [11] #run_tests#3(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::typeof(Convex.ProblemDepot.run_tests), ::Function, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119
   
+
+Error in testset lp_max_atom:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
+  Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
+   Evaluated: 0.9971071915666213 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
