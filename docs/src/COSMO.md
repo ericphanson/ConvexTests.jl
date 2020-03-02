@@ -1,5 +1,5 @@
 # COSMO
-These tests were run on March 2, 2020 at 7:56.
+These tests were run on March 2, 2020 at 8:3.
 
 Tests run with `eps_abs=1e-6` and `eps_rel=1e-6`.
 
@@ -10,7 +10,7 @@ Regex[r"mip", r"dual", r"benchmark"]
 
 ## Tests
 
-Tests took 2 minutes, 1 second to run.
+Tests took 2 minutes, 3 seconds to run.
 
 ```@raw html
 <table>
@@ -358,7 +358,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
 Error in testset lp_min_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:114
   Expression: ≈(p.optval, min(min_a, min_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.00770465596799803 ≈ 0.01 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.01327487534285203 ≈ 0.01 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_min_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:115
