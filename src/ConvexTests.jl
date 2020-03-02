@@ -13,7 +13,7 @@ const DOCS_SRC = Ref(joinpath(@__DIR__, "..", "docs", "src"))
 # To compile some things
 function dummy_problem(opt)
     x = Variable(3)
-    p = minimize(norm(x), [x >= 1])
+    p = minimize(2*x[2] + x[1] - x[3], [x >= 1])
     solve!(p, opt)
 end
 
