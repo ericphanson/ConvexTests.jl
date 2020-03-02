@@ -3,7 +3,7 @@ Pages = ["SCS.md"]
 ```
 
 # SCS 
-These tests were run on March 2, 2020 at 19:29 (UTC).
+These tests were run on March 2, 2020 at 19:54 (UTC).
 
 Tests run with `eps=1e-6`.
 
@@ -14,7 +14,7 @@ Regex[r"mip", r"benchmark"]
 
 ## Tests
 
-Tests took 1 minute, 44 seconds to run.
+Tests took 1 minute, 51 seconds to run.
 
 ```@raw html
 <table>
