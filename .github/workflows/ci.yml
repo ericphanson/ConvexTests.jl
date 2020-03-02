@@ -34,6 +34,7 @@ jobs:
       - run: julia --project=${{ matrix.solver }} ${{ matrix.solver }}/test.jl
       - name: Commit test results
         run: |
+          set +e
           git config --global user.name 'Eric P. Hanson'
           git config --global user.email '5846501+ericphanson@users.noreply.github.com'
           git pull
