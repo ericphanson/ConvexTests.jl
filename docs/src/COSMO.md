@@ -1,5 +1,9 @@
-# COSMO
-These tests were run on March 2, 2020 at 18:30 (UTC).
+```@contents
+ Pages = ["COSMO.md"]
+ ```
+ 
+# COSMO 
+These tests were run on March 2, 2020 at 18:38 (UTC).
 
 Tests run with `eps_abs=1e-6` and `eps_rel=1e-6`.
 
@@ -10,7 +14,7 @@ Regex[r"mip", r"dual", r"benchmark"]
 
 ## Tests
 
-Tests took 2 minutes, 7 seconds to run.
+Tests took 2 minutes, 6 seconds to run.
 
 ```@raw html
 <table>
@@ -149,8 +153,8 @@ Tests took 2 minutes, 7 seconds to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_min_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -173,8 +177,8 @@ Tests took 2 minutes, 7 seconds to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_max_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -345,7 +349,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [12] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
    [13] macro expansion at ./util.jl:288 [inlined]
-   [14] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [14] #do_tests#1(::String, ::Bool, ::String, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
    [15] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
    [16] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
    [17] include at ./boot.jl:328 [inlined]
@@ -354,6 +358,11 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [20] exec_options(::Base.JLOptions) at ./client.jl:287
    [21] _start() at ./client.jl:460
   
+
+Error in testset lp_min_atom:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:114
+  Expression: ≈(p.optval, min(min_a, min_b), atol=10atol, atol=atol, rtol=rtol)
+   Evaluated: 0.011479599456044102 ≈ 0.01 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_min_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:115
@@ -393,11 +402,6 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [10] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [11] #run_tests#3(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::typeof(Convex.ProblemDepot.run_tests), ::Function, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119
   
-
-Error in testset lp_max_atom:
-Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
-  Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9971071915666213 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
@@ -442,7 +446,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [12] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
    [13] macro expansion at ./util.jl:288 [inlined]
-   [14] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [14] #do_tests#1(::String, ::Bool, ::String, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
    [15] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
    [16] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
    [17] include at ./boot.jl:328 [inlined]
@@ -488,7 +492,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [29] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [30] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
    [31] macro expansion at ./util.jl:288 [inlined]
-   [32] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [32] #do_tests#1(::String, ::Bool, ::String, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
    [33] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
    [34] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
    [35] include at ./boot.jl:328 [inlined]
@@ -535,7 +539,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [30] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [31] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
    [32] macro expansion at ./util.jl:288 [inlined]
-   [33] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [33] #do_tests#1(::String, ::Bool, ::String, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
    [34] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
    [35] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
    [36] include at ./boot.jl:328 [inlined]
@@ -586,7 +590,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [29] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [30] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
    [31] macro expansion at ./util.jl:288 [inlined]
-   [32] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [32] #do_tests#1(::String, ::Bool, ::String, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
    [33] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
    [34] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
    [35] include at ./boot.jl:328 [inlined]
