@@ -22,7 +22,7 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
     open(filename, write=true, append=append) do io
         if !append
             println(io, """
-           ```@contents
+            ```@contents
             Pages = ["$(name).md"]
             ```
             """)
