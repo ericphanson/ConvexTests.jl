@@ -1,9 +1,9 @@
 ```@contents
- Pages = ["Tulip.md"]
- ```
- 
+Pages = ["Tulip.md"]
+```
+
 # Tulip Float64
-These tests were run on March 2, 2020 at 18:37 (UTC).
+These tests were run on March 2, 2020 at 19:15 (UTC).
 
 Tests run with default parameters in type Float64`.
 
@@ -14,7 +14,7 @@ Regex[r"mip", r"exp", r"socp", r"sdp", r"benchmark"]
 
 ## Tests
 
-Tests took 1 minute, 21 seconds to run.
+Tests took 1 minute, 5 seconds to run.
 
 ```@raw html
 <table>
@@ -108,7 +108,7 @@ Manifest:
   [4ec0a83e] Unicode 
 ```
 # Tulip BigFloat
-These tests were run on March 2, 2020 at 18:38 (UTC).
+These tests were run on March 2, 2020 at 19:16 (UTC).
 
 Tests run with default parameters in type BigFloat`.
 
@@ -119,7 +119,7 @@ Regex[r"mip", r"exp", r"socp", r"sdp", r"benchmark"]
 
 ## Tests
 
-Tests took 46 seconds to run.
+Tests took 38 seconds to run.
 
 ```@raw html
 <table>
