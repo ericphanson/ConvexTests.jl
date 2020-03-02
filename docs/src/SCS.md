@@ -1,5 +1,9 @@
-# SCS
-These tests were run on March 2, 2020 at 18:30 (UTC).
+```@contents
+Pages = ["SCS.md"]
+```
+
+# SCS 
+These tests were run on March 2, 2020 at 19:29 (UTC).
 
 Tests run with `eps=1e-6`.
 
@@ -10,7 +14,7 @@ Regex[r"mip", r"benchmark"]
 
 ## Tests
 
-Tests took 1 minute, 58 seconds to run.
+Tests took 1 minute, 44 seconds to run.
 
 ```@raw html
 <table>
@@ -197,7 +201,7 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 
 ```
 
-# Version information
+## Version information
 `versioninfo()`:
 ```julia
 Julia Version 1.3.1

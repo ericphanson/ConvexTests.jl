@@ -1,5 +1,9 @@
-# COSMO
-These tests were run on March 2, 2020 at 18:30 (UTC).
+```@contents
+Pages = ["COSMO.md"]
+```
+
+# COSMO 
+These tests were run on March 2, 2020 at 19:16 (UTC).
 
 Tests run with `eps_abs=1e-6` and `eps_rel=1e-6`.
 
@@ -10,7 +14,7 @@ Regex[r"mip", r"dual", r"benchmark"]
 
 ## Tests
 
-Tests took 2 minutes, 7 seconds to run.
+Tests took 1 minute, 53 seconds to run.
 
 ```@raw html
 <table>
@@ -23,11 +27,11 @@ Tests took 2 minutes, 7 seconds to run.
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">COSMO tests</td>
-<td style="text-align:center;color:green;">327</td>
-<td style="text-align:center;color:red;">2</td>
-<td style="text-align:center;color:red;">8</td>
+<td style="text-align:center;color:green;">330</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:red;">7</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">337</td>
+<td style="text-align:center;color:blue;">338</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;constant</td>
 <td style="text-align:center;color:green;">28</td>
 <td style="text-align:center;">0</td>
@@ -131,8 +135,8 @@ Tests took 2 minutes, 7 seconds to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">8</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">36</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">37</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">40</td>
@@ -173,8 +177,8 @@ Tests took 2 minutes, 7 seconds to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_max_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -203,11 +207,11 @@ Tests took 2 minutes, 7 seconds to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">44</td>
+<td style="text-align:center;color:green;">46</td>
 <td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;color:red;">4</td>
+<td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">49</td>
+<td style="text-align:center;color:blue;">50</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_socp_abs_atom</td>
 <td style="text-align:center;color:green;">4</td>
 <td style="text-align:center;">0</td>
@@ -221,11 +225,11 @@ Tests took 2 minutes, 7 seconds to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Variable_with_complex_equality_constraints</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_kron_atom</td>
 <td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
@@ -345,7 +349,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [12] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
    [13] macro expansion at ./util.jl:288 [inlined]
-   [14] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [14] #do_tests#1(::String, ::Bool, ::String, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
    [15] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
    [16] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
    [17] include at ./boot.jl:328 [inlined]
@@ -395,11 +399,6 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
   
 
 Error in testset lp_max_atom:
-Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
-  Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9971071915666213 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
-
-Error in testset lp_max_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
   Test threw exception
   Expression: ≈(evaluate(maximum(max(x, y))), max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
@@ -417,39 +416,6 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [10] macro expansion at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119 [inlined]
    [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [12] #run_tests#3(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::typeof(Convex.ProblemDepot.run_tests), ::Function, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119
-  
-
-Error in testset sdp_Complex_Variable_with_complex_equality_constraints:
-Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:120
-  Got exception outside of a @test
-  MethodError: no method matching real(::Nothing)
-  Closest candidates are:
-    real(!Matched::Missing) at missing.jl:100
-    real(!Matched::Complex) at complex.jl:63
-    real(!Matched::Real) at complex.jl:77
-    ...
-  Stacktrace:
-   [1] sdp_Complex_Variable_with_complex_equality_constraints(::ConvexTests.var"#2#5"{var"#3#4"}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:336
-   [2] macro expansion at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:121 [inlined]
-   [3] (::Convex.ProblemDepot.var"#4#5"{DataType,Float64,Float64,ConvexTests.var"#2#5"{var"#3#4"}})(::String, ::typeof(Convex.ProblemDepot.sdp_Complex_Variable_with_complex_equality_constraints)) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:121
-   [4] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Convex.ProblemDepot.var"#4#5"{DataType,Float64,Float64,ConvexTests.var"#2#5"{var"#3#4"}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [5] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [6] macro expansion at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119 [inlined]
-   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [8] #run_tests#3(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::typeof(Convex.ProblemDepot.run_tests), ::Function, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119
-   [9] #run_tests at ./none:0 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
-   [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [12] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
-   [13] macro expansion at ./util.jl:288 [inlined]
-   [14] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
-   [15] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [16] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [17] include at ./boot.jl:328 [inlined]
-   [18] include_relative(::Module, ::String) at ./loading.jl:1105
-   [19] include(::Module, ::String) at ./Base.jl:31
-   [20] exec_options(::Base.JLOptions) at ./client.jl:287
-   [21] _start() at ./client.jl:460
   
 
 Error in testset sdp_operator_norm_atom:
@@ -488,7 +454,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [29] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [30] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
    [31] macro expansion at ./util.jl:288 [inlined]
-   [32] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [32] #do_tests#1(::String, ::Bool, ::String, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
    [33] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
    [34] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
    [35] include at ./boot.jl:328 [inlined]
@@ -535,7 +501,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [30] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [31] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
    [32] macro expansion at ./util.jl:288 [inlined]
-   [33] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [33] #do_tests#1(::String, ::Bool, ::String, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
    [34] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
    [35] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
    [36] include at ./boot.jl:328 [inlined]
@@ -586,7 +552,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [29] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [30] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
    [31] macro expansion at ./util.jl:288 [inlined]
-   [32] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [32] #do_tests#1(::String, ::Bool, ::String, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
    [33] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
    [34] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
    [35] include at ./boot.jl:328 [inlined]
@@ -605,10 +571,10 @@ Julia Version 1.3.1
 Commit 2d5741174c (2019-12-30 21:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz
+  CPU: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, skylake)
+  LLVM: libLLVM-6.0.1 (ORCJIT, broadwell)
 ```
 
 Manifest:

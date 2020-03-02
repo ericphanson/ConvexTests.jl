@@ -22,7 +22,7 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
     open(filename, write=true, append=append) do io
         if !append
             println(io, """
-           ```@contents
+            ```@contents
             Pages = ["$(name).md"]
             ```
             """)
@@ -60,7 +60,7 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
         TableTestSets.print_test_errors(io, results)
         println(io, "```")
         println(io)
-        println(io, "# Version information")
+        println(io, "## Version information")
         println(io, "`versioninfo()`:")
         println(io, "```julia")
         versioninfo(io)
