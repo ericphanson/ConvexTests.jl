@@ -10,6 +10,13 @@ using TimerOutputs
 
 const DOCS_SRC = Ref(joinpath(@__DIR__, "..", "docs", "src"))
 
+# To compile some things
+function dummy_problem(opt)
+    x = Variable(3)
+    p = minimize(norm(x), [x >= 1])
+    solve!(p, opt)
+end
+
 function _run_tests( handle_problem!::Function, 
                     problems::Union{Nothing, Vector{String}, Vector{Regex}} = nothing; 
                     exclude::Vector{Regex} = Regex[], T=Float64, atol=1e-3, rtol=0.0, to)
@@ -30,9 +37,16 @@ function _run_tests( handle_problem!::Function,
     end
 end
 
-function do_tests(name, opt; variant="", append = false, description = "", exclude = Regex[], kwargs...)
-    to = TimerOutput()
+function formatted_seconds(t)
+    Dates.CompoundPeriod(Dates.Second(round(Int, t))) |> canonicalize
+end
 
+function do_tests(name, opt; variant="", append = false, last = true, description = "", exclude = Regex[], kwargs...)
+    t1 = @time dummy_problem(opt)
+    t2 = @time dummy_problem(opt)
+    compilation_time = formatted_seconds(t1-t2)
+
+    to = TimerOutput()
     results, t = @timed begin
         @testset TableTestSet "$name tests" begin
             _run_tests(; to=to, exclude=exclude, kwargs...) do p
@@ -40,12 +54,14 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
             end
         end
     end
-    duration = Dates.CompoundPeriod(Dates.Second(round(Int, t))) |> canonicalize
+    duration = formatted_seconds(t)
     filename = joinpath(DOCS_SRC[], "$(name).md")
 
     open(filename, write=true, append=append) do io
         if !append
             println(io, """
+            Table of contents:
+
             ```@contents
             Pages = ["$(name).md"]
             ```
@@ -72,7 +88,8 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
         println(io)
         println(io, "### Tests")
         println(io)
-        println(io, "Tests took $(duration) to run.")
+        println(io, "Compilation warmup estimates $(compilation_time) in compilation time.")
+        println(io, "Tests took $(duration) to run after warmup.")
         println(io)
         println(io, "```@raw html")
         html_table(io, results; standalone = false)
@@ -88,20 +105,23 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
         println(io, "### Timing information")
         println(io, "```julia")
         print_timer(io, to)
+        println(io)
         println(io, "```")
         println(io)
-        println(io, "### Version information")
-        println(io, "`versioninfo()`:")
-        println(io, "```julia")
-        versioninfo(io)
-        println(io, "```")
-        println(io)
-        println(io, "Manifest:")
-        println(io, "```julia")
-        redirect_stdout(io) do
-            Pkg.status(;mode = Pkg.PKGMODE_MANIFEST)
+        if last
+            println(io, "### Version information")
+            println(io, "`versioninfo()`:")
+            println(io, "```julia")
+            versioninfo(io)
+            println(io, "```")
+            println(io)
+            println(io, "Manifest:")
+            println(io, "```julia")
+            redirect_stdout(io) do
+                Pkg.status(;mode = Pkg.PKGMODE_MANIFEST)
+            end
+            println(io, "```")
         end
-        println(io, "```")
 
     end
     nothing
