@@ -22,9 +22,9 @@ function do_tests(name, opt; exclude::Vector{Regex} = Regex[], append = false, d
     open(filename, write=true, append=append) do io
         println(io, "# $name")
 
-        datestr = Dates.format(Dates.now(), "U d, Y at H:M")
+        datestr = Dates.format(Dates.now(Dates.UTC), "U d, Y at HH:MM")
 
-        println(io, "These tests were run on $(datestr).")
+        println(io, "These tests were run on $(datestr) (UTC).")
         println(io)
         if !isempty(description)
             println(io, description)
