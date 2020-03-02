@@ -49,7 +49,7 @@ jobs:
               n=$[$n+1]
               sleep 2
             done
-          end
+          fi
   docs:
     needs: test
     name: Documentation
