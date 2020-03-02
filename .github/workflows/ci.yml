@@ -41,7 +41,7 @@ jobs:
             git commit -m "Automated update for ${{ matrix.solver }}"
             git push
           fi
-          if [ $? -ne 0 ]; do
+          if [ $? -ne 0 ]; then
             n=0
             until [ $n -ge 5 ]
             do
