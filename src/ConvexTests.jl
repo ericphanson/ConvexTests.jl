@@ -16,7 +16,7 @@ function do_tests(name, opt; exclude::Vector{Regex} = Regex[], append = false, d
             end
         end
     end
-    duration = Dates.CompoundPeriod(Dates.Second(t)) |> canonicalize
+    duration = Dates.CompoundPeriod(Dates.Second(round(Int, t))) |> canonicalize
     filename = joinpath(@__DIR__, "..", "docs", "src", "$(name).md")
 
     open(filename, write=true, append=append) do io
