@@ -1,5 +1,5 @@
 # SCS
-These tests were run on March 2, 2020 at 09:32 (UTC).
+These tests were run on March 2, 2020 at 18:30 (UTC).
 
 Tests run with `eps=1e-6`.
 
@@ -10,7 +10,7 @@ Regex[r"mip", r"benchmark"]
 
 ## Tests
 
-Tests took 1 minute, 36 seconds to run.
+Tests took 1 minute, 58 seconds to run.
 
 ```@raw html
 <table>
