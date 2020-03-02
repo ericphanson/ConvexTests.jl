@@ -42,8 +42,8 @@ function formatted_seconds(t)
 end
 
 function do_tests(name, opt; variant="", append = false, last = true, description = "", exclude = Regex[], kwargs...)
-    t1 = @time dummy_problem(opt)
-    t2 = @time dummy_problem(opt)
+    t1 = @elapsed dummy_problem(opt)
+    t2 = @elapsed dummy_problem(opt)
     compilation_time = formatted_seconds(t1-t2)
 
     to = TimerOutput()
