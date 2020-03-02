@@ -8,10 +8,10 @@ using Convex.ProblemDepot: run_tests
 using Test, Pkg, InteractiveUtils, Dates
 
 
-function do_tests(name, opt; exclude::Vector{Regex} = Regex[], append = false, description = "")
+function do_tests(name, opt; variant="", append = false, description = "", exclude = Regex[], kwargs...)
     results, t = @timed begin
         @testset TableTestSet "$name tests" begin
-            run_tests(; exclude = exclude) do p
+            run_tests(; exclude=exclude, kwargs...) do p
                 solve!(p, opt)
             end
         end
@@ -20,7 +20,14 @@ function do_tests(name, opt; exclude::Vector{Regex} = Regex[], append = false, d
     filename = joinpath(@__DIR__, "..", "docs", "src", "$(name).md")
 
     open(filename, write=true, append=append) do io
-        println(io, "# $name")
+        if !append
+            println(io, """
+           ```@contents
+            Pages = ["$(name).md"]
+            ```
+            """)
+        end
+        println(io, "# $name $variant")
 
         datestr = Dates.format(Dates.now(Dates.UTC), "U d, Y at HH:MM")
 
