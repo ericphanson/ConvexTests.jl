@@ -4,20 +4,44 @@ export do_tests
 
 using TableTestSets
 using Convex
-using Convex.ProblemDepot: run_tests
+using Convex.ProblemDepot: foreach_problem, PROBLEMS
 using Test, Pkg, InteractiveUtils, Dates
+using TimerOutputs
 
+const DOCS_SRC = Ref(joinpath(@__DIR__, "..", "docs", "src"))
+
+function _run_tests( handle_problem!::Function, 
+                    problems::Union{Nothing, Vector{String}, Vector{Regex}} = nothing; 
+                    exclude::Vector{Regex} = Regex[], T=Float64, atol=1e-3, rtol=0.0, to)
+    push!(exclude, r"benchmark")
+    for class in keys(PROBLEMS)
+        any(occursin.(exclude, Ref(class))) && continue
+        @timeit to "$class" begin
+            @testset "$class" begin
+                foreach_problem(class, problems; exclude=exclude) do name, problem_func
+                    @timeit to "$name" begin
+                        @testset "$name" begin
+                            problem_func(handle_problem!, Val(true), atol, rtol, T)
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
 
 function do_tests(name, opt; variant="", append = false, description = "", exclude = Regex[], kwargs...)
+    to = TimerOutput()
+
     results, t = @timed begin
         @testset TableTestSet "$name tests" begin
-            run_tests(; exclude=exclude, kwargs...) do p
+            _run_tests(; to=to, exclude=exclude, kwargs...) do p
                 solve!(p, opt)
             end
         end
     end
     duration = Dates.CompoundPeriod(Dates.Second(round(Int, t))) |> canonicalize
-    filename = joinpath(@__DIR__, "..", "docs", "src", "$(name).md")
+    filename = joinpath(DOCS_SRC[], "$(name).md")
 
     open(filename, write=true, append=append) do io
         if !append
@@ -59,6 +83,10 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
         println(io, "```julia")
         TableTestSets.print_test_errors(io, results)
         println(io, "```")
+        println(io)
+        println(io)
+        println(io, "## Timing information")
+        print_timer(io, to)
         println(io)
         println(io, "## Version information")
         println(io, "`versioninfo()`:")
