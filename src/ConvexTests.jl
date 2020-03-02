@@ -51,7 +51,7 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
             ```
             """)
         end
-        println(io, "# $name $variant")
+        println(io, "## $name $variant")
 
         datestr = Dates.format(Dates.now(Dates.UTC), "U d, Y at HH:MM")
 
@@ -70,7 +70,7 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
             println(io, "No problems excluded.")
         end
         println(io)
-        println(io, "## Tests")
+        println(io, "### Tests")
         println(io)
         println(io, "Tests took $(duration) to run.")
         println(io)
@@ -78,17 +78,19 @@ function do_tests(name, opt; variant="", append = false, description = "", exclu
         html_table(io, results; standalone = false)
         println(io, "```")
         println(io)
-        println(io, "## Errors")
+        println(io, "### Errors")
         println(io)
         println(io, "```julia")
         TableTestSets.print_test_errors(io, results)
         println(io, "```")
         println(io)
         println(io)
-        println(io, "## Timing information")
+        println(io, "### Timing information")
+        println(io, "```julia")
         print_timer(io, to)
+        println(io, "```")
         println(io)
-        println(io, "## Version information")
+        println(io, "### Version information")
         println(io, "`versioninfo()`:")
         println(io, "```julia")
         versioninfo(io)
