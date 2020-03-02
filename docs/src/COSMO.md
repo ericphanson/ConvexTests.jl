@@ -3,7 +3,7 @@ Pages = ["COSMO.md"]
 ```
 
 # COSMO 
-These tests were run on March 2, 2020 at 18:59 (UTC).
+These tests were run on March 2, 2020 at 19:16 (UTC).
 
 Tests run with `eps_abs=1e-6` and `eps_rel=1e-6`.
 
@@ -14,7 +14,7 @@ Regex[r"mip", r"dual", r"benchmark"]
 
 ## Tests
 
-Tests took 1 minute, 47 seconds to run.
+Tests took 1 minute, 53 seconds to run.
 
 ```@raw html
 <table>
@@ -571,10 +571,10 @@ Julia Version 1.3.1
 Commit 2d5741174c (2019-12-30 21:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz
+  CPU: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, skylake)
+  LLVM: libLLVM-6.0.1 (ORCJIT, broadwell)
 ```
 
 Manifest:
