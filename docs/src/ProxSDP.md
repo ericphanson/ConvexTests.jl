@@ -1,6 +1,16 @@
 # ProxSDP
+These tests were run on March 2, 2020 at 09:32 (UTC).
+
+Tests run with `tol_primal=1e-6` and `tol_dual=1e-6`.
+
+Excluded problems and classes of problems:
+```julia
+Regex[r"mip", r"exp", r"benchmark"]
+```
 
 ## Tests
+
+Tests took 1 minute, 58 seconds to run.
 
 ```@raw html
 <table>
@@ -513,17 +523,17 @@
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:16
   Expression: ≈(problem.optval, evaluate(sum(c * β)), atol=atol, rtol=rtol)
-   Evaluated: -29.87455897376645 ≈ -29.38329040893552 (atol=0.001, rtol=0.0)
+   Evaluated: -16.706984807600026 ≈ -16.269844762131335 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:17
   Expression: ≈(problem.optval, 0.0, atol=atol, rtol=rtol)
-   Evaluated: -29.87455897376645 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: -16.706984807600026 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:18
   Expression: ≈(β.value, zeros(5), atol=atol, rtol=rtol)
-   Evaluated: [-0.4380696601047913; -0.4380696601047913; … ; -0.4380696601047913; -0.4380696601047913] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-0.307147816478478; -0.307147816478478; … ; -0.307147816478478; -0.307147816478478] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_228:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:30
@@ -568,12 +578,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:194
   Expression: ≈(p.optval, s, atol=atol, rtol=rtol)
-   Evaluated: 18.414272676445126 ≈ 14.162455296927492 (atol=0.001, rtol=0.0)
+   Evaluated: 15.011449618096078 ≈ 11.070655553524816 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:195
   Expression: ≈((evaluate(c * x' * d + d' * x * c' + (c * ((((x')')')')' * d)'))[1], s, atol=atol, rtol=rtol)
-   Evaluated: 18.78946845302364 ≈ 14.162455296927492 (atol=0.001, rtol=0.0)
+   Evaluated: 14.58569290822999 ≈ 11.070655553524816 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:332
@@ -908,12 +918,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
   Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9524794592568451 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9753945832279756 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
   Expression: ≈(evaluate(maximum(max(x, y))), max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9825602654879232 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9928918460897004 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:183
@@ -940,4 +950,73 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
   Expression: ≈(p.optval, 1, atol=atol, rtol=rtol)
    Evaluated: 1.0142050785326817 ≈ 1 (atol=0.001, rtol=0.0)
 
+```
+
+# Version information
+`versioninfo()`:
+```julia
+Julia Version 1.3.1
+Commit 2d5741174c (2019-12-30 21:36 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-6.0.1 (ORCJIT, skylake)
+```
+
+Manifest:
+```julia
+    Status `~/work/ConvexTests.jl/ConvexTests.jl/ProxSDP/Manifest.toml`
+  [1520ce14] AbstractTrees v0.3.2
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+2
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.8
+  [523fee87] CodecBzip2 v0.6.0
+  [944b1d66] CodecZlib v0.6.0
+  [f65535da] Convex v0.13.0
+  [cb7cb77b] ConvexTests v0.1.0 [`~/work/ConvexTests.jl/ConvexTests.jl`]
+  [9a962f9c] DataAPI v1.1.0
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [cd3eb016] HTTP v0.8.12
+  [83e8ac13] IniFile v0.5.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [682c06a0] JSON v0.21.0
+  [7d188eb4] JSONSchema v0.2.0
+  [b8f27783] MathOptInterface v0.9.12
+  [739be429] MbedTLS v1.0.0
+  [c8ffd9c3] MbedTLS_jll v2.16.0+1
+  [d8a4904e] MutableArithmetics v0.2.7
+  [4536629a] OpenBLAS_jll v0.3.7+6
+  [bac558e1] OrderedCollections v1.1.0
+  [69de0a69] Parsers v0.3.12
+  [65e78d25] ProxSDP v1.2.0
+  [f9bf3ced] TableTestSets v0.1.0 #master (https://github.com/ericphanson/TableTestSets.jl)
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.0.2
+  [a759f4b9] TimerOutputs v0.5.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8ba89e20] Distributed 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [37e2e46d] LinearAlgebra 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [6462fe0b] Sockets 
+  [2f01184e] SparseArrays 
+  [10745b16] Statistics 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
 ```
