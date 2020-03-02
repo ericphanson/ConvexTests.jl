@@ -11,6 +11,3 @@ a variety of problems and see where things can be improved.
 
 Note that some of the problems are fairly strange (e.g. only one feasible
 point), which can be difficult for solvers to handle.
-
-
-.
