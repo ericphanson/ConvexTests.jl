@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>COSMO · ConvexTests.jl</title><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/COSMO.html"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="assets/documenter.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-dark.css" data-theme-name="documenter-dark"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit">ConvexTests.jl</span></div><form class="docs-search" action="search.html"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="index.html">Home</a></li><li class="is-active"><a class="tocitem" href="COSMO.html">COSMO</a><ul class="internal"><li><a class="tocitem" href="#Tests-1"><span>Tests</span></a></li><li><a class="tocitem" href="#Errors-1"><span>Errors</span></a></li><li class="toplevel"><a class="tocitem" href="#Version-information-1"><span>Version information</span></a></li></ul></li><li><a class="tocitem" href="ProxSDP.html">ProxSDP</a></li><li><a class="tocitem" href="SCS.html">SCS</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href="COSMO.html">COSMO</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href="COSMO.html">COSMO</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/COSMO.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><h1 id="COSMO-1"><a class="docs-heading-anchor" href="#COSMO-1">COSMO</a><a class="docs-heading-anchor-permalink" href="#COSMO-1" title="Permalink"></a></h1><p>These tests were run on March 2, 2020 at 09:33 (UTC).</p><p>Tests run with <code>eps_abs=1e-6</code> and <code>eps_rel=1e-6</code>.</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia">Regex[r&quot;mip&quot;, r&quot;dual&quot;, r&quot;benchmark&quot;]</code></pre><h2 id="Tests-1"><a class="docs-heading-anchor" href="#Tests-1">Tests</a><a class="docs-heading-anchor-permalink" href="#Tests-1" title="Permalink"></a></h2><p>Tests took 2 minutes, 6 seconds to run.</p><table>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>COSMO · ConvexTests.jl</title><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/COSMO.html"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="assets/documenter.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-dark.css" data-theme-name="documenter-dark"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit">ConvexTests.jl</span></div><form class="docs-search" action="search.html"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="index.html">Home</a></li><li class="is-active"><a class="tocitem" href="COSMO.html">COSMO</a><ul class="internal"><li><a class="tocitem" href="#Tests-1"><span>Tests</span></a></li><li><a class="tocitem" href="#Errors-1"><span>Errors</span></a></li><li class="toplevel"><a class="tocitem" href="#Version-information-1"><span>Version information</span></a></li></ul></li><li><a class="tocitem" href="ProxSDP.html">ProxSDP</a></li><li><a class="tocitem" href="SCS.html">SCS</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href="COSMO.html">COSMO</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href="COSMO.html">COSMO</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/COSMO.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><h1 id="COSMO-1"><a class="docs-heading-anchor" href="#COSMO-1">COSMO</a><a class="docs-heading-anchor-permalink" href="#COSMO-1" title="Permalink"></a></h1><p>These tests were run on March 2, 2020 at 18:30 (UTC).</p><p>Tests run with <code>eps_abs=1e-6</code> and <code>eps_rel=1e-6</code>.</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia">Regex[r&quot;mip&quot;, r&quot;dual&quot;, r&quot;benchmark&quot;]</code></pre><h2 id="Tests-1"><a class="docs-heading-anchor" href="#Tests-1">Tests</a><a class="docs-heading-anchor-permalink" href="#Tests-1" title="Permalink"></a></h2><p>Tests took 2 minutes, 7 seconds to run.</p><table>
 <tr class="header">
 <td style="text-align:left;border-right: solid 2px;">testset</td>
 <td style="text-align:center;">pass</td>
@@ -9,11 +9,11 @@
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">COSMO tests</td>
-<td style="text-align:center;color:green;">330</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;color:red;">7</td>
+<td style="text-align:center;color:green;">327</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;color:red;">8</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">338</td>
+<td style="text-align:center;color:blue;">337</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;constant</td>
 <td style="text-align:center;color:green;">28</td>
 <td style="text-align:center;">0</td>
@@ -117,8 +117,8 @@
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">8</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">37</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">36</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">40</td>
@@ -159,8 +159,8 @@
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_max_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -189,11 +189,11 @@
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">46</td>
+<td style="text-align:center;color:green;">44</td>
 <td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;color:red;">3</td>
+<td style="text-align:center;color:red;">4</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">50</td>
+<td style="text-align:center;color:blue;">49</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_socp_abs_atom</td>
 <td style="text-align:center;color:green;">4</td>
 <td style="text-align:center;">0</td>
@@ -207,11 +207,11 @@
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Variable_with_complex_equality_constraints</td>
-<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_kron_atom</td>
 <td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
@@ -375,6 +375,11 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
   
 
 Error in testset lp_max_atom:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
+  Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
+   Evaluated: 0.9971071915666213 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+
+Error in testset lp_max_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
   Test threw exception
   Expression: ≈(evaluate(maximum(max(x, y))), max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
@@ -392,6 +397,39 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [10] macro expansion at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119 [inlined]
    [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
    [12] #run_tests#3(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::typeof(Convex.ProblemDepot.run_tests), ::Function, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119
+  
+
+Error in testset sdp_Complex_Variable_with_complex_equality_constraints:
+Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:120
+  Got exception outside of a @test
+  MethodError: no method matching real(::Nothing)
+  Closest candidates are:
+    real(!Matched::Missing) at missing.jl:100
+    real(!Matched::Complex) at complex.jl:63
+    real(!Matched::Real) at complex.jl:77
+    ...
+  Stacktrace:
+   [1] sdp_Complex_Variable_with_complex_equality_constraints(::ConvexTests.var&quot;#2#5&quot;{var&quot;#3#4&quot;}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:336
+   [2] macro expansion at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:121 [inlined]
+   [3] (::Convex.ProblemDepot.var&quot;#4#5&quot;{DataType,Float64,Float64,ConvexTests.var&quot;#2#5&quot;{var&quot;#3#4&quot;}})(::String, ::typeof(Convex.ProblemDepot.sdp_Complex_Variable_with_complex_equality_constraints)) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:121
+   [4] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Convex.ProblemDepot.var&quot;#4#5&quot;{DataType,Float64,Float64,ConvexTests.var&quot;#2#5&quot;{var&quot;#3#4&quot;}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
+   [5] (::Convex.ProblemDepot.var&quot;#kw##foreach_problem&quot;)(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
+   [6] macro expansion at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119 [inlined]
+   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
+   [8] #run_tests#3(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::typeof(Convex.ProblemDepot.run_tests), ::Function, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:119
+   [9] #run_tests at ./none:0 [inlined] (repeats 2 times)
+   [10] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
+   [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
+   [12] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:14 [inlined]
+   [13] macro expansion at ./util.jl:288 [inlined]
+   [14] #do_tests#1(::Array{Regex,1}, ::Bool, ::String, ::typeof(do_tests), ::String, ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:12
+   [15] (::ConvexTests.var&quot;#kw##do_tests&quot;)(::NamedTuple{(:exclude, :description),Tuple{Array{Regex,1},String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
+   [16] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
+   [17] include at ./boot.jl:328 [inlined]
+   [18] include_relative(::Module, ::String) at ./loading.jl:1105
+   [19] include(::Module, ::String) at ./Base.jl:31
+   [20] exec_options(::Base.JLOptions) at ./client.jl:287
+   [21] _start() at ./client.jl:460
   
 
 Error in testset sdp_operator_norm_atom:
@@ -599,4 +637,4 @@ Platform Info:
   [4607b0f0] SuiteSparse 
   [8dfed614] Test 
   [cf7118a7] UUIDs 
-  [4ec0a83e] Unicode </code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="index.html">« Home</a><a class="docs-footer-nextpage" href="ProxSDP.html">ProxSDP »</a></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Monday 2 March 2020 09:35">Monday 2 March 2020</span>. Using Julia version 1.3.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+  [4ec0a83e] Unicode </code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="index.html">« Home</a><a class="docs-footer-nextpage" href="ProxSDP.html">ProxSDP »</a></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Monday 2 March 2020 18:33">Monday 2 March 2020</span>. Using Julia version 1.3.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
