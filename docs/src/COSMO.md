@@ -1,5 +1,5 @@
 # COSMO
-These tests were run on March 2, 2020 at 09:33 (UTC).
+These tests were run on March 2, 2020 at 18:13 (UTC).
 
 Tests run with `eps_abs=1e-6` and `eps_rel=1e-6`.
 
@@ -10,7 +10,7 @@ Regex[r"mip", r"dual", r"benchmark"]
 
 ## Tests
 
-Tests took 2 minutes, 6 seconds to run.
+Tests took 1 minute, 57 seconds to run.
 
 ```@raw html
 <table>
@@ -23,8 +23,8 @@ Tests took 2 minutes, 6 seconds to run.
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">COSMO tests</td>
-<td style="text-align:center;color:green;">330</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">329</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;color:red;">7</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">338</td>
@@ -131,8 +131,8 @@ Tests took 2 minutes, 6 seconds to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">8</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">37</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">36</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">40</td>
@@ -149,8 +149,8 @@ Tests took 2 minutes, 6 seconds to run.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_min_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -354,6 +354,11 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
    [20] exec_options(::Base.JLOptions) at ./client.jl:287
    [21] _start() at ./client.jl:460
   
+
+Error in testset lp_min_atom:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:114
+  Expression: ≈(p.optval, min(min_a, min_b), atol=10atol, atol=atol, rtol=rtol)
+   Evaluated: 0.007284161131600731 ≈ 0.01 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_min_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:115
