@@ -1,5 +1,5 @@
 # ProxSDP
-These tests were run on March 2, 2020 at 09:04 (UTC).
+These tests were run on March 2, 2020 at 09:32 (UTC).
 
 Tests run with `tol_primal=1e-6` and `tol_dual=1e-6`.
 
@@ -10,7 +10,7 @@ Regex[r"mip", r"exp", r"benchmark"]
 
 ## Tests
 
-Tests took 1 minute, 50 seconds to run.
+Tests took 1 minute, 58 seconds to run.
 
 ```@raw html
 <table>
@@ -523,17 +523,17 @@ Tests took 1 minute, 50 seconds to run.
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:16
   Expression: ≈(problem.optval, evaluate(sum(c * β)), atol=atol, rtol=rtol)
-   Evaluated: -17.800158595465746 ≈ -18.082689011257024 (atol=0.001, rtol=0.0)
+   Evaluated: -16.706984807600026 ≈ -16.269844762131335 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:17
   Expression: ≈(problem.optval, 0.0, atol=atol, rtol=rtol)
-   Evaluated: -17.800158595465746 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: -16.706984807600026 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:18
   Expression: ≈(β.value, zeros(5), atol=atol, rtol=rtol)
-   Evaluated: [-0.33258275917742947; -0.33258275917742947; … ; -0.33258275917742947; -0.33258275917742947] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-0.307147816478478; -0.307147816478478; … ; -0.307147816478478; -0.307147816478478] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_228:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:30
@@ -578,12 +578,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:194
   Expression: ≈(p.optval, s, atol=atol, rtol=rtol)
-   Evaluated: 6.19744040420148 ≈ 8.840677519186027 (atol=0.001, rtol=0.0)
+   Evaluated: 15.011449618096078 ≈ 11.070655553524816 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:195
   Expression: ≈((evaluate(c * x' * d + d' * x * c' + (c * ((((x')')')')' * d)'))[1], s, atol=atol, rtol=rtol)
-   Evaluated: 6.089086206629879 ≈ 8.840677519186027 (atol=0.001, rtol=0.0)
+   Evaluated: 14.58569290822999 ≈ 11.070655553524816 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:332
@@ -918,12 +918,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
   Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9424522850312088 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9753945832279756 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
   Expression: ≈(evaluate(maximum(max(x, y))), max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9806428974359388 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9928918460897004 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:183
