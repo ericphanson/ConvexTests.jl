@@ -1,7 +1,5 @@
 [deps]
-ConvexTests = "cb7cb77b-aa64-41ee-9be8-cb42f39823db"
 Dualization = "191a621a-6537-11e9-281d-650236a99e60"
 GenericLinearAlgebra = "14197337-ba66-59df-a3e3-ca00e7dcff7a"
 MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
 SDPAFamily = "bfe18334-aefd-11e9-1109-4bf2b15a5b91"
-TableTestSets = "f9bf3ced-5811-49c3-be57-f5a2c1e23f47"
