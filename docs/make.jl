@@ -2,11 +2,12 @@ using ConvexTests
 using Documenter
 
 function mkpages()
-    list = ["Home" => "index.md",]
+    list = ["Home" => "index.md"]
     for file in sort(readdir(joinpath(@__DIR__, "src")))
-        file == "index.md" && continue
+        file == "index.md" || file == "implementation_notes.md" && continue
         push!(list, splitext(file)[1] => file)
     end
+    push!(list, "Implementation notes" => "implementation_notes.md")
     list
 end
 

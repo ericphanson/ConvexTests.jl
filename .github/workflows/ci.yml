@@ -1,7 +1,6 @@
 name: CI
 on:
   - push
-  - pull_request
 jobs:
   test:
     name: ${{ matrix.solver }} tests
@@ -48,7 +47,7 @@ jobs:
           fi
           if [ $? -ne 0 ]; then
             n=0
-            until [ $n -ge 5 ]
+            until [ $n -ge 10 ]
             do
               git pull && git push && break
               n=$[$n+1]

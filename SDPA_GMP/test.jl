@@ -14,7 +14,7 @@ do_tests("SDPA_GMP", () -> SDPAFamily.Optimizer(presolve=false, silent=true); ex
 
 
 function dual_opt(;kwargs...)
-    () -> DualOptimizer(SDPAFamily.Optimizer(; kwargs...))
+    () -> DualOptimizer{BigFloat}(SDPAFamily.Optimizer(; kwargs...))
 end
 
 @info "Starting dual tests"

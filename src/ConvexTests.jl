@@ -71,7 +71,7 @@ function do_tests(name, opt; variant="", first = true, last = true, description 
             ```
             """)
             println(io)
-            println(io, "Compilation warmup estimates $(compilation_time) in compilation time.")
+            println(io, "Compilation warmup gives an estimate of $(compilation_time) of compilation time.")
             println(io)
         end
 
