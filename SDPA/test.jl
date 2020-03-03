@@ -11,7 +11,7 @@ function opt(mode)
     end
 end
 
-exclusions = [r"mip", r"socp", r"exp", r"sdp_Complex_Semidefinite_constraint"]
+exclusions = [r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 
 @info "Starting SDPA tests with `Mode=PARAMETER_DEFAULT`"
 do_tests("SDPA", opt(PARAMETER_DEFAULT); exclude = exclusions, variant="`PARAMETER_DEFAULT`", description="Tests with SDPA via SDPA.jl.", last = false, first = true)

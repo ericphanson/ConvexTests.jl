@@ -39,7 +39,7 @@ function _run_tests( handle_problem!::Function,
 end
 
 function formatted_seconds(t)
-    Dates.CompoundPeriod(Dates.Second(round(Int, t))) |> canonicalize
+    Dates.CompoundPeriod(Dates.Millisecond(ceil(Int, t*1000))) |> canonicalize
 end
 
 function do_tests(name, opt; variant="", first = true, last = true, description = "",T=Float64, exclude = Regex[], kwargs...)

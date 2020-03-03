@@ -14,15 +14,11 @@ do_tests("SDPA_GMP", () -> SDPAFamily.Optimizer(presolve=false, silent=true); ex
 
 
 function dual_opt(;kwargs...)
-    () -> begin
-        opt = DualOptimizer(SDPAFamily.Optimizer(; kwargs...))
-        MOI.set(opt, MOI.Silent(), true)
-        opt
-    end
+    () -> DualOptimizer(SDPAFamily.Optimizer(; kwargs...))
 end
 
 @info "Starting dual tests"
 
-do_tests("SDPA_GMP", dual_opt(presolve=true, silent=true); exclude = presolve_exclusions ∪ [r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"], variant="presolve=true (dualized)", T = BigFloat, description="Tests with SDPA-GMP via SDPAFamily.jl. The problems `lp_max_atom` and `lp_min_atom` are excluded due to excessive presolve time (~1000 seconds each).", first = false, last = true)
+do_tests("SDPA_GMP", dual_opt(presolve=true, silent=true); exclude = presolve_exclusions ∪ [r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"], variant="presolve=true (dualized)", T = BigFloat, description="Tests with SDPA-GMP via SDPAFamily.jl. The problems `lp_max_atom` and `lp_min_atom` are excluded due to excessive presolve time (~1000 seconds each).", first = false, last = false)
 
 do_tests("SDPA_GMP", dual_opt(presolve=false, silent=true); exclude =[r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"], variant="presolve=false (dualized)", T = BigFloat, description="Tests with SDPA-GMP via SDPAFamily.jl.", first = false, last = true)

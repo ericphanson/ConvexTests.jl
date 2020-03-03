@@ -7,6 +7,10 @@ optimization solvers. See the sidebar for the solvers test results.
 Note that some of the problems are fairly strange (e.g. only one feasible
 point), which can be difficult for solvers to handle.
 
+Note: for some solvers, the problem `constant_Issue_166` shows up as taking a
+long time. That is likely because it is the first problem tested and may include
+compilation time. To counteract that effect, a simple problem is solved prior to
+starting the tests, but it may not exercise all the compilation pathways.
 
 ## A note on one of the problems
 
