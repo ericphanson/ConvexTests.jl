@@ -8,11 +8,7 @@ exclusions = [r"mip", r"socp", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 
 
 function dual_opt(mode)
-    () -> begin
-        opt = DualOptimizer(SDPA.Optimizer(Mode=mode))
-        MOI.set(opt, MOI.Silent(), true)
-        opt
-    end
+    () -> DualOptimizer(SDPA.Optimizer(Mode=mode))
 end
 
 @info "Starting SDPA tests with Mode=PARAMETER_DEFAULT (dualized)"
