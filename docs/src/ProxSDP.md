@@ -2,13 +2,14 @@ Table of contents:
 
 ```@contents
 Pages = ["ProxSDP.md"]
+Depth = 4
 ```
 
 
-Compilation warmup estimates 16 seconds in compilation time.
+Compilation warmup estimates 18 seconds in compilation time.
 
 ## ProxSDP 
-These tests were run on March 3, 2020 at 00:19 (UTC).
+These tests were run on March 3, 2020 at 00:35 (UTC).
 
 Tests run with `tol_primal=1e-6` and `tol_dual=1e-6`.
 
@@ -19,7 +20,7 @@ Regex[r"mip", r"exp", r"benchmark"]
 
 ### Tests
 
-Tests took 1 minute, 16 seconds to run after warmup.
+Tests took 1 minute, 28 seconds to run after warmup.
 
 ```@raw html
 <table>
@@ -32,8 +33,8 @@ Tests took 1 minute, 16 seconds to run after warmup.
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">ProxSDP tests</td>
-<td style="text-align:center;color:green;">306</td>
-<td style="text-align:center;color:red;">86</td>
+<td style="text-align:center;color:green;">304</td>
+<td style="text-align:center;color:red;">88</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">392</td>
@@ -80,8 +81,8 @@ Tests took 1 minute, 16 seconds to run after warmup.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;affine</td>
-<td style="text-align:center;color:green;">120</td>
-<td style="text-align:center;color:red;">19</td>
+<td style="text-align:center;color:green;">118</td>
+<td style="text-align:center;color:red;">21</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">139</td>
@@ -182,8 +183,8 @@ Tests took 1 minute, 16 seconds to run after warmup.
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_reshape_atom</td>
-<td style="text-align:center;color:green;">7</td>
-<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;color:red;">4</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
@@ -532,17 +533,17 @@ Tests took 1 minute, 16 seconds to run after warmup.
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:16
   Expression: ≈(problem.optval, evaluate(sum(c * β)), atol=atol, rtol=rtol)
-   Evaluated: -21.051133894249975 ≈ -20.729123886172903 (atol=0.001, rtol=0.0)
+   Evaluated: -15.48856662050259 ≈ -15.564195623161014 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:17
   Expression: ≈(problem.optval, 0.0, atol=atol, rtol=rtol)
-   Evaluated: -21.051133894249975 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: -15.48856662050259 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:18
   Expression: ≈(β.value, zeros(5), atol=atol, rtol=rtol)
-   Evaluated: [-0.34172463074825515; -0.34172463074825515; … ; -0.34172463074825515; -0.34172463074825515] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-0.22865296533063106; -0.22865296533063106; … ; -0.22865296533063106; -0.22865296533063106] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_228:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:30
@@ -587,12 +588,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:194
   Expression: ≈(p.optval, s, atol=atol, rtol=rtol)
-   Evaluated: 14.404411950030834 ≈ 12.764063489560474 (atol=0.001, rtol=0.0)
+   Evaluated: 17.028629604482482 ≈ 12.774584912886667 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:195
   Expression: ≈((evaluate(c * x' * d + d' * x * c' + (c * ((((x')')')')' * d)'))[1], s, atol=atol, rtol=rtol)
-   Evaluated: 14.428906551671957 ≈ 12.764063489560474 (atol=0.001, rtol=0.0)
+   Evaluated: 17.20212127797245 ≈ 12.774584912886667 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:332
@@ -668,6 +669,16 @@ Error in testset affine_Diagonal_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:510
   Expression: ≈(p.optval, 21, atol=atol, rtol=rtol)
    Evaluated: 36.67649411479496 ≈ 21 (atol=0.001, rtol=0.0)
+
+Error in testset affine_reshape_atom:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:415
+  Expression: ≈(p.optval, sum(A .+ c), atol=atol, rtol=rtol)
+   Evaluated: 5.633374049957889 ≈ 5.632277813276024 (atol=0.001, rtol=0.0)
+
+Error in testset affine_reshape_atom:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:416
+  Expression: ≈(evaluate(sum(reshape(X, 2, 3) + A)), sum(A .+ c), atol=atol, rtol=rtol)
+   Evaluated: 5.633372805803871 ≈ 5.632277813276024 (atol=0.001, rtol=0.0)
 
 Error in testset affine_reshape_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:443
@@ -927,12 +938,12 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
   Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9453230109221584 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9459717707997497 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
   Expression: ≈(evaluate(maximum(max(x, y))), max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9816995794711068 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9806160660449484 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:183
@@ -967,95 +978,95 @@ Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/probl
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            77.0s / 98.4%           9.03GiB / 98.9%    
+       Tot / % measured:            89.1s / 98.3%           9.03GiB / 98.9%    
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- affine                     1    22.3s  29.5%   22.3s   2.68GiB  30.0%  2.68GiB
-   affine_Partial_t...      1    2.29s  3.02%   2.29s    281MiB  3.07%   281MiB
-   affine_permutedd...      1    2.21s  2.91%   2.21s    321MiB  3.51%   321MiB
-   affine_dot_multi...      1    1.80s  2.38%   1.80s    148MiB  1.61%   148MiB
-   affine_multiply_...      1    1.78s  2.35%   1.78s    214MiB  2.34%   214MiB
-   affine_transpose...      1    1.61s  2.13%   1.61s    173MiB  1.89%   173MiB
-   affine_hcat_atom         1    1.47s  1.95%   1.47s    174MiB  1.90%   174MiB
-   affine_vcat_atom         1    1.11s  1.46%   1.11s    106MiB  1.15%   106MiB
-   affine_Diagonal_...      1    957ms  1.26%   957ms    109MiB  1.19%   109MiB
-   affine_satisfy_p...      1    911ms  1.20%   911ms   57.4MiB  0.63%  57.4MiB
-   affine_add_atom          1    856ms  1.13%   856ms   67.3MiB  0.74%  67.3MiB
-   affine_conv_atom         1    695ms  0.92%   695ms   53.2MiB  0.58%  53.2MiB
-   affine_index_atom        1    465ms  0.61%   465ms   40.4MiB  0.44%  40.4MiB
-   affine_reshape_atom      1    462ms  0.61%   462ms   28.9MiB  0.32%  28.9MiB
-   affine_dot_atom          1    436ms  0.58%   436ms   19.8MiB  0.22%  19.8MiB
-   affine_dualvalue         1    343ms  0.45%   343ms   33.6MiB  0.37%  33.6MiB
-   affine_sum_atom          1    297ms  0.39%   297ms   31.8MiB  0.35%  31.8MiB
-   affine_kron_atom         1    241ms  0.32%   241ms   19.9MiB  0.22%  19.9MiB
-   affine_diag_atom         1    116ms  0.15%   116ms   14.5MiB  0.16%  14.5MiB
-   affine_dot_atom_...      1   87.1ms  0.12%  87.1ms   5.37MiB  0.06%  5.37MiB
-   affine_negate_atom       1   76.0ms  0.10%  76.0ms   3.88MiB  0.04%  3.88MiB
-   affine_trace_atom        1   39.5ms  0.05%  39.5ms   2.73MiB  0.03%  2.73MiB
- sdp                        1    19.3s  25.5%   19.3s   2.30GiB  25.7%  2.30GiB
-   sdp_operator_nor...      1    2.58s  3.41%   2.58s    265MiB  2.90%   265MiB
-   sdp_matrix_frac_...      1    2.31s  3.05%   2.31s    241MiB  2.64%   241MiB
-   sdp_Complex_Semi...      1    1.80s  2.38%   1.80s   84.3MiB  0.92%  84.3MiB
-   sdp_Partial_trace        1    1.80s  2.38%   1.80s    223MiB  2.44%   223MiB
-   sdp_sum_largest_...      1    1.33s  1.75%   1.33s    192MiB  2.09%   192MiB
-   sdp_sdp_constraints      1    1.25s  1.66%   1.25s    278MiB  3.04%   278MiB
-   sdp_matrix_frac_...      1    920ms  1.22%   920ms   84.0MiB  0.92%  84.0MiB
-   sdp_dual_lambda_...      1    710ms  0.94%   710ms   80.4MiB  0.88%  80.4MiB
-   sdp_Complex_Vari...      1    582ms  0.77%   582ms   35.7MiB  0.39%  35.7MiB
-   sdp_socp_sumsqua...      1    524ms  0.69%   524ms   53.6MiB  0.59%  53.6MiB
-   sdp_lambda_min_atom      1    426ms  0.56%   426ms   33.2MiB  0.36%  33.2MiB
-   sdp_kron_atom            1    398ms  0.53%   398ms   94.3MiB  1.03%  94.3MiB
-   sdp_nuclear_norm...      1    361ms  0.48%   361ms   42.5MiB  0.46%  42.5MiB
-   sdp_Issue_198            1    333ms  0.44%   333ms   38.2MiB  0.42%  38.2MiB
-   sdp_socp_norm2_atom      1    317ms  0.42%   317ms   23.4MiB  0.26%  23.4MiB
-   sdp_socp_abs_atom        1    214ms  0.28%   214ms   16.7MiB  0.18%  16.7MiB
-   sdp_sdp_variables        1    211ms  0.28%   211ms   27.7MiB  0.30%  27.7MiB
-   sdp_sigma_max_atom       1    207ms  0.27%   207ms   26.0MiB  0.28%  26.0MiB
-   sdp_Real_Variabl...      1    139ms  0.18%   139ms   6.15MiB  0.07%  6.15MiB
- socp                       1    18.1s  23.9%   18.1s   2.10GiB  23.5%  2.10GiB
-   socp_dual_minima...      1    4.38s  5.78%   4.38s    424MiB  4.64%   424MiB
-   socp_quad_form_atom      1    2.12s  2.80%   2.12s   34.4MiB  0.38%  34.4MiB
-   socp_rational_no...      1    1.29s  1.70%   1.29s    139MiB  1.52%   139MiB
-   socp_sum_squares...      1    1.00s  1.32%   1.00s    110MiB  1.20%   110MiB
-   socp_inv_pos_atom        1    671ms  0.89%   671ms   62.1MiB  0.68%  62.1MiB
-   socp_dual_norm_2...      1    653ms  0.86%   653ms   67.1MiB  0.73%  67.1MiB
-   socp_quad_over_l...      1    558ms  0.74%   558ms   31.0MiB  0.34%  31.0MiB
-   socp_rational_no...      1    545ms  0.72%   545ms   57.3MiB  0.63%  57.3MiB
-   socp_fix_multipl...      1    401ms  0.53%   401ms   33.6MiB  0.37%  33.6MiB
-   socp_huber_atom          1    398ms  0.53%   398ms   49.7MiB  0.54%  49.7MiB
-   socp_norm_consis...      1    298ms  0.39%   298ms   27.4MiB  0.30%  27.4MiB
-   socp_dual_froben...      1    284ms  0.37%   284ms   25.7MiB  0.28%  25.7MiB
-   socp_fix_and_fre...      1    282ms  0.37%   282ms   30.6MiB  0.33%  30.6MiB
-   socp_square_atom         1    280ms  0.37%   280ms   16.1MiB  0.18%  16.1MiB
-   socp_geo_mean_atom       1    258ms  0.34%   258ms   23.7MiB  0.26%  23.7MiB
-   socp_rational_no...      1    148ms  0.20%   148ms   10.0MiB  0.11%  10.0MiB
-   socp_sqrt_atom           1   39.5ms  0.05%  39.5ms   1.08MiB  0.01%  1.08MiB
- constant                   1    10.8s  14.3%   10.8s   1.26GiB  14.1%  1.26GiB
-   constant_Issue_166       1    5.04s  6.66%   5.04s    621MiB  6.79%   621MiB
-   constant_fix!_wi...      1    2.75s  3.63%   2.75s    269MiB  2.94%   269MiB
-   constant_Issue_228       1    655ms  0.86%   655ms   56.4MiB  0.62%  56.4MiB
-   constant_fix!_wi...      1    468ms  0.62%   468ms   44.9MiB  0.49%  44.9MiB
-   constant_fix!_an...      1    305ms  0.40%   305ms   41.7MiB  0.46%  41.7MiB
-   constant_Test_do...      1    260ms  0.34%   260ms   19.5MiB  0.21%  19.5MiB
- lp                         1    5.15s  6.81%   5.15s    607MiB  6.63%   607MiB
-   lp_dotsort_atom          1    925ms  1.22%   925ms   92.5MiB  1.01%  92.5MiB
-   lp_min_atom              1    499ms  0.66%   499ms   39.5MiB  0.43%  39.5MiB
-   lp_sumlargest_atom       1    474ms  0.63%   474ms   49.7MiB  0.54%  49.7MiB
-   lp_sumsmallest_atom      1    448ms  0.59%   448ms   46.1MiB  0.50%  46.1MiB
-   lp_max_atom              1    361ms  0.48%   361ms   32.9MiB  0.36%  32.9MiB
-   lp_minimum_atom          1    301ms  0.40%   301ms   27.7MiB  0.30%  27.7MiB
-   lp_dual_abs_atom         1    218ms  0.29%   218ms   19.0MiB  0.21%  19.0MiB
-   lp_neg_atom              1    177ms  0.23%   177ms   11.6MiB  0.13%  11.6MiB
-   lp_maximum_atom          1    168ms  0.22%   168ms   12.7MiB  0.14%  12.7MiB
-   lp_dual_norm_inf...      1   87.7ms  0.12%  87.7ms   3.91MiB  0.04%  3.91MiB
-   lp_pos_atom              1   74.7ms  0.10%  74.7ms   6.51MiB  0.07%  6.51MiB
-   lp_dual_norm_1_atom      1   55.8ms  0.07%  55.8ms   3.63MiB  0.04%  3.63MiB
-   lp_hinge_loss_atom       1    212μs  0.00%   212μs   49.7KiB  0.00%  49.7KiB
+ affine                     1    25.8s  29.5%   25.8s   2.68GiB  30.0%  2.68GiB
+   affine_Partial_t...      1    2.65s  3.03%   2.65s    281MiB  3.07%   281MiB
+   affine_permutedd...      1    2.49s  2.84%   2.49s    323MiB  3.52%   323MiB
+   affine_multiply_...      1    2.03s  2.32%   2.03s    214MiB  2.34%   214MiB
+   affine_dot_multi...      1    2.02s  2.31%   2.02s    148MiB  1.62%   148MiB
+   affine_transpose...      1    1.87s  2.13%   1.87s    173MiB  1.89%   173MiB
+   affine_hcat_atom         1    1.80s  2.06%   1.80s    174MiB  1.90%   174MiB
+   affine_vcat_atom         1    1.32s  1.51%   1.32s    106MiB  1.15%   106MiB
+   affine_Diagonal_...      1    1.11s  1.26%   1.11s    108MiB  1.19%   108MiB
+   affine_add_atom          1    1.04s  1.19%   1.04s   67.3MiB  0.74%  67.3MiB
+   affine_satisfy_p...      1    1.02s  1.16%   1.02s   57.4MiB  0.63%  57.4MiB
+   affine_conv_atom         1    821ms  0.94%   821ms   53.2MiB  0.58%  53.2MiB
+   affine_index_atom        1    574ms  0.66%   574ms   40.3MiB  0.44%  40.3MiB
+   affine_reshape_atom      1    544ms  0.62%   544ms   29.0MiB  0.32%  29.0MiB
+   affine_dot_atom          1    520ms  0.59%   520ms   19.8MiB  0.22%  19.8MiB
+   affine_dualvalue         1    406ms  0.46%   406ms   33.6MiB  0.37%  33.6MiB
+   affine_sum_atom          1    372ms  0.42%   372ms   31.7MiB  0.35%  31.7MiB
+   affine_kron_atom         1    267ms  0.30%   267ms   20.0MiB  0.22%  20.0MiB
+   affine_diag_atom         1    129ms  0.15%   129ms   14.5MiB  0.16%  14.5MiB
+   affine_dot_atom_...      1    105ms  0.12%   105ms   5.37MiB  0.06%  5.37MiB
+   affine_negate_atom       1   86.6ms  0.10%  86.6ms   3.88MiB  0.04%  3.88MiB
+   affine_trace_atom        1   43.0ms  0.05%  43.0ms   2.73MiB  0.03%  2.73MiB
+ sdp                        1    22.4s  25.6%   22.4s   2.30GiB  25.7%  2.30GiB
+   sdp_operator_nor...      1    3.05s  3.48%   3.05s    265MiB  2.90%   265MiB
+   sdp_matrix_frac_...      1    2.65s  3.02%   2.65s    241MiB  2.64%   241MiB
+   sdp_Partial_trace        1    2.21s  2.52%   2.21s    223MiB  2.44%   223MiB
+   sdp_Complex_Semi...      1    2.02s  2.31%   2.02s   82.8MiB  0.90%  82.8MiB
+   sdp_sum_largest_...      1    1.56s  1.78%   1.56s    192MiB  2.09%   192MiB
+   sdp_sdp_constraints      1    1.44s  1.65%   1.44s    278MiB  3.04%   278MiB
+   sdp_matrix_frac_...      1    1.12s  1.28%   1.12s   84.0MiB  0.92%  84.0MiB
+   sdp_dual_lambda_...      1    821ms  0.94%   821ms   80.4MiB  0.88%  80.4MiB
+   sdp_Complex_Vari...      1    717ms  0.82%   717ms   36.0MiB  0.39%  36.0MiB
+   sdp_socp_sumsqua...      1    594ms  0.68%   594ms   54.0MiB  0.59%  54.0MiB
+   sdp_lambda_min_atom      1    505ms  0.58%   505ms   33.2MiB  0.36%  33.2MiB
+   sdp_kron_atom            1    449ms  0.51%   449ms   94.3MiB  1.03%  94.3MiB
+   sdp_nuclear_norm...      1    421ms  0.48%   421ms   42.5MiB  0.46%  42.5MiB
+   sdp_Issue_198            1    381ms  0.43%   381ms   38.2MiB  0.42%  38.2MiB
+   sdp_socp_norm2_atom      1    337ms  0.38%   337ms   23.4MiB  0.26%  23.4MiB
+   sdp_socp_abs_atom        1    260ms  0.30%   260ms   16.7MiB  0.18%  16.7MiB
+   sdp_sdp_variables        1    251ms  0.29%   251ms   27.7MiB  0.30%  27.7MiB
+   sdp_sigma_max_atom       1    224ms  0.26%   224ms   26.0MiB  0.28%  26.0MiB
+   sdp_Real_Variabl...      1    136ms  0.16%   136ms   5.78MiB  0.06%  5.78MiB
+ socp                       1    20.8s  23.7%   20.8s   2.10GiB  23.5%  2.10GiB
+   socp_dual_minima...      1    4.90s  5.59%   4.90s    424MiB  4.64%   424MiB
+   socp_quad_form_atom      1    2.52s  2.87%   2.52s   34.4MiB  0.38%  34.4MiB
+   socp_rational_no...      1    1.42s  1.62%   1.42s    139MiB  1.52%   139MiB
+   socp_sum_squares...      1    1.16s  1.33%   1.16s    110MiB  1.20%   110MiB
+   socp_inv_pos_atom        1    842ms  0.96%   842ms   62.1MiB  0.68%  62.1MiB
+   socp_dual_norm_2...      1    757ms  0.86%   757ms   67.1MiB  0.73%  67.1MiB
+   socp_quad_over_l...      1    640ms  0.73%   640ms   30.7MiB  0.34%  30.7MiB
+   socp_rational_no...      1    624ms  0.71%   624ms   57.3MiB  0.63%  57.3MiB
+   socp_huber_atom          1    460ms  0.53%   460ms   49.8MiB  0.54%  49.8MiB
+   socp_fix_multipl...      1    454ms  0.52%   454ms   33.6MiB  0.37%  33.6MiB
+   socp_norm_consis...      1    375ms  0.43%   375ms   27.4MiB  0.30%  27.4MiB
+   socp_fix_and_fre...      1    363ms  0.41%   363ms   30.6MiB  0.33%  30.6MiB
+   socp_square_atom         1    337ms  0.38%   337ms   16.1MiB  0.18%  16.1MiB
+   socp_dual_froben...      1    327ms  0.37%   327ms   25.7MiB  0.28%  25.7MiB
+   socp_geo_mean_atom       1    295ms  0.34%   295ms   23.8MiB  0.26%  23.8MiB
+   socp_rational_no...      1    183ms  0.21%   183ms   10.0MiB  0.11%  10.0MiB
+   socp_sqrt_atom           1   47.0ms  0.05%  47.0ms   1.08MiB  0.01%  1.08MiB
+ constant                   1    12.5s  14.2%   12.5s   1.26GiB  14.1%  1.26GiB
+   constant_Issue_166       1    5.71s  6.52%   5.71s    620MiB  6.78%   620MiB
+   constant_fix!_wi...      1    3.19s  3.64%   3.19s    269MiB  2.94%   269MiB
+   constant_Issue_228       1    767ms  0.87%   767ms   56.4MiB  0.62%  56.4MiB
+   constant_fix!_wi...      1    540ms  0.62%   540ms   44.9MiB  0.49%  44.9MiB
+   constant_fix!_an...      1    358ms  0.41%   358ms   41.7MiB  0.46%  41.7MiB
+   constant_Test_do...      1    329ms  0.38%   329ms   19.5MiB  0.21%  19.5MiB
+ lp                         1    6.11s  6.97%   6.11s    607MiB  6.63%   607MiB
+   lp_dotsort_atom          1    1.08s  1.24%   1.08s   92.5MiB  1.01%  92.5MiB
+   lp_min_atom              1    579ms  0.66%   579ms   39.5MiB  0.43%  39.5MiB
+   lp_sumlargest_atom       1    546ms  0.62%   546ms   49.7MiB  0.54%  49.7MiB
+   lp_sumsmallest_atom      1    528ms  0.60%   528ms   46.1MiB  0.50%  46.1MiB
+   lp_max_atom              1    435ms  0.50%   435ms   32.9MiB  0.36%  32.9MiB
+   lp_minimum_atom          1    355ms  0.41%   355ms   27.7MiB  0.30%  27.7MiB
+   lp_dual_abs_atom         1    275ms  0.31%   275ms   19.0MiB  0.21%  19.0MiB
+   lp_neg_atom              1    215ms  0.25%   215ms   11.6MiB  0.13%  11.6MiB
+   lp_maximum_atom          1    198ms  0.23%   198ms   12.7MiB  0.14%  12.7MiB
+   lp_dual_norm_inf...      1    102ms  0.12%   102ms   3.91MiB  0.04%  3.91MiB
+   lp_pos_atom              1   95.1ms  0.11%  95.1ms   6.51MiB  0.07%  6.51MiB
+   lp_dual_norm_1_atom      1   70.7ms  0.08%  70.7ms   3.63MiB  0.04%  3.63MiB
+   lp_hinge_loss_atom       1    244μs  0.00%   244μs   49.7KiB  0.00%  49.7KiB
  ──────────────────────────────────────────────────────────────────────────────
 ```
 
-### Version information
+## Version information
 `versioninfo()`:
 ```julia
 Julia Version 1.3.1
