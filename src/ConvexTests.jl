@@ -66,13 +66,14 @@ function do_tests(name, opt; variant="", first = true, last = true, description 
 
             ```@contents
             Pages = ["$(name).md"]
+            Depth = 4
             ```
             """)
             println(io)
             println(io, "Compilation warmup estimates $(compilation_time) in compilation time.")
             println(io)
         end
-        
+
         println(io, "## $name $variant")
 
         datestr = Dates.format(Dates.now(Dates.UTC), "U d, Y at HH:MM")
@@ -114,7 +115,7 @@ function do_tests(name, opt; variant="", first = true, last = true, description 
         println(io, "```")
         println(io)
         if last
-            println(io, "### Version information")
+            println(io, "## Version information")
             println(io, "`versioninfo()`:")
             println(io, "```julia")
             versioninfo(io)
