@@ -20,6 +20,7 @@ end
 function _run_tests( handle_problem!::Function, 
                     problems::Union{Nothing, Vector{String}, Vector{Regex}} = nothing; 
                     exclude::Vector{Regex} = Regex[], T=Float64, atol=1e-3, rtol=0.0, to)
+    exclude = copy(exclude) # rebind the local variable
     push!(exclude, r"benchmark")
     for class in keys(PROBLEMS)
         any(occursin.(exclude, Ref(class))) && continue
@@ -95,7 +96,7 @@ function do_tests(name, opt; variant="", first = true, last = true, description 
         println(io)
         println(io, "### Tests")
         println(io)
-        println(io, "Tests took $(duration) to run after warmup.")
+        println(io, "Tests took $(duration) to run (after warmup).")
         println(io)
         println(io, "```@raw html")
         html_table(io, results; standalone = false)
