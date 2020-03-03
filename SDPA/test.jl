@@ -23,11 +23,7 @@ do_tests("SDPA", opt(PARAMETER_UNSTABLE_BUT_FAST); exclude = exclusions, variant
 do_tests("SDPA", opt(PARAMETER_STABLE_BUT_SLOW); exclude = exclusions, variant="`PARAMETER_STABLE_BUT_SLOW`", first = false, last = false)
 
 function dual_opt(mode)
-    () -> begin
-        opt = DualOptimizer(SDPA.Optimizer(Mode=mode))
-        MOI.set(opt, MOI.Silent(), true)
-        opt
-    end
+    () -> DualOptimizer(SDPA.Optimizer(Mode=mode))
 end
 
 @info "Starting SDPA tests with `Mode=PARAMETER_DEFAULT` (dualized)"
