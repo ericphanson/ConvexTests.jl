@@ -19,6 +19,9 @@ jobs:
           - ProxSDP
           - COSMO
           - Tulip
+          - SDPA
+          - CSDP
+          - SDPA_GMP
     steps:
       - uses: actions/checkout@v2
       - uses: julia-actions/setup-julia@v1
