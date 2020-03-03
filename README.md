@@ -25,3 +25,8 @@ more solvers, are welcome. The exclusion methodology I am using is as follows:
 Regarding the parameters, I am trying to use a single choice of parameters for
 the entire set of problems (as opposed to choosing different parameters for
 different problems).
+
+I added all open-source (and non-MATLAB-based) solvers from
+http://www.juliaopt.org/JuMP.jl/v0.21.1/installation/#Getting-Solvers-1, besides
+the LP and MILP-only ones. I am not opposed to adding commercial or MATLAB-based
+solvers, but I'm not sure if it's possible to get them to run on Github Actions.
