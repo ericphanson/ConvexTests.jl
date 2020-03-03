@@ -6,20 +6,20 @@ Depth = 4
 ```
 
 
-Compilation warmup estimates 20 seconds in compilation time.
+Compilation warmup estimates 18 seconds in compilation time.
 
 ## CSDP 
-These tests were run on March 3, 2020 at 01:43 (UTC).
+These tests were run on March 3, 2020 at 08:00 (UTC).
 
 
 Excluded problems and classes of problems:
 ```julia
-Regex[r"mip", r"socp", r"exp"]
+Regex[r"mip", r"socp", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 ```
 
 ### Tests
 
-Tests took 36 minutes, 28 seconds to run (after warmup).
+Tests took 48 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -32,11 +32,11 @@ Tests took 36 minutes, 28 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">CSDP tests</td>
-<td style="text-align:center;color:green;">263</td>
+<td style="text-align:center;color:green;">261</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:red;">7</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">270</td>
+<td style="text-align:center;color:blue;">268</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;constant</td>
 <td style="text-align:center;color:green;">28</td>
 <td style="text-align:center;">0</td>
@@ -182,11 +182,11 @@ Tests took 36 minutes, 28 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">62</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">35</td>
+<td style="text-align:center;color:green;">33</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:red;">6</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">41</td>
+<td style="text-align:center;color:blue;">39</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_matrix_frac_atom_both_arguments_variable</td>
 <td style="text-align:center;color:green;">1</td>
 <td style="text-align:center;">0</td>
@@ -229,12 +229,6 @@ Tests took 36 minutes, 28 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Semidefinite_constraint</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_lambda_min_atom</td>
 <td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
@@ -326,7 +320,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
    [30] macro expansion at ./util.jl:288 [inlined]
    [31] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::var"#3#4") at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
    [32] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last),Tuple{Array{Regex,1},Bool,Bool}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:9
+   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:11
    [34] include at ./boot.jl:328 [inlined]
    [35] include_relative(::Module, ::String) at ./loading.jl:1105
    [36] include(::Module, ::String) at ./Base.jl:31
@@ -371,7 +365,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
    [30] macro expansion at ./util.jl:288 [inlined]
    [31] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::var"#3#4") at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
    [32] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last),Tuple{Array{Regex,1},Bool,Bool}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:9
+   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:11
    [34] include at ./boot.jl:328 [inlined]
    [35] include_relative(::Module, ::String) at ./loading.jl:1105
    [36] include(::Module, ::String) at ./Base.jl:31
@@ -416,7 +410,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
    [30] macro expansion at ./util.jl:288 [inlined]
    [31] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::var"#3#4") at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
    [32] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last),Tuple{Array{Regex,1},Bool,Bool}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:9
+   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:11
    [34] include at ./boot.jl:328 [inlined]
    [35] include_relative(::Module, ::String) at ./loading.jl:1105
    [36] include(::Module, ::String) at ./Base.jl:31
@@ -461,7 +455,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
    [30] macro expansion at ./util.jl:288 [inlined]
    [31] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::var"#3#4") at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
    [32] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last),Tuple{Array{Regex,1},Bool,Bool}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:9
+   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:11
    [34] include at ./boot.jl:328 [inlined]
    [35] include_relative(::Module, ::String) at ./loading.jl:1105
    [36] include(::Module, ::String) at ./Base.jl:31
@@ -506,7 +500,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
    [30] macro expansion at ./util.jl:288 [inlined]
    [31] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::var"#3#4") at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
    [32] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last),Tuple{Array{Regex,1},Bool,Bool}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:9
+   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:11
    [34] include at ./boot.jl:328 [inlined]
    [35] include_relative(::Module, ::String) at ./loading.jl:1105
    [36] include(::Module, ::String) at ./Base.jl:31
@@ -551,7 +545,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
    [30] macro expansion at ./util.jl:288 [inlined]
    [31] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::var"#3#4") at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
    [32] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last),Tuple{Array{Regex,1},Bool,Bool}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:9
+   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:11
    [34] include at ./boot.jl:328 [inlined]
    [35] include_relative(::Module, ::String) at ./loading.jl:1105
    [36] include(::Module, ::String) at ./Base.jl:31
@@ -596,7 +590,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
    [30] macro expansion at ./util.jl:288 [inlined]
    [31] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::var"#3#4") at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
    [32] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last),Tuple{Array{Regex,1},Bool,Bool}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:9
+   [33] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:11
    [34] include at ./boot.jl:328 [inlined]
    [35] include_relative(::Module, ::String) at ./loading.jl:1105
    [36] include(::Module, ::String) at ./Base.jl:31
@@ -612,85 +606,84 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            2189s / 100%            6.66GiB / 99.3%    
+       Tot / % measured:            48.2s / 98.9%           6.00GiB / 99.2%    
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- sdp                        1    2146s  98.1%   2146s   2.01GiB  30.4%  2.01GiB
-   sdp_Complex_Semi...      1    2132s  97.5%   2132s    551MiB  8.14%   551MiB
-   sdp_operator_nor...      1    2.67s  0.12%   2.67s    259MiB  3.83%   259MiB
-   sdp_matrix_frac_...      1    2.20s  0.10%   2.20s    209MiB  3.09%   209MiB
-   sdp_matrix_frac_...      1    943ms  0.04%   943ms   78.9MiB  1.17%  78.9MiB
-   sdp_sum_largest_...      1    756ms  0.03%   756ms   54.4MiB  0.80%  54.4MiB
-   sdp_Partial_trace        1    700ms  0.03%   700ms   61.5MiB  0.91%  61.5MiB
-   sdp_dual_lambda_...      1    690ms  0.03%   690ms   71.9MiB  1.06%  71.9MiB
-   sdp_lambda_min_atom      1    654ms  0.03%   654ms   50.5MiB  0.75%  50.5MiB
-   sdp_Complex_Vari...      1    632ms  0.03%   632ms   36.7MiB  0.54%  36.7MiB
-   sdp_nuclear_norm...      1    360ms  0.02%   360ms   37.2MiB  0.55%  37.2MiB
-   sdp_Issue_198            1    336ms  0.02%   336ms   37.8MiB  0.56%  37.8MiB
-   sdp_sdp_variables        1    234ms  0.01%   234ms   24.1MiB  0.36%  24.1MiB
-   sdp_kron_atom            1    210ms  0.01%   210ms   22.0MiB  0.33%  22.0MiB
-   sdp_Real_Variabl...      1    132ms  0.01%   132ms   5.72MiB  0.08%  5.72MiB
-   sdp_sdp_constraints      1    126ms  0.01%   126ms   11.1MiB  0.16%  11.1MiB
-   sdp_sigma_max_atom       1    119ms  0.01%   119ms   14.0MiB  0.21%  14.0MiB
- affine                     1    26.2s  1.20%   26.2s   2.91GiB  44.0%  2.91GiB
-   affine_Partial_t...      1    4.23s  0.19%   4.23s    297MiB  4.38%   297MiB
-   affine_Diagonal_...      1    2.27s  0.10%   2.27s    233MiB  3.44%   233MiB
-   affine_permutedd...      1    2.20s  0.10%   2.20s    323MiB  4.78%   323MiB
-   affine_dot_multi...      1    1.98s  0.09%   1.98s    176MiB  2.60%   176MiB
-   affine_multiply_...      1    1.66s  0.08%   1.66s    212MiB  3.13%   212MiB
-   affine_hcat_atom         1    1.65s  0.08%   1.65s    185MiB  2.73%   185MiB
-   affine_transpose...      1    1.62s  0.07%   1.62s    173MiB  2.55%   173MiB
-   affine_vcat_atom         1    1.03s  0.05%   1.03s    100MiB  1.48%   100MiB
-   affine_add_atom          1    887ms  0.04%   887ms   67.6MiB  1.00%  67.6MiB
-   affine_satisfy_p...      1    885ms  0.04%   885ms   57.7MiB  0.85%  57.7MiB
-   affine_conv_atom         1    697ms  0.03%   697ms   54.3MiB  0.80%  54.3MiB
-   affine_index_atom        1    518ms  0.02%   518ms   40.8MiB  0.60%  40.8MiB
-   affine_dot_atom          1    496ms  0.02%   496ms   25.7MiB  0.38%  25.7MiB
-   affine_reshape_atom      1    450ms  0.02%   450ms   28.2MiB  0.42%  28.2MiB
-   affine_dualvalue         1    340ms  0.02%   340ms   33.7MiB  0.50%  33.7MiB
-   affine_sum_atom          1    317ms  0.01%   317ms   31.4MiB  0.46%  31.4MiB
-   affine_kron_atom         1    209ms  0.01%   209ms   20.0MiB  0.30%  20.0MiB
-   affine_diag_atom         1    113ms  0.01%   113ms   14.4MiB  0.21%  14.4MiB
-   affine_dot_atom_...      1   78.2ms  0.00%  78.2ms   5.04MiB  0.07%  5.04MiB
-   affine_negate_atom       1   69.2ms  0.00%  69.2ms   3.85MiB  0.06%  3.85MiB
-   affine_trace_atom        1   37.3ms  0.00%  37.3ms   2.68MiB  0.04%  2.68MiB
- constant                   1    8.52s  0.39%   8.52s   0.97GiB  14.7%  0.97GiB
-   constant_fix!_wi...      1    2.90s  0.13%   2.90s    287MiB  4.24%   287MiB
-   constant_Issue_166       1    2.62s  0.12%   2.62s    333MiB  4.92%   333MiB
-   constant_Issue_228       1    751ms  0.03%   751ms   64.8MiB  0.96%  64.8MiB
-   constant_fix!_wi...      1    472ms  0.02%   472ms   45.0MiB  0.66%  45.0MiB
-   constant_Test_do...      1    307ms  0.01%   307ms   19.2MiB  0.28%  19.2MiB
-   constant_fix!_an...      1    241ms  0.01%   241ms   21.4MiB  0.32%  21.4MiB
- lp                         1    6.87s  0.31%   6.87s    738MiB  10.9%   738MiB
-   lp_dotsort_atom          1    1.13s  0.05%   1.13s    112MiB  1.65%   112MiB
-   lp_min_atom              1    694ms  0.03%   694ms   46.9MiB  0.69%  46.9MiB
-   lp_max_atom              1    627ms  0.03%   627ms   38.1MiB  0.56%  38.1MiB
-   lp_dual_abs_atom         1    519ms  0.02%   519ms   61.4MiB  0.91%  61.4MiB
-   lp_sumlargest_atom       1    500ms  0.02%   500ms   51.2MiB  0.76%  51.2MiB
-   lp_sumsmallest_atom      1    481ms  0.02%   481ms   46.7MiB  0.69%  46.7MiB
-   lp_minimum_atom          1    300ms  0.01%   300ms   28.7MiB  0.42%  28.7MiB
-   lp_dual_norm_inf...      1    273ms  0.01%   273ms   23.6MiB  0.35%  23.6MiB
-   lp_neg_atom              1    271ms  0.01%   271ms   18.7MiB  0.28%  18.7MiB
-   lp_maximum_atom          1    179ms  0.01%   179ms   12.8MiB  0.19%  12.8MiB
-   lp_pos_atom              1   82.6ms  0.00%  82.6ms   6.42MiB  0.09%  6.42MiB
-   lp_dual_norm_1_atom      1   70.6ms  0.00%  70.6ms   3.67MiB  0.05%  3.67MiB
-   lp_hinge_loss_atom       1    227μs  0.00%   227μs   49.7KiB  0.00%  49.7KiB
+ affine                     1    23.2s  48.6%   23.2s   2.91GiB  48.8%  2.91GiB
+   affine_Partial_t...      1    3.86s  8.10%   3.86s    297MiB  4.87%   297MiB
+   affine_Diagonal_...      1    1.99s  4.18%   1.99s    233MiB  3.82%   233MiB
+   affine_permutedd...      1    1.97s  4.14%   1.97s    323MiB  5.29%   323MiB
+   affine_dot_multi...      1    1.70s  3.57%   1.70s    176MiB  2.89%   176MiB
+   affine_multiply_...      1    1.46s  3.05%   1.46s    212MiB  3.48%   212MiB
+   affine_transpose...      1    1.44s  3.01%   1.44s    173MiB  2.84%   173MiB
+   affine_hcat_atom         1    1.39s  2.92%   1.39s    185MiB  3.04%   185MiB
+   affine_vcat_atom         1    909ms  1.91%   909ms    100MiB  1.65%   100MiB
+   affine_add_atom          1    788ms  1.65%   788ms   67.6MiB  1.11%  67.6MiB
+   affine_satisfy_p...      1    769ms  1.61%   769ms   57.7MiB  0.95%  57.7MiB
+   affine_conv_atom         1    612ms  1.28%   612ms   54.3MiB  0.89%  54.3MiB
+   affine_index_atom        1    468ms  0.98%   468ms   40.8MiB  0.67%  40.8MiB
+   affine_dot_atom          1    423ms  0.89%   423ms   25.7MiB  0.42%  25.7MiB
+   affine_reshape_atom      1    399ms  0.84%   399ms   28.2MiB  0.46%  28.2MiB
+   affine_dualvalue         1    305ms  0.64%   305ms   33.7MiB  0.55%  33.7MiB
+   affine_sum_atom          1    293ms  0.61%   293ms   31.4MiB  0.51%  31.4MiB
+   affine_kron_atom         1    202ms  0.42%   202ms   20.0MiB  0.33%  20.0MiB
+   affine_diag_atom         1    105ms  0.22%   105ms   14.4MiB  0.24%  14.4MiB
+   affine_dot_atom_...      1   72.1ms  0.15%  72.1ms   5.04MiB  0.08%  5.04MiB
+   affine_negate_atom       1   63.9ms  0.13%  63.9ms   3.85MiB  0.06%  3.85MiB
+   affine_trace_atom        1   31.2ms  0.07%  31.2ms   2.68MiB  0.04%  2.68MiB
+ sdp                        1    11.6s  24.4%   11.6s   1.36GiB  22.8%  1.36GiB
+   sdp_operator_nor...      1    2.36s  4.96%   2.36s    259MiB  4.26%   259MiB
+   sdp_matrix_frac_...      1    1.94s  4.06%   1.94s    210MiB  3.45%   210MiB
+   sdp_matrix_frac_...      1    835ms  1.75%   835ms   78.9MiB  1.29%  78.9MiB
+   sdp_Partial_trace        1    665ms  1.39%   665ms   62.0MiB  1.02%  62.0MiB
+   sdp_dual_lambda_...      1    643ms  1.35%   643ms   77.0MiB  1.26%  77.0MiB
+   sdp_lambda_min_atom      1    615ms  1.29%   615ms   54.7MiB  0.90%  54.7MiB
+   sdp_sum_largest_...      1    582ms  1.22%   582ms   54.4MiB  0.89%  54.4MiB
+   sdp_Complex_Vari...      1    561ms  1.18%   561ms   36.7MiB  0.60%  36.7MiB
+   sdp_nuclear_norm...      1    335ms  0.70%   335ms   37.2MiB  0.61%  37.2MiB
+   sdp_Issue_198            1    329ms  0.69%   329ms   37.8MiB  0.62%  37.8MiB
+   sdp_sdp_variables        1    238ms  0.50%   238ms   24.1MiB  0.39%  24.1MiB
+   sdp_kron_atom            1    146ms  0.31%   146ms   22.0MiB  0.36%  22.0MiB
+   sdp_sdp_constraints      1    107ms  0.22%   107ms   11.1MiB  0.18%  11.1MiB
+   sdp_Real_Variabl...      1    104ms  0.22%   104ms   5.72MiB  0.09%  5.72MiB
+   sdp_sigma_max_atom       1    103ms  0.22%   103ms   14.0MiB  0.23%  14.0MiB
+ constant                   1    7.12s  14.9%   7.12s   0.97GiB  16.3%  0.97GiB
+   constant_fix!_wi...      1    2.41s  5.06%   2.41s    287MiB  4.70%   287MiB
+   constant_Issue_166       1    2.24s  4.69%   2.24s    333MiB  5.46%   333MiB
+   constant_Issue_228       1    585ms  1.23%   585ms   64.8MiB  1.06%  64.8MiB
+   constant_fix!_wi...      1    392ms  0.82%   392ms   45.0MiB  0.74%  45.0MiB
+   constant_Test_do...      1    239ms  0.50%   239ms   19.2MiB  0.32%  19.2MiB
+   constant_fix!_an...      1    221ms  0.46%   221ms   21.4MiB  0.35%  21.4MiB
+ lp                         1    5.76s  12.1%   5.76s    739MiB  12.1%   739MiB
+   lp_dotsort_atom          1    905ms  1.90%   905ms    112MiB  1.83%   112MiB
+   lp_min_atom              1    611ms  1.28%   611ms   47.0MiB  0.77%  47.0MiB
+   lp_max_atom              1    518ms  1.09%   518ms   38.3MiB  0.63%  38.3MiB
+   lp_dual_abs_atom         1    476ms  1.00%   476ms   61.4MiB  1.01%  61.4MiB
+   lp_sumlargest_atom       1    404ms  0.85%   404ms   51.2MiB  0.84%  51.2MiB
+   lp_sumsmallest_atom      1    387ms  0.81%   387ms   46.7MiB  0.77%  46.7MiB
+   lp_minimum_atom          1    279ms  0.58%   279ms   28.7MiB  0.47%  28.7MiB
+   lp_dual_norm_inf...      1    263ms  0.55%   263ms   23.6MiB  0.39%  23.6MiB
+   lp_neg_atom              1    187ms  0.39%   187ms   18.7MiB  0.31%  18.7MiB
+   lp_maximum_atom          1    163ms  0.34%   163ms   12.8MiB  0.21%  12.8MiB
+   lp_pos_atom              1   67.7ms  0.14%  67.7ms   6.42MiB  0.11%  6.42MiB
+   lp_dual_norm_1_atom      1   60.9ms  0.13%  60.9ms   3.67MiB  0.06%  3.67MiB
+   lp_hinge_loss_atom       1    216μs  0.00%   216μs   49.7KiB  0.00%  49.7KiB
  ──────────────────────────────────────────────────────────────────────────────
 ```
 
 ## CSDP (dualized)
-These tests were run on March 3, 2020 at 01:43 (UTC).
+These tests were run on March 3, 2020 at 08:00 (UTC).
 
 
 Excluded problems and classes of problems:
 ```julia
-Regex[r"mip", r"socp", r"exp"]
+Regex[r"mip", r"socp", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 ```
 
 ### Tests
 
-Tests took 7 seconds to run (after warmup).
+Tests took 27 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -703,107 +696,71 @@ Tests took 7 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">CSDP tests</td>
-<td style="text-align:center;color:green;">43</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">53</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">96</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;constant</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">275</td>
 <td style="text-align:center;color:red;">6</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">6</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_Issue_166</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">281</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;constant</td>
+<td style="text-align:center;color:green;">28</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_Issue_228</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_fix!_with_vectors</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_fix!_with_complex_numbers</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_Test_double_fix!</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant_fix!_and_multiply</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">28</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;affine</td>
-<td style="text-align:center;color:green;">23</td>
+<td style="text-align:center;color:green;">134</td>
+<td style="text-align:center;color:red;">5</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">19</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">42</td>
+<td style="text-align:center;color:blue;">139</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_satisfy_problems</td>
+<td style="text-align:center;color:green;">4</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">4</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_transpose_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_diag_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">6</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_conv_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">6</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dot_multiply_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">19</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">19</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_hcat_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">4</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_vcat_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">4</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_index_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_permuteddims_matrix</td>
 <td style="text-align:center;color:green;">4</td>
 <td style="text-align:center;">0</td>
@@ -811,59 +768,59 @@ Tests took 7 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">4</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_Partial_transpose</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_add_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dot_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dot_atom_for_matrix_variables</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dualvalue</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_Diagonal_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dot_atom_for_matrix_variables</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_dualvalue</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_Diagonal_atom</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_sum_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_reshape_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_multiply_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">12</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">12</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_kron_atom</td>
 <td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
@@ -871,2116 +828,154 @@ Tests took 7 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_trace_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine_negate_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">12</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">12</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">24</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_dual_abs_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_dual_norm_inf_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_hinge_loss_atom</td>
+<td style="text-align:center;color:green;">62</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_maximum_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_min_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_minimum_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_sumlargest_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_dotsort_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_max_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_neg_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_sumsmallest_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_pos_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_dual_norm_1_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;color:blue;">62</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">8</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">16</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">24</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_matrix_frac_atom_both_arguments_variable</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">51</td>
 <td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">52</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_matrix_frac_atom_both_arguments_variable</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Variable_with_complex_equality_constraints</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Variable_with_complex_equality_constraints</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_kron_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_nuclear_norm_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_sum_largest_eigs</td>
+<td style="text-align:center;color:green;">5</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_operator_norm_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Issue_198</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Semidefinite_constraint</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_lambda_min_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Partial_trace</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_Real_Variables_with_complex_equality_constraints</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
 <td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_sdp_constraints</td>
+<td style="text-align:center;color:green;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_sigma_max_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_dual_lambda_max_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">6</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_matrix_frac_atom</td>
-<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp_sdp_variables</td>
+<td style="text-align:center;color:green;">5</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">5</td>
 </tr></table>
 ```
 
 ### Errors
 
 ```julia
-Error in testset constant_Issue_166:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] constant_Issue_166(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:14
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.constant_Issue_166)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset constant_Issue_228:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] constant_Issue_228(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:28
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.constant_Issue_228)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset constant_fix!_with_vectors:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] constant_fix!_with_vectors(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:118
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.constant_fix!_with_vectors)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset constant_fix!_with_complex_numbers:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] constant_fix!_with_complex_numbers(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:85
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.constant_fix!_with_complex_numbers)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset constant_Test_double_fix!:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] constant_Test_double_fix!(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:47
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.constant_Test_double_fix!)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset constant_fix!_and_multiply:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] constant_fix!_and_multiply(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/constant.jl:72
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.constant_fix!_and_multiply)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_satisfy_problems:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_satisfy_problems(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:557
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_satisfy_problems)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_transpose_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_transpose_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:160
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_transpose_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_diag_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_diag_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:290
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_diag_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_conv_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_conv_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:530
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_conv_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_dot_multiply_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_dot_multiply_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:330
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_dot_multiply_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_hcat_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_hcat_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:456
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_hcat_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_vcat_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_vcat_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:474
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_vcat_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_index_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_index_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:206
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_index_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
+Error in testset affine_Partial_transpose:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:653
+  Expression: ≈(partialtranspose(S, 1, dims), evaluate(Rt1), atol=atol, rtol=rtol)
+   Evaluated: Complex{Float64}[0.4168772652974695 + 0.40626056263485877im 0.5003222434760328 + 0.0017441472394383872im … 0.12338269900891286 + 0.20144327844717935im 0.8636709833230121 + 0.13641990221738243im; 0.6816303796331287 + 0.9218063681727757im 0.6159314040320858 + 0.18911707968401537im … 0.7017672996587525 + 0.3883240533770207im 0.9869598960345329 + 0.914882208170529im; … ; 0.10587393366714237 + 0.75592425882885im 0.44121628555117565 + 0.4340161026886713im … 0.0031597006792369875 + 0.3335799882357917im 0.21000217068619143 + 0.15961632219920352im; 0.562473675694048 + 0.05749211163642132im 0.5212778700224308 + 0.16864661743336695im … 0.63039590864667 + 0.0800324317668133im 0.8660609291716397 + 0.23612098487582212im] ≈ Complex{Float64}[0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im; 0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im; … ; 0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im; 0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im] (atol=0.001, rtol=0.0)
 
 Error in testset affine_Partial_transpose:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_Partial_transpose(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:641
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_Partial_transpose)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:654
+  Expression: ≈(partialtranspose(S, 2, dims), evaluate(Rt2), atol=atol, rtol=rtol)
+   Evaluated: Complex{Float64}[0.4168772652974695 + 0.40626056263485877im 0.5003222434760328 + 0.0017441472394383872im … 0.9050910250567683 + 0.9016361742336196im 0.7966517813552292 + 0.27099990847924493im; 0.6816303796331287 + 0.9218063681727757im 0.6159314040320858 + 0.18911707968401537im … 0.8625998868382772 + 0.4321012510442488im 0.7009022165590264 + 0.31368782873790435im; … ; 0.7473753203076137 + 0.5093241907238191im 0.45223041225072813 + 0.6452859259564518im … 0.0031597006792369875 + 0.3335799882357917im 0.21000217068619143 + 0.15961632219920352im; 0.191071020317777 + 0.43534287170723407im 0.22834680591449907 + 0.7140851293184116im … 0.63039590864667 + 0.0800324317668133im 0.8660609291716397 + 0.23612098487582212im] ≈ Complex{Float64}[0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im; 0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im; … ; 0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im; 0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im] (atol=0.001, rtol=0.0)
+
+Error in testset affine_Partial_transpose:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:655
+  Expression: ≈(partialtranspose(S, 3, dims), evaluate(Rt3), atol=atol, rtol=rtol)
+   Evaluated: Complex{Float64}[0.4168772652974695 + 0.40626056263485877im 0.6816303796331287 + 0.9218063681727757im … 0.13957392081114128 + 0.7079141590990481im 0.18992459850979326 + 0.28496248143337466im; 0.5003222434760328 + 0.0017441472394383872im 0.6159314040320858 + 0.18911707968401537im … 0.5661864020363556 + 0.19737423074406646im 0.4340397430398597 + 0.1705707565663659im; … ; 0.6263738880004923 + 0.0702416249174429im 0.42942962058533696 + 0.8754844730019831im … 0.0031597006792369875 + 0.3335799882357917im 0.63039590864667 + 0.0800324317668133im; 0.12635771574135335 + 0.406370118434461im 0.2955448802381291 + 0.044846411986430024im … 0.21000217068619143 + 0.15961632219920352im 0.8660609291716397 + 0.23612098487582212im] ≈ Complex{Float64}[0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im; 0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im; … ; 0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im; 0.0 + 0.0im 0.0 + 0.0im … 0.0 + 0.0im 0.0 + 0.0im] (atol=0.001, rtol=0.0)
 
 Error in testset affine_add_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_add_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:121
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_add_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:147
+  Expression: ≈(p.optval, -6, atol=atol, rtol=rtol)
+   Evaluated: 2.2599987100379373 ≈ -6 (atol=0.001, rtol=0.0)
 
-Error in testset affine_dot_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_dot_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:92
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_dot_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_dot_atom_for_matrix_variables:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_dot_atom_for_matrix_variables(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:106
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_dot_atom_for_matrix_variables)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_dualvalue:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_dualvalue(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:593
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_dualvalue)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_Diagonal_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_Diagonal_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:495
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_Diagonal_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_sum_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_sum_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:251
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_sum_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_reshape_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_reshape_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:413
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_reshape_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_multiply_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_multiply_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:31
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_multiply_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_trace_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_trace_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:316
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_trace_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset affine_negate_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] affine_negate_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:8
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.affine_negate_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_dual_abs_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_dual_abs_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:8
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_dual_abs_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_dual_norm_inf_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_dual_norm_inf_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:238
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_dual_norm_inf_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_maximum_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_maximum_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:41
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_maximum_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_min_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_min_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:110
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_min_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_minimum_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_minimum_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:56
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_minimum_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_sumlargest_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_sumlargest_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:155
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_sumlargest_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_dotsort_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_dotsort_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:207
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_dotsort_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_max_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_max_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:91
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_max_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_neg_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_neg_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:141
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_neg_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_sumsmallest_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_sumsmallest_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:181
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_sumsmallest_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_pos_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_pos_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:127
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_pos_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset lp_dual_norm_1_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] lp_dual_norm_1_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:254
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.lp_dual_norm_1_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_matrix_frac_atom_both_arguments_variable:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_matrix_frac_atom_both_arguments_variable(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:176
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_matrix_frac_atom_both_arguments_variable)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_Complex_Variable_with_complex_equality_constraints:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_Complex_Variable_with_complex_equality_constraints(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:325
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_Complex_Variable_with_complex_equality_constraints)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_kron_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_kron_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:242
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_kron_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_nuclear_norm_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_nuclear_norm_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:80
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_nuclear_norm_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_sum_largest_eigs:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_sum_largest_eigs(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:187
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_sum_largest_eigs)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_operator_norm_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_operator_norm_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:94
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_operator_norm_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_Issue_198:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_Issue_198(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:349
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_Issue_198)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_Complex_Semidefinite_constraint:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_Complex_Semidefinite_constraint(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:423
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_Complex_Semidefinite_constraint)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_lambda_min_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_lambda_min_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:146
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_lambda_min_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_Partial_trace:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_Partial_trace(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:255
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_Partial_trace)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
+Error in testset affine_add_atom:
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/affine.jl:148
+  Expression: ≈(evaluate(y - 5), -6, atol=atol, rtol=rtol)
+   Evaluated: 2.259999032528243 ≈ -6 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_Real_Variables_with_complex_equality_constraints:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_Real_Variables_with_complex_equality_constraints(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:304
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_Real_Variables_with_complex_equality_constraints)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_sdp_constraints:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_sdp_constraints(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:67
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_sdp_constraints)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_sigma_max_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_sigma_max_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:108
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_sigma_max_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_dual_lambda_max_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_dual_lambda_max_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:122
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_dual_lambda_max_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_matrix_frac_atom:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_matrix_frac_atom(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:161
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_matrix_frac_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
-
-Error in testset sdp_sdp_variables:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:31
-  Got exception outside of a @test
-  MathOptInterface.UnsupportedAttribute{MathOptInterface.Silent}: Attribute MathOptInterface.Silent() is not supported by the model.
-  Stacktrace:
-   [1] #throw_set_error_fallback#14(::MathOptInterface.SetAttributeNotAllowed{MathOptInterface.Silent}, ::typeof(MathOptInterface.throw_set_error_fallback), ::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:386
-   [2] throw_set_error_fallback(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:383
-   [3] set(::DualOptimizer{Float64,MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{CSDP.Optimizer,Dualization.DualizableModel{Float64}}}}, ::MathOptInterface.Silent, ::Bool) at /home/runner/.julia/packages/MathOptInterface/XiH8D/src/attributes.jl:372
-   [4] dual_opt() at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:13
-   [5] #solve!#14(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Convex.solve!), ::Convex.Problem{Float64}, ::typeof(dual_opt)) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:193
-   [6] solve!(::Convex.Problem{Float64}, ::Function) at /home/runner/.julia/packages/Convex/IJj5u/src/solution.jl:192
-   [7] (::ConvexTests.var"#6#9"{typeof(dual_opt)})(::Convex.Problem{Float64}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:56
-   [8] sdp_sdp_variables(::ConvexTests.var"#6#9"{typeof(dual_opt)}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:7
-   [9] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
-   [10] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [11] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}})(::String, ::typeof(Convex.ProblemDepot.sdp_sdp_variables)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
-   [12] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var"#6#9"{typeof(dual_opt)}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
-   [13] (::Convex.ProblemDepot.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
-   [14] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [15] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
-   [16] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
-   [17] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
-   [18] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
-   [19] #_run_tests at ./none:0 [inlined] (repeats 2 times)
-   [20] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:55 [inlined] (repeats 2 times)
-   [21] macro expansion at ./util.jl:288 [inlined]
-   [22] #do_tests#5(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::typeof(dual_opt)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:53
-   [23] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :first, :last, :variant),Tuple{Array{Regex,1},Bool,Bool,String}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
-   [24] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/CSDP/test.jl:17
-   [25] include at ./boot.jl:328 [inlined]
-   [26] include_relative(::Module, ::String) at ./loading.jl:1105
-   [27] include(::Module, ::String) at ./Base.jl:31
-   [28] exec_options(::Base.JLOptions) at ./client.jl:287
-   [29] _start() at ./client.jl:460
-  
+Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/sdp.jl:312
+  Expression: x1 == x2
+   Evaluated: [0.5552379170660314; 0.08727421491081268; … ; 0.949151815142384; 0.861718498877385] == [0.555237917064329; 0.08727421492406955; … ; 0.9491518151534252; 0.8617184988745297]
 
 ```
 
@@ -2990,70 +985,69 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            6.90s / 100%             631MiB / 100%     
+       Tot / % measured:            27.8s / 97.9%           3.28GiB / 98.4%    
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- affine                     1    2.04s  29.6%   2.04s    162MiB  25.7%   162MiB
-   affine_dot_multi...      1   81.3ms  1.18%  81.3ms   4.76MiB  0.76%  4.76MiB
-   affine_Diagonal_...      1   79.9ms  1.16%  79.9ms   6.04MiB  0.96%  6.04MiB
-   affine_vcat_atom         1   74.8ms  1.08%  74.8ms   5.66MiB  0.90%  5.66MiB
-   affine_Partial_t...      1   73.6ms  1.07%  73.6ms   4.75MiB  0.75%  4.75MiB
-   affine_conv_atom         1   68.6ms  0.99%  68.6ms   4.79MiB  0.76%  4.79MiB
-   affine_diag_atom         1   68.3ms  0.99%  68.3ms   10.2MiB  1.63%  10.2MiB
-   affine_index_atom        1   65.6ms  0.95%  65.6ms   7.05MiB  1.12%  7.05MiB
-   affine_hcat_atom         1   59.4ms  0.86%  59.4ms   3.18MiB  0.50%  3.18MiB
-   affine_dot_atom          1   58.2ms  0.84%  58.2ms   4.72MiB  0.75%  4.72MiB
-   affine_reshape_atom      1   58.0ms  0.84%  58.0ms   3.17MiB  0.50%  3.17MiB
-   affine_transpose...      1   49.9ms  0.72%  49.9ms   2.52MiB  0.40%  2.52MiB
-   affine_add_atom          1   49.0ms  0.71%  49.0ms   1.73MiB  0.27%  1.73MiB
-   affine_trace_atom        1   48.1ms  0.70%  48.1ms   1.53MiB  0.24%  1.53MiB
-   affine_multiply_...      1   47.7ms  0.69%  47.7ms   1.69MiB  0.27%  1.69MiB
-   affine_sum_atom          1   47.1ms  0.68%  47.1ms   1.83MiB  0.29%  1.83MiB
-   affine_negate_atom       1   46.5ms  0.67%  46.5ms   1.08MiB  0.17%  1.08MiB
-   affine_dot_atom_...      1   45.8ms  0.66%  45.8ms   1.82MiB  0.29%  1.82MiB
-   affine_satisfy_p...      1   36.3ms  0.53%  36.3ms    654KiB  0.10%   654KiB
-   affine_dualvalue         1   34.4ms  0.50%  34.4ms    575KiB  0.09%   575KiB
-   affine_permutedd...      1   3.38ms  0.05%  3.38ms    151KiB  0.02%   151KiB
-   affine_kron_atom         1    209μs  0.00%   209μs   30.2KiB  0.00%  30.2KiB
- sdp                        1    2.03s  29.4%   2.03s    215MiB  34.2%   215MiB
-   sdp_nuclear_norm...      1    124ms  1.80%   124ms   16.7MiB  2.64%  16.7MiB
-   sdp_operator_nor...      1    110ms  1.60%   110ms   12.0MiB  1.91%  12.0MiB
-   sdp_sigma_max_atom       1   96.2ms  1.39%  96.2ms   12.1MiB  1.92%  12.1MiB
-   sdp_matrix_frac_...      1   85.1ms  1.23%  85.1ms   7.39MiB  1.17%  7.39MiB
-   sdp_matrix_frac_...      1   80.9ms  1.17%  80.9ms   7.98MiB  1.27%  7.98MiB
-   sdp_sdp_constraints      1   70.8ms  1.03%  70.8ms   7.83MiB  1.24%  7.83MiB
-   sdp_Complex_Vari...      1   69.6ms  1.01%  69.6ms   3.49MiB  0.55%  3.49MiB
-   sdp_dual_lambda_...      1   69.1ms  1.00%  69.1ms   7.52MiB  1.19%  7.52MiB
-   sdp_kron_atom            1   59.2ms  0.86%  59.2ms   4.38MiB  0.69%  4.38MiB
-   sdp_Real_Variabl...      1   57.6ms  0.83%  57.6ms   2.62MiB  0.42%  2.62MiB
-   sdp_Partial_trace        1   57.2ms  0.83%  57.2ms   6.00MiB  0.95%  6.00MiB
-   sdp_Issue_198            1   54.3ms  0.79%  54.3ms   3.56MiB  0.57%  3.56MiB
-   sdp_lambda_min_atom      1   50.2ms  0.73%  50.2ms   2.08MiB  0.33%  2.08MiB
-   sdp_sdp_variables        1   47.0ms  0.68%  47.0ms   3.76MiB  0.60%  3.76MiB
-   sdp_Complex_Semi...      1   44.1ms  0.64%  44.1ms   1.89MiB  0.30%  1.89MiB
-   sdp_sum_largest_...      1   42.9ms  0.62%  42.9ms   1.56MiB  0.25%  1.56MiB
- lp                         1    1.58s  22.9%   1.58s    185MiB  29.3%   185MiB
-   lp_max_atom              1    108ms  1.57%   108ms   11.9MiB  1.89%  11.9MiB
-   lp_min_atom              1    107ms  1.56%   107ms   11.9MiB  1.89%  11.9MiB
-   lp_dotsort_atom          1    100ms  1.44%   100ms   10.4MiB  1.66%  10.4MiB
-   lp_minimum_atom          1   83.0ms  1.20%  83.0ms   11.2MiB  1.79%  11.2MiB
-   lp_sumlargest_atom       1   72.6ms  1.05%  72.6ms   10.6MiB  1.68%  10.6MiB
-   lp_maximum_atom          1   68.2ms  0.99%  68.2ms   10.6MiB  1.69%  10.6MiB
-   lp_pos_atom              1   63.9ms  0.93%  63.9ms   4.73MiB  0.75%  4.73MiB
-   lp_sumsmallest_atom      1   58.2ms  0.84%  58.2ms   7.95MiB  1.26%  7.95MiB
-   lp_neg_atom              1   55.9ms  0.81%  55.9ms   2.80MiB  0.45%  2.80MiB
-   lp_dual_norm_inf...      1   48.5ms  0.70%  48.5ms   1.64MiB  0.26%  1.64MiB
-   lp_dual_norm_1_atom      1   48.0ms  0.70%  48.0ms   1.65MiB  0.26%  1.65MiB
-   lp_dual_abs_atom         1   44.8ms  0.65%  44.8ms   1.16MiB  0.18%  1.16MiB
-   lp_hinge_loss_atom       1   69.5μs  0.00%  69.5μs   21.4KiB  0.00%  21.4KiB
- constant                   1    1.25s  18.1%   1.25s   68.0MiB  10.8%  68.0MiB
-   constant_Issue_166       1    623ms  9.03%   623ms   22.6MiB  3.58%  22.6MiB
-   constant_Issue_228       1   73.0ms  1.06%  73.0ms   6.98MiB  1.11%  6.98MiB
-   constant_fix!_wi...      1   69.5ms  1.01%  69.5ms   2.91MiB  0.46%  2.91MiB
-   constant_fix!_wi...      1   65.1ms  0.94%  65.1ms   3.27MiB  0.52%  3.27MiB
-   constant_Test_do...      1   55.7ms  0.81%  55.7ms   1.60MiB  0.25%  1.60MiB
-   constant_fix!_an...      1   44.1ms  0.64%  44.1ms   1.93MiB  0.31%  1.93MiB
+ constant                   1    13.0s  47.8%   13.0s   1.38GiB  42.9%  1.38GiB
+   constant_Issue_166       1    12.3s  45.1%   12.3s   1.30GiB  40.4%  1.30GiB
+   constant_fix!_wi...      1    117ms  0.43%   117ms   9.34MiB  0.28%  9.34MiB
+   constant_fix!_wi...      1    111ms  0.41%   111ms   8.93MiB  0.27%  8.93MiB
+   constant_Issue_228       1   63.9ms  0.23%  63.9ms   8.82MiB  0.27%  8.82MiB
+   constant_Test_do...      1   61.2ms  0.22%  61.2ms   4.46MiB  0.14%  4.46MiB
+   constant_fix!_an...      1   36.2ms  0.13%  36.2ms   3.14MiB  0.09%  3.14MiB
+ affine                     1    6.11s  22.4%   6.11s    820MiB  24.8%   820MiB
+   affine_Partial_t...      1    2.35s  8.63%   2.35s    336MiB  10.2%   336MiB
+   affine_transpose...      1    349ms  1.28%   349ms   20.6MiB  0.62%  20.6MiB
+   affine_dot_multi...      1    287ms  1.05%   287ms   28.0MiB  0.85%  28.0MiB
+   affine_multiply_...      1    228ms  0.84%   228ms   24.7MiB  0.75%  24.7MiB
+   affine_reshape_atom      1    208ms  0.76%   208ms   15.7MiB  0.47%  15.7MiB
+   affine_index_atom        1    206ms  0.76%   206ms   23.7MiB  0.72%  23.7MiB
+   affine_sum_atom          1    174ms  0.64%   174ms   20.9MiB  0.63%  20.9MiB
+   affine_Diagonal_...      1    142ms  0.52%   142ms   18.9MiB  0.57%  18.9MiB
+   affine_add_atom          1    113ms  0.41%   113ms   8.94MiB  0.27%  8.94MiB
+   affine_dualvalue         1    102ms  0.37%   102ms   11.1MiB  0.34%  11.1MiB
+   affine_conv_atom         1   90.0ms  0.33%  90.0ms   8.49MiB  0.26%  8.49MiB
+   affine_diag_atom         1   82.3ms  0.30%  82.3ms   14.3MiB  0.43%  14.3MiB
+   affine_vcat_atom         1   81.9ms  0.30%  81.9ms   8.99MiB  0.27%  8.99MiB
+   affine_hcat_atom         1   65.7ms  0.24%  65.7ms   6.22MiB  0.19%  6.22MiB
+   affine_satisfy_p...      1   47.7ms  0.18%  47.7ms   4.39MiB  0.13%  4.39MiB
+   affine_dot_atom          1   46.5ms  0.17%  46.5ms   5.98MiB  0.18%  5.98MiB
+   affine_negate_atom       1   35.6ms  0.13%  35.6ms   2.44MiB  0.07%  2.44MiB
+   affine_trace_atom        1   30.5ms  0.11%  30.5ms   2.73MiB  0.08%  2.73MiB
+   affine_dot_atom_...      1   29.9ms  0.11%  29.9ms   3.06MiB  0.09%  3.06MiB
+   affine_permutedd...      1   16.6ms  0.06%  16.6ms    506KiB  0.01%   506KiB
+   affine_kron_atom         1    152μs  0.00%   152μs   30.2KiB  0.00%  30.2KiB
+ sdp                        1    5.25s  19.3%   5.25s    713MiB  21.6%   713MiB
+   sdp_matrix_frac_...      1    1.53s  5.60%   1.53s    166MiB  5.03%   166MiB
+   sdp_Partial_trace        1    1.30s  4.76%   1.30s    202MiB  6.13%   202MiB
+   sdp_sdp_variables        1    173ms  0.63%   173ms   23.5MiB  0.71%  23.5MiB
+   sdp_nuclear_norm...      1    165ms  0.61%   165ms   23.8MiB  0.72%  23.8MiB
+   sdp_dual_lambda_...      1    146ms  0.53%   146ms   22.3MiB  0.68%  22.3MiB
+   sdp_Real_Variabl...      1    131ms  0.48%   131ms   7.25MiB  0.22%  7.25MiB
+   sdp_Complex_Vari...      1    127ms  0.47%   127ms   8.38MiB  0.25%  8.38MiB
+   sdp_sum_largest_...      1    125ms  0.46%   125ms   11.6MiB  0.35%  11.6MiB
+   sdp_operator_nor...      1    115ms  0.42%   115ms   16.9MiB  0.51%  16.9MiB
+   sdp_matrix_frac_...      1    105ms  0.39%   105ms   13.0MiB  0.39%  13.0MiB
+   sdp_sigma_max_atom       1   81.7ms  0.30%  81.7ms   14.0MiB  0.42%  14.0MiB
+   sdp_Issue_198            1   59.3ms  0.22%  59.3ms   5.78MiB  0.18%  5.78MiB
+   sdp_sdp_constraints      1   56.6ms  0.21%  56.6ms   8.89MiB  0.27%  8.89MiB
+   sdp_kron_atom            1   39.6ms  0.15%  39.6ms   5.82MiB  0.18%  5.82MiB
+   sdp_lambda_min_atom      1   39.0ms  0.14%  39.0ms   3.77MiB  0.11%  3.77MiB
+ lp                         1    2.86s  10.5%   2.86s    353MiB  10.7%   353MiB
+   lp_max_atom              1    473ms  1.74%   473ms   21.3MiB  0.65%  21.3MiB
+   lp_min_atom              1    453ms  1.66%   453ms   21.4MiB  0.65%  21.4MiB
+   lp_minimum_atom          1    180ms  0.66%   180ms   19.8MiB  0.60%  19.8MiB
+   lp_sumlargest_atom       1    180ms  0.66%   180ms   32.6MiB  0.99%  32.6MiB
+   lp_dotsort_atom          1    173ms  0.63%   173ms   20.8MiB  0.63%  20.8MiB
+   lp_dual_abs_atom         1    144ms  0.53%   144ms   16.6MiB  0.50%  16.6MiB
+   lp_sumsmallest_atom      1    122ms  0.45%   122ms   20.3MiB  0.62%  20.3MiB
+   lp_pos_atom              1   63.8ms  0.23%  63.8ms   6.44MiB  0.20%  6.44MiB
+   lp_maximum_atom          1   57.5ms  0.21%  57.5ms   12.1MiB  0.37%  12.1MiB
+   lp_dual_norm_1_atom      1   57.4ms  0.21%  57.4ms   3.69MiB  0.11%  3.69MiB
+   lp_dual_norm_inf...      1   49.9ms  0.18%  49.9ms   3.76MiB  0.11%  3.76MiB
+   lp_neg_atom              1   43.7ms  0.16%  43.7ms   4.43MiB  0.13%  4.43MiB
+   lp_hinge_loss_atom       1   41.6μs  0.00%  41.6μs   21.4KiB  0.00%  21.4KiB
  ──────────────────────────────────────────────────────────────────────────────
 ```
 
