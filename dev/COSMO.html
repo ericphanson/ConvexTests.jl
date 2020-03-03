@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>COSMO · ConvexTests.jl</title><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/COSMO.html"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="assets/documenter.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-dark.css" data-theme-name="documenter-dark"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit">ConvexTests.jl</span></div><form class="docs-search" action="search.html"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="index.html">Home</a></li><li class="is-active"><a class="tocitem" href="COSMO.html">COSMO</a><ul class="internal"><li><a class="tocitem" href="#COSMO-1"><span>COSMO</span></a></li><li><a class="tocitem" href="#Version-information-1"><span>Version information</span></a></li></ul></li><li><a class="tocitem" href="CSDP.html">CSDP</a></li><li><a class="tocitem" href="ProxSDP.html">ProxSDP</a></li><li><a class="tocitem" href="SCS.html">SCS</a></li><li><a class="tocitem" href="SDPA.html">SDPA</a></li><li><a class="tocitem" href="SDPA_GMP.html">SDPA_GMP</a></li><li><a class="tocitem" href="SDPA_dual.html">SDPA_dual</a></li><li><a class="tocitem" href="Tulip.html">Tulip</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href="COSMO.html">COSMO</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href="COSMO.html">COSMO</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/COSMO.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><p>Table of contents:</p><ul><ul><li><a href="COSMO.html#COSMO-1">COSMO</a></li><ul><li><a href="COSMO.html#Tests-1">Tests</a></li><li><a href="COSMO.html#Errors-1">Errors</a></li><li><a href="COSMO.html#Timing-information-1">Timing information</a></li></ul><li><a href="COSMO.html#Version-information-1">Version information</a></li></ul></ul><p>Compilation warmup estimates 21 seconds in compilation time.</p><h2 id="COSMO-1"><a class="docs-heading-anchor" href="#COSMO-1">COSMO</a><a class="docs-heading-anchor-permalink" href="#COSMO-1" title="Permalink"></a></h2><p>These tests were run on March 3, 2020 at 08:00 (UTC).</p><p>Tests run with <code>eps_abs=1e-6</code> and <code>eps_rel=1e-6</code>.</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia">Regex[r&quot;mip&quot;, r&quot;dual&quot;]</code></pre><h3 id="Tests-1"><a class="docs-heading-anchor" href="#Tests-1">Tests</a><a class="docs-heading-anchor-permalink" href="#Tests-1" title="Permalink"></a></h3><p>Tests took 1 minute, 4 seconds to run (after warmup).</p><table>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>COSMO · ConvexTests.jl</title><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/COSMO.html"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="assets/documenter.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-dark.css" data-theme-name="documenter-dark"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit">ConvexTests.jl</span></div><form class="docs-search" action="search.html"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="index.html">Home</a></li><li class="is-active"><a class="tocitem" href="COSMO.html">COSMO</a><ul class="internal"><li><a class="tocitem" href="#COSMO-1"><span>COSMO</span></a></li><li><a class="tocitem" href="#Version-information-1"><span>Version information</span></a></li></ul></li><li><a class="tocitem" href="CSDP.html">CSDP</a></li><li><a class="tocitem" href="ProxSDP.html">ProxSDP</a></li><li><a class="tocitem" href="SCS.html">SCS</a></li><li><a class="tocitem" href="SDPA.html">SDPA</a></li><li><a class="tocitem" href="SDPA_GMP.html">SDPA_GMP</a></li><li><a class="tocitem" href="Tulip.html">Tulip</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href="COSMO.html">COSMO</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href="COSMO.html">COSMO</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/COSMO.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><p>Table of contents:</p><ul><ul><li><a href="COSMO.html#COSMO-1">COSMO</a></li><ul><li><a href="COSMO.html#Tests-1">Tests</a></li><li><a href="COSMO.html#Errors-1">Errors</a></li><li><a href="COSMO.html#Timing-information-1">Timing information</a></li></ul><li><a href="COSMO.html#Version-information-1">Version information</a></li></ul></ul><p>Compilation warmup estimates 27 seconds in compilation time.</p><h2 id="COSMO-1"><a class="docs-heading-anchor" href="#COSMO-1">COSMO</a><a class="docs-heading-anchor-permalink" href="#COSMO-1" title="Permalink"></a></h2><p>These tests were run on March 3, 2020 at 12:14 (UTC).</p><p>Tests run with <code>eps_abs=1e-6</code> and <code>eps_rel=1e-6</code>.</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia">Regex[r&quot;mip&quot;, r&quot;dual&quot;]</code></pre><h3 id="Tests-1"><a class="docs-heading-anchor" href="#Tests-1">Tests</a><a class="docs-heading-anchor-permalink" href="#Tests-1" title="Permalink"></a></h3><p>Tests took 1 minute, 13 seconds to run (after warmup).</p><table>
 <tr class="header">
 <td style="text-align:left;border-right: solid 2px;">testset</td>
 <td style="text-align:center;">pass</td>
@@ -9,9 +9,9 @@
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">COSMO tests</td>
-<td style="text-align:center;color:green;">328</td>
+<td style="text-align:center;color:green;">327</td>
 <td style="text-align:center;color:red;">2</td>
-<td style="text-align:center;color:red;">7</td>
+<td style="text-align:center;color:red;">8</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">337</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;constant</td>
@@ -117,9 +117,9 @@
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">8</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">37</td>
+<td style="text-align:center;color:green;">36</td>
 <td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">40</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_hinge_loss_atom</td>
@@ -135,9 +135,9 @@
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_min_atom</td>
-<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp_minimum_atom</td>
@@ -336,6 +336,29 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
    [22] _start() at ./client.jl:460
   
 
+Error in testset lp_min_atom:
+Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:115
+  Test threw exception
+  Expression: ≈(evaluate(minimum(min(x, y))), min(min_a, min_b), atol=10atol, atol=atol, rtol=rtol)
+  Value of the variable is yet to be calculated
+  Stacktrace:
+   [1] error(::String) at ./error.jl:33
+   [2] evaluate(::Convex.Variable) at /home/runner/.julia/packages/Convex/IJj5u/src/variable.jl:58
+   [3] evaluate(::Convex.MinAtom) at /home/runner/.julia/packages/Convex/IJj5u/src/atoms/lp_cone/min.jl:61
+   [4] evaluate(::Convex.MinimumAtom) at /home/runner/.julia/packages/Convex/IJj5u/src/atoms/lp_cone/minimum.jl:42
+   [5] lp_min_atom(::ConvexTests.var&quot;#6#9&quot;{var&quot;#3#4&quot;}, ::Val{true}, ::Float64, ::Float64, ::Type{Float64}) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:115
+   [6] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:32 [inlined] (repeats 2 times)
+   [7] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
+   [8] (::ConvexTests.var&quot;#3#4&quot;{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var&quot;#6#9&quot;{var&quot;#3#4&quot;}})(::String, ::typeof(Convex.ProblemDepot.lp_min_atom)) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:30
+   [9] #foreach_problem#2(::Array{Regex,1}, ::typeof(Convex.ProblemDepot.foreach_problem), ::ConvexTests.var&quot;#3#4&quot;{DataType,Float64,Float64,TimerOutputs.TimerOutput,ConvexTests.var&quot;#6#9&quot;{var&quot;#3#4&quot;}}, ::String, ::Nothing) at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problem_depot.jl:80
+   [10] (::Convex.ProblemDepot.var&quot;#kw##foreach_problem&quot;)(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(Convex.ProblemDepot.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
+   [11] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
+   [12] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
+   [13] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:29 [inlined]
+   [14] macro expansion at /home/runner/.julia/packages/TimerOutputs/7Id5J/src/TimerOutput.jl:214 [inlined]
+   [15] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:27
+  
+
 Error in testset lp_minimum_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:59
   Test threw exception
@@ -361,7 +384,7 @@ Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:95
   Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 1.002630877579913 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.960355195304193 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Error During Test at /home/runner/.julia/packages/Convex/IJj5u/src/problem_depot/problems/lp.jl:96
@@ -569,92 +592,92 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
 </code></pre><h3 id="Timing-information-1"><a class="docs-heading-anchor" href="#Timing-information-1">Timing information</a><a class="docs-heading-anchor-permalink" href="#Timing-information-1" title="Permalink"></a></h3><pre><code class="language-julia"> ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            64.4s / 98.1%           7.82GiB / 98.7%    
+       Tot / % measured:            74.3s / 98.1%           7.81GiB / 98.7%    
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- affine                     1    19.9s  31.5%   19.9s   2.59GiB  33.6%  2.59GiB
-   affine_Partial_t...      1    2.07s  3.28%   2.07s    281MiB  3.56%   281MiB
-   affine_permutedd...      1    2.01s  3.18%   2.01s    322MiB  4.07%   322MiB
-   affine_multiply_...      1    1.59s  2.51%   1.59s    212MiB  2.68%   212MiB
-   affine_dot_multi...      1    1.54s  2.43%   1.54s    148MiB  1.87%   148MiB
-   affine_transpose...      1    1.40s  2.21%   1.40s    170MiB  2.15%   170MiB
-   affine_hcat_atom         1    1.33s  2.11%   1.33s    169MiB  2.13%   169MiB
-   affine_Diagonal_...      1    961ms  1.52%   961ms    113MiB  1.43%   113MiB
-   affine_vcat_atom         1    912ms  1.44%   912ms   99.5MiB  1.26%  99.5MiB
-   affine_add_atom          1    847ms  1.34%   847ms   67.5MiB  0.85%  67.5MiB
-   affine_satisfy_p...      1    829ms  1.31%   829ms   57.6MiB  0.73%  57.6MiB
-   affine_conv_atom         1    641ms  1.01%   641ms   53.0MiB  0.67%  53.0MiB
-   affine_index_atom        1    415ms  0.66%   415ms   40.3MiB  0.51%  40.3MiB
-   affine_dot_atom          1    410ms  0.65%   410ms   19.2MiB  0.24%  19.2MiB
-   affine_reshape_atom      1    374ms  0.59%   374ms   28.0MiB  0.35%  28.0MiB
-   affine_sum_atom          1    269ms  0.43%   269ms   31.2MiB  0.40%  31.2MiB
-   affine_kron_atom         1    182ms  0.29%   182ms   19.9MiB  0.25%  19.9MiB
-   affine_diag_atom         1    107ms  0.17%   107ms   14.3MiB  0.18%  14.3MiB
-   affine_dot_atom_...      1   77.8ms  0.12%  77.8ms   5.02MiB  0.06%  5.02MiB
-   affine_negate_atom       1   68.9ms  0.11%  68.9ms   3.89MiB  0.05%  3.89MiB
-   affine_trace_atom        1   31.7ms  0.05%  31.7ms   2.68MiB  0.03%  2.68MiB
- sdp                        1    13.0s  20.5%   13.0s   1.34GiB  17.4%  1.34GiB
-   sdp_operator_nor...      1    3.50s  5.54%   3.50s    314MiB  3.97%   314MiB
-   sdp_Complex_Semi...      1    969ms  1.53%   969ms   26.2MiB  0.33%  26.2MiB
-   sdp_matrix_frac_...      1    851ms  1.35%   851ms   81.5MiB  1.03%  81.5MiB
-   sdp_matrix_frac_...      1    695ms  1.10%   695ms   68.3MiB  0.86%  68.3MiB
-   sdp_Partial_trace        1    629ms  1.00%   629ms   60.2MiB  0.76%  60.2MiB
-   sdp_Complex_Vari...      1    614ms  0.97%   614ms   41.0MiB  0.52%  41.0MiB
-   sdp_sum_largest_...      1    576ms  0.91%   576ms   46.5MiB  0.59%  46.5MiB
-   sdp_socp_sumsqua...      1    487ms  0.77%   487ms   53.6MiB  0.68%  53.6MiB
-   sdp_lambda_min_atom      1    436ms  0.69%   436ms   42.3MiB  0.54%  42.3MiB
-   sdp_socp_norm2_atom      1    278ms  0.44%   278ms   24.5MiB  0.31%  24.5MiB
-   sdp_Issue_198            1    278ms  0.44%   278ms   37.6MiB  0.48%  37.6MiB
-   sdp_socp_abs_atom        1    274ms  0.43%   274ms   23.6MiB  0.30%  23.6MiB
-   sdp_nuclear_norm...      1    261ms  0.41%   261ms   31.2MiB  0.39%  31.2MiB
-   sdp_sdp_variables        1    178ms  0.28%   178ms   23.7MiB  0.30%  23.7MiB
-   sdp_sdp_constraints      1    158ms  0.25%   158ms   13.1MiB  0.17%  13.1MiB
-   sdp_kron_atom            1    110ms  0.17%   110ms   19.6MiB  0.25%  19.6MiB
-   sdp_sigma_max_atom       1    106ms  0.17%   106ms   13.8MiB  0.17%  13.8MiB
-   sdp_Real_Variabl...      1   72.8ms  0.12%  72.8ms   5.35MiB  0.07%  5.35MiB
- socp                       1    12.6s  20.0%   12.6s   1.64GiB  21.3%  1.64GiB
-   socp_quad_form_atom      1    2.00s  3.17%   2.00s   33.5MiB  0.42%  33.5MiB
-   socp_sum_squares...      1    1.93s  3.06%   1.93s    231MiB  2.93%   231MiB
-   socp_rational_no...      1    1.89s  2.99%   1.89s    202MiB  2.56%   202MiB
-   socp_inv_pos_atom        1    650ms  1.03%   650ms   67.8MiB  0.86%  67.8MiB
-   socp_fix_multipl...      1    543ms  0.86%   543ms   46.3MiB  0.59%  46.3MiB
-   socp_huber_atom          1    535ms  0.85%   535ms   74.7MiB  0.94%  74.7MiB
-   socp_quad_over_l...      1    513ms  0.81%   513ms   30.4MiB  0.38%  30.4MiB
-   socp_norm_consis...      1    449ms  0.71%   449ms   33.9MiB  0.43%  33.9MiB
-   socp_rational_no...      1    330ms  0.52%   330ms   32.6MiB  0.41%  32.6MiB
-   socp_geo_mean_atom       1    254ms  0.40%   254ms   24.4MiB  0.31%  24.4MiB
-   socp_fix_and_fre...      1    234ms  0.37%   234ms   30.3MiB  0.38%  30.3MiB
-   socp_square_atom         1    218ms  0.34%   218ms   14.7MiB  0.19%  14.7MiB
-   socp_sqrt_atom           1   35.0ms  0.06%  35.0ms   1.08MiB  0.01%  1.08MiB
- constant                   1    7.27s  11.5%   7.27s    930MiB  11.8%   930MiB
-   constant_fix!_wi...      1    2.50s  3.96%   2.50s    266MiB  3.36%   266MiB
-   constant_Issue_166       1    2.36s  3.74%   2.36s    339MiB  4.29%   339MiB
-   constant_Issue_228       1    525ms  0.83%   525ms   52.4MiB  0.66%  52.4MiB
-   constant_fix!_wi...      1    423ms  0.67%   423ms   44.6MiB  0.56%  44.6MiB
-   constant_fix!_an...      1    260ms  0.41%   260ms   22.0MiB  0.28%  22.0MiB
-   constant_Test_do...      1    253ms  0.40%   253ms   19.1MiB  0.24%  19.1MiB
- lp                         1    5.83s  9.24%   5.83s    745MiB  9.43%   745MiB
-   lp_max_atom              1    1.36s  2.15%   1.36s    187MiB  2.36%   187MiB
-   lp_minimum_atom          1    1.03s  1.64%   1.03s   92.6MiB  1.17%  92.6MiB
-   lp_dotsort_atom          1    820ms  1.30%   820ms   93.8MiB  1.19%  93.8MiB
-   lp_min_atom              1    451ms  0.71%   451ms   39.8MiB  0.50%  39.8MiB
-   lp_sumlargest_atom       1    432ms  0.68%   432ms   49.0MiB  0.62%  49.0MiB
-   lp_maximum_atom          1    232ms  0.37%   232ms   18.4MiB  0.23%  18.4MiB
-   lp_sumsmallest_atom      1    191ms  0.30%   191ms   22.2MiB  0.28%  22.2MiB
-   lp_neg_atom              1    160ms  0.25%   160ms   11.6MiB  0.15%  11.6MiB
-   lp_pos_atom              1   62.3ms  0.10%  62.3ms   6.34MiB  0.08%  6.34MiB
-   lp_hinge_loss_atom       1    178μs  0.00%   178μs   49.7KiB  0.00%  49.7KiB
- exp                        1    2.98s  4.71%   2.98s    338MiB  4.28%   338MiB
-   exp_log_atom             1    1.21s  1.92%   1.21s    129MiB  1.63%   129MiB
-   exp_entropy_atom         1    367ms  0.58%   367ms   37.4MiB  0.47%  37.4MiB
-   exp_log_sum_exp_...      1    212ms  0.34%   212ms   22.2MiB  0.28%  22.2MiB
-   exp_exp_atom             1    210ms  0.33%   210ms   18.8MiB  0.24%  18.8MiB
-   exp_log_perspect...      1    186ms  0.29%   186ms   20.1MiB  0.25%  20.1MiB
-   exp_logistic_los...      1    174ms  0.27%   174ms   14.2MiB  0.18%  14.2MiB
-   exp_relative_ent...      1   47.4ms  0.08%  47.4ms   5.33MiB  0.07%  5.33MiB
- sdp_and_exp                1    1.63s  2.58%   1.63s    182MiB  2.31%   182MiB
-   sdp_and_exp_log_...      1    1.55s  2.46%   1.55s    167MiB  2.11%   167MiB
+ affine                     1    22.6s  31.0%   22.6s   2.59GiB  33.6%  2.59GiB
+   affine_Partial_t...      1    2.36s  3.24%   2.36s    281MiB  3.56%   281MiB
+   affine_permutedd...      1    2.23s  3.06%   2.23s    322MiB  4.08%   322MiB
+   affine_dot_multi...      1    1.81s  2.48%   1.81s    148MiB  1.87%   148MiB
+   affine_multiply_...      1    1.76s  2.41%   1.76s    212MiB  2.69%   212MiB
+   affine_transpose...      1    1.68s  2.30%   1.68s    170MiB  2.16%   170MiB
+   affine_hcat_atom         1    1.53s  2.09%   1.53s    169MiB  2.14%   169MiB
+   affine_Diagonal_...      1    1.12s  1.54%   1.12s    113MiB  1.43%   113MiB
+   affine_vcat_atom         1    1.03s  1.41%   1.03s   99.5MiB  1.26%  99.5MiB
+   affine_satisfy_p...      1    962ms  1.32%   962ms   57.6MiB  0.73%  57.6MiB
+   affine_add_atom          1    933ms  1.28%   933ms   67.5MiB  0.86%  67.5MiB
+   affine_conv_atom         1    697ms  0.96%   697ms   53.0MiB  0.67%  53.0MiB
+   affine_index_atom        1    515ms  0.71%   515ms   40.3MiB  0.51%  40.3MiB
+   affine_dot_atom          1    481ms  0.66%   481ms   19.2MiB  0.24%  19.2MiB
+   affine_reshape_atom      1    455ms  0.62%   455ms   28.0MiB  0.36%  28.0MiB
+   affine_sum_atom          1    291ms  0.40%   291ms   31.2MiB  0.40%  31.2MiB
+   affine_kron_atom         1    213ms  0.29%   213ms   19.9MiB  0.25%  19.9MiB
+   affine_diag_atom         1    124ms  0.17%   124ms   14.3MiB  0.18%  14.3MiB
+   affine_dot_atom_...      1   84.4ms  0.12%  84.4ms   5.02MiB  0.06%  5.02MiB
+   affine_negate_atom       1   73.7ms  0.10%  73.7ms   3.89MiB  0.05%  3.89MiB
+   affine_trace_atom        1   39.5ms  0.05%  39.5ms   2.68MiB  0.03%  2.68MiB
+ sdp                        1    15.2s  20.9%   15.2s   1.34GiB  17.4%  1.34GiB
+   sdp_operator_nor...      1    4.08s  5.59%   4.08s    314MiB  3.98%   314MiB
+   sdp_Complex_Semi...      1    1.26s  1.73%   1.26s   26.3MiB  0.33%  26.3MiB
+   sdp_matrix_frac_...      1    961ms  1.32%   961ms   81.5MiB  1.03%  81.5MiB
+   sdp_matrix_frac_...      1    832ms  1.14%   832ms   68.1MiB  0.86%  68.1MiB
+   sdp_Complex_Vari...      1    790ms  1.08%   790ms   41.0MiB  0.52%  41.0MiB
+   sdp_sum_largest_...      1    723ms  0.99%   723ms   46.5MiB  0.59%  46.5MiB
+   sdp_Partial_trace        1    671ms  0.92%   671ms   60.2MiB  0.76%  60.2MiB
+   sdp_lambda_min_atom      1    541ms  0.74%   541ms   42.5MiB  0.54%  42.5MiB
+   sdp_socp_sumsqua...      1    521ms  0.71%   521ms   53.6MiB  0.68%  53.6MiB
+   sdp_socp_norm2_atom      1    359ms  0.49%   359ms   24.5MiB  0.31%  24.5MiB
+   sdp_Issue_198            1    330ms  0.45%   330ms   37.5MiB  0.48%  37.5MiB
+   sdp_nuclear_norm...      1    300ms  0.41%   300ms   31.2MiB  0.39%  31.2MiB
+   sdp_socp_abs_atom        1    267ms  0.37%   267ms   23.6MiB  0.30%  23.6MiB
+   sdp_sdp_variables        1    228ms  0.31%   228ms   23.7MiB  0.30%  23.7MiB
+   sdp_sdp_constraints      1    169ms  0.23%   169ms   13.1MiB  0.17%  13.1MiB
+   sdp_kron_atom            1    134ms  0.18%   134ms   19.6MiB  0.25%  19.6MiB
+   sdp_sigma_max_atom       1    122ms  0.17%   122ms   13.8MiB  0.17%  13.8MiB
+   sdp_Real_Variabl...      1   88.6ms  0.12%  88.6ms   5.37MiB  0.07%  5.37MiB
+ socp                       1    14.8s  20.3%   14.8s   1.64GiB  21.3%  1.64GiB
+   socp_quad_form_atom      1    2.33s  3.19%   2.33s   33.5MiB  0.42%  33.5MiB
+   socp_rational_no...      1    2.20s  3.01%   2.20s    202MiB  2.55%   202MiB
+   socp_sum_squares...      1    2.10s  2.87%   2.10s    231MiB  2.93%   231MiB
+   socp_fix_multipl...      1    809ms  1.11%   809ms   46.3MiB  0.59%  46.3MiB
+   socp_inv_pos_atom        1    742ms  1.02%   742ms   67.8MiB  0.86%  67.8MiB
+   socp_huber_atom          1    686ms  0.94%   686ms   74.7MiB  0.95%  74.7MiB
+   socp_quad_over_l...      1    557ms  0.76%   557ms   30.4MiB  0.39%  30.4MiB
+   socp_norm_consis...      1    503ms  0.69%   503ms   33.9MiB  0.43%  33.9MiB
+   socp_rational_no...      1    362ms  0.50%   362ms   32.8MiB  0.41%  32.8MiB
+   socp_geo_mean_atom       1    297ms  0.41%   297ms   24.4MiB  0.31%  24.4MiB
+   socp_square_atom         1    267ms  0.37%   267ms   14.7MiB  0.19%  14.7MiB
+   socp_fix_and_fre...      1    248ms  0.34%   248ms   30.3MiB  0.38%  30.3MiB
+   socp_sqrt_atom           1   40.0ms  0.05%  40.0ms   1.08MiB  0.01%  1.08MiB
+ constant                   1    8.39s  11.5%   8.39s    930MiB  11.8%   930MiB
+   constant_Issue_166       1    2.88s  3.95%   2.88s    339MiB  4.30%   339MiB
+   constant_fix!_wi...      1    2.84s  3.89%   2.84s    266MiB  3.36%   266MiB
+   constant_Issue_228       1    618ms  0.85%   618ms   52.4MiB  0.66%  52.4MiB
+   constant_fix!_wi...      1    481ms  0.66%   481ms   44.6MiB  0.57%  44.6MiB
+   constant_Test_do...      1    279ms  0.38%   279ms   19.1MiB  0.24%  19.1MiB
+   constant_fix!_an...      1    226ms  0.31%   226ms   22.0MiB  0.28%  22.0MiB
+ lp                         1    6.66s  9.13%   6.66s    737MiB  9.33%   737MiB
+   lp_max_atom              1    1.55s  2.12%   1.55s    186MiB  2.36%   186MiB
+   lp_min_atom              1    1.37s  1.88%   1.37s   95.3MiB  1.21%  95.3MiB
+   lp_dotsort_atom          1    900ms  1.23%   900ms   95.2MiB  1.21%  95.2MiB
+   lp_sumlargest_atom       1    461ms  0.63%   461ms   49.0MiB  0.62%  49.0MiB
+   lp_minimum_atom          1    308ms  0.42%   308ms   27.7MiB  0.35%  27.7MiB
+   lp_maximum_atom          1    274ms  0.38%   274ms   18.4MiB  0.23%  18.4MiB
+   lp_sumsmallest_atom      1    229ms  0.31%   229ms   22.2MiB  0.28%  22.2MiB
+   lp_neg_atom              1    182ms  0.25%   182ms   11.6MiB  0.15%  11.6MiB
+   lp_pos_atom              1   73.2ms  0.10%  73.2ms   6.34MiB  0.08%  6.34MiB
+   lp_hinge_loss_atom       1    272μs  0.00%   272μs   49.7KiB  0.00%  49.7KiB
+ exp                        1    3.40s  4.66%   3.40s    338MiB  4.28%   338MiB
+   exp_log_atom             1    1.43s  1.97%   1.43s    129MiB  1.63%   129MiB
+   exp_entropy_atom         1    389ms  0.53%   389ms   37.4MiB  0.47%  37.4MiB
+   exp_exp_atom             1    254ms  0.35%   254ms   18.8MiB  0.24%  18.8MiB
+   exp_log_sum_exp_...      1    240ms  0.33%   240ms   22.2MiB  0.28%  22.2MiB
+   exp_log_perspect...      1    223ms  0.31%   223ms   20.1MiB  0.25%  20.1MiB
+   exp_logistic_los...      1    207ms  0.28%   207ms   14.2MiB  0.18%  14.2MiB
+   exp_relative_ent...      1   62.1ms  0.09%  62.1ms   5.33MiB  0.07%  5.33MiB
+ sdp_and_exp                1    1.87s  2.56%   1.87s    182MiB  2.31%   182MiB
+   sdp_and_exp_log_...      1    1.77s  2.43%   1.77s    167MiB  2.11%   167MiB
  ──────────────────────────────────────────────────────────────────────────────</code></pre><h2 id="Version-information-1"><a class="docs-heading-anchor" href="#Version-information-1">Version information</a><a class="docs-heading-anchor-permalink" href="#Version-information-1" title="Permalink"></a></h2><p><code>versioninfo()</code>:</p><pre><code class="language-julia">Julia Version 1.3.1
 Commit 2d5741174c (2019-12-30 21:36 UTC)
 Platform Info:
@@ -718,4 +741,4 @@ Platform Info:
   [4607b0f0] SuiteSparse 
   [8dfed614] Test 
   [cf7118a7] UUIDs 
-  [4ec0a83e] Unicode </code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="index.html">« Home</a><a class="docs-footer-nextpage" href="CSDP.html">CSDP »</a></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Tuesday 3 March 2020 08:27">Tuesday 3 March 2020</span>. Using Julia version 1.3.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+  [4ec0a83e] Unicode </code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="index.html">« Home</a><a class="docs-footer-nextpage" href="CSDP.html">CSDP »</a></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Tuesday 3 March 2020 12:42">Tuesday 3 March 2020</span>. Using Julia version 1.3.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
