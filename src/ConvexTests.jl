@@ -41,10 +41,12 @@ function formatted_seconds(t)
     Dates.CompoundPeriod(Dates.Second(round(Int, t))) |> canonicalize
 end
 
-function do_tests(name, opt; variant="", append = false, last = true, description = "", exclude = Regex[], kwargs...)
-    t1 = @elapsed dummy_problem(opt)
-    t2 = @elapsed dummy_problem(opt)
-    compilation_time = formatted_seconds(t1-t2)
+function do_tests(name, opt; variant="", first = true, last = true, description = "", exclude = Regex[], kwargs...)
+    if first
+        t1 = @elapsed dummy_problem(opt)
+        t2 = @elapsed dummy_problem(opt)
+        compilation_time = formatted_seconds(t1-t2)
+    end
 
     to = TimerOutput()
     results, t = @timed begin
@@ -57,8 +59,8 @@ function do_tests(name, opt; variant="", append = false, last = true, descriptio
     duration = formatted_seconds(t)
     filename = joinpath(DOCS_SRC[], "$(name).md")
 
-    open(filename, write=true, append=append) do io
-        if !append
+    open(filename, write=true, append=!first) do io
+        if first
             println(io, """
             Table of contents:
 
@@ -66,7 +68,11 @@ function do_tests(name, opt; variant="", append = false, last = true, descriptio
             Pages = ["$(name).md"]
             ```
             """)
+            println(io)
+            println(io, "Compilation warmup estimates $(compilation_time) in compilation time.")
+            println(io)
         end
+        
         println(io, "## $name $variant")
 
         datestr = Dates.format(Dates.now(Dates.UTC), "U d, Y at HH:MM")
@@ -88,7 +94,6 @@ function do_tests(name, opt; variant="", append = false, last = true, descriptio
         println(io)
         println(io, "### Tests")
         println(io)
-        println(io, "Compilation warmup estimates $(compilation_time) in compilation time.")
         println(io, "Tests took $(duration) to run after warmup.")
         println(io)
         println(io, "```@raw html")
