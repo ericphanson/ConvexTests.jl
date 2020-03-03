@@ -11,9 +11,9 @@ using TimerOutputs
 const DOCS_SRC = Ref(joinpath(@__DIR__, "..", "docs", "src"))
 
 # To compile some things
-function dummy_problem(opt)
+function dummy_problem(opt; T = Float64)
     x = Variable(3)
-    p = minimize(2*x[2] + x[1] - x[3], [x >= 1])
+    p = minimize(2*x[2] + x[1] - x[3], [x >= 1]; numeric_type = T)
     solve!(p, opt)
 end
 
@@ -42,17 +42,17 @@ function formatted_seconds(t)
     Dates.CompoundPeriod(Dates.Second(round(Int, t))) |> canonicalize
 end
 
-function do_tests(name, opt; variant="", first = true, last = true, description = "", exclude = Regex[], kwargs...)
+function do_tests(name, opt; variant="", first = true, last = true, description = "",T=Float64, exclude = Regex[], kwargs...)
     if first
-        t1 = @elapsed dummy_problem(opt)
-        t2 = @elapsed dummy_problem(opt)
+        t1 = @elapsed dummy_problem(opt; T=T)
+        t2 = @elapsed dummy_problem(opt; T=T)
         compilation_time = formatted_seconds(t1-t2)
     end
 
     to = TimerOutput()
     results, t = @timed begin
         @testset TableTestSet "$name tests" begin
-            _run_tests(; to=to, exclude=exclude, kwargs...) do p
+            _run_tests(; to=to, T=T, exclude=exclude, kwargs...) do p
                 solve!(p, opt)
             end
         end
