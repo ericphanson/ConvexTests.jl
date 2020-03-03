@@ -20,7 +20,6 @@ jobs:
           - COSMO
           - Tulip
           - SDPA
-          - SDPA_dual
           - CSDP
           - SDPA_GMP
     steps:
