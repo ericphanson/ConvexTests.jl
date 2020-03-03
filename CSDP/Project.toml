@@ -1,2 +1,4 @@
 [deps]
 CSDP = "0a46da34-8e4b-519e-b418-48813639ff34"
+Dualization = "191a621a-6537-11e9-281d-650236a99e60"
+MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
