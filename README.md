@@ -28,5 +28,4 @@ different problems).
 
 I added all open-source (and non-MATLAB-based) solvers from
 http://www.juliaopt.org/JuMP.jl/v0.21.1/installation/#Getting-Solvers-1, besides
-the LP and MILP-only ones. I am not opposed to adding commercial or MATLAB-based
-solvers, but I'm not sure if it's possible to get them to run on Github Actions.
+the LP and MILP-only ones. I've also added Mosek by running it locally.

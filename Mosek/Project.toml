@@ -1,0 +1,4 @@
+[deps]
+ConvexTests = "cb7cb77b-aa64-41ee-9be8-cb42f39823db"
+MosekTools = "1ec41992-ff65-5c91-ac43-2df89e9693a4"
+TableTestSets = "f9bf3ced-5811-49c3-be57-f5a2c1e23f47"
