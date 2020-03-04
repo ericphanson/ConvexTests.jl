@@ -6,7 +6,7 @@ using Dualization
 
 @info "Starting CSDP tests"
 
-exclusions =  [r"mip", r"socp", r"exp", r"sdp_Complex_Semidefinite_constraint"]
+exclusions =  [r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 
 do_tests("CSDP", () -> CSDP.Optimizer(printlevel=0); exclude = exclusions, first = true, last = false)
 

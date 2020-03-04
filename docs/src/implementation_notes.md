@@ -27,5 +27,5 @@ Second, since the CI runs work with the master branch, two simultaneous CI runs
 can conflict. The workaround is to just not have multiple CI runs happening at
 the same time.
 
-One alternative implementation would simply to run all the tests in serial,
+One alternative implementation would simply to run all the tests serially,
 instead of in parallel.

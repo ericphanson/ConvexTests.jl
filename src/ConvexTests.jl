@@ -17,6 +17,7 @@ function dummy_problem(opt; T = Float64)
     solve!(p, opt)
 end
 
+# Modified from Convex.jl's ProblemDepot code to add TimerOutputs logging
 function _run_tests( handle_problem!::Function, 
                     problems::Union{Nothing, Vector{String}, Vector{Regex}} = nothing; 
                     exclude::Vector{Regex} = Regex[], T=Float64, atol=1e-3, rtol=0.0, to)
