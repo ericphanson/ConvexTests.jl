@@ -6,10 +6,10 @@ Depth = 4
 ```
 
 
-Compilation warmup gives an estimate of 32 seconds of compilation time.
+Compilation warmup gives an estimate of 57 seconds of compilation time.
 
 ## Tulip Float64
-These tests were run on March 4, 2020 at 19:13 (UTC).
+These tests were run on August 4, 2020 at 16:13 (UTC).
 
 Tests run with default parameters in type `Float64`.
 
@@ -20,7 +20,7 @@ Regex[r"mip", r"exp", r"socp", r"sdp"]
 
 ### Tests
 
-Tests took 45 seconds to run (after warmup).
+Tests took 1 minute, 47 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -33,17 +33,246 @@ Tests took 45 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">Tulip tests</td>
+<td style="text-align:center;color:green;">716</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">718</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;Convex</td>
 <td style="text-align:center;color:green;">229</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">229</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;SumOfSquares</td>
+<td style="text-align:center;color:green;">487</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">489</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp</td>
+<td style="text-align:center;color:green;">487</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">489</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_univariate_sum</td>
+<td style="text-align:center;color:green;">21</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">22</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_options_pricing</td>
+<td style="text-align:center;color:green;">10</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">10</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_cheby_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_quartic_comparison</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_cheby_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_horn</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_term</td>
+<td style="text-align:center;color:green;">44</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">44</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_term_fixed</td>
+<td style="text-align:center;color:green;">44</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">44</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_scaled_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_scaled_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_quartic_constant</td>
+<td style="text-align:center;color:green;">33</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">33</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_concave_then_convex_cubic</td>
+<td style="text-align:center;color:green;">13</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">13</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr></table>
 ```
 
 ### Errors
 
 ```julia
+Error in testset dsos_univariate_sum:
+Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
+  Got exception outside of a @test
+  BoundsError: attempt to access 7-element Array{MathOptInterface.VariableIndex,1} at index [8]
+  Stacktrace:
+   [1] getindex at ./array.jl:744 [inlined]
+   [2] get(::Tulip.Optimizer{Float64}, ::MathOptInterface.ConstraintFunction, ::MathOptInterface.ConstraintIndex{MathOptInterface.ScalarAffineFunction{Float64},MathOptInterface.GreaterThan{Float64}}) at /home/runner/.julia/packages/Tulip/w8T7U/src/Interfaces/MOI/constraints.jl:467
+   [3] get at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:812 [inlined]
+   [4] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::MathOptInterface.ConstraintFunction, ::SumOfSquares.Bridges.Constraint.DiagonallyDominantBridge{Float64,MathOptInterface.ScalarAffineFunction{Float64},MathOptInterface.VectorOfVariables}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/diagonally_dominant.jl:151
+   [5] (::MathOptInterface.Bridges.var"#46#47"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintFunction})(::SumOfSquares.Bridges.Constraint.DiagonallyDominantBridge{Float64,MathOptInterface.ScalarAffineFunction{Float64},MathOptInterface.VectorOfVariables}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:809
+   [6] (::MathOptInterface.Bridges.var"#1#2"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle},MathOptInterface.Bridges.var"#46#47"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintFunction}})() at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:217
+   [7] call_in_context(::MathOptInterface.Bridges.Variable.Map, ::Int64, ::MathOptInterface.Bridges.var"#1#2"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle},MathOptInterface.Bridges.var"#46#47"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintFunction}}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:404
+   [8] call_in_context at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:435 [inlined]
+   [9] call_in_context at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:216 [inlined]
+   [10] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::MathOptInterface.ConstraintFunction, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:809
+   [11] _delete_variables_in_vector_of_variables_constraint(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::Array{MathOptInterface.VariableIndex,1}, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:299
+   [12] _delete_variables_in_variables_constraints(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::Array{MathOptInterface.VariableIndex,1}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:320
+   [13] delete(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::Array{MathOptInterface.VariableIndex,1}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:331
+   [14] _delete_variables at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:120 [inlined]
+   [15] delete(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::SumOfSquares.Bridges.Constraint.SOSPolynomialBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.FullSpace,Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}},Union{SumOfSquares.EmptyCone, MathOptInterface.Nonnegatives, SumOfSquares.DiagonallyDominantConeTriangle},SumOfSquares.DiagonallyDominantConeTriangle,Array{MultivariateBases.MonomialBasis,1},MultivariateBases.MonomialBasis,SumOfSquares.Certificate.ChordalIdeal{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:127
+   [16] #16 at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:394 [inlined]
+   [17] call_in_context(::MathOptInterface.Bridges.Variable.Map, ::Int64, ::MathOptInterface.Bridges.var"#16#17"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},SumOfSquares.Bridges.Constraint.SOSPolynomialBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.FullSpace,Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}},Union{SumOfSquares.EmptyCone, MathOptInterface.Nonnegatives, SumOfSquares.DiagonallyDominantConeTriangle},SumOfSquares.DiagonallyDominantConeTriangle,Array{MultivariateBases.MonomialBasis,1},MultivariateBases.MonomialBasis,SumOfSquares.Certificate.ChordalIdeal{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:404
+   [18] call_in_context(::MathOptInterface.Bridges.Variable.Map, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.FullSpace,DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.ChordalIdeal{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}}, ::Function) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:435
+   [19] delete(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.FullSpace,DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.ChordalIdeal{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:394
+   [20] delete(::MathOptInterface.Utilities.CachingOptimizer{MathOptInterface.AbstractOptimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.FullSpace,DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.ChordalIdeal{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:417
+   [21] delete(::JuMP.Model, ::JuMP.ConstraintRef{JuMP.Model,MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.FullSpace,DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.ChordalIdeal{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}},PolyJuMP.PolynomialShape{DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}}) at /home/runner/.julia/packages/JuMP/YXK4e/src/constraints.jl:172
+   [22] #test_delete_bridge#1(::Bool, ::typeof(ConvexTests.SumOfSquaresBench.Tests.test_delete_bridge), ::JuMP.Model, ::JuMP.ConstraintRef{JuMP.Model,MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.FullSpace,DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.ChordalIdeal{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}},PolyJuMP.PolynomialShape{DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}}, ::Int64, ::Tuple{Tuple{DataType,DataType,Int64},Tuple{DataType,DataType,Int64}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/utilities.jl:74
+   [23] test_delete_bridge(::JuMP.Model, ::JuMP.ConstraintRef{JuMP.Model,MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.FullSpace,DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.ChordalIdeal{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}},PolyJuMP.PolynomialShape{DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}}, ::Int64, ::Tuple{Tuple{DataType,DataType,Int64},Tuple{DataType,DataType,Int64}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/utilities.jl:67
+   [24] univariate_sum_test(::Function, ::MathOptInterface.Test.TestConfig{Float64}, ::SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle}) at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/univariate_sum.jl:35
+   [25] _test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/univariate_sum.jl:45 [inlined]
+   [26] #3 at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
+   [27] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
+   [28] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
+   [29] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
+   [30] macro expansion at /home/runner/.julia/packages/TimerOutputs/dVnaw/src/TimerOutput.jl:190 [inlined]
+   [31] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,var"#3#4"})(::String, ::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_univariate_sum_test)}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
+   [32] #foreach_problem#2(::Array{Regex,1}, ::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,var"#3#4"}, ::String, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
+   [33] (::ConvexTests.SumOfSquaresBench.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
+   [34] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
+   [35] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
+   [36] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
+   [37] macro expansion at /home/runner/.julia/packages/TimerOutputs/dVnaw/src/TimerOutput.jl:190 [inlined]
+   [38] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Dict{String,Dict{String,Function}}, ::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
+   [39] (::ConvexTests.var"#kw##_run_tests")(::NamedTuple{(:to, :T, :exclude),Tuple{TimerOutputs.TimerOutput,DataType,Array{Regex,1}}}, ::typeof(ConvexTests._run_tests), ::Function, ::Dict{String,Dict{String,Function}}, ::Function, ::Nothing) at ./none:0 (repeats 2 times)
+   [40] #_run_tests#5(::TimerOutputs.TimerOutput, ::Array{Module,1}, ::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol},NamedTuple{(:T, :exclude),Tuple{DataType,Array{Regex,1}}}}, ::typeof(ConvexTests._run_tests), ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52
+   [41] (::ConvexTests.var"#kw##_run_tests")(::NamedTuple{(:to, :T, :exclude),Tuple{TimerOutputs.TimerOutput,DataType,Array{Regex,1}}}, ::typeof(ConvexTests._run_tests), ::Function) at ./none:0
+   [42] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined] (repeats 2 times)
+   [43] macro expansion at ./util.jl:288 [inlined]
+   [44] #do_tests#6(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::var"#3#4") at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
+   [45] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description, :variant, :first, :last),Tuple{Array{Regex,1},String,String,Bool,Bool}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
+   [46] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/Tulip/test.jl:4
+   [47] include at ./boot.jl:328 [inlined]
+   [48] include_relative(::Module, ::String) at ./loading.jl:1105
+   [49] include(::Module, ::String) at ./Base.jl:31
+   [50] exec_options(::Base.JLOptions) at ./client.jl:287
+  
+
+Error in testset dsos_horn:
+Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
+  Got exception outside of a @test
+  MethodError: no method matching abs(::MathOptInterface.ScalarAffineTerm{Float64})
+  Closest candidates are:
+    abs(!Matched::Bool) at bool.jl:83
+    abs(!Matched::Float16) at float.jl:526
+    abs(!Matched::Float32) at float.jl:527
+    ...
+  Stacktrace:
+   [1] (::MathOptInterface.Utilities.var"#98#100"{Float64,MathOptInterface.ScalarAffineFunction{Float64},Int64})(::Int64) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/functions.jl:1972
+   [2] _any at ./reduce.jl:682 [inlined]
+   [3] #any#596 at ./reducedim.jl:662 [inlined]
+   [4] any at ./reducedim.jl:662 [inlined]
+   [5] #convert_approx#96(::Float64, ::typeof(MathOptInterface.Utilities.convert_approx), ::Type{MathOptInterface.SingleVariable}, ::MathOptInterface.ScalarAffineFunction{Float64}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/functions.jl:1971
+   [6] convert_approx at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/functions.jl:1969 [inlined]
+   [7] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::MathOptInterface.ConstraintFunction, ::SumOfSquares.Bridges.Constraint.DiagonallyDominantBridge{Float64,MathOptInterface.ScalarAffineFunction{Float64},MathOptInterface.VectorOfVariables}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/diagonally_dominant.jl:152
+   [8] (::MathOptInterface.Bridges.var"#46#47"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintFunction})(::SumOfSquares.Bridges.Constraint.DiagonallyDominantBridge{Float64,MathOptInterface.ScalarAffineFunction{Float64},MathOptInterface.VectorOfVariables}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:809
+   [9] (::MathOptInterface.Bridges.var"#1#2"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle},MathOptInterface.Bridges.var"#46#47"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintFunction}})() at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:217
+   [10] call_in_context(::MathOptInterface.Bridges.Variable.Map, ::Int64, ::MathOptInterface.Bridges.var"#1#2"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle},MathOptInterface.Bridges.var"#46#47"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},MathOptInterface.ConstraintFunction}}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:404
+   [11] call_in_context at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:435 [inlined]
+   [12] call_in_context at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:216 [inlined]
+   [13] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::MathOptInterface.ConstraintFunction, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:809
+   [14] _delete_variables_in_vector_of_variables_constraint(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::Array{MathOptInterface.VariableIndex,1}, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:299
+   [15] _delete_variables_in_variables_constraints(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::Array{MathOptInterface.VariableIndex,1}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:320
+   [16] delete(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::MathOptInterface.VariableIndex) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:358
+   [17] delete(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::SumOfSquares.Bridges.Constraint.DiagonallyDominantBridge{Float64,MathOptInterface.ScalarAffineFunction{Float64},MathOptInterface.VectorOfVariables}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/diagonally_dominant.jl:126
+   [18] #16 at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:394 [inlined]
+   [19] call_in_context(::MathOptInterface.Bridges.Variable.Map, ::Int64, ::MathOptInterface.Bridges.var"#16#17"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},SumOfSquares.Bridges.Constraint.DiagonallyDominantBridge{Float64,MathOptInterface.ScalarAffineFunction{Float64},MathOptInterface.VectorOfVariables}}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:404
+   [20] call_in_context(::MathOptInterface.Bridges.Variable.Map, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}, ::Function) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:435
+   [21] delete(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:394
+   [22] _delete_variables_in_vector_of_variables_constraint(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::Array{MathOptInterface.VariableIndex,1}, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:302
+   [23] _delete_variables_in_variables_constraints(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::Array{MathOptInterface.VariableIndex,1}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:320
+   [24] delete(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::Array{MathOptInterface.VariableIndex,1}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:331
+   [25] delete(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::SumOfSquares.Bridges.Constraint.SOSPolynomialInSemialgebraicSetBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.FullSpace,SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis,Tuple{}},MultivariateBases.MonomialBasis,Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}},Union{SumOfSquares.EmptyCone, MathOptInterface.Nonnegatives, SumOfSquares.DiagonallyDominantConeTriangle},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:117
+   [26] #16 at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:394 [inlined]
+   [27] call_in_context(::MathOptInterface.Bridges.Variable.Map, ::Int64, ::MathOptInterface.Bridges.var"#16#17"{MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}},SumOfSquares.Bridges.Constraint.SOSPolynomialInSemialgebraicSetBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.FullSpace,SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis,Tuple{}},MultivariateBases.MonomialBasis,Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.DiagonallyDominantConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}},Union{SumOfSquares.EmptyCone, MathOptInterface.Nonnegatives, SumOfSquares.DiagonallyDominantConeTriangle},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:404
+   [28] call_in_context(::MathOptInterface.Bridges.Variable.Map, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.BasicSemialgebraicSet{Int64,DynamicPolynomials.Polynomial{true,Int64},SemialgebraicSets.FullSpace},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.Putinar{SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis,Tuple{}},SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}}, ::Function) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/Variable/map.jl:435
+   [29] delete(::MathOptInterface.Bridges.LazyBridgeOptimizer{Tulip.Optimizer{Float64}}, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.BasicSemialgebraicSet{Int64,DynamicPolynomials.Polynomial{true,Int64},SemialgebraicSets.FullSpace},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.Putinar{SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis,Tuple{}},SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:394
+   [30] delete(::MathOptInterface.Utilities.CachingOptimizer{MathOptInterface.AbstractOptimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.BasicSemialgebraicSet{Int64,DynamicPolynomials.Polynomial{true,Int64},SemialgebraicSets.FullSpace},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.Putinar{SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis,Tuple{}},SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:417
+   [31] delete(::JuMP.Model, ::JuMP.ConstraintRef{JuMP.Model,MathOptInterface.ConstraintIndex{MathOptInterface.VectorAffineFunction{Float64},SumOfSquares.SOSPolynomialSet{SemialgebraicSets.BasicSemialgebraicSet{Int64,DynamicPolynomials.Polynomial{true,Int64},SemialgebraicSets.FullSpace},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true},SumOfSquares.Certificate.Putinar{SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis,Tuple{}},SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle},MultivariateBases.MonomialBasis}}},PolyJuMP.PolynomialShape{DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}}) at /home/runner/.julia/packages/JuMP/YXK4e/src/constraints.jl:172
+   [32] horn_test(::Function, ::MathOptInterface.Test.TestConfig{Float64}, ::SumOfSquares.NonnegPolyInnerCone{SumOfSquares.DiagonallyDominantConeTriangle}) at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/horn.jl:44
+   [33] _test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/horn.jl:67 [inlined]
+   [34] #3 at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
+   [35] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
+   [36] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
+   [37] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
+   [38] macro expansion at /home/runner/.julia/packages/TimerOutputs/dVnaw/src/TimerOutput.jl:190 [inlined]
+   [39] (::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,var"#3#4"})(::String, ::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_horn_test)}) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
+   [40] #foreach_problem#2(::Array{Regex,1}, ::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), ::ConvexTests.var"#3#4"{DataType,Float64,Float64,TimerOutputs.TimerOutput,var"#3#4"}, ::String, ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
+   [41] (::ConvexTests.SumOfSquaresBench.var"#kw##foreach_problem")(::NamedTuple{(:exclude,),Tuple{Array{Regex,1}}}, ::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), ::Function, ::String, ::Nothing) at ./none:0
+   [42] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
+   [43] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.3/Test/src/Test.jl:1107 [inlined]
+   [44] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
+   [45] macro expansion at /home/runner/.julia/packages/TimerOutputs/dVnaw/src/TimerOutput.jl:190 [inlined]
+   [46] #_run_tests#2(::Array{Regex,1}, ::Type, ::Float64, ::Float64, ::TimerOutputs.TimerOutput, ::typeof(ConvexTests._run_tests), ::Function, ::Dict{String,Dict{String,Function}}, ::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), ::Nothing) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
+   [47] (::ConvexTests.var"#kw##_run_tests")(::NamedTuple{(:to, :T, :exclude),Tuple{TimerOutputs.TimerOutput,DataType,Array{Regex,1}}}, ::typeof(ConvexTests._run_tests), ::Function, ::Dict{String,Dict{String,Function}}, ::Function, ::Nothing) at ./none:0 (repeats 2 times)
+   [48] #_run_tests#5(::TimerOutputs.TimerOutput, ::Array{Module,1}, ::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol},NamedTuple{(:T, :exclude),Tuple{DataType,Array{Regex,1}}}}, ::typeof(ConvexTests._run_tests), ::Function) at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52
+   [49] (::ConvexTests.var"#kw##_run_tests")(::NamedTuple{(:to, :T, :exclude),Tuple{TimerOutputs.TimerOutput,DataType,Array{Regex,1}}}, ::typeof(ConvexTests._run_tests), ::Function) at ./none:0
+   [50] macro expansion at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined] (repeats 2 times)
+   [51] macro expansion at ./util.jl:288 [inlined]
+   [52] #do_tests#6(::String, ::Bool, ::Bool, ::String, ::Type, ::Array{Regex,1}, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(do_tests), ::String, ::var"#3#4") at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
+   [53] (::ConvexTests.var"#kw##do_tests")(::NamedTuple{(:exclude, :description, :variant, :first, :last),Tuple{Array{Regex,1},String,String,Bool,Bool}}, ::typeof(do_tests), ::String, ::Function) at ./none:0
+   [54] top-level scope at /home/runner/work/ConvexTests.jl/ConvexTests.jl/Tulip/test.jl:4
+   [55] include at ./boot.jl:328 [inlined]
+   [56] include_relative(::Module, ::String) at ./loading.jl:1105
+   [57] include(::Module, ::String) at ./Base.jl:31
+   [58] exec_options(::Base.JLOptions) at ./client.jl:287
+  
+
 ```
 
 
@@ -52,58 +281,75 @@ Tests took 45 seconds to run (after warmup).
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            44.7s / 98.7%           4.43GiB / 99.3%    
+       Tot / % measured:             107s / 99.3%           9.91GiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- affine                     1    27.0s  61.1%   27.0s   2.73GiB  61.9%  2.73GiB
-   affine_Partial_t...      1    2.80s  6.35%   2.80s    322MiB  7.15%   322MiB
-   affine_permutedd...      1    2.62s  5.94%   2.62s    323MiB  7.16%   323MiB
-   affine_hcat_atom         1    2.09s  4.73%   2.09s    181MiB  4.02%   181MiB
-   affine_multiply_...      1    2.06s  4.68%   2.06s    211MiB  4.69%   211MiB
-   affine_dot_multi...      1    2.04s  4.63%   2.04s    142MiB  3.16%   142MiB
-   affine_transpose...      1    1.89s  4.28%   1.89s    170MiB  3.76%   170MiB
-   affine_vcat_atom         1    1.19s  2.69%   1.19s    100MiB  2.22%   100MiB
-   affine_Diagonal_...      1    1.12s  2.54%   1.12s    107MiB  2.38%   107MiB
-   affine_satisfy_p...      1    1.02s  2.32%   1.02s   57.2MiB  1.27%  57.2MiB
-   affine_add_atom          1    848ms  1.92%   848ms   57.1MiB  1.27%  57.1MiB
-   affine_conv_atom         1    770ms  1.75%   770ms   53.0MiB  1.18%  53.0MiB
-   affine_index_atom        1    611ms  1.39%   611ms   40.8MiB  0.91%  40.8MiB
-   affine_reshape_atom      1    539ms  1.22%   539ms   28.2MiB  0.63%  28.2MiB
-   affine_dot_atom          1    500ms  1.13%   500ms   19.2MiB  0.42%  19.2MiB
-   affine_dualvalue         1    420ms  0.95%   420ms   33.1MiB  0.74%  33.1MiB
-   affine_sum_atom          1    382ms  0.87%   382ms   31.2MiB  0.69%  31.2MiB
-   affine_kron_atom         1    288ms  0.65%   288ms   19.9MiB  0.44%  19.9MiB
-   affine_diag_atom         1    126ms  0.29%   126ms   14.5MiB  0.32%  14.5MiB
-   affine_dot_atom_...      1    100ms  0.23%   100ms   4.97MiB  0.11%  4.97MiB
-   affine_negate_atom       1   89.4ms  0.20%  89.4ms   3.79MiB  0.08%  3.79MiB
-   affine_trace_atom        1   43.5ms  0.10%  43.5ms   2.63MiB  0.06%  2.63MiB
- constant                   1    9.94s  22.5%   9.94s   0.97GiB  22.0%  0.97GiB
-   constant_Issue_166       1    3.45s  7.83%   3.45s    375MiB  8.32%   375MiB
-   constant_fix!_wi...      1    3.22s  7.30%   3.22s    262MiB  5.81%   262MiB
-   constant_Issue_228       1    685ms  1.55%   685ms   53.7MiB  1.19%  53.7MiB
-   constant_fix!_wi...      1    534ms  1.21%   534ms   44.5MiB  0.99%  44.5MiB
-   constant_fix!_an...      1    422ms  0.96%   422ms   42.9MiB  0.95%  42.9MiB
-   constant_Test_do...      1    332ms  0.75%   332ms   19.0MiB  0.42%  19.0MiB
- lp                         1    7.20s  16.3%   7.20s    724MiB  16.1%   724MiB
-   lp_dotsort_atom          1    1.23s  2.78%   1.23s    109MiB  2.42%   109MiB
-   lp_dual_abs_atom         1    693ms  1.57%   693ms   61.2MiB  1.36%  61.2MiB
-   lp_min_atom              1    591ms  1.34%   591ms   47.6MiB  1.06%  47.6MiB
-   lp_sumlargest_atom       1    579ms  1.31%   579ms   51.1MiB  1.13%  51.1MiB
-   lp_sumsmallest_atom      1    482ms  1.09%   482ms   46.9MiB  1.04%  46.9MiB
-   lp_max_atom              1    452ms  1.03%   452ms   42.6MiB  0.95%  42.6MiB
-   lp_minimum_atom          1    346ms  0.78%   346ms   29.8MiB  0.66%  29.8MiB
-   lp_dual_norm_inf...      1    332ms  0.75%   332ms   22.9MiB  0.51%  22.9MiB
-   lp_neg_atom              1    216ms  0.49%   216ms   11.7MiB  0.26%  11.7MiB
-   lp_maximum_atom          1    214ms  0.48%   214ms   12.8MiB  0.28%  12.8MiB
-   lp_pos_atom              1    117ms  0.26%   117ms   6.41MiB  0.14%  6.41MiB
-   lp_dual_norm_1_atom      1   74.7ms  0.17%  74.7ms   3.64MiB  0.08%  3.64MiB
-   lp_hinge_loss_atom       1    248μs  0.00%   248μs   49.7KiB  0.00%  49.7KiB
+ SumOfSquares               1    65.5s  61.6%   65.5s   5.56GiB  56.3%  5.56GiB
+   lp                       1    65.4s  61.4%   65.4s   5.55GiB  56.2%  5.55GiB
+     dsos_univariat...      1    11.3s  10.6%   11.3s   0.95GiB  9.58%  0.95GiB
+     dsos_options_p...      1    10.0s  9.39%   10.0s    784MiB  7.75%   784MiB
+     dsos_cheby_biv...      1    10.0s  9.36%   10.0s    854MiB  8.45%   854MiB
+     dsos_concave_t...      1    7.33s  6.88%   7.33s    608MiB  6.01%   608MiB
+     dsos_term_fixed        1    5.42s  5.09%   5.42s    406MiB  4.01%   406MiB
+     dsos_horn              1    5.19s  4.88%   5.19s    385MiB  3.81%   385MiB
+     dsos_quartic_c...      1    3.40s  3.20%   3.40s    266MiB  2.63%   266MiB
+     dsos_scaled_bi...      1    3.31s  3.11%   3.31s    257MiB  2.55%   257MiB
+     dsos_term              1    2.87s  2.70%   2.87s    220MiB  2.18%   220MiB
+     dsos_quartic_c...      1    559ms  0.53%   559ms   22.7MiB  0.22%  22.7MiB
+     dsos_bivariate...      1    533ms  0.50%   533ms   28.5MiB  0.28%  28.5MiB
+     dsos_cheby_uni...      1   94.0ms  0.09%  94.0ms   12.7MiB  0.13%  12.7MiB
+     dsos_scaled_un...      1   11.6ms  0.01%  11.6ms    554KiB  0.01%   554KiB
+     dsos_univariat...      1   8.86ms  0.01%  8.86ms    553KiB  0.01%   553KiB
+ Convex                     1    40.9s  38.4%   40.9s   4.31GiB  43.7%  4.31GiB
+   affine                   1    25.0s  23.5%   25.0s   2.69GiB  27.2%  2.69GiB
+     affine_Partial...      1    2.53s  2.38%   2.53s    290MiB  2.87%   290MiB
+     affine_permute...      1    2.43s  2.28%   2.43s    321MiB  3.18%   321MiB
+     affine_multipl...      1    1.90s  1.78%   1.90s    212MiB  2.10%   212MiB
+     affine_hcat_atom       1    1.85s  1.74%   1.85s    191MiB  1.89%   191MiB
+     affine_transpo...      1    1.74s  1.63%   1.74s    170MiB  1.68%   170MiB
+     affine_dot_mul...      1    1.72s  1.62%   1.72s    112MiB  1.10%   112MiB
+     affine_vcat_atom       1    1.18s  1.11%   1.18s    100MiB  0.99%   100MiB
+     affine_Diagona...      1    1.07s  1.00%   1.07s    107MiB  1.06%   107MiB
+     affine_satisfy...      1    997ms  0.94%   997ms   57.4MiB  0.57%  57.4MiB
+     affine_add_atom        1    858ms  0.81%   858ms   57.1MiB  0.56%  57.1MiB
+     affine_conv_atom       1    753ms  0.71%   753ms   53.0MiB  0.52%  53.0MiB
+     affine_dualvalue       1    568ms  0.53%   568ms   47.1MiB  0.47%  47.1MiB
+     affine_index_atom      1    527ms  0.50%   527ms   42.2MiB  0.42%  42.2MiB
+     affine_dot_atom        1    522ms  0.49%   522ms   19.2MiB  0.19%  19.2MiB
+     affine_reshape...      1    487ms  0.46%   487ms   27.8MiB  0.27%  27.8MiB
+     affine_sum_atom        1    362ms  0.34%   362ms   31.1MiB  0.31%  31.1MiB
+     affine_kron_atom       1    250ms  0.23%   250ms   20.2MiB  0.20%  20.2MiB
+     affine_diag_atom       1    125ms  0.12%   125ms   14.1MiB  0.14%  14.1MiB
+     affine_dot_ato...      1   97.8ms  0.09%  97.8ms   4.88MiB  0.05%  4.88MiB
+     affine_negate_...      1   83.1ms  0.08%  83.1ms   3.73MiB  0.04%  3.73MiB
+     affine_trace_atom      1   40.3ms  0.04%  40.3ms   2.57MiB  0.03%  2.57MiB
+   constant                 1    8.53s  8.02%   8.53s    904MiB  8.94%   904MiB
+     constant_fix!_...      1    2.91s  2.74%   2.91s    264MiB  2.61%   264MiB
+     constant_Issue...      1    2.48s  2.33%   2.48s    274MiB  2.71%   274MiB
+     constant_Issue...      1    664ms  0.62%   664ms   53.9MiB  0.53%  53.9MiB
+     constant_fix!_...      1    535ms  0.50%   535ms   44.7MiB  0.44%  44.7MiB
+     constant_Test_...      1    299ms  0.28%   299ms   19.3MiB  0.19%  19.3MiB
+     constant_fix!_...      1    284ms  0.27%   284ms   21.6MiB  0.21%  21.6MiB
+   lp                       1    7.14s  6.71%   7.14s    736MiB  7.28%   736MiB
+     lp_dotsort_atom        1    1.09s  1.02%   1.09s   98.1MiB  0.97%  98.1MiB
+     lp_dual_abs_atom       1    763ms  0.72%   763ms   79.9MiB  0.79%  79.9MiB
+     lp_min_atom            1    731ms  0.69%   731ms   48.4MiB  0.48%  48.4MiB
+     lp_sumlargest_...      1    508ms  0.48%   508ms   48.2MiB  0.48%  48.2MiB
+     lp_sumsmallest...      1    465ms  0.44%   465ms   46.5MiB  0.46%  46.5MiB
+     lp_max_atom            1    425ms  0.40%   425ms   40.3MiB  0.40%  40.3MiB
+     lp_minimum_atom        1    326ms  0.31%   326ms   27.6MiB  0.27%  27.6MiB
+     lp_dual_norm_i...      1    297ms  0.28%   297ms   23.5MiB  0.23%  23.5MiB
+     lp_neg_atom            1    192ms  0.18%   192ms   11.8MiB  0.12%  11.8MiB
+     lp_maximum_atom        1    187ms  0.18%   187ms   12.7MiB  0.13%  12.7MiB
+     lp_pos_atom            1   80.9ms  0.08%  80.9ms   6.33MiB  0.06%  6.33MiB
+     lp_dual_norm_1...      1   72.6ms  0.07%  72.6ms   3.64MiB  0.04%  3.64MiB
+     lp_hinge_loss_...      1    275μs  0.00%   275μs   49.7KiB  0.00%  49.7KiB
  ──────────────────────────────────────────────────────────────────────────────
 ```
 
 ## Tulip BigFloat
-These tests were run on March 4, 2020 at 19:14 (UTC).
+These tests were run on August 4, 2020 at 16:14 (UTC).
 
 Tests run with default parameters in type `BigFloat`.
 
@@ -114,7 +360,7 @@ Regex[r"mip", r"exp", r"socp", r"sdp"]
 
 ### Tests
 
-Tests took 48 seconds to run (after warmup).
+Tests took 41 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -146,53 +392,54 @@ Tests took 48 seconds to run (after warmup).
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            47.0s / 100%            6.80GiB / 100%     
+       Tot / % measured:            40.4s / 100%            3.98GiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- constant                   1    28.9s  61.5%   28.9s   2.69GiB  39.5%  2.69GiB
-   constant_Issue_166       1    24.4s  51.9%   24.4s   2.29GiB  33.7%  2.29GiB
-   constant_fix!_wi...      1    1.95s  4.14%   1.95s    134MiB  1.92%   134MiB
-   constant_fix!_wi...      1    1.67s  3.54%   1.67s    183MiB  2.63%   183MiB
-   constant_fix!_an...      1    153ms  0.32%   153ms   19.0MiB  0.27%  19.0MiB
-   constant_Issue_228       1    138ms  0.29%   138ms   13.6MiB  0.20%  13.6MiB
-   constant_Test_do...      1   87.3ms  0.19%  87.3ms   9.93MiB  0.14%  9.93MiB
- affine                     1    12.5s  26.5%   12.5s   2.64GiB  38.8%  2.64GiB
-   affine_Partial_t...      1    2.80s  5.95%   2.80s   1.52GiB  22.4%  1.52GiB
-   affine_transpose...      1    1.46s  3.11%   1.46s    123MiB  1.76%   123MiB
-   affine_dot_multi...      1    825ms  1.76%   825ms   95.2MiB  1.37%  95.2MiB
-   affine_vcat_atom         1    825ms  1.75%   825ms   91.3MiB  1.31%  91.3MiB
-   affine_Diagonal_...      1    648ms  1.38%   648ms   78.5MiB  1.13%  78.5MiB
-   affine_sum_atom          1    518ms  1.10%   518ms   67.6MiB  0.97%  67.6MiB
-   affine_index_atom        1    479ms  1.02%   479ms   77.2MiB  1.11%  77.2MiB
-   affine_multiply_...      1    453ms  0.96%   453ms   56.6MiB  0.81%  56.6MiB
-   affine_reshape_atom      1    428ms  0.91%   428ms   52.2MiB  0.75%  52.2MiB
-   affine_hcat_atom         1    415ms  0.88%   415ms   65.7MiB  0.94%  65.7MiB
-   affine_dualvalue         1    354ms  0.75%   354ms   38.6MiB  0.55%  38.6MiB
-   affine_add_atom          1    242ms  0.51%   242ms   27.3MiB  0.39%  27.3MiB
-   affine_conv_atom         1    210ms  0.45%   210ms   19.9MiB  0.29%  19.9MiB
-   affine_diag_atom         1    168ms  0.36%   168ms   30.8MiB  0.44%  30.8MiB
-   affine_dot_atom_...      1    150ms  0.32%   150ms   18.7MiB  0.27%  18.7MiB
-   affine_dot_atom          1    147ms  0.31%   147ms   16.4MiB  0.24%  16.4MiB
-   affine_permutedd...      1    118ms  0.25%   118ms   6.25MiB  0.09%  6.25MiB
-   affine_satisfy_p...      1    105ms  0.22%   105ms   13.0MiB  0.19%  13.0MiB
-   affine_negate_atom       1   54.2ms  0.12%  54.2ms   4.24MiB  0.06%  4.24MiB
-   affine_trace_atom        1   42.1ms  0.09%  42.1ms   6.32MiB  0.09%  6.32MiB
-   affine_kron_atom         1   33.0ms  0.07%  33.0ms   3.17MiB  0.05%  3.17MiB
- lp                         1    5.66s  12.0%   5.66s   1.48GiB  21.7%  1.48GiB
-   lp_min_atom              1    885ms  1.88%   885ms    383MiB  5.49%   383MiB
-   lp_max_atom              1    880ms  1.87%   880ms    429MiB  6.16%   429MiB
-   lp_minimum_atom          1    500ms  1.06%   500ms    137MiB  1.96%   137MiB
-   lp_sumlargest_atom       1    483ms  1.03%   483ms   80.8MiB  1.16%  80.8MiB
-   lp_dotsort_atom          1    440ms  0.94%   440ms   83.2MiB  1.19%  83.2MiB
-   lp_dual_abs_atom         1    294ms  0.63%   294ms   36.7MiB  0.53%  36.7MiB
-   lp_sumsmallest_atom      1    274ms  0.58%   274ms   98.2MiB  1.41%  98.2MiB
-   lp_dual_norm_inf...      1    222ms  0.47%   222ms   24.0MiB  0.34%  24.0MiB
-   lp_maximum_atom          1    138ms  0.29%   138ms   25.9MiB  0.37%  25.9MiB
-   lp_neg_atom              1    134ms  0.28%   134ms   19.2MiB  0.28%  19.2MiB
-   lp_pos_atom              1   92.7ms  0.20%  92.7ms   14.1MiB  0.20%  14.1MiB
-   lp_dual_norm_1_atom      1   70.2ms  0.15%  70.2ms   11.5MiB  0.17%  11.5MiB
-   lp_hinge_loss_atom       1    282μs  0.00%   282μs   49.7KiB  0.00%  49.7KiB
+ Convex                     1    40.4s   100%   40.4s   3.98GiB  100%   3.98GiB
+   constant                 1    26.9s  66.5%   26.9s   2.32GiB  58.3%  2.32GiB
+     constant_Issue...      1    25.5s  63.1%   25.5s   2.21GiB  55.5%  2.21GiB
+     constant_fix!_...      1    276ms  0.68%   276ms   14.4MiB  0.35%  14.4MiB
+     constant_fix!_...      1    177ms  0.44%   177ms   9.08MiB  0.22%  9.08MiB
+     constant_Issue...      1    130ms  0.32%   130ms   8.88MiB  0.22%  8.88MiB
+     constant_Test_...      1    108ms  0.27%   108ms   4.30MiB  0.11%  4.30MiB
+     constant_fix!_...      1   58.9ms  0.15%  58.9ms   3.15MiB  0.08%  3.15MiB
+   affine                   1    9.10s  22.5%   9.10s    735MiB  18.1%   735MiB
+     affine_multipl...      1    2.92s  7.22%   2.92s    172MiB  4.24%   172MiB
+     affine_transpo...      1    547ms  1.35%   547ms   22.6MiB  0.55%  22.6MiB
+     affine_dualvalue       1    459ms  1.14%   459ms   46.9MiB  1.15%  46.9MiB
+     affine_dot_mul...      1    454ms  1.12%   454ms   28.3MiB  0.69%  28.3MiB
+     affine_Partial...      1    421ms  1.04%   421ms   53.6MiB  1.32%  53.6MiB
+     affine_index_atom      1    331ms  0.82%   331ms   23.2MiB  0.57%  23.2MiB
+     affine_reshape...      1    312ms  0.77%   312ms   15.3MiB  0.38%  15.3MiB
+     affine_Diagona...      1    306ms  0.76%   306ms   19.3MiB  0.47%  19.3MiB
+     affine_sum_atom        1    267ms  0.66%   267ms   20.5MiB  0.50%  20.5MiB
+     affine_satisfy...      1    173ms  0.43%   173ms   6.49MiB  0.16%  6.49MiB
+     affine_add_atom        1    168ms  0.41%   168ms   8.54MiB  0.21%  8.54MiB
+     affine_conv_atom       1    140ms  0.35%   140ms   8.49MiB  0.21%  8.49MiB
+     affine_diag_atom       1    129ms  0.32%   129ms   14.0MiB  0.34%  14.0MiB
+     affine_vcat_atom       1    109ms  0.27%   109ms   9.23MiB  0.23%  9.23MiB
+     affine_hcat_atom       1    103ms  0.25%   103ms   6.87MiB  0.17%  6.87MiB
+     affine_dot_atom        1   74.0ms  0.18%  74.0ms   5.86MiB  0.14%  5.86MiB
+     affine_negate_...      1   64.1ms  0.16%  64.1ms   2.56MiB  0.06%  2.56MiB
+     affine_dot_ato...      1   53.1ms  0.13%  53.1ms   2.93MiB  0.07%  2.93MiB
+     affine_trace_atom      1   51.2ms  0.13%  51.2ms   2.60MiB  0.06%  2.60MiB
+     affine_permute...      1   42.0ms  0.10%  42.0ms   4.63MiB  0.11%  4.63MiB
+     affine_kron_atom       1   32.5ms  0.08%  32.5ms   3.36MiB  0.08%  3.36MiB
+   lp                       1    4.42s  10.9%   4.42s   0.94GiB  23.7%  0.94GiB
+     lp_dotsort_atom        1    551ms  1.36%   551ms   75.3MiB  1.85%  75.3MiB
+     lp_min_atom            1    547ms  1.35%   547ms    240MiB  5.90%   240MiB
+     lp_max_atom            1    541ms  1.34%   541ms    263MiB  6.45%   263MiB
+     lp_sumlargest_...      1    299ms  0.74%   299ms   47.5MiB  1.17%  47.5MiB
+     lp_dual_abs_atom       1    298ms  0.74%   298ms   24.9MiB  0.61%  24.9MiB
+     lp_sumsmallest...      1    241ms  0.60%   241ms   63.6MiB  1.56%  63.6MiB
+     lp_dual_norm_i...      1    223ms  0.55%   223ms   17.4MiB  0.43%  17.4MiB
+     lp_minimum_atom        1    193ms  0.48%   193ms   18.3MiB  0.45%  18.3MiB
+     lp_maximum_atom        1   96.7ms  0.24%  96.7ms   18.9MiB  0.46%  18.9MiB
+     lp_pos_atom            1   93.7ms  0.23%  93.7ms   7.66MiB  0.19%  7.66MiB
+     lp_dual_norm_1...      1   80.3ms  0.20%  80.3ms   8.31MiB  0.20%  8.31MiB
+     lp_neg_atom            1   76.2ms  0.19%  76.2ms   6.49MiB  0.16%  6.49MiB
+     lp_hinge_loss_...      1    383μs  0.00%   383μs   49.7KiB  0.00%  49.7KiB
  ──────────────────────────────────────────────────────────────────────────────
 ```
 
@@ -203,46 +450,74 @@ Julia Version 1.3.1
 Commit 2d5741174c (2019-12-30 21:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+  CPU: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, broadwell)
+  LLVM: libLLVM-6.0.1 (ORCJIT, skylake)
 ```
 
 Manifest:
 ```julia
     Status `~/work/ConvexTests.jl/ConvexTests.jl/Tulip/Manifest.toml`
-  [14f7f29c] AMD v0.3.1
-  [1520ce14] AbstractTrees v0.3.2
+  [14f7f29c] AMD v0.4.0
+  [1520ce14] AbstractTrees v0.3.3
   [6e4b80f9] BenchmarkTools v0.5.0
-  [b99e7846] BinaryProvider v0.5.8
-  [523fee87] CodecBzip2 v0.6.0
-  [944b1d66] CodecZlib v0.6.0
-  [f65535da] Convex v0.13.0
+  [6e34b625] Bzip2_jll v1.0.6+3
+  [49dc2e85] Calculus v0.5.1
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v2.2.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
+  [f65535da] Convex v0.13.4
   [cb7cb77b] ConvexTests v0.1.0 [`~/work/ConvexTests.jl/ConvexTests.jl`]
-  [9a962f9c] DataAPI v1.1.0
+  [9a962f9c] DataAPI v1.3.0
+  [864edb3b] DataStructures v0.17.20
   [e2d170a0] DataValueInterfaces v1.0.0
-  [cd3eb016] HTTP v0.8.12
+  [163ba53b] DiffResults v1.0.2
+  [b552c78f] DiffRules v1.0.1
+  [7c1d4256] DynamicPolynomials v0.3.12
+  [f6369f11] ForwardDiff v0.10.12
+  [cd3eb016] HTTP v0.8.17
   [83e8ac13] IniFile v0.5.0
   [82899510] IteratorInterfaceExtensions v1.0.0
   [682c06a0] JSON v0.21.0
-  [7d188eb4] JSONSchema v0.2.0
+  [7d188eb4] JSONSchema v0.3.1
+  [4076af6c] JuMP v0.21.3
   [40e66cde] LDLFactorizations v0.4.0
-  [b8f27783] MathOptInterface v0.9.12
-  [739be429] MbedTLS v1.0.1
-  [c8ffd9c3] MbedTLS_jll v2.16.0+1
-  [d8a4904e] MutableArithmetics v0.2.7
-  [bac558e1] OrderedCollections v1.1.0
-  [69de0a69] Parsers v0.3.12
+  [1914dd2f] MacroTools v0.5.5
+  [b8f27783] MathOptInterface v0.9.14
+  [739be429] MbedTLS v1.0.2
+  [c8ffd9c3] MbedTLS_jll v2.16.6+1
+  [be282fd4] MultivariateBases v0.1.2
+  [f4abf1af] MultivariateMoments v0.3.0
+  [102ac46a] MultivariatePolynomials v0.3.10
+  [d8a4904e] MutableArithmetics v0.2.10
+  [77ba4419] NaNMath v0.3.4
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.3.0
+  [69de0a69] Parsers v1.0.7
+  [ddf597a6] PolyJuMP v0.4.0
+  [10f199a5] QPSReader v0.1.1
+  [189a3867] Reexport v0.2.0
+  [af85af4c] RowEchelon v0.1.1
+  [8e049039] SemialgebraicSets v0.2.1
+  [276daf66] SpecialFunctions v0.10.3
+  [90137ffa] StaticArrays v0.12.4
+  [4b9e565b] SumOfSquares v0.4.1
   [f9bf3ced] TableTestSets v0.1.0 #master (https://github.com/ericphanson/TableTestSets.jl)
   [3783bdb8] TableTraits v1.0.0
-  [bd369af6] Tables v1.0.3
-  [a759f4b9] TimerOutputs v0.5.3
+  [bd369af6] Tables v1.0.5
+  [a759f4b9] TimerOutputs v0.5.6
   [3bb67fe8] TranscodingStreams v0.9.5
-  [6dd1b50a] Tulip v0.3.0
+  [6dd1b50a] Tulip v0.5.0
+  [a5390f91] ZipFile v0.9.2
+  [83775a58] Zlib_jll v1.2.11+15
   [2a0f44e3] Base64 
   [ade2ca70] Dates 
+  [8bb1440f] DelimitedFiles 
   [8ba89e20] Distributed 
+  [9fa8497b] Future 
   [b77e0a4c] InteractiveUtils 
   [76f85450] LibGit2 
   [8f399da3] Libdl 
@@ -256,6 +531,7 @@ Manifest:
   [9a3f8284] Random 
   [ea8e919c] SHA 
   [9e88b42a] Serialization 
+  [1a1011a3] SharedArrays 
   [6462fe0b] Sockets 
   [2f01184e] SparseArrays 
   [10745b16] Statistics 
