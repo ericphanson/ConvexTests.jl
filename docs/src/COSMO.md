@@ -6,10 +6,10 @@ Depth = 4
 ```
 
 
-Compilation warmup gives an estimate of 30 seconds of compilation time.
+Compilation warmup gives an estimate of 52 seconds of compilation time.
 
 ## COSMO 
-These tests were run on March 4, 2020 at 19:14 (UTC).
+These tests were run on August 4, 2020 at 16:18 (UTC).
 
 Tests run with `decompose = false`, `max_iter = 40000`, `eps_abs = 5e-7`, and `eps_rel = 5e-7`.
 
@@ -20,7 +20,7 @@ Regex[r"mip", r"dual"]
 
 ### Tests
 
-Tests took 1 minute, 24 seconds to run (after warmup).
+Tests took 5 minutes, 26 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -33,17 +33,488 @@ Tests took 1 minute, 24 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">COSMO tests</td>
+<td style="text-align:center;color:green;">1967</td>
+<td style="text-align:center;color:red;">15</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">1982</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;Convex</td>
 <td style="text-align:center;color:green;">349</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">349</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;SumOfSquares</td>
+<td style="text-align:center;color:green;">1618</td>
+<td style="text-align:center;color:red;">15</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">1633</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp</td>
+<td style="text-align:center;color:green;">445</td>
+<td style="text-align:center;color:red;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">448</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_term_fixed</td>
+<td style="text-align:center;color:green;">44</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">44</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_horn</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_scaled_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_univariate_sum</td>
+<td style="text-align:center;color:green;">34</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">34</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_quartic_comparison</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_scaled_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_concave_then_convex_cubic</td>
+<td style="text-align:center;color:green;">13</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">13</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_cheby_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_term</td>
+<td style="text-align:center;color:green;">44</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">44</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_quartic_constant</td>
+<td style="text-align:center;color:green;">33</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">33</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_options_pricing</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;color:red;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">10</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 30</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 35</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 40</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 45</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 50</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp</td>
+<td style="text-align:center;color:green;">501</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">501</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
+<td style="text-align:center;color:green;">672</td>
+<td style="text-align:center;color:red;">12</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">684</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sosdemo5_infeasible</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">1</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;simple_matrix</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_concave_then_convex_cubic</td>
+<td style="text-align:center;color:green;">13</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">13</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_term_fixed</td>
+<td style="text-align:center;color:green;">44</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">44</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rearrangement</td>
+<td style="text-align:center;color:green;">23</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">25</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxcut</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_term</td>
+<td style="text-align:center;color:green;">44</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">44</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_scaled_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal_rem</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">1</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sosdemo5_feasible</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">1</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chebyshev</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sosdemo9</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_cheby_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_feasible_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">7</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_horn</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BPT12e399_rem</td>
+<td style="text-align:center;color:green;">48</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">48</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic_infeasible_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic_feasible_scaled_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">7</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal_4</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic_infeasible_scaled_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic_feasible_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">7</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_scaled_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;motzkin</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">4</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sosdemo10</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BPT12e399_maxdegree</td>
+<td style="text-align:center;color:green;">56</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">56</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_infeasible_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_options_pricing</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;color:red;">4</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">10</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 30</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 35</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 40</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 45</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 50</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_quartic_constant</td>
+<td style="text-align:center;color:green;">33</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">33</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_infeasible_scaled_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_univariate_sum</td>
+<td style="text-align:center;color:green;">34</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">34</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">53</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;choi</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_feasible_scaled_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">7</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal_4_rem</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">9</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_quartic_comparison</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal_2_rem</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">1</td>
 </tr></table>
 ```
 
 ### Errors
 
 ```julia
+Error in testset K = 35:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/options_pricing.jl:32
+  Expression: ≈(JuMP.objective_value(model), expected, atol=atol, rtol=rtol)
+   Evaluated: 17.061853878569536 ≈ 17.17 (atol=0.1, rtol=0.0)
+
+Error in testset K = 40:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/options_pricing.jl:31
+  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.NEARLY_FEASIBLE_POINT == MathOptInterface.FEASIBLE_POINT
+
+Error in testset K = 40:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/options_pricing.jl:32
+  Expression: ≈(JuMP.objective_value(model), expected, atol=atol, rtol=rtol)
+   Evaluated: 12.9977446611624 ≈ 13.2 (atol=0.1, rtol=0.0)
+
+Error in testset rearrangement:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/rearrangement.jl:25
+  Expression: termination_status(model) == MOI.OPTIMAL
+   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.OPTIMAL
+
+Error in testset rearrangement:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/rearrangement.jl:27
+  Expression: primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.NEARLY_FEASIBLE_POINT == MathOptInterface.FEASIBLE_POINT
+
+Error in testset chebyshev:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/chebyshev.jl:31
+  Expression: JuMP.termination_status(model) == MOI.OPTIMAL
+   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.OPTIMAL
+
+Error in testset chebyshev:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/chebyshev.jl:32
+  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.NEARLY_FEASIBLE_POINT == MathOptInterface.FEASIBLE_POINT
+
+Error in testset chebyshev:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/chebyshev.jl:34
+  Expression: isapprox(JuMP.value(p), (((128 * x ^ 8 - 256 * x ^ 6) + 160 * x ^ 4) - 32 * x ^ 2) + 1, ztol=4 * config.atol, atol=4 * config.atol, rtol=4 * config.rtol)
+   Evaluated: isapprox(5.619875389843053e6x⁸ - 3.993827122145539e-9x⁷ - 1.0166136119211117e7x⁶ - 3.029869852637319e-9x⁵ + 5.52163480005753e6x⁴ + 4.292975968664189e-9x³ - 903912.8473466395x² - 4.2525769257591984e-9x + 19772.198803423722, 128x⁸ - 256x⁶ + 160x⁴ - 32x² + 1; ztol=0.004, atol=0.004, rtol=0.0)
+
+Error in testset chebyshev:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/chebyshev.jl:35
+  Expression: isapprox(JuMP.value(γ), 128, atol=config.atol, rtol=config.rtol)
+   Evaluated: isapprox(5.619875389843053e6, 128; atol=0.001, rtol=0.0)
+
+Error in testset motzkin:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/motzkin.jl:26
+  Expression: JuMP.termination_status(model) == config.optimal_status
+   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.OPTIMAL
+
+Error in testset motzkin:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/motzkin.jl:27
+  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.NEARLY_FEASIBLE_POINT == MathOptInterface.FEASIBLE_POINT
+
+Error in testset K = 35:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/options_pricing.jl:32
+  Expression: ≈(JuMP.objective_value(model), expected, atol=atol, rtol=rtol)
+   Evaluated: 17.302985031512662 ≈ 17.17 (atol=0.1, rtol=0.0)
+
+Error in testset K = 40:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/options_pricing.jl:31
+  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.INFEASIBILITY_CERTIFICATE == MathOptInterface.FEASIBLE_POINT
+
+Error in testset K = 45:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/options_pricing.jl:31
+  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.INFEASIBILITY_CERTIFICATE == MathOptInterface.FEASIBLE_POINT
+
+Error in testset K = 50:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/options_pricing.jl:31
+  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.NEARLY_FEASIBLE_POINT == MathOptInterface.FEASIBLE_POINT
+
 ```
 
 
@@ -52,92 +523,162 @@ Tests took 1 minute, 24 seconds to run (after warmup).
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            83.9s / 99.2%           8.91GiB / 100%     
+       Tot / % measured:             327s / 99.5%           24.1GiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- affine                     1    26.6s  32.0%   26.6s   2.61GiB  29.5%  2.61GiB
-   affine_Partial_t...      1    2.75s  3.31%   2.75s    296MiB  3.26%   296MiB
-   affine_permutedd...      1    2.65s  3.19%   2.65s    321MiB  3.53%   321MiB
-   affine_multiply_...      1    2.17s  2.60%   2.17s    219MiB  2.41%   219MiB
-   affine_dot_multi...      1    2.13s  2.55%   2.13s    148MiB  1.63%   148MiB
-   affine_transpose...      1    1.93s  2.32%   1.93s    171MiB  1.88%   171MiB
-   affine_hcat_atom         1    1.83s  2.20%   1.83s    169MiB  1.86%   169MiB
-   affine_Diagonal_...      1    1.27s  1.53%   1.27s    113MiB  1.24%   113MiB
-   affine_vcat_atom         1    1.25s  1.50%   1.25s    100MiB  1.10%   100MiB
-   affine_satisfy_p...      1    1.12s  1.35%   1.12s   57.7MiB  0.63%  57.7MiB
-   affine_add_atom          1    1.06s  1.27%   1.06s   67.7MiB  0.74%  67.7MiB
-   affine_conv_atom         1    886ms  1.06%   886ms   53.1MiB  0.58%  53.1MiB
-   affine_index_atom        1    598ms  0.72%   598ms   41.4MiB  0.46%  41.4MiB
-   affine_dot_atom          1    553ms  0.66%   553ms   19.3MiB  0.21%  19.3MiB
-   affine_reshape_atom      1    533ms  0.64%   533ms   28.2MiB  0.31%  28.2MiB
-   affine_sum_atom          1    371ms  0.45%   371ms   31.5MiB  0.35%  31.5MiB
-   affine_kron_atom         1    270ms  0.32%   270ms   19.9MiB  0.22%  19.9MiB
-   affine_diag_atom         1    152ms  0.18%   152ms   14.5MiB  0.16%  14.5MiB
-   affine_dot_atom_...      1    107ms  0.13%   107ms   5.10MiB  0.06%  5.10MiB
-   affine_negate_atom       1   94.3ms  0.11%  94.3ms   3.93MiB  0.04%  3.93MiB
-   affine_trace_atom        1   47.7ms  0.06%  47.7ms   2.77MiB  0.03%  2.77MiB
- sdp                        1    17.8s  21.4%   17.8s   1.58GiB  17.8%  1.58GiB
-   sdp_operator_nor...      1    3.10s  3.73%   3.10s    250MiB  2.75%   250MiB
-   sdp_Partial_trace        1    2.24s  2.69%   2.24s    222MiB  2.44%   222MiB
-   sdp_Complex_Semi...      1    1.50s  1.81%   1.50s    101MiB  1.11%   101MiB
-   sdp_matrix_frac_...      1    1.15s  1.38%   1.15s   83.1MiB  0.91%  83.1MiB
-   sdp_matrix_frac_...      1    987ms  1.19%   987ms   68.3MiB  0.75%  68.3MiB
-   sdp_sum_largest_...      1    828ms  0.99%   828ms   52.3MiB  0.58%  52.3MiB
-   sdp_Complex_Vari...      1    718ms  0.86%   718ms   37.3MiB  0.41%  37.3MiB
-   sdp_socp_sumsqua...      1    655ms  0.79%   655ms   53.8MiB  0.59%  53.8MiB
-   sdp_lambda_min_atom      1    590ms  0.71%   590ms   42.5MiB  0.47%  42.5MiB
-   sdp_sdp_constraints      1    508ms  0.61%   508ms   79.9MiB  0.88%  79.9MiB
-   sdp_Issue_198            1    423ms  0.51%   423ms   37.6MiB  0.41%  37.6MiB
-   sdp_socp_norm2_atom      1    404ms  0.49%   404ms   24.6MiB  0.27%  24.6MiB
-   sdp_socp_abs_atom        1    376ms  0.45%   376ms   23.7MiB  0.26%  23.7MiB
-   sdp_nuclear_norm...      1    371ms  0.45%   371ms   32.0MiB  0.35%  32.0MiB
-   sdp_sdp_variables        1    283ms  0.34%   283ms   24.2MiB  0.27%  24.2MiB
-   sdp_kron_atom            1    168ms  0.20%   168ms   19.7MiB  0.22%  19.7MiB
-   sdp_Real_Variabl...      1    135ms  0.16%   135ms   5.52MiB  0.06%  5.52MiB
-   sdp_sigma_max_atom       1    126ms  0.15%   126ms   14.5MiB  0.16%  14.5MiB
- socp                       1    16.9s  20.3%   16.9s   1.73GiB  19.4%  1.73GiB
-   socp_quad_form_atom      1    2.71s  3.26%   2.71s   35.2MiB  0.39%  35.2MiB
-   socp_sum_squares...      1    2.44s  2.94%   2.44s    232MiB  2.55%   232MiB
-   socp_rational_no...      1    2.18s  2.61%   2.18s    275MiB  3.03%   275MiB
-   socp_huber_atom          1    935ms  1.12%   935ms   75.5MiB  0.83%  75.5MiB
-   socp_inv_pos_atom        1    929ms  1.12%   929ms   69.5MiB  0.76%  69.5MiB
-   socp_fix_multipl...      1    726ms  0.87%   726ms   46.9MiB  0.52%  46.9MiB
-   socp_quad_over_l...      1    630ms  0.76%   630ms   30.6MiB  0.34%  30.6MiB
-   socp_norm_consis...      1    627ms  0.75%   627ms   32.5MiB  0.36%  32.5MiB
-   socp_rational_no...      1    444ms  0.53%   444ms   42.0MiB  0.46%  42.0MiB
-   socp_geo_mean_atom       1    355ms  0.43%   355ms   24.9MiB  0.27%  24.9MiB
-   socp_square_atom         1    320ms  0.38%   320ms   15.0MiB  0.17%  15.0MiB
-   socp_fix_and_fre...      1    309ms  0.37%   309ms   30.5MiB  0.34%  30.5MiB
-   socp_sqrt_atom           1   53.2ms  0.06%  53.2ms   1.08MiB  0.01%  1.08MiB
- constant                   1    9.55s  11.5%   9.55s    919MiB  10.1%   919MiB
-   constant_fix!_wi...      1    3.36s  4.04%   3.36s    268MiB  2.95%   268MiB
-   constant_Issue_166       1    3.11s  3.73%   3.11s    325MiB  3.58%   325MiB
-   constant_Issue_228       1    742ms  0.89%   742ms   52.5MiB  0.58%  52.5MiB
-   constant_fix!_wi...      1    556ms  0.67%   556ms   44.7MiB  0.49%  44.7MiB
-   constant_Test_do...      1    339ms  0.41%   339ms   19.3MiB  0.21%  19.3MiB
-   constant_fix!_an...      1    283ms  0.34%   283ms   22.1MiB  0.24%  22.1MiB
- lp                         1    6.15s  7.39%   6.15s   1.55GiB  17.5%  1.55GiB
-   lp_dotsort_atom          1    1.11s  1.34%   1.11s   94.3MiB  1.04%  94.3MiB
-   lp_max_atom              1    949ms  1.14%   949ms    799MiB  8.79%   799MiB
-   lp_min_atom              1    766ms  0.92%   766ms    293MiB  3.23%   293MiB
-   lp_sumlargest_atom       1    571ms  0.69%   571ms   50.9MiB  0.56%  50.9MiB
-   lp_minimum_atom          1    393ms  0.47%   393ms   62.6MiB  0.69%  62.6MiB
-   lp_maximum_atom          1    319ms  0.38%   319ms   19.4MiB  0.21%  19.4MiB
-   lp_sumsmallest_atom      1    288ms  0.35%   288ms   24.1MiB  0.27%  24.1MiB
-   lp_neg_atom              1    235ms  0.28%   235ms   11.7MiB  0.13%  11.7MiB
-   lp_pos_atom              1   86.5ms  0.10%  86.5ms   6.57MiB  0.07%  6.57MiB
-   lp_hinge_loss_atom       1    368μs  0.00%   368μs   49.7KiB  0.00%  49.7KiB
- exp                        1    4.03s  4.85%   4.03s    340MiB  3.74%   340MiB
-   exp_log_atom             1    1.71s  2.06%   1.71s    129MiB  1.42%   129MiB
-   exp_entropy_atom         1    462ms  0.56%   462ms   37.6MiB  0.41%  37.6MiB
-   exp_exp_atom             1    317ms  0.38%   317ms   19.3MiB  0.21%  19.3MiB
-   exp_log_sum_exp_...      1    301ms  0.36%   301ms   23.2MiB  0.25%  23.2MiB
-   exp_log_perspect...      1    274ms  0.33%   274ms   20.1MiB  0.22%  20.1MiB
-   exp_logistic_los...      1    245ms  0.29%   245ms   14.5MiB  0.16%  14.5MiB
-   exp_relative_ent...      1   68.2ms  0.08%  68.2ms   5.41MiB  0.06%  5.41MiB
- sdp_and_exp                1    2.19s  2.63%   2.19s    179MiB  1.96%   179MiB
-   sdp_and_exp_log_...      1    2.08s  2.49%   2.08s    163MiB  1.79%   163MiB
+ SumOfSquares               1     238s  73.2%    238s   16.2GiB  67.3%  16.2GiB
+   sdp                      1     106s  32.5%    106s   6.70GiB  27.8%  6.70GiB
+     sosdemo5_infea...      1    9.82s  3.02%   9.82s    770MiB  3.13%   770MiB
+     rearrangement          1    7.79s  2.40%   7.79s    464MiB  1.88%   464MiB
+     quartic_ideal_rem      1    6.99s  2.15%   6.99s    536MiB  2.18%   536MiB
+     chebyshev              1    6.72s  2.07%   6.72s    261MiB  1.06%   261MiB
+     sos_horn               1    6.13s  1.89%   6.13s    323MiB  1.31%   323MiB
+     sos_options_pr...      1    5.53s  1.70%   5.53s    164MiB  0.67%   164MiB
+     simple_matrix          1    4.43s  1.36%   4.43s    321MiB  1.30%   321MiB
+     sos_concave_th...      1    4.12s  1.27%   4.12s    275MiB  1.12%   275MiB
+     quartic_ideal          1    4.08s  1.25%   4.08s    248MiB  1.01%   248MiB
+     sos_scaled_biv...      1    3.90s  1.20%   3.90s    247MiB  1.00%   247MiB
+     quartic_ideal_4        1    3.76s  1.16%   3.76s    239MiB  0.97%   239MiB
+     sos_term_fixed         1    3.73s  1.15%   3.73s    238MiB  0.97%   238MiB
+     sos_cheby_univ...      1    3.54s  1.09%   3.54s    219MiB  0.89%   219MiB
+     quartic_ideal_...      1    3.14s  0.97%   3.14s    195MiB  0.79%   195MiB
+     sos_quartic_co...      1    3.08s  0.95%   3.08s    198MiB  0.80%   198MiB
+     sos_term               1    2.81s  0.86%   2.81s    171MiB  0.69%   171MiB
+     maxcut                 1    2.79s  0.86%   2.79s    156MiB  0.63%   156MiB
+     quartic_feasib...      1    2.42s  0.74%   2.42s    117MiB  0.47%   117MiB
+     sos_univariate...      1    1.96s  0.60%   1.96s    119MiB  0.48%   119MiB
+     BPT12e399_rem          1    1.92s  0.59%   1.92s   71.4MiB  0.29%  71.4MiB
+     motzkin                1    1.79s  0.55%   1.79s   10.7MiB  0.04%  10.7MiB
+     quadratic_infe...      1    1.42s  0.44%   1.42s    101MiB  0.41%   101MiB
+     sosdemo10              1    1.35s  0.42%   1.35s    125MiB  0.51%   125MiB
+     sosdemo9               1    773ms  0.24%   773ms   47.5MiB  0.19%  47.5MiB
+     sos_univariate...      1    675ms  0.21%   675ms   24.6MiB  0.10%  24.6MiB
+     quadratic_feas...      1    494ms  0.15%   494ms   30.8MiB  0.13%  30.8MiB
+     choi                   1    469ms  0.14%   469ms   39.3MiB  0.16%  39.3MiB
+     sosdemo5_feasible      1    355ms  0.11%   355ms   37.3MiB  0.15%  37.3MiB
+     BPT12e399_maxd...      1    276ms  0.08%   276ms   8.71MiB  0.04%  8.71MiB
+     sos_quartic_co...      1    151ms  0.05%   151ms   12.8MiB  0.05%  12.8MiB
+     quartic_infeas...      1   95.3ms  0.03%  95.3ms   3.42MiB  0.01%  3.42MiB
+     quartic_infeas...      1   73.1ms  0.02%  73.1ms   1.05MiB  0.00%  1.05MiB
+     quartic_ideal_...      1   72.7ms  0.02%  72.7ms   2.75MiB  0.01%  2.75MiB
+     quartic_feasib...      1   36.5ms  0.01%  36.5ms    876KiB  0.00%   876KiB
+     quadratic_infe...      1   34.4ms  0.01%  34.4ms    796KiB  0.00%   796KiB
+     sos_bivariate_...      1   30.4ms  0.01%  30.4ms    698KiB  0.00%   698KiB
+     quadratic_feas...      1   29.7ms  0.01%  29.7ms    710KiB  0.00%   710KiB
+     sos_scaled_uni...      1   29.3ms  0.01%  29.3ms    696KiB  0.00%   696KiB
+   socp                     1    94.9s  29.2%   94.9s   6.99GiB  29.0%  6.99GiB
+     sdsos_term_fixed       1    21.5s  6.61%   21.5s   1.38GiB  5.75%  1.38GiB
+     sdsos_horn             1    13.4s  4.13%   13.4s   0.94GiB  3.89%  0.94GiB
+     sdsos_concave_...      1    10.6s  3.25%   10.6s    739MiB  3.00%   739MiB
+     sdsos_univaria...      1    8.06s  2.48%   8.06s    628MiB  2.55%   628MiB
+     sdsos_options_...      1    7.56s  2.33%   7.56s    612MiB  2.49%   612MiB
+     sdsos_cheby_un...      1    7.42s  2.28%   7.42s    529MiB  2.15%   529MiB
+     sdsos_univaria...      1    6.61s  2.03%   6.61s    476MiB  1.93%   476MiB
+     sdsos_term             1    4.66s  1.43%   4.66s    348MiB  1.41%   348MiB
+     sdsos_scaled_u...      1    4.24s  1.31%   4.24s    297MiB  1.21%   297MiB
+     sdsos_quartic_...      1    4.06s  1.25%   4.06s    269MiB  1.09%   269MiB
+     sdsos_quartic_...      1    720ms  0.22%   720ms   21.0MiB  0.09%  21.0MiB
+     sdsos_scaled_b...      1   68.0ms  0.02%  68.0ms   6.12MiB  0.02%  6.12MiB
+     sdsos_bivariat...      1   17.6ms  0.01%  17.6ms    701KiB  0.00%   701KiB
+   lp                       1    37.2s  11.5%   37.2s   2.50GiB  10.4%  2.50GiB
+     dsos_options_p...      1    6.31s  1.94%   6.31s    418MiB  1.70%   418MiB
+     dsos_concave_t...      1    4.74s  1.46%   4.74s    314MiB  1.27%   314MiB
+     dsos_univariat...      1    4.10s  1.26%   4.10s    272MiB  1.11%   272MiB
+     dsos_cheby_biv...      1    3.99s  1.23%   3.99s    259MiB  1.05%   259MiB
+     dsos_term_fixed        1    3.45s  1.06%   3.45s    226MiB  0.92%   226MiB
+     dsos_scaled_bi...      1    3.38s  1.04%   3.38s    223MiB  0.91%   223MiB
+     dsos_quartic_c...      1    2.98s  0.92%   2.98s    193MiB  0.78%   193MiB
+     dsos_horn              1    2.67s  0.82%   2.67s    183MiB  0.74%   183MiB
+     dsos_term              1    2.56s  0.79%   2.56s    172MiB  0.70%   172MiB
+     dsos_bivariate...      1    642ms  0.20%   642ms   27.5MiB  0.11%  27.5MiB
+     dsos_quartic_c...      1    124ms  0.04%   124ms   12.9MiB  0.05%  12.9MiB
+     dsos_scaled_un...      1   20.8ms  0.01%  20.8ms    689KiB  0.00%   689KiB
+     dsos_cheby_uni...      1   17.8ms  0.01%  17.8ms    709KiB  0.00%   709KiB
+     dsos_univariat...      1   12.3ms  0.00%  12.3ms    688KiB  0.00%   688KiB
+ Convex                     1    86.9s  26.8%   86.9s   7.86GiB  32.7%  7.86GiB
+   affine                   1    29.3s  9.03%   29.3s   2.70GiB  11.2%  2.70GiB
+     affine_permute...      1    2.93s  0.90%   2.93s    321MiB  1.30%   321MiB
+     affine_Partial...      1    2.89s  0.89%   2.89s    282MiB  1.14%   282MiB
+     affine_dot_mul...      1    2.37s  0.73%   2.37s    151MiB  0.61%   151MiB
+     affine_hcat_atom       1    2.25s  0.69%   2.25s    192MiB  0.78%   192MiB
+     affine_multipl...      1    2.14s  0.66%   2.14s    213MiB  0.87%   213MiB
+     affine_transpo...      1    2.05s  0.63%   2.05s    171MiB  0.69%   171MiB
+     affine_Diagona...      1    1.56s  0.48%   1.56s    127MiB  0.52%   127MiB
+     affine_vcat_atom       1    1.26s  0.39%   1.26s    100MiB  0.40%   100MiB
+     affine_add_atom        1    1.16s  0.36%   1.16s   67.8MiB  0.28%  67.8MiB
+     affine_satisfy...      1    1.05s  0.32%   1.05s   58.0MiB  0.24%  58.0MiB
+     affine_conv_atom       1    863ms  0.27%   863ms   53.2MiB  0.22%  53.2MiB
+     affine_index_atom      1    642ms  0.20%   642ms   42.5MiB  0.17%  42.5MiB
+     affine_reshape...      1    566ms  0.17%   566ms   29.5MiB  0.12%  29.5MiB
+     affine_dot_atom        1    563ms  0.17%   563ms   19.4MiB  0.08%  19.4MiB
+     affine_sum_atom        1    398ms  0.12%   398ms   31.5MiB  0.13%  31.5MiB
+     affine_kron_atom       1    277ms  0.09%   277ms   20.2MiB  0.08%  20.2MiB
+     affine_diag_atom       1    148ms  0.05%   148ms   14.4MiB  0.06%  14.4MiB
+     affine_dot_ato...      1    107ms  0.03%   107ms   5.02MiB  0.02%  5.02MiB
+     affine_negate_...      1   86.7ms  0.03%  86.7ms   3.88MiB  0.02%  3.88MiB
+     affine_trace_atom      1   45.6ms  0.01%  45.6ms   2.71MiB  0.01%  2.71MiB
+   sdp                      1    17.7s  5.46%   17.7s   1.50GiB  6.24%  1.50GiB
+     sdp_operator_n...      1    2.99s  0.92%   2.99s    259MiB  1.05%   259MiB
+     sdp_Partial_trace      1    2.39s  0.74%   2.39s    224MiB  0.91%   224MiB
+     sdp_Complex_Se...      1    1.20s  0.37%   1.20s   26.7MiB  0.11%  26.7MiB
+     sdp_matrix_fra...      1    1.16s  0.36%   1.16s   82.7MiB  0.34%  82.7MiB
+     sdp_matrix_fra...      1    908ms  0.28%   908ms   64.9MiB  0.26%  64.9MiB
+     sdp_Complex_Va...      1    705ms  0.22%   705ms   33.6MiB  0.14%  33.6MiB
+     sdp_sum_larges...      1    665ms  0.20%   665ms   43.9MiB  0.18%  43.9MiB
+     sdp_lambda_min...      1    626ms  0.19%   626ms   42.4MiB  0.17%  42.4MiB
+     sdp_socp_sumsq...      1    490ms  0.15%   490ms   42.7MiB  0.17%  42.7MiB
+     sdp_Issue_198          1    462ms  0.14%   462ms   37.7MiB  0.15%  37.7MiB
+     sdp_socp_abs_atom      1    449ms  0.14%   449ms   32.7MiB  0.13%  32.7MiB
+     sdp_sdp_constr...      1    391ms  0.12%   391ms   22.2MiB  0.09%  22.2MiB
+     sdp_nuclear_no...      1    366ms  0.11%   366ms   31.4MiB  0.13%  31.4MiB
+     sdp_socp_norm2...      1    356ms  0.11%   356ms   24.7MiB  0.10%  24.7MiB
+     sdp_sdp_variables      1    294ms  0.09%   294ms   28.2MiB  0.11%  28.2MiB
+     sdp_sigma_max_...      1    160ms  0.05%   160ms   13.9MiB  0.06%  13.9MiB
+     sdp_kron_atom          1    157ms  0.05%   157ms   19.6MiB  0.08%  19.6MiB
+     sdp_Real_Varia...      1    117ms  0.04%   117ms   5.22MiB  0.02%  5.22MiB
+   socp                     1    17.4s  5.35%   17.4s   1.66GiB  6.92%  1.66GiB
+     socp_quad_form...      1    2.63s  0.81%   2.63s   33.4MiB  0.14%  33.4MiB
+     socp_sum_squar...      1    2.46s  0.76%   2.46s    219MiB  0.89%   219MiB
+     socp_rational_...      1    2.17s  0.67%   2.17s    185MiB  0.75%   185MiB
+     socp_inv_pos_atom      1    901ms  0.28%   901ms   68.8MiB  0.28%  68.8MiB
+     socp_huber_atom        1    808ms  0.25%   808ms   84.2MiB  0.34%  84.2MiB
+     socp_fix_multi...      1    760ms  0.23%   760ms   47.0MiB  0.19%  47.0MiB
+     socp_quad_over...      1    626ms  0.19%   626ms   30.5MiB  0.12%  30.5MiB
+     socp_norm_cons...      1    597ms  0.18%   597ms   34.8MiB  0.14%  34.8MiB
+     socp_rational_...      1    413ms  0.13%   413ms   32.2MiB  0.13%  32.2MiB
+     socp_geo_mean_...      1    362ms  0.11%   362ms   26.4MiB  0.11%  26.4MiB
+     socp_square_atom       1    304ms  0.09%   304ms   14.7MiB  0.06%  14.7MiB
+     socp_fix_and_f...      1   83.3ms  0.03%  83.3ms   5.77MiB  0.02%  5.77MiB
+     socp_sqrt_atom         1   48.0ms  0.01%  48.0ms   1.12MiB  0.00%  1.12MiB
+   constant                 1    10.1s  3.12%   10.1s   0.94GiB  3.90%  0.94GiB
+     constant_fix!_...      1    3.43s  1.06%   3.43s    269MiB  1.09%   269MiB
+     constant_Issue...      1    3.04s  0.94%   3.04s    326MiB  1.32%   326MiB
+     constant_Issue...      1    821ms  0.25%   821ms   54.3MiB  0.22%  54.3MiB
+     constant_fix!_...      1    601ms  0.18%   601ms   45.3MiB  0.18%  45.3MiB
+     constant_Test_...      1    345ms  0.11%   345ms   19.7MiB  0.08%  19.7MiB
+     constant_fix!_...      1    281ms  0.09%   281ms   19.1MiB  0.08%  19.1MiB
+   lp                       1    5.63s  1.73%   5.63s    518MiB  2.10%   518MiB
+     lp_dotsort_atom        1    884ms  0.27%   884ms   65.6MiB  0.27%  65.6MiB
+     lp_min_atom            1    759ms  0.23%   759ms   44.1MiB  0.18%  44.1MiB
+     lp_sumlargest_...      1    558ms  0.17%   558ms   47.1MiB  0.19%  47.1MiB
+     lp_max_atom            1    433ms  0.13%   433ms   34.8MiB  0.14%  34.8MiB
+     lp_minimum_atom        1    392ms  0.12%   392ms   27.6MiB  0.11%  27.6MiB
+     lp_maximum_atom        1    292ms  0.09%   292ms   18.3MiB  0.07%  18.3MiB
+     lp_sumsmallest...      1    278ms  0.09%   278ms   22.2MiB  0.09%  22.2MiB
+     lp_neg_atom            1    208ms  0.06%   208ms   11.7MiB  0.05%  11.7MiB
+     lp_pos_atom            1   82.6ms  0.03%  82.6ms   6.37MiB  0.03%  6.37MiB
+     lp_hinge_loss_...      1    296μs  0.00%   296μs   49.7KiB  0.00%  49.7KiB
+   exp                      1    4.10s  1.26%   4.10s    336MiB  1.36%   336MiB
+     exp_log_atom           1    1.70s  0.52%   1.70s    123MiB  0.50%   123MiB
+     exp_entropy_atom       1    436ms  0.13%   436ms   37.5MiB  0.15%  37.5MiB
+     exp_exp_atom           1    295ms  0.09%   295ms   19.6MiB  0.08%  19.6MiB
+     exp_log_sum_ex...      1    278ms  0.09%   278ms   22.4MiB  0.09%  22.4MiB
+     exp_log_perspe...      1    275ms  0.08%   275ms   19.9MiB  0.08%  19.9MiB
+     exp_logistic_l...      1    268ms  0.08%   268ms   14.3MiB  0.06%  14.3MiB
+     exp_relative_e...      1   66.6ms  0.02%  66.6ms   5.35MiB  0.02%  5.35MiB
+   sdp_and_exp              1    2.34s  0.72%   2.34s    200MiB  0.81%   200MiB
+     sdp_and_exp_lo...      1    2.22s  0.68%   2.22s    184MiB  0.75%   184MiB
  ──────────────────────────────────────────────────────────────────────────────
 ```
 
@@ -148,50 +689,75 @@ Julia Version 1.3.1
 Commit 2d5741174c (2019-12-30 21:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz
+  CPU: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, skylake)
+  LLVM: libLLVM-6.0.1 (ORCJIT, broadwell)
 ```
 
 Manifest:
 ```julia
     Status `~/work/ConvexTests.jl/ConvexTests.jl/COSMO/Manifest.toml`
-  [14f7f29c] AMD v0.3.1
-  [1520ce14] AbstractTrees v0.3.2
+  [14f7f29c] AMD v0.4.0
+  [1520ce14] AbstractTrees v0.3.3
   [6e4b80f9] BenchmarkTools v0.5.0
-  [b99e7846] BinaryProvider v0.5.8
-  [1e616198] COSMO v0.7.0
-  [523fee87] CodecBzip2 v0.6.0
-  [944b1d66] CodecZlib v0.6.0
+  [6e34b625] Bzip2_jll v1.0.6+3
+  [1e616198] COSMO v0.7.4
+  [49dc2e85] Calculus v0.5.1
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [bbf7d656] CommonSubexpressions v0.3.0
   [34da2185] Compat v2.2.0
-  [f65535da] Convex v0.13.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
+  [f65535da] Convex v0.13.4
   [cb7cb77b] ConvexTests v0.1.0 [`~/work/ConvexTests.jl/ConvexTests.jl`]
-  [9a962f9c] DataAPI v1.1.0
-  [864edb3b] DataStructures v0.17.10
+  [9a962f9c] DataAPI v1.3.0
+  [864edb3b] DataStructures v0.17.20
   [e2d170a0] DataValueInterfaces v1.0.0
-  [cd3eb016] HTTP v0.8.12
+  [163ba53b] DiffResults v1.0.2
+  [b552c78f] DiffRules v1.0.1
+  [7c1d4256] DynamicPolynomials v0.3.12
+  [f6369f11] ForwardDiff v0.10.12
+  [cd3eb016] HTTP v0.8.17
   [83e8ac13] IniFile v0.5.0
   [82899510] IteratorInterfaceExtensions v1.0.0
   [682c06a0] JSON v0.21.0
-  [7d188eb4] JSONSchema v0.2.0
-  [b8f27783] MathOptInterface v0.9.12
-  [739be429] MbedTLS v1.0.1
-  [c8ffd9c3] MbedTLS_jll v2.16.0+1
-  [d8a4904e] MutableArithmetics v0.2.7
-  [bac558e1] OrderedCollections v1.1.0
-  [69de0a69] Parsers v0.3.12
-  [bfc457fd] QDLDL v0.1.3
+  [7d188eb4] JSONSchema v0.3.1
+  [4076af6c] JuMP v0.21.3
+  [1914dd2f] MacroTools v0.5.5
+  [b8f27783] MathOptInterface v0.9.14
+  [739be429] MbedTLS v1.0.2
+  [c8ffd9c3] MbedTLS_jll v2.16.6+1
+  [be282fd4] MultivariateBases v0.1.2
+  [f4abf1af] MultivariateMoments v0.3.0
+  [102ac46a] MultivariatePolynomials v0.3.10
+  [d8a4904e] MutableArithmetics v0.2.10
+  [77ba4419] NaNMath v0.3.4
+  [efe28fd5] OpenSpecFun_jll v0.5.3+3
+  [bac558e1] OrderedCollections v1.3.0
+  [69de0a69] Parsers v1.0.7
+  [ddf597a6] PolyJuMP v0.4.0
+  [bfc457fd] QDLDL v0.1.4
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.0.1
+  [af85af4c] RowEchelon v0.1.1
+  [8e049039] SemialgebraicSets v0.2.1
+  [276daf66] SpecialFunctions v0.10.3
+  [90137ffa] StaticArrays v0.12.4
+  [4b9e565b] SumOfSquares v0.4.1
   [f9bf3ced] TableTestSets v0.1.0 #master (https://github.com/ericphanson/TableTestSets.jl)
   [3783bdb8] TableTraits v1.0.0
-  [bd369af6] Tables v1.0.3
-  [a759f4b9] TimerOutputs v0.5.3
+  [bd369af6] Tables v1.0.5
+  [a759f4b9] TimerOutputs v0.5.6
   [3bb67fe8] TranscodingStreams v0.9.5
-  [c4a57d5a] UnsafeArrays v0.3.0
+  [c4a57d5a] UnsafeArrays v1.0.1
+  [a5390f91] ZipFile v0.9.2
+  [83775a58] Zlib_jll v1.2.11+15
   [2a0f44e3] Base64 
   [ade2ca70] Dates 
   [8bb1440f] DelimitedFiles 
   [8ba89e20] Distributed 
+  [9fa8497b] Future 
   [b77e0a4c] InteractiveUtils 
   [76f85450] LibGit2 
   [8f399da3] Libdl 
