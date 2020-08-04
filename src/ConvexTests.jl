@@ -3,37 +3,53 @@ module ConvexTests
 export do_tests
 
 using TableTestSets
-using Convex
-using Convex.ProblemDepot: foreach_problem, PROBLEMS
 using Test, Pkg, InteractiveUtils, Dates
 using TimerOutputs
 
 const DOCS_SRC = Ref(joinpath(@__DIR__, "..", "docs", "src"))
 
+include("convex.jl")
+include("sumofsquares.jl")
+
+const MODULES = [("Convex", ConvexBench), ("SumOfSquares", SumOfSquaresBench)]
+
 # To compile some things
 function dummy_problem(opt; T = Float64)
-    x = Variable(3)
-    p = minimize(2*x[2] + x[1] - x[3], [x >= 1]; numeric_type = T)
-    solve!(p, opt)
+    for (_, mod) in MODULES
+        mod.dummy_problem(opt; T = T)
+    end
 end
 
 # Modified from Convex.jl's ProblemDepot code to add TimerOutputs logging
-function _run_tests( handle_problem!::Function, 
-                    problems::Union{Nothing, Vector{String}, Vector{Regex}} = nothing; 
+function _run_tests(handle_problem!,
+                    problems::Dict,
+                    foreach_problem::Function,
+                    problems_exclude::Union{Nothing, Vector{String}, Vector{Regex}} = nothing;
                     exclude::Vector{Regex} = Regex[], T=Float64, atol=1e-3, rtol=0.0, to)
     exclude = copy(exclude) # rebind the local variable
     push!(exclude, r"benchmark")
-    for class in keys(PROBLEMS)
+    for class in keys(problems)
         any(occursin.(exclude, Ref(class))) && continue
         @timeit to "$class" begin
             @testset "$class" begin
-                foreach_problem(class, problems; exclude=exclude) do name, problem_func
+                foreach_problem(class, problems_exclude; exclude=exclude) do name, problem_func
                     @timeit to "$name" begin
                         @testset "$name" begin
                             problem_func(handle_problem!, Val(true), atol, rtol, T)
                         end
                     end
                 end
+            end
+        end
+    end
+end
+
+function _run_tests(opt, args...; to, excluded_modules = Module[], kws...)
+    for (name, mod) in MODULES
+        mod in excluded_modules && continue
+        @timeit to "$name" begin
+            @testset "$name" begin
+                _run_tests(mod.handle_problem_function(opt), mod.PROBLEMS, mod.foreach_problem, args...; to = to, kws...)
             end
         end
     end
@@ -58,9 +74,7 @@ function do_tests(name, opt; variant="", first = true, last = true, description 
     to = TimerOutput()
     results, t = @timed begin
         @testset TableTestSet "$name tests" begin
-            _run_tests(; to=to, T=T, exclude=exclude, kwargs...) do p
-                solve!(p, opt)
-            end
+            _run_tests(opt; to=to, T=T, exclude=exclude, kwargs...)
         end
     end
     duration = formatted_seconds(t)
