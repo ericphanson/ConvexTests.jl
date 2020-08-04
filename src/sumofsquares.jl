@@ -8,6 +8,7 @@ import SumOfSquares
 include(joinpath(dirname(dirname(pathof(SumOfSquares))), "test", "Tests", "Tests.jl"))
 
 function dummy_problem(opt; T = Float64)
+    T == Float64 || return
     @polyvar x y
     f = x^2 + 2x*y + y^2
     model = JuMP.Model(opt)
@@ -25,6 +26,7 @@ const PROBLEMS = Dict(
 handle_problem_function(opt) = opt
 
 function _test(test_func::Function, opt, ::Val{true}, atol, rtol, T)
+    T == Float64 || return
     config = JuMP.MOI.Test.TestConfig(atol=atol, rtol=rtol, query=false)
     test_func(opt, config)
 end
