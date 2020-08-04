@@ -31,8 +31,8 @@ jobs:
       - run: |
           julia --project=${{ matrix.solver }} -e '
             using Pkg;
-            Pkg.add(PackageSpec(url="https://github.com/ericphanson/TableTestSets.jl"));
             Pkg.develop(PackageSpec(path=pwd()));
+            Pkg.add(PackageSpec(url="https://github.com/ericphanson/TableTestSets.jl"));
             Pkg.instantiate();'
       - run: julia --project=${{ matrix.solver }} ${{ matrix.solver }}/test.jl
       - name: Commit test results
