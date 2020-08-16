@@ -6,10 +6,10 @@ Depth = 4
 ```
 
 
-Compilation warmup gives an estimate of 1 minute of compilation time.
+Compilation warmup gives an estimate of 57 seconds of compilation time.
 
 ## ProxSDP 
-These tests were run on August 4, 2020 at 16:20 (UTC).
+These tests were run on August 16, 2020 at 00:01 (UTC).
 
 Tests run with `tol_primal=1e-6` and `tol_dual=1e-6`.
 
@@ -20,7 +20,7 @@ Regex[r"mip", r"exp"]
 
 ### Tests
 
-Tests took 7 minutes, 25 seconds to run (after warmup).
+Tests took 7 minutes, 53 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -1055,17 +1055,17 @@ Tests took 7 minutes, 25 seconds to run (after warmup).
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/constant.jl:16
   Expression: ≈(problem.optval, evaluate(sum(c * β)), atol=atol, rtol=rtol)
-   Evaluated: -29.24100672938322 ≈ -28.59372699209676 (atol=0.001, rtol=0.0)
+   Evaluated: -16.740359738765022 ≈ -16.311576600871586 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/constant.jl:17
   Expression: ≈(problem.optval, 0.0, atol=atol, rtol=rtol)
-   Evaluated: -29.24100672938322 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: -16.740359738765022 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/constant.jl:18
   Expression: ≈(evaluate(β), zeros(5), atol=atol, rtol=rtol)
-   Evaluated: [-0.4331208524400172, -0.4331208524400172, -0.4331208524400172, -0.4331208524400172, -0.4331208524400172] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-0.30644889499752803, -0.30644889499752803, -0.30644889499752803, -0.30644889499752803, -0.30644889499752803] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_228:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/constant.jl:30
@@ -1110,12 +1110,12 @@ Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/probl
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/affine.jl:194
   Expression: ≈(p.optval, s, atol=atol, rtol=rtol)
-   Evaluated: 18.869449119412156 ≈ 15.89495399198993 (atol=0.001, rtol=0.0)
+   Evaluated: 10.103872918399924 ≈ 8.820881252238351 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/affine.jl:195
   Expression: ≈((evaluate(c * x' * d + d' * x * c' + (c * ((((x')')')')' * d)'))[1], s, atol=atol, rtol=rtol)
-   Evaluated: 18.4827949916183 ≈ 15.89495399198993 (atol=0.001, rtol=0.0)
+   Evaluated: 9.987665403391237 ≈ 8.820881252238351 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/affine.jl:332
@@ -1450,12 +1450,12 @@ Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/probl
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/lp.jl:95
   Expression: ≈(p.optval, max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9501329618195994 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9406792355771099 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/lp.jl:96
   Expression: ≈(evaluate(maximum(max(x, y))), max(max_a, max_b), atol=10atol, atol=atol, rtol=rtol)
-   Evaluated: 0.9818272730844307 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.9814800180628042 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/Y9BWU/src/problem_depot/problems/lp.jl:183
@@ -1997,7 +1997,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
   ProxSDP does not return duals for nonlinear Conic constraints. Only linear constraints (equalities and inequalities) can be queried.
   Stacktrace:
    [1] error(::String) at ./error.jl:33
-   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/UelUp/src/MOI_wrapper.jl:835
+   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/55EIV/src/MOI_wrapper.jl:835
    [3] get(::MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:568
    [4] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:866
    [5] (::SumOfSquares.Bridges.Constraint.var"#10#11"{MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}},SumOfSquares.MomentMatrixAttribute})(::Tuple{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle},MultivariateBases.MonomialBasis{DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}}) at ./none:0
@@ -2278,7 +2278,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/
   ProxSDP does not return duals for nonlinear Conic constraints. Only linear constraints (equalities and inequalities) can be queried.
   Stacktrace:
    [1] error(::String) at ./error.jl:33
-   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/UelUp/src/MOI_wrapper.jl:835
+   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/55EIV/src/MOI_wrapper.jl:835
    [3] get(::MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:568
    [4] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:866
    [5] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::SumOfSquares.MomentMatrixAttribute, ::SumOfSquares.Bridges.Constraint.SOSPolynomialBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.AlgebraicSet{Float64,DynamicPolynomials.Polynomial{true,Float64},SemialgebraicSets.Buchberger,SemialgebraicSets.SolverUsingMultiplicationMatrices{SemialgebraicSets.GröbnerBasisMultiplicationMatricesAlgorithm,SemialgebraicSets.ReorderedSchurMultiplicationMatricesSolver{Int64,Random._GLOBAL_RNG}},Float64},Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle},1}},Union{SumOfSquares.EmptyCone, SumOfSquares.PositiveSemidefinite2x2ConeTriangle, MathOptInterface.Nonnegatives, MathOptInterface.PositiveSemidefiniteConeTriangle},MathOptInterface.PositiveSemidefiniteConeTriangle,MultivariateBases.MonomialBasis,MultivariateBases.MonomialBasis,SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{MathOptInterface.PositiveSemidefiniteConeTriangle},MultivariateBases.MonomialBasis,Tuple{}},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:190
@@ -2426,7 +2426,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/
   ProxSDP does not return duals for nonlinear Conic constraints. Only linear constraints (equalities and inequalities) can be queried.
   Stacktrace:
    [1] error(::String) at ./error.jl:33
-   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/UelUp/src/MOI_wrapper.jl:835
+   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/55EIV/src/MOI_wrapper.jl:835
    [3] get(::MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:568
    [4] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:866
    [5] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::SumOfSquares.MomentMatrixAttribute, ::SumOfSquares.Bridges.Constraint.SOSPolynomialBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.AlgebraicSet{Float64,DynamicPolynomials.Polynomial{true,Float64},SemialgebraicSets.Buchberger,SemialgebraicSets.SolverUsingMultiplicationMatrices{SemialgebraicSets.GröbnerBasisMultiplicationMatricesAlgorithm,SemialgebraicSets.ReorderedSchurMultiplicationMatricesSolver{Int64,Random._GLOBAL_RNG}},Float64},Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle},1}},Union{SumOfSquares.EmptyCone, SumOfSquares.PositiveSemidefinite2x2ConeTriangle, MathOptInterface.Nonnegatives, MathOptInterface.PositiveSemidefiniteConeTriangle},MathOptInterface.PositiveSemidefiniteConeTriangle,MultivariateBases.MonomialBasis,MultivariateBases.MonomialBasis,SumOfSquares.Certificate.MaxDegree{SumOfSquares.NonnegPolyInnerCone{MathOptInterface.PositiveSemidefiniteConeTriangle},MultivariateBases.MonomialBasis},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:190
@@ -2649,7 +2649,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/
   ProxSDP does not return duals for nonlinear Conic constraints. Only linear constraints (equalities and inequalities) can be queried.
   Stacktrace:
    [1] error(::String) at ./error.jl:33
-   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/UelUp/src/MOI_wrapper.jl:835
+   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/55EIV/src/MOI_wrapper.jl:835
    [3] get(::MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:568
    [4] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:866
    [5] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::SumOfSquares.MomentMatrixAttribute, ::SumOfSquares.Bridges.Constraint.SOSPolynomialBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.FullSpace,Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle},1}},Union{SumOfSquares.EmptyCone, SumOfSquares.PositiveSemidefinite2x2ConeTriangle, MathOptInterface.Nonnegatives, MathOptInterface.PositiveSemidefiniteConeTriangle},MathOptInterface.PositiveSemidefiniteConeTriangle,MultivariateBases.MonomialBasis,MultivariateBases.MonomialBasis,SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{MathOptInterface.PositiveSemidefiniteConeTriangle},MultivariateBases.MonomialBasis,Tuple{}},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:190
@@ -2681,7 +2681,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/
   ProxSDP does not return duals for nonlinear Conic constraints. Only linear constraints (equalities and inequalities) can be queried.
   Stacktrace:
    [1] error(::String) at ./error.jl:33
-   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/UelUp/src/MOI_wrapper.jl:835
+   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/55EIV/src/MOI_wrapper.jl:835
    [3] get(::MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:568
    [4] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:866
    [5] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::SumOfSquares.MomentMatrixAttribute, ::SumOfSquares.Bridges.Constraint.SOSPolynomialBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.FullSpace,Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle},1}},Union{SumOfSquares.EmptyCone, SumOfSquares.PositiveSemidefinite2x2ConeTriangle, MathOptInterface.Nonnegatives, MathOptInterface.PositiveSemidefiniteConeTriangle},MathOptInterface.PositiveSemidefiniteConeTriangle,MultivariateBases.MonomialBasis,MultivariateBases.MonomialBasis,SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{MathOptInterface.PositiveSemidefiniteConeTriangle},MultivariateBases.MonomialBasis,Tuple{}},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:190
@@ -2773,7 +2773,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/
   ProxSDP does not return duals for nonlinear Conic constraints. Only linear constraints (equalities and inequalities) can be queried.
   Stacktrace:
    [1] error(::String) at ./error.jl:33
-   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/UelUp/src/MOI_wrapper.jl:835
+   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/55EIV/src/MOI_wrapper.jl:835
    [3] get(::MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:568
    [4] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:866
    [5] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::SumOfSquares.MomentMatrixAttribute, ::SumOfSquares.Bridges.Constraint.SOSPolynomialBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.FullSpace,Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle},1}},Union{SumOfSquares.EmptyCone, SumOfSquares.PositiveSemidefinite2x2ConeTriangle, MathOptInterface.Nonnegatives, MathOptInterface.PositiveSemidefiniteConeTriangle},MathOptInterface.PositiveSemidefiniteConeTriangle,MultivariateBases.ScaledMonomialBasis,MultivariateBases.MonomialBasis,SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{MathOptInterface.PositiveSemidefiniteConeTriangle},MultivariateBases.ScaledMonomialBasis,Tuple{}},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:190
@@ -2805,7 +2805,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/
   ProxSDP does not return duals for nonlinear Conic constraints. Only linear constraints (equalities and inequalities) can be queried.
   Stacktrace:
    [1] error(::String) at ./error.jl:33
-   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/UelUp/src/MOI_wrapper.jl:835
+   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/55EIV/src/MOI_wrapper.jl:835
    [3] get(::MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:568
    [4] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:866
    [5] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::SumOfSquares.MomentMatrixAttribute, ::SumOfSquares.Bridges.Constraint.SOSPolynomialBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.FullSpace,Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle},1}},Union{SumOfSquares.EmptyCone, SumOfSquares.PositiveSemidefinite2x2ConeTriangle, MathOptInterface.Nonnegatives, MathOptInterface.PositiveSemidefiniteConeTriangle},MathOptInterface.PositiveSemidefiniteConeTriangle,MultivariateBases.ScaledMonomialBasis,MultivariateBases.MonomialBasis,SumOfSquares.Certificate.Newton{SumOfSquares.NonnegPolyInnerCone{MathOptInterface.PositiveSemidefiniteConeTriangle},MultivariateBases.ScaledMonomialBasis,Tuple{}},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:190
@@ -2913,7 +2913,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/
   ProxSDP does not return duals for nonlinear Conic constraints. Only linear constraints (equalities and inequalities) can be queried.
   Stacktrace:
    [1] error(::String) at ./error.jl:33
-   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/UelUp/src/MOI_wrapper.jl:835
+   [2] get(::ProxSDP.Optimizer, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/ProxSDP/55EIV/src/MOI_wrapper.jl:835
    [3] get(::MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Utilities/cachingoptimizer.jl:568
    [4] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::MathOptInterface.ConstraintDual, ::MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}) at /home/runner/.julia/packages/MathOptInterface/bygN7/src/Bridges/bridge_optimizer.jl:866
    [5] get(::MathOptInterface.Bridges.LazyBridgeOptimizer{MathOptInterface.Utilities.CachingOptimizer{ProxSDP.Optimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}}, ::SumOfSquares.MomentMatrixAttribute, ::SumOfSquares.Bridges.Constraint.SOSPolynomialBridge{Float64,MathOptInterface.VectorAffineFunction{Float64},SemialgebraicSets.AlgebraicSet{Float64,DynamicPolynomials.Polynomial{true,Float64},SemialgebraicSets.Buchberger,SemialgebraicSets.SolverUsingMultiplicationMatrices{SemialgebraicSets.GröbnerBasisMultiplicationMatricesAlgorithm,SemialgebraicSets.ReorderedSchurMultiplicationMatricesSolver{Int64,Random._GLOBAL_RNG}},Float64},Union{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone}, MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.Nonnegatives},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,MathOptInterface.PositiveSemidefiniteConeTriangle},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.EmptyCone},1}, Array{MathOptInterface.ConstraintIndex{MathOptInterface.VectorOfVariables,SumOfSquares.PositiveSemidefinite2x2ConeTriangle},1}},Union{SumOfSquares.EmptyCone, SumOfSquares.PositiveSemidefinite2x2ConeTriangle, MathOptInterface.Nonnegatives, MathOptInterface.PositiveSemidefiniteConeTriangle},MathOptInterface.PositiveSemidefiniteConeTriangle,MultivariateBases.MonomialBasis,MultivariateBases.MonomialBasis,SumOfSquares.Certificate.Remainder{SumOfSquares.Certificate.MaxDegree{SumOfSquares.NonnegPolyInnerCone{MathOptInterface.PositiveSemidefiniteConeTriangle},MultivariateBases.MonomialBasis}},DynamicPolynomials.Monomial{true},DynamicPolynomials.MonomialVector{true}}) at /home/runner/.julia/packages/SumOfSquares/61JEU/src/Bridges/Constraint/sos_polynomial.jl:190
@@ -2946,161 +2946,161 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/61JEU/test/Tests/
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:             446s / 100%            46.0GiB / 100%     
+       Tot / % measured:             473s / 100%            46.0GiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1     355s  79.8%    355s   37.1GiB  80.8%  37.1GiB
-   sdp                      1     239s  53.8%    239s   28.2GiB  61.4%  28.2GiB
-     sosdemo5_infea...      1    73.9s  16.6%   73.9s   7.80GiB  17.0%  7.80GiB
-     sos_options_pr...      1    34.3s  7.72%   34.3s   5.67GiB  12.3%  5.67GiB
-     maxcut                 1    25.3s  5.69%   25.3s   2.40GiB  5.22%  2.40GiB
-     sos_horn               1    17.0s  3.82%   17.0s   2.96GiB  6.45%  2.96GiB
-     chebyshev              1    13.2s  2.96%   13.2s   2.05GiB  4.47%  2.05GiB
-     quartic_ideal_rem      1    6.47s  1.46%   6.47s    535MiB  1.14%   535MiB
-     rearrangement          1    6.20s  1.40%   6.20s    464MiB  0.99%   464MiB
-     sos_concave_th...      1    4.08s  0.92%   4.08s    407MiB  0.87%   407MiB
-     simple_matrix          1    4.04s  0.91%   4.04s    319MiB  0.68%   319MiB
-     quartic_ideal          1    3.71s  0.83%   3.71s    252MiB  0.54%   252MiB
-     quartic_ideal_4        1    3.33s  0.75%   3.33s    241MiB  0.51%   241MiB
-     sos_term_fixed         1    3.32s  0.75%   3.32s    239MiB  0.51%   239MiB
-     quartic_infeas...      1    3.15s  0.71%   3.15s    647MiB  1.38%   647MiB
-     sos_scaled_biv...      1    3.14s  0.71%   3.14s    234MiB  0.50%   234MiB
-     sos_cheby_univ...      1    2.95s  0.66%   2.95s    206MiB  0.44%   206MiB
-     choi                   1    2.93s  0.66%   2.93s    511MiB  1.09%   511MiB
-     quartic_infeas...      1    2.90s  0.65%   2.90s    644MiB  1.37%   644MiB
-     sos_quartic_co...      1    2.72s  0.61%   2.72s    198MiB  0.42%   198MiB
-     quartic_ideal_...      1    2.61s  0.59%   2.61s    197MiB  0.42%   197MiB
-     sos_term               1    2.59s  0.58%   2.59s    174MiB  0.37%   174MiB
-     quartic_feasib...      1    2.20s  0.50%   2.20s    117MiB  0.25%   117MiB
-     sos_univariate...      1    1.67s  0.38%   1.67s    118MiB  0.25%   118MiB
-     BPT12e399_rem          1    1.62s  0.37%   1.62s   71.8MiB  0.15%  71.8MiB
-     motzkin                1    1.49s  0.34%   1.49s    319MiB  0.68%   319MiB
-     quadratic_infe...      1    1.38s  0.31%   1.38s    103MiB  0.22%   103MiB
-     sosdemo10              1    1.26s  0.28%   1.26s    128MiB  0.27%   128MiB
-     sosdemo5_feasible      1    1.17s  0.26%   1.17s    146MiB  0.31%   146MiB
-     sosdemo9               1    684ms  0.15%   684ms   48.3MiB  0.10%  48.3MiB
-     sos_univariate...      1    406ms  0.09%   406ms   19.4MiB  0.04%  19.4MiB
-     quadratic_feas...      1    393ms  0.09%   393ms   31.0MiB  0.07%  31.0MiB
-     sos_quartic_co...      1    260ms  0.06%   260ms   20.8MiB  0.04%  20.8MiB
-     BPT12e399_maxd...      1    231ms  0.05%   231ms   9.44MiB  0.02%  9.44MiB
-     quadratic_infe...      1    185ms  0.04%   185ms   2.60MiB  0.01%  2.60MiB
-     quartic_ideal_...      1    171ms  0.04%   171ms   3.39MiB  0.01%  3.39MiB
-     sos_scaled_uni...      1   61.3ms  0.01%  61.3ms   1.00MiB  0.00%  1.00MiB
-     sos_bivariate_...      1   59.7ms  0.01%  59.7ms   1.00MiB  0.00%  1.00MiB
-     quartic_feasib...      1   40.9ms  0.01%  40.9ms   1.89MiB  0.00%  1.89MiB
-     quadratic_feas...      1   39.3ms  0.01%  39.3ms    688KiB  0.00%   688KiB
-   socp                     1    80.1s  18.0%   80.1s   6.32GiB  13.8%  6.32GiB
-     sdsos_term_fixed       1    18.4s  4.14%   18.4s   1.23GiB  2.67%  1.23GiB
-     sdsos_horn             1    12.9s  2.91%   12.9s   0.96GiB  2.08%  0.96GiB
-     sdsos_concave_...      1    9.68s  2.18%   9.68s    766MiB  1.63%   766MiB
-     sdsos_univaria...      1    7.08s  1.59%   7.08s    546MiB  1.16%   546MiB
-     sdsos_cheby_un...      1    6.05s  1.36%   6.05s    490MiB  1.04%   490MiB
-     sdsos_univaria...      1    5.86s  1.32%   5.86s    458MiB  0.98%   458MiB
-     sdsos_term             1    4.08s  0.92%   4.08s    361MiB  0.77%   361MiB
-     sdsos_quartic_...      1    3.50s  0.79%   3.50s    269MiB  0.57%   269MiB
-     sdsos_scaled_u...      1    3.27s  0.74%   3.27s    270MiB  0.57%   270MiB
-     sdsos_options_...      1    2.95s  0.66%   2.95s    195MiB  0.42%   195MiB
-     sdsos_quartic_...      1    595ms  0.13%   595ms   22.6MiB  0.05%  22.6MiB
-     sdsos_scaled_b...      1   91.3ms  0.02%  91.3ms   6.43MiB  0.01%  6.43MiB
-     sdsos_bivariat...      1   66.0ms  0.01%  66.0ms   1.00MiB  0.00%  1.00MiB
-   lp                       1    35.4s  7.97%   35.4s   2.58GiB  5.62%  2.58GiB
-     dsos_options_p...      1    5.82s  1.31%   5.82s    418MiB  0.89%   418MiB
-     dsos_concave_t...      1    4.27s  0.96%   4.27s    314MiB  0.67%   314MiB
-     dsos_cheby_biv...      1    4.13s  0.93%   4.13s    296MiB  0.63%   296MiB
-     dsos_univariat...      1    4.00s  0.90%   4.00s    293MiB  0.62%   293MiB
-     dsos_scaled_bi...      1    3.30s  0.74%   3.30s    238MiB  0.51%   238MiB
-     dsos_term_fixed        1    3.15s  0.71%   3.15s    227MiB  0.48%   227MiB
-     dsos_quartic_c...      1    2.67s  0.60%   2.67s    191MiB  0.41%   191MiB
-     dsos_horn              1    2.64s  0.59%   2.64s    191MiB  0.41%   191MiB
-     dsos_term              1    2.50s  0.56%   2.50s    175MiB  0.37%   175MiB
-     dsos_bivariate...      1    636ms  0.14%   636ms   28.2MiB  0.06%  28.2MiB
-     dsos_quartic_c...      1    131ms  0.03%   131ms   13.1MiB  0.03%  13.1MiB
-     dsos_cheby_uni...      1   41.1ms  0.01%  41.1ms    774KiB  0.00%   774KiB
-     dsos_scaled_un...      1   30.4ms  0.01%  30.4ms    755KiB  0.00%   755KiB
-     dsos_univariat...      1   18.3ms  0.00%  18.3ms    754KiB  0.00%   754KiB
- Convex                     1    89.6s  20.2%   89.6s   8.82GiB  19.2%  8.82GiB
-   affine                   1    27.4s  6.18%   27.4s   2.73GiB  5.95%  2.73GiB
-     affine_Partial...      1    2.69s  0.60%   2.69s    280MiB  0.60%   280MiB
-     affine_permute...      1    2.57s  0.58%   2.57s    321MiB  0.68%   321MiB
-     affine_hcat_atom       1    2.18s  0.49%   2.18s    188MiB  0.40%   188MiB
-     affine_multipl...      1    2.03s  0.46%   2.03s    212MiB  0.45%   212MiB
-     affine_dot_mul...      1    2.01s  0.45%   2.01s    141MiB  0.30%   141MiB
-     affine_transpo...      1    1.84s  0.42%   1.84s    173MiB  0.37%   173MiB
-     affine_vcat_atom       1    1.32s  0.30%   1.32s    105MiB  0.22%   105MiB
-     affine_Diagona...      1    1.11s  0.25%   1.11s    108MiB  0.23%   108MiB
-     affine_add_atom        1    991ms  0.22%   991ms   67.2MiB  0.14%  67.2MiB
-     affine_satisfy...      1    971ms  0.22%   971ms   57.8MiB  0.12%  57.8MiB
-     affine_conv_atom       1    825ms  0.19%   825ms   53.3MiB  0.11%  53.3MiB
-     affine_dualvalue       1    627ms  0.14%   627ms   47.7MiB  0.10%  47.7MiB
-     affine_index_atom      1    611ms  0.14%   611ms   42.4MiB  0.09%  42.4MiB
-     affine_reshape...      1    579ms  0.13%   579ms   28.4MiB  0.06%  28.4MiB
-     affine_dot_atom        1    491ms  0.11%   491ms   19.5MiB  0.04%  19.5MiB
-     affine_sum_atom        1    394ms  0.09%   394ms   31.5MiB  0.07%  31.5MiB
-     affine_kron_atom       1    286ms  0.06%   286ms   20.2MiB  0.04%  20.2MiB
-     affine_diag_atom       1    154ms  0.03%   154ms   14.4MiB  0.03%  14.4MiB
-     affine_dot_ato...      1    101ms  0.02%   101ms   5.16MiB  0.01%  5.16MiB
-     affine_negate_...      1   86.5ms  0.02%  86.5ms   3.86MiB  0.01%  3.86MiB
-     affine_trace_atom      1   46.1ms  0.01%  46.1ms   2.70MiB  0.01%  2.70MiB
-   sdp                      1    22.2s  5.01%   22.2s   2.26GiB  4.93%  2.26GiB
-     sdp_operator_n...      1    2.98s  0.67%   2.98s    267MiB  0.57%   267MiB
-     sdp_matrix_fra...      1    2.70s  0.61%   2.70s    243MiB  0.52%   243MiB
-     sdp_Partial_trace      1    2.19s  0.49%   2.19s    224MiB  0.48%   224MiB
-     sdp_Complex_Se...      1    1.52s  0.34%   1.52s   70.8MiB  0.15%  70.8MiB
-     sdp_sdp_constr...      1    1.41s  0.32%   1.41s    239MiB  0.51%   239MiB
-     sdp_sum_larges...      1    1.39s  0.31%   1.39s    181MiB  0.38%   181MiB
-     sdp_matrix_fra...      1    1.08s  0.24%   1.08s   84.5MiB  0.18%  84.5MiB
-     sdp_dual_lambd...      1    878ms  0.20%   878ms   81.3MiB  0.17%  81.3MiB
-     sdp_Complex_Va...      1    644ms  0.14%   644ms   35.7MiB  0.08%  35.7MiB
-     sdp_lambda_min...      1    473ms  0.11%   473ms   33.3MiB  0.07%  33.3MiB
-     sdp_socp_sumsq...      1    473ms  0.11%   473ms   41.7MiB  0.09%  41.7MiB
-     sdp_kron_atom          1    455ms  0.10%   455ms   86.6MiB  0.18%  86.6MiB
-     sdp_nuclear_no...      1    434ms  0.10%   434ms   42.6MiB  0.09%  42.6MiB
-     sdp_Issue_198          1    415ms  0.09%   415ms   38.3MiB  0.08%  38.3MiB
-     sdp_socp_norm2...      1    338ms  0.08%   338ms   23.6MiB  0.05%  23.6MiB
-     sdp_socp_abs_atom      1    329ms  0.07%   329ms   24.7MiB  0.05%  24.7MiB
-     sdp_sdp_variables      1    292ms  0.07%   292ms   31.6MiB  0.07%  31.6MiB
-     sdp_sigma_max_...      1    203ms  0.05%   203ms   25.3MiB  0.05%  25.3MiB
-     sdp_Real_Varia...      1    129ms  0.03%   129ms   5.29MiB  0.01%  5.29MiB
-   socp                     1    21.7s  4.88%   21.7s   2.08GiB  4.54%  2.08GiB
-     socp_dual_mini...      1    5.22s  1.17%   5.22s    417MiB  0.89%   417MiB
-     socp_quad_form...      1    2.28s  0.51%   2.28s   33.6MiB  0.07%  33.6MiB
-     socp_rational_...      1    1.78s  0.40%   1.78s    165MiB  0.35%   165MiB
-     socp_sum_squar...      1    1.21s  0.27%   1.21s    101MiB  0.22%   101MiB
-     socp_inv_pos_atom      1    842ms  0.19%   842ms   62.0MiB  0.13%  62.0MiB
-     socp_dual_norm...      1    839ms  0.19%   839ms   71.1MiB  0.15%  71.1MiB
-     socp_quad_over...      1    686ms  0.15%   686ms   30.7MiB  0.07%  30.7MiB
-     socp_huber_atom        1    556ms  0.13%   556ms   36.2MiB  0.08%  36.2MiB
-     socp_rational_...      1    511ms  0.12%   511ms   41.4MiB  0.09%  41.4MiB
-     socp_fix_multi...      1    495ms  0.11%   495ms   33.8MiB  0.07%  33.8MiB
-     socp_norm_cons...      1    364ms  0.08%   364ms   28.5MiB  0.06%  28.5MiB
-     socp_dual_frob...      1    353ms  0.08%   353ms   26.0MiB  0.06%  26.0MiB
-     socp_square_atom       1    335ms  0.08%   335ms   15.2MiB  0.03%  15.2MiB
-     socp_geo_mean_...      1    299ms  0.07%   299ms   25.1MiB  0.05%  25.1MiB
-     socp_rational_...      1    147ms  0.03%   147ms   9.82MiB  0.02%  9.82MiB
-     socp_fix_and_f...      1   81.0ms  0.02%  81.0ms   5.74MiB  0.01%  5.74MiB
-     socp_sqrt_atom         1   55.3ms  0.01%  55.3ms   1.15MiB  0.00%  1.15MiB
-   constant                 1    12.1s  2.72%   12.1s   1.13GiB  2.47%  1.13GiB
-     constant_Issue...      1    5.75s  1.29%   5.75s    551MiB  1.17%   551MiB
-     constant_fix!_...      1    3.18s  0.72%   3.18s    271MiB  0.58%   271MiB
-     constant_Issue...      1    723ms  0.16%   723ms   56.5MiB  0.12%  56.5MiB
-     constant_fix!_...      1    586ms  0.13%   586ms   45.2MiB  0.10%  45.2MiB
-     constant_Test_...      1    300ms  0.07%   300ms   19.7MiB  0.04%  19.7MiB
-     constant_fix!_...      1    250ms  0.06%   250ms   19.2MiB  0.04%  19.2MiB
-   lp                       1    5.88s  1.32%   5.88s    595MiB  1.27%   595MiB
-     lp_dotsort_atom        1    816ms  0.18%   816ms   68.9MiB  0.15%  68.9MiB
-     lp_min_atom            1    543ms  0.12%   543ms   43.0MiB  0.09%  43.0MiB
-     lp_sumlargest_...      1    513ms  0.12%   513ms   47.2MiB  0.10%  47.2MiB
-     lp_sumsmallest...      1    439ms  0.10%   439ms   45.8MiB  0.10%  45.8MiB
-     lp_max_atom            1    369ms  0.08%   369ms   34.6MiB  0.07%  34.6MiB
-     lp_minimum_atom        1    305ms  0.07%   305ms   27.4MiB  0.06%  27.4MiB
-     lp_dual_abs_atom       1    259ms  0.06%   259ms   18.9MiB  0.04%  18.9MiB
-     lp_maximum_atom        1    202ms  0.05%   202ms   12.7MiB  0.03%  12.7MiB
-     lp_neg_atom            1    186ms  0.04%   186ms   11.7MiB  0.02%  11.7MiB
-     lp_dual_norm_i...      1   92.4ms  0.02%  92.4ms   3.91MiB  0.01%  3.91MiB
-     lp_pos_atom            1   83.5ms  0.02%  83.5ms   6.38MiB  0.01%  6.38MiB
-     lp_dual_norm_1...      1   65.0ms  0.01%  65.0ms   3.60MiB  0.01%  3.60MiB
-     lp_hinge_loss_...      1    217μs  0.00%   217μs   49.7KiB  0.00%  49.7KiB
+ SumOfSquares               1     382s  80.9%    382s   37.1GiB  80.8%  37.1GiB
+   sdp                      1     263s  55.8%    263s   28.2GiB  61.4%  28.2GiB
+     sosdemo5_infea...      1    77.4s  16.4%   77.4s   7.80GiB  17.0%  7.80GiB
+     sos_options_pr...      1    41.8s  8.87%   41.8s   5.67GiB  12.3%  5.67GiB
+     maxcut                 1    28.3s  6.00%   28.3s   2.40GiB  5.22%  2.40GiB
+     sos_horn               1    19.5s  4.14%   19.5s   2.96GiB  6.45%  2.96GiB
+     chebyshev              1    14.8s  3.14%   14.8s   2.05GiB  4.46%  2.05GiB
+     quartic_ideal_rem      1    6.80s  1.44%   6.80s    535MiB  1.14%   535MiB
+     rearrangement          1    6.12s  1.30%   6.12s    464MiB  0.99%   464MiB
+     sos_concave_th...      1    4.38s  0.93%   4.38s    407MiB  0.87%   407MiB
+     quartic_infeas...      1    4.26s  0.90%   4.26s    647MiB  1.37%   647MiB
+     quartic_infeas...      1    4.15s  0.88%   4.15s    644MiB  1.37%   644MiB
+     simple_matrix          1    4.07s  0.86%   4.07s    319MiB  0.68%   319MiB
+     choi                   1    3.99s  0.85%   3.99s    511MiB  1.09%   511MiB
+     quartic_ideal          1    3.80s  0.81%   3.80s    252MiB  0.54%   252MiB
+     sos_term_fixed         1    3.42s  0.73%   3.42s    239MiB  0.51%   239MiB
+     sos_scaled_biv...      1    3.42s  0.73%   3.42s    235MiB  0.50%   235MiB
+     quartic_ideal_4        1    3.34s  0.71%   3.34s    241MiB  0.51%   241MiB
+     sos_cheby_univ...      1    2.91s  0.62%   2.91s    206MiB  0.44%   206MiB
+     quartic_ideal_...      1    2.89s  0.61%   2.89s    197MiB  0.42%   197MiB
+     sos_quartic_co...      1    2.76s  0.59%   2.76s    201MiB  0.43%   201MiB
+     sos_term               1    2.63s  0.56%   2.63s    174MiB  0.37%   174MiB
+     quartic_feasib...      1    2.29s  0.48%   2.29s    117MiB  0.25%   117MiB
+     motzkin                1    1.76s  0.37%   1.76s    319MiB  0.68%   319MiB
+     BPT12e399_rem          1    1.75s  0.37%   1.75s   71.8MiB  0.15%  71.8MiB
+     sos_univariate...      1    1.67s  0.35%   1.67s    118MiB  0.25%   118MiB
+     quadratic_infe...      1    1.45s  0.31%   1.45s    104MiB  0.22%   104MiB
+     sosdemo5_feasible      1    1.39s  0.30%   1.39s    146MiB  0.31%   146MiB
+     sosdemo10              1    1.24s  0.26%   1.24s    128MiB  0.27%   128MiB
+     sosdemo9               1    669ms  0.14%   669ms   48.3MiB  0.10%  48.3MiB
+     quadratic_feas...      1    424ms  0.09%   424ms   30.8MiB  0.07%  30.8MiB
+     sos_univariate...      1    419ms  0.09%   419ms   19.4MiB  0.04%  19.4MiB
+     BPT12e399_maxd...      1    281ms  0.06%   281ms   9.44MiB  0.02%  9.44MiB
+     sos_quartic_co...      1    207ms  0.04%   207ms   20.8MiB  0.04%  20.8MiB
+     quadratic_infe...      1    192ms  0.04%   192ms   2.60MiB  0.01%  2.60MiB
+     quartic_ideal_...      1    158ms  0.03%   158ms   3.39MiB  0.01%  3.39MiB
+     sos_bivariate_...      1   67.4ms  0.01%  67.4ms   1.00MiB  0.00%  1.00MiB
+     sos_scaled_uni...      1   63.5ms  0.01%  63.5ms   1.00MiB  0.00%  1.00MiB
+     quartic_feasib...      1   56.8ms  0.01%  56.8ms   1.89MiB  0.00%  1.89MiB
+     quadratic_feas...      1   46.1ms  0.01%  46.1ms    688KiB  0.00%   688KiB
+   socp                     1    81.8s  17.3%   81.8s   6.32GiB  13.8%  6.32GiB
+     sdsos_term_fixed       1    18.5s  3.91%   18.5s   1.23GiB  2.67%  1.23GiB
+     sdsos_horn             1    13.7s  2.90%   13.7s   0.96GiB  2.08%  0.96GiB
+     sdsos_concave_...      1    10.0s  2.12%   10.0s    766MiB  1.63%   766MiB
+     sdsos_univaria...      1    6.86s  1.45%   6.86s    546MiB  1.16%   546MiB
+     sdsos_cheby_un...      1    6.14s  1.30%   6.14s    489MiB  1.04%   489MiB
+     sdsos_univaria...      1    5.93s  1.26%   5.93s    459MiB  0.98%   459MiB
+     sdsos_term             1    4.28s  0.91%   4.28s    361MiB  0.77%   361MiB
+     sdsos_quartic_...      1    3.63s  0.77%   3.63s    269MiB  0.57%   269MiB
+     sdsos_scaled_u...      1    3.35s  0.71%   3.35s    269MiB  0.57%   269MiB
+     sdsos_options_...      1    3.20s  0.68%   3.20s    195MiB  0.41%   195MiB
+     sdsos_quartic_...      1    627ms  0.13%   627ms   22.6MiB  0.05%  22.6MiB
+     sdsos_scaled_b...      1   97.5ms  0.02%  97.5ms   6.46MiB  0.01%  6.46MiB
+     sdsos_bivariat...      1   70.2ms  0.01%  70.2ms   1.00MiB  0.00%  1.00MiB
+   lp                       1    36.8s  7.79%   36.8s   2.58GiB  5.62%  2.58GiB
+     dsos_options_p...      1    6.05s  1.28%   6.05s    418MiB  0.89%   418MiB
+     dsos_concave_t...      1    4.42s  0.94%   4.42s    314MiB  0.67%   314MiB
+     dsos_cheby_biv...      1    4.22s  0.89%   4.22s    296MiB  0.63%   296MiB
+     dsos_univariat...      1    4.19s  0.89%   4.19s    293MiB  0.62%   293MiB
+     dsos_scaled_bi...      1    3.42s  0.72%   3.42s    238MiB  0.51%   238MiB
+     dsos_term_fixed        1    3.41s  0.72%   3.41s    227MiB  0.48%   227MiB
+     dsos_quartic_c...      1    2.79s  0.59%   2.79s    191MiB  0.41%   191MiB
+     dsos_term              1    2.71s  0.57%   2.71s    176MiB  0.37%   176MiB
+     dsos_horn              1    2.63s  0.56%   2.63s    191MiB  0.41%   191MiB
+     dsos_bivariate...      1    596ms  0.13%   596ms   28.2MiB  0.06%  28.2MiB
+     dsos_quartic_c...      1    177ms  0.04%   177ms   13.1MiB  0.03%  13.1MiB
+     dsos_scaled_un...      1   33.8ms  0.01%  33.8ms    755KiB  0.00%   755KiB
+     dsos_cheby_uni...      1   27.2ms  0.01%  27.2ms    774KiB  0.00%   774KiB
+     dsos_univariat...      1   16.4ms  0.00%  16.4ms    754KiB  0.00%   754KiB
+ Convex                     1    89.9s  19.1%   89.9s   8.83GiB  19.2%  8.83GiB
+   affine                   1    26.9s  5.71%   26.9s   2.73GiB  5.94%  2.73GiB
+     affine_Partial...      1    2.70s  0.57%   2.70s    280MiB  0.59%   280MiB
+     affine_permute...      1    2.60s  0.55%   2.60s    321MiB  0.68%   321MiB
+     affine_hcat_atom       1    2.05s  0.43%   2.05s    188MiB  0.40%   188MiB
+     affine_multipl...      1    1.95s  0.41%   1.95s    212MiB  0.45%   212MiB
+     affine_dot_mul...      1    1.93s  0.41%   1.93s    141MiB  0.30%   141MiB
+     affine_transpo...      1    1.91s  0.40%   1.91s    173MiB  0.37%   173MiB
+     affine_vcat_atom       1    1.32s  0.28%   1.32s    105MiB  0.22%   105MiB
+     affine_Diagona...      1    1.14s  0.24%   1.14s    108MiB  0.23%   108MiB
+     affine_add_atom        1    1.01s  0.21%   1.01s   67.2MiB  0.14%  67.2MiB
+     affine_satisfy...      1    996ms  0.21%   996ms   58.2MiB  0.12%  58.2MiB
+     affine_conv_atom       1    776ms  0.16%   776ms   53.3MiB  0.11%  53.3MiB
+     affine_index_atom      1    651ms  0.14%   651ms   42.4MiB  0.09%  42.4MiB
+     affine_dot_atom        1    552ms  0.12%   552ms   19.5MiB  0.04%  19.5MiB
+     affine_reshape...      1    490ms  0.10%   490ms   28.4MiB  0.06%  28.4MiB
+     affine_dualvalue       1    486ms  0.10%   486ms   47.7MiB  0.10%  47.7MiB
+     affine_sum_atom        1    410ms  0.09%   410ms   31.5MiB  0.07%  31.5MiB
+     affine_kron_atom       1    244ms  0.05%   244ms   20.2MiB  0.04%  20.2MiB
+     affine_diag_atom       1    142ms  0.03%   142ms   14.4MiB  0.03%  14.4MiB
+     affine_dot_ato...      1    104ms  0.02%   104ms   5.16MiB  0.01%  5.16MiB
+     affine_negate_...      1   76.9ms  0.02%  76.9ms   3.86MiB  0.01%  3.86MiB
+     affine_trace_atom      1   42.9ms  0.01%  42.9ms   2.70MiB  0.01%  2.70MiB
+   sdp                      1    23.8s  5.05%   23.8s   2.28GiB  4.96%  2.28GiB
+     sdp_matrix_fra...      1    3.11s  0.66%   3.11s    243MiB  0.52%   243MiB
+     sdp_operator_n...      1    2.93s  0.62%   2.93s    267MiB  0.57%   267MiB
+     sdp_Partial_trace      1    2.16s  0.46%   2.16s    224MiB  0.48%   224MiB
+     sdp_sdp_constr...      1    2.06s  0.44%   2.06s    239MiB  0.51%   239MiB
+     sdp_Complex_Se...      1    1.88s  0.40%   1.88s   87.0MiB  0.18%  87.0MiB
+     sdp_sum_larges...      1    1.64s  0.35%   1.64s    181MiB  0.38%   181MiB
+     sdp_matrix_fra...      1    1.10s  0.23%   1.10s   84.5MiB  0.18%  84.5MiB
+     sdp_dual_lambd...      1    823ms  0.17%   823ms   81.3MiB  0.17%  81.3MiB
+     sdp_Complex_Va...      1    726ms  0.15%   726ms   35.7MiB  0.08%  35.7MiB
+     sdp_kron_atom          1    503ms  0.11%   503ms   86.7MiB  0.18%  86.7MiB
+     sdp_socp_sumsq...      1    501ms  0.11%   501ms   41.8MiB  0.09%  41.8MiB
+     sdp_lambda_min...      1    453ms  0.10%   453ms   33.3MiB  0.07%  33.3MiB
+     sdp_nuclear_no...      1    441ms  0.09%   441ms   42.6MiB  0.09%  42.6MiB
+     sdp_Issue_198          1    389ms  0.08%   389ms   38.3MiB  0.08%  38.3MiB
+     sdp_socp_abs_atom      1    357ms  0.08%   357ms   24.7MiB  0.05%  24.7MiB
+     sdp_socp_norm2...      1    312ms  0.07%   312ms   23.8MiB  0.05%  23.8MiB
+     sdp_sdp_variables      1    273ms  0.06%   273ms   31.6MiB  0.07%  31.6MiB
+     sdp_sigma_max_...      1    250ms  0.05%   250ms   25.3MiB  0.05%  25.3MiB
+     sdp_Real_Varia...      1    135ms  0.03%   135ms   5.39MiB  0.01%  5.39MiB
+   socp                     1    20.6s  4.37%   20.6s   2.08GiB  4.53%  2.08GiB
+     socp_dual_mini...      1    4.94s  1.05%   4.94s    417MiB  0.89%   417MiB
+     socp_quad_form...      1    2.25s  0.48%   2.25s   33.6MiB  0.07%  33.6MiB
+     socp_rational_...      1    1.65s  0.35%   1.65s    165MiB  0.35%   165MiB
+     socp_sum_squar...      1    1.09s  0.23%   1.09s    100MiB  0.21%   100MiB
+     socp_inv_pos_atom      1    841ms  0.18%   841ms   62.1MiB  0.13%  62.1MiB
+     socp_dual_norm...      1    771ms  0.16%   771ms   71.1MiB  0.15%  71.1MiB
+     socp_quad_over...      1    593ms  0.13%   593ms   30.7MiB  0.07%  30.7MiB
+     socp_rational_...      1    514ms  0.11%   514ms   41.4MiB  0.09%  41.4MiB
+     socp_fix_multi...      1    453ms  0.10%   453ms   33.8MiB  0.07%  33.8MiB
+     socp_huber_atom        1    420ms  0.09%   420ms   36.2MiB  0.08%  36.2MiB
+     socp_geo_mean_...      1    377ms  0.08%   377ms   25.0MiB  0.05%  25.0MiB
+     socp_norm_cons...      1    365ms  0.08%   365ms   28.5MiB  0.06%  28.5MiB
+     socp_square_atom       1    359ms  0.08%   359ms   15.2MiB  0.03%  15.2MiB
+     socp_dual_frob...      1    316ms  0.07%   316ms   26.0MiB  0.06%  26.0MiB
+     socp_rational_...      1    149ms  0.03%   149ms   9.82MiB  0.02%  9.82MiB
+     socp_fix_and_f...      1   71.5ms  0.02%  71.5ms   5.74MiB  0.01%  5.74MiB
+     socp_sqrt_atom         1   46.1ms  0.01%  46.1ms   1.12MiB  0.00%  1.12MiB
+   constant                 1    12.1s  2.57%   12.1s   1.13GiB  2.47%  1.13GiB
+     constant_Issue...      1    5.74s  1.22%   5.74s    551MiB  1.17%   551MiB
+     constant_fix!_...      1    3.11s  0.66%   3.11s    271MiB  0.58%   271MiB
+     constant_Issue...      1    715ms  0.15%   715ms   56.5MiB  0.12%  56.5MiB
+     constant_fix!_...      1    586ms  0.12%   586ms   45.2MiB  0.10%  45.2MiB
+     constant_Test_...      1    318ms  0.07%   318ms   19.7MiB  0.04%  19.7MiB
+     constant_fix!_...      1    239ms  0.05%   239ms   19.2MiB  0.04%  19.2MiB
+   lp                       1    6.14s  1.30%   6.14s    595MiB  1.27%   595MiB
+     lp_dotsort_atom        1    889ms  0.19%   889ms   69.0MiB  0.15%  69.0MiB
+     lp_min_atom            1    593ms  0.13%   593ms   43.0MiB  0.09%  43.0MiB
+     lp_sumlargest_...      1    567ms  0.12%   567ms   47.2MiB  0.10%  47.2MiB
+     lp_sumsmallest...      1    471ms  0.10%   471ms   45.8MiB  0.10%  45.8MiB
+     lp_max_atom            1    418ms  0.09%   418ms   34.6MiB  0.07%  34.6MiB
+     lp_minimum_atom        1    334ms  0.07%   334ms   27.4MiB  0.06%  27.4MiB
+     lp_dual_abs_atom       1    267ms  0.06%   267ms   18.9MiB  0.04%  18.9MiB
+     lp_neg_atom            1    249ms  0.05%   249ms   11.7MiB  0.02%  11.7MiB
+     lp_maximum_atom        1    191ms  0.04%   191ms   12.7MiB  0.03%  12.7MiB
+     lp_dual_norm_i...      1   87.6ms  0.02%  87.6ms   3.91MiB  0.01%  3.91MiB
+     lp_pos_atom            1   86.0ms  0.02%  86.0ms   6.38MiB  0.01%  6.38MiB
+     lp_dual_norm_1...      1   69.8ms  0.01%  69.8ms   3.60MiB  0.01%  3.60MiB
+     lp_hinge_loss_...      1    403μs  0.00%   403μs   49.7KiB  0.00%  49.7KiB
  ──────────────────────────────────────────────────────────────────────────────
 ```
 
@@ -3111,19 +3111,19 @@ Julia Version 1.3.1
 Commit 2d5741174c (2019-12-30 21:36 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz
+  CPU: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-6.0.1 (ORCJIT, haswell)
+  LLVM: libLLVM-6.0.1 (ORCJIT, broadwell)
 ```
 
 Manifest:
 ```julia
     Status `~/work/ConvexTests.jl/ConvexTests.jl/ProxSDP/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.3
-  [7d9fca2a] Arpack v0.4.0
-  [68821587] Arpack_jll v3.5.0+3
+  [7d9fca2a] Arpack v0.3.2
   [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
   [6e34b625] Bzip2_jll v1.0.6+3
   [49dc2e85] Calculus v0.5.1
   [523fee87] CodecBzip2 v0.7.2
@@ -3155,12 +3155,11 @@ Manifest:
   [102ac46a] MultivariatePolynomials v0.3.10
   [d8a4904e] MutableArithmetics v0.2.10
   [77ba4419] NaNMath v0.3.4
-  [4536629a] OpenBLAS_jll v0.3.9+5
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [bac558e1] OrderedCollections v1.3.0
-  [69de0a69] Parsers v1.0.7
+  [69de0a69] Parsers v1.0.10
   [ddf597a6] PolyJuMP v0.4.0
-  [65e78d25] ProxSDP v1.3.0
+  [65e78d25] ProxSDP v1.3.1
   [189a3867] Reexport v0.2.0
   [af85af4c] RowEchelon v0.1.1
   [8e049039] SemialgebraicSets v0.2.1
