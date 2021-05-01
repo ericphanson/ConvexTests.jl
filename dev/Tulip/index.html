@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Tulip · ConvexTests.jl</title><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/Tulip/"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../assets/documenter.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-dark.css" data-theme-name="documenter-dark"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit">ConvexTests.jl</span></div><form class="docs-search" action="../search/"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="../">Home</a></li><li><a class="tocitem" href="../COSMO/">COSMO</a></li><li><a class="tocitem" href="../CSDP/">CSDP</a></li><li><a class="tocitem" href="../ECOS/">ECOS</a></li><li><a class="tocitem" href="../Mosek/">Mosek</a></li><li><a class="tocitem" href="../ProxSDP/">ProxSDP</a></li><li><a class="tocitem" href="../SCS/">SCS</a></li><li><a class="tocitem" href="../SDPA/">SDPA</a></li><li><a class="tocitem" href="../SDPA_GMP/">SDPA_GMP</a></li><li class="is-active"><a class="tocitem" href>Tulip</a><ul class="internal"><li><a class="tocitem" href="#Tulip-Float64"><span>Tulip Float64</span></a></li><li><a class="tocitem" href="#Tulip-BigFloat"><span>Tulip BigFloat</span></a></li><li><a class="tocitem" href="#Version-information"><span>Version information</span></a></li></ul></li><li><a class="tocitem" href="../implementation_notes/">Implementation notes</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href>Tulip</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Tulip</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/Tulip.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><p>Table of contents:</p><ul><ul><li><a href="#Tulip-Float64">Tulip Float64</a></li><ul><li><a href="#Tests">Tests</a></li><li><a href="#Errors">Errors</a></li><li><a href="#Timing-information">Timing information</a></li></ul><li><a href="#Tulip-BigFloat">Tulip BigFloat</a></li><ul><li><a href="#Tests-2">Tests</a></li><li><a href="#Errors-2">Errors</a></li><li><a href="#Timing-information-2">Timing information</a></li></ul><li><a href="#Version-information">Version information</a></li></ul></ul><p>Compilation warmup gives an estimate of 51 seconds of compilation time.</p><h2 id="Tulip-Float64"><a class="docs-heading-anchor" href="#Tulip-Float64">Tulip Float64</a><a id="Tulip-Float64-1"></a><a class="docs-heading-anchor-permalink" href="#Tulip-Float64" title="Permalink"></a></h2><p>These tests were run on October 6, 2020 at 10:39 (UTC).</p><p>Tests run with default parameters in type <code>Float64</code>.</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia">Regex[r&quot;mip&quot;, r&quot;exp&quot;, r&quot;socp&quot;, r&quot;sdp&quot;]</code></pre><h3 id="Tests"><a class="docs-heading-anchor" href="#Tests">Tests</a><a id="Tests-1"></a><a class="docs-heading-anchor-permalink" href="#Tests" title="Permalink"></a></h3><p>Tests took 1 minute, 40 seconds to run (after warmup).</p><table>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Tulip · ConvexTests.jl</title><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/Tulip/"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../assets/documenter.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit">ConvexTests.jl</span></div><form class="docs-search" action="../search/"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="../">Home</a></li><li><a class="tocitem" href="../COSMO/">COSMO</a></li><li><a class="tocitem" href="../CSDP/">CSDP</a></li><li><a class="tocitem" href="../ECOS/">ECOS</a></li><li><a class="tocitem" href="../Hypatia/">Hypatia</a></li><li><a class="tocitem" href="../Mosek/">Mosek</a></li><li><a class="tocitem" href="../ProxSDP/">ProxSDP</a></li><li><a class="tocitem" href="../SCS/">SCS</a></li><li><a class="tocitem" href="../SDPA/">SDPA</a></li><li><a class="tocitem" href="../SDPA_GMP/">SDPA_GMP</a></li><li class="is-active"><a class="tocitem" href>Tulip</a><ul class="internal"><li><a class="tocitem" href="#Tulip-Float64"><span>Tulip Float64</span></a></li><li><a class="tocitem" href="#Tulip-BigFloat"><span>Tulip BigFloat</span></a></li><li><a class="tocitem" href="#Version-information"><span>Version information</span></a></li></ul></li><li><a class="tocitem" href="../implementation_notes/">Implementation notes</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href>Tulip</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Tulip</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/Tulip.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><p>Table of contents:</p><ul><ul><li><a href="#Tulip-Float64">Tulip Float64</a></li><ul><li><a href="#Tests">Tests</a></li><li><a href="#Errors">Errors</a></li><li><a href="#Timing-information">Timing information</a></li></ul><li><a href="#Tulip-BigFloat">Tulip BigFloat</a></li><ul><li><a href="#Tests-2">Tests</a></li><li><a href="#Errors-2">Errors</a></li><li><a href="#Timing-information-2">Timing information</a></li></ul><li><a href="#Version-information">Version information</a></li></ul></ul><p>Compilation warmup gives an estimate of 57 seconds of compilation time.</p><h2 id="Tulip-Float64"><a class="docs-heading-anchor" href="#Tulip-Float64">Tulip Float64</a><a id="Tulip-Float64-1"></a><a class="docs-heading-anchor-permalink" href="#Tulip-Float64" title="Permalink"></a></h2><p>These tests were run on May 1, 2021 at 12:55 (UTC).</p><p>Tests run with default parameters in type <code>Float64</code>.</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia">Regex[r&quot;mip&quot;, r&quot;exp&quot;, r&quot;socp&quot;, r&quot;sdp&quot;]</code></pre><h3 id="Tests"><a class="docs-heading-anchor" href="#Tests">Tests</a><a id="Tests-1"></a><a class="docs-heading-anchor-permalink" href="#Tests" title="Permalink"></a></h3><p>Tests took 1 minute, 36 seconds to run (after warmup).</p><table>
 <tr class="header">
 <td style="text-align:left;border-right: solid 2px;">testset</td>
 <td style="text-align:center;">pass</td>
@@ -9,79 +9,82 @@
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">Tulip tests</td>
-<td style="text-align:center;color:green;">730</td>
+<td style="text-align:center;color:green;">732</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">730</td>
+<td style="text-align:center;color:blue;">732</td>
 </tr></table><h3 id="Errors"><a class="docs-heading-anchor" href="#Errors">Errors</a><a id="Errors-1"></a><a class="docs-heading-anchor-permalink" href="#Errors" title="Permalink"></a></h3><pre><code class="language-julia"></code></pre><h3 id="Timing-information"><a class="docs-heading-anchor" href="#Timing-information">Timing information</a><a id="Timing-information-1"></a><a class="docs-heading-anchor-permalink" href="#Timing-information" title="Permalink"></a></h3><pre><code class="language-julia"> ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:             100s / 99.5%           9.31GiB / 100%     
+       Tot / % measured:            95.3s / 100%            9.25GiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1    59.0s  59.6%   59.0s   5.10GiB  55.0%  5.10GiB
-   lp                       1    58.9s  59.4%   58.9s   5.09GiB  54.9%  5.09GiB
-     dsos_cheby_biv...      1    10.1s  10.2%   10.1s   0.94GiB  10.1%  0.94GiB
-     dsos_univariat...      1    9.16s  9.24%   9.16s    712MiB  7.49%   712MiB
-     dsos_options_p...      1    8.60s  8.68%   8.60s    700MiB  7.37%   700MiB
-     dsos_concave_t...      1    6.82s  6.88%   6.82s    565MiB  5.95%   565MiB
-     dsos_term_fixed        1    5.12s  5.16%   5.12s    371MiB  3.91%   371MiB
-     dsos_horn              1    4.45s  4.49%   4.45s    334MiB  3.52%   334MiB
-     dsos_quartic_c...      1    3.13s  3.15%   3.13s    255MiB  2.68%   255MiB
-     dsos_scaled_bi...      1    2.93s  2.96%   2.93s    229MiB  2.41%   229MiB
-     dsos_term              1    2.69s  2.72%   2.69s    189MiB  1.99%   189MiB
-     dsos_quartic_c...      1    627ms  0.63%   627ms   25.9MiB  0.27%  25.9MiB
-     dsos_bivariate...      1    558ms  0.56%   558ms   26.3MiB  0.28%  26.3MiB
-     dsos_cheby_uni...      1   98.0ms  0.10%  98.0ms   12.5MiB  0.13%  12.5MiB
-     dsos_scaled_un...      1   12.4ms  0.01%  12.4ms    518KiB  0.01%   518KiB
-     dsos_univariat...      1   6.93ms  0.01%  6.93ms    517KiB  0.01%   517KiB
- Convex                     1    40.1s  40.4%   40.1s   4.17GiB  45.0%  4.17GiB
-   affine                   1    25.0s  25.2%   25.0s   2.65GiB  28.6%  2.65GiB
-     affine_Partial...      1    2.85s  2.88%   2.85s    334MiB  3.51%   334MiB
-     affine_permute...      1    2.52s  2.54%   2.52s    384MiB  4.04%   384MiB
-     affine_hcat_atom       1    2.05s  2.07%   2.05s    176MiB  1.85%   176MiB
-     affine_dot_mul...      1    2.03s  2.04%   2.03s    130MiB  1.36%   130MiB
-     affine_multipl...      1    2.01s  2.03%   2.01s    213MiB  2.25%   213MiB
-     affine_transpo...      1    1.26s  1.27%   1.26s   81.2MiB  0.85%  81.2MiB
-     affine_vcat_atom       1    1.19s  1.20%   1.19s   95.7MiB  1.01%  95.7MiB
-     affine_Diagona...      1    1.09s  1.10%   1.09s    110MiB  1.16%   110MiB
-     affine_satisfy...      1    987ms  1.00%   987ms   55.2MiB  0.58%  55.2MiB
-     affine_add_atom        1    854ms  0.86%   854ms   55.5MiB  0.58%  55.5MiB
-     affine_conv_atom       1    783ms  0.79%   783ms   49.0MiB  0.52%  49.0MiB
-     affine_dualvalue       1    609ms  0.61%   609ms   71.1MiB  0.75%  71.1MiB
-     affine_dot_atom        1    593ms  0.60%   593ms   17.8MiB  0.19%  17.8MiB
-     affine_index_atom      1    564ms  0.57%   564ms   41.6MiB  0.44%  41.6MiB
-     affine_reshape...      1    536ms  0.54%   536ms   26.1MiB  0.27%  26.1MiB
-     affine_sum_atom        1    342ms  0.34%   342ms   27.8MiB  0.29%  27.8MiB
-     affine_kron_atom       1    193ms  0.20%   193ms   10.8MiB  0.11%  10.8MiB
-     affine_diag_atom       1    123ms  0.12%   123ms   12.9MiB  0.14%  12.9MiB
-     affine_dot_ato...      1    106ms  0.11%   106ms   4.90MiB  0.05%  4.90MiB
-     affine_negate_...      1   78.6ms  0.08%  78.6ms   3.51MiB  0.04%  3.51MiB
-     affine_trace_atom      1   40.8ms  0.04%  40.8ms   2.38MiB  0.03%  2.38MiB
-   constant                 1    8.53s  8.61%   8.53s    873MiB  9.19%   873MiB
-     constant_fix!_...      1    3.09s  3.11%   3.09s    251MiB  2.64%   251MiB
-     constant_Issue...      1    2.60s  2.62%   2.60s    283MiB  2.98%   283MiB
-     constant_Issue...      1    675ms  0.68%   675ms   49.6MiB  0.52%  49.6MiB
-     constant_fix!_...      1    516ms  0.52%   516ms   41.9MiB  0.44%  41.9MiB
-     constant_Test_...      1    342ms  0.34%   342ms   18.1MiB  0.19%  18.1MiB
-     constant_fix!_...      1    250ms  0.25%   250ms   19.6MiB  0.21%  19.6MiB
-   lp                       1    6.30s  6.35%   6.30s    654MiB  6.88%   654MiB
-     lp_dotsort_atom        1    1.12s  1.13%   1.12s   92.4MiB  0.97%  92.4MiB
-     lp_dual_abs_atom       1    603ms  0.61%   603ms   61.5MiB  0.65%  61.5MiB
-     lp_min_atom            1    515ms  0.52%   515ms   43.9MiB  0.46%  43.9MiB
-     lp_sumlargest_...      1    488ms  0.49%   488ms   44.5MiB  0.47%  44.5MiB
-     lp_sumsmallest...      1    454ms  0.46%   454ms   42.4MiB  0.45%  42.4MiB
-     lp_max_atom            1    387ms  0.39%   387ms   37.5MiB  0.39%  37.5MiB
-     lp_minimum_atom        1    343ms  0.35%   343ms   26.1MiB  0.27%  26.1MiB
-     lp_dual_norm_i...      1    337ms  0.34%   337ms   21.1MiB  0.22%  21.1MiB
-     lp_neg_atom            1    194ms  0.20%   194ms   10.8MiB  0.11%  10.8MiB
-     lp_maximum_atom        1    178ms  0.18%   178ms   12.1MiB  0.13%  12.1MiB
-     lp_pos_atom            1   72.2ms  0.07%  72.2ms   5.80MiB  0.06%  5.80MiB
-     lp_dual_norm_1...      1   66.5ms  0.07%  66.5ms   3.34MiB  0.04%  3.34MiB
-     lp_hinge_loss_...      1    153μs  0.00%   153μs   47.7KiB  0.00%  47.7KiB
- ──────────────────────────────────────────────────────────────────────────────</code></pre><h2 id="Tulip-BigFloat"><a class="docs-heading-anchor" href="#Tulip-BigFloat">Tulip BigFloat</a><a id="Tulip-BigFloat-1"></a><a class="docs-heading-anchor-permalink" href="#Tulip-BigFloat" title="Permalink"></a></h2><p>These tests were run on October 6, 2020 at 10:40 (UTC).</p><p>Tests run with default parameters in type <code>BigFloat</code>.</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia">Regex[r&quot;mip&quot;, r&quot;exp&quot;, r&quot;socp&quot;, r&quot;sdp&quot;]</code></pre><h3 id="Tests-2"><a class="docs-heading-anchor" href="#Tests-2">Tests</a><a class="docs-heading-anchor-permalink" href="#Tests-2" title="Permalink"></a></h3><p>Tests took 37 seconds to run (after warmup).</p><table>
+ SumOfSquares               1    56.6s  59.7%   56.6s   5.06GiB  54.9%  5.06GiB
+   lp                       1    56.4s  59.5%   56.4s   5.05GiB  54.8%  5.05GiB
+     dsos_cheby_biv...      1    8.84s  9.32%   8.84s    792MiB  8.39%   792MiB
+     dsos_univariat...      1    8.64s  9.11%   8.64s    695MiB  7.37%   695MiB
+     dsos_options_p...      1    8.37s  8.82%   8.37s    735MiB  7.79%   735MiB
+     dsos_concave_t...      1    6.57s  6.92%   6.57s    543MiB  5.75%   543MiB
+     dsos_term_fixed        1    5.07s  5.35%   5.07s    402MiB  4.26%   402MiB
+     dsos_horn              1    4.36s  4.60%   4.36s    356MiB  3.77%   356MiB
+     dsos_scaled_bi...      1    3.24s  3.42%   3.24s    263MiB  2.79%   263MiB
+     dsos_quartic_c...      1    3.18s  3.36%   3.18s    275MiB  2.91%   275MiB
+     dsos_term              1    2.83s  2.98%   2.83s    234MiB  2.48%   234MiB
+     dsos_bivariate...      1    553ms  0.58%   553ms   27.4MiB  0.29%  27.4MiB
+     dsos_quartic_c...      1    540ms  0.57%   540ms   24.0MiB  0.25%  24.0MiB
+     dsos_cheby_uni...      1   87.3ms  0.09%  87.3ms   11.8MiB  0.13%  11.8MiB
+     dsos_scaled_un...      1   11.9ms  0.01%  11.9ms    612KiB  0.01%   612KiB
+     dsos_univariat...      1   8.48ms  0.01%  8.48ms    611KiB  0.01%   611KiB
+ Convex                     1    38.3s  40.3%   38.3s   4.16GiB  45.1%  4.16GiB
+   affine                   1    23.9s  25.2%   23.9s   2.64GiB  28.7%  2.64GiB
+     affine_Partial...      1    2.66s  2.81%   2.66s    333MiB  3.53%   333MiB
+     affine_permute...      1    2.40s  2.53%   2.40s    380MiB  4.02%   380MiB
+     affine_hcat_atom       1    1.97s  2.08%   1.97s    173MiB  1.83%   173MiB
+     affine_dot_mul...      1    1.93s  2.03%   1.93s    129MiB  1.37%   129MiB
+     affine_multipl...      1    1.89s  2.00%   1.89s    211MiB  2.23%   211MiB
+     affine_transpo...      1    1.24s  1.31%   1.24s   80.4MiB  0.85%  80.4MiB
+     affine_vcat_atom       1    1.13s  1.20%   1.13s   94.9MiB  1.01%  94.9MiB
+     affine_Diagona...      1    1.07s  1.13%   1.07s    109MiB  1.16%   109MiB
+     affine_satisfy...      1    932ms  0.98%   932ms   54.9MiB  0.58%  54.9MiB
+     affine_add_atom        1    803ms  0.85%   803ms   55.2MiB  0.58%  55.2MiB
+     affine_conv_atom       1    787ms  0.83%   787ms   48.2MiB  0.51%  48.2MiB
+     affine_dot_atom        1    641ms  0.68%   641ms   17.7MiB  0.19%  17.7MiB
+     affine_dualvalue       1    590ms  0.62%   590ms   69.9MiB  0.74%  69.9MiB
+     affine_index_atom      1    549ms  0.58%   549ms   41.0MiB  0.43%  41.0MiB
+     affine_reshape...      1    500ms  0.53%   500ms   25.9MiB  0.27%  25.9MiB
+     affine_sum_atom        1    305ms  0.32%   305ms   27.6MiB  0.29%  27.6MiB
+     affine_kron_atom       1    178ms  0.19%   178ms   10.7MiB  0.11%  10.7MiB
+     affine_single_...      1    139ms  0.15%   139ms   8.96MiB  0.09%  8.96MiB
+     affine_diag_atom       1    119ms  0.13%   119ms   13.0MiB  0.14%  13.0MiB
+     affine_dot_ato...      1    102ms  0.11%   102ms   4.95MiB  0.05%  4.95MiB
+     affine_negate_...      1   77.9ms  0.08%  77.9ms   3.54MiB  0.04%  3.54MiB
+     affine_single_...      1   72.6ms  0.08%  72.6ms   4.55MiB  0.05%  4.55MiB
+     affine_trace_atom      1   41.7ms  0.04%  41.7ms   2.44MiB  0.03%  2.44MiB
+   constant                 1    8.21s  8.65%   8.21s    861MiB  9.12%   861MiB
+     constant_fix!_...      1    2.99s  3.15%   2.99s    247MiB  2.61%   247MiB
+     constant_Issue...      1    2.40s  2.53%   2.40s    280MiB  2.96%   280MiB
+     constant_Issue...      1    698ms  0.74%   698ms   49.3MiB  0.52%  49.3MiB
+     constant_fix!_...      1    548ms  0.58%   548ms   41.8MiB  0.44%  41.8MiB
+     constant_Test_...      1    293ms  0.31%   293ms   18.2MiB  0.19%  18.2MiB
+     constant_fix!_...      1    241ms  0.25%   241ms   19.8MiB  0.21%  19.8MiB
+   lp                       1    5.89s  6.21%   5.89s    660MiB  6.99%   660MiB
+     lp_dotsort_atom        1    1.08s  1.14%   1.08s   97.5MiB  1.03%  97.5MiB
+     lp_dual_abs_atom       1    593ms  0.63%   593ms   59.9MiB  0.63%  59.9MiB
+     lp_min_atom            1    515ms  0.54%   515ms   45.8MiB  0.48%  45.8MiB
+     lp_sumlargest_...      1    465ms  0.49%   465ms   44.8MiB  0.47%  44.8MiB
+     lp_sumsmallest...      1    426ms  0.45%   426ms   42.4MiB  0.45%  42.4MiB
+     lp_max_atom            1    362ms  0.38%   362ms   39.8MiB  0.42%  39.8MiB
+     lp_minimum_atom        1    320ms  0.34%   320ms   26.2MiB  0.28%  26.2MiB
+     lp_dual_norm_i...      1    290ms  0.31%   290ms   21.3MiB  0.23%  21.3MiB
+     lp_neg_atom            1    235ms  0.25%   235ms   10.8MiB  0.11%  10.8MiB
+     lp_maximum_atom        1    169ms  0.18%   169ms   12.2MiB  0.13%  12.2MiB
+     lp_pos_atom            1   69.1ms  0.07%  69.1ms   5.88MiB  0.06%  5.88MiB
+     lp_dual_norm_1...      1   65.3ms  0.07%  65.3ms   3.42MiB  0.04%  3.42MiB
+     lp_hinge_loss_...      1    157μs  0.00%   157μs   47.7KiB  0.00%  47.7KiB
+ ──────────────────────────────────────────────────────────────────────────────
+</code></pre><h2 id="Tulip-BigFloat"><a class="docs-heading-anchor" href="#Tulip-BigFloat">Tulip BigFloat</a><a id="Tulip-BigFloat-1"></a><a class="docs-heading-anchor-permalink" href="#Tulip-BigFloat" title="Permalink"></a></h2><p>These tests were run on May 1, 2021 at 12:56 (UTC).</p><p>Tests run with default parameters in type <code>BigFloat</code>.</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia">Regex[r&quot;mip&quot;, r&quot;exp&quot;, r&quot;socp&quot;, r&quot;sdp&quot;]</code></pre><h3 id="Tests-2"><a class="docs-heading-anchor" href="#Tests-2">Tests</a><a class="docs-heading-anchor-permalink" href="#Tests-2" title="Permalink"></a></h3><p>Tests took 49 seconds to run (after warmup).</p><table>
 <tr class="header">
 <td style="text-align:left;border-right: solid 2px;">testset</td>
 <td style="text-align:center;">pass</td>
@@ -91,127 +94,137 @@
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">Tulip tests</td>
-<td style="text-align:center;color:green;">229</td>
+<td style="text-align:center;color:green;">231</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">229</td>
+<td style="text-align:center;color:blue;">231</td>
 </tr></table><h3 id="Errors-2"><a class="docs-heading-anchor" href="#Errors-2">Errors</a><a class="docs-heading-anchor-permalink" href="#Errors-2" title="Permalink"></a></h3><pre><code class="language-julia"></code></pre><h3 id="Timing-information-2"><a class="docs-heading-anchor" href="#Timing-information-2">Timing information</a><a class="docs-heading-anchor-permalink" href="#Timing-information-2" title="Permalink"></a></h3><pre><code class="language-julia"> ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            36.8s / 100%            3.73GiB / 100%     
+       Tot / % measured:            48.5s / 100%            5.92GiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- Convex                     1    36.8s   100%   36.8s   3.73GiB  100%   3.73GiB
-   constant                 1    22.3s  60.6%   22.3s   2.02GiB  54.0%  2.02GiB
-     constant_Issue...      1    20.8s  56.6%   20.8s   1.91GiB  51.1%  1.91GiB
-     constant_fix!_...      1    390ms  1.06%   390ms   19.5MiB  0.51%  19.5MiB
-     constant_fix!_...      1    199ms  0.54%   199ms   8.34MiB  0.22%  8.34MiB
-     constant_Issue...      1    123ms  0.33%   123ms   8.01MiB  0.21%  8.01MiB
-     constant_Test_...      1    123ms  0.33%   123ms   3.76MiB  0.10%  3.76MiB
-     constant_fix!_...      1   59.5ms  0.16%  59.5ms   2.84MiB  0.07%  2.84MiB
-   affine                   1    10.4s  28.2%   10.4s    847MiB  22.2%   847MiB
-     affine_multipl...      1    3.98s  10.8%   3.98s    296MiB  7.74%   296MiB
-     affine_transpo...      1    631ms  1.72%   631ms   21.8MiB  0.57%  21.8MiB
-     affine_dot_mul...      1    588ms  1.60%   588ms   27.9MiB  0.73%  27.9MiB
-     affine_dualvalue       1    585ms  1.59%   585ms   61.9MiB  1.62%  61.9MiB
-     affine_Partial...      1    436ms  1.18%   436ms   52.0MiB  1.36%  52.0MiB
-     affine_reshape...      1    343ms  0.93%   343ms   14.4MiB  0.38%  14.4MiB
-     affine_Diagona...      1    290ms  0.79%   290ms   17.5MiB  0.46%  17.5MiB
-     affine_index_atom      1    286ms  0.78%   286ms   20.9MiB  0.55%  20.9MiB
-     affine_sum_atom        1    264ms  0.72%   264ms   18.1MiB  0.47%  18.1MiB
-     affine_satisfy...      1    208ms  0.57%   208ms   8.19MiB  0.21%  8.19MiB
-     affine_add_atom        1    191ms  0.52%   191ms   9.92MiB  0.26%  9.92MiB
-     affine_conv_atom       1    148ms  0.40%   148ms   7.79MiB  0.20%  7.79MiB
-     affine_diag_atom       1    146ms  0.40%   146ms   12.8MiB  0.34%  12.8MiB
-     affine_hcat_atom       1    131ms  0.36%   131ms   7.47MiB  0.20%  7.47MiB
-     affine_vcat_atom       1    118ms  0.32%   118ms   10.0MiB  0.26%  10.0MiB
-     affine_dot_ato...      1    102ms  0.28%   102ms   3.10MiB  0.08%  3.10MiB
-     affine_dot_atom        1   77.5ms  0.21%  77.5ms   5.38MiB  0.14%  5.38MiB
-     affine_negate_...      1   73.3ms  0.20%  73.3ms   2.53MiB  0.07%  2.53MiB
-     affine_trace_atom      1   52.6ms  0.14%  52.6ms   2.40MiB  0.06%  2.40MiB
-     affine_permute...      1   37.6ms  0.10%  37.6ms   3.80MiB  0.10%  3.80MiB
-     affine_kron_atom       1   26.8ms  0.07%  26.8ms   2.99MiB  0.08%  2.99MiB
-   lp                       1    4.11s  11.2%   4.11s    909MiB  23.8%   909MiB
-     lp_dotsort_atom        1    533ms  1.45%   533ms   69.3MiB  1.81%  69.3MiB
-     lp_max_atom            1    484ms  1.31%   484ms    261MiB  6.82%   261MiB
-     lp_min_atom            1    438ms  1.19%   438ms    225MiB  5.88%   225MiB
-     lp_dual_norm_i...      1    292ms  0.79%   292ms   16.5MiB  0.43%  16.5MiB
-     lp_dual_abs_atom       1    253ms  0.69%   253ms   23.2MiB  0.61%  23.2MiB
-     lp_sumlargest_...      1    248ms  0.68%   248ms   44.4MiB  1.16%  44.4MiB
-     lp_minimum_atom        1    240ms  0.65%   240ms   17.9MiB  0.47%  17.9MiB
-     lp_sumsmallest...      1    226ms  0.61%   226ms   58.9MiB  1.54%  58.9MiB
-     lp_maximum_atom        1    101ms  0.28%   101ms   17.8MiB  0.46%  17.8MiB
-     lp_pos_atom            1   88.8ms  0.24%  88.8ms   7.03MiB  0.18%  7.03MiB
-     lp_dual_norm_1...      1   84.0ms  0.23%  84.0ms   7.70MiB  0.20%  7.70MiB
-     lp_neg_atom            1   74.5ms  0.20%  74.5ms   6.50MiB  0.17%  6.50MiB
-     lp_hinge_loss_...      1    156μs  0.00%   156μs   47.7KiB  0.00%  47.7KiB
- ──────────────────────────────────────────────────────────────────────────────</code></pre><h2 id="Version-information"><a class="docs-heading-anchor" href="#Version-information">Version information</a><a id="Version-information-1"></a><a class="docs-heading-anchor-permalink" href="#Version-information" title="Permalink"></a></h2><p><code>versioninfo()</code>:</p><pre><code class="language-julia">Julia Version 1.5.2
-Commit 539f3ce943 (2020-09-23 23:17 UTC)
+ Convex                     1    48.5s   100%   48.5s   5.92GiB  100%   5.92GiB
+   constant                 1    29.6s  61.1%   29.6s   3.12GiB  52.7%  3.12GiB
+     constant_Issue...      1    28.4s  58.5%   28.4s   3.01GiB  50.8%  3.01GiB
+     constant_fix!_...      1    322ms  0.66%   322ms   19.4MiB  0.32%  19.4MiB
+     constant_fix!_...      1    174ms  0.36%   174ms   8.40MiB  0.14%  8.40MiB
+     constant_Test_...      1    103ms  0.21%   103ms   3.93MiB  0.06%  3.93MiB
+     constant_Issue...      1    102ms  0.21%   102ms   8.11MiB  0.13%  8.11MiB
+     constant_fix!_...      1   54.6ms  0.11%  54.6ms   2.89MiB  0.05%  2.89MiB
+   affine                   1    14.6s  30.1%   14.6s   1.21GiB  20.5%  1.21GiB
+     affine_multipl...      1    8.60s  17.7%   8.60s    678MiB  11.2%   678MiB
+     affine_transpo...      1    552ms  1.14%   552ms   21.8MiB  0.36%  21.8MiB
+     affine_dualvalue       1    511ms  1.05%   511ms   60.8MiB  1.00%  60.8MiB
+     affine_dot_mul...      1    460ms  0.95%   460ms   28.3MiB  0.47%  28.3MiB
+     affine_Partial...      1    419ms  0.86%   419ms   55.1MiB  0.91%  55.1MiB
+     affine_reshape...      1    327ms  0.67%   327ms   14.5MiB  0.24%  14.5MiB
+     affine_index_atom      1    250ms  0.52%   250ms   21.0MiB  0.35%  21.0MiB
+     affine_sum_atom        1    228ms  0.47%   228ms   18.2MiB  0.30%  18.2MiB
+     affine_Diagona...      1    217ms  0.45%   217ms   17.6MiB  0.29%  17.6MiB
+     affine_satisfy...      1    179ms  0.37%   179ms   8.39MiB  0.14%  8.39MiB
+     affine_add_atom        1    162ms  0.33%   162ms   10.1MiB  0.17%  10.1MiB
+     affine_conv_atom       1    135ms  0.28%   135ms   7.87MiB  0.13%  7.87MiB
+     affine_vcat_atom       1    133ms  0.27%   133ms   10.1MiB  0.17%  10.1MiB
+     affine_hcat_atom       1    122ms  0.25%   122ms   7.54MiB  0.12%  7.54MiB
+     affine_diag_atom       1    122ms  0.25%   122ms   12.9MiB  0.21%  12.9MiB
+     affine_negate_...      1   64.2ms  0.13%  64.2ms   2.57MiB  0.04%  2.57MiB
+     affine_dot_atom        1   60.6ms  0.12%  60.6ms   5.43MiB  0.09%  5.43MiB
+     affine_dot_ato...      1   59.4ms  0.12%  59.4ms   3.15MiB  0.05%  3.15MiB
+     affine_permute...      1   49.9ms  0.10%  49.9ms   4.05MiB  0.07%  4.05MiB
+     affine_trace_atom      1   47.3ms  0.10%  47.3ms   2.45MiB  0.04%  2.45MiB
+     affine_single_...      1   35.0ms  0.07%  35.0ms   2.13MiB  0.04%  2.13MiB
+     affine_single_...      1   34.6ms  0.07%  34.6ms   2.13MiB  0.04%  2.13MiB
+     affine_kron_atom       1   25.4ms  0.05%  25.4ms   2.98MiB  0.05%  2.98MiB
+   lp                       1    4.25s  8.75%   4.25s   1.59GiB  26.8%  1.59GiB
+     lp_max_atom            1    656ms  1.35%   656ms    586MiB  9.67%   586MiB
+     lp_min_atom            1    620ms  1.28%   620ms    500MiB  8.26%   500MiB
+     lp_dotsort_atom        1    514ms  1.06%   514ms   87.1MiB  1.44%  87.1MiB
+     lp_dual_abs_atom       1    241ms  0.50%   241ms   30.9MiB  0.51%  30.9MiB
+     lp_dual_norm_i...      1    225ms  0.46%   225ms   22.0MiB  0.36%  22.0MiB
+     lp_sumlargest_...      1    221ms  0.46%   221ms   68.5MiB  1.13%  68.5MiB
+     lp_sumsmallest...      1    218ms  0.45%   218ms    100MiB  1.66%   100MiB
+     lp_minimum_atom        1    190ms  0.39%   190ms   18.0MiB  0.30%  18.0MiB
+     lp_maximum_atom        1   92.6ms  0.19%  92.6ms   27.6MiB  0.45%  27.6MiB
+     lp_pos_atom            1   78.9ms  0.16%  78.9ms   8.36MiB  0.14%  8.36MiB
+     lp_dual_norm_1...      1   75.2ms  0.16%  75.2ms   12.1MiB  0.20%  12.1MiB
+     lp_neg_atom            1   69.1ms  0.14%  69.1ms   8.95MiB  0.15%  8.95MiB
+     lp_hinge_loss_...      1    176μs  0.00%   176μs   47.7KiB  0.00%  47.7KiB
+ ──────────────────────────────────────────────────────────────────────────────
+</code></pre><h2 id="Version-information"><a class="docs-heading-anchor" href="#Version-information">Version information</a><a id="Version-information-1"></a><a class="docs-heading-anchor-permalink" href="#Version-information" title="Permalink"></a></h2><p><code>versioninfo()</code>:</p><pre><code class="language-julia">Julia Version 1.5.4
+Commit 69fcb5745b (2021-03-11 19:13 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+  CPU: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-9.0.1 (ORCJIT, broadwell)</code></pre><p>Manifest:</p><pre><code class="language-julia">Status `~/work/ConvexTests.jl/ConvexTests.jl/Tulip/Manifest.toml`
+  LLVM: libLLVM-9.0.1 (ORCJIT, skylake-avx512)</code></pre><p>Manifest:</p><pre><code class="language-julia">Status `~/work/ConvexTests.jl/ConvexTests.jl/Tulip/Manifest.toml`
   [14f7f29c] AMD v0.4.0
-  [1520ce14] AbstractTrees v0.3.3
+  [1520ce14] AbstractTrees v0.3.4
+  [56f22d72] Artifacts v1.3.0
   [6e4b80f9] BenchmarkTools v0.5.0
-  [6e34b625] Bzip2_jll v1.0.6+4
+  [6e34b625] Bzip2_jll v1.0.6+5
   [49dc2e85] Calculus v0.5.1
+  [d360d2e6] ChainRulesCore v0.9.40
   [523fee87] CodecBzip2 v0.7.2
   [944b1d66] CodecZlib v0.7.0
   [bbf7d656] CommonSubexpressions v0.3.0
-  [34da2185] Compat v2.2.1
-  [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
-  [f65535da] Convex v0.13.7
+  [34da2185] Compat v3.27.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [25c3070e] ComplexOptInterface v0.0.2
+  [f65535da] Convex v0.13.8
   [cb7cb77b] ConvexTests v0.1.0 `~/work/ConvexTests.jl/ConvexTests.jl`
-  [9a962f9c] DataAPI v1.3.0
-  [864edb3b] DataStructures v0.17.20
+  [9a962f9c] DataAPI v1.6.0
+  [864edb3b] DataStructures v0.18.9
   [e2d170a0] DataValueInterfaces v1.0.0
-  [163ba53b] DiffResults v1.0.2
-  [b552c78f] DiffRules v1.0.1
-  [7c1d4256] DynamicPolynomials v0.3.13
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [7c1d4256] DynamicPolynomials v0.3.16
   [9aa1b823] FastClosures v0.3.2
-  [f6369f11] ForwardDiff v0.10.12
-  [cd3eb016] HTTP v0.8.19
+  [f6369f11] ForwardDiff v0.10.18
+  [cd3eb016] HTTP v0.9.7
   [83e8ac13] IniFile v0.5.0
   [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.3.0
   [682c06a0] JSON v0.21.1
-  [7d188eb4] JSONSchema v0.3.2
-  [4076af6c] JuMP v0.21.4
-  [ba0b0d4f] Krylov v0.5.3
-  [40e66cde] LDLFactorizations v0.6.0
-  [5c8ed15e] LinearOperators v1.1.0
-  [1914dd2f] MacroTools v0.5.5
-  [b8f27783] MathOptInterface v0.9.17
-  [739be429] MbedTLS v1.0.2
-  [c8ffd9c3] MbedTLS_jll v2.16.8+0
-  [be282fd4] MultivariateBases v0.1.2
-  [f4abf1af] MultivariateMoments v0.3.0
-  [102ac46a] MultivariatePolynomials v0.3.10
-  [d8a4904e] MutableArithmetics v0.2.10
-  [77ba4419] NaNMath v0.3.4
-  [efe28fd5] OpenSpecFun_jll v0.5.3+3
-  [bac558e1] OrderedCollections v1.3.1
-  [69de0a69] Parsers v1.0.10
-  [ddf597a6] PolyJuMP v0.4.1
+  [7d188eb4] JSONSchema v0.3.3
+  [4076af6c] JuMP v0.21.7
+  [40e66cde] LDLFactorizations v0.8.1
+  [5c8ed15e] LinearOperators v1.3.0
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.9.21
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [be282fd4] MultivariateBases v0.1.3
+  [f4abf1af] MultivariateMoments v0.3.5
+  [102ac46a] MultivariatePolynomials v0.3.14
+  [d8a4904e] MutableArithmetics v0.2.18
+  [77ba4419] NaNMath v0.3.5
+  [ca575930] NetworkOptions v1.2.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.4.0
+  [69de0a69] Parsers v1.1.0
+  [ddf597a6] PolyJuMP v0.4.2
+  [21216c6a] Preferences v1.2.1
   [10f199a5] QPSReader v0.2.0
-  [189a3867] Reexport v0.2.0
-  [af85af4c] RowEchelon v0.1.1
+  [189a3867] Reexport v1.0.0
+  [af85af4c] RowEchelon v0.2.1
   [8e049039] SemialgebraicSets v0.2.2
-  [276daf66] SpecialFunctions v0.10.3
-  [90137ffa] StaticArrays v0.12.4
-  [4b9e565b] SumOfSquares v0.4.2
+  [276daf66] SpecialFunctions v1.3.0
+  [90137ffa] StaticArrays v1.1.2
+  [4b9e565b] SumOfSquares v0.4.6
+  [fa267f1f] TOML v1.0.3
   [f9bf3ced] TableTestSets v0.1.0 `https://github.com/ericphanson/TableTestSets.jl#master`
-  [3783bdb8] TableTraits v1.0.0
-  [bd369af6] Tables v1.1.0
-  [a759f4b9] TimerOutputs v0.5.6
+  [3783bdb8] TableTraits v1.0.1
+  [bd369af6] Tables v1.4.2
+  [a759f4b9] TimerOutputs v0.5.8
   [3bb67fe8] TranscodingStreams v0.9.5
-  [6dd1b50a] Tulip v0.6.2
-  [a5390f91] ZipFile v0.9.2
-  [83775a58] Zlib_jll v1.2.11+16
+  [6dd1b50a] Tulip v0.7.4
+  [5c2747f8] URIs v1.3.0
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
   [2a0f44e3] Base64
   [ade2ca70] Dates
   [8bb1440f] DelimitedFiles
@@ -237,4 +250,4 @@ Platform Info:
   [4607b0f0] SuiteSparse
   [8dfed614] Test
   [cf7118a7] UUIDs
-  [4ec0a83e] Unicode</code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../SDPA_GMP/">« SDPA_GMP</a><a class="docs-footer-nextpage" href="../implementation_notes/">Implementation notes »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Tuesday 6 October 2020 11:12">Tuesday 6 October 2020</span>. Using Julia version 1.5.2.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+  [4ec0a83e] Unicode</code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../SDPA_GMP/">« SDPA_GMP</a><a class="docs-footer-nextpage" href="../implementation_notes/">Implementation notes »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Saturday 1 May 2021 13:30">Saturday 1 May 2021</span>. Using Julia version 1.5.4.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
