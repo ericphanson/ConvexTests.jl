@@ -23,6 +23,7 @@ jobs:
           - CSDP
           - SDPA_GMP
           - ECOS
+          - Hypatia
     steps:
       - uses: actions/checkout@v2
       - uses: julia-actions/setup-julia@v1
