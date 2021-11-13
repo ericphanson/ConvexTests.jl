@@ -16,6 +16,7 @@ jobs:
           - x64
         solver:
           - SCS
+          - GLPK
           - ProxSDP
           - COSMO
           - Tulip
