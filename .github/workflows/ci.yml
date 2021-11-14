@@ -39,6 +39,7 @@ jobs:
             Pkg.develop(PackageSpec(path=pwd()));
             Pkg.instantiate();'
       - run: julia --project=${{ matrix.solver }} ${{ matrix.solver }}/test.jl
+        timeout-minutes: 45
       - name: Commit test results
         run: |
           set +e
