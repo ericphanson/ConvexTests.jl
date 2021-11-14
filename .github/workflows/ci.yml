@@ -1,6 +1,7 @@
 name: CI
 on:
   - push
+  - workflow_dispatch
 jobs:
   test:
     name: ${{ matrix.solver }} tests
@@ -26,6 +27,7 @@ jobs:
           - ECOS
           - Hypatia
     steps:
+      - timeout-minutes: 90
       - uses: actions/checkout@v2
       - uses: julia-actions/setup-julia@v1
         with:
