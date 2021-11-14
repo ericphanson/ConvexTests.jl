@@ -6,10 +6,10 @@ Depth = 4
 ```
 
 
-Compilation warmup gives an estimate of 50 seconds of compilation time.
+Compilation warmup gives an estimate of 1 minute, 12 seconds of compilation time.
 
 ## SDPA `PARAMETER_DEFAULT`
-These tests were run on November 13, 2021 at 23:37 (UTC).
+These tests were run on November 14, 2021 at 00:13 (UTC).
 
 Tests with SDPA via SDPA.jl.
 
@@ -20,7 +20,7 @@ Regex[r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 
 ### Tests
 
-Tests took 4 minutes, 50 seconds to run (after warmup).
+Tests took 6 minutes, 52 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -33,14 +33,14 @@ Tests took 4 minutes, 50 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">SDPA tests</td>
-<td style="text-align:center;color:green;">1918</td>
-<td style="text-align:center;color:red;">109</td>
+<td style="text-align:center;color:green;">1916</td>
+<td style="text-align:center;color:red;">111</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2027</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;Convex</td>
-<td style="text-align:center;color:green;">374</td>
-<td style="text-align:center;color:red;">20</td>
+<td style="text-align:center;color:green;">372</td>
+<td style="text-align:center;color:red;">22</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">394</td>
@@ -63,8 +63,8 @@ Tests took 4 minutes, 50 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">99</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">58</td>
-<td style="text-align:center;color:red;">4</td>
+<td style="text-align:center;color:green;">57</td>
+<td style="text-align:center;color:red;">5</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">62</td>
@@ -123,8 +123,8 @@ Tests took 4 minutes, 50 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_neg_atom</td>
-<td style="text-align:center;color:green;">3</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -147,8 +147,8 @@ Tests took 4 minutes, 50 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">48</td>
-<td style="text-align:center;color:red;">16</td>
+<td style="text-align:center;color:green;">47</td>
+<td style="text-align:center;color:red;">17</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">64</td>
@@ -207,8 +207,8 @@ Tests took 4 minutes, 50 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_lambda_min_atom</td>
-<td style="text-align:center;color:green;">3</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -785,57 +785,62 @@ Tests took 4 minutes, 50 seconds to run (after warmup).
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:209
   Expression: ≈(p.optval, 19, atol = atol, rtol = rtol)
-   Evaluated: 18.996700396785855 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: 18.17660408339907 ≈ 19 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:222
   Expression: ≈(p.optval, 19, atol = atol, rtol = rtol)
-   Evaluated: 18.16445614291115 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: 18.834329246708876 ≈ 19 (atol=0.001, rtol=0.0)
+
+Error in testset lp_neg_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:143
+  Expression: ≈(p.optval, 1, atol = atol, rtol = rtol)
+   Evaluated: 0.922147849083558 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset lp_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:129
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: 2.964940355002909 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 2.8197606034191267 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset lp_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:130
   Expression: ≈(evaluate(sum(pos(x))), 3, atol = atol, rtol = rtol)
-   Evaluated: 3.0029386112792054 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 3.0198864398994374 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_matrix_frac_atom_both_arguments_variable:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:177
   Expression: ≈(p.optval, 0.5, atol = atol, rtol = rtol)
-   Evaluated: 0.49167968171040477 ≈ 0.5 (atol=0.001, rtol=0.0)
+   Evaluated: 0.4547132707967261 ≈ 0.5 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_matrix_frac_atom_both_arguments_variable:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:178
   Expression: ≈((evaluate(matrixfrac(x, P)))[1], 0.5, atol = atol, rtol = rtol)
-   Evaluated: 0.5032053184214678 ≈ 0.5 (atol=0.001, rtol=0.0)
+   Evaluated: 0.5317096297055731 ≈ 0.5 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:189
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: 2.9637270299685903 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 2.9936547752472125 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:190
   Expression: ≈(evaluate(x), ones(3, 3), atol = atol, rtol = rtol)
-   Evaluated: [1.0279589298770588 1.019568597610487 1.019568597128; 1.0195685972189494 1.027958929624674 1.019568598565911; 1.0195685982503164 1.019568598447222 1.0279589296992526] ≈ [1.0 1.0 1.0; 1.0 1.0 1.0; 1.0 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.003530639140081 1.0019568636689655 1.0019568625311877; 1.0019568609841372 1.003530635934112 1.0019568624975363; 1.0019568595171222 1.0019568630195863 1.0035306366298755] ≈ [1.0 1.0 1.0; 1.0 1.0 1.0; 1.0 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:199
   Expression: ≈(p.optval, 8.4853, atol = atol, rtol = rtol)
-   Evaluated: 8.451250986615126 ≈ 8.4853 (atol=0.001, rtol=0.0)
+   Evaluated: 8.451250988831838 ≈ 8.4853 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:213
   Expression: ≈(p1.optval, p2.optval, atol = atol, rtol = rtol)
-   Evaluated: 3.9696196045843286 ≈ 3.9979070973432926 (atol=0.001, rtol=0.0)
+   Evaluated: 3.9696196045812497 ≈ 3.9875980817922376 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:227
   Expression: ≈(p1.optval, p2.optval, atol = atol, rtol = rtol)
-   Evaluated: 8.436082947950382 ≈ 8.43187886045022 (atol=0.001, rtol=0.0)
+   Evaluated: 8.43608296369931 ≈ 8.431878851789927 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_Issue_198:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:355
@@ -845,47 +850,52 @@ Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/probl
 Error in testset sdp_Issue_198:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:357
   Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
-   Evaluated: -70.01409407102767 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: -70.01651320943915 ≈ 0 (atol=0.001, rtol=0.0)
+
+Error in testset sdp_lambda_min_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:147
+  Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
+   Evaluated: 2.0039587470341287 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:123
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 3.9696196045843286 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 3.9696196045812497 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:124
   Expression: ≈(evaluate(eigmax(y)), 4, atol = atol, rtol = rtol)
-   Evaluated: 4.003107994205038 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 4.003107992972673 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:132
   Expression: ≈(p.optval, 1.5, atol = atol, rtol = rtol)
-   Evaluated: 1.4642486407010444 ≈ 1.5 (atol=0.001, rtol=0.0)
+   Evaluated: 1.4935498208138114 ≈ 1.5 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:133
   Expression: ≈((p.constraints[1]).dual, im, atol = atol, rtol = rtol)
-   Evaluated: 0.0 + 1.0172837219901076im ≈ im (atol=0.001, rtol=0.0)
+   Evaluated: 0.0 + 1.00317365093407im ≈ im (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:134
   Expression: ≈((p.constraints[2]).dual, 0.75, atol = atol, rtol = rtol)
-   Evaluated: 0.723482457501791 + 0.0im ≈ 0.75 (atol=0.001, rtol=0.0)
+   Evaluated: 0.7451880845328005 + 0.0im ≈ 0.75 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_matrix_frac_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:162
   Expression: ≈(p.optval, 7, atol = atol, rtol = rtol)
-   Evaluated: 6.946961998297433 ≈ 7 (atol=0.001, rtol=0.0)
+   Evaluated: 6.946991483121019 ≈ 7 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_matrix_frac_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:163
   Expression: ≈((evaluate(matrixfrac(x, P)))[1], 7, atol = atol, rtol = rtol)
-   Evaluated: 7.027686082586033 ≈ 7 (atol=0.001, rtol=0.0)
+   Evaluated: 7.027697824766669 ≈ 7 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:25
   Expression: termination_status(model) == MOI.OPTIMAL
-   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.OPTIMAL
+   Evaluated: MathOptInterface.INFEASIBLE_OR_UNBOUNDED == MathOptInterface.OPTIMAL
 
 Error in testset sdsos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:27
@@ -900,7 +910,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 10.657765466899995 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 10.657790425563501 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -910,7 +920,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 6.907830562483182 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 6.908439968566162 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -920,7 +930,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 3.157745378800956 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 3.1577795768860693 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -930,7 +940,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -0.5922322786180636 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: -0.5922219535930235 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -940,7 +950,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -4.342176629632673 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: -4.342176912244513 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset dsos_univariate_sum:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/univariate_sum.jl:19
@@ -960,7 +970,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 11.512637023333276 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 11.495816433516843 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -970,7 +980,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 7.794511250777582 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 7.759503648462623 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -980,7 +990,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 4.067511145391021 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 4.054876228353015 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -990,7 +1000,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 0.34272152188535465 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 0.350128883542256 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -1000,7 +1010,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -3.3470695027012236 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: -3.343826443245245 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:38
@@ -1010,22 +1020,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 1.9715671259909868 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.9954577487078495 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0001140186795965 0.9858184161130339; 0.9858184161130339 0.9999628964578733] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.000170252926182 0.9975443495204672; 0.9975443495204672 1.0004949744907208] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -1035,7 +1045,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [1.010798577234469 -1.0112399488453514; -1.0112399488453514 1.0116813204562338] ≈ [1.0107985668102621 -0.9999999998956702; -0.9999999998956702 1.011681310032027] (atol=0.001, rtol=0.0)
+   Evaluated: [0.9928403336043204 -1.0011227909156204; -1.0011227909156204 1.0094052482269205] ≈ [0.9928403231801175 -0.9999999998956778; -0.9999999998956778 1.0094052378027172] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:38
@@ -1045,22 +1055,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 1.9715671259909868 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.9954577487078495 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0001140186795965 0.9858184161130339; 0.9858184161130339 0.9999628964578733] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.000170252926182 0.9975443495204672; 0.9975443495204672 1.0004949744907208] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -1070,7 +1080,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [1.010798577234469 -1.0112399488453514; -1.0112399488453514 1.0116813204562338] ≈ [1.0107985668102621 -0.9999999998956702; -0.9999999998956702 1.011681310032027] (atol=0.001, rtol=0.0)
+   Evaluated: [0.9928403336043204 -1.0011227909156204; -1.0011227909156204 1.0094052482269205] ≈ [0.9928403231801175 -0.9999999998956778; -0.9999999998956778 1.0094052378027172] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_horn:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/horn.jl:35
@@ -1095,22 +1105,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 1.9715671259909868 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.9954577487078495 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0001140186795965 0.9858184161130339; 0.9858184161130339 0.9999628964578733] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.000170252926182 0.9975443495204672; 0.9975443495204672 1.0004949744907208] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -1120,7 +1130,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [1.010798577234469 -1.0112399488453514; -1.0112399488453514 1.0116813204562338] ≈ [1.0107985668102621 -0.9999999998956702; -0.9999999998956702 1.011681310032027] (atol=0.001, rtol=0.0)
+   Evaluated: [0.9928403336043204 -1.0011227909156204; -1.0011227909156204 1.0094052482269205] ≈ [0.9928403231801175 -0.9999999998956778; -0.9999999998956778 1.0094052378027172] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:38
@@ -1130,22 +1140,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 1.9715671259909868 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.9954577487078495 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0001140186795965 0.9858184161130339; 0.9858184161130339 0.9999628964578733] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.000170252926182 0.9975443495204672; 0.9975443495204672 1.0004949744907208] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -1155,7 +1165,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [1.010798577234469 -1.0112399488453514; -1.0112399488453514 1.0116813204562338] ≈ [1.0107985668102621 -0.9999999998956702; -0.9999999998956702 1.011681310032027] (atol=0.001, rtol=0.0)
+   Evaluated: [0.9928403336043204 -1.0011227909156204; -1.0011227909156204 1.0094052482269205] ≈ [0.9928403231801175 -0.9999999998956778; -0.9999999998956778 1.0094052378027172] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:38
@@ -1165,22 +1175,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 1.9715671259909868 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.9954577487078495 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0001140186795965 0.9858184161130339; 0.9858184161130339 0.9999628964578733] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.000170252926182 0.9975443495204672; 0.9975443495204672 1.0004949744907208] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -1190,7 +1200,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [1.010798577234469 -1.0112399488453514; -1.0112399488453514 1.0116813204562338] ≈ [1.0107985668102621 -0.9999999998956702; -0.9999999998956702 1.011681310032027] (atol=0.001, rtol=0.0)
+   Evaluated: [0.9928403336043204 -1.0011227909156204; -1.0011227909156204 1.0094052482269205] ≈ [0.9928403231801175 -0.9999999998956778; -0.9999999998956778 1.0094052378027172] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:25
@@ -1210,22 +1220,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 1.9715671259909868 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.9954577487078495 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0001140186795965 0.9858184161130339; 0.9858184161130339 0.9999628964578733] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.000170252926182 0.9975443495204672; 0.9975443495204672 1.0004949744907208] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 2.022479876842289 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0022455609828347 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -1235,7 +1245,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [1.010798577234469 -1.0112399488453514; -1.0112399488453514 1.0116813204562338] ≈ [1.0107985668102621 -0.9999999998956702; -0.9999999998956702 1.011681310032027] (atol=0.001, rtol=0.0)
+   Evaluated: [0.9928403336043204 -1.0011227909156204; -1.0011227909156204 1.0094052482269205] ≈ [0.9928403231801175 -0.9999999998956778; -0.9999999998956778 1.0094052378027172] (atol=0.001, rtol=0.0)
 
 Error in testset sos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:25
@@ -1275,7 +1285,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 10.657525574279285 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 10.657572441704357 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -1285,7 +1295,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 6.9075334949151825 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 6.907523804305997 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -1295,7 +1305,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 3.15754538377981 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 3.1575457148214223 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -1305,7 +1315,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -0.5924368611065812 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: -0.5924371230372234 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -1315,7 +1325,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -4.342414855469504 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: -4.342430640162128 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset quartic_infeasible_scaled_lyapunov_switched_system:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/lyapunov_switched_system.jl:66
@@ -1335,168 +1345,168 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/lyapun
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:             291s / 99.4%           22.5GiB / 99.5%    
+       Tot / % measured:             414s / 99.4%           22.7GiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1     208s  71.7%    208s   14.7GiB  65.7%  14.7GiB
-   socp                     1    85.5s  29.5%   85.5s   5.92GiB  26.4%  5.92GiB
-     sdsos_term_fixed       1    28.2s  9.74%   28.2s   1.44GiB  6.41%  1.44GiB
-     sdsos_horn             1    11.7s  4.05%   11.7s    848MiB  3.69%   848MiB
-     sdsos_concave_...      1    8.89s  3.07%   8.89s    658MiB  2.86%   658MiB
-     sdsos_univaria...      1    7.15s  2.47%   7.15s    546MiB  2.38%   546MiB
-     sdsos_cheby_un...      1    6.20s  2.14%   6.20s    455MiB  1.98%   455MiB
-     sdsos_univaria...      1    4.95s  1.71%   4.95s    360MiB  1.57%   360MiB
-     sdsos_scaled_u...      1    3.81s  1.32%   3.81s    275MiB  1.20%   275MiB
-     sdsos_quartic_...      1    3.52s  1.21%   3.52s    251MiB  1.09%   251MiB
-     sdsos_options_...      1    3.26s  1.13%   3.26s    190MiB  0.83%   190MiB
-     sdsos_term             1    2.62s  0.90%   2.62s    163MiB  0.71%   163MiB
-     sdsos_quartic_...      1    564ms  0.19%   564ms   23.9MiB  0.10%  23.9MiB
-     sdsos_scaled_b...      1   65.8ms  0.02%  65.8ms   5.71MiB  0.02%  5.71MiB
-     sdsos_bivariat...      1   24.4ms  0.01%  24.4ms    730KiB  0.00%   730KiB
-   sdp                      1    84.5s  29.2%   84.5s   6.14GiB  27.4%  6.14GiB
-     sosdemo5_infea...      1    6.76s  2.34%   6.76s    541MiB  2.35%   541MiB
-     quartic_ideal_rem      1    5.99s  2.07%   5.99s    497MiB  2.16%   497MiB
-     rearrangement          1    5.46s  1.89%   5.46s    397MiB  1.73%   397MiB
-     sos_horn               1    4.03s  1.39%   4.03s    279MiB  1.21%   279MiB
-     sos_concave_th...      1    3.90s  1.35%   3.90s    279MiB  1.21%   279MiB
-     simple_matrix          1    3.75s  1.29%   3.75s    311MiB  1.35%   311MiB
-     quartic_ideal_4        1    3.56s  1.23%   3.56s    247MiB  1.08%   247MiB
-     quartic_ideal          1    3.47s  1.20%   3.47s    219MiB  0.95%   219MiB
-     sos_scaled_biv...      1    3.40s  1.17%   3.40s    214MiB  0.93%   214MiB
-     sos_term_fixed         1    3.34s  1.15%   3.34s    214MiB  0.93%   214MiB
-     chebyshev              1    3.28s  1.13%   3.28s    215MiB  0.94%   215MiB
-     sos_term               1    3.26s  1.13%   3.26s    192MiB  0.84%   192MiB
-     sos_cheby_univ...      1    3.04s  1.05%   3.04s    194MiB  0.84%   194MiB
-     sos_options_pr...      1    2.99s  1.03%   2.99s    170MiB  0.74%   170MiB
-     sos_quartic_co...      1    2.61s  0.90%   2.61s    177MiB  0.77%   177MiB
-     quartic_ideal_...      1    2.53s  0.87%   2.53s    171MiB  0.74%   171MiB
-     quartic_feasib...      1    2.36s  0.82%   2.36s    107MiB  0.47%   107MiB
-     maxcut                 1    2.36s  0.81%   2.36s    139MiB  0.60%   139MiB
-     BPT12e399_rem          1    2.03s  0.70%   2.03s   72.1MiB  0.31%  72.1MiB
-     sosdemo5_feasible      1    1.78s  0.61%   1.78s   25.9MiB  0.11%  25.9MiB
-     sos_univariate...      1    1.62s  0.56%   1.62s    103MiB  0.45%   103MiB
-     sosdemo10              1    1.39s  0.48%   1.39s    137MiB  0.59%   137MiB
-     quadratic_infe...      1    1.11s  0.38%   1.11s    102MiB  0.45%   102MiB
-     sosdemo9               1    632ms  0.22%   632ms   41.8MiB  0.18%  41.8MiB
-     choi                   1    485ms  0.17%   485ms   42.0MiB  0.18%  42.0MiB
-     sos_univariate...      1    425ms  0.15%   425ms   15.4MiB  0.07%  15.4MiB
-     quadratic_feas...      1    417ms  0.14%   417ms   28.4MiB  0.12%  28.4MiB
-     BPT12e399_maxd...      1    237ms  0.08%   237ms   7.99MiB  0.03%  7.99MiB
-     sos_quartic_co...      1    149ms  0.05%   149ms   16.0MiB  0.07%  16.0MiB
-     motzkin                1    136ms  0.05%   136ms   4.76MiB  0.02%  4.76MiB
-     quartic_ideal_...      1   84.2ms  0.03%  84.2ms   1.79MiB  0.01%  1.79MiB
-     sos_scaled_uni...      1   63.9ms  0.02%  63.9ms    726KiB  0.00%   726KiB
-     quartic_infeas...      1   60.4ms  0.02%  60.4ms   2.23MiB  0.01%  2.23MiB
-     quartic_infeas...      1   50.7ms  0.02%  50.7ms   1.16MiB  0.01%  1.16MiB
-     sos_bivariate_...      1   40.9ms  0.01%  40.9ms    728KiB  0.00%   728KiB
-     quadratic_infe...      1   35.5ms  0.01%  35.5ms    718KiB  0.00%   718KiB
-     quartic_feasib...      1   31.0ms  0.01%  31.0ms    649KiB  0.00%   649KiB
-     quadratic_feas...      1   24.5ms  0.01%  24.5ms    622KiB  0.00%   622KiB
-   lp                       1    37.4s  12.9%   37.4s   2.68GiB  11.9%  2.68GiB
-     dsos_univariat...      1    6.07s  2.10%   6.07s    331MiB  1.44%   331MiB
-     dsos_options_p...      1    5.55s  1.91%   5.55s    405MiB  1.76%   405MiB
-     dsos_concave_t...      1    4.16s  1.44%   4.16s    290MiB  1.26%   290MiB
-     dsos_cheby_biv...      1    4.00s  1.38%   4.00s    258MiB  1.12%   258MiB
-     dsos_term_fixed        1    3.28s  1.13%   3.28s    207MiB  0.90%   207MiB
-     dsos_term              1    3.27s  1.13%   3.27s    198MiB  0.86%   198MiB
-     dsos_scaled_bi...      1    3.10s  1.07%   3.10s    204MiB  0.89%   204MiB
-     dsos_horn              1    2.88s  0.99%   2.88s    383MiB  1.67%   383MiB
-     dsos_quartic_c...      1    2.67s  0.92%   2.67s    180MiB  0.78%   180MiB
-     dsos_bivariate...      1    470ms  0.16%   470ms   17.6MiB  0.08%  17.6MiB
-     dsos_quartic_c...      1    124ms  0.04%   124ms   16.5MiB  0.07%  16.5MiB
-     dsos_univariat...      1   43.0ms  0.01%  43.0ms   1.45MiB  0.01%  1.45MiB
-     dsos_scaled_un...      1   42.5ms  0.01%  42.5ms   1.45MiB  0.01%  1.45MiB
-     dsos_cheby_uni...      1   33.7ms  0.01%  33.7ms   1.47MiB  0.01%  1.47MiB
- Convex                     1    81.9s  28.3%   81.9s   7.69GiB  34.3%  7.69GiB
-   affine                   1    26.9s  9.28%   26.9s   2.74GiB  12.2%  2.74GiB
-     affine_Partial...      1    3.09s  1.07%   3.09s    362MiB  1.58%   362MiB
-     affine_permute...      1    2.59s  0.89%   2.59s    380MiB  1.65%   380MiB
-     affine_dot_mul...      1    2.26s  0.78%   2.26s    153MiB  0.66%   153MiB
-     affine_hcat_atom       1    2.03s  0.70%   2.03s    174MiB  0.76%   174MiB
-     affine_multipl...      1    2.01s  0.69%   2.01s    210MiB  0.91%   210MiB
-     affine_transpo...      1    1.35s  0.47%   1.35s   82.5MiB  0.36%  82.5MiB
-     affine_vcat_atom       1    1.23s  0.43%   1.23s   95.4MiB  0.42%  95.4MiB
-     affine_Diagona...      1    1.17s  0.40%   1.17s    109MiB  0.48%   109MiB
-     affine_add_atom        1    1.04s  0.36%   1.04s   65.3MiB  0.28%  65.3MiB
-     affine_satisfy...      1    943ms  0.33%   943ms   55.5MiB  0.24%  55.5MiB
-     affine_conv_atom       1    884ms  0.31%   884ms   48.7MiB  0.21%  48.7MiB
-     affine_index_atom      1    686ms  0.24%   686ms   42.1MiB  0.18%  42.1MiB
-     affine_dot_atom        1    677ms  0.23%   677ms   23.7MiB  0.10%  23.7MiB
-     affine_dualvalue       1    670ms  0.23%   670ms   70.5MiB  0.31%  70.5MiB
-     affine_reshape...      1    544ms  0.19%   544ms   26.4MiB  0.12%  26.4MiB
-     affine_sum_atom        1    357ms  0.12%   357ms   28.1MiB  0.12%  28.1MiB
-     affine_kron_atom       1    219ms  0.08%   219ms   10.8MiB  0.05%  10.8MiB
-     affine_single_...      1    156ms  0.05%   156ms   9.16MiB  0.04%  9.16MiB
-     affine_diag_atom       1    139ms  0.05%   139ms   13.3MiB  0.06%  13.3MiB
-     affine_dot_ato...      1    117ms  0.04%   117ms   5.12MiB  0.02%  5.12MiB
-     affine_negate_...      1   91.7ms  0.03%  91.7ms   3.65MiB  0.02%  3.65MiB
-     affine_single_...      1   86.8ms  0.03%  86.8ms   4.74MiB  0.02%  4.74MiB
-     affine_trace_atom      1   51.3ms  0.02%  51.3ms   2.56MiB  0.01%  2.56MiB
-   socp                     1    20.8s  7.17%   20.8s   1.90GiB  8.49%  1.90GiB
-     socp_dual_mini...      1    6.01s  2.08%   6.01s    459MiB  2.00%   459MiB
-     socp_quad_form...      1    2.28s  0.79%   2.28s   35.8MiB  0.16%  35.8MiB
-     socp_rational_...      1    1.44s  0.50%   1.44s    132MiB  0.57%   132MiB
-     socp_sum_squar...      1    1.14s  0.39%   1.14s   92.0MiB  0.40%  92.0MiB
-     socp_inv_pos_atom      1    898ms  0.31%   898ms   62.3MiB  0.27%  62.3MiB
-     socp_dual_norm...      1    762ms  0.26%   762ms   63.2MiB  0.27%  63.2MiB
-     socp_quad_over...      1    736ms  0.25%   736ms   27.8MiB  0.12%  27.8MiB
-     socp_rational_...      1    586ms  0.20%   586ms   36.9MiB  0.16%  36.9MiB
-     socp_norm_cons...      1    479ms  0.17%   479ms   25.6MiB  0.11%  25.6MiB
-     socp_fix_multi...      1    459ms  0.16%   459ms   30.8MiB  0.13%  30.8MiB
-     socp_dual_frob...      1    394ms  0.14%   394ms   24.3MiB  0.11%  24.3MiB
-     socp_square_atom       1    367ms  0.13%   367ms   13.2MiB  0.06%  13.2MiB
-     socp_huber_atom        1    350ms  0.12%   350ms   31.2MiB  0.14%  31.2MiB
-     socp_geo_mean_...      1    340ms  0.12%   340ms   25.1MiB  0.11%  25.1MiB
-     socp_rational_...      1    170ms  0.06%   170ms   9.79MiB  0.04%  9.79MiB
-     socp_fix_and_f...      1   81.7ms  0.03%  81.7ms   5.71MiB  0.02%  5.71MiB
-     socp_sqrt_atom         1   65.1ms  0.02%  65.1ms   1.47MiB  0.01%  1.47MiB
-   sdp                      1    15.8s  5.46%   15.8s   1.36GiB  6.04%  1.36GiB
-     sdp_operator_n...      1    2.82s  0.97%   2.82s    235MiB  1.02%   235MiB
-     sdp_Partial_trace      1    1.80s  0.62%   1.80s    144MiB  0.63%   144MiB
-     sdp_matrix_fra...      1    1.51s  0.52%   1.51s    116MiB  0.51%   116MiB
-     sdp_dual_lambd...      1    1.05s  0.36%   1.05s   76.6MiB  0.33%  76.6MiB
-     sdp_matrix_fra...      1    938ms  0.32%   938ms   56.8MiB  0.25%  56.8MiB
-     sdp_Complex_Va...      1    875ms  0.30%   875ms   41.2MiB  0.18%  41.2MiB
-     sdp_sum_larges...      1    839ms  0.29%   839ms   47.6MiB  0.21%  47.6MiB
-     sdp_socp_sumsq...      1    569ms  0.20%   569ms   40.6MiB  0.18%  40.6MiB
-     sdp_lambda_min...      1    536ms  0.19%   536ms   40.4MiB  0.18%  40.4MiB
-     sdp_Issue_198          1    492ms  0.17%   492ms   38.2MiB  0.17%  38.2MiB
-     sdp_nuclear_no...      1    416ms  0.14%   416ms   33.6MiB  0.15%  33.6MiB
-     sdp_socp_abs_atom      1    360ms  0.12%   360ms   22.4MiB  0.10%  22.4MiB
-     sdp_socp_norm2...      1    329ms  0.11%   329ms   22.1MiB  0.10%  22.1MiB
-     sdp_sdp_variables      1    243ms  0.08%   243ms   24.9MiB  0.11%  24.9MiB
-     sdp_kron_atom          1    151ms  0.05%   151ms   12.9MiB  0.06%  12.9MiB
-     sdp_Real_Varia...      1    126ms  0.04%   126ms   5.80MiB  0.03%  5.80MiB
-     sdp_sdp_constr...      1    117ms  0.04%   117ms   8.08MiB  0.04%  8.08MiB
-     sdp_sigma_max_...      1    110ms  0.04%   110ms   12.5MiB  0.05%  12.5MiB
-   constant                 1    9.53s  3.29%   9.53s    952MiB  4.14%   952MiB
-     constant_fix!_...      1    3.30s  1.14%   3.30s    258MiB  1.12%   258MiB
-     constant_Issue...      1    2.92s  1.01%   2.92s    314MiB  1.37%   314MiB
-     constant_Issue...      1    892ms  0.31%   892ms   66.2MiB  0.29%  66.2MiB
-     constant_fix!_...      1    594ms  0.21%   594ms   42.0MiB  0.18%  42.0MiB
-     constant_fix!_...      1    444ms  0.15%   444ms   38.3MiB  0.17%  38.3MiB
-     constant_Test_...      1    316ms  0.11%   316ms   18.5MiB  0.08%  18.5MiB
-   lp                       1    8.60s  2.97%   8.60s    742MiB  3.23%   742MiB
-     lp_dotsort_atom        1    3.89s  1.34%   3.89s    261MiB  1.14%   261MiB
-     lp_min_atom            1    596ms  0.21%   596ms   42.8MiB  0.19%  42.8MiB
-     lp_sumlargest_...      1    509ms  0.18%   509ms   43.9MiB  0.19%  43.9MiB
-     lp_sumsmallest...      1    460ms  0.16%   460ms   42.1MiB  0.18%  42.1MiB
-     lp_max_atom            1    437ms  0.15%   437ms   35.4MiB  0.15%  35.4MiB
-     lp_minimum_atom        1    331ms  0.11%   331ms   26.9MiB  0.12%  26.9MiB
-     lp_dual_abs_atom       1    267ms  0.09%   267ms   17.4MiB  0.08%  17.4MiB
-     lp_neg_atom            1    222ms  0.08%   222ms   10.9MiB  0.05%  10.9MiB
-     lp_maximum_atom        1    191ms  0.07%   191ms   12.2MiB  0.05%  12.2MiB
-     lp_dual_norm_i...      1   96.7ms  0.03%  96.7ms   3.78MiB  0.02%  3.78MiB
-     lp_pos_atom            1   82.4ms  0.03%  82.4ms   6.09MiB  0.03%  6.09MiB
-     lp_dual_norm_1...      1   65.2ms  0.02%  65.2ms   3.42MiB  0.01%  3.42MiB
-     lp_hinge_loss_...      1    249μs  0.00%   249μs   47.7KiB  0.00%  47.7KiB
+ SumOfSquares               1     296s  72.0%    296s   14.9GiB  66.0%  14.9GiB
+   socp                     1     122s  29.7%    122s   6.08GiB  26.9%  6.08GiB
+     sdsos_term_fixed       1    42.2s  10.3%   42.2s   1.60GiB  7.07%  1.60GiB
+     sdsos_horn             1    16.2s  3.95%   16.2s    849MiB  3.67%   849MiB
+     sdsos_concave_...      1    12.7s  3.09%   12.7s    658MiB  2.84%   658MiB
+     sdsos_univaria...      1    9.63s  2.34%   9.63s    546MiB  2.36%   546MiB
+     sdsos_cheby_un...      1    8.56s  2.08%   8.56s    455MiB  1.97%   455MiB
+     sdsos_univaria...      1    6.87s  1.67%   6.87s    360MiB  1.56%   360MiB
+     sdsos_scaled_u...      1    5.25s  1.28%   5.25s    275MiB  1.19%   275MiB
+     sdsos_quartic_...      1    4.78s  1.16%   4.78s    251MiB  1.09%   251MiB
+     sdsos_options_...      1    4.63s  1.13%   4.63s    190MiB  0.82%   190MiB
+     sdsos_term             1    3.57s  0.87%   3.57s    163MiB  0.70%   163MiB
+     sdsos_quartic_...      1    833ms  0.20%   833ms   23.9MiB  0.10%  23.9MiB
+     sdsos_scaled_b...      1    105ms  0.03%   105ms   5.71MiB  0.02%  5.71MiB
+     sdsos_bivariat...      1   40.6ms  0.01%  40.6ms    730KiB  0.00%   730KiB
+   sdp                      1     118s  28.8%    118s   6.14GiB  27.2%  6.14GiB
+     sosdemo5_infea...      1    9.08s  2.21%   9.08s    542MiB  2.34%   542MiB
+     quartic_ideal_rem      1    8.65s  2.11%   8.65s    497MiB  2.15%   497MiB
+     rearrangement          1    7.61s  1.85%   7.61s    397MiB  1.72%   397MiB
+     sos_horn               1    5.85s  1.42%   5.85s    279MiB  1.21%   279MiB
+     sos_concave_th...      1    5.41s  1.32%   5.41s    279MiB  1.21%   279MiB
+     quartic_ideal_4        1    5.17s  1.26%   5.17s    247MiB  1.07%   247MiB
+     simple_matrix          1    5.10s  1.24%   5.10s    311MiB  1.35%   311MiB
+     quartic_ideal          1    5.07s  1.23%   5.07s    219MiB  0.95%   219MiB
+     sos_scaled_biv...      1    4.83s  1.18%   4.83s    214MiB  0.93%   214MiB
+     sos_term_fixed         1    4.68s  1.14%   4.68s    214MiB  0.92%   214MiB
+     chebyshev              1    4.59s  1.12%   4.59s    215MiB  0.93%   215MiB
+     sos_term               1    4.47s  1.09%   4.47s    192MiB  0.83%   192MiB
+     sos_cheby_univ...      1    4.06s  0.99%   4.06s    194MiB  0.84%   194MiB
+     quartic_ideal_...      1    3.79s  0.92%   3.79s    171MiB  0.74%   171MiB
+     sos_options_pr...      1    3.76s  0.91%   3.76s    170MiB  0.73%   170MiB
+     sos_quartic_co...      1    3.68s  0.90%   3.68s    177MiB  0.77%   177MiB
+     quartic_feasib...      1    3.44s  0.84%   3.44s    107MiB  0.46%   107MiB
+     maxcut                 1    3.41s  0.83%   3.41s    139MiB  0.60%   139MiB
+     BPT12e399_rem          1    2.99s  0.73%   2.99s   72.1MiB  0.31%  72.1MiB
+     sos_univariate...      1    2.36s  0.57%   2.36s    103MiB  0.45%   103MiB
+     sosdemo5_feasible      1    2.35s  0.57%   2.35s   27.1MiB  0.12%  27.1MiB
+     sosdemo10              1    1.94s  0.47%   1.94s    137MiB  0.59%   137MiB
+     quadratic_infe...      1    1.66s  0.40%   1.66s    102MiB  0.44%   102MiB
+     sosdemo9               1    948ms  0.23%   948ms   41.8MiB  0.18%  41.8MiB
+     choi                   1    641ms  0.16%   641ms   42.0MiB  0.18%  42.0MiB
+     quadratic_feas...      1    578ms  0.14%   578ms   28.4MiB  0.12%  28.4MiB
+     sos_univariate...      1    564ms  0.14%   564ms   15.4MiB  0.07%  15.4MiB
+     BPT12e399_maxd...      1    308ms  0.08%   308ms   7.99MiB  0.03%  7.99MiB
+     sos_quartic_co...      1    209ms  0.05%   209ms   16.0MiB  0.07%  16.0MiB
+     motzkin                1    187ms  0.05%   187ms   4.76MiB  0.02%  4.76MiB
+     quartic_ideal_...      1    113ms  0.03%   113ms   1.79MiB  0.01%  1.79MiB
+     quartic_infeas...      1   85.6ms  0.02%  85.6ms   2.23MiB  0.01%  2.23MiB
+     sos_scaled_uni...      1   80.5ms  0.02%  80.5ms    726KiB  0.00%   726KiB
+     quartic_infeas...      1   71.5ms  0.02%  71.5ms   1.16MiB  0.01%  1.16MiB
+     sos_bivariate_...      1   65.8ms  0.02%  65.8ms    728KiB  0.00%   728KiB
+     quartic_feasib...      1   61.0ms  0.01%  61.0ms    649KiB  0.00%   649KiB
+     quadratic_infe...      1   50.6ms  0.01%  50.6ms    718KiB  0.00%   718KiB
+     quadratic_feas...      1   40.7ms  0.01%  40.7ms    622KiB  0.00%   622KiB
+   lp                       1    54.8s  13.3%   54.8s   2.68GiB  11.9%  2.68GiB
+     dsos_univariat...      1    8.58s  2.09%   8.58s    336MiB  1.45%   336MiB
+     dsos_options_p...      1    8.25s  2.01%   8.25s    405MiB  1.75%   405MiB
+     dsos_cheby_biv...      1    6.01s  1.46%   6.01s    258MiB  1.11%   258MiB
+     dsos_concave_t...      1    5.78s  1.41%   5.78s    286MiB  1.24%   286MiB
+     dsos_term_fixed        1    4.92s  1.20%   4.92s    207MiB  0.89%   207MiB
+     dsos_term              1    4.89s  1.19%   4.89s    198MiB  0.86%   198MiB
+     dsos_scaled_bi...      1    4.60s  1.12%   4.60s    204MiB  0.88%   204MiB
+     dsos_horn              1    4.41s  1.07%   4.41s    383MiB  1.65%   383MiB
+     dsos_quartic_c...      1    3.80s  0.92%   3.80s    184MiB  0.79%   184MiB
+     dsos_bivariate...      1    647ms  0.16%   647ms   17.6MiB  0.08%  17.6MiB
+     dsos_quartic_c...      1    254ms  0.06%   254ms   16.5MiB  0.07%  16.5MiB
+     dsos_scaled_un...      1   58.2ms  0.01%  58.2ms   1.45MiB  0.01%  1.45MiB
+     dsos_univariat...      1   54.8ms  0.01%  54.8ms   1.45MiB  0.01%  1.45MiB
+     dsos_cheby_uni...      1   45.7ms  0.01%  45.7ms   1.47MiB  0.01%  1.47MiB
+ Convex                     1     115s  28.0%    115s   7.67GiB  34.0%  7.67GiB
+   affine                   1    37.3s  9.08%   37.3s   2.74GiB  12.1%  2.74GiB
+     affine_Partial...      1    4.26s  1.04%   4.26s    362MiB  1.57%   362MiB
+     affine_permute...      1    3.61s  0.88%   3.61s    379MiB  1.64%   379MiB
+     affine_dot_mul...      1    3.14s  0.76%   3.14s    152MiB  0.66%   152MiB
+     affine_hcat_atom       1    2.98s  0.73%   2.98s    174MiB  0.75%   174MiB
+     affine_multipl...      1    2.83s  0.69%   2.83s    210MiB  0.91%   210MiB
+     affine_transpo...      1    1.84s  0.45%   1.84s   82.5MiB  0.36%  82.5MiB
+     affine_vcat_atom       1    1.70s  0.41%   1.70s   95.4MiB  0.41%  95.4MiB
+     affine_Diagona...      1    1.56s  0.38%   1.56s    109MiB  0.47%   109MiB
+     affine_add_atom        1    1.45s  0.35%   1.45s   65.3MiB  0.28%  65.3MiB
+     affine_satisfy...      1    1.44s  0.35%   1.44s   55.5MiB  0.24%  55.5MiB
+     affine_conv_atom       1    1.20s  0.29%   1.20s   48.7MiB  0.21%  48.7MiB
+     affine_dot_atom        1    893ms  0.22%   893ms   23.7MiB  0.10%  23.7MiB
+     affine_dualvalue       1    892ms  0.22%   892ms   70.5MiB  0.30%  70.5MiB
+     affine_index_atom      1    865ms  0.21%   865ms   42.1MiB  0.18%  42.1MiB
+     affine_reshape...      1    744ms  0.18%   744ms   26.4MiB  0.11%  26.4MiB
+     affine_sum_atom        1    458ms  0.11%   458ms   28.1MiB  0.12%  28.1MiB
+     affine_kron_atom       1    258ms  0.06%   258ms   10.8MiB  0.05%  10.8MiB
+     affine_single_...      1    219ms  0.05%   219ms   9.16MiB  0.04%  9.16MiB
+     affine_diag_atom       1    204ms  0.05%   204ms   13.3MiB  0.06%  13.3MiB
+     affine_dot_ato...      1    172ms  0.04%   172ms   5.12MiB  0.02%  5.12MiB
+     affine_negate_...      1    119ms  0.03%   119ms   3.65MiB  0.02%  3.65MiB
+     affine_single_...      1    112ms  0.03%   112ms   4.74MiB  0.02%  4.74MiB
+     affine_trace_atom      1   72.3ms  0.02%  72.3ms   2.56MiB  0.01%  2.56MiB
+   socp                     1    29.2s  7.11%   29.2s   1.89GiB  8.37%  1.89GiB
+     socp_dual_mini...      1    8.33s  2.03%   8.33s    444MiB  1.92%   444MiB
+     socp_quad_form...      1    3.08s  0.75%   3.08s   35.8MiB  0.15%  35.8MiB
+     socp_rational_...      1    2.29s  0.56%   2.29s    131MiB  0.57%   131MiB
+     socp_sum_squar...      1    1.47s  0.36%   1.47s   91.4MiB  0.40%  91.4MiB
+     socp_inv_pos_atom      1    1.23s  0.30%   1.23s   62.2MiB  0.27%  62.2MiB
+     socp_dual_norm...      1    1.12s  0.27%   1.12s   63.2MiB  0.27%  63.2MiB
+     socp_quad_over...      1    1.04s  0.25%   1.04s   27.8MiB  0.12%  27.8MiB
+     socp_rational_...      1    861ms  0.21%   861ms   36.9MiB  0.16%  36.9MiB
+     socp_norm_cons...      1    659ms  0.16%   659ms   25.5MiB  0.11%  25.5MiB
+     socp_fix_multi...      1    633ms  0.15%   633ms   30.8MiB  0.13%  30.8MiB
+     socp_dual_frob...      1    579ms  0.14%   579ms   24.2MiB  0.10%  24.2MiB
+     socp_square_atom       1    520ms  0.13%   520ms   13.2MiB  0.06%  13.2MiB
+     socp_geo_mean_...      1    492ms  0.12%   492ms   25.1MiB  0.11%  25.1MiB
+     socp_huber_atom        1    485ms  0.12%   485ms   31.2MiB  0.13%  31.2MiB
+     socp_rational_...      1    253ms  0.06%   253ms   9.79MiB  0.04%  9.79MiB
+     socp_fix_and_f...      1    106ms  0.03%   106ms   5.71MiB  0.02%  5.71MiB
+     socp_sqrt_atom         1   85.4ms  0.02%  85.4ms   1.47MiB  0.01%  1.47MiB
+   sdp                      1    22.6s  5.49%   22.6s   1.36GiB  6.00%  1.36GiB
+     sdp_operator_n...      1    4.01s  0.98%   4.01s    235MiB  1.02%   235MiB
+     sdp_Partial_trace      1    2.54s  0.62%   2.54s    144MiB  0.62%   144MiB
+     sdp_matrix_fra...      1    2.17s  0.53%   2.17s    116MiB  0.50%   116MiB
+     sdp_dual_lambd...      1    1.47s  0.36%   1.47s   76.6MiB  0.33%  76.6MiB
+     sdp_matrix_fra...      1    1.34s  0.33%   1.34s   56.8MiB  0.25%  56.8MiB
+     sdp_Complex_Va...      1    1.25s  0.30%   1.25s   41.2MiB  0.18%  41.2MiB
+     sdp_sum_larges...      1    1.11s  0.27%   1.11s   47.5MiB  0.21%  47.5MiB
+     sdp_lambda_min...      1    817ms  0.20%   817ms   40.4MiB  0.17%  40.4MiB
+     sdp_socp_sumsq...      1    737ms  0.18%   737ms   40.6MiB  0.18%  40.6MiB
+     sdp_Issue_198          1    728ms  0.18%   728ms   38.2MiB  0.17%  38.2MiB
+     sdp_nuclear_no...      1    572ms  0.14%   572ms   33.6MiB  0.15%  33.6MiB
+     sdp_socp_norm2...      1    536ms  0.13%   536ms   22.1MiB  0.10%  22.1MiB
+     sdp_socp_abs_atom      1    520ms  0.13%   520ms   22.4MiB  0.10%  22.4MiB
+     sdp_sdp_variables      1    353ms  0.09%   353ms   24.9MiB  0.11%  24.9MiB
+     sdp_Real_Varia...      1    219ms  0.05%   219ms   5.83MiB  0.03%  5.83MiB
+     sdp_kron_atom          1    209ms  0.05%   209ms   12.9MiB  0.06%  12.9MiB
+     sdp_sdp_constr...      1    165ms  0.04%   165ms   8.08MiB  0.03%  8.08MiB
+     sdp_sigma_max_...      1    152ms  0.04%   152ms   12.5MiB  0.05%  12.5MiB
+   constant                 1    13.4s  3.27%   13.4s    952MiB  4.12%   952MiB
+     constant_fix!_...      1    4.53s  1.10%   4.53s    258MiB  1.12%   258MiB
+     constant_Issue...      1    4.08s  0.99%   4.08s    314MiB  1.36%   314MiB
+     constant_Issue...      1    1.28s  0.31%   1.28s   66.2MiB  0.29%  66.2MiB
+     constant_fix!_...      1    764ms  0.19%   764ms   42.0MiB  0.18%  42.0MiB
+     constant_fix!_...      1    532ms  0.13%   532ms   38.4MiB  0.17%  38.4MiB
+     constant_Test_...      1    492ms  0.12%   492ms   18.5MiB  0.08%  18.5MiB
+   lp                       1    12.4s  3.01%   12.4s    742MiB  3.21%   742MiB
+     lp_dotsort_atom        1    5.50s  1.34%   5.50s    261MiB  1.13%   261MiB
+     lp_min_atom            1    770ms  0.19%   770ms   42.8MiB  0.19%  42.8MiB
+     lp_sumlargest_...      1    740ms  0.18%   740ms   43.9MiB  0.19%  43.9MiB
+     lp_sumsmallest...      1    649ms  0.16%   649ms   42.1MiB  0.18%  42.1MiB
+     lp_max_atom            1    572ms  0.14%   572ms   35.4MiB  0.15%  35.4MiB
+     lp_minimum_atom        1    509ms  0.12%   509ms   26.9MiB  0.12%  26.9MiB
+     lp_dual_abs_atom       1    432ms  0.11%   432ms   17.4MiB  0.08%  17.4MiB
+     lp_neg_atom            1    305ms  0.07%   305ms   10.9MiB  0.05%  10.9MiB
+     lp_maximum_atom        1    265ms  0.06%   265ms   12.2MiB  0.05%  12.2MiB
+     lp_dual_norm_i...      1    140ms  0.03%   140ms   3.78MiB  0.02%  3.78MiB
+     lp_pos_atom            1    116ms  0.03%   116ms   6.09MiB  0.03%  6.09MiB
+     lp_dual_norm_1...      1   91.7ms  0.02%  91.7ms   3.42MiB  0.01%  3.42MiB
+     lp_hinge_loss_...      1    317μs  0.00%   317μs   47.7KiB  0.00%  47.7KiB
  ──────────────────────────────────────────────────────────────────────────────
 
 ```
 
 ## SDPA `PARAMETER_UNSTABLE_BUT_FAST`
-These tests were run on November 13, 2021 at 23:37 (UTC).
+These tests were run on November 14, 2021 at 00:13 (UTC).
 
 
 Excluded problems and classes of problems:
@@ -1506,7 +1516,7 @@ Regex[r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 
 ### Tests
 
-Tests took 10 seconds to run (after warmup).
+Tests took 13 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -1519,14 +1529,14 @@ Tests took 10 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">SDPA tests</td>
-<td style="text-align:center;color:green;">1983</td>
-<td style="text-align:center;color:red;">44</td>
+<td style="text-align:center;color:green;">1984</td>
+<td style="text-align:center;color:red;">43</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2027</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;Convex</td>
-<td style="text-align:center;color:green;">391</td>
-<td style="text-align:center;color:red;">3</td>
+<td style="text-align:center;color:green;">390</td>
+<td style="text-align:center;color:red;">4</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">394</td>
@@ -1549,11 +1559,89 @@ Tests took 10 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">99</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">62</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">61</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">62</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_dual_abs_atom</td>
+<td style="text-align:center;color:green;">12</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">12</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_dual_norm_inf_atom</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_hinge_loss_atom</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_maximum_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_min_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_minimum_atom</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_sumlargest_atom</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_dotsort_atom</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">7</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_max_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_neg_atom</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_sumsmallest_atom</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">6</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_pos_atom</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">3</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_dual_norm_1_atom</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
 <td style="text-align:center;color:green;">61</td>
 <td style="text-align:center;color:red;">3</td>
@@ -1591,8 +1679,8 @@ Tests took 10 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_sum_largest_eigs</td>
-<td style="text-align:center;color:green;">5</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
@@ -1651,8 +1739,8 @@ Tests took 10 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_matrix_frac_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -1669,14 +1757,14 @@ Tests took 10 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;SumOfSquares</td>
-<td style="text-align:center;color:green;">1592</td>
-<td style="text-align:center;color:red;">41</td>
+<td style="text-align:center;color:green;">1594</td>
+<td style="text-align:center;color:red;">39</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1633</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp</td>
-<td style="text-align:center;color:green;">437</td>
-<td style="text-align:center;color:red;">11</td>
+<td style="text-align:center;color:green;">438</td>
+<td style="text-align:center;color:red;">10</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">448</td>
@@ -1723,8 +1811,8 @@ Tests took 10 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_concave_then_convex_cubic</td>
-<td style="text-align:center;color:green;">12</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">13</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">13</td>
@@ -1789,14 +1877,14 @@ Tests took 10 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">486</td>
-<td style="text-align:center;color:red;">15</td>
+<td style="text-align:center;color:green;">487</td>
+<td style="text-align:center;color:red;">14</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">501</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_univariate_sum</td>
-<td style="text-align:center;color:green;">33</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">34</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">34</td>
@@ -2190,6 +2278,16 @@ Tests took 10 seconds to run (after warmup).
 ### Errors
 
 ```julia
+Error in testset lp_pos_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:129
+  Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
+   Evaluated: 2.9882133677601814 ≈ 3 (atol=0.001, rtol=0.0)
+
+Error in testset sdp_sum_largest_eigs:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:227
+  Expression: ≈(p1.optval, p2.optval, atol = atol, rtol = rtol)
+   Evaluated: 8.485281536525983 ≈ 8.48287499581092 (atol=0.001, rtol=0.0)
+
 Error in testset sdp_Issue_198:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:355
   Expression: p.status == MOI.OPTIMAL
@@ -2198,17 +2296,7 @@ Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/probl
 Error in testset sdp_Issue_198:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:357
   Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
-   Evaluated: -0.015685407560955787 ≈ 0 (atol=0.001, rtol=0.0)
-
-Error in testset sdp_matrix_frac_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:162
-  Expression: ≈(p.optval, 7, atol = atol, rtol = rtol)
-   Evaluated: 6.995495799120542 ≈ 7 (atol=0.001, rtol=0.0)
-
-Error in testset sdsos_concave_then_convex_cubic:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:25
-  Expression: termination_status(model) == MOI.OPTIMAL
-   Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
+   Evaluated: -0.015685407561012388 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2218,7 +2306,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 10.657676002820283 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 10.67753196604112 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2228,7 +2316,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 6.909184916878642 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 6.910252733056495 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2238,7 +2326,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 3.1588835299964613 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 3.1631369799507265 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2248,7 +2336,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -0.5922273987033086 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: -0.5909037133498565 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2258,12 +2346,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -4.342044884701263 ≈ 7.3 (atol=0.1, rtol=0.0)
-
-Error in testset dsos_univariate_sum:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/univariate_sum.jl:19
-  Expression: termination_status(model) == MOI.OPTIMAL
-   Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
+   Evaluated: -4.338367170406277 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2273,7 +2356,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 53.74909360875289 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 53.158172212686445 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2283,7 +2366,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 116.2290194406168 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 49.06267530109572 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2293,7 +2376,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 95.76472546097656 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 9.454872704173368 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2303,7 +2386,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 44.05629074999426 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 39.34049344590691 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2313,7 +2396,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 106.25036733613534 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 70.54710578819079 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset dsos_horn:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/horn.jl:35
@@ -2358,7 +2441,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 10.657580825901592 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 10.657575602866391 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2368,7 +2451,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 6.908086285323758 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 6.908021843397458 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2378,7 +2461,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 3.1578767831817043 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 3.1578474346463583 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2388,7 +2471,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -0.5911441000342621 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: -0.5919481365803207 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -2398,7 +2481,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -4.341694549306581 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: -4.341694356238126 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset quartic_infeasible_scaled_lyapunov_switched_system:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/lyapunov_switched_system.jl:66
@@ -2418,168 +2501,168 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/lyapun
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            9.13s / 100%             508MiB / 100%     
+       Tot / % measured:            13.0s / 100%             509MiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1    7.31s  80.1%   7.31s    388MiB  76.6%   388MiB
-   sdp                      1    5.21s  57.1%   5.21s   98.1MiB  19.4%  98.1MiB
-     sosdemo5_feasible      1    2.92s  32.0%   2.92s   25.9MiB  5.11%  25.9MiB
-     sosdemo5_infea...      1    376ms  4.12%   376ms   25.9MiB  5.11%  25.9MiB
-     sos_options_pr...      1    268ms  2.93%   268ms   6.22MiB  1.23%  6.22MiB
-     sos_horn               1    131ms  1.44%   131ms   4.77MiB  0.94%  4.77MiB
-     maxcut                 1   91.4ms  1.00%  91.4ms   10.1MiB  2.00%  10.1MiB
-     BPT12e399_rem          1   76.3ms  0.84%  76.3ms    744KiB  0.14%   744KiB
-     simple_matrix          1   72.6ms  0.80%  72.6ms   1.12MiB  0.22%  1.12MiB
-     sos_scaled_uni...      1   68.8ms  0.75%  68.8ms    726KiB  0.14%   726KiB
-     sos_bivariate_...      1   62.1ms  0.68%  62.1ms    728KiB  0.14%   728KiB
-     sos_term               1   61.9ms  0.68%  61.9ms    644KiB  0.12%   644KiB
-     quartic_ideal          1   58.9ms  0.65%  58.9ms    518KiB  0.10%   518KiB
-     sosdemo10              1   57.8ms  0.63%  57.8ms   2.09MiB  0.41%  2.09MiB
-     quartic_infeas...      1   56.1ms  0.61%  56.1ms    912KiB  0.18%   912KiB
-     sos_univariate...      1   56.1ms  0.61%  56.1ms    725KiB  0.14%   725KiB
-     sos_term_fixed         1   54.3ms  0.59%  54.3ms    675KiB  0.13%   675KiB
-     sos_scaled_biv...      1   53.2ms  0.58%  53.2ms    728KiB  0.14%   728KiB
-     rearrangement          1   49.8ms  0.55%  49.8ms    824KiB  0.16%   824KiB
-     quartic_ideal_rem      1   45.9ms  0.50%  45.9ms    470KiB  0.09%   470KiB
-     BPT12e399_maxd...      1   45.7ms  0.50%  45.7ms    772KiB  0.15%   772KiB
-     sos_univariate...      1   44.4ms  0.49%  44.4ms    769KiB  0.15%   769KiB
-     sos_concave_th...      1   41.5ms  0.46%  41.5ms    802KiB  0.15%   802KiB
-     choi                   1   40.1ms  0.44%  40.1ms    860KiB  0.17%   860KiB
-     chebyshev              1   39.9ms  0.44%  39.9ms   1.17MiB  0.23%  1.17MiB
-     motzkin                1   38.2ms  0.42%  38.2ms   1.02MiB  0.20%  1.02MiB
-     quartic_ideal_4        1   34.6ms  0.38%  34.6ms    505KiB  0.10%   505KiB
-     quartic_ideal_...      1   34.0ms  0.37%  34.0ms    462KiB  0.09%   462KiB
-     quartic_infeas...      1   33.8ms  0.37%  33.8ms    897KiB  0.17%   897KiB
-     sos_quartic_co...      1   31.3ms  0.34%  31.3ms    616KiB  0.12%   616KiB
-     quadratic_infe...      1   30.1ms  0.33%  30.1ms    711KiB  0.14%   711KiB
-     sos_cheby_univ...      1   29.9ms  0.33%  29.9ms    741KiB  0.14%   741KiB
-     sos_quartic_co...      1   29.9ms  0.33%  29.9ms    622KiB  0.12%   622KiB
-     quartic_ideal_...      1   28.8ms  0.32%  28.8ms    528KiB  0.10%   528KiB
-     quartic_feasib...      1   28.3ms  0.31%  28.3ms    634KiB  0.12%   634KiB
-     quartic_feasib...      1   27.8ms  0.30%  27.8ms    649KiB  0.13%   649KiB
-     quadratic_infe...      1   25.6ms  0.28%  25.6ms    718KiB  0.14%   718KiB
-     quadratic_feas...      1   25.2ms  0.28%  25.2ms    629KiB  0.12%   629KiB
-     quadratic_feas...      1   23.4ms  0.26%  23.4ms    622KiB  0.12%   622KiB
-     sosdemo9               1   20.7ms  0.23%  20.7ms    945KiB  0.18%   945KiB
-   lp                       1    1.10s  12.1%   1.10s    262MiB  51.6%   262MiB
-     dsos_horn              1    515ms  5.64%   515ms    240MiB  47.4%   240MiB
-     dsos_options_p...      1    212ms  2.32%   212ms   10.8MiB  2.13%  10.8MiB
-     dsos_concave_t...      1   54.5ms  0.60%  54.5ms   1.22MiB  0.24%  1.22MiB
-     dsos_scaled_bi...      1   52.5ms  0.58%  52.5ms    896KiB  0.17%   896KiB
-     dsos_term              1   51.3ms  0.56%  51.3ms    632KiB  0.12%   632KiB
-     dsos_univariat...      1   40.8ms  0.45%  40.8ms   1.37MiB  0.27%  1.37MiB
-     dsos_term_fixed        1   34.1ms  0.37%  34.1ms    663KiB  0.13%   663KiB
-     dsos_univariat...      1   29.0ms  0.32%  29.0ms    892KiB  0.17%   892KiB
-     dsos_scaled_un...      1   25.3ms  0.28%  25.3ms    893KiB  0.17%   893KiB
-     dsos_cheby_biv...      1   23.7ms  0.26%  23.7ms    927KiB  0.18%   927KiB
-     dsos_cheby_uni...      1   20.3ms  0.22%  20.3ms    909KiB  0.18%   909KiB
-     dsos_quartic_c...      1   17.8ms  0.19%  17.8ms    604KiB  0.12%   604KiB
-     dsos_bivariate...      1   13.3ms  0.15%  13.3ms    895KiB  0.17%   895KiB
-     dsos_quartic_c...      1   12.4ms  0.14%  12.4ms   1.15MiB  0.23%  1.15MiB
-   socp                     1    998ms  10.9%   998ms   28.3MiB  5.59%  28.3MiB
-     sdsos_options_...      1    280ms  3.07%   280ms   7.80MiB  1.54%  7.80MiB
-     sdsos_horn             1    167ms  1.83%   167ms   12.5MiB  2.46%  12.5MiB
-     sdsos_univaria...      1   73.2ms  0.80%  73.2ms    772KiB  0.15%   772KiB
-     sdsos_term             1   66.5ms  0.73%  66.5ms    647KiB  0.12%   647KiB
-     sdsos_univaria...      1   64.2ms  0.70%  64.2ms    728KiB  0.14%   728KiB
-     sdsos_concave_...      1   59.7ms  0.65%  59.7ms   0.96MiB  0.19%  0.96MiB
-     sdsos_bivariat...      1   55.0ms  0.60%  55.0ms    730KiB  0.14%   730KiB
-     sdsos_term_fixed       1   48.8ms  0.53%  48.8ms    679KiB  0.13%   679KiB
-     sdsos_scaled_u...      1   42.4ms  0.46%  42.4ms    729KiB  0.14%   729KiB
-     sdsos_cheby_un...      1   40.1ms  0.44%  40.1ms    745KiB  0.14%   745KiB
-     sdsos_quartic_...      1   35.0ms  0.38%  35.0ms    852KiB  0.16%   852KiB
-     sdsos_scaled_b...      1   32.3ms  0.35%  32.3ms    732KiB  0.14%   732KiB
-     sdsos_quartic_...      1   32.3ms  0.35%  32.3ms    619KiB  0.12%   619KiB
- Convex                     1    1.81s  19.9%   1.81s    119MiB  23.4%   119MiB
-   socp                     1    629ms  6.89%   629ms   29.2MiB  5.77%  29.2MiB
-     socp_rational_...      1    207ms  2.27%   207ms   10.6MiB  2.10%  10.6MiB
-     socp_dual_norm...      1   76.8ms  0.84%  76.8ms   1.87MiB  0.37%  1.87MiB
-     socp_quad_form...      1   47.1ms  0.52%  47.1ms   2.14MiB  0.42%  2.14MiB
-     socp_inv_pos_atom      1   47.0ms  0.51%  47.0ms   1.99MiB  0.39%  1.99MiB
-     socp_dual_frob...      1   46.2ms  0.51%  46.2ms   1.35MiB  0.27%  1.35MiB
-     socp_square_atom       1   37.5ms  0.41%  37.5ms   1.52MiB  0.30%  1.52MiB
-     socp_rational_...      1   30.9ms  0.34%  30.9ms   2.52MiB  0.50%  2.52MiB
-     socp_fix_multi...      1   24.6ms  0.27%  24.6ms   1.11MiB  0.22%  1.11MiB
-     socp_rational_...      1   23.1ms  0.25%  23.1ms   1.53MiB  0.30%  1.53MiB
-     socp_dual_mini...      1   20.7ms  0.23%  20.7ms   1.13MiB  0.22%  1.13MiB
-     socp_geo_mean_...      1   15.6ms  0.17%  15.6ms    716KiB  0.14%   716KiB
-     socp_huber_atom        1   14.0ms  0.15%  14.0ms    731KiB  0.14%   731KiB
-     socp_fix_and_f...      1   13.0ms  0.14%  13.0ms    882KiB  0.17%   882KiB
-     socp_sum_squar...      1   12.5ms  0.14%  12.5ms    493KiB  0.09%   493KiB
-     socp_quad_over...      1   12.0ms  0.13%  12.0ms    586KiB  0.11%   586KiB
-     socp_norm_cons...      1    291μs  0.00%   291μs   62.7KiB  0.01%  62.7KiB
-     socp_sqrt_atom         1   52.6μs  0.00%  52.6μs   22.2KiB  0.00%  22.2KiB
-   affine                   1    549ms  6.01%   549ms   45.3MiB  8.93%  45.3MiB
-     affine_Partial...      1    201ms  2.20%   201ms   26.6MiB  5.24%  26.6MiB
-     affine_permute...      1   46.4ms  0.51%  46.4ms    894KiB  0.17%   894KiB
-     affine_index_atom      1   28.1ms  0.31%  28.1ms   1.41MiB  0.28%  1.41MiB
-     affine_vcat_atom       1   25.6ms  0.28%  25.6ms    895KiB  0.17%   895KiB
-     affine_dot_mul...      1   25.0ms  0.27%  25.0ms   2.06MiB  0.41%  2.06MiB
-     affine_trace_atom      1   24.1ms  0.26%  24.1ms    324KiB  0.06%   324KiB
-     affine_multipl...      1   22.8ms  0.25%  22.8ms   1.75MiB  0.35%  1.75MiB
-     affine_single_...      1   17.9ms  0.20%  17.9ms    465KiB  0.09%   465KiB
-     affine_satisfy...      1   16.3ms  0.18%  16.3ms   1.18MiB  0.23%  1.18MiB
-     affine_dualvalue       1   15.8ms  0.17%  15.8ms   1.09MiB  0.21%  1.09MiB
-     affine_Diagona...      1   14.1ms  0.15%  14.1ms    942KiB  0.18%   942KiB
-     affine_reshape...      1   13.8ms  0.15%  13.8ms   1.09MiB  0.22%  1.09MiB
-     affine_transpo...      1   13.6ms  0.15%  13.6ms   1.14MiB  0.23%  1.14MiB
-     affine_add_atom        1   13.1ms  0.14%  13.1ms    894KiB  0.17%   894KiB
-     affine_dot_atom        1   13.1ms  0.14%  13.1ms    306KiB  0.06%   306KiB
-     affine_sum_atom        1   13.0ms  0.14%  13.0ms   1.01MiB  0.20%  1.01MiB
-     affine_diag_atom       1   9.67ms  0.11%  9.67ms    762KiB  0.15%   762KiB
-     affine_conv_atom       1   9.66ms  0.11%  9.66ms    693KiB  0.13%   693KiB
-     affine_single_...      1   7.33ms  0.08%  7.33ms    481KiB  0.09%   481KiB
-     affine_hcat_atom       1   7.29ms  0.08%  7.29ms    815KiB  0.16%   815KiB
-     affine_dot_ato...      1   5.71ms  0.06%  5.71ms    328KiB  0.06%   328KiB
-     affine_negate_...      1   5.53ms  0.06%  5.53ms    291KiB  0.06%   291KiB
-     affine_kron_atom       1    120μs  0.00%   120μs   29.1KiB  0.01%  29.1KiB
-   sdp                      1    361ms  3.95%   361ms   19.6MiB  3.86%  19.6MiB
-     sdp_Complex_Va...      1   65.7ms  0.72%  65.7ms   1.99MiB  0.39%  1.99MiB
-     sdp_sum_larges...      1   47.8ms  0.52%  47.8ms   4.35MiB  0.86%  4.35MiB
-     sdp_matrix_fra...      1   28.6ms  0.31%  28.6ms    733KiB  0.14%   733KiB
-     sdp_sdp_variables      1   26.6ms  0.29%  26.6ms   1.96MiB  0.39%  1.96MiB
-     sdp_socp_norm2...      1   22.7ms  0.25%  22.7ms    412KiB  0.08%   412KiB
-     sdp_kron_atom          1   20.7ms  0.23%  20.7ms   0.96MiB  0.19%  0.96MiB
-     sdp_nuclear_no...      1   18.8ms  0.21%  18.8ms    970KiB  0.19%   970KiB
-     sdp_Issue_198          1   17.3ms  0.19%  17.3ms    701KiB  0.13%   701KiB
-     sdp_dual_lambd...      1   14.9ms  0.16%  14.9ms   1.36MiB  0.27%  1.36MiB
-     sdp_lambda_min...      1   14.8ms  0.16%  14.8ms    594KiB  0.11%   594KiB
-     sdp_Partial_trace      1   13.8ms  0.15%  13.8ms    809KiB  0.16%   809KiB
-     sdp_socp_sumsq...      1   13.7ms  0.15%  13.7ms    559KiB  0.11%   559KiB
-     sdp_socp_abs_atom      1   12.1ms  0.13%  12.1ms    453KiB  0.09%   453KiB
-     sdp_Real_Varia...      1   10.8ms  0.12%  10.8ms   1.27MiB  0.25%  1.27MiB
-     sdp_matrix_fra...      1   8.84ms  0.10%  8.84ms    736KiB  0.14%   736KiB
-     sdp_operator_n...      1   8.29ms  0.09%  8.29ms    701KiB  0.14%   701KiB
-     sdp_sigma_max_...      1   7.75ms  0.08%  7.75ms    701KiB  0.14%   701KiB
-     sdp_sdp_constr...      1   7.28ms  0.08%  7.28ms    470KiB  0.09%   470KiB
-   lp                       1    189ms  2.07%   189ms   21.1MiB  4.17%  21.1MiB
-     lp_max_atom            1   40.3ms  0.44%  40.3ms   5.43MiB  1.07%  5.43MiB
-     lp_min_atom            1   39.3ms  0.43%  39.3ms   5.42MiB  1.07%  5.42MiB
-     lp_minimum_atom        1   28.7ms  0.31%  28.7ms   2.44MiB  0.48%  2.44MiB
-     lp_sumsmallest...      1   15.1ms  0.17%  15.1ms   2.03MiB  0.40%  2.03MiB
-     lp_sumlargest_...      1   12.3ms  0.13%  12.3ms   1.28MiB  0.25%  1.28MiB
-     lp_dotsort_atom        1   11.8ms  0.13%  11.8ms   1.36MiB  0.27%  1.36MiB
-     lp_dual_abs_atom       1   9.54ms  0.10%  9.54ms    834KiB  0.16%   834KiB
-     lp_neg_atom            1   8.01ms  0.09%  8.01ms    455KiB  0.09%   455KiB
-     lp_maximum_atom        1   6.33ms  0.07%  6.33ms    508KiB  0.10%   508KiB
-     lp_pos_atom            1   6.13ms  0.07%  6.13ms    427KiB  0.08%   427KiB
-     lp_dual_norm_1...      1   5.87ms  0.06%  5.87ms    450KiB  0.09%   450KiB
-     lp_dual_norm_i...      1   5.55ms  0.06%  5.55ms    503KiB  0.10%   503KiB
-     lp_hinge_loss_...      1   35.2μs  0.00%  35.2μs   21.4KiB  0.00%  21.4KiB
-   constant                 1   86.2ms  0.94%  86.2ms   3.47MiB  0.68%  3.47MiB
-     constant_Issue...      1   20.8ms  0.23%  20.8ms    346KiB  0.07%   346KiB
-     constant_Test_...      1   20.2ms  0.22%  20.2ms    869KiB  0.17%   869KiB
-     constant_fix!_...      1   14.4ms  0.16%  14.4ms    762KiB  0.15%   762KiB
-     constant_fix!_...      1   13.7ms  0.15%  13.7ms    644KiB  0.12%   644KiB
-     constant_Issue...      1   11.3ms  0.12%  11.3ms    572KiB  0.11%   572KiB
-     constant_fix!_...      1   5.62ms  0.06%  5.62ms    327KiB  0.06%   327KiB
+ SumOfSquares               1    10.4s  80.5%   10.4s    390MiB  76.8%   390MiB
+   sdp                      1    7.17s  55.3%   7.17s    100MiB  19.8%   100MiB
+     sosdemo5_feasible      1    3.77s  29.0%   3.77s   27.1MiB  5.33%  27.1MiB
+     sosdemo5_infea...      1    541ms  4.17%   541ms   27.1MiB  5.34%  27.1MiB
+     sos_options_pr...      1    443ms  3.42%   443ms   6.18MiB  1.22%  6.18MiB
+     sos_horn               1    142ms  1.10%   142ms   4.76MiB  0.94%  4.76MiB
+     maxcut                 1    132ms  1.01%   132ms   10.1MiB  1.99%  10.1MiB
+     BPT12e399_rem          1    109ms  0.84%   109ms    744KiB  0.14%   744KiB
+     simple_matrix          1    106ms  0.82%   106ms   1.12MiB  0.22%  1.12MiB
+     rearrangement          1   97.6ms  0.75%  97.6ms    824KiB  0.16%   824KiB
+     sos_bivariate_...      1   96.8ms  0.75%  96.8ms    728KiB  0.14%   728KiB
+     sos_term               1   89.0ms  0.69%  89.0ms    644KiB  0.12%   644KiB
+     sos_scaled_uni...      1   87.5ms  0.67%  87.5ms    726KiB  0.14%   726KiB
+     sos_term_fixed         1   83.7ms  0.65%  83.7ms    675KiB  0.13%   675KiB
+     quartic_ideal          1   81.9ms  0.63%  81.9ms    518KiB  0.10%   518KiB
+     quartic_infeas...      1   78.4ms  0.60%  78.4ms    912KiB  0.18%   912KiB
+     sos_univariate...      1   77.2ms  0.60%  77.2ms    725KiB  0.14%   725KiB
+     sosdemo10              1   73.1ms  0.56%  73.1ms   2.09MiB  0.41%  2.09MiB
+     sos_concave_th...      1   71.8ms  0.55%  71.8ms    803KiB  0.15%   803KiB
+     sos_scaled_biv...      1   70.8ms  0.55%  70.8ms    728KiB  0.14%   728KiB
+     BPT12e399_maxd...      1   68.8ms  0.53%  68.8ms    772KiB  0.15%   772KiB
+     quartic_ideal_rem      1   67.2ms  0.52%  67.2ms    470KiB  0.09%   470KiB
+     chebyshev              1   65.0ms  0.50%  65.0ms   1.17MiB  0.23%  1.17MiB
+     sos_univariate...      1   64.0ms  0.49%  64.0ms    769KiB  0.15%   769KiB
+     quartic_ideal_4        1   59.6ms  0.46%  59.6ms    506KiB  0.10%   506KiB
+     choi                   1   56.7ms  0.44%  56.7ms    860KiB  0.17%   860KiB
+     quartic_infeas...      1   53.2ms  0.41%  53.2ms    897KiB  0.17%   897KiB
+     motzkin                1   52.0ms  0.40%  52.0ms   1.02MiB  0.20%  1.02MiB
+     quadratic_infe...      1   50.3ms  0.39%  50.3ms    711KiB  0.14%   711KiB
+     quartic_ideal_...      1   49.6ms  0.38%  49.6ms    462KiB  0.09%   462KiB
+     quadratic_feas...      1   47.6ms  0.37%  47.6ms    629KiB  0.12%   629KiB
+     quartic_feasib...      1   46.8ms  0.36%  46.8ms    634KiB  0.12%   634KiB
+     quartic_ideal_...      1   45.6ms  0.35%  45.6ms    528KiB  0.10%   528KiB
+     sos_cheby_univ...      1   44.1ms  0.34%  44.1ms    741KiB  0.14%   741KiB
+     quartic_feasib...      1   44.1ms  0.34%  44.1ms    649KiB  0.12%   649KiB
+     sos_quartic_co...      1   43.8ms  0.34%  43.8ms    616KiB  0.12%   616KiB
+     quadratic_infe...      1   43.4ms  0.33%  43.4ms    718KiB  0.14%   718KiB
+     sos_quartic_co...      1   41.3ms  0.32%  41.3ms    622KiB  0.12%   622KiB
+     sosdemo9               1   40.3ms  0.31%  40.3ms    945KiB  0.18%   945KiB
+     quadratic_feas...      1   39.4ms  0.30%  39.4ms    622KiB  0.12%   622KiB
+   lp                       1    1.66s  12.8%   1.66s    262MiB  51.5%   262MiB
+     dsos_horn              1    762ms  5.88%   762ms    240MiB  47.2%   240MiB
+     dsos_options_p...      1    336ms  2.59%   336ms   10.8MiB  2.13%  10.8MiB
+     dsos_concave_t...      1   80.3ms  0.62%  80.3ms   1.23MiB  0.24%  1.23MiB
+     dsos_term              1   73.8ms  0.57%  73.8ms    632KiB  0.12%   632KiB
+     dsos_scaled_bi...      1   68.5ms  0.53%  68.5ms    896KiB  0.17%   896KiB
+     dsos_univariat...      1   56.6ms  0.44%  56.6ms   1.29MiB  0.25%  1.29MiB
+     dsos_term_fixed        1   51.4ms  0.40%  51.4ms    663KiB  0.13%   663KiB
+     dsos_univariat...      1   48.1ms  0.37%  48.1ms    892KiB  0.17%   892KiB
+     dsos_cheby_biv...      1   47.5ms  0.37%  47.5ms    927KiB  0.18%   927KiB
+     dsos_scaled_un...      1   35.2ms  0.27%  35.2ms    893KiB  0.17%   893KiB
+     dsos_cheby_uni...      1   29.3ms  0.23%  29.3ms    909KiB  0.17%   909KiB
+     dsos_quartic_c...      1   28.9ms  0.22%  28.9ms    604KiB  0.12%   604KiB
+     dsos_bivariate...      1   24.7ms  0.19%  24.7ms    895KiB  0.17%   895KiB
+     dsos_quartic_c...      1   19.6ms  0.15%  19.6ms   1.15MiB  0.23%  1.15MiB
+   socp                     1    1.61s  12.4%   1.61s   28.2MiB  5.55%  28.2MiB
+     sdsos_options_...      1    532ms  4.11%   532ms   7.76MiB  1.53%  7.76MiB
+     sdsos_horn             1    299ms  2.31%   299ms   12.4MiB  2.45%  12.4MiB
+     sdsos_univaria...      1    103ms  0.79%   103ms    772KiB  0.15%   772KiB
+     sdsos_term             1   87.0ms  0.67%  87.0ms    647KiB  0.12%   647KiB
+     sdsos_univaria...      1   83.4ms  0.64%  83.4ms    728KiB  0.14%   728KiB
+     sdsos_concave_...      1   82.7ms  0.64%  82.7ms    898KiB  0.17%   898KiB
+     sdsos_bivariat...      1   77.0ms  0.59%  77.0ms    730KiB  0.14%   730KiB
+     sdsos_term_fixed       1   70.1ms  0.54%  70.1ms    679KiB  0.13%   679KiB
+     sdsos_cheby_un...      1   59.8ms  0.46%  59.8ms    745KiB  0.14%   745KiB
+     sdsos_scaled_u...      1   59.0ms  0.46%  59.0ms    729KiB  0.14%   729KiB
+     sdsos_quartic_...      1   54.2ms  0.42%  54.2ms    852KiB  0.16%   852KiB
+     sdsos_quartic_...      1   52.2ms  0.40%  52.2ms    619KiB  0.12%   619KiB
+     sdsos_scaled_b...      1   46.2ms  0.36%  46.2ms    732KiB  0.14%   732KiB
+ Convex                     1    2.53s  19.5%   2.53s    118MiB  23.2%   118MiB
+   socp                     1    950ms  7.33%   950ms   29.1MiB  5.73%  29.1MiB
+     socp_rational_...      1    245ms  1.89%   245ms   10.6MiB  2.08%  10.6MiB
+     socp_dual_norm...      1    128ms  0.99%   128ms   1.87MiB  0.37%  1.87MiB
+     socp_quad_form...      1   95.8ms  0.74%  95.8ms   2.13MiB  0.42%  2.13MiB
+     socp_inv_pos_atom      1   74.3ms  0.57%  74.3ms   1.98MiB  0.39%  1.98MiB
+     socp_dual_frob...      1   73.0ms  0.56%  73.0ms   1.33MiB  0.26%  1.33MiB
+     socp_square_atom       1   72.5ms  0.56%  72.5ms   1.51MiB  0.30%  1.51MiB
+     socp_rational_...      1   48.4ms  0.37%  48.4ms   2.51MiB  0.49%  2.51MiB
+     socp_fix_multi...      1   37.0ms  0.29%  37.0ms   1.11MiB  0.22%  1.11MiB
+     socp_rational_...      1   35.5ms  0.27%  35.5ms   1.51MiB  0.30%  1.51MiB
+     socp_dual_mini...      1   31.0ms  0.24%  31.0ms   1.13MiB  0.22%  1.13MiB
+     socp_geo_mean_...      1   29.0ms  0.22%  29.0ms    712KiB  0.14%   712KiB
+     socp_sum_squar...      1   21.2ms  0.16%  21.2ms    490KiB  0.09%   490KiB
+     socp_huber_atom        1   20.4ms  0.16%  20.4ms    726KiB  0.14%   726KiB
+     socp_quad_over...      1   19.4ms  0.15%  19.4ms    583KiB  0.11%   583KiB
+     socp_fix_and_f...      1   17.9ms  0.14%  17.9ms    882KiB  0.17%   882KiB
+     socp_norm_cons...      1    546μs  0.00%   546μs   62.7KiB  0.01%  62.7KiB
+     socp_sqrt_atom         1    105μs  0.00%   105μs   22.2KiB  0.00%  22.2KiB
+   affine                   1    631ms  4.86%   631ms   44.6MiB  8.78%  44.6MiB
+     affine_Partial...      1    255ms  1.96%   255ms   26.6MiB  5.23%  26.6MiB
+     affine_index_atom      1   31.3ms  0.24%  31.3ms   1.41MiB  0.28%  1.41MiB
+     affine_dot_mul...      1   30.3ms  0.23%  30.3ms   2.06MiB  0.41%  2.06MiB
+     affine_vcat_atom       1   29.9ms  0.23%  29.9ms    895KiB  0.17%   895KiB
+     affine_multipl...      1   28.0ms  0.22%  28.0ms   1.75MiB  0.34%  1.75MiB
+     affine_trace_atom      1   27.3ms  0.21%  27.3ms    324KiB  0.06%   324KiB
+     affine_single_...      1   21.6ms  0.17%  21.6ms    465KiB  0.09%   465KiB
+     affine_satisfy...      1   21.5ms  0.17%  21.5ms   1.18MiB  0.23%  1.18MiB
+     affine_add_atom        1   19.6ms  0.15%  19.6ms    894KiB  0.17%   894KiB
+     affine_dualvalue       1   19.1ms  0.15%  19.1ms   1.09MiB  0.21%  1.09MiB
+     affine_transpo...      1   17.4ms  0.13%  17.4ms   1.14MiB  0.22%  1.14MiB
+     affine_Diagona...      1   16.8ms  0.13%  16.8ms    942KiB  0.18%   942KiB
+     affine_sum_atom        1   16.7ms  0.13%  16.7ms   1.01MiB  0.20%  1.01MiB
+     affine_reshape...      1   16.1ms  0.12%  16.1ms   1.09MiB  0.22%  1.09MiB
+     affine_dot_atom        1   15.6ms  0.12%  15.6ms    306KiB  0.06%   306KiB
+     affine_conv_atom       1   11.9ms  0.09%  11.9ms    693KiB  0.13%   693KiB
+     affine_diag_atom       1   11.6ms  0.09%  11.6ms    762KiB  0.15%   762KiB
+     affine_single_...      1   10.0ms  0.08%  10.0ms    481KiB  0.09%   481KiB
+     affine_hcat_atom       1   9.72ms  0.07%  9.72ms    815KiB  0.16%   815KiB
+     affine_permute...      1   8.04ms  0.06%  8.04ms    177KiB  0.03%   177KiB
+     affine_dot_ato...      1   6.60ms  0.05%  6.60ms    328KiB  0.06%   328KiB
+     affine_negate_...      1   6.25ms  0.05%  6.25ms    291KiB  0.06%   291KiB
+     affine_kron_atom       1    154μs  0.00%   154μs   29.1KiB  0.01%  29.1KiB
+   sdp                      1    462ms  3.56%   462ms   19.5MiB  3.84%  19.5MiB
+     sdp_sum_larges...      1   87.6ms  0.68%  87.6ms   4.40MiB  0.87%  4.40MiB
+     sdp_sdp_variables      1   51.0ms  0.39%  51.0ms   1.96MiB  0.39%  1.96MiB
+     sdp_nuclear_no...      1   38.3ms  0.29%  38.3ms    963KiB  0.19%   963KiB
+     sdp_Complex_Va...      1   36.6ms  0.28%  36.6ms   1.99MiB  0.39%  1.99MiB
+     sdp_socp_norm2...      1   35.8ms  0.28%  35.8ms    410KiB  0.08%   410KiB
+     sdp_matrix_fra...      1   32.3ms  0.25%  32.3ms    732KiB  0.14%   732KiB
+     sdp_socp_abs_atom      1   20.6ms  0.16%  20.6ms    451KiB  0.09%   451KiB
+     sdp_operator_n...      1   19.7ms  0.15%  19.7ms    697KiB  0.13%   697KiB
+     sdp_socp_sumsq...      1   19.4ms  0.15%  19.4ms    556KiB  0.11%   556KiB
+     sdp_Issue_198          1   18.6ms  0.14%  18.6ms    701KiB  0.13%   701KiB
+     sdp_Partial_trace      1   18.4ms  0.14%  18.4ms    809KiB  0.16%   809KiB
+     sdp_dual_lambd...      1   17.8ms  0.14%  17.8ms   1.36MiB  0.27%  1.36MiB
+     sdp_Real_Varia...      1   14.6ms  0.11%  14.6ms   1.27MiB  0.25%  1.27MiB
+     sdp_sigma_max_...      1   11.2ms  0.09%  11.2ms    697KiB  0.13%   697KiB
+     sdp_lambda_min...      1   10.6ms  0.08%  10.6ms    590KiB  0.11%   590KiB
+     sdp_kron_atom          1   10.5ms  0.08%  10.5ms    976KiB  0.19%   976KiB
+     sdp_matrix_fra...      1   9.48ms  0.07%  9.48ms    642KiB  0.12%   642KiB
+     sdp_sdp_constr...      1   8.69ms  0.07%  8.69ms    468KiB  0.09%   468KiB
+   lp                       1    388ms  2.99%   388ms   21.2MiB  4.17%  21.2MiB
+     lp_max_atom            1    183ms  1.41%   183ms   5.43MiB  1.07%  5.43MiB
+     lp_min_atom            1   51.4ms  0.40%  51.4ms   5.42MiB  1.07%  5.42MiB
+     lp_minimum_atom        1   35.3ms  0.27%  35.3ms   2.44MiB  0.48%  2.44MiB
+     lp_sumsmallest...      1   19.1ms  0.15%  19.1ms   2.03MiB  0.40%  2.03MiB
+     lp_dual_abs_atom       1   17.4ms  0.13%  17.4ms    834KiB  0.16%   834KiB
+     lp_pos_atom            1   16.5ms  0.13%  16.5ms    513KiB  0.10%   513KiB
+     lp_sumlargest_...      1   14.9ms  0.11%  14.9ms   1.28MiB  0.25%  1.28MiB
+     lp_dotsort_atom        1   14.4ms  0.11%  14.4ms   1.36MiB  0.27%  1.36MiB
+     lp_neg_atom            1   9.86ms  0.08%  9.86ms    455KiB  0.09%   455KiB
+     lp_maximum_atom        1   9.78ms  0.08%  9.78ms    508KiB  0.10%   508KiB
+     lp_dual_norm_i...      1   9.40ms  0.07%  9.40ms    503KiB  0.10%   503KiB
+     lp_dual_norm_1...      1   6.03ms  0.05%  6.03ms    450KiB  0.09%   450KiB
+     lp_hinge_loss_...      1   54.4μs  0.00%  54.4μs   21.4KiB  0.00%  21.4KiB
+   constant                 1   97.5ms  0.75%  97.5ms   3.47MiB  0.68%  3.47MiB
+     constant_Test_...      1   23.7ms  0.18%  23.7ms    869KiB  0.17%   869KiB
+     constant_Issue...      1   23.3ms  0.18%  23.3ms    346KiB  0.07%   346KiB
+     constant_fix!_...      1   16.4ms  0.13%  16.4ms    762KiB  0.15%   762KiB
+     constant_fix!_...      1   15.3ms  0.12%  15.3ms    644KiB  0.12%   644KiB
+     constant_Issue...      1   12.0ms  0.09%  12.0ms    572KiB  0.11%   572KiB
+     constant_fix!_...      1   6.60ms  0.05%  6.60ms    327KiB  0.06%   327KiB
  ──────────────────────────────────────────────────────────────────────────────
 
 ```
 
 ## SDPA `PARAMETER_STABLE_BUT_SLOW`
-These tests were run on November 13, 2021 at 23:37 (UTC).
+These tests were run on November 14, 2021 at 00:14 (UTC).
 
 
 Excluded problems and classes of problems:
@@ -2589,7 +2672,7 @@ Regex[r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 
 ### Tests
 
-Tests took 12 seconds to run (after warmup).
+Tests took 17 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -2602,14 +2685,14 @@ Tests took 12 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">SDPA tests</td>
-<td style="text-align:center;color:green;">1855</td>
-<td style="text-align:center;color:red;">172</td>
+<td style="text-align:center;color:green;">1849</td>
+<td style="text-align:center;color:red;">178</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2027</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;Convex</td>
-<td style="text-align:center;color:green;">320</td>
-<td style="text-align:center;color:red;">74</td>
+<td style="text-align:center;color:green;">314</td>
+<td style="text-align:center;color:red;">80</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">394</td>
@@ -2800,8 +2883,8 @@ Tests took 12 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp</td>
-<td style="text-align:center;color:green;">79</td>
-<td style="text-align:center;color:red;">20</td>
+<td style="text-align:center;color:green;">76</td>
+<td style="text-align:center;color:red;">23</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">99</td>
@@ -2824,8 +2907,8 @@ Tests took 12 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;socp_inv_pos_atom</td>
-<td style="text-align:center;color:green;">7</td>
-<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;color:red;">5</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
@@ -2908,8 +2991,8 @@ Tests took 12 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">8</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">50</td>
-<td style="text-align:center;color:red;">12</td>
+<td style="text-align:center;color:green;">49</td>
+<td style="text-align:center;color:red;">13</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">62</td>
@@ -2968,8 +3051,8 @@ Tests took 12 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_neg_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -2992,8 +3075,8 @@ Tests took 12 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">40</td>
-<td style="text-align:center;color:red;">24</td>
+<td style="text-align:center;color:green;">38</td>
+<td style="text-align:center;color:red;">26</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">64</td>
@@ -3058,8 +3141,8 @@ Tests took 12 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_Partial_trace</td>
-<td style="text-align:center;color:green;">9</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">7</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
@@ -3660,7 +3743,7 @@ Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/probl
 Error in testset constant_Test_double_fix!:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:62
   Expression: ≈(prob.optval, 0.5, atol = atol, rtol = rtol)
-   Evaluated: -19.94563118747467 ≈ 0.5 (atol=0.001, rtol=0.0)
+   Evaluated: -19.484980088794 ≈ 0.5 (atol=0.001, rtol=0.0)
 
 Error in testset affine_satisfy_problems:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:586
@@ -3668,264 +3751,284 @@ Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/probl
    Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
 
 Error in testset affine_satisfy_problems:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:605
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:593
   Expression: p.status == MOI.OPTIMAL
-   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.OPTIMAL
+   Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
 
 Error in testset affine_conv_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:552
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: -12.67873775777138 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: -87.2880944897033 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset affine_conv_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:565
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: -12.67873775777138 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: -87.2880944897033 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:392
   Expression: ≈(p.optval, 11 / 6, atol = atol, rtol = rtol)
-   Evaluated: 36.212691202995245 ≈ 1.8333333333333333 (atol=0.001, rtol=0.0)
+   Evaluated: 35.436076550058466 ≈ 1.8333333333333333 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:393
   Expression: ≈(evaluate(sum((dot(/))(x, [1 2 3]))), 11 / 6, atol = atol, rtol = rtol)
-   Evaluated: 0.8748968802392483 ≈ 1.8333333333333333 (atol=0.001, rtol=0.0)
+   Evaluated: 1.5828660689294338 ≈ 1.8333333333333333 (atol=0.001, rtol=0.0)
 
 Error in testset affine_hcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:459
   Expression: ≈(evaluate(sum(x) + sum([y fill(4.0, 4)])), 96, atol = atol, rtol = rtol)
-   Evaluated: -36.175866052508354 ≈ 96 (atol=0.001, rtol=0.0)
+   Evaluated: -166.8434325605631 ≈ 96 (atol=0.001, rtol=0.0)
 
 Error in testset affine_hcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:460
   Expression: ≈(evaluate([x y fill(2.0, (4, 2))]), fill(2.0, (4, 12)), atol = atol, rtol = rtol)
-   Evaluated: [-1.3043966479599476 -1.3043966479599476 … 2.0 2.0; -1.3043966516852379 -1.3043966479599476 … 2.0 2.0; -1.3043966516852379 -1.3043966516852379 … 2.0 2.0; -1.3043966516852379 -1.3043966516852379 … 2.0 2.0] ≈ [2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-4.5710858181118965 -4.571085812523961 … 2.0 2.0; -4.571085814386606 -4.571085810661316 … 2.0 2.0; -4.571085816249251 -4.571085810661316 … 2.0 2.0; -4.571085814386606 -4.571085814386606 … 2.0 2.0] ≈ [2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0] (atol=0.001, rtol=0.0)
 
 Error in testset affine_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:33
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: -12865.483998823665 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: -12865.484009421452 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset affine_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:63
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: -427.412911961968 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: -573.8958206158362 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset affine_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:72
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: -427.412911961968 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: -573.8958206158362 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset socp_sum_squares_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:112
   Expression: ≈(p.optval, 0.42105, atol = atol, rtol = rtol)
-   Evaluated: -6.870739767738009 ≈ 0.42105 (atol=0.001, rtol=0.0)
+   Evaluated: -16.886225981587735 ≈ 0.42105 (atol=0.001, rtol=0.0)
 
 Error in testset socp_sum_squares_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:113
   Expression: ≈((evaluate(sumsquares(A * x + b)))[1], 0.42105, atol = atol, rtol = rtol)
-   Evaluated: 4.616634063315133 ≈ 0.42105 (atol=0.001, rtol=0.0)
+   Evaluated: 0.7225611440066775 ≈ 0.42105 (atol=0.001, rtol=0.0)
 
 Error in testset socp_inv_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:166
   Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
-   Evaluated: -378.6370852977205 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: -908.5753051891279 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset socp_inv_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:167
   Expression: ≈(evaluate(sum(invpos(x))), 2, atol = atol, rtol = rtol)
-   Evaluated: 1.9200696823006616 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 1.9690327289616631 ≈ 2 (atol=0.001, rtol=0.0)
+
+Error in testset socp_inv_pos_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:175
+  Expression: ≈(evaluate(x), fill(3.0, (3, 1)), atol = atol, rtol = rtol)
+   Evaluated: [1.7180779874324799, 1.9316310212016106, 2.3667305260896683] ≈ [3.0; 3.0; 3.0] (atol=0.001, rtol=0.0)
+
+Error in testset socp_inv_pos_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:176
+  Expression: ≈(p.optval, 6, atol = atol, rtol = rtol)
+   Evaluated: -28.126677188988964 ≈ 6 (atol=0.001, rtol=0.0)
+
+Error in testset socp_inv_pos_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:177
+  Expression: ≈(evaluate(sum((dot(/))([3, 6, 9], x))), 6, atol = atol, rtol = rtol)
+   Evaluated: 8.655034849206377 ≈ 6 (atol=0.001, rtol=0.0)
 
 Error in testset socp_quad_form_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:232
   Expression: ≈(p.optval, 6.1464, atol = atol, rtol = rtol)
-   Evaluated: -19.55212698772081 ≈ 6.1464 (atol=0.001, rtol=0.0)
+   Evaluated: -20.563010898141602 ≈ 6.1464 (atol=0.001, rtol=0.0)
 
 Error in testset socp_quad_form_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:233
   Expression: ≈(evaluate(quadform(x, A)), 6.1464, atol = atol, rtol = rtol)
-   Evaluated: 20.997615370798176 ≈ 6.1464 (atol=0.001, rtol=0.0)
+   Evaluated: 24.55460040110848 ≈ 6.1464 (atol=0.001, rtol=0.0)
 
 Error in testset socp_quad_form_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:246
   Expression: ≈(p.optval, 3.7713, atol = atol, rtol = rtol)
-   Evaluated: 78.06541051194884 ≈ 3.7713 (atol=0.001, rtol=0.0)
+   Evaluated: 111.44173736223124 ≈ 3.7713 (atol=0.001, rtol=0.0)
 
 Error in testset socp_quad_form_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:247
   Expression: ≈(evaluate(quadform(x, A)), -1, atol = atol, rtol = rtol)
-   Evaluated: -0.04637315164965943 ≈ -1 (atol=0.001, rtol=0.0)
+   Evaluated: -0.11129405717306648 ≈ -1 (atol=0.001, rtol=0.0)
 
 Error in testset socp_rational_norm_dual_norm:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:316
   Expression: ≈(p.optval, -2.144087, atol = atol, rtol = rtol)
-   Evaluated: -754571.6389020116 ≈ -2.144087 (atol=0.001, rtol=0.0)
+   Evaluated: -908724.1992507331 ≈ -2.144087 (atol=0.001, rtol=0.0)
 
 Error in testset socp_rational_norm_dual_norm:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:317
   Expression: ≈(sum(evaluate(x' * v)), -2.144087, atol = atol, rtol = rtol)
-   Evaluated: 0.00640046273795329 ≈ -2.144087 (atol=0.001, rtol=0.0)
+   Evaluated: -0.010102743941553773 ≈ -2.144087 (atol=0.001, rtol=0.0)
 
 Error in testset socp_rational_norm_dual_norm:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:318
   Expression: ≈(evaluate(norm(x, q)), 1, atol = atol, rtol = rtol)
-   Evaluated: 0.01572690868522813 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.009843116397196617 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset socp_rational_norm_dual_norm:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:319
   Expression: ≈(sum(evaluate(x' * v)), -(sum(abs.(v) .^ qs) ^ (1 / qs)), atol = atol, rtol = rtol)
-   Evaluated: 0.00640046273795329 ≈ -2.1440874584623084 (atol=0.001, rtol=0.0)
+   Evaluated: -0.010102743941553773 ≈ -2.1440874584623084 (atol=0.001, rtol=0.0)
 
 Error in testset socp_square_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:128
   Expression: ≈(p.optval, 0.42105, atol = atol, rtol = rtol)
-   Evaluated: -63.57857926363472 ≈ 0.42105 (atol=0.001, rtol=0.0)
+   Evaluated: -65.83173695082928 ≈ 0.42105 (atol=0.001, rtol=0.0)
 
 Error in testset socp_square_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:142
   Expression: ≈(p.optval, 0.42105, atol = atol, rtol = rtol)
-   Evaluated: -63.57857926363472 ≈ 0.42105 (atol=0.001, rtol=0.0)
+   Evaluated: -65.83173695082928 ≈ 0.42105 (atol=0.001, rtol=0.0)
 
 Error in testset socp_square_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:152
   Expression: ≈(p.optval, 0.42105, atol = atol, rtol = rtol)
-   Evaluated: -63.57857926363472 ≈ 0.42105 (atol=0.001, rtol=0.0)
+   Evaluated: -65.83173695082928 ≈ 0.42105 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:58
   Expression: ≈(p.optval, 15.4907, atol = atol, rtol = rtol)
-   Evaluated: 10.53113104098278 ≈ 15.4907 (atol=0.001, rtol=0.0)
+   Evaluated: 10.439044589726343 ≈ 15.4907 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:59
   Expression: ≈(evaluate(norm2(A * x + b) + lambda * norm_1(x)), 15.4907, atol = atol, rtol = rtol)
-   Evaluated: 19.958391127227735 ≈ 15.4907 (atol=0.001, rtol=0.0)
+   Evaluated: 19.57496259429893 ≈ 15.4907 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:60
   Expression: ≈((p.constraints[1]).dual, [4.7062, 5.4475], atol = atol, rtol = rtol)
-   Evaluated: [2.948933139395059; 3.6417159485265618] ≈ [4.7062, 5.4475] (atol=0.001, rtol=0.0)
+   Evaluated: [2.9226894478766603; 3.6038463494274446] ≈ [4.7062, 5.4475] (atol=0.001, rtol=0.0)
 
 Error in testset socp_geo_mean_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:211
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 360.83449685242186 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 382.4262972565056 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset socp_geo_mean_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:212
   Expression: ≈(evaluate(sum(geomean(x, y))), 4, atol = atol, rtol = rtol)
-   Evaluated: 1.6672584864289508 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 2.9575343831181247 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset lp_minimum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:76
   Expression: ≈(p.optval, 130, atol = atol, rtol = rtol)
-   Evaluated: 2597.033203506814 ≈ 130 (atol=0.001, rtol=0.0)
+   Evaluated: 2573.732782819222 ≈ 130 (atol=0.001, rtol=0.0)
 
 Error in testset lp_minimum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:77
   Expression: ≈((evaluate(objective))[1], 130, atol = atol, rtol = rtol)
-   Evaluated: -562.1837011892349 ≈ 130 (atol=0.001, rtol=0.0)
+   Evaluated: -478.8100970145315 ≈ 130 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:209
   Expression: ≈(p.optval, 19, atol = atol, rtol = rtol)
-   Evaluated: -9337.190561569529 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: -9204.838556421455 ≈ 19 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:210
   Expression: ≈(vec(evaluate(x)), [2; 2; 2; 1], atol = atol, rtol = rtol)
-   Evaluated: [2.0003336363006383, 1.998269800329581, 1.9987764351535589, 0.9991610287688673] ≈ [2, 2, 2, 1] (atol=0.001, rtol=0.0)
+   Evaluated: [2.006432130932808, 2.0010181698016822, 1.9991175793111324, 1.0011946554295719] ≈ [2, 2, 2, 1] (atol=0.001, rtol=0.0)
 
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:211
   Expression: ≈(evaluate(dotsort(x, [1, 2, 3, 4])), 19, atol = atol, rtol = rtol)
-   Evaluated: 18.99336448009126 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: 19.028212847188115 ≈ 19 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:222
   Expression: ≈(p.optval, 19, atol = atol, rtol = rtol)
-   Evaluated: -3154.9302835897543 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: -26403.500946379732 ≈ 19 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:223
   Expression: ≈(evaluate(dotsort(x, [1, 2, 3, 4])), 19, atol = atol, rtol = rtol)
-   Evaluated: 19.00502202170901 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: 18.996989129576832 ≈ 19 (atol=0.001, rtol=0.0)
 
 Error in testset lp_neg_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:143
   Expression: ≈(p.optval, 1, atol = atol, rtol = rtol)
-   Evaluated: -3407.4680157840485 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: -3421.605975995888 ≈ 1 (atol=0.001, rtol=0.0)
+
+Error in testset lp_neg_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:144
+  Expression: ≈(evaluate(sum(neg(x))), 6, atol = atol, rtol = rtol)
+   Evaluated: 5.9975434159860015 ≈ 6 (atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:195
   Expression: ≈(p.optval, 12, atol = atol, rtol = rtol)
-   Evaluated: 711.7066164232987 ≈ 12 (atol=0.001, rtol=0.0)
+   Evaluated: 417.4992630449799 ≈ 12 (atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:196
   Expression: ≈(evaluate(sumsmallest(x, 3)), 12, atol = atol, rtol = rtol)
-   Evaluated: 6.859689872711897 ≈ 12 (atol=0.001, rtol=0.0)
+   Evaluated: 6.492011681199074 ≈ 12 (atol=0.001, rtol=0.0)
 
 Error in testset lp_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:129
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: -8796.800260286778 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: -23891.993537084665 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset lp_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:130
   Expression: ≈(evaluate(sum(pos(x))), 3, atol = atol, rtol = rtol)
-   Evaluated: 3.501142007880844 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 3.5005470274481922 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_matrix_frac_atom_both_arguments_variable:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:177
   Expression: ≈(p.optval, 0.5, atol = atol, rtol = rtol)
-   Evaluated: -1424.5485211520818 ≈ 0.5 (atol=0.001, rtol=0.0)
+   Evaluated: -57.17947723409098 ≈ 0.5 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_matrix_frac_atom_both_arguments_variable:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:178
   Expression: ≈((evaluate(matrixfrac(x, P)))[1], 0.5, atol = atol, rtol = rtol)
-   Evaluated: 82.41845334971399 ≈ 0.5 (atol=0.001, rtol=0.0)
+   Evaluated: 4.1605845099521295 ≈ 0.5 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_Complex_Variable_with_complex_equality_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:341
   Expression: ≈(real_diff, zeros(10, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.08612307161092758, 0.34227991104125977, 0.391612283885479, 2.7260472141206264, 0.3899149149656296, 0.7156250514090061, 1.291006501764059, 3.1300854086875916, 0.2969079427421093, 0.7563044354319572] ≈ [0.0; 0.0; … ; 0.0; 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.554316708818078, 0.3920429963618517, -1.5161391720175743, 1.4993242733180523, -0.545444093644619, -0.37895472906529903, -0.17555917613208294, 0.9546371381729841, -0.287174629047513, -0.6153616011142731] ≈ [0.0; 0.0; … ; 0.0; 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdp_Complex_Variable_with_complex_equality_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:344
   Expression: ≈(imag_diff, zeros(10, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.7723421230912209, 0.3707690164446831, 2.9929521158337593, 1.234666347503662, 0.8468669727444649, 2.9204771295189857, 1.4946017265319824, 2.724579405039549, 4.938218642026186, 0.26951562240719795] ≈ [0.0; 0.0; … ; 0.0; 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-0.5665316861122847, -1.2123457044363022, -0.27203686721622944, -0.1290612332522869, -0.8868073858320713, -0.49244528263807297, -0.3347862921655178, -1.1334648318588734, -0.3022298105061054, 0.06710929423570633] ≈ [0.0; 0.0; … ; 0.0; 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdp_kron_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:243
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 293.0329860345787 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 730.1177585840919 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:189
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: 2.469412038977359 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 2.4694120389774854 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:190
   Expression: ≈(evaluate(x), ones(3, 3), atol = atol, rtol = rtol)
-   Evaluated: [1210.5500122122467 773.8909504355397 773.890950435074; 773.8909504346084 1210.5500122127123 773.8909504360054; 773.8909504348412 773.8909504357725 1210.550012211781] ≈ [1.0 1.0 1.0; 1.0 1.0 1.0; 1.0 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1210.5500122113153 773.8909504343756 773.8909504341427; 773.8909504336771 1210.5500122122467 773.8909504348412; 773.8909504336771 773.8909504336771 1210.5500122113153] ≈ [1.0 1.0 1.0; 1.0 1.0 1.0; 1.0 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:199
   Expression: ≈(p.optval, 8.4853, atol = atol, rtol = rtol)
-   Evaluated: 4.939648648155088 ≈ 8.4853 (atol=0.001, rtol=0.0)
+   Evaluated: 4.939769465654219 ≈ 8.4853 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:213
   Expression: ≈(p1.optval, p2.optval, atol = atol, rtol = rtol)
-   Evaluated: 0.8602671956442933 ≈ 0.8359656009591159 (atol=0.001, rtol=0.0)
+   Evaluated: 0.8583248952787609 ≈ 0.8363357776127411 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:227
   Expression: ≈(p1.optval, p2.optval, atol = atol, rtol = rtol)
-   Evaluated: 4.485816917900767 ≈ 4.207304555718303 (atol=0.001, rtol=0.0)
+   Evaluated: 4.488993211745873 ≈ 4.210215755087343 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_Issue_198:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:355
@@ -3935,72 +4038,82 @@ Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/probl
 Error in testset sdp_Issue_198:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:356
   Expression: ≈(evaluate(ρ), [1.0 0.0; 0.0 1.0], atol = atol, rtol = rtol)
-   Evaluated: Complex{Float64}[1.0173376854509115 + 0.0im 0.0 + 0.0im; 0.0 + 0.0im 0.9994057733565569 + 0.0im] ≈ [1.0 0.0; 0.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: Complex{Float64}[0.5857614502310753 + 0.0im 0.0 + 0.0im; 0.0 + 0.0im 1.1879942864179611 + 0.0im] ≈ [1.0 0.0; 0.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdp_Issue_198:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:357
   Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
-   Evaluated: -309604.5730238573 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: -24547.584333317332 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_lambda_min_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:147
   Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
-   Evaluated: 531.245285398021 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 62.59975696218909 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_lambda_min_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:148
   Expression: ≈(evaluate(eigmin(y)), 2, atol = atol, rtol = rtol)
-   Evaluated: 1.4998765578493476 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 1.489730080589652 ≈ 2 (atol=0.001, rtol=0.0)
+
+Error in testset sdp_Partial_trace:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:256
+  Expression: ≈(evaluate(ρ), [0.09942819 0.29923607 0 0; 0.299237 0.900572 0 0; 0 0 0 0; 0 0 0 0], atol = atol, rtol = rtol)
+   Evaluated: [0.09232045750832185 0.3076023613102734 0.0 0.0; 0.2981013527023606 0.9003408243879676 0.0 0.0; 0.0 0.0 0.0 0.0; 0.0 0.0 0.0 0.0] ≈ [0.09942819 0.29923607 0.0 0.0; 0.299237 0.900572 0.0 0.0; 0.0 0.0 0.0 0.0; 0.0 0.0 0.0 0.0] (atol=0.001, rtol=0.0)
+
+Error in testset sdp_Partial_trace:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:257
+  Expression: ≈(evaluate(partialtrace(ρ, 1, [2; 2])), [0.09942819 0.29923607; 0.29923607 0.90057181], atol = atol, rtol = rtol)
+   Evaluated: [0.09232045750832185 0.3076023613102734; 0.2981013527023606 0.9003408243879676] ≈ [0.09942819 0.29923607; 0.29923607 0.90057181] (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:123
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 0.8602671956442933 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 0.8583248952787609 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:124
   Expression: ≈(evaluate(eigmax(y)), 4, atol = atol, rtol = rtol)
-   Evaluated: 239.70825229771435 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 1182.541261499282 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:132
   Expression: ≈(p.optval, 1.5, atol = atol, rtol = rtol)
-   Evaluated: -1343.9125992076138 ≈ 1.5 (atol=0.001, rtol=0.0)
+   Evaluated: -482.4351950324933 ≈ 1.5 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:133
   Expression: ≈((p.constraints[1]).dual, im, atol = atol, rtol = rtol)
-   Evaluated: 0.0 + 0.6671197903303835im ≈ im (atol=0.001, rtol=0.0)
+   Evaluated: 0.0 + 0.6671536918981836im ≈ im (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:134
   Expression: ≈((p.constraints[2]).dual, 0.75, atol = atol, rtol = rtol)
-   Evaluated: -671.7898585512958 + 0.0im ≈ 0.75 (atol=0.001, rtol=0.0)
+   Evaluated: -241.05117431789722 + 0.0im ≈ 0.75 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_matrix_frac_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:162
   Expression: ≈(p.optval, 7, atol = atol, rtol = rtol)
-   Evaluated: -9797.452134220195 ≈ 7 (atol=0.001, rtol=0.0)
+   Evaluated: -3411.777985977461 ≈ 7 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_matrix_frac_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:163
   Expression: ≈((evaluate(matrixfrac(x, P)))[1], 7, atol = atol, rtol = rtol)
-   Evaluated: 8.776121272920872 ≈ 7 (atol=0.001, rtol=0.0)
+   Evaluated: 9.76013611999067 ≈ 7 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sdp_variables:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:18
   Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
-   Evaluated: -1.8608498061546852 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: -18.88127952020748 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sdp_variables:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:37
   Expression: ≈(p.optval, 1, atol = atol, rtol = rtol)
-   Evaluated: -131470.2562227094 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: -5488.111061777695 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:25
   Expression: termination_status(model) == MOI.OPTIMAL
-   Evaluated: MathOptInterface.INFEASIBLE_OR_UNBOUNDED == MathOptInterface.OPTIMAL
+   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.OPTIMAL
 
 Error in testset sdsos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:27
@@ -4010,7 +4123,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concav
 Error in testset sdsos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:28
   Expression: ≈(value(p), x ^ 3, atol = atol, rtol = rtol)
-   Evaluated: 1.0026985192671418x³ - 0.002302017295733094x² + 0.0012947428040206432x + 0.002667009364813566 ≈ x³ (atol=0.001, rtol=0.0)
+   Evaluated: 1.0010698407422751x³ - 0.0004985164850950241x² - 0.0027261509094387293x + 0.0005483624991029501 ≈ x³ (atol=0.001, rtol=0.0)
 
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4020,7 +4133,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 10.771718017830487 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 10.764896072504403 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4030,7 +4143,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 7.0029850936843605 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 7.015796415967483 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4040,7 +4153,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 3.2536615390640073 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 3.2561259592585863 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4050,7 +4163,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -0.453441585564369 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: -0.45394374258507675 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4060,7 +4173,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -4.174959457195363 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: -4.174951130699393 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset dsos_univariate_sum:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/univariate_sum.jl:19
@@ -4075,12 +4188,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/univar
 Error in testset dsos_univariate_sum:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/univariate_sum.jl:26
   Expression: ≈(getmat(p.sub_gram_matrices[1]), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0002956094685942 0.9996424034470692; 0.9996424034470692 1.00106516527012] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.9994719249662012 0.9971134755760431; 0.9971134755760431 1.0012124897912145] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_univariate_sum:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/univariate_sum.jl:28
   Expression: ≈(getmat(p.sub_gram_matrices[2]), [1 -1; -1 1], atol = atol, rtol = rtol)
-   Evaluated: [1.0001888084225357 -0.9951009410433471; -0.9951009410433471 0.9997679411899298] ≈ [1 -1; -1 1] (atol=0.001, rtol=0.0)
+   Evaluated: [0.9999712441349402 -0.9976922007044777; -0.9976922007044777 0.9996725410455838] ≈ [1 -1; -1 1] (atol=0.001, rtol=0.0)
 
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4090,7 +4203,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 85.46203227852376 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 54.72065344714538 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4100,7 +4213,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 68.7118427551174 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 54.14617085162886 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4110,7 +4223,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 60.19938403095152 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 54.56408134946383 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4120,7 +4233,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 57.83721409317605 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 57.25574275547684 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4130,7 +4243,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 56.44285822106464 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 50.84753861478094 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:38
@@ -4140,22 +4253,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 0.2016095630824566 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: -0.2857267949730158 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0548917800188065 0.14449996128678322; 0.14449996128678322 0.9727682657539845] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.08466700464487076 -0.3232447188347578; -0.3232447188347578 1.5166699290275574] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -4165,7 +4278,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_cheby_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [11.107745025394482 -13.760600861994941; -13.760600861994941 16.4134566985954] ≈ [11.107744959848372 -0.9999999999934458; -0.9999999999934458 16.413456633049293] (atol=0.001, rtol=0.0)
+   Evaluated: [8.988872874786253 -5.987404974814782; -5.987404974814782 2.985937074843312] ≈ [8.988872809240132 -0.9999999999934462; -0.9999999999934462 2.9859370092971886] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:38
@@ -4175,22 +4288,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 0.2016095630824566 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: -0.2857267949730158 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0548917800188065 0.14449996128678322; 0.14449996128678322 0.9727682657539845] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.08466700464487076 -0.3232447188347578; -0.3232447188347578 1.5166699290275574] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -4200,7 +4313,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_cheby_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [11.107745025394482 -13.760600861994941; -13.760600861994941 16.4134566985954] ≈ [11.107744959848372 -0.9999999999934458; -0.9999999999934458 16.413456633049293] (atol=0.001, rtol=0.0)
+   Evaluated: [8.988872874786253 -5.987404974814782; -5.987404974814782 2.985937074843312] ≈ [8.988872809240132 -0.9999999999934462; -0.9999999999934462 2.9859370092971886] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_horn:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/horn.jl:35
@@ -4225,22 +4338,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 0.2016095630824566 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: -0.2857267949730158 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0548917800188065 0.14449996128678322; 0.14449996128678322 0.9727682657539845] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.08466700464487076 -0.3232447188347578; -0.3232447188347578 1.5166699290275574] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -4250,7 +4363,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_scaled_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [11.107745025394482 -13.760600861994941; -13.760600861994941 16.4134566985954] ≈ [11.107744959848372 -0.9999999999934458; -0.9999999999934458 16.413456633049293] (atol=0.001, rtol=0.0)
+   Evaluated: [8.988872874786253 -5.987404974814782; -5.987404974814782 2.985937074843312] ≈ [8.988872809240132 -0.9999999999934462; -0.9999999999934462 2.9859370092971886] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:38
@@ -4260,22 +4373,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 0.2016095630824566 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: -0.2857267949730158 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0548917800188065 0.14449996128678322; 0.14449996128678322 0.9727682657539845] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.08466700464487076 -0.3232447188347578; -0.3232447188347578 1.5166699290275574] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -4285,7 +4398,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_scaled_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [11.107745025394482 -13.760600861994941; -13.760600861994941 16.4134566985954] ≈ [11.107744959848372 -0.9999999999934458; -0.9999999999934458 16.413456633049293] (atol=0.001, rtol=0.0)
+   Evaluated: [8.988872874786253 -5.987404974814782; -5.987404974814782 2.985937074843312] ≈ [8.988872809240132 -0.9999999999934462; -0.9999999999934462 2.9859370092971886] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:38
@@ -4295,22 +4408,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 0.2016095630824566 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: -0.2857267949730158 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0548917800188065 0.14449996128678322; 0.14449996128678322 0.9727682657539845] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.08466700464487076 -0.3232447188347578; -0.3232447188347578 1.5166699290275574] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -4320,7 +4433,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_bivariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [11.107745025394482 -13.760600861994941; -13.760600861994941 16.4134566985954] ≈ [11.107744959848372 -0.9999999999934458; -0.9999999999934458 16.413456633049293] (atol=0.001, rtol=0.0)
+   Evaluated: [8.988872874786253 -5.987404974814782; -5.987404974814782 2.985937074843312] ≈ [8.988872809240132 -0.9999999999934462; -0.9999999999934462 2.9859370092971886] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:25
@@ -4340,22 +4453,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:39
   Expression: ≈(objective_value(model), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:42
   Expression: ≈(value(α), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 0.2016095630824566 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: -0.2857267949730158 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:46
   Expression: ≈(getmat(p), ones(2, 2), atol = atol, rtol = rtol)
-   Evaluated: [1.0548917800188065 0.14449996128678322; 0.14449996128678322 0.9727682657539845] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.08466700464487076 -0.3232447188347578; -0.3232447188347578 1.5166699290275574] ≈ [1.0 1.0; 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:55
   Expression: ≈(a[1] + a[3], 2.0, atol = atol, rtol = rtol)
-   Evaluated: 27.521201592897665 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.97480981853732 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:57
@@ -4365,7 +4478,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadra
 Error in testset dsos_univariate_quadratic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quadratic.jl:66
   Expression: ≈(getmat(ν), [a[1] a[2]; a[2] a[3]], atol = atol, rtol = rtol)
-   Evaluated: [11.107745025394482 -13.760600861994941; -13.760600861994941 16.4134566985954] ≈ [11.107744959848372 -0.9999999999934458; -0.9999999999934458 16.413456633049293] (atol=0.001, rtol=0.0)
+   Evaluated: [8.988872874786253 -5.987404974814782; -5.987404974814782 2.985937074843312] ≈ [8.988872809240132 -0.9999999999934462; -0.9999999999934462 2.9859370092971886] (atol=0.001, rtol=0.0)
 
 Error in testset sos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:25
@@ -4380,7 +4493,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concav
 Error in testset sos_concave_then_convex_cubic:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/concave_then_convex_cubic.jl:28
   Expression: ≈(value(p), x ^ 3, atol = atol, rtol = rtol)
-   Evaluated: 0.9994443639880046x³ + 0.0001616059453226626x² - 0.009398405207321048x + 0.01105450140312314 ≈ x³ (atol=0.001, rtol=0.0)
+   Evaluated: 1.0011842353269458x³ + 0.0003598639741539955x² - 0.002384300692938268x + 0.00028647819999605417 ≈ x³ (atol=0.001, rtol=0.0)
 
 Error in testset with γ=3.9 it should be infeasible:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/maxcut.jl:37
@@ -4400,12 +4513,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebys
 Error in testset chebyshev:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebyshev.jl:34
   Expression: isapprox(JuMP.value(p), (((128 * x ^ 8 - 256 * x ^ 6) + 160 * x ^ 4) - 32 * x ^ 2) + 1, ztol = 4 * config.atol, atol = 4 * config.atol, rtol = 4 * config.rtol)
-   Evaluated: isapprox(0.6820398084819317x⁸ - 1.4009492546319962x⁶ + 0.8504024855792522x⁴ - 0.3479109890758991x² - 0.6831453666090965, 128x⁸ - 256x⁶ + 160x⁴ - 32x² + 1; ztol = 0.004, atol = 0.004, rtol = 0.0)
+   Evaluated: isapprox(1.1356854662299156x⁸ - 2.734877996146679x⁶ + 1.847874991595745x⁴ - 0.2100648730993271x² - 0.28550834581255913, 128x⁸ - 256x⁶ + 160x⁴ - 32x² + 1; ztol = 0.004, atol = 0.004, rtol = 0.0)
 
 Error in testset chebyshev:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebyshev.jl:35
   Expression: isapprox(JuMP.value(γ), 128, atol = config.atol, rtol = config.rtol)
-   Evaluated: isapprox(0.6820398084819317, 128; atol = 0.001, rtol = 0.0)
+   Evaluated: isapprox(1.1356854662299156, 128; atol = 0.001, rtol = 0.0)
 
 Error in testset sosdemo10:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/sosdemo10.jl:39
@@ -4435,7 +4548,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 10.90368129975156 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 10.804885210907782 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4445,7 +4558,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 7.261103137308231 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 7.038340404571082 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4455,7 +4568,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 3.57065390139455 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 3.303071037044111 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4465,7 +4578,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 0.44788465110466397 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: -0.4099518402673592 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -4475,7 +4588,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -4.097356794359542 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: -4.09708134337558 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset quartic_infeasible_scaled_lyapunov_switched_system:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/lyapunov_switched_system.jl:66
@@ -4495,168 +4608,168 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/lyapun
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            11.4s / 100%             611MiB / 100%     
+       Tot / % measured:            16.4s / 100%             620MiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1    8.39s  73.9%   8.39s    463MiB  76.0%   463MiB
-   sdp                      1    5.57s  49.1%   5.57s    134MiB  22.0%   134MiB
-     sosdemo5_feasible      1    2.77s  24.4%   2.77s   25.9MiB  4.25%  25.9MiB
-     sosdemo5_infea...      1    376ms  3.31%   376ms   25.9MiB  4.26%  25.9MiB
-     sosdemo10              1    293ms  2.58%   293ms   30.8MiB  5.06%  30.8MiB
-     sos_options_pr...      1    266ms  2.34%   266ms   6.22MiB  1.02%  6.22MiB
-     sos_horn               1    139ms  1.22%   139ms   4.77MiB  0.78%  4.77MiB
-     chebyshev              1    134ms  1.18%   134ms   7.76MiB  1.27%  7.76MiB
-     maxcut                 1    124ms  1.09%   124ms   10.1MiB  1.67%  10.1MiB
-     BPT12e399_rem          1   78.7ms  0.69%  78.7ms    744KiB  0.12%   744KiB
-     simple_matrix          1   74.6ms  0.66%  74.6ms   1.12MiB  0.18%  1.12MiB
-     sos_scaled_uni...      1   69.4ms  0.61%  69.4ms    726KiB  0.12%   726KiB
-     sos_bivariate_...      1   65.8ms  0.58%  65.8ms    728KiB  0.12%   728KiB
-     sos_term               1   62.9ms  0.55%  62.9ms    644KiB  0.10%   644KiB
-     quartic_infeas...      1   61.0ms  0.54%  61.0ms    912KiB  0.15%   912KiB
-     quartic_ideal          1   59.1ms  0.52%  59.1ms    518KiB  0.08%   518KiB
-     sos_term_fixed         1   59.0ms  0.52%  59.0ms    675KiB  0.11%   675KiB
-     sos_scaled_biv...      1   57.5ms  0.51%  57.5ms    728KiB  0.12%   728KiB
-     sos_concave_th...      1   56.1ms  0.49%  56.1ms   1.02MiB  0.17%  1.02MiB
-     rearrangement          1   53.4ms  0.47%  53.4ms    824KiB  0.13%   824KiB
-     sos_quartic_co...      1   52.5ms  0.46%  52.5ms    622KiB  0.10%   622KiB
-     sos_univariate...      1   51.1ms  0.45%  51.1ms    769KiB  0.12%   769KiB
-     BPT12e399_maxd...      1   47.2ms  0.42%  47.2ms    772KiB  0.12%   772KiB
-     sosdemo9               1   44.2ms  0.39%  44.2ms    945KiB  0.15%   945KiB
-     quartic_ideal_rem      1   43.4ms  0.38%  43.4ms    470KiB  0.08%   470KiB
-     choi                   1   42.7ms  0.38%  42.7ms    860KiB  0.14%   860KiB
-     motzkin                1   37.0ms  0.33%  37.0ms   1.02MiB  0.17%  1.02MiB
-     sos_univariate...      1   36.6ms  0.32%  36.6ms    725KiB  0.12%   725KiB
-     quartic_ideal_4        1   35.6ms  0.31%  35.6ms    505KiB  0.08%   505KiB
-     sos_cheby_univ...      1   35.2ms  0.31%  35.2ms    741KiB  0.12%   741KiB
-     quartic_ideal_...      1   33.0ms  0.29%  33.0ms    462KiB  0.07%   462KiB
-     quartic_infeas...      1   32.9ms  0.29%  32.9ms    897KiB  0.14%   897KiB
-     quartic_feasib...      1   31.8ms  0.28%  31.8ms    634KiB  0.10%   634KiB
-     quartic_feasib...      1   30.1ms  0.27%  30.1ms    649KiB  0.10%   649KiB
-     quadratic_infe...      1   29.8ms  0.26%  29.8ms    711KiB  0.11%   711KiB
-     sos_quartic_co...      1   29.7ms  0.26%  29.7ms    616KiB  0.10%   616KiB
-     quartic_ideal_...      1   29.1ms  0.26%  29.1ms    528KiB  0.08%   528KiB
-     quadratic_feas...      1   26.8ms  0.24%  26.8ms    629KiB  0.10%   629KiB
-     quadratic_feas...      1   26.1ms  0.23%  26.1ms    622KiB  0.10%   622KiB
-     quadratic_infe...      1   24.5ms  0.22%  24.5ms    718KiB  0.12%   718KiB
-   socp                     1    1.47s  13.0%   1.47s   56.5MiB  9.27%  56.5MiB
-     sdsos_concave_...      1    442ms  3.89%   442ms   29.1MiB  4.78%  29.1MiB
-     sdsos_options_...      1    296ms  2.61%   296ms   7.80MiB  1.28%  7.80MiB
-     sdsos_horn             1    201ms  1.77%   201ms   12.5MiB  2.05%  12.5MiB
-     sdsos_univaria...      1   76.0ms  0.67%  76.0ms    772KiB  0.12%   772KiB
-     sdsos_term             1   69.1ms  0.61%  69.1ms    647KiB  0.10%   647KiB
-     sdsos_univaria...      1   66.7ms  0.59%  66.7ms    728KiB  0.12%   728KiB
-     sdsos_bivariat...      1   58.8ms  0.52%  58.8ms    730KiB  0.12%   730KiB
-     sdsos_term_fixed       1   54.7ms  0.48%  54.7ms    679KiB  0.11%   679KiB
-     sdsos_quartic_...      1   46.7ms  0.41%  46.7ms    852KiB  0.14%   852KiB
-     sdsos_scaled_u...      1   46.2ms  0.41%  46.2ms    729KiB  0.12%   729KiB
-     sdsos_cheby_un...      1   43.5ms  0.38%  43.5ms    745KiB  0.12%   745KiB
-     sdsos_scaled_b...      1   36.9ms  0.32%  36.9ms    732KiB  0.12%   732KiB
-     sdsos_quartic_...      1   32.9ms  0.29%  32.9ms    619KiB  0.10%   619KiB
-   lp                       1    1.35s  11.9%   1.35s    273MiB  44.7%   273MiB
-     dsos_horn              1    483ms  4.25%   483ms    240MiB  39.4%   240MiB
-     dsos_options_p...      1    231ms  2.04%   231ms   10.8MiB  1.77%  10.8MiB
-     dsos_univariat...      1    140ms  1.23%   140ms   8.57MiB  1.41%  8.57MiB
-     dsos_scaled_bi...      1   82.9ms  0.73%  82.9ms   1.45MiB  0.24%  1.45MiB
-     dsos_term              1   57.1ms  0.50%  57.1ms    632KiB  0.10%   632KiB
-     dsos_concave_t...      1   56.9ms  0.50%  56.9ms   1.30MiB  0.21%  1.30MiB
-     dsos_univariat...      1   53.0ms  0.47%  53.0ms   1.45MiB  0.24%  1.45MiB
-     dsos_cheby_biv...      1   51.5ms  0.45%  51.5ms   1.49MiB  0.24%  1.49MiB
-     dsos_scaled_un...      1   48.8ms  0.43%  48.8ms   1.45MiB  0.24%  1.45MiB
-     dsos_cheby_uni...      1   42.5ms  0.37%  42.5ms   1.47MiB  0.24%  1.47MiB
-     dsos_bivariate...      1   36.0ms  0.32%  36.0ms   1.45MiB  0.24%  1.45MiB
-     dsos_term_fixed        1   33.3ms  0.29%  33.3ms    663KiB  0.11%   663KiB
-     dsos_quartic_c...      1   18.2ms  0.16%  18.2ms    604KiB  0.10%   604KiB
-     dsos_quartic_c...      1   13.4ms  0.12%  13.4ms   1.15MiB  0.19%  1.15MiB
- Convex                     1    2.97s  26.1%   2.97s    146MiB  24.0%   146MiB
-   socp                     1    832ms  7.33%   832ms   30.9MiB  5.07%  30.9MiB
-     socp_rational_...      1    117ms  1.03%   117ms   10.9MiB  1.80%  10.9MiB
-     socp_rational_...      1    106ms  0.93%   106ms   1.53MiB  0.25%  1.53MiB
-     socp_dual_frob...      1   95.3ms  0.84%  95.3ms   1.35MiB  0.22%  1.35MiB
-     socp_dual_norm...      1   77.9ms  0.69%  77.9ms   2.11MiB  0.35%  2.11MiB
-     socp_quad_form...      1   76.2ms  0.67%  76.2ms   2.48MiB  0.41%  2.48MiB
-     socp_inv_pos_atom      1   61.3ms  0.54%  61.3ms   2.15MiB  0.35%  2.15MiB
-     socp_square_atom       1   60.1ms  0.53%  60.1ms   1.77MiB  0.29%  1.77MiB
-     socp_fix_multi...      1   59.2ms  0.52%  59.2ms   1.11MiB  0.18%  1.11MiB
-     socp_rational_...      1   46.4ms  0.41%  46.4ms   2.52MiB  0.41%  2.52MiB
-     socp_geo_mean_...      1   26.3ms  0.23%  26.3ms    877KiB  0.14%   877KiB
-     socp_sum_squar...      1   25.3ms  0.22%  25.3ms    657KiB  0.11%   657KiB
-     socp_dual_mini...      1   23.9ms  0.21%  23.9ms   1.13MiB  0.19%  1.13MiB
-     socp_fix_and_f...      1   23.2ms  0.20%  23.2ms    882KiB  0.14%   882KiB
-     socp_huber_atom        1   17.8ms  0.16%  17.8ms    731KiB  0.12%   731KiB
-     socp_quad_over...      1   15.9ms  0.14%  15.9ms    586KiB  0.09%   586KiB
-     socp_norm_cons...      1    355μs  0.00%   355μs   62.7KiB  0.01%  62.7KiB
-     socp_sqrt_atom         1   58.6μs  0.00%  58.6μs   22.2KiB  0.00%  22.2KiB
-   affine                   1    775ms  6.82%   775ms   47.0MiB  7.71%  47.0MiB
-     affine_Partial...      1    309ms  2.72%   309ms   26.6MiB  4.36%  26.6MiB
-     affine_dot_mul...      1   94.9ms  0.84%  94.9ms   2.97MiB  0.49%  2.97MiB
-     affine_reshape...      1   47.1ms  0.41%  47.1ms   1.09MiB  0.18%  1.09MiB
-     affine_permute...      1   46.8ms  0.41%  46.8ms    894KiB  0.14%   894KiB
-     affine_multipl...      1   39.9ms  0.35%  39.9ms   2.00MiB  0.33%  2.00MiB
-     affine_satisfy...      1   34.4ms  0.30%  34.4ms   1.35MiB  0.22%  1.35MiB
-     affine_hcat_atom       1   20.5ms  0.18%  20.5ms   0.97MiB  0.16%  0.97MiB
-     affine_index_atom      1   18.1ms  0.16%  18.1ms   1.41MiB  0.23%  1.41MiB
-     affine_conv_atom       1   18.0ms  0.16%  18.0ms    865KiB  0.14%   865KiB
-     affine_dualvalue       1   17.9ms  0.16%  17.9ms   1.09MiB  0.18%  1.09MiB
-     affine_Diagona...      1   15.7ms  0.14%  15.7ms    942KiB  0.15%   942KiB
-     affine_transpo...      1   15.6ms  0.14%  15.6ms   1.14MiB  0.19%  1.14MiB
-     affine_dot_ato...      1   14.4ms  0.13%  14.4ms    328KiB  0.05%   328KiB
-     affine_sum_atom        1   14.1ms  0.12%  14.1ms   1.01MiB  0.17%  1.01MiB
-     affine_add_atom        1   13.5ms  0.12%  13.5ms    894KiB  0.14%   894KiB
-     affine_vcat_atom       1   11.4ms  0.10%  11.4ms    895KiB  0.14%   895KiB
-     affine_diag_atom       1   10.8ms  0.10%  10.8ms    762KiB  0.12%   762KiB
-     affine_single_...      1   7.36ms  0.06%  7.36ms    481KiB  0.08%   481KiB
-     affine_single_...      1   6.59ms  0.06%  6.59ms    465KiB  0.07%   465KiB
-     affine_trace_atom      1   6.11ms  0.05%  6.11ms    324KiB  0.05%   324KiB
-     affine_dot_atom        1   6.00ms  0.05%  6.00ms    306KiB  0.05%   306KiB
-     affine_negate_...      1   5.78ms  0.05%  5.78ms    291KiB  0.05%   291KiB
-     affine_kron_atom       1    121μs  0.00%   121μs   29.1KiB  0.00%  29.1KiB
-   sdp                      1    643ms  5.66%   643ms   28.6MiB  4.70%  28.6MiB
-     sdp_Issue_198          1    122ms  1.08%   122ms   8.05MiB  1.32%  8.05MiB
-     sdp_sum_larges...      1    100ms  0.88%   100ms   4.78MiB  0.78%  4.78MiB
-     sdp_sdp_variables      1   50.2ms  0.44%  50.2ms   2.13MiB  0.35%  2.13MiB
-     sdp_nuclear_no...      1   49.4ms  0.44%  49.4ms    970KiB  0.16%   970KiB
-     sdp_Complex_Va...      1   45.9ms  0.40%  45.9ms   2.17MiB  0.36%  2.17MiB
-     sdp_matrix_fra...      1   44.3ms  0.39%  44.3ms    809KiB  0.13%   809KiB
-     sdp_dual_lambd...      1   37.6ms  0.33%  37.6ms   1.75MiB  0.29%  1.75MiB
-     sdp_matrix_fra...      1   26.9ms  0.24%  26.9ms    900KiB  0.14%   900KiB
-     sdp_Real_Varia...      1   20.7ms  0.18%  20.7ms   1.30MiB  0.21%  1.30MiB
-     sdp_lambda_min...      1   20.3ms  0.18%  20.3ms    754KiB  0.12%   754KiB
-     sdp_operator_n...      1   19.9ms  0.18%  19.9ms    701KiB  0.11%   701KiB
-     sdp_sigma_max_...      1   18.0ms  0.16%  18.0ms    701KiB  0.11%   701KiB
-     sdp_Partial_trace      1   17.2ms  0.15%  17.2ms    809KiB  0.13%   809KiB
-     sdp_socp_sumsq...      1   16.3ms  0.14%  16.3ms    559KiB  0.09%   559KiB
-     sdp_socp_norm2...      1   16.0ms  0.14%  16.0ms    412KiB  0.07%   412KiB
-     sdp_kron_atom          1   15.7ms  0.14%  15.7ms   1.04MiB  0.17%  1.04MiB
-     sdp_socp_abs_atom      1   12.5ms  0.11%  12.5ms    453KiB  0.07%   453KiB
-     sdp_sdp_constr...      1   9.11ms  0.08%  9.11ms    470KiB  0.08%   470KiB
-   lp                       1    457ms  4.02%   457ms   28.9MiB  4.75%  28.9MiB
-     lp_dotsort_atom        1    123ms  1.08%   123ms   8.59MiB  1.41%  8.59MiB
-     lp_min_atom            1    102ms  0.90%   102ms   5.42MiB  0.89%  5.42MiB
-     lp_max_atom            1   74.1ms  0.65%  74.1ms   5.43MiB  0.89%  5.43MiB
-     lp_minimum_atom        1   45.2ms  0.40%  45.2ms   2.60MiB  0.43%  2.60MiB
-     lp_sumsmallest...      1   28.2ms  0.25%  28.2ms   2.19MiB  0.36%  2.19MiB
-     lp_pos_atom            1   15.4ms  0.14%  15.4ms    588KiB  0.09%   588KiB
-     lp_dual_norm_1...      1   14.9ms  0.13%  14.9ms    450KiB  0.07%   450KiB
-     lp_sumlargest_...      1   14.4ms  0.13%  14.4ms   1.28MiB  0.21%  1.28MiB
-     lp_neg_atom            1   13.2ms  0.12%  13.2ms    541KiB  0.09%   541KiB
-     lp_dual_abs_atom       1   12.1ms  0.11%  12.1ms    834KiB  0.13%   834KiB
-     lp_maximum_atom        1   7.07ms  0.06%  7.07ms    508KiB  0.08%   508KiB
-     lp_dual_norm_i...      1   6.97ms  0.06%  6.97ms    503KiB  0.08%   503KiB
-     lp_hinge_loss_...      1   47.7μs  0.00%  47.7μs   21.4KiB  0.00%  21.4KiB
-   constant                 1    259ms  2.28%   259ms   11.0MiB  1.80%  11.0MiB
-     constant_fix!_...      1    147ms  1.29%   147ms   7.96MiB  1.31%  7.96MiB
-     constant_Issue...      1   35.8ms  0.32%  35.8ms    346KiB  0.06%   346KiB
-     constant_fix!_...      1   34.8ms  0.31%  34.8ms    872KiB  0.14%   872KiB
-     constant_Test_...      1   19.5ms  0.17%  19.5ms    956KiB  0.15%   956KiB
-     constant_Issue...      1   15.7ms  0.14%  15.7ms    572KiB  0.09%   572KiB
-     constant_fix!_...      1   6.53ms  0.06%  6.53ms    327KiB  0.05%   327KiB
+ SumOfSquares               1    12.2s  74.2%   12.2s    465MiB  75.2%   465MiB
+   sdp                      1    7.98s  48.7%   7.98s    136MiB  22.0%   136MiB
+     sosdemo5_feasible      1    3.78s  23.1%   3.78s   27.1MiB  4.39%  27.1MiB
+     sosdemo5_infea...      1    459ms  2.80%   459ms   27.1MiB  4.39%  27.1MiB
+     sos_options_pr...      1    452ms  2.76%   452ms   6.18MiB  1.00%  6.18MiB
+     sosdemo10              1    451ms  2.75%   451ms   30.8MiB  4.99%  30.8MiB
+     sos_horn               1    249ms  1.52%   249ms   4.76MiB  0.77%  4.76MiB
+     chebyshev              1    212ms  1.30%   212ms   7.76MiB  1.26%  7.76MiB
+     maxcut                 1    189ms  1.15%   189ms   10.1MiB  1.63%  10.1MiB
+     BPT12e399_rem          1    129ms  0.78%   129ms    744KiB  0.12%   744KiB
+     simple_matrix          1    107ms  0.66%   107ms   1.12MiB  0.18%  1.12MiB
+     sos_bivariate_...      1    103ms  0.63%   103ms    728KiB  0.11%   728KiB
+     sos_scaled_uni...      1   95.3ms  0.58%  95.3ms    726KiB  0.11%   726KiB
+     quartic_infeas...      1   88.5ms  0.54%  88.5ms    912KiB  0.14%   912KiB
+     sos_term               1   87.7ms  0.54%  87.7ms    644KiB  0.10%   644KiB
+     rearrangement          1   87.7ms  0.54%  87.7ms    824KiB  0.13%   824KiB
+     quartic_ideal          1   87.5ms  0.53%  87.5ms    518KiB  0.08%   518KiB
+     sos_concave_th...      1   82.4ms  0.50%  82.4ms   1.02MiB  0.17%  1.02MiB
+     sos_term_fixed         1   81.8ms  0.50%  81.8ms    675KiB  0.11%   675KiB
+     sos_scaled_biv...      1   78.8ms  0.48%  78.8ms    728KiB  0.12%   728KiB
+     sos_quartic_co...      1   74.6ms  0.46%  74.6ms    622KiB  0.10%   622KiB
+     BPT12e399_maxd...      1   73.7ms  0.45%  73.7ms    772KiB  0.12%   772KiB
+     sosdemo9               1   72.0ms  0.44%  72.0ms    945KiB  0.15%   945KiB
+     quartic_ideal_rem      1   68.8ms  0.42%  68.8ms    470KiB  0.07%   470KiB
+     quartic_feasib...      1   63.1ms  0.39%  63.1ms    634KiB  0.10%   634KiB
+     sos_univariate...      1   61.7ms  0.38%  61.7ms    769KiB  0.12%   769KiB
+     sos_cheby_univ...      1   59.8ms  0.36%  59.8ms    741KiB  0.12%   741KiB
+     quartic_ideal_4        1   59.4ms  0.36%  59.4ms    506KiB  0.08%   506KiB
+     sos_univariate...      1   58.6ms  0.36%  58.6ms    725KiB  0.11%   725KiB
+     choi                   1   56.4ms  0.34%  56.4ms    860KiB  0.14%   860KiB
+     quartic_feasib...      1   55.3ms  0.34%  55.3ms    649KiB  0.10%   649KiB
+     motzkin                1   53.8ms  0.33%  53.8ms   1.02MiB  0.17%  1.02MiB
+     quartic_ideal_...      1   53.3ms  0.33%  53.3ms    528KiB  0.08%   528KiB
+     quartic_ideal_...      1   51.5ms  0.31%  51.5ms    462KiB  0.07%   462KiB
+     quartic_infeas...      1   50.7ms  0.31%  50.7ms    897KiB  0.14%   897KiB
+     quadratic_infe...      1   50.3ms  0.31%  50.3ms    711KiB  0.11%   711KiB
+     quadratic_feas...      1   49.6ms  0.30%  49.6ms    629KiB  0.10%   629KiB
+     sos_quartic_co...      1   49.0ms  0.30%  49.0ms    616KiB  0.10%   616KiB
+     quadratic_feas...      1   47.5ms  0.29%  47.5ms    622KiB  0.10%   622KiB
+     quadratic_infe...      1   45.3ms  0.28%  45.3ms    718KiB  0.11%   718KiB
+   socp                     1    2.27s  13.8%   2.27s   56.4MiB  9.13%  56.4MiB
+     sdsos_concave_...      1    626ms  3.82%   626ms   29.1MiB  4.71%  29.1MiB
+     sdsos_options_...      1    556ms  3.39%   556ms   7.76MiB  1.26%  7.76MiB
+     sdsos_horn             1    338ms  2.06%   338ms   12.4MiB  2.01%  12.4MiB
+     sdsos_univaria...      1    108ms  0.66%   108ms    772KiB  0.12%   772KiB
+     sdsos_term             1   91.1ms  0.56%  91.1ms    647KiB  0.10%   647KiB
+     sdsos_univaria...      1   85.8ms  0.52%  85.8ms    728KiB  0.12%   728KiB
+     sdsos_quartic_...      1   76.6ms  0.47%  76.6ms    852KiB  0.13%   852KiB
+     sdsos_bivariat...      1   76.1ms  0.46%  76.1ms    730KiB  0.12%   730KiB
+     sdsos_term_fixed       1   70.2ms  0.43%  70.2ms    679KiB  0.11%   679KiB
+     sdsos_scaled_u...      1   67.7ms  0.41%  67.7ms    729KiB  0.12%   729KiB
+     sdsos_cheby_un...      1   67.2ms  0.41%  67.2ms    745KiB  0.12%   745KiB
+     sdsos_scaled_b...      1   52.8ms  0.32%  52.8ms    732KiB  0.12%   732KiB
+     sdsos_quartic_...      1   49.5ms  0.30%  49.5ms    619KiB  0.10%   619KiB
+   lp                       1    1.92s  11.7%   1.92s    272MiB  44.1%   272MiB
+     dsos_horn              1    730ms  4.46%   730ms    240MiB  38.8%   240MiB
+     dsos_options_p...      1    345ms  2.10%   345ms   10.8MiB  1.75%  10.8MiB
+     dsos_univariat...      1    192ms  1.17%   192ms   8.57MiB  1.39%  8.57MiB
+     dsos_scaled_bi...      1    101ms  0.61%   101ms   1.45MiB  0.24%  1.45MiB
+     dsos_concave_t...      1   79.9ms  0.49%  79.9ms   1.30MiB  0.21%  1.30MiB
+     dsos_term              1   74.7ms  0.46%  74.7ms    632KiB  0.10%   632KiB
+     dsos_univariat...      1   67.7ms  0.41%  67.7ms   1.45MiB  0.23%  1.45MiB
+     dsos_cheby_biv...      1   66.1ms  0.40%  66.1ms   1.49MiB  0.24%  1.49MiB
+     dsos_scaled_un...      1   59.8ms  0.36%  59.8ms   1.45MiB  0.23%  1.45MiB
+     dsos_cheby_uni...      1   52.6ms  0.32%  52.6ms   1.47MiB  0.24%  1.47MiB
+     dsos_term_fixed        1   52.4ms  0.32%  52.4ms    663KiB  0.10%   663KiB
+     dsos_bivariate...      1   49.0ms  0.30%  49.0ms   1.45MiB  0.23%  1.45MiB
+     dsos_quartic_c...      1   27.7ms  0.17%  27.7ms    604KiB  0.10%   604KiB
+     dsos_quartic_c...      1   18.2ms  0.11%  18.2ms   1.15MiB  0.19%  1.15MiB
+ Convex                     1    4.22s  25.8%   4.22s    153MiB  24.8%   153MiB
+   socp                     1    1.55s  9.49%   1.55s   31.0MiB  5.01%  31.0MiB
+     socp_rational_...      1    545ms  3.33%   545ms   2.52MiB  0.41%  2.52MiB
+     socp_rational_...      1    189ms  1.16%   189ms   10.9MiB  1.76%  10.9MiB
+     socp_quad_form...      1    132ms  0.81%   132ms   2.47MiB  0.40%  2.47MiB
+     socp_dual_frob...      1    127ms  0.78%   127ms   1.33MiB  0.21%  1.33MiB
+     socp_dual_norm...      1    116ms  0.71%   116ms   2.10MiB  0.34%  2.10MiB
+     socp_inv_pos_atom      1   94.4ms  0.58%  94.4ms   2.38MiB  0.38%  2.38MiB
+     socp_square_atom       1   71.9ms  0.44%  71.9ms   1.76MiB  0.29%  1.76MiB
+     socp_fix_multi...      1   54.4ms  0.33%  54.4ms   1.11MiB  0.18%  1.11MiB
+     socp_rational_...      1   49.0ms  0.30%  49.0ms   1.51MiB  0.25%  1.51MiB
+     socp_geo_mean_...      1   35.8ms  0.22%  35.8ms    874KiB  0.14%   874KiB
+     socp_dual_mini...      1   33.8ms  0.21%  33.8ms   1.13MiB  0.18%  1.13MiB
+     socp_sum_squar...      1   33.2ms  0.20%  33.2ms    654KiB  0.10%   654KiB
+     socp_fix_and_f...      1   25.9ms  0.16%  25.9ms    882KiB  0.14%   882KiB
+     socp_huber_atom        1   25.9ms  0.16%  25.9ms    726KiB  0.11%   726KiB
+     socp_quad_over...      1   20.1ms  0.12%  20.1ms    583KiB  0.09%   583KiB
+     socp_norm_cons...      1    484μs  0.00%   484μs   62.7KiB  0.01%  62.7KiB
+     socp_sqrt_atom         1   77.7μs  0.00%  77.7μs   22.2KiB  0.00%  22.2KiB
+   sdp                      1    929ms  5.67%   929ms   36.0MiB  5.83%  36.0MiB
+     sdp_Partial_trace      1    180ms  1.10%   180ms   8.27MiB  1.34%  8.27MiB
+     sdp_Issue_198          1    153ms  0.93%   153ms   8.05MiB  1.30%  8.05MiB
+     sdp_sum_larges...      1    115ms  0.70%   115ms   4.74MiB  0.77%  4.74MiB
+     sdp_sdp_variables      1   79.0ms  0.48%  79.0ms   2.12MiB  0.34%  2.12MiB
+     sdp_dual_lambd...      1   72.6ms  0.44%  72.6ms   1.75MiB  0.28%  1.75MiB
+     sdp_nuclear_no...      1   51.2ms  0.31%  51.2ms    963KiB  0.15%   963KiB
+     sdp_Complex_Va...      1   43.6ms  0.27%  43.6ms   2.17MiB  0.35%  2.17MiB
+     sdp_kron_atom          1   28.5ms  0.17%  28.5ms   1.04MiB  0.17%  1.04MiB
+     sdp_matrix_fra...      1   27.1ms  0.17%  27.1ms    896KiB  0.14%   896KiB
+     sdp_matrix_fra...      1   25.2ms  0.15%  25.2ms    804KiB  0.13%   804KiB
+     sdp_socp_abs_atom      1   25.1ms  0.15%  25.1ms    451KiB  0.07%   451KiB
+     sdp_socp_sumsq...      1   23.9ms  0.15%  23.9ms    556KiB  0.09%   556KiB
+     sdp_operator_n...      1   21.8ms  0.13%  21.8ms    697KiB  0.11%   697KiB
+     sdp_lambda_min...      1   20.2ms  0.12%  20.2ms    751KiB  0.12%   751KiB
+     sdp_socp_norm2...      1   18.9ms  0.12%  18.9ms    410KiB  0.06%   410KiB
+     sdp_sigma_max_...      1   17.4ms  0.11%  17.4ms    697KiB  0.11%   697KiB
+     sdp_Real_Varia...      1   14.0ms  0.09%  14.0ms   1.30MiB  0.21%  1.30MiB
+     sdp_sdp_constr...      1   11.6ms  0.07%  11.6ms    468KiB  0.07%   468KiB
+   affine                   1    854ms  5.21%   854ms   46.3MiB  7.48%  46.3MiB
+     affine_Partial...      1    378ms  2.31%   378ms   26.6MiB  4.30%  26.6MiB
+     affine_dot_mul...      1    110ms  0.67%   110ms   2.97MiB  0.48%  2.97MiB
+     affine_reshape...      1   51.6ms  0.32%  51.6ms   1.09MiB  0.18%  1.09MiB
+     affine_multipl...      1   43.2ms  0.26%  43.2ms   2.00MiB  0.32%  2.00MiB
+     affine_satisfy...      1   38.0ms  0.23%  38.0ms   1.35MiB  0.22%  1.35MiB
+     affine_hcat_atom       1   22.8ms  0.14%  22.8ms   0.97MiB  0.16%  0.97MiB
+     affine_conv_atom       1   21.6ms  0.13%  21.6ms    865KiB  0.14%   865KiB
+     affine_index_atom      1   18.5ms  0.11%  18.5ms   1.41MiB  0.23%  1.41MiB
+     affine_dualvalue       1   18.1ms  0.11%  18.1ms   1.09MiB  0.18%  1.09MiB
+     affine_transpo...      1   17.7ms  0.11%  17.7ms   1.14MiB  0.18%  1.14MiB
+     affine_Diagona...      1   17.0ms  0.10%  17.0ms    942KiB  0.15%   942KiB
+     affine_sum_atom        1   16.6ms  0.10%  16.6ms   1.01MiB  0.16%  1.01MiB
+     affine_dot_ato...      1   15.8ms  0.10%  15.8ms    328KiB  0.05%   328KiB
+     affine_add_atom        1   15.3ms  0.09%  15.3ms    894KiB  0.14%   894KiB
+     affine_diag_atom       1   12.1ms  0.07%  12.1ms    762KiB  0.12%   762KiB
+     affine_vcat_atom       1   11.9ms  0.07%  11.9ms    895KiB  0.14%   895KiB
+     affine_single_...      1   10.3ms  0.06%  10.3ms    481KiB  0.08%   481KiB
+     affine_permute...      1   7.42ms  0.05%  7.42ms    177KiB  0.03%   177KiB
+     affine_single_...      1   7.17ms  0.04%  7.17ms    465KiB  0.07%   465KiB
+     affine_trace_atom      1   6.70ms  0.04%  6.70ms    324KiB  0.05%   324KiB
+     affine_negate_...      1   6.39ms  0.04%  6.39ms    291KiB  0.05%   291KiB
+     affine_dot_atom        1   6.26ms  0.04%  6.26ms    306KiB  0.05%   306KiB
+     affine_kron_atom       1    141μs  0.00%   141μs   29.1KiB  0.00%  29.1KiB
+   lp                       1    590ms  3.60%   590ms   29.0MiB  4.69%  29.0MiB
+     lp_dotsort_atom        1    164ms  1.00%   164ms   8.59MiB  1.39%  8.59MiB
+     lp_min_atom            1    131ms  0.80%   131ms   5.42MiB  0.88%  5.42MiB
+     lp_max_atom            1   99.1ms  0.61%  99.1ms   5.43MiB  0.88%  5.43MiB
+     lp_minimum_atom        1   54.4ms  0.33%  54.4ms   2.60MiB  0.42%  2.60MiB
+     lp_sumsmallest...      1   34.6ms  0.21%  34.6ms   2.19MiB  0.35%  2.19MiB
+     lp_pos_atom            1   31.4ms  0.19%  31.4ms    588KiB  0.09%   588KiB
+     lp_neg_atom            1   20.1ms  0.12%  20.1ms    616KiB  0.10%   616KiB
+     lp_sumlargest_...      1   18.1ms  0.11%  18.1ms   1.28MiB  0.21%  1.28MiB
+     lp_dual_abs_atom       1   12.7ms  0.08%  12.7ms    834KiB  0.13%   834KiB
+     lp_maximum_atom        1   9.00ms  0.05%  9.00ms    508KiB  0.08%   508KiB
+     lp_dual_norm_1...      1   7.68ms  0.05%  7.68ms    450KiB  0.07%   450KiB
+     lp_dual_norm_i...      1   7.57ms  0.05%  7.57ms    503KiB  0.08%   503KiB
+     lp_hinge_loss_...      1   44.6μs  0.00%  44.6μs   21.4KiB  0.00%  21.4KiB
+   constant                 1    296ms  1.81%   296ms   11.0MiB  1.78%  11.0MiB
+     constant_fix!_...      1    174ms  1.06%   174ms   7.96MiB  1.29%  7.96MiB
+     constant_Issue...      1   41.5ms  0.25%  41.5ms    346KiB  0.05%   346KiB
+     constant_fix!_...      1   37.0ms  0.23%  37.0ms    872KiB  0.14%   872KiB
+     constant_Test_...      1   19.8ms  0.12%  19.8ms    956KiB  0.15%   956KiB
+     constant_Issue...      1   16.0ms  0.10%  16.0ms    572KiB  0.09%   572KiB
+     constant_fix!_...      1   6.95ms  0.04%  6.95ms    327KiB  0.05%   327KiB
  ──────────────────────────────────────────────────────────────────────────────
 
 ```
 
 ## SDPA `PARAMETER_DEFAULT` (dualized)
-These tests were run on November 13, 2021 at 23:39 (UTC).
+These tests were run on November 14, 2021 at 00:17 (UTC).
 
 Tests with SDPA via SDPA.jl using Dualization.jl.
 
@@ -4667,7 +4780,7 @@ Regex[r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 
 ### Tests
 
-Tests took 2 minutes, 20 seconds to run (after warmup).
+Tests took 3 minutes, 11 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -4680,8 +4793,8 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">SDPA tests</td>
-<td style="text-align:center;color:green;">1682</td>
-<td style="text-align:center;color:red;">67</td>
+<td style="text-align:center;color:green;">1683</td>
+<td style="text-align:center;color:red;">66</td>
 <td style="text-align:center;color:red;">32</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1781</td>
@@ -4890,14 +5003,14 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_sumlargest_atom</td>
-<td style="text-align:center;color:green;">5</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lp_dotsort_atom</td>
-<td style="text-align:center;color:green;">6</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">7</td>
@@ -4956,8 +5069,8 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_kron_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
@@ -4968,8 +5081,8 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_sum_largest_eigs</td>
-<td style="text-align:center;color:green;">4</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
@@ -5022,8 +5135,8 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_dual_lambda_max_atom</td>
-<td style="text-align:center;color:green;">4</td>
-<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">6</td>
@@ -5046,8 +5159,8 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;SumOfSquares</td>
-<td style="text-align:center;color:green;">1298</td>
-<td style="text-align:center;color:red;">57</td>
+<td style="text-align:center;color:green;">1299</td>
+<td style="text-align:center;color:red;">56</td>
 <td style="text-align:center;color:red;">32</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1387</td>
@@ -5166,8 +5279,8 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">434</td>
-<td style="text-align:center;color:red;">17</td>
+<td style="text-align:center;color:green;">435</td>
+<td style="text-align:center;color:red;">16</td>
 <td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">454</td>
@@ -5178,8 +5291,8 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_options_pricing</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">10</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;color:red;">8</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">10</td>
@@ -5196,8 +5309,8 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 40</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
@@ -5220,8 +5333,8 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_quartic_comparison</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
@@ -5570,52 +5683,52 @@ Tests took 2 minutes, 20 seconds to run (after warmup).
 Error in testset affine_dualvalue:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:615
   Expression: ≈((p.constraints[1]).dual, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.009627038541049071 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.016437649330415145 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dualvalue:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:623
   Expression: ≈((p.constraints[1]).dual, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.009627038541049071 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.016437649330415145 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset affine_negate_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:11
   Expression: ≈(evaluate(-x), 0, atol = atol, rtol = rtol)
-   Evaluated: 27.19233338363381 ≈ 0 (atol=0.001, rtol=0.0)
-
-Error in testset lp_sumlargest_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:158
-  Expression: ≈(evaluate(sumlargest(x, 2)), 2, atol = atol, rtol = rtol)
-   Evaluated: 2.0797145857654744 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 1.8136398855143436 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:209
   Expression: ≈(p.optval, 19, atol = atol, rtol = rtol)
-   Evaluated: 18.865908267720442 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: 18.865908198040415 ≈ 19 (atol=0.001, rtol=0.0)
+
+Error in testset lp_dotsort_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:222
+  Expression: ≈(p.optval, 19, atol = atol, rtol = rtol)
+   Evaluated: 18.359329056803745 ≈ 19 (atol=0.001, rtol=0.0)
+
+Error in testset sdp_kron_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:243
+  Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
+   Evaluated: 4.0020502364539645 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:213
   Expression: ≈(p1.optval, p2.optval, atol = atol, rtol = rtol)
-   Evaluated: 3.9825063989698117 ≈ 2.2321923511056116 (atol=0.001, rtol=0.0)
+   Evaluated: 3.9999998450759637 ≈ 2.232192232191198 (atol=0.001, rtol=0.0)
+
+Error in testset sdp_sum_largest_eigs:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:227
+  Expression: ≈(p1.optval, p2.optval, atol = atol, rtol = rtol)
+   Evaluated: 8.485280825410358 ≈ 8.455938960582877 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_Real_Variables_with_complex_equality_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:314
   Expression: x1 == x2
-   Evaluated: [0.8445023913704782, 0.05791836072223682, 0.9905759397431717, 0.20369434883515702, 0.9906384270344557, 0.1467829833186821, 0.0510444685796864, 0.7838277057935736, 0.7847862782097531, 0.6233444989332108] == [0.844502391370478, 0.05791836072223725, 0.9905759397431719, 0.20369434883515722, 0.9906384270344556, 0.14678298331868173, 0.05104446857968615, 0.7838277057935739, 0.7847862782097537, 0.6233444989332113]
+   Evaluated: [0.8794129664636496, 0.41751000579795455, 0.008828551454000808, 0.018254506134054358, 0.7770886068052628, 0.6564934710183609, 0.730563237263679, 0.8457655943447974, 0.9243897213298696, 0.3897302085438133] == [0.8794129664650705, 0.4175100057963298, 0.008828551454000811, 0.018254506144656388, 0.7770886068106194, 0.656493471017577, 0.7305632372512736, 0.8457655943255367, 0.9243897213593069, 0.3897302085431277]
 
 Error in testset sdp_sdp_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:68
   Expression: ≈(p.optval, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.9975861428372372 ≈ 1 (atol=0.001, rtol=0.0)
-
-Error in testset sdp_dual_lambda_max_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:123
-  Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 3.9825063989698117 ≈ 4 (atol=0.001, rtol=0.0)
-
-Error in testset sdp_dual_lambda_max_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:124
-  Expression: ≈(evaluate(eigmax(y)), 4, atol = atol, rtol = rtol)
-   Evaluated: 4.007657858117368 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 0.9975861408117003 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_horn:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -5777,27 +5890,27 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.j
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:26
   Expression: ≈(value(α), 0.0, atol = atol, rtol = rtol)
-   Evaluated: 27.192333383634246 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.813639885513485 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:30
   Expression: ≈(getmat(p), zeros(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [27.19233339390131] ≈ [0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.8136398957818425] ≈ [0.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.01886656880378723 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.016437649726867676 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.01886656880378723 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.016437649726867676 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:42
   Expression: ≈(getmat(ν), ones(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.009627038541049071] ≈ [1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.016437649330415145] ≈ [1.0] (atol=0.001, rtol=0.0)
 
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -5807,7 +5920,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 17.555115222930908 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 55.92699182033539 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -5817,7 +5930,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 14.748022198677063 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: -4.08449474722147 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -5827,7 +5940,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 7.924986660480499 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 4.115559995174408 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -5837,7 +5950,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 26.32152822613716 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: 2.9221291542053223 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -5847,7 +5960,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -2.4423543214797974 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: -25.6154146194458 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset dsos_univariate_sum:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -5906,7 +6019,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 9.720291316509247 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 62.65026617050171 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -5916,17 +6029,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 130.10244178771973 ≈ 132.63 (atol=0.1, rtol=0.0)
-
-Error in testset K = 40:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
-  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
-   Evaluated: MathOptInterface.UNKNOWN_RESULT_STATUS == MathOptInterface.FEASIBLE_POINT
-
-Error in testset K = 40:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
-  Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 45.35201406478882 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 7.879393428564072 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -5936,7 +6039,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 69.537770986557 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 101.56100797653198 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -5946,7 +6049,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 15.505679607391357 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 19.377992272377014 ≈ 132.63 (atol=0.1, rtol=0.0)
+
+Error in testset dsos_quartic_comparison:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quartic_comparison.jl:31
+  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.UNKNOWN_RESULT_STATUS == MathOptInterface.FEASIBLE_POINT
 
 Error in testset dsos_horn:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -6010,27 +6118,27 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.j
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:26
   Expression: ≈(value(α), 0.0, atol = atol, rtol = rtol)
-   Evaluated: 27.192333383634246 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.813639885513485 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:30
   Expression: ≈(getmat(p), zeros(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [27.19233339390131] ≈ [0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.8136398957818425] ≈ [0.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.01886656880378723 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.016437649726867676 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.01886656880378723 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.016437649726867676 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:42
   Expression: ≈(getmat(ν), ones(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.009627038541049071] ≈ [1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.016437649330415145] ≈ [1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_concave_then_convex_cubic:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -6388,27 +6496,27 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.j
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:26
   Expression: ≈(value(α), 0.0, atol = atol, rtol = rtol)
-   Evaluated: 27.192333383634246 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.813639885513485 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:30
   Expression: ≈(getmat(p), zeros(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [27.19233339390131] ≈ [0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1.8136398957818425] ≈ [0.0] (atol=0.001, rtol=0.0)
 
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.01886656880378723 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.016437649726867676 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.01886656880378723 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.016437649726867676 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:42
   Expression: ≈(getmat(ν), ones(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.009627038541049071] ≈ [1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.016437649330415145] ≈ [1.0] (atol=0.001, rtol=0.0)
 
 Error in testset quartic_ideal_rem:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -6521,12 +6629,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebys
 Error in testset chebyshev:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebyshev.jl:34
   Expression: isapprox(JuMP.value(p), (((128 * x ^ 8 - 256 * x ^ 6) + 160 * x ^ 4) - 32 * x ^ 2) + 1, ztol = 4 * config.atol, atol = 4 * config.atol, rtol = 4 * config.rtol)
-   Evaluated: isapprox(127.96079589012194x⁸ - 1.5344438547556003e-7x⁷ - 255.92240907065334x⁶ + 2.724544229553192e-7x⁵ + 159.95203926254456x⁴ - 1.3960111920245876e-7x³ - 31.990522420151247x² + 1.805798496926234e-8x + 0.9997078772312782, 128x⁸ - 256x⁶ + 160x⁴ - 32x² + 1; ztol = 0.004, atol = 0.004, rtol = 0.0)
+   Evaluated: isapprox(127.99607904993947x⁸ + 2.1658373794647064e-8x⁷ - 255.99222837649037x⁶ - 4.005829286717939e-8x⁵ + 159.99518491138872x⁴ + 2.083328997277406e-8x³ - 31.99904493073969x² - 1.942888263193781e-9x + 0.9999703812483196, 128x⁸ - 256x⁶ + 160x⁴ - 32x² + 1; ztol = 0.004, atol = 0.004, rtol = 0.0)
 
 Error in testset chebyshev:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebyshev.jl:35
   Expression: isapprox(JuMP.value(γ), 128, atol = config.atol, rtol = config.rtol)
-   Evaluated: isapprox(127.96079589012194, 128; atol = 0.001, rtol = 0.0)
+   Evaluated: isapprox(127.99607904993947, 128; atol = 0.001, rtol = 0.0)
 
 Error in testset sosdemo9:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -7121,7 +7229,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 12.095336027443409 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 9.156527116894722 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -7131,7 +7239,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 8.602695286273956 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 11.865860342979431 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -7141,7 +7249,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 2.698606453835964 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 8.1365347802639 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -7151,7 +7259,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 1.678329348564148 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: 0.8898988515138626 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -7161,7 +7269,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -2.5454887747764587 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: -1.6515402793884277 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset quartic_infeasible_scaled_lyapunov_switched_system:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -7415,7 +7523,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quarti
 Error in testset sos_quartic_comparison:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quartic_comparison.jl:32
   Expression: ≈(JuMP.objective_value(model), expected_objective_value, atol = atol, rtol = rtol)
-   Evaluated: -0.18221930979780154 ≈ -0.184667 (atol=0.001, rtol=0.0)
+   Evaluated: -0.18221601763980289 ≈ -0.184667 (atol=0.001, rtol=0.0)
 
 Error in testset quartic_ideal_2_rem:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -7474,168 +7582,168 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:             139s / 100%            8.80GiB / 100%     
+       Tot / % measured:             191s / 100%            8.80GiB / 100%     
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1     101s  73.0%    101s   5.57GiB  63.3%  5.57GiB
-   sdp                      1    41.4s  29.8%   41.4s   2.16GiB  24.5%  2.16GiB
-     sosdemo5_infea...      1    2.77s  2.00%   2.77s    188MiB  2.09%   188MiB
-     quartic_ideal_rem      1    2.47s  1.78%   2.47s    135MiB  1.50%   135MiB
-     sos_horn               1    2.38s  1.71%   2.38s    132MiB  1.46%   132MiB
-     rearrangement          1    2.35s  1.69%   2.35s    140MiB  1.55%   140MiB
-     sos_options_pr...      1    2.32s  1.67%   2.32s   51.4MiB  0.57%  51.4MiB
-     sos_term_fixed         1    2.08s  1.50%   2.08s    101MiB  1.12%   101MiB
-     sos_scaled_biv...      1    2.03s  1.46%   2.03s   98.1MiB  1.09%  98.1MiB
-     sos_cheby_univ...      1    2.00s  1.44%   2.00s   94.9MiB  1.05%  94.9MiB
-     chebyshev              1    1.94s  1.40%   1.94s    103MiB  1.14%   103MiB
-     quartic_ideal_4        1    1.64s  1.18%   1.64s   84.6MiB  0.94%  84.6MiB
-     sos_concave_th...      1    1.60s  1.15%   1.60s   85.2MiB  0.95%  85.2MiB
-     sos_quartic_co...      1    1.55s  1.12%   1.55s   80.7MiB  0.90%  80.7MiB
-     quartic_ideal          1    1.55s  1.11%   1.55s   78.3MiB  0.87%  78.3MiB
-     quartic_ideal_...      1    1.40s  1.01%   1.40s   75.7MiB  0.84%  75.7MiB
-     sos_term               1    1.38s  1.00%   1.38s   60.3MiB  0.67%  60.3MiB
-     simple_matrix          1    1.28s  0.92%   1.28s   78.3MiB  0.87%  78.3MiB
-     BPT12e399_rem          1    1.04s  0.75%   1.04s   24.4MiB  0.27%  24.4MiB
-     BPT12e399_maxd...      1    711ms  0.51%   711ms   14.9MiB  0.17%  14.9MiB
-     sos_univariate...      1    689ms  0.50%   689ms   16.7MiB  0.19%  16.7MiB
-     quadratic_infe...      1    562ms  0.40%   562ms   26.5MiB  0.29%  26.5MiB
-     sos_univariate...      1    494ms  0.36%   494ms   24.1MiB  0.27%  24.1MiB
-     sos_scaled_uni...      1    274ms  0.20%   274ms   0.97MiB  0.01%  0.97MiB
-     quartic_ideal_...      1    255ms  0.18%   255ms    944KiB  0.01%   944KiB
-     maxcut                 1    250ms  0.18%   250ms   4.66MiB  0.05%  4.66MiB
-     quadratic_infe...      1    237ms  0.17%   237ms   0.96MiB  0.01%  0.96MiB
-     quartic_feasib...      1    236ms  0.17%   236ms   0.97MiB  0.01%  0.97MiB
-     sos_bivariate_...      1    235ms  0.17%   235ms   0.97MiB  0.01%  0.97MiB
-     quadratic_feas...      1    235ms  0.17%   235ms   1.02MiB  0.01%  1.02MiB
-     sosdemo9               1    227ms  0.16%   227ms   1.28MiB  0.01%  1.28MiB
-     sosdemo5_feasible      1    224ms  0.16%   224ms   14.9MiB  0.17%  14.9MiB
-     quadratic_feas...      1    223ms  0.16%   223ms    972KiB  0.01%   972KiB
-     quartic_infeas...      1    210ms  0.15%   210ms   1.00MiB  0.01%  1.00MiB
-     quartic_feasib...      1    208ms  0.15%   208ms   1.00MiB  0.01%  1.00MiB
-     quartic_infeas...      1    207ms  0.15%   207ms   0.97MiB  0.01%  0.97MiB
-     sosdemo10              1    199ms  0.14%   199ms   2.07MiB  0.02%  2.07MiB
-     sos_quartic_co...      1    181ms  0.13%   181ms   1.02MiB  0.01%  1.02MiB
-     choi                   1    174ms  0.12%   174ms   1.20MiB  0.01%  1.20MiB
-     motzkin                1    163ms  0.12%   163ms    933KiB  0.01%   933KiB
-   socp                     1    37.1s  26.7%   37.1s   2.18GiB  24.8%  2.18GiB
-     sdsos_term_fixed       1    9.57s  6.88%   9.57s    582MiB  6.46%   582MiB
-     sdsos_horn             1    5.42s  3.90%   5.42s    368MiB  4.08%   368MiB
-     sdsos_univaria...      1    5.31s  3.82%   5.31s    365MiB  4.05%   365MiB
-     sdsos_options_...      1    3.35s  2.41%   3.35s   79.1MiB  0.88%  79.1MiB
-     sdsos_concave_...      1    2.74s  1.97%   2.74s    162MiB  1.80%   162MiB
-     sdsos_term             1    1.99s  1.43%   1.99s    126MiB  1.40%   126MiB
-     sdsos_cheby_un...      1    1.96s  1.41%   1.96s   96.2MiB  1.07%  96.2MiB
-     sdsos_scaled_u...      1    1.90s  1.37%   1.90s   99.3MiB  1.10%  99.3MiB
-     sdsos_quartic_...      1    1.47s  1.06%   1.47s   82.1MiB  0.91%  82.1MiB
-     sdsos_univaria...      1    1.37s  0.99%   1.37s   79.6MiB  0.88%  79.6MiB
-     sdsos_quartic_...      1    271ms  0.19%   271ms   1.40MiB  0.02%  1.40MiB
-     sdsos_scaled_b...      1    255ms  0.18%   255ms   0.98MiB  0.01%  0.98MiB
-     sdsos_bivariat...      1    253ms  0.18%   253ms   0.98MiB  0.01%  0.98MiB
-   lp                       1    22.9s  16.5%   22.9s   1.23GiB  14.0%  1.23GiB
-     dsos_options_p...      1    4.51s  3.24%   4.51s    199MiB  2.21%   199MiB
-     dsos_univariat...      1    2.65s  1.91%   2.65s    156MiB  1.73%   156MiB
-     dsos_cheby_biv...      1    2.65s  1.91%   2.65s    147MiB  1.63%   147MiB
-     dsos_concave_t...      1    2.28s  1.64%   2.28s    129MiB  1.43%   129MiB
-     dsos_term_fixed        1    1.96s  1.41%   1.96s   96.0MiB  1.07%  96.0MiB
-     dsos_scaled_bi...      1    1.96s  1.41%   1.96s   99.4MiB  1.10%  99.4MiB
-     dsos_quartic_c...      1    1.47s  1.06%   1.47s   82.2MiB  0.91%  82.2MiB
-     dsos_term              1    1.41s  1.01%   1.41s   63.4MiB  0.70%  63.4MiB
-     dsos_quartic_c...      1    1.19s  0.86%   1.19s   76.6MiB  0.85%  76.6MiB
-     dsos_bivariate...      1    645ms  0.46%   645ms   16.7MiB  0.18%  16.7MiB
-     dsos_horn              1    281ms  0.20%   281ms   1.19MiB  0.01%  1.19MiB
-     dsos_univariat...      1    239ms  0.17%   239ms   0.96MiB  0.01%  0.96MiB
-     dsos_cheby_uni...      1    235ms  0.17%   235ms   0.98MiB  0.01%  0.98MiB
-     dsos_scaled_un...      1    234ms  0.17%   234ms   0.96MiB  0.01%  0.96MiB
- Convex                     1    37.5s  27.0%   37.5s   3.23GiB  36.7%  3.23GiB
-   constant                 1    15.9s  11.4%   15.9s   1.26GiB  14.3%  1.26GiB
-     constant_Issue...      1    14.6s  10.5%   14.6s   1.14GiB  12.9%  1.14GiB
-     constant_fix!_...      1    187ms  0.13%   187ms   9.30MiB  0.10%  9.30MiB
-     constant_fix!_...      1    162ms  0.12%   162ms   8.44MiB  0.09%  8.44MiB
-     constant_Test_...      1   89.4ms  0.06%  89.4ms   4.32MiB  0.05%  4.32MiB
-     constant_Issue...      1   86.7ms  0.06%  86.7ms   8.12MiB  0.09%  8.12MiB
-     constant_fix!_...      1   55.5ms  0.04%  55.5ms   3.01MiB  0.03%  3.01MiB
-   socp                     1    8.68s  6.25%   8.68s    730MiB  8.10%   730MiB
-     socp_dual_mini...      1    4.48s  3.22%   4.48s    298MiB  3.30%   298MiB
-     socp_dual_norm...      1    527ms  0.38%   527ms   46.9MiB  0.52%  46.9MiB
-     socp_square_atom       1    322ms  0.23%   322ms   12.9MiB  0.14%  12.9MiB
-     socp_quad_form...      1    302ms  0.22%   302ms   20.9MiB  0.23%  20.9MiB
-     socp_rational_...      1    253ms  0.18%   253ms   20.9MiB  0.23%  20.9MiB
-     socp_dual_frob...      1    215ms  0.15%   215ms   17.5MiB  0.19%  17.5MiB
-     socp_inv_pos_atom      1    201ms  0.14%   201ms   11.0MiB  0.12%  11.0MiB
-     socp_sum_squar...      1    198ms  0.14%   198ms   9.82MiB  0.11%  9.82MiB
-     socp_fix_multi...      1    197ms  0.14%   197ms   28.9MiB  0.32%  28.9MiB
-     socp_fix_and_f...      1    125ms  0.09%   125ms   3.43MiB  0.04%  3.43MiB
-     socp_quad_over...      1    111ms  0.08%   111ms   7.39MiB  0.08%  7.39MiB
-     socp_rational_...      1    105ms  0.08%   105ms   8.96MiB  0.10%  8.96MiB
-     socp_rational_...      1    100ms  0.07%   100ms   7.26MiB  0.08%  7.26MiB
-     socp_geo_mean_...      1   97.9ms  0.07%  97.9ms   4.49MiB  0.05%  4.49MiB
-     socp_huber_atom        1   88.6ms  0.06%  88.6ms   11.4MiB  0.13%  11.4MiB
-     socp_norm_cons...      1    442μs  0.00%   442μs   62.7KiB  0.00%  62.7KiB
-     socp_sqrt_atom         1   97.2μs  0.00%  97.2μs   22.2KiB  0.00%  22.2KiB
-   affine                   1    5.97s  4.29%   5.97s    576MiB  6.39%   576MiB
-     affine_Partial...      1    620ms  0.45%   620ms    107MiB  1.19%   107MiB
-     affine_transpo...      1    506ms  0.36%   506ms   19.5MiB  0.22%  19.5MiB
-     affine_dot_mul...      1    402ms  0.29%   402ms   27.2MiB  0.30%  27.2MiB
-     affine_multipl...      1    383ms  0.28%   383ms   24.1MiB  0.27%  24.1MiB
-     affine_reshape...      1    307ms  0.22%   307ms   14.7MiB  0.16%  14.7MiB
-     affine_index_atom      1    271ms  0.20%   271ms   21.1MiB  0.23%  21.1MiB
-     affine_Diagona...      1    249ms  0.18%   249ms   17.2MiB  0.19%  17.2MiB
-     affine_sum_atom        1    229ms  0.16%   229ms   18.5MiB  0.21%  18.5MiB
-     affine_add_atom        1    152ms  0.11%   152ms   9.60MiB  0.11%  9.60MiB
-     affine_dualvalue       1    148ms  0.11%   148ms   12.0MiB  0.13%  12.0MiB
-     affine_conv_atom       1    119ms  0.09%   119ms   7.85MiB  0.09%  7.85MiB
-     affine_diag_atom       1    115ms  0.08%   115ms   12.9MiB  0.14%  12.9MiB
-     affine_hcat_atom       1    115ms  0.08%   115ms   6.22MiB  0.07%  6.22MiB
-     affine_vcat_atom       1    109ms  0.08%   109ms   9.29MiB  0.10%  9.29MiB
-     affine_satisfy...      1   89.1ms  0.06%  89.1ms   4.76MiB  0.05%  4.76MiB
-     affine_dot_atom        1   63.9ms  0.05%  63.9ms   5.57MiB  0.06%  5.57MiB
-     affine_dot_ato...      1   61.8ms  0.04%  61.8ms   3.27MiB  0.04%  3.27MiB
-     affine_negate_...      1   55.9ms  0.04%  55.9ms   2.48MiB  0.03%  2.48MiB
-     affine_trace_atom      1   48.0ms  0.03%  48.0ms   2.57MiB  0.03%  2.57MiB
-     affine_permute...      1   46.9ms  0.03%  46.9ms    894KiB  0.01%   894KiB
-     affine_single_...      1   34.4ms  0.02%  34.4ms   2.16MiB  0.02%  2.16MiB
-     affine_single_...      1   34.3ms  0.02%  34.3ms   2.15MiB  0.02%  2.15MiB
-     affine_kron_atom       1    173μs  0.00%   173μs   29.1KiB  0.00%  29.1KiB
-   sdp                      1    4.32s  3.11%   4.32s    406MiB  4.50%   406MiB
-     sdp_matrix_fra...      1    788ms  0.57%   788ms   44.1MiB  0.49%  44.1MiB
-     sdp_sdp_variables      1    273ms  0.20%   273ms   24.1MiB  0.27%  24.1MiB
-     sdp_dual_lambd...      1    211ms  0.15%   211ms   20.7MiB  0.23%  20.7MiB
-     sdp_Partial_trace      1    188ms  0.14%   188ms   19.4MiB  0.22%  19.4MiB
-     sdp_sum_larges...      1    170ms  0.12%   170ms   10.4MiB  0.12%  10.4MiB
-     sdp_Complex_Va...      1    148ms  0.11%   148ms   8.31MiB  0.09%  8.31MiB
-     sdp_socp_sumsq...      1    137ms  0.10%   137ms   9.29MiB  0.10%  9.29MiB
-     sdp_nuclear_no...      1    132ms  0.09%   132ms   16.1MiB  0.18%  16.1MiB
-     sdp_sigma_max_...      1    114ms  0.08%   114ms   12.2MiB  0.14%  12.2MiB
-     sdp_operator_n...      1    107ms  0.08%   107ms   11.7MiB  0.13%  11.7MiB
-     sdp_matrix_fra...      1   97.4ms  0.07%  97.4ms   9.16MiB  0.10%  9.16MiB
-     sdp_Real_Varia...      1   87.8ms  0.06%  87.8ms   4.82MiB  0.05%  4.82MiB
-     sdp_Issue_198          1   84.9ms  0.06%  84.9ms   5.32MiB  0.06%  5.32MiB
-     sdp_socp_abs_atom      1   74.9ms  0.05%  74.9ms   4.43MiB  0.05%  4.43MiB
-     sdp_sdp_constr...      1   73.1ms  0.05%  73.1ms   7.98MiB  0.09%  7.98MiB
-     sdp_socp_norm2...      1   70.1ms  0.05%  70.1ms   3.86MiB  0.04%  3.86MiB
-     sdp_lambda_min...      1   57.0ms  0.04%  57.0ms   3.33MiB  0.04%  3.33MiB
-     sdp_kron_atom          1   53.8ms  0.04%  53.8ms   6.49MiB  0.07%  6.49MiB
-   lp                       1    2.68s  1.92%   2.68s    311MiB  3.45%   311MiB
-     lp_dotsort_atom        1    252ms  0.18%   252ms   18.1MiB  0.20%  18.1MiB
-     lp_dual_abs_atom       1    220ms  0.16%   220ms   14.8MiB  0.16%  14.8MiB
-     lp_sumlargest_...      1    201ms  0.14%   201ms   29.9MiB  0.33%  29.9MiB
-     lp_minimum_atom        1    192ms  0.14%   192ms   17.4MiB  0.19%  17.4MiB
-     lp_min_atom            1    148ms  0.11%   148ms   15.6MiB  0.17%  15.6MiB
-     lp_max_atom            1    147ms  0.11%   147ms   15.6MiB  0.17%  15.6MiB
-     lp_sumsmallest...      1    130ms  0.09%   130ms   17.6MiB  0.20%  17.6MiB
-     lp_pos_atom            1   76.8ms  0.06%  76.8ms   5.88MiB  0.07%  5.88MiB
-     lp_dual_norm_i...      1   72.5ms  0.05%  72.5ms   3.39MiB  0.04%  3.39MiB
-     lp_maximum_atom        1   71.8ms  0.05%  71.8ms   11.2MiB  0.12%  11.2MiB
-     lp_dual_norm_1...      1   69.8ms  0.05%  69.8ms   3.36MiB  0.04%  3.36MiB
-     lp_neg_atom            1   64.0ms  0.05%  64.0ms   4.01MiB  0.04%  4.01MiB
-     lp_hinge_loss_...      1   84.6μs  0.00%  84.6μs   21.4KiB  0.00%  21.4KiB
+ SumOfSquares               1     138s  72.3%    138s   5.57GiB  63.3%  5.57GiB
+   sdp                      1    56.1s  29.4%   56.1s   2.16GiB  24.5%  2.16GiB
+     sosdemo5_infea...      1    3.72s  1.95%   3.72s    189MiB  2.09%   189MiB
+     sos_options_pr...      1    3.58s  1.88%   3.58s   51.4MiB  0.57%  51.4MiB
+     sos_horn               1    3.17s  1.66%   3.17s    132MiB  1.46%   132MiB
+     rearrangement          1    3.16s  1.65%   3.16s    140MiB  1.55%   140MiB
+     quartic_ideal_rem      1    3.11s  1.63%   3.11s    135MiB  1.50%   135MiB
+     sos_term_fixed         1    2.71s  1.42%   2.71s    101MiB  1.12%   101MiB
+     sos_scaled_biv...      1    2.55s  1.34%   2.55s   98.0MiB  1.09%  98.0MiB
+     chebyshev              1    2.52s  1.32%   2.52s    102MiB  1.14%   102MiB
+     sos_cheby_univ...      1    2.36s  1.24%   2.36s   94.9MiB  1.05%  94.9MiB
+     quartic_ideal_4        1    2.18s  1.14%   2.18s   84.6MiB  0.94%  84.6MiB
+     sos_concave_th...      1    2.17s  1.14%   2.17s   85.2MiB  0.95%  85.2MiB
+     sos_quartic_co...      1    2.09s  1.09%   2.09s   80.7MiB  0.90%  80.7MiB
+     quartic_ideal_...      1    2.07s  1.08%   2.07s   75.7MiB  0.84%  75.7MiB
+     sos_term               1    1.89s  0.99%   1.89s   60.3MiB  0.67%  60.3MiB
+     simple_matrix          1    1.79s  0.94%   1.79s   78.2MiB  0.87%  78.2MiB
+     quartic_ideal          1    1.76s  0.92%   1.76s   78.3MiB  0.87%  78.3MiB
+     BPT12e399_rem          1    1.38s  0.72%   1.38s   24.4MiB  0.27%  24.4MiB
+     BPT12e399_maxd...      1    1.03s  0.54%   1.03s   14.9MiB  0.17%  14.9MiB
+     sos_univariate...      1    997ms  0.52%   997ms   16.7MiB  0.19%  16.7MiB
+     quadratic_infe...      1    795ms  0.42%   795ms   26.5MiB  0.29%  26.5MiB
+     sos_univariate...      1    746ms  0.39%   746ms   24.1MiB  0.27%  24.1MiB
+     quartic_ideal_...      1    390ms  0.20%   390ms    944KiB  0.01%   944KiB
+     sos_scaled_uni...      1    379ms  0.20%   379ms   0.97MiB  0.01%  0.97MiB
+     sos_bivariate_...      1    367ms  0.19%   367ms   0.97MiB  0.01%  0.97MiB
+     quadratic_feas...      1    361ms  0.19%   361ms    972KiB  0.01%   972KiB
+     quadratic_infe...      1    352ms  0.18%   352ms   0.96MiB  0.01%  0.96MiB
+     quartic_infeas...      1    344ms  0.18%   344ms   1.00MiB  0.01%  1.00MiB
+     maxcut                 1    338ms  0.18%   338ms   4.66MiB  0.05%  4.66MiB
+     quadratic_feas...      1    336ms  0.18%   336ms   1.02MiB  0.01%  1.02MiB
+     sosdemo10              1    320ms  0.17%   320ms   2.07MiB  0.02%  2.07MiB
+     quartic_feasib...      1    314ms  0.16%   314ms   1.00MiB  0.01%  1.00MiB
+     quartic_infeas...      1    309ms  0.16%   309ms   0.97MiB  0.01%  0.97MiB
+     quartic_feasib...      1    290ms  0.15%   290ms   0.97MiB  0.01%  0.97MiB
+     sosdemo9               1    280ms  0.15%   280ms   1.28MiB  0.01%  1.28MiB
+     choi                   1    279ms  0.15%   279ms   1.20MiB  0.01%  1.20MiB
+     motzkin                1    267ms  0.14%   267ms    933KiB  0.01%   933KiB
+     sos_quartic_co...      1    259ms  0.14%   259ms   1.02MiB  0.01%  1.02MiB
+     sosdemo5_feasible      1    247ms  0.13%   247ms   15.6MiB  0.17%  15.6MiB
+   socp                     1    50.7s  26.6%   50.7s   2.18GiB  24.8%  2.18GiB
+     sdsos_term_fixed       1    13.0s  6.83%   13.0s    582MiB  6.45%   582MiB
+     sdsos_horn             1    7.46s  3.91%   7.46s    368MiB  4.08%   368MiB
+     sdsos_univaria...      1    7.16s  3.75%   7.16s    365MiB  4.05%   365MiB
+     sdsos_options_...      1    4.52s  2.37%   4.52s   79.0MiB  0.88%  79.0MiB
+     sdsos_concave_...      1    3.69s  1.93%   3.69s    162MiB  1.80%   162MiB
+     sdsos_scaled_u...      1    2.64s  1.39%   2.64s   99.3MiB  1.10%  99.3MiB
+     sdsos_term             1    2.62s  1.37%   2.62s    126MiB  1.40%   126MiB
+     sdsos_cheby_un...      1    2.57s  1.35%   2.57s   96.2MiB  1.07%  96.2MiB
+     sdsos_quartic_...      1    1.98s  1.04%   1.98s   82.1MiB  0.91%  82.1MiB
+     sdsos_univaria...      1    1.97s  1.03%   1.97s   79.6MiB  0.88%  79.6MiB
+     sdsos_quartic_...      1    381ms  0.20%   381ms   1.40MiB  0.02%  1.40MiB
+     sdsos_bivariat...      1    344ms  0.18%   344ms   0.98MiB  0.01%  0.98MiB
+     sdsos_scaled_b...      1    332ms  0.17%   332ms   0.98MiB  0.01%  0.98MiB
+   lp                       1    31.1s  16.3%   31.1s   1.23GiB  14.0%  1.23GiB
+     dsos_options_p...      1    6.16s  3.23%   6.16s    199MiB  2.21%   199MiB
+     dsos_univariat...      1    3.74s  1.96%   3.74s    156MiB  1.73%   156MiB
+     dsos_cheby_biv...      1    3.69s  1.93%   3.69s    147MiB  1.63%   147MiB
+     dsos_concave_t...      1    2.89s  1.52%   2.89s    129MiB  1.43%   129MiB
+     dsos_scaled_bi...      1    2.59s  1.36%   2.59s   99.2MiB  1.10%  99.2MiB
+     dsos_term_fixed        1    2.56s  1.34%   2.56s   96.0MiB  1.07%  96.0MiB
+     dsos_quartic_c...      1    2.05s  1.07%   2.05s   82.2MiB  0.91%  82.2MiB
+     dsos_term              1    1.97s  1.04%   1.97s   63.4MiB  0.70%  63.4MiB
+     dsos_quartic_c...      1    1.53s  0.80%   1.53s   76.7MiB  0.85%  76.7MiB
+     dsos_bivariate...      1    863ms  0.45%   863ms   16.7MiB  0.19%  16.7MiB
+     dsos_horn              1    380ms  0.20%   380ms   1.19MiB  0.01%  1.19MiB
+     dsos_cheby_uni...      1    313ms  0.16%   313ms   0.98MiB  0.01%  0.98MiB
+     dsos_scaled_un...      1    294ms  0.15%   294ms   0.96MiB  0.01%  0.96MiB
+     dsos_univariat...      1    280ms  0.15%   280ms   0.96MiB  0.01%  0.96MiB
+ Convex                     1    52.9s  27.7%   52.9s   3.23GiB  36.7%  3.23GiB
+   constant                 1    22.3s  11.7%   22.3s   1.25GiB  14.3%  1.25GiB
+     constant_Issue...      1    20.4s  10.7%   20.4s   1.14GiB  12.9%  1.14GiB
+     constant_fix!_...      1    266ms  0.14%   266ms   9.30MiB  0.10%  9.30MiB
+     constant_fix!_...      1    241ms  0.13%   241ms   8.44MiB  0.09%  8.44MiB
+     constant_Test_...      1    135ms  0.07%   135ms   4.32MiB  0.05%  4.32MiB
+     constant_Issue...      1    126ms  0.07%   126ms   8.11MiB  0.09%  8.11MiB
+     constant_fix!_...      1   85.1ms  0.04%  85.1ms   3.01MiB  0.03%  3.01MiB
+   socp                     1    12.6s  6.59%   12.6s    730MiB  8.10%   730MiB
+     socp_dual_mini...      1    6.31s  3.31%   6.31s    298MiB  3.31%   298MiB
+     socp_dual_norm...      1    747ms  0.39%   747ms   46.9MiB  0.52%  46.9MiB
+     socp_rational_...      1    440ms  0.23%   440ms   20.9MiB  0.23%  20.9MiB
+     socp_quad_form...      1    434ms  0.23%   434ms   20.9MiB  0.23%  20.9MiB
+     socp_square_atom       1    398ms  0.21%   398ms   12.9MiB  0.14%  12.9MiB
+     socp_fix_multi...      1    372ms  0.20%   372ms   28.9MiB  0.32%  28.9MiB
+     socp_inv_pos_atom      1    304ms  0.16%   304ms   11.0MiB  0.12%  11.0MiB
+     socp_dual_frob...      1    303ms  0.16%   303ms   17.5MiB  0.19%  17.5MiB
+     socp_sum_squar...      1    291ms  0.15%   291ms   9.82MiB  0.11%  9.82MiB
+     socp_quad_over...      1    168ms  0.09%   168ms   7.39MiB  0.08%  7.39MiB
+     socp_rational_...      1    150ms  0.08%   150ms   7.26MiB  0.08%  7.26MiB
+     socp_geo_mean_...      1    142ms  0.07%   142ms   4.49MiB  0.05%  4.49MiB
+     socp_rational_...      1    142ms  0.07%   142ms   8.96MiB  0.10%  8.96MiB
+     socp_huber_atom        1    131ms  0.07%   131ms   11.4MiB  0.13%  11.4MiB
+     socp_fix_and_f...      1   90.5ms  0.05%  90.5ms   3.41MiB  0.04%  3.41MiB
+     socp_norm_cons...      1    643μs  0.00%   643μs   62.7KiB  0.00%  62.7KiB
+     socp_sqrt_atom         1    169μs  0.00%   169μs   22.2KiB  0.00%  22.2KiB
+   affine                   1    8.08s  4.24%   8.08s    575MiB  6.38%   575MiB
+     affine_Partial...      1    813ms  0.43%   813ms    107MiB  1.19%   107MiB
+     affine_transpo...      1    712ms  0.37%   712ms   19.5MiB  0.22%  19.5MiB
+     affine_dot_mul...      1    653ms  0.34%   653ms   27.2MiB  0.30%  27.2MiB
+     affine_multipl...      1    431ms  0.23%   431ms   24.1MiB  0.27%  24.1MiB
+     affine_reshape...      1    405ms  0.21%   405ms   14.7MiB  0.16%  14.7MiB
+     affine_sum_atom        1    385ms  0.20%   385ms   18.5MiB  0.21%  18.5MiB
+     affine_index_atom      1    338ms  0.18%   338ms   21.1MiB  0.23%  21.1MiB
+     affine_add_atom        1    266ms  0.14%   266ms   9.60MiB  0.11%  9.60MiB
+     affine_Diagona...      1    234ms  0.12%   234ms   17.2MiB  0.19%  17.2MiB
+     affine_dualvalue       1    201ms  0.11%   201ms   12.0MiB  0.13%  12.0MiB
+     affine_diag_atom       1    166ms  0.09%   166ms   12.9MiB  0.14%  12.9MiB
+     affine_conv_atom       1    160ms  0.08%   160ms   7.85MiB  0.09%  7.85MiB
+     affine_vcat_atom       1    155ms  0.08%   155ms   9.29MiB  0.10%  9.29MiB
+     affine_hcat_atom       1    155ms  0.08%   155ms   6.22MiB  0.07%  6.22MiB
+     affine_satisfy...      1    133ms  0.07%   133ms   4.76MiB  0.05%  4.76MiB
+     affine_dot_ato...      1   85.6ms  0.04%  85.6ms   3.27MiB  0.04%  3.27MiB
+     affine_dot_atom        1   83.5ms  0.04%  83.5ms   5.57MiB  0.06%  5.57MiB
+     affine_negate_...      1   66.7ms  0.03%  66.7ms   2.48MiB  0.03%  2.48MiB
+     affine_trace_atom      1   65.3ms  0.03%  65.3ms   2.57MiB  0.03%  2.57MiB
+     affine_single_...      1   45.3ms  0.02%  45.3ms   2.16MiB  0.02%  2.16MiB
+     affine_single_...      1   42.5ms  0.02%  42.5ms   2.15MiB  0.02%  2.15MiB
+     affine_permute...      1   7.75ms  0.00%  7.75ms    177KiB  0.00%   177KiB
+     affine_kron_atom       1    220μs  0.00%   220μs   29.1KiB  0.00%  29.1KiB
+   sdp                      1    6.04s  3.16%   6.04s    406MiB  4.50%   406MiB
+     sdp_matrix_fra...      1    974ms  0.51%   974ms   44.1MiB  0.49%  44.1MiB
+     sdp_dual_lambd...      1    351ms  0.18%   351ms   20.5MiB  0.23%  20.5MiB
+     sdp_sdp_variables      1    319ms  0.17%   319ms   24.0MiB  0.27%  24.0MiB
+     sdp_Partial_trace      1    283ms  0.15%   283ms   19.4MiB  0.22%  19.4MiB
+     sdp_sum_larges...      1    245ms  0.13%   245ms   10.5MiB  0.12%  10.5MiB
+     sdp_Complex_Va...      1    201ms  0.11%   201ms   8.31MiB  0.09%  8.31MiB
+     sdp_nuclear_no...      1    196ms  0.10%   196ms   16.1MiB  0.18%  16.1MiB
+     sdp_socp_sumsq...      1    193ms  0.10%   193ms   9.29MiB  0.10%  9.29MiB
+     sdp_sigma_max_...      1    158ms  0.08%   158ms   12.2MiB  0.14%  12.2MiB
+     sdp_operator_n...      1    148ms  0.08%   148ms   11.7MiB  0.13%  11.7MiB
+     sdp_matrix_fra...      1    147ms  0.08%   147ms   9.16MiB  0.10%  9.16MiB
+     sdp_Issue_198          1    122ms  0.06%   122ms   5.32MiB  0.06%  5.32MiB
+     sdp_Real_Varia...      1    115ms  0.06%   115ms   4.82MiB  0.05%  4.82MiB
+     sdp_socp_abs_atom      1    104ms  0.05%   104ms   4.43MiB  0.05%  4.43MiB
+     sdp_sdp_constr...      1    101ms  0.05%   101ms   7.98MiB  0.09%  7.98MiB
+     sdp_socp_norm2...      1   98.0ms  0.05%  98.0ms   3.86MiB  0.04%  3.86MiB
+     sdp_lambda_min...      1   81.1ms  0.04%  81.1ms   3.33MiB  0.04%  3.33MiB
+     sdp_kron_atom          1   80.0ms  0.04%  80.0ms   6.56MiB  0.07%  6.56MiB
+   lp                       1    3.90s  2.04%   3.90s    311MiB  3.45%   311MiB
+     lp_minimum_atom        1    291ms  0.15%   291ms   17.4MiB  0.19%  17.4MiB
+     lp_dotsort_atom        1    288ms  0.15%   288ms   18.2MiB  0.20%  18.2MiB
+     lp_dual_abs_atom       1    285ms  0.15%   285ms   14.8MiB  0.16%  14.8MiB
+     lp_sumlargest_...      1    283ms  0.15%   283ms   29.8MiB  0.33%  29.8MiB
+     lp_max_atom            1    201ms  0.11%   201ms   15.6MiB  0.17%  15.6MiB
+     lp_min_atom            1    199ms  0.10%   199ms   15.6MiB  0.17%  15.6MiB
+     lp_sumsmallest...      1    188ms  0.10%   188ms   17.6MiB  0.20%  17.6MiB
+     lp_pos_atom            1    176ms  0.09%   176ms   5.88MiB  0.07%  5.88MiB
+     lp_maximum_atom        1    106ms  0.06%   106ms   11.2MiB  0.12%  11.2MiB
+     lp_dual_norm_i...      1   97.9ms  0.05%  97.9ms   3.39MiB  0.04%  3.39MiB
+     lp_dual_norm_1...      1   92.5ms  0.05%  92.5ms   3.36MiB  0.04%  3.36MiB
+     lp_neg_atom            1   85.1ms  0.04%  85.1ms   4.01MiB  0.04%  4.01MiB
+     lp_hinge_loss_...      1    102μs  0.00%   102μs   21.4KiB  0.00%  21.4KiB
  ──────────────────────────────────────────────────────────────────────────────
 
 ```
 
 ## SDPA `PARAMETER_UNSTABLE_BUT_FAST` (dualized)
-These tests were run on November 13, 2021 at 23:40 (UTC).
+These tests were run on November 14, 2021 at 00:17 (UTC).
 
 
 Excluded problems and classes of problems:
@@ -7645,7 +7753,7 @@ Regex[r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 
 ### Tests
 
-Tests took 24 seconds to run (after warmup).
+Tests took 31 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -7658,8 +7766,8 @@ Tests took 24 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">SDPA tests</td>
-<td style="text-align:center;color:green;">1722</td>
-<td style="text-align:center;color:red;">27</td>
+<td style="text-align:center;color:green;">1723</td>
+<td style="text-align:center;color:red;">26</td>
 <td style="text-align:center;color:red;">32</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1781</td>
@@ -7886,8 +7994,8 @@ Tests took 24 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;SumOfSquares</td>
-<td style="text-align:center;color:green;">1330</td>
-<td style="text-align:center;color:red;">25</td>
+<td style="text-align:center;color:green;">1331</td>
+<td style="text-align:center;color:red;">24</td>
 <td style="text-align:center;color:red;">32</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1387</td>
@@ -8096,8 +8204,8 @@ Tests took 24 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">491</td>
-<td style="text-align:center;color:red;">15</td>
+<td style="text-align:center;color:green;">492</td>
+<td style="text-align:center;color:red;">14</td>
 <td style="text-align:center;color:red;">26</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">532</td>
@@ -8174,8 +8282,8 @@ Tests took 24 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chebyshev</td>
-<td style="text-align:center;color:green;">3</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">4</td>
@@ -8282,14 +8390,14 @@ Tests took 24 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_options_pricing</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">10</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;color:red;">7</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">10</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 30</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
@@ -8300,8 +8408,8 @@ Tests took 24 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 40</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
@@ -8378,14 +8486,14 @@ Tests took 24 seconds to run (after warmup).
 
 ```julia
 Error in testset lp_dotsort_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:209
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:222
   Expression: ≈(p.optval, 19, atol = atol, rtol = rtol)
-   Evaluated: 18.998542315579698 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: 18.998542317100913 ≈ 19 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_Real_Variables_with_complex_equality_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:314
   Expression: x1 == x2
-   Evaluated: [0.84450239622866, 0.057918387698588536, 0.9905759547335392, 0.20369436678046257, 0.9906384391027113, 0.1467829740586291, 0.05104445929934104, 0.783827717669217, 0.7847863143102258, 0.623344539648458] == [0.8445023962286602, 0.057918387698589084, 0.9905759547335399, 0.2036943667804632, 0.9906384391027117, 0.14678297405862883, 0.05104445929934084, 0.7838277176692173, 0.784786314310227, 0.6233445396484595]
+   Evaluated: [0.8794137641287553, 0.41750910293155247, 0.008828548744390062, 0.018260447265349505, 0.7770916038987254, 0.6564930609328906, 0.730556285250478, 0.8457548197078177, 0.9244061946975559, 0.38972981656107947] == [0.8794137641300583, 0.41750910293007015, 0.008828548744383246, 0.018260447275078376, 0.7770916039036351, 0.6564930609322016, 0.7305562852391008, 0.8457548196901679, 0.924406194724533, 0.389729816560442]
 
 Error in testset sdsos_horn:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -8542,7 +8650,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 12.567595541477203 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 11.58003631606698 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -8552,7 +8660,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -15.972232818603516 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 8.758758705109358 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -8562,7 +8670,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 4.445031091570854 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 8.13192679360509 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -8572,7 +8680,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 5.568118132650852 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: 5.32472462952137 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -8582,7 +8690,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 3.8069839477539062 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: 53.9730119407177 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset dsos_univariate_sum:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -9128,6 +9236,16 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebys
   Expression: JuMP.termination_status(model) == MOI.OPTIMAL
    Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
 
+Error in testset chebyshev:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebyshev.jl:34
+  Expression: isapprox(JuMP.value(p), (((128 * x ^ 8 - 256 * x ^ 6) + 160 * x ^ 4) - 32 * x ^ 2) + 1, ztol = 4 * config.atol, atol = 4 * config.atol, rtol = 4 * config.rtol)
+   Evaluated: isapprox(127.98958066768901x⁸ - 2.5339826458719034e-10x⁷ - 255.979334395836x⁶ + 4.3759898070782716e-10x⁵ + 159.98720462092007x⁴ - 2.1479244343177182e-10x³ - 31.99748482508841x² + 2.1981619600320755e-11x + 0.999921246004912, 128x⁸ - 256x⁶ + 160x⁴ - 32x² + 1; ztol = 0.004, atol = 0.004, rtol = 0.0)
+
+Error in testset chebyshev:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebyshev.jl:35
+  Expression: isapprox(JuMP.value(γ), 128, atol = config.atol, rtol = config.rtol)
+   Evaluated: isapprox(127.98958066768901, 128; atol = 0.001, rtol = 0.0)
+
 Error in testset sosdemo9:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
   Got exception outside of a @test
@@ -9330,12 +9448,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
     else
         0.0
     end, atol = atol, rtol = rtol)
-   Evaluated: -2.6677987622305643 ≈ -2.6666666666666665 (atol=0.001, rtol=0.0)
+   Evaluated: -2.667798762193401 ≈ -2.6666666666666665 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:63
   Expression: ≈(moment_value((moments(μ))[1]), 3, atol = atol, rtol = rtol)
-   Evaluated: 3.001018939288734 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 3.001018939246949 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:106
@@ -9344,12 +9462,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
     else
         0.0
     end, atol = atol, rtol = rtol)
-   Evaluated: -2.6677987621939643 ≈ -2.6666666666666665 (atol=0.001, rtol=0.0)
+   Evaluated: -2.667798762244285 ≈ -2.6666666666666665 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:117
   Expression: ≈(moment_value((moments(μ))[1]), 3, atol = atol, rtol = rtol)
-   Evaluated: 3.001018939247576 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 3.0010189393041955 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset quadratic_infeasible_lyapunov_switched_system:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -9741,16 +9859,6 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
    [42] _start() at ./client.jl:506
   
 
-Error in testset K = 30:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
-  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
-   Evaluated: MathOptInterface.UNKNOWN_RESULT_STATUS == MathOptInterface.FEASIBLE_POINT
-
-Error in testset K = 30:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
-  Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 15.037045415490866 ≈ 21.51 (atol=0.1, rtol=0.0)
-
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
   Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
@@ -9759,17 +9867,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 16.464018465951085 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 11.482208458706737 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
   Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
    Evaluated: MathOptInterface.UNKNOWN_RESULT_STATUS == MathOptInterface.FEASIBLE_POINT
-
-Error in testset K = 40:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
-  Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 12.422885924577713 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -9779,7 +9882,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 6.952792312949896 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: 8.601211206056178 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -9789,7 +9892,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 6.681760728359222 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: 4.432218139991164 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset quartic_infeasible_scaled_lyapunov_switched_system:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -10092,168 +10195,168 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            23.4s / 100%             307MiB / 99.3%    
+       Tot / % measured:            31.0s / 100%             308MiB / 99.3%    
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1    21.4s  91.6%   21.4s    131MiB  42.9%   131MiB
-   sdp                      1    10.3s  43.9%   10.3s   82.3MiB  27.0%  82.3MiB
-     sos_options_pr...      1    1.72s  7.35%   1.72s   9.64MiB  3.16%  9.64MiB
-     BPT12e399_rem          1    462ms  1.98%   462ms   3.33MiB  1.09%  3.33MiB
-     BPT12e399_maxd...      1    344ms  1.47%   344ms   1.34MiB  0.44%  1.34MiB
-     sos_horn               1    323ms  1.39%   323ms   1.17MiB  0.38%  1.17MiB
-     sos_concave_th...      1    309ms  1.32%   309ms   1.17MiB  0.38%  1.17MiB
-     sos_term_fixed         1    287ms  1.23%   287ms   0.99MiB  0.32%  0.99MiB
-     rearrangement          1    266ms  1.14%   266ms   1.17MiB  0.38%  1.17MiB
-     sos_cheby_univ...      1    255ms  1.09%   255ms   1.01MiB  0.33%  1.01MiB
-     quartic_ideal_4        1    250ms  1.07%   250ms    932KiB  0.30%   932KiB
-     chebyshev              1    243ms  1.04%   243ms   1.99MiB  0.65%  1.99MiB
-     quartic_ideal_rem      1    242ms  1.04%   242ms    953KiB  0.31%   953KiB
-     quartic_ideal          1    242ms  1.03%   242ms    947KiB  0.30%   947KiB
-     sos_scaled_uni...      1    241ms  1.03%   241ms   0.97MiB  0.32%  0.97MiB
-     sos_scaled_biv...      1    240ms  1.03%   240ms   0.97MiB  0.32%  0.97MiB
-     sos_univariate...      1    240ms  1.03%   240ms   0.97MiB  0.32%  0.97MiB
-     quartic_ideal_...      1    237ms  1.02%   237ms    943KiB  0.30%   943KiB
-     quartic_ideal_...      1    236ms  1.01%   236ms    949KiB  0.30%   949KiB
-     maxcut                 1    228ms  0.98%   228ms   4.66MiB  1.53%  4.66MiB
-     sos_bivariate_...      1    225ms  0.97%   225ms   0.97MiB  0.32%  0.97MiB
-     quadratic_infe...      1    220ms  0.94%   220ms   0.96MiB  0.31%  0.96MiB
-     quadratic_infe...      1    219ms  0.94%   219ms   0.96MiB  0.32%  0.96MiB
-     sosdemo5_infea...      1    216ms  0.92%   216ms   14.9MiB  4.89%  14.9MiB
-     quadratic_feas...      1    210ms  0.90%   210ms   0.96MiB  0.32%  0.96MiB
-     quadratic_feas...      1    209ms  0.89%   209ms    972KiB  0.31%   972KiB
-     quartic_feasib...      1    207ms  0.89%   207ms   0.97MiB  0.32%  0.97MiB
-     sos_univariate...      1    204ms  0.88%   204ms    895KiB  0.29%   895KiB
-     sos_term               1    198ms  0.85%   198ms    817KiB  0.26%   817KiB
-     quartic_infeas...      1    197ms  0.85%   197ms   0.97MiB  0.32%  0.97MiB
-     sosdemo10              1    194ms  0.83%   194ms   2.07MiB  0.68%  2.07MiB
-     choi                   1    189ms  0.81%   189ms   1.20MiB  0.39%  1.20MiB
-     sosdemo5_feasible      1    189ms  0.81%   189ms   14.9MiB  4.89%  14.9MiB
-     simple_matrix          1    184ms  0.79%   184ms    959KiB  0.31%   959KiB
-     quartic_infeas...      1    180ms  0.77%   180ms   1.00MiB  0.33%  1.00MiB
-     quartic_feasib...      1    179ms  0.77%   179ms   1.00MiB  0.33%  1.00MiB
-     sos_quartic_co...      1    177ms  0.76%   177ms    808KiB  0.26%   808KiB
-     sosdemo9               1    177ms  0.76%   177ms   1.28MiB  0.42%  1.28MiB
-     motzkin                1    163ms  0.70%   163ms    933KiB  0.30%   933KiB
-     sos_quartic_co...      1    155ms  0.66%   155ms    878KiB  0.28%   878KiB
-   socp                     1    6.29s  26.9%   6.29s   25.5MiB  8.37%  25.5MiB
-     sdsos_options_...      1    2.74s  11.7%   2.74s   13.1MiB  4.31%  13.1MiB
-     sdsos_horn             1    409ms  1.75%   409ms   1.28MiB  0.42%  1.28MiB
-     sdsos_term_fixed       1    352ms  1.51%   352ms   1.00MiB  0.33%  1.00MiB
-     sdsos_scaled_b...      1    312ms  1.34%   312ms   0.98MiB  0.32%  0.98MiB
-     sdsos_bivariat...      1    311ms  1.33%   311ms   0.98MiB  0.32%  0.98MiB
-     sdsos_concave_...      1    311ms  1.33%   311ms   1.25MiB  0.41%  1.25MiB
-     sdsos_cheby_un...      1    309ms  1.32%   309ms   1.01MiB  0.33%  1.01MiB
-     sdsos_scaled_u...      1    295ms  1.26%   295ms   0.98MiB  0.32%  0.98MiB
-     sdsos_univaria...      1    287ms  1.23%   287ms   0.98MiB  0.32%  0.98MiB
-     sdsos_univaria...      1    264ms  1.13%   264ms    905KiB  0.29%   905KiB
-     sdsos_quartic_...      1    262ms  1.12%   262ms   1.38MiB  0.45%  1.38MiB
-     sdsos_term             1    236ms  1.01%   236ms    826KiB  0.26%   826KiB
-     sdsos_quartic_...      1    203ms  0.87%   203ms    817KiB  0.26%   817KiB
-   lp                       1    4.85s  20.8%   4.85s   23.1MiB  7.57%  23.1MiB
-     dsos_options_p...      1    1.71s  7.32%   1.71s   10.5MiB  3.43%  10.5MiB
-     dsos_horn              1    306ms  1.31%   306ms   1.19MiB  0.39%  1.19MiB
-     dsos_term_fixed        1    285ms  1.22%   285ms   0.98MiB  0.32%  0.98MiB
-     dsos_concave_t...      1    285ms  1.22%   285ms   1.15MiB  0.38%  1.15MiB
-     dsos_cheby_biv...      1    264ms  1.13%   264ms   1.00MiB  0.33%  1.00MiB
-     dsos_cheby_uni...      1    261ms  1.12%   261ms   0.98MiB  0.32%  0.98MiB
-     dsos_scaled_un...      1    258ms  1.11%   258ms   0.96MiB  0.32%  0.96MiB
-     dsos_univariat...      1    249ms  1.07%   249ms   0.96MiB  0.32%  0.96MiB
-     dsos_bivariate...      1    246ms  1.05%   246ms   0.97MiB  0.32%  0.97MiB
-     dsos_scaled_bi...      1    245ms  1.05%   245ms   0.97MiB  0.32%  0.97MiB
-     dsos_univariat...      1    229ms  0.98%   229ms    876KiB  0.28%   876KiB
-     dsos_term              1    193ms  0.83%   193ms    807KiB  0.26%   807KiB
-     dsos_quartic_c...      1    184ms  0.79%   184ms    798KiB  0.26%   798KiB
-     dsos_quartic_c...      1    140ms  0.60%   140ms   0.99MiB  0.33%  0.99MiB
- Convex                     1    1.95s  8.35%   1.95s    174MiB  57.1%   174MiB
-   affine                   1    672ms  2.88%   672ms    113MiB  37.0%   113MiB
-     affine_Partial...      1    364ms  1.56%   364ms   92.9MiB  30.5%  92.9MiB
-     affine_permute...      1   46.7ms  0.20%  46.7ms    894KiB  0.29%   894KiB
-     affine_dot_mul...      1   28.2ms  0.12%  28.2ms   2.20MiB  0.72%  2.20MiB
-     affine_multipl...      1   24.1ms  0.10%  24.1ms   1.89MiB  0.62%  1.89MiB
-     affine_index_atom      1   23.3ms  0.10%  23.3ms   1.31MiB  0.43%  1.31MiB
-     affine_dualvalue       1   18.9ms  0.08%  18.9ms   1.32MiB  0.43%  1.32MiB
-     affine_satisfy...      1   18.0ms  0.08%  18.0ms   1.38MiB  0.45%  1.38MiB
-     affine_Diagona...      1   15.9ms  0.07%  15.9ms   1.09MiB  0.36%  1.09MiB
-     affine_reshape...      1   14.8ms  0.06%  14.8ms   1.14MiB  0.37%  1.14MiB
-     affine_transpo...      1   14.3ms  0.06%  14.3ms   1.20MiB  0.39%  1.20MiB
-     affine_add_atom        1   14.3ms  0.06%  14.3ms   1.03MiB  0.34%  1.03MiB
-     affine_sum_atom        1   14.3ms  0.06%  14.3ms   1.10MiB  0.36%  1.10MiB
-     affine_single_...      1   13.9ms  0.06%  13.9ms    434KiB  0.14%   434KiB
-     affine_conv_atom       1   9.45ms  0.04%  9.45ms    766KiB  0.25%   766KiB
-     affine_diag_atom       1   9.43ms  0.04%  9.43ms    772KiB  0.25%   772KiB
-     affine_vcat_atom       1   7.50ms  0.03%  7.50ms    768KiB  0.25%   768KiB
-     affine_hcat_atom       1   6.74ms  0.03%  6.74ms    664KiB  0.21%   664KiB
-     affine_trace_atom      1   6.12ms  0.03%  6.12ms    366KiB  0.12%   366KiB
-     affine_single_...      1   5.92ms  0.03%  5.92ms    450KiB  0.14%   450KiB
-     affine_negate_...      1   5.46ms  0.02%  5.46ms    351KiB  0.11%   351KiB
-     affine_dot_ato...      1   4.91ms  0.02%  4.91ms    373KiB  0.12%   373KiB
-     affine_dot_atom        1   4.86ms  0.02%  4.86ms    362KiB  0.12%   362KiB
-     affine_kron_atom       1    124μs  0.00%   124μs   29.1KiB  0.01%  29.1KiB
-   socp                     1    628ms  2.69%   628ms   23.8MiB  7.82%  23.8MiB
-     socp_rational_...      1    141ms  0.60%   141ms   7.16MiB  2.35%  7.16MiB
-     socp_dual_norm...      1   67.8ms  0.29%  67.8ms   1.82MiB  0.60%  1.82MiB
-     socp_quad_form...      1   61.4ms  0.26%  61.4ms   1.95MiB  0.64%  1.95MiB
-     socp_dual_frob...      1   50.0ms  0.21%  50.0ms   1.05MiB  0.34%  1.05MiB
-     socp_square_atom       1   49.0ms  0.21%  49.0ms   1.51MiB  0.49%  1.51MiB
-     socp_dual_mini...      1   47.8ms  0.20%  47.8ms   1.23MiB  0.40%  1.23MiB
-     socp_inv_pos_atom      1   45.2ms  0.19%  45.2ms   1.74MiB  0.57%  1.74MiB
-     socp_fix_multi...      1   31.0ms  0.13%  31.0ms   0.99MiB  0.32%  0.99MiB
-     socp_rational_...      1   28.8ms  0.12%  28.8ms   1.80MiB  0.59%  1.80MiB
-     socp_rational_...      1   25.6ms  0.11%  25.6ms   1.18MiB  0.39%  1.18MiB
-     socp_geo_mean_...      1   20.2ms  0.09%  20.2ms    699KiB  0.22%   699KiB
-     socp_huber_atom        1   16.0ms  0.07%  16.0ms    659KiB  0.21%   659KiB
-     socp_fix_and_f...      1   15.9ms  0.07%  15.9ms   1.02MiB  0.33%  1.02MiB
-     socp_quad_over...      1   14.5ms  0.06%  14.5ms    499KiB  0.16%   499KiB
-     socp_sum_squar...      1   12.5ms  0.05%  12.5ms    484KiB  0.15%   484KiB
-     socp_norm_cons...      1    318μs  0.00%   318μs   62.7KiB  0.02%  62.7KiB
-     socp_sqrt_atom         1   67.6μs  0.00%  67.6μs   22.2KiB  0.01%  22.2KiB
-   sdp                      1    360ms  1.54%   360ms   18.3MiB  5.99%  18.3MiB
-     sdp_nuclear_no...      1   65.3ms  0.28%  65.3ms    848KiB  0.27%   848KiB
-     sdp_sdp_variables      1   52.7ms  0.23%  52.7ms   2.08MiB  0.68%  2.08MiB
-     sdp_sum_larges...      1   48.3ms  0.21%  48.3ms   3.74MiB  1.23%  3.74MiB
-     sdp_Real_Varia...      1   27.5ms  0.12%  27.5ms   1.32MiB  0.43%  1.32MiB
-     sdp_Complex_Va...      1   27.4ms  0.12%  27.4ms   1.73MiB  0.57%  1.73MiB
-     sdp_matrix_fra...      1   15.0ms  0.06%  15.0ms    596KiB  0.19%   596KiB
-     sdp_socp_sumsq...      1   14.5ms  0.06%  14.5ms    550KiB  0.18%   550KiB
-     sdp_dual_lambd...      1   13.7ms  0.06%  13.7ms   1.27MiB  0.42%  1.27MiB
-     sdp_Partial_trace      1   13.0ms  0.06%  13.0ms    816KiB  0.26%   816KiB
-     sdp_matrix_fra...      1   12.7ms  0.05%  12.7ms    687KiB  0.22%   687KiB
-     sdp_socp_abs_atom      1   12.6ms  0.05%  12.6ms    480KiB  0.15%   480KiB
-     sdp_socp_norm2...      1   11.1ms  0.05%  11.1ms    449KiB  0.14%   449KiB
-     sdp_kron_atom          1   9.36ms  0.04%  9.36ms    907KiB  0.29%   907KiB
-     sdp_sigma_max_...      1   8.80ms  0.04%  8.80ms    664KiB  0.21%   664KiB
-     sdp_operator_n...      1   7.57ms  0.03%  7.57ms    665KiB  0.21%   665KiB
-     sdp_sdp_constr...      1   6.77ms  0.03%  6.77ms    492KiB  0.16%   492KiB
-     sdp_lambda_min...      1   6.39ms  0.03%  6.39ms    540KiB  0.17%   540KiB
-     sdp_Issue_198          1   6.34ms  0.03%  6.34ms    572KiB  0.18%   572KiB
-   lp                       1    194ms  0.83%   194ms   15.2MiB  4.99%  15.2MiB
-     lp_dual_abs_atom       1   37.8ms  0.16%  37.8ms    843KiB  0.27%   843KiB
-     lp_dotsort_atom        1   24.5ms  0.11%  24.5ms   1.16MiB  0.38%  1.16MiB
-     lp_max_atom            1   23.3ms  0.10%  23.3ms   3.36MiB  1.10%  3.36MiB
-     lp_min_atom            1   22.7ms  0.10%  22.7ms   3.35MiB  1.10%  3.35MiB
-     lp_minimum_atom        1   21.6ms  0.09%  21.6ms   1.88MiB  0.62%  1.88MiB
-     lp_sumlargest_...      1   16.2ms  0.07%  16.2ms   1.04MiB  0.34%  1.04MiB
-     lp_sumsmallest...      1   14.3ms  0.06%  14.3ms   1.38MiB  0.45%  1.38MiB
-     lp_neg_atom            1   8.90ms  0.04%  8.90ms    440KiB  0.14%   440KiB
-     lp_dual_norm_1...      1   6.24ms  0.03%  6.24ms    435KiB  0.14%   435KiB
-     lp_pos_atom            1   6.22ms  0.03%  6.22ms    420KiB  0.13%   420KiB
-     lp_maximum_atom        1   5.96ms  0.03%  5.96ms    457KiB  0.15%   457KiB
-     lp_dual_norm_i...      1   5.96ms  0.03%  5.96ms    468KiB  0.15%   468KiB
-     lp_hinge_loss_...      1   41.9μs  0.00%  41.9μs   21.4KiB  0.01%  21.4KiB
-   constant                 1   96.4ms  0.41%  96.4ms   3.96MiB  1.30%  3.96MiB
-     constant_fix!_...      1   37.0ms  0.16%  37.0ms    801KiB  0.26%   801KiB
-     constant_Issue...      1   17.5ms  0.07%  17.5ms    381KiB  0.12%   381KiB
-     constant_Test_...      1   13.8ms  0.06%  13.8ms   1.02MiB  0.33%  1.02MiB
-     constant_fix!_...      1   13.0ms  0.06%  13.0ms    750KiB  0.24%   750KiB
-     constant_Issue...      1   10.1ms  0.04%  10.1ms    681KiB  0.22%   681KiB
-     constant_fix!_...      1   4.84ms  0.02%  4.84ms    370KiB  0.12%   370KiB
+ SumOfSquares               1    27.9s  90.3%   27.9s    132MiB  43.3%   132MiB
+   sdp                      1    13.3s  42.8%   13.3s   83.7MiB  27.4%  83.7MiB
+     sos_options_pr...      1    2.19s  7.07%   2.19s   9.40MiB  3.08%  9.40MiB
+     BPT12e399_rem          1    590ms  1.91%   590ms   3.33MiB  1.09%  3.33MiB
+     BPT12e399_maxd...      1    456ms  1.47%   456ms   1.34MiB  0.44%  1.34MiB
+     sos_horn               1    410ms  1.32%   410ms   1.17MiB  0.38%  1.17MiB
+     sos_term_fixed         1    369ms  1.19%   369ms   0.99MiB  0.32%  0.99MiB
+     sos_concave_th...      1    355ms  1.15%   355ms   1.17MiB  0.38%  1.17MiB
+     rearrangement          1    354ms  1.14%   354ms   1.17MiB  0.38%  1.17MiB
+     quartic_ideal_4        1    332ms  1.07%   332ms    932KiB  0.30%   932KiB
+     chebyshev              1    330ms  1.06%   330ms   2.17MiB  0.71%  2.17MiB
+     sos_scaled_uni...      1    316ms  1.02%   316ms   0.97MiB  0.32%  0.97MiB
+     quartic_ideal          1    312ms  1.01%   312ms    947KiB  0.30%   947KiB
+     quartic_ideal_rem      1    311ms  1.00%   311ms    953KiB  0.30%   953KiB
+     quartic_ideal_...      1    309ms  1.00%   309ms    949KiB  0.30%   949KiB
+     sos_cheby_univ...      1    307ms  0.99%   307ms   1.01MiB  0.33%  1.01MiB
+     sosdemo5_infea...      1    304ms  0.98%   304ms   15.6MiB  5.11%  15.6MiB
+     sos_univariate...      1    302ms  0.98%   302ms   0.97MiB  0.32%  0.97MiB
+     sos_scaled_biv...      1    297ms  0.96%   297ms   0.97MiB  0.32%  0.97MiB
+     maxcut                 1    294ms  0.95%   294ms   4.66MiB  1.52%  4.66MiB
+     quartic_ideal_...      1    294ms  0.95%   294ms    943KiB  0.30%   943KiB
+     sos_bivariate_...      1    289ms  0.93%   289ms   0.97MiB  0.32%  0.97MiB
+     quadratic_infe...      1    286ms  0.92%   286ms   0.96MiB  0.32%  0.96MiB
+     sos_univariate...      1    285ms  0.92%   285ms    895KiB  0.29%   895KiB
+     quadratic_infe...      1    282ms  0.91%   282ms   0.96MiB  0.31%  0.96MiB
+     sos_term               1    279ms  0.90%   279ms    817KiB  0.26%   817KiB
+     quartic_feasib...      1    276ms  0.89%   276ms   0.97MiB  0.32%  0.97MiB
+     quartic_infeas...      1    269ms  0.87%   269ms   0.97MiB  0.32%  0.97MiB
+     sosdemo10              1    264ms  0.85%   264ms   2.07MiB  0.68%  2.07MiB
+     quadratic_feas...      1    259ms  0.84%   259ms   0.96MiB  0.32%  0.96MiB
+     sosdemo5_feasible      1    256ms  0.83%   256ms   15.6MiB  5.11%  15.6MiB
+     quadratic_feas...      1    256ms  0.83%   256ms    972KiB  0.31%   972KiB
+     sosdemo9               1    246ms  0.79%   246ms   1.28MiB  0.42%  1.28MiB
+     simple_matrix          1    242ms  0.78%   242ms    959KiB  0.31%   959KiB
+     choi                   1    240ms  0.78%   240ms   1.20MiB  0.39%  1.20MiB
+     quartic_infeas...      1    240ms  0.78%   240ms   1.00MiB  0.33%  1.00MiB
+     motzkin                1    228ms  0.74%   228ms    933KiB  0.30%   933KiB
+     quartic_feasib...      1    228ms  0.74%   228ms   1.00MiB  0.33%  1.00MiB
+     sos_quartic_co...      1    217ms  0.70%   217ms    807KiB  0.26%   807KiB
+     sos_quartic_co...      1    193ms  0.62%   193ms    878KiB  0.28%   878KiB
+   socp                     1    8.56s  27.6%   8.56s   25.4MiB  8.32%  25.4MiB
+     sdsos_options_...      1    3.60s  11.6%   3.60s   13.0MiB  4.27%  13.0MiB
+     sdsos_horn             1    630ms  2.03%   630ms   1.28MiB  0.42%  1.28MiB
+     sdsos_term_fixed       1    495ms  1.60%   495ms   1.00MiB  0.33%  1.00MiB
+     sdsos_concave_...      1    455ms  1.47%   455ms   1.25MiB  0.41%  1.25MiB
+     sdsos_scaled_b...      1    444ms  1.43%   444ms   0.98MiB  0.32%  0.98MiB
+     sdsos_scaled_u...      1    411ms  1.33%   411ms   0.98MiB  0.32%  0.98MiB
+     sdsos_cheby_un...      1    402ms  1.30%   402ms   1.01MiB  0.33%  1.01MiB
+     sdsos_univaria...      1    399ms  1.29%   399ms   0.98MiB  0.32%  0.98MiB
+     sdsos_bivariat...      1    379ms  1.23%   379ms   0.98MiB  0.32%  0.98MiB
+     sdsos_univaria...      1    372ms  1.20%   372ms    905KiB  0.29%   905KiB
+     sdsos_quartic_...      1    355ms  1.15%   355ms   1.38MiB  0.45%  1.38MiB
+     sdsos_term             1    318ms  1.03%   318ms    826KiB  0.26%   826KiB
+     sdsos_quartic_...      1    297ms  0.96%   297ms    817KiB  0.26%   817KiB
+   lp                       1    6.12s  19.8%   6.12s   23.1MiB  7.56%  23.1MiB
+     dsos_options_p...      1    2.12s  6.85%   2.12s   10.5MiB  3.43%  10.5MiB
+     dsos_cheby_uni...      1    441ms  1.42%   441ms   0.98MiB  0.32%  0.98MiB
+     dsos_term_fixed        1    383ms  1.24%   383ms   0.98MiB  0.32%  0.98MiB
+     dsos_horn              1    383ms  1.24%   383ms   1.19MiB  0.39%  1.19MiB
+     dsos_concave_t...      1    350ms  1.13%   350ms   1.15MiB  0.38%  1.15MiB
+     dsos_scaled_un...      1    323ms  1.04%   323ms   0.96MiB  0.32%  0.96MiB
+     dsos_cheby_biv...      1    311ms  1.00%   311ms   1.00MiB  0.33%  1.00MiB
+     dsos_scaled_bi...      1    303ms  0.98%   303ms   0.97MiB  0.32%  0.97MiB
+     dsos_bivariate...      1    303ms  0.98%   303ms   0.97MiB  0.32%  0.97MiB
+     dsos_univariat...      1    284ms  0.92%   284ms   0.96MiB  0.32%  0.96MiB
+     dsos_univariat...      1    254ms  0.82%   254ms    876KiB  0.28%   876KiB
+     dsos_term              1    242ms  0.78%   242ms    807KiB  0.26%   807KiB
+     dsos_quartic_c...      1    242ms  0.78%   242ms    798KiB  0.26%   798KiB
+     dsos_quartic_c...      1    184ms  0.59%   184ms   0.99MiB  0.33%  0.99MiB
+ Convex                     1    3.01s  9.74%   3.01s    173MiB  56.7%   173MiB
+   socp                     1    1.14s  3.67%   1.14s   23.8MiB  7.81%  23.8MiB
+     socp_rational_...      1    310ms  1.00%   310ms   7.16MiB  2.34%  7.16MiB
+     socp_quad_form...      1    110ms  0.36%   110ms   1.95MiB  0.64%  1.95MiB
+     socp_dual_norm...      1    108ms  0.35%   108ms   1.82MiB  0.60%  1.82MiB
+     socp_square_atom       1   97.0ms  0.31%  97.0ms   1.51MiB  0.49%  1.51MiB
+     socp_inv_pos_atom      1   87.2ms  0.28%  87.2ms   1.74MiB  0.57%  1.74MiB
+     socp_dual_frob...      1   69.2ms  0.22%  69.2ms   1.05MiB  0.34%  1.05MiB
+     socp_dual_mini...      1   68.6ms  0.22%  68.6ms   1.23MiB  0.40%  1.23MiB
+     socp_rational_...      1   52.1ms  0.17%  52.1ms   1.80MiB  0.59%  1.80MiB
+     socp_fix_multi...      1   48.1ms  0.16%  48.1ms   0.99MiB  0.32%  0.99MiB
+     socp_rational_...      1   42.0ms  0.14%  42.0ms   1.18MiB  0.39%  1.18MiB
+     socp_fix_and_f...      1   32.1ms  0.10%  32.1ms   1.02MiB  0.33%  1.02MiB
+     socp_geo_mean_...      1   30.5ms  0.10%  30.5ms    699KiB  0.22%   699KiB
+     socp_quad_over...      1   29.8ms  0.10%  29.8ms    499KiB  0.16%   499KiB
+     socp_sum_squar...      1   26.0ms  0.08%  26.0ms    484KiB  0.15%   484KiB
+     socp_huber_atom        1   25.5ms  0.08%  25.5ms    659KiB  0.21%   659KiB
+     socp_norm_cons...      1    678μs  0.00%   678μs   62.7KiB  0.02%  62.7KiB
+     socp_sqrt_atom         1    119μs  0.00%   119μs   22.2KiB  0.01%  22.2KiB
+   affine                   1    922ms  2.98%   922ms    112MiB  36.7%   112MiB
+     affine_Partial...      1    512ms  1.65%   512ms   92.9MiB  30.4%  92.9MiB
+     affine_multipl...      1   60.4ms  0.19%  60.4ms   1.89MiB  0.62%  1.89MiB
+     affine_dot_mul...      1   37.7ms  0.12%  37.7ms   2.20MiB  0.72%  2.20MiB
+     affine_index_atom      1   32.1ms  0.10%  32.1ms   1.31MiB  0.43%  1.31MiB
+     affine_diag_atom       1   26.1ms  0.08%  26.1ms    772KiB  0.25%   772KiB
+     affine_dualvalue       1   24.3ms  0.08%  24.3ms   1.32MiB  0.43%  1.32MiB
+     affine_satisfy...      1   23.3ms  0.08%  23.3ms   1.38MiB  0.45%  1.38MiB
+     affine_reshape...      1   21.9ms  0.07%  21.9ms   1.14MiB  0.37%  1.14MiB
+     affine_Diagona...      1   21.4ms  0.07%  21.4ms   1.09MiB  0.36%  1.09MiB
+     affine_single_...      1   20.2ms  0.07%  20.2ms    434KiB  0.14%   434KiB
+     affine_sum_atom        1   19.8ms  0.06%  19.8ms   1.10MiB  0.36%  1.10MiB
+     affine_add_atom        1   18.4ms  0.06%  18.4ms   1.03MiB  0.34%  1.03MiB
+     affine_transpo...      1   18.3ms  0.06%  18.3ms   1.20MiB  0.39%  1.20MiB
+     affine_conv_atom       1   17.1ms  0.06%  17.1ms    766KiB  0.24%   766KiB
+     affine_trace_atom      1   12.8ms  0.04%  12.8ms    366KiB  0.12%   366KiB
+     affine_vcat_atom       1   9.88ms  0.03%  9.88ms    768KiB  0.25%   768KiB
+     affine_hcat_atom       1   9.01ms  0.03%  9.01ms    664KiB  0.21%   664KiB
+     affine_permute...      1   8.14ms  0.03%  8.14ms    177KiB  0.06%   177KiB
+     affine_single_...      1   8.06ms  0.03%  8.06ms    450KiB  0.14%   450KiB
+     affine_negate_...      1   7.33ms  0.02%  7.33ms    351KiB  0.11%   351KiB
+     affine_dot_atom        1   6.67ms  0.02%  6.67ms    362KiB  0.12%   362KiB
+     affine_dot_ato...      1   6.33ms  0.02%  6.33ms    373KiB  0.12%   373KiB
+     affine_kron_atom       1    233μs  0.00%   233μs   29.1KiB  0.01%  29.1KiB
+   sdp                      1    562ms  1.82%   562ms   18.3MiB  5.98%  18.3MiB
+     sdp_sum_larges...      1   97.1ms  0.31%  97.1ms   3.74MiB  1.22%  3.74MiB
+     sdp_sdp_variables      1   67.6ms  0.22%  67.6ms   2.08MiB  0.68%  2.08MiB
+     sdp_nuclear_no...      1   67.0ms  0.22%  67.0ms    848KiB  0.27%   848KiB
+     sdp_Real_Varia...      1   37.7ms  0.12%  37.7ms   1.32MiB  0.43%  1.32MiB
+     sdp_Complex_Va...      1   35.8ms  0.12%  35.8ms   1.73MiB  0.57%  1.73MiB
+     sdp_socp_abs_atom      1   29.5ms  0.10%  29.5ms    480KiB  0.15%   480KiB
+     sdp_socp_sumsq...      1   27.6ms  0.09%  27.6ms    550KiB  0.18%   550KiB
+     sdp_Partial_trace      1   23.9ms  0.08%  23.9ms    816KiB  0.26%   816KiB
+     sdp_dual_lambd...      1   23.5ms  0.08%  23.5ms   1.27MiB  0.42%  1.27MiB
+     sdp_matrix_fra...      1   23.2ms  0.08%  23.2ms    596KiB  0.19%   596KiB
+     sdp_socp_norm2...      1   20.0ms  0.06%  20.0ms    449KiB  0.14%   449KiB
+     sdp_matrix_fra...      1   19.9ms  0.06%  19.9ms    687KiB  0.22%   687KiB
+     sdp_operator_n...      1   18.6ms  0.06%  18.6ms    665KiB  0.21%   665KiB
+     sdp_kron_atom          1   16.1ms  0.05%  16.1ms    907KiB  0.29%   907KiB
+     sdp_sigma_max_...      1   15.4ms  0.05%  15.4ms    664KiB  0.21%   664KiB
+     sdp_Issue_198          1   13.1ms  0.04%  13.1ms    572KiB  0.18%   572KiB
+     sdp_lambda_min...      1   12.9ms  0.04%  12.9ms    540KiB  0.17%   540KiB
+     sdp_sdp_constr...      1   12.5ms  0.04%  12.5ms    492KiB  0.16%   492KiB
+   lp                       1    263ms  0.85%   263ms   15.2MiB  4.98%  15.2MiB
+     lp_dual_abs_atom       1   49.4ms  0.16%  49.4ms    843KiB  0.27%   843KiB
+     lp_dotsort_atom        1   29.6ms  0.10%  29.6ms   1.16MiB  0.38%  1.16MiB
+     lp_min_atom            1   29.3ms  0.09%  29.3ms   3.35MiB  1.10%  3.35MiB
+     lp_minimum_atom        1   29.2ms  0.09%  29.2ms   1.88MiB  0.62%  1.88MiB
+     lp_max_atom            1   28.8ms  0.09%  28.8ms   3.36MiB  1.10%  3.36MiB
+     lp_sumsmallest...      1   24.6ms  0.08%  24.6ms   1.38MiB  0.45%  1.38MiB
+     lp_sumlargest_...      1   16.5ms  0.05%  16.5ms   1.04MiB  0.34%  1.04MiB
+     lp_dual_norm_1...      1   15.6ms  0.05%  15.6ms    435KiB  0.14%   435KiB
+     lp_pos_atom            1   12.1ms  0.04%  12.1ms    420KiB  0.13%   420KiB
+     lp_neg_atom            1   11.6ms  0.04%  11.6ms    440KiB  0.14%   440KiB
+     lp_dual_norm_i...      1   8.02ms  0.03%  8.02ms    468KiB  0.15%   468KiB
+     lp_maximum_atom        1   7.51ms  0.02%  7.51ms    457KiB  0.15%   457KiB
+     lp_hinge_loss_...      1   51.9μs  0.00%  51.9μs   21.4KiB  0.01%  21.4KiB
+   constant                 1    130ms  0.42%   130ms   3.96MiB  1.29%  3.96MiB
+     constant_fix!_...      1   45.3ms  0.15%  45.3ms    801KiB  0.26%   801KiB
+     constant_Issue...      1   23.3ms  0.08%  23.3ms    381KiB  0.12%   381KiB
+     constant_Test_...      1   19.7ms  0.06%  19.7ms   1.02MiB  0.33%  1.02MiB
+     constant_Issue...      1   16.6ms  0.05%  16.6ms    681KiB  0.22%   681KiB
+     constant_fix!_...      1   16.3ms  0.05%  16.3ms    750KiB  0.24%   750KiB
+     constant_fix!_...      1   8.18ms  0.03%  8.18ms    370KiB  0.12%   370KiB
  ──────────────────────────────────────────────────────────────────────────────
 
 ```
 
 ## SDPA `PARAMETER_STABLE_BUT_SLOW` (dualized)
-These tests were run on November 13, 2021 at 23:40 (UTC).
+These tests were run on November 14, 2021 at 00:18 (UTC).
 
 
 Excluded problems and classes of problems:
@@ -10263,7 +10366,7 @@ Regex[r"mip", r"exp", r"sdp_Complex_Semidefinite_constraint"]
 
 ### Tests
 
-Tests took 26 seconds to run (after warmup).
+Tests took 32 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -10276,20 +10379,20 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">SDPA tests</td>
-<td style="text-align:center;color:green;">1438</td>
-<td style="text-align:center;color:red;">311</td>
+<td style="text-align:center;color:green;">1441</td>
+<td style="text-align:center;color:red;">308</td>
 <td style="text-align:center;color:red;">32</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1781</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;Convex</td>
-<td style="text-align:center;color:green;">204</td>
-<td style="text-align:center;color:red;">190</td>
+<td style="text-align:center;color:green;">210</td>
+<td style="text-align:center;color:red;">184</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">394</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant</td>
-<td style="text-align:center;color:green;">15</td>
-<td style="text-align:center;color:red;">13</td>
+<td style="text-align:center;color:green;">18</td>
+<td style="text-align:center;color:red;">10</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">28</td>
@@ -10312,8 +10415,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constant_fix!_with_complex_numbers</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;color:red;">7</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
@@ -10324,14 +10427,14 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constant_fix!_and_multiply</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;affine</td>
-<td style="text-align:center;color:green;">84</td>
-<td style="text-align:center;color:red;">57</td>
+<td style="text-align:center;color:green;">82</td>
+<td style="text-align:center;color:red;">59</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">141</td>
@@ -10378,8 +10481,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">4</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;affine_index_atom</td>
-<td style="text-align:center;color:green;">5</td>
-<td style="text-align:center;color:red;">4</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;color:red;">5</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
@@ -10408,8 +10511,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;affine_dot_atom</td>
-<td style="text-align:center;color:green;">1</td>
-<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -10426,14 +10529,14 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;affine_Diagonal_atom</td>
-<td style="text-align:center;color:green;">7</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;affine_sum_atom</td>
-<td style="text-align:center;color:green;">6</td>
-<td style="text-align:center;color:red;">3</td>
+<td style="text-align:center;color:green;">5</td>
+<td style="text-align:center;color:red;">4</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
@@ -10456,8 +10559,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;affine_trace_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
@@ -10474,8 +10577,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp</td>
-<td style="text-align:center;color:green;">47</td>
-<td style="text-align:center;color:red;">52</td>
+<td style="text-align:center;color:green;">55</td>
+<td style="text-align:center;color:red;">44</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">99</td>
@@ -10492,14 +10595,14 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;socp_fix_and_free_addition</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;socp_inv_pos_atom</td>
-<td style="text-align:center;color:green;">2</td>
-<td style="text-align:center;color:red;">7</td>
+<td style="text-align:center;color:green;">3</td>
+<td style="text-align:center;color:red;">6</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
@@ -10546,8 +10649,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;socp_square_atom</td>
-<td style="text-align:center;color:green;">3</td>
-<td style="text-align:center;color:red;">6</td>
+<td style="text-align:center;color:green;">9</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">9</td>
@@ -10666,8 +10769,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">36</td>
-<td style="text-align:center;color:red;">28</td>
+<td style="text-align:center;color:green;">33</td>
+<td style="text-align:center;color:red;">31</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">64</td>
@@ -10678,14 +10781,14 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">4</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_matrix_frac_atom_both_arguments_variable</td>
-<td style="text-align:center;color:green;">3</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Variable_with_complex_equality_constraints</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">2</td>
@@ -10768,8 +10871,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_socp_norm2_atom</td>
-<td style="text-align:center;color:green;">4</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">4</td>
@@ -10780,14 +10883,14 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;SumOfSquares</td>
-<td style="text-align:center;color:green;">1234</td>
-<td style="text-align:center;color:red;">121</td>
+<td style="text-align:center;color:green;">1231</td>
+<td style="text-align:center;color:red;">124</td>
 <td style="text-align:center;color:red;">32</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1387</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp</td>
-<td style="text-align:center;color:green;">370</td>
-<td style="text-align:center;color:red;">28</td>
+<td style="text-align:center;color:green;">369</td>
+<td style="text-align:center;color:red;">29</td>
 <td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">401</td>
@@ -10846,8 +10949,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_term</td>
-<td style="text-align:center;color:green;">37</td>
-<td style="text-align:center;color:red;">7</td>
+<td style="text-align:center;color:green;">36</td>
+<td style="text-align:center;color:red;">8</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">44</td>
@@ -10900,8 +11003,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp</td>
-<td style="text-align:center;color:green;">423</td>
-<td style="text-align:center;color:red;">28</td>
+<td style="text-align:center;color:green;">422</td>
+<td style="text-align:center;color:red;">29</td>
 <td style="text-align:center;color:red;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">454</td>
@@ -10972,8 +11075,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_term</td>
-<td style="text-align:center;color:green;">37</td>
-<td style="text-align:center;color:red;">7</td>
+<td style="text-align:center;color:green;">36</td>
+<td style="text-align:center;color:red;">8</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">44</td>
@@ -11020,8 +11123,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">441</td>
-<td style="text-align:center;color:red;">65</td>
+<td style="text-align:center;color:green;">440</td>
+<td style="text-align:center;color:red;">66</td>
 <td style="text-align:center;color:red;">26</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">532</td>
@@ -11074,8 +11177,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_term</td>
-<td style="text-align:center;color:green;">37</td>
-<td style="text-align:center;color:red;">7</td>
+<td style="text-align:center;color:green;">36</td>
+<td style="text-align:center;color:red;">8</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">44</td>
@@ -11140,8 +11243,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BPT12e399_rem</td>
-<td style="text-align:center;color:green;">37</td>
-<td style="text-align:center;color:red;">11</td>
+<td style="text-align:center;color:green;">26</td>
+<td style="text-align:center;color:red;">22</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">48</td>
@@ -11194,8 +11297,8 @@ Tests took 26 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BPT12e399_maxdegree</td>
-<td style="text-align:center;color:green;">34</td>
-<td style="text-align:center;color:red;">22</td>
+<td style="text-align:center;color:green;">45</td>
+<td style="text-align:center;color:red;">11</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">56</td>
@@ -11304,951 +11407,921 @@ Tests took 26 seconds to run (after warmup).
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:16
   Expression: ≈(problem.optval, evaluate(sum(c * β)), atol = atol, rtol = rtol)
-   Evaluated: 0.0 ≈ 7201.4638740216915 (atol=0.001, rtol=0.0)
+   Evaluated: 0.0 ≈ 597.0248056762453 (atol=0.001, rtol=0.0)
 
 Error in testset constant_Issue_166:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:18
   Expression: ≈(evaluate(β), zeros(5), atol = atol, rtol = rtol)
-   Evaluated: [128.0672439370481, 102.3991935227746, 203.85470370001718, 44.13681436896517, 44.13681436896506] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [8.396629102960972, 7.105014032333849, 8.496819169000796, 7.970451509584148, 7.970451509583412] ≈ [0.0, 0.0, 0.0, 0.0, 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset constant_fix!_with_vectors:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:134
   Expression: ≈(prob.optval, 1.25, atol = atol, rtol = rtol)
-   Evaluated: 1.3973908439924694 ≈ 1.25 (atol=0.001, rtol=0.0)
+   Evaluated: 1.3246945416983023 ≈ 1.25 (atol=0.001, rtol=0.0)
 
 Error in testset constant_fix!_with_vectors:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:135
   Expression: ≈(evaluate(real(y * sum(x))), 1.25, atol = atol, rtol = rtol)
-   Evaluated: 1167.0151375063924 ≈ 1.25 (atol=0.001, rtol=0.0)
+   Evaluated: 3303.0983299813392 ≈ 1.25 (atol=0.001, rtol=0.0)
 
 Error in testset constant_fix!_with_vectors:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:136
   Expression: ≈(real(evaluate(x)), 0.5 * ones(5), atol = atol, rtol = rtol)
-   Evaluated: [466.03329564123436, 466.571761072473, 467.15121888401916, 467.15121888402024, 467.1230575668424] ≈ [0.5, 0.5, 0.5, 0.5, 0.5] (atol=0.001, rtol=0.0)
-
-Error in testset constant_fix!_with_complex_numbers:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:87
-  Expression: ≈(prob.optval, 0.5, atol = atol, rtol = rtol)
-   Evaluated: -0.5450750672884234 ≈ 0.5 (atol=0.001, rtol=0.0)
-
-Error in testset constant_fix!_with_complex_numbers:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:88
-  Expression: ≈(evaluate(real(x * y)), 0.5, atol = atol, rtol = rtol)
-   Evaluated: 9.119654325700111 ≈ 0.5 (atol=0.001, rtol=0.0)
-
-Error in testset constant_fix!_with_complex_numbers:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:89
-  Expression: ≈(evaluate(y), 0.5, atol = atol, rtol = rtol)
-   Evaluated: 9.119654325700111 ≈ 0.5 (atol=0.001, rtol=0.0)
+   Evaluated: [1321.0525075005116, 1321.194448652801, 1321.061550990069, 1321.0615509900463, 1321.8273203308422] ≈ [0.5, 0.5, 0.5, 0.5, 0.5] (atol=0.001, rtol=0.0)
 
 Error in testset constant_fix!_with_complex_numbers:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:100
   Expression: ≈(prob.optval, 0.25, atol = atol, rtol = rtol)
-   Evaluated: -933.4921177911434 ≈ 0.25 (atol=0.001, rtol=0.0)
+   Evaluated: 0.22692540810874348 ≈ 0.25 (atol=0.001, rtol=0.0)
 
 Error in testset constant_fix!_with_complex_numbers:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:101
   Expression: ≈(evaluate(real(x * y)), 0.25, atol = atol, rtol = rtol)
-   Evaluated: 942.3114174378993 ≈ 0.25 (atol=0.001, rtol=0.0)
+   Evaluated: 162.7382630244565 ≈ 0.25 (atol=0.001, rtol=0.0)
 
 Error in testset constant_fix!_with_complex_numbers:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:102
   Expression: ≈(real(evaluate(x)), 0.5, atol = atol, rtol = rtol)
-   Evaluated: 103.3275367447174 ≈ 0.5 (atol=0.001, rtol=0.0)
+   Evaluated: 325.47651688142344 ≈ 0.5 (atol=0.001, rtol=0.0)
 
-Error in testset constant_fix!_with_complex_numbers:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:103
-  Expression: ≈(evaluate(y), 0.5, atol = atol, rtol = rtol)
-   Evaluated: 9.119654325700111 ≈ 0.5 (atol=0.001, rtol=0.0)
+Error in testset constant_fix!_and_multiply:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:74
+  Expression: ≈(prob.optval, 2.0, atol = atol, rtol = rtol)
+   Evaluated: 1.9988912506856522 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset constant_fix!_and_multiply:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/constant.jl:75
   Expression: ≈(evaluate(tr(p * x)), 2.0, atol = atol, rtol = rtol)
-   Evaluated: 1308.9015950969906 ≈ 2.0 (atol=0.001, rtol=0.0)
+   Evaluated: 454.59875380161276 ≈ 2.0 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:162
   Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
-   Evaluated: 6482.756078751031 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 1.9391974166583195e-30 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:163
   Expression: ≈((evaluate(x' * c))[1], 2, atol = atol, rtol = rtol)
-   Evaluated: 954.947977037438 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 15.770066863179643 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:175
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 0.07944993221084728 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 0.0025059377058232113 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:176
   Expression: ≈((evaluate(c' * X' * c))[1], 4, atol = atol, rtol = rtol)
-   Evaluated: 5968.030510624941 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 94.18292227531308 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:194
   Expression: ≈(p.optval, s, atol = atol, rtol = rtol)
-   Evaluated: 0.8876201221619936 ≈ 14.195553276580007 (atol=0.001, rtol=0.0)
+   Evaluated: 0.1764468003115598 ≈ 13.385574219504743 (atol=0.001, rtol=0.0)
 
 Error in testset affine_transpose_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:195
   Expression: ≈((evaluate(c * x' * d + d' * x * c' + (c * ((((x')')')')' * d)'))[1], s, atol = atol, rtol = rtol)
-   Evaluated: 847010.3911314863 ≈ 14.195553276580007 (atol=0.001, rtol=0.0)
+   Evaluated: 12685.377108753368 ≈ 13.385574219504743 (atol=0.001, rtol=0.0)
 
 Error in testset affine_diag_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:293
   Expression: ≈(evaluate(sum(diag(x, 1))), 1, atol = atol, rtol = rtol)
-   Evaluated: 158.7628544461268 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 158.74934905399613 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset affine_diag_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:304
   Expression: ≈(p.optval, 8, atol = atol, rtol = rtol)
-   Evaluated: 8.006769730551328 ≈ 8 (atol=0.001, rtol=0.0)
+   Evaluated: 8.006896612500373 ≈ 8 (atol=0.001, rtol=0.0)
 
 Error in testset affine_diag_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:305
   Expression: ≈(evaluate(sum(diag(x))), 8, atol = atol, rtol = rtol)
-   Evaluated: 2159.939977274263 ≈ 8 (atol=0.001, rtol=0.0)
+   Evaluated: 2159.811223181485 ≈ 8 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:332
   Expression: ≈(p.optval, 6, atol = atol, rtol = rtol)
-   Evaluated: 2.635098872244257 ≈ 6 (atol=0.001, rtol=0.0)
+   Evaluated: 0.5657546651942107 ≈ 6 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:333
   Expression: ≈(evaluate(sum((dot(*))(x, [1, 2, 3]))), 6, atol = atol, rtol = rtol)
-   Evaluated: -76.99346288206888 ≈ 6 (atol=0.001, rtol=0.0)
+   Evaluated: -95.59682856011474 ≈ 6 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:344
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: 3.0027571440877283 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 3.001521568472939 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:345
   Expression: ≈(evaluate(sum((dot(*))(x, eye(3)))), 3, atol = atol, rtol = rtol)
-   Evaluated: -1760.6008938691207 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: -1761.0009191139807 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:356
   Expression: ≈(p.optval, 1, atol = atol, rtol = rtol)
-   Evaluated: 1.0034312498468199 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 1.0026828651004516 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:357
   Expression: ≈((evaluate(x[1, 1]))[1], 1, atol = atol, rtol = rtol)
-   Evaluated: 116.52223903309216 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 116.55601444852415 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:368
   Expression: ≈(p.optval, 9, atol = atol, rtol = rtol)
-   Evaluated: 1.3759697967514446 ≈ 9 (atol=0.001, rtol=0.0)
+   Evaluated: 0.5383999814975591 ≈ 9 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:369
   Expression: ≈((evaluate(x[1, 1]))[1], 1, atol = atol, rtol = rtol)
-   Evaluated: 64.21395974841522 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 23.078882850998195 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:380
   Expression: ≈(p.optval, 9, atol = atol, rtol = rtol)
-   Evaluated: 1.3759697967514446 ≈ 9 (atol=0.001, rtol=0.0)
+   Evaluated: 0.5383999814975591 ≈ 9 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:381
   Expression: ≈((evaluate(x[1, 1]))[1], 1, atol = atol, rtol = rtol)
-   Evaluated: 64.21395974841522 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 23.078882850998195 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset affine_hcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:458
   Expression: ≈(p.optval, 96, atol = atol, rtol = rtol)
-   Evaluated: 0.3262585400918469 ≈ 96 (atol=0.001, rtol=0.0)
+   Evaluated: 42.004923407838604 ≈ 96 (atol=0.001, rtol=0.0)
 
 Error in testset affine_hcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:459
   Expression: ≈(evaluate(sum(x) + sum([y fill(4.0, 4)])), 96, atol = atol, rtol = rtol)
-   Evaluated: -4157.724542127174 ≈ 96 (atol=0.001, rtol=0.0)
+   Evaluated: -4526.319840945646 ≈ 96 (atol=0.001, rtol=0.0)
 
 Error in testset affine_hcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:460
   Expression: ≈(evaluate([x y fill(2.0, (4, 2))]), fill(2.0, (4, 12)), atol = atol, rtol = rtol)
-   Evaluated: [-148.68968377568737 -191.67641972853409 … 2.0 2.0; -194.10921957042518 -213.94083201947794 … 2.0 2.0; -811.3095616605061 -169.66581198373004 … 2.0 2.0; -194.29316359759775 -169.6658119834993 … 2.0 2.0] ≈ [2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-226.54043463570167 -182.33223667713258 … 2.0 2.0; -160.99410194127742 -184.51702252841292 … 2.0 2.0; -169.76346463482926 -184.51702252856967 … 2.0 2.0; -169.76346463418687 -184.5170225289219 … 2.0 2.0] ≈ [2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0; 2.0 2.0 … 2.0 2.0] (atol=0.001, rtol=0.0)
 
 Error in testset affine_vcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:477
   Expression: ≈(p.optval, 104, atol = 10atol, atol = atol, rtol = rtol)
-   Evaluated: 61.702506049238494 ≈ 104 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 62.65667196721169 ≈ 104 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset affine_vcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:478
   Expression: ≈(evaluate(sum(x) + sum([y 4 * eye(4); x -(ones(4, 6))])), 104, atol = 10atol, atol = atol, rtol = rtol)
-   Evaluated: -7089.823622127801 ≈ 104 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: -10926.991446260612 ≈ 104 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset affine_vcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:479
   Expression: ≈(evaluate([x; y']), 2 * ones(10, 4), atol = atol, rtol = rtol)
-   Evaluated: [-174.5977749047394 -176.98951123396458 -176.05383575980926 -85.86032528507744; -174.60677901724426 -181.47407213048422 -176.0538357595877 -85.86032528540824; … ; -91.3088901240447 -91.30889012393448 -91.30889012459279 -91.30889012397581; -91.30889012497124 -91.30889012481609 -91.30889012482596 -91.30889012474638] ≈ [2.0 2.0 2.0 2.0; 2.0 2.0 2.0 2.0; … ; 2.0 2.0 2.0 2.0; 2.0 2.0 2.0 2.0] (atol=0.001, rtol=0.0)
+   Evaluated: [-200.5658301825772 -144.83937697445157 -182.67652605656872 -191.25919718663337; -151.0745695060054 -137.9780900211609 -182.67652605589862 -191.25919718668231; … ; -222.0652558121476 -222.0652558117772 -222.06525581225156 -222.06525581144166; -222.06525581205767 -222.06525581178892 -222.06525581145104 -222.06525581153898] ≈ [2.0 2.0 2.0 2.0; 2.0 2.0 2.0 2.0; … ; 2.0 2.0 2.0 2.0; 2.0 2.0 2.0 2.0] (atol=0.001, rtol=0.0)
 
 Error in testset affine_index_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:208
   Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
-   Evaluated: 6482.756078751031 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 1.9391974166583195e-30 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset affine_index_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:209
   Expression: ≈((evaluate(x[1] + x[2]))[1], 2, atol = atol, rtol = rtol)
-   Evaluated: 954.947977037438 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 15.770066863179643 ≈ 2 (atol=0.001, rtol=0.0)
+
+Error in testset affine_index_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:221
+  Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
+   Evaluated: 2.003140912111253 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset affine_index_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:222
   Expression: ≈((evaluate(sum(x[I])))[1], 2, atol = atol, rtol = rtol)
-   Evaluated: 522.8717967693387 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 522.367945141827 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset affine_index_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:240
   Expression: ≈(evaluate(c * (X[1:n, 5:(5 + n) - 1])' * c'), s, atol = atol, rtol = rtol)
-   Evaluated: [1619.8484678701343] ≈ [-0.29381710883471923] (atol=0.001, rtol=0.0)
+   Evaluated: [470.33485774885287] ≈ [-0.1859255212452373] (atol=0.001, rtol=0.0)
 
 Error in testset affine_single_vcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:499
   Expression: ≈(p.optval, 8, atol = atol, rtol = rtol)
-   Evaluated: 8.001531573041131 ≈ 8 (atol=0.001, rtol=0.0)
+   Evaluated: 8.006769468421393 ≈ 8 (atol=0.001, rtol=0.0)
 
 Error in testset affine_add_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:123
   Expression: ≈(p.optval, 5, atol = atol, rtol = rtol)
-   Evaluated: 0.9840228607302706 ≈ 5 (atol=0.001, rtol=0.0)
+   Evaluated: 0.07584775150297136 ≈ 5 (atol=0.001, rtol=0.0)
 
 Error in testset affine_add_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:124
   Expression: ≈(evaluate(x + y), 5, atol = atol, rtol = rtol)
-   Evaluated: 19175.788177185244 ≈ 5 (atol=0.001, rtol=0.0)
+   Evaluated: 16.414532247056137 ≈ 5 (atol=0.001, rtol=0.0)
 
 Error in testset affine_add_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:136
   Expression: ≈(evaluate(eye(2) + x), eye(2), atol = atol, rtol = rtol)
-   Evaluated: [120.15333576653022 119.15333576653022; 119.15333576653022 120.15333576653022] ≈ [1.0 0.0; 0.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [33645.71732806048 33644.71732806048; 33644.71732806048 33645.71732806048] ≈ [1.0 0.0; 0.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset affine_add_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:147
   Expression: ≈(p.optval, -6, atol = atol, rtol = rtol)
-   Evaluated: -12.036879207570514 ≈ -6 (atol=0.001, rtol=0.0)
+   Evaluated: -0.0038370869136187453 ≈ -6 (atol=0.001, rtol=0.0)
 
 Error in testset affine_add_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:148
   Expression: ≈(evaluate(y - 5), -6, atol = atol, rtol = rtol)
-   Evaluated: 39.91439349729272 ≈ -6 (atol=0.001, rtol=0.0)
-
-Error in testset affine_dot_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:94
-  Expression: ≈(p.optval, 4.4, atol = atol, rtol = rtol)
-   Evaluated: 0.9335630817592717 ≈ 4.4 (atol=0.001, rtol=0.0)
-
-Error in testset affine_dot_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:95
-  Expression: ≈((evaluate(dot([2.0; 2.0], x)))[1], 4.4, atol = atol, rtol = rtol)
-   Evaluated: 39.69313750859932 ≈ 4.4 (atol=0.001, rtol=0.0)
+   Evaluated: 4641.5631076085965 ≈ -6 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_atom_for_matrix_variables:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:108
   Expression: ≈(p.optval, 8.8, atol = atol, rtol = rtol)
-   Evaluated: 0.5892954667440011 ≈ 8.8 (atol=0.001, rtol=0.0)
+   Evaluated: 2.108878921841103 ≈ 8.8 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dot_atom_for_matrix_variables:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:109
   Expression: ≈((evaluate(dot(fill(2.0, (2, 2)), x)))[1], 8.8, atol = atol, rtol = rtol)
-   Evaluated: 59.47217680932231 ≈ 8.8 (atol=0.001, rtol=0.0)
+   Evaluated: 55.61072007070828 ≈ 8.8 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dualvalue:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:615
   Expression: ≈((p.constraints[1]).dual, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.0019807939997961233 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.05227889420048029 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dualvalue:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:623
   Expression: ≈((p.constraints[1]).dual, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.0019807939997961233 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.05227889420048029 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset affine_dualvalue:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:642
   Expression: all(abs.((p.constraints[1]).dual - dual) .<= atol)
 
+Error in testset affine_Diagonal_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:530
+  Expression: ≈(p.optval, 21, atol = atol, rtol = rtol)
+   Evaluated: 4.398319171733626 ≈ 21 (atol=0.001, rtol=0.0)
+
 Error in testset affine_sum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:253
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 0.07944993221084728 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 0.0025059377058232113 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset affine_sum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:254
   Expression: ≈(evaluate(sum(x)), 4, atol = atol, rtol = rtol)
-   Evaluated: 5968.03051062494 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 94.18292227531309 ≈ 4 (atol=0.001, rtol=0.0)
+
+Error in testset affine_sum_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:278
+  Expression: ≈(p.optval, sum(a[2:6]), atol = atol, rtol = rtol)
+   Evaluated: 1.8799587164703704 ≈ 1.8781903457273537 (atol=0.001, rtol=0.0)
 
 Error in testset affine_sum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:279
   Expression: ≈(evaluate(sum(x[2:6])), sum(a[2:6]), atol = atol, rtol = rtol)
-   Evaluated: -3766.272207391343 ≈ 2.3896101648551724 (atol=0.001, rtol=0.0)
+   Evaluated: -3765.52268946302 ≈ 1.8781903457273537 (atol=0.001, rtol=0.0)
 
 Error in testset affine_reshape_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:415
   Expression: ≈(p.optval, sum(A .+ c), atol = atol, rtol = rtol)
-   Evaluated: 0.5813994455253226 ≈ 3.540379286396597 (atol=0.001, rtol=0.0)
+   Evaluated: 0.10905108841880667 ≈ 7.14090106950108 (atol=0.001, rtol=0.0)
 
 Error in testset affine_reshape_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:416
   Expression: ≈(evaluate(sum(reshape(X, 2, 3) + A)), sum(A .+ c), atol = atol, rtol = rtol)
-   Evaluated: 174.86023512911015 ≈ 3.540379286396597 (atol=0.001, rtol=0.0)
+   Evaluated: 7942.585132433675 ≈ 7.14090106950108 (atol=0.001, rtol=0.0)
 
 Error in testset affine_reshape_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:427
   Expression: ≈(p.optval, sum(b .+ c), atol = atol, rtol = rtol)
-   Evaluated: 0.062265616898695406 ≈ 4.4649118604627525 (atol=0.001, rtol=0.0)
+   Evaluated: 1.3711082389060079 ≈ 8.30030593197762 (atol=0.001, rtol=0.0)
 
 Error in testset affine_reshape_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:428
   Expression: ≈(evaluate(sum(vec(X) + b)), sum(b .+ c), atol = atol, rtol = rtol)
-   Evaluated: 192.1753606276572 ≈ 4.4649118604627525 (atol=0.001, rtol=0.0)
+   Evaluated: 7961.437359719869 ≈ 8.30030593197762 (atol=0.001, rtol=0.0)
 
 Error in testset affine_reshape_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:443
   Expression: ≈(p.optval, 136, atol = 10atol, atol = atol, rtol = rtol)
-   Evaluated: 27.03811671805045 ≈ 136 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 119.8438580305956 ≈ 136 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset affine_reshape_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:444
   Expression: ≈((evaluate(c' * reshaped))[1], 136, atol = 10atol, atol = atol, rtol = rtol)
-   Evaluated: 948.7742020369257 ≈ 136 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 1653.7633201132987 ≈ 136 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset affine_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:46
   Expression: ≈(p.optval, 2.93333, atol = atol, rtol = rtol)
-   Evaluated: 0.9979725932036893 ≈ 2.93333 (atol=0.001, rtol=0.0)
+   Evaluated: 40.8867059711222 ≈ 2.93333 (atol=0.001, rtol=0.0)
 
 Error in testset affine_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:47
   Expression: ≈((evaluate([2 2] * x))[1], 2.93333, atol = atol, rtol = rtol)
-   Evaluated: 8.994714207507162 ≈ 2.93333 (atol=0.001, rtol=0.0)
+   Evaluated: 1054.7541961649579 ≈ 2.93333 (atol=0.001, rtol=0.0)
 
 Error in testset affine_multiply_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:48
   Expression: ≈(vec(evaluate(A * x)), [1.1; 1.1], atol = atol, rtol = rtol)
-   Evaluated: [4.950213974175323, 1.7958216814550474] ≈ [1.1, 1.1] (atol=0.001, rtol=0.0)
+   Evaluated: [300.87690776975217, 490.1887393539662] ≈ [1.1, 1.1] (atol=0.001, rtol=0.0)
+
+Error in testset affine_trace_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:318
+  Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
+   Evaluated: 1.9988912506856522 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset affine_trace_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:319
   Expression: ≈(evaluate(tr(x)), 2, atol = atol, rtol = rtol)
-   Evaluated: 1308.9015950969906 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 454.59875380161276 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset affine_single_hcat_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:489
   Expression: ≈(p.optval, 8, atol = atol, rtol = rtol)
-   Evaluated: 8.001531573041131 ≈ 8 (atol=0.001, rtol=0.0)
+   Evaluated: 8.006769468421393 ≈ 8 (atol=0.001, rtol=0.0)
 
 Error in testset affine_negate_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/affine.jl:11
   Expression: ≈(evaluate(-x), 0, atol = atol, rtol = rtol)
-   Evaluated: 10805.963697087336 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 6312.9932871276715 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_minimal_norm_solutions:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:438
   Expression: ≈(p.optval, 1.5, atol = atol, rtol = rtol)
-   Evaluated: 0.059620365500450134 ≈ 1.5 (atol=0.001, rtol=0.0)
+   Evaluated: 0.07647101581096649 ≈ 1.5 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_minimal_norm_solutions:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:439
   Expression: ≈(evaluate(x), [0, 1.5], atol = atol, rtol = rtol)
-   Evaluated: [0.5120685839552007, 1.243965707973234] ≈ [0.0, 1.5] (atol=0.001, rtol=0.0)
+   Evaluated: [0.5911712250709552, 1.2044143874153568] ≈ [0.0, 1.5] (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_minimal_norm_solutions:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:440
   Expression: ≈(evaluate(norm(x, 1)), p.optval, atol = atol, rtol = rtol)
-   Evaluated: 1.7560342919284349 ≈ 0.059620365500450134 (atol=0.001, rtol=0.0)
+   Evaluated: 1.7955856124863119 ≈ 0.07647101581096649 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_minimal_norm_solutions:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:454
   Expression: ≈(p.optval, 3 / sqrt(5), atol = atol, rtol = rtol)
-   Evaluated: 0.06856881082057953 ≈ 1.3416407864998738 (atol=0.001, rtol=0.0)
+   Evaluated: 0.06785568594932556 ≈ 1.3416407864998738 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_minimal_norm_solutions:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:455
   Expression: ≈(evaluate(x), [3 / 5, 6 / 5], atol = atol, rtol = rtol)
-   Evaluated: [0.44703056706879346, 1.2764847164080728] ≈ [0.6, 1.2] (atol=0.001, rtol=0.0)
+   Evaluated: [0.5844441837782509, 1.207777908053344] ≈ [0.6, 1.2] (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_minimal_norm_solutions:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:456
   Expression: ≈(evaluate(norm(x, 2)), p.optval, atol = atol, rtol = rtol)
-   Evaluated: 1.3524975264736143 ≈ 0.06856881082057953 (atol=0.001, rtol=0.0)
+   Evaluated: 1.3417535090820287 ≈ 0.06785568594932556 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_minimal_norm_solutions:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:470
   Expression: ≈(p.optval, 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.0008495450019836426 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.0022150278091430664 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_minimal_norm_solutions:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:471
   Expression: ≈(evaluate(x), [1, 1], atol = atol, rtol = rtol)
-   Evaluated: [0.6000049634124484, 1.1999975182839426] ≈ [1, 1] (atol=0.001, rtol=0.0)
+   Evaluated: [0.6000029908189762, 1.1999985045806787] ≈ [1, 1] (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_minimal_norm_solutions:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:472
   Expression: ≈(evaluate(norm(x, Inf)), p.optval, atol = atol, rtol = rtol)
-   Evaluated: 1.1999975182839426 ≈ 0.0008495450019836426 (atol=0.001, rtol=0.0)
+   Evaluated: 1.1999985045806787 ≈ 0.0022150278091430664 (atol=0.001, rtol=0.0)
 
 Error in testset socp_sum_squares_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:112
   Expression: ≈(p.optval, 0.42105, atol = atol, rtol = rtol)
-   Evaluated: -2912.9883028704444 ≈ 0.42105 (atol=0.001, rtol=0.0)
+   Evaluated: -1.9826848137237254 ≈ 0.42105 (atol=0.001, rtol=0.0)
 
 Error in testset socp_sum_squares_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:113
   Expression: ≈((evaluate(sumsquares(A * x + b)))[1], 0.42105, atol = atol, rtol = rtol)
-   Evaluated: 0.8883043758961732 ≈ 0.42105 (atol=0.001, rtol=0.0)
-
-Error in testset socp_fix_and_free_addition:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:386
-  Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: -0.15045406993046107 ≈ 4 (atol=0.001, rtol=0.0)
-
-Error in testset socp_inv_pos_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:166
-  Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
-   Evaluated: -21.95477984038812 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 0.7551843731343231 ≈ 0.42105 (atol=0.001, rtol=0.0)
 
 Error in testset socp_inv_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:175
   Expression: ≈(evaluate(x), fill(3.0, (3, 1)), atol = atol, rtol = rtol)
-   Evaluated: [2.073261112396056, 2.0694339094924117, 2.119509732397452] ≈ [3.0; 3.0; 3.0] (atol=0.001, rtol=0.0)
+   Evaluated: [2.032248002888225, 2.119340733519922, 2.0842253651751927] ≈ [3.0; 3.0; 3.0] (atol=0.001, rtol=0.0)
 
 Error in testset socp_inv_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:176
   Expression: ≈(p.optval, 6, atol = atol, rtol = rtol)
-   Evaluated: -40.806938502036516 ≈ 6 (atol=0.001, rtol=0.0)
+   Evaluated: -33.0684200369197 ≈ 6 (atol=0.001, rtol=0.0)
 
 Error in testset socp_inv_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:177
   Expression: ≈(evaluate(sum((dot(/))([3, 6, 9], x))), 6, atol = atol, rtol = rtol)
-   Evaluated: 8.592604362883879 ≈ 6 (atol=0.001, rtol=0.0)
+   Evaluated: 8.625417929478356 ≈ 6 (atol=0.001, rtol=0.0)
 
 Error in testset socp_inv_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:185
   Expression: ≈(evaluate(x), 3, atol = atol, rtol = rtol)
-   Evaluated: 2.747148571703248 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 2.8827215963299735 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset socp_inv_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:186
   Expression: ≈(p.optval, 6, atol = atol, rtol = rtol)
-   Evaluated: -13.228544030130664 ≈ 6 (atol=0.001, rtol=0.0)
+   Evaluated: 0.13346456498707548 ≈ 6 (atol=0.001, rtol=0.0)
 
 Error in testset socp_inv_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:187
   Expression: ≈(evaluate(sum([3, 6, 9] / x)), 6, atol = atol, rtol = rtol)
-   Evaluated: 6.552248460606517 ≈ 6 (atol=0.001, rtol=0.0)
+   Evaluated: 6.244099334086236 ≈ 6 (atol=0.001, rtol=0.0)
 
 Error in testset socp_quad_over_lin_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:96
   Expression: ≈(p.optval, 17.7831, atol = atol, rtol = rtol)
-   Evaluated: 0.561888134335681 ≈ 17.7831 (atol=0.001, rtol=0.0)
+   Evaluated: 2.2887921060086014 ≈ 17.7831 (atol=0.001, rtol=0.0)
 
 Error in testset socp_quad_over_lin_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:97
   Expression: ≈(evaluate(quadoverlin(A * x + b, dot(c, x) + d)), 17.7831, atol = atol, rtol = rtol)
-   Evaluated: 427.98535474888416 ≈ 17.7831 (atol=0.001, rtol=0.0)
+   Evaluated: 171.49700239165207 ≈ 17.7831 (atol=0.001, rtol=0.0)
 
 Error in testset socp_quad_form_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:232
   Expression: ≈(p.optval, 6.1464, atol = atol, rtol = rtol)
-   Evaluated: -760.9958782512947 ≈ 6.1464 (atol=0.001, rtol=0.0)
+   Evaluated: -8.1916234106778 ≈ 6.1464 (atol=0.001, rtol=0.0)
 
 Error in testset socp_quad_form_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:233
   Expression: ≈(evaluate(quadform(x, A)), 6.1464, atol = atol, rtol = rtol)
-   Evaluated: 506.9788305752513 ≈ 6.1464 (atol=0.001, rtol=0.0)
+   Evaluated: 62.54724930369091 ≈ 6.1464 (atol=0.001, rtol=0.0)
 
 Error in testset socp_fix_multiplication:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:408
   Expression: ≈(o1, 0.7 * norm(a[1:end - 1] - a[2:end]), atol = atol, rtol = rtol)
-   Evaluated: 0.11141857073122911 ≈ 1.4 (atol=0.001, rtol=0.0)
+   Evaluated: 0.017244006536887593 ≈ 1.4 (atol=0.001, rtol=0.0)
 
 Error in testset socp_fix_multiplication:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:417
   Expression: ≈(o2, norm(a .- mean(a)), atol = atol, rtol = rtol)
-   Evaluated: 0.18557297074500972 ≈ 1.6733200530681511 (atol=0.001, rtol=0.0)
+   Evaluated: 0.13444856047765366 ≈ 1.6733200530681511 (atol=0.001, rtol=0.0)
 
 Error in testset socp_huber_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:281
   Expression: ≈(p.optval, 9, atol = atol, rtol = rtol)
-   Evaluated: -91.8911636843173 ≈ 9 (atol=0.001, rtol=0.0)
+   Evaluated: -95.84980665594043 ≈ 9 (atol=0.001, rtol=0.0)
 
 Error in testset socp_huber_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:282
   Expression: ≈(evaluate(sum(huber(x, 1))), 9, atol = atol, rtol = rtol)
-   Evaluated: 177.0510525567948 ≈ 9 (atol=0.001, rtol=0.0)
+   Evaluated: 231.28462425917286 ≈ 9 (atol=0.001, rtol=0.0)
 
 Error in testset socp_rational_norm_atom_sum:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:344
   Expression: ≈(p.optval, 1.7227, atol = atol, rtol = rtol)
-   Evaluated: -959.995170253329 ≈ 1.7227 (atol=0.001, rtol=0.0)
+   Evaluated: -753.879787621619 ≈ 1.7227 (atol=0.001, rtol=0.0)
 
 Error in testset socp_rational_norm_atom_sum:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:345
   Expression: ≈(norm(g, 2) ^ 2, 0, atol = atol, rtol = rtol)
-   Evaluated: 5.304697595849763 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 5.132505154936815 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset socp_rational_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:298
   Expression: ≈(p.optval, 1.2717, atol = atol, rtol = rtol)
-   Evaluated: 3.4332275390625e-5 ≈ 1.2717 (atol=0.001, rtol=0.0)
+   Evaluated: 1.5437602996826172e-5 ≈ 1.2717 (atol=0.001, rtol=0.0)
 
 Error in testset socp_rational_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:299
   Expression: ≈(evaluate(norm(x, 4.5)), 1.2717, atol = atol, rtol = rtol)
-   Evaluated: 1.336157043798974 ≈ 1.2717 (atol=0.001, rtol=0.0)
-
-Error in testset socp_square_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:128
-  Expression: ≈(p.optval, 0.42105, atol = atol, rtol = rtol)
-   Evaluated: -15.211435228246817 ≈ 0.42105 (atol=0.001, rtol=0.0)
-
-Error in testset socp_square_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:129
-  Expression: ≈(evaluate(sum(square(A * x + b))), 0.42105, atol = atol, rtol = rtol)
-   Evaluated: 0.42621021038832685 ≈ 0.42105 (atol=0.001, rtol=0.0)
-
-Error in testset socp_square_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:142
-  Expression: ≈(p.optval, 0.42105, atol = atol, rtol = rtol)
-   Evaluated: -15.211435228246817 ≈ 0.42105 (atol=0.001, rtol=0.0)
-
-Error in testset socp_square_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:143
-  Expression: ≈(evaluate(sum(broadcast(^, expr, 2))), 0.42105, atol = atol, rtol = rtol)
-   Evaluated: 0.42621021038832685 ≈ 0.42105 (atol=0.001, rtol=0.0)
-
-Error in testset socp_square_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:152
-  Expression: ≈(p.optval, 0.42105, atol = atol, rtol = rtol)
-   Evaluated: -15.211435228246817 ≈ 0.42105 (atol=0.001, rtol=0.0)
-
-Error in testset socp_square_atom:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:153
-  Expression: ≈(evaluate(sum((dot(*))(expr, expr))), 0.42105, atol = atol, rtol = rtol)
-   Evaluated: 0.42621021038832685 ≈ 0.42105 (atol=0.001, rtol=0.0)
+   Evaluated: 1.3006111628308155 ≈ 1.2717 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_frobenius_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:75
   Expression: ≈(p.optval, sqrt(35), atol = atol, rtol = rtol)
-   Evaluated: -2514.810682452091 ≈ 5.916079783099616 (atol=0.001, rtol=0.0)
+   Evaluated: -1055.9295395940371 ≈ 5.916079783099616 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_frobenius_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:76
   Expression: ≈(evaluate(norm(vec(m), 2)), sqrt(35), atol = atol, rtol = rtol)
-   Evaluated: 313518.0964429654 ≈ 5.916079783099616 (atol=0.001, rtol=0.0)
+   Evaluated: 154422.82684746114 ≈ 5.916079783099616 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_frobenius_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:77
   Expression: ≈((p.constraints[1]).dual, 0.6761, atol = atol, rtol = rtol)
-   Evaluated: -838.49890438281 ≈ 0.6761 (atol=0.001, rtol=0.0)
+   Evaluated: -352.1780327633023 ≈ 0.6761 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_frobenius_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:79
   Expression: ≈((p.constraints[2]).dual, dual, atol = atol, rtol = rtol)
-   Evaluated: [0.08853125903586301 0.0331944762299837 … 0.0331944762299837 0.033194476229983685; 0.033194476229983685 0.033194476229983685 … 0.033194476229983685 0.033194476229983685; 0.033194476229983685 0.0331944762299837 … 0.0331944762299837 0.0331944762299837; 0.033194476229983685 0.0331944762299837 … 0.0331944762299837 0.033194476229983685] ≈ [0.169 0.169 … 0.169 0.169; 0.169 0.169 … 0.169 0.169; 0.169 0.169 … 0.169 0.169; 0.169 0.169 … 0.169 0.169] (atol=0.001, rtol=0.0)
+   Evaluated: [0.07796242941387291 0.029255226039097998 … 0.029255226039097984 0.029255226039097998; 0.029255226039097998 0.029255226039097998 … 0.029255226039097984 0.029255226039097998; 0.029255226039097984 0.029255226039097998 … 0.02925522603909797 0.029255226039097998; 0.029255226039097984 0.029255226039097984 … 0.029255226039097998 0.029255226039097998] ≈ [0.169 0.169 … 0.169 0.169; 0.169 0.169 … 0.169 0.169; 0.169 0.169 … 0.169 0.169; 0.169 0.169 … 0.169 0.169] (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:12
   Expression: ≈(p.optval, 0.64888, atol = atol, rtol = rtol)
-   Evaluated: 0.10251389583484091 ≈ 0.64888 (atol=0.001, rtol=0.0)
+   Evaluated: 0.22792868215996565 ≈ 0.64888 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:13
   Expression: ≈(evaluate(norm2(A * x + b)), 0.64888, atol = atol, rtol = rtol)
-   Evaluated: 20.806768855252084 ≈ 0.64888 (atol=0.001, rtol=0.0)
+   Evaluated: 14.247972974611788 ≈ 0.64888 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:27
   Expression: ≈(p.optval, 14.9049, atol = atol, rtol = rtol)
-   Evaluated: 5.658915746424864 ≈ 14.9049 (atol=0.001, rtol=0.0)
+   Evaluated: 2.854929632359304 ≈ 14.9049 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:28
   Expression: ≈(evaluate(norm2(A * x + b) + lambda * norm2(x)), 14.9049, atol = atol, rtol = rtol)
-   Evaluated: 827.6024820078372 ≈ 14.9049 (atol=0.001, rtol=0.0)
+   Evaluated: 434.5865529269098 ≈ 14.9049 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:29
   Expression: ≈((p.constraints[1]).dual, [4.4134, 5.1546], atol = atol, rtol = rtol)
-   Evaluated: [1.6652982967285452; 1.9934083339509776] ≈ [4.4134, 5.1546] (atol=0.001, rtol=0.0)
+   Evaluated: [0.8510801270277122; 1.010881192503304] ≈ [4.4134, 5.1546] (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:42
   Expression: ≈(p.optval, 14.9049, atol = atol, rtol = rtol)
-   Evaluated: 5.658915746424864 ≈ 14.9049 (atol=0.001, rtol=0.0)
+   Evaluated: 2.854929632359304 ≈ 14.9049 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:43
   Expression: ≈(evaluate(norm2(A * x + b) + lambda * norm2(x)), 14.9049, atol = atol, rtol = rtol)
-   Evaluated: 827.6024820078372 ≈ 14.9049 (atol=0.001, rtol=0.0)
+   Evaluated: 434.5865529269098 ≈ 14.9049 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:44
   Expression: ≈((p.constraints[1]).dual, [4.4134, 5.1546], atol = atol, rtol = rtol)
-   Evaluated: [1.6652982967285452; 1.9934083339509776] ≈ [4.4134, 5.1546] (atol=0.001, rtol=0.0)
+   Evaluated: [0.8510801270277122; 1.010881192503304] ≈ [4.4134, 5.1546] (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:58
   Expression: ≈(p.optval, 15.4907, atol = atol, rtol = rtol)
-   Evaluated: 5.558214455597204 ≈ 15.4907 (atol=0.001, rtol=0.0)
+   Evaluated: 8.467514002093889 ≈ 15.4907 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:59
   Expression: ≈(evaluate(norm2(A * x + b) + lambda * norm_1(x)), 15.4907, atol = atol, rtol = rtol)
-   Evaluated: 1291.50458194345 ≈ 15.4907 (atol=0.001, rtol=0.0)
+   Evaluated: 1435.6664349487066 ≈ 15.4907 (atol=0.001, rtol=0.0)
 
 Error in testset socp_dual_norm_2_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/socp.jl:60
   Expression: ≈((p.constraints[1]).dual, [4.7062, 5.4475], atol = atol, rtol = rtol)
-   Evaluated: [1.5391582113458362; 1.9923564513814156] ≈ [4.7062, 5.4475] (atol=0.001, rtol=0.0)
+   Evaluated: [2.424627113539671; 2.902679716557506] ≈ [4.7062, 5.4475] (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:10
   Expression: ≈(p.optval, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.0003799677768251712 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.1540393961240718 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:11
   Expression: ≈(evaluate(abs(x)), 1, atol = atol, rtol = rtol)
-   Evaluated: 9231.615671472158 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 93.11641763063369 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:12
   Expression: ≈((p.constraints[1]).dual, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.0003799677768251712 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.1540393961240718 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:23
   Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
-   Evaluated: 0.48702706423671527 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 0.6735436646383417 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:24
   Expression: ≈(evaluate(sum(abs(x))), 2, atol = atol, rtol = rtol)
-   Evaluated: 2935.5534285805365 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 5713.95373497672 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:25
   Expression: ≈((p.constraints[1]).dual, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.42260956521683374 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.3361883418615264 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:26
   Expression: ≈((p.constraints[2]).dual, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.06441749901988153 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.33735532277681535 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:27
   Expression: ≈((p.constraints[3]).dual[1, 1], 0, atol = atol, rtol = rtol)
-   Evaluated: 0.06425359275332637 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.336641256471927 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:28
   Expression: ≈((p.constraints[3]).dual[2, 2], 0, atol = atol, rtol = rtol)
-   Evaluated: 0.42183019405528577 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.33545609737791754 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:29
   Expression: ≈((p.constraints[3]).dual[1, 2], (p.constraints[3]).dual[2, 1], atol = atol, rtol = rtol)
-   Evaluated: 0.6330466005278446 ≈ 0.6045632278069508 (atol=0.001, rtol=0.0)
+   Evaluated: 0.5513896486659352 ≈ 0.5497238116485749 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_norm_inf_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:240
   Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
-   Evaluated: -5.405313354407385 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: -86.54195978431497 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_norm_inf_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:241
   Expression: ≈(evaluate(norm_inf(x)), 0, atol = atol, rtol = rtol)
-   Evaluated: 0.49993051429789165 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.4999617514680001 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_norm_inf_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:242
   Expression: ≈(norm((p.constraints[1]).dual), 0, atol = atol, rtol = rtol)
-   Evaluated: 1.0402472666057876 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 16.65462521229555 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_norm_inf_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:243
   Expression: ≈(norm((p.constraints[2]).dual), 0, atol = atol, rtol = rtol)
-   Evaluated: 1.0402645870098077 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 16.65577335308092 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_maximum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:43
   Expression: ≈(p.optval, maximum(a), atol = atol, rtol = rtol)
-   Evaluated: 0.10528150927411775 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.10799905437465573 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_maximum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:44
   Expression: ≈(evaluate(maximum(x)), maximum(a), atol = atol, rtol = rtol)
-   Evaluated: 195006.1082603265 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 333541.65488022804 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_min_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:114
   Expression: ≈(p.optval, min(min_a, min_b), atol = 10atol, atol = atol, rtol = rtol)
-   Evaluated: 0.2941207879653608 ≈ 0.01 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.29412058677910397 ≈ 0.01 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_min_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:115
   Expression: ≈(evaluate(minimum(min(x, y))), min(min_a, min_b), atol = 10atol, atol = atol, rtol = rtol)
-   Evaluated: -181895.5985211129 ≈ 0.01 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: -181895.22633768915 ≈ 0.01 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_minimum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:58
   Expression: ≈(p.optval, minimum(a), atol = atol, rtol = rtol)
-   Evaluated: 0.04055438729552322 ≈ 0.01 (atol=0.001, rtol=0.0)
+   Evaluated: 0.00043701835819288855 ≈ 0.01 (atol=0.001, rtol=0.0)
 
 Error in testset lp_minimum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:59
   Expression: ≈(evaluate(minimum(x)), minimum(a), atol = atol, rtol = rtol)
-   Evaluated: -3251.299489608313 ≈ 0.01 (atol=0.001, rtol=0.0)
+   Evaluated: -1645.5553464210707 ≈ 0.01 (atol=0.001, rtol=0.0)
 
 Error in testset lp_minimum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:76
   Expression: ≈(p.optval, 130, atol = atol, rtol = rtol)
-   Evaluated: 6134.520135104548 ≈ 130 (atol=0.001, rtol=0.0)
+   Evaluated: 540.0955231934677 ≈ 130 (atol=0.001, rtol=0.0)
 
 Error in testset lp_minimum_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:77
   Expression: ≈((evaluate(objective))[1], 130, atol = atol, rtol = rtol)
-   Evaluated: -16414.676479226753 ≈ 130 (atol=0.001, rtol=0.0)
+   Evaluated: -16561.72364106456 ≈ 130 (atol=0.001, rtol=0.0)
 
 Error in testset lp_sumlargest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:157
   Expression: ≈(p.optval, 2, atol = atol, rtol = rtol)
-   Evaluated: 1.9974959871137703 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 2.0039165130737815 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset lp_sumlargest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:158
   Expression: ≈(evaluate(sumlargest(x, 2)), 2, atol = atol, rtol = rtol)
-   Evaluated: 1794.521317962382 ≈ 2 (atol=0.001, rtol=0.0)
+   Evaluated: 690.090334687978 ≈ 2 (atol=0.001, rtol=0.0)
 
 Error in testset lp_sumlargest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:169
   Expression: ≈(p.optval, 4.6, atol = atol, rtol = rtol)
-   Evaluated: 1.0942554673820448 ≈ 4.6 (atol=0.001, rtol=0.0)
+   Evaluated: 1.2695749598087565 ≈ 4.6 (atol=0.001, rtol=0.0)
 
 Error in testset lp_sumlargest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:170
   Expression: ≈(evaluate(sumlargest(x, 2)), 3.6, atol = atol, rtol = rtol)
-   Evaluated: 6120.213137486659 ≈ 3.6 (atol=0.001, rtol=0.0)
+   Evaluated: 7662.854923264906 ≈ 3.6 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:209
   Expression: ≈(p.optval, 19, atol = atol, rtol = rtol)
-   Evaluated: -1656.911483691074 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: -4226.756706279353 ≈ 19 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dotsort_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:222
   Expression: ≈(p.optval, 19, atol = atol, rtol = rtol)
-   Evaluated: -642.2096565011889 ≈ 19 (atol=0.001, rtol=0.0)
+   Evaluated: -1656.306031551212 ≈ 19 (atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:95
   Expression: ≈(p.optval, max(max_a, max_b), atol = 10atol, atol = atol, rtol = rtol)
-   Evaluated: 0.2941210546499919 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 0.29412087253797786 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:96
   Expression: ≈(evaluate(maximum(max(x, y))), max(max_a, max_b), atol = 10atol, atol = atol, rtol = rtol)
-   Evaluated: 181896.62262266187 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
+   Evaluated: 181896.25406505814 ≈ 1.0 (atol=0.01, atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:183
   Expression: ≈(p.optval, 0.5, atol = atol, rtol = rtol)
-   Evaluated: 0.3941731444376984 ≈ 0.5 (atol=0.001, rtol=0.0)
+   Evaluated: 0.3067501824936866 ≈ 0.5 (atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:184
   Expression: ≈(evaluate(sumsmallest(x, 4)), 1, atol = atol, rtol = rtol)
-   Evaluated: 30069.107487941546 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 37179.02271796833 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:195
   Expression: ≈(p.optval, 12, atol = atol, rtol = rtol)
-   Evaluated: 1227.7295799356098 ≈ 12 (atol=0.001, rtol=0.0)
+   Evaluated: 1655.7267884760195 ≈ 12 (atol=0.001, rtol=0.0)
 
 Error in testset lp_sumsmallest_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:196
   Expression: ≈(evaluate(sumsmallest(x, 3)), 12, atol = atol, rtol = rtol)
-   Evaluated: 7.599098751892001 ≈ 12 (atol=0.001, rtol=0.0)
+   Evaluated: 7.5996890728255755 ≈ 12 (atol=0.001, rtol=0.0)
 
 Error in testset lp_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:129
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: -13.46564096212387 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: -12.392175406217575 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset lp_pos_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:130
   Expression: ≈(evaluate(sum(pos(x))), 3, atol = atol, rtol = rtol)
-   Evaluated: 3.4905178124465146 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 3.4915023011327615 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_norm_1_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:256
   Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
-   Evaluated: -22.6263729963239 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: -59.8327571535104 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_norm_1_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:257
   Expression: ≈(evaluate(norm_1(x)), 0, atol = atol, rtol = rtol)
-   Evaluated: 1.497620393885787 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.498031072789727 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_norm_1_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:258
   Expression: ≈(norm((p.constraints[1]).dual), 0, atol = atol, rtol = rtol)
-   Evaluated: 4.352638431982787 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.507821766342715 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset lp_dual_norm_1_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/lp.jl:259
   Expression: ≈(norm((p.constraints[2]).dual), 0, atol = atol, rtol = rtol)
-   Evaluated: 4.358065684808025 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: 11.528814944101088 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_socp_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:408
   Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
-   Evaluated: -0.0067412574244200395 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: -2.423124212374358 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_socp_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:409
   Expression: ≈(evaluate(objective), 0.0, atol = atol, rtol = rtol)
-   Evaluated: 143.7868945223901 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 42.26276186180225 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_socp_abs_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:413
   Expression: ≈(real_diff, 0.0, atol = atol, rtol = rtol)
-   Evaluated: 143.7868945223901 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 42.26276186180225 ≈ 0.0 (atol=0.001, rtol=0.0)
 
-Error in testset sdp_Complex_Variable_with_complex_equality_constraints:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:341
-  Expression: ≈(real_diff, zeros(10, 1), atol = atol, rtol = rtol)
-   Evaluated: [247.85695471114767, 21.809852944006195, -273.65573135561294, -3125.582035119537, 144.815279155373, 551.6789493698266, 374.17543800238946, 485.4109221570516, 49.17162012081724, -499.88454447663565] ≈ [0.0; 0.0; … ; 0.0; 0.0] (atol=0.001, rtol=0.0)
+Error in testset sdp_matrix_frac_atom_both_arguments_variable:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:177
+  Expression: ≈(p.optval, 0.5, atol = atol, rtol = rtol)
+   Evaluated: -1.0617905322622447 ≈ 0.5 (atol=0.001, rtol=0.0)
 
-Error in testset sdp_Complex_Variable_with_complex_equality_constraints:
-Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:344
-  Expression: ≈(imag_diff, zeros(10, 1), atol = atol, rtol = rtol)
-   Evaluated: [19.019965667219026, 444.04943944158265, -3191.2399815511762, 37.555390907040874, -878.051776061838, 398.025333763665, 954.8907510748321, -2258.8218742439262, -1965.0915961017618, 47.250644326944325] ≈ [0.0; 0.0; … ; 0.0; 0.0] (atol=0.001, rtol=0.0)
+Error in testset sdp_matrix_frac_atom_both_arguments_variable:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:178
+  Expression: ≈((evaluate(matrixfrac(x, P)))[1], 0.5, atol = atol, rtol = rtol)
+   Evaluated: 4.138165552493213 ≈ 0.5 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_nuclear_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:81
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: -2.6344571539703434 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: -6.579627022679599 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_nuclear_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:82
   Expression: ≈(evaluate(nuclearnorm(y)), 3, atol = atol, rtol = rtol)
-   Evaluated: 27.80185716502595 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 3576.833607052017 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:189
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: 1.8179007154951228 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 1.0731091580215821 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:190
   Expression: ≈(evaluate(x), ones(3, 3), atol = atol, rtol = rtol)
-   Evaluated: [604.4184609532485 361.87416883219373 325.8004844959925; 361.87416883219373 586.6858045958206 340.8290808862132; 325.80048449599246 340.82908088621326 540.3445486030694] ≈ [1.0 1.0 1.0; 1.0 1.0 1.0; 1.0 1.0 1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [1713.5816689578576 974.0665996671687 969.7349099525968; 974.066599667168 1854.3155763155125 980.5740397814066; 969.7349099525965 980.5740397814063 1575.942530633432] ≈ [1.0 1.0 1.0; 1.0 1.0 1.0; 1.0 1.0 1.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:199
   Expression: ≈(p.optval, 8.4853, atol = atol, rtol = rtol)
-   Evaluated: 2.691895961633003 ≈ 8.4853 (atol=0.001, rtol=0.0)
+   Evaluated: 5.07888103650993 ≈ 8.4853 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:213
   Expression: ≈(p1.optval, p2.optval, atol = atol, rtol = rtol)
-   Evaluated: 0.0912106959621945 ≈ 0.8361807628224805 (atol=0.001, rtol=0.0)
+   Evaluated: 0.3032030721811215 ≈ 0.7483498424381397 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sum_largest_eigs:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:227
   Expression: ≈(p1.optval, p2.optval, atol = atol, rtol = rtol)
-   Evaluated: 2.0805499380002064 ≈ 2.2196763732715 (atol=0.001, rtol=0.0)
+   Evaluated: 1.1484086130787248 ≈ 3.9228816698829743 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_socp_sumsquares_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:389
   Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
-   Evaluated: -98.17499380568836 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: -0.7396427109635433 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_socp_sumsquares_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:390
   Expression: ≈(evaluate(objective), 0.0, atol = atol, rtol = rtol)
-   Evaluated: 191.2334305402175 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 15.65232583180574 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_socp_sumsquares_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:394
   Expression: ≈(real_diff, zeros(2, 1), atol = atol, rtol = rtol)
-   Evaluated: [13.02430768904991, 4.647670358488529] ≈ [0.0; 0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [3.9398434260519526, 0.36049911234419696] ≈ [0.0; 0.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdp_operator_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:95
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 0.4111268193023775 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 0.05102649695070054 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_operator_norm_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:96
   Expression: ≈(evaluate(opnorm(y)), 4, atol = atol, rtol = rtol)
-   Evaluated: 59.41636446104684 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 39.4155603328495 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_Real_Variables_with_complex_equality_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:314
   Expression: x1 == x2
-   Evaluated: [0.8445023382007603, 0.05791799538126989, 0.9905757377709771, 0.20369411111169186, 0.9906382776062352, 0.14678310332364244, 0.05104460303926892, 0.7838275323079541, 0.7847857745070131, 0.6233439601539547] == [0.8445023373067726, 0.05791799440056973, 0.9905757370691614, 0.20369411033414728, 0.9906382764816133, 0.1467831038215861, 0.05104460279045809, 0.7838275325719383, 0.7847857736780663, 0.6233439581149508]
+   Evaluated: [0.8794087494398597, 0.4175148007427092, 0.008828568071314387, 0.01822304222909471, 0.7770727278932409, 0.6564956999857083, 0.7306000398207881, 0.8458226814246066, 0.9243024618027623, 0.389732268371857] == [0.8794087494408702, 0.417514800741565, 0.008828568071316956, 0.018223042236601556, 0.777072727897032, 0.6564956999851786, 0.7306000398119961, 0.8458226814109803, 0.9243024618235997, 0.3897322683713661]
 
 Error in testset sdp_sdp_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:68
   Expression: ≈(p.optval, 1, atol = atol, rtol = rtol)
-   Evaluated: 0.5015207075078556 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 0.5004930686736474 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sigma_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:109
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 0.05436809774428235 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 0.05102649695070054 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sigma_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:110
   Expression: ≈(evaluate(sigmamax(y)), 4, atol = atol, rtol = rtol)
-   Evaluated: 274.8898904851519 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 39.4155603328495 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:123
   Expression: ≈(p.optval, 4, atol = atol, rtol = rtol)
-   Evaluated: 0.0912106959621945 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 0.3032030721811215 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:124
   Expression: ≈(evaluate(eigmax(y)), 4, atol = atol, rtol = rtol)
-   Evaluated: 12.325737006671302 ≈ 4 (atol=0.001, rtol=0.0)
+   Evaluated: 37.32003637307197 ≈ 4 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:132
   Expression: ≈(p.optval, 1.5, atol = atol, rtol = rtol)
-   Evaluated: -0.23074190085753798 ≈ 1.5 (atol=0.001, rtol=0.0)
+   Evaluated: -0.4576733112335205 ≈ 1.5 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:133
   Expression: ≈((p.constraints[1]).dual, im, atol = atol, rtol = rtol)
-   Evaluated: 0.0 + 0.021706479601562023im ≈ im (atol=0.001, rtol=0.0)
+   Evaluated: 0.0 + 0.2029754724353552im ≈ im (atol=0.001, rtol=0.0)
 
 Error in testset sdp_dual_lambda_max_atom:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:134
   Expression: ≈((p.constraints[2]).dual, 0.75, atol = atol, rtol = rtol)
-   Evaluated: -0.11095195636153221 + 0.0im ≈ 0.75 (atol=0.001, rtol=0.0)
+   Evaluated: -0.21295440383255482 + 0.0im ≈ 0.75 (atol=0.001, rtol=0.0)
+
+Error in testset sdp_socp_norm2_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:370
+  Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
+   Evaluated: -0.37540946211139936 ≈ 0 (atol=0.001, rtol=0.0)
+
+Error in testset sdp_socp_norm2_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:371
+  Expression: ≈(evaluate(objective), 0, atol = atol, rtol = rtol)
+   Evaluated: 61.5688162198729 ≈ 0 (atol=0.001, rtol=0.0)
+
+Error in testset sdp_socp_norm2_atom:
+Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:375
+  Expression: ≈(real_diff, 0, atol = atol, rtol = rtol)
+   Evaluated: 61.5688162198729 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sdp_variables:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:18
   Expression: ≈(p.optval, 0, atol = atol, rtol = rtol)
-   Evaluated: -261.3389321200084 ≈ 0 (atol=0.001, rtol=0.0)
+   Evaluated: -84.78890583757311 ≈ 0 (atol=0.001, rtol=0.0)
 
 Error in testset sdp_sdp_variables:
 Test Failed at /home/runner/.julia/packages/Convex/cKTOH/src/problem_depot/problems/sdp.jl:46
   Expression: ≈(p.optval, 3, atol = atol, rtol = rtol)
-   Evaluated: -1.2289045639066494 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: -0.4444041619073791 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:22
@@ -12258,7 +12331,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_f
 Error in testset sdsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:23
   Expression: ≈(objective_value(model), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.04821315407752991 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.2308904230594635 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:25
@@ -12268,12 +12341,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_f
 Error in testset sdsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:26
   Expression: ≈(value(α), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 5163.942016753883 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 6608.35358841053 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:30
   Expression: ≈(getmat(p), zeros(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [5162.942018392643] ≈ [0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [6607.353596604334] ≈ [0.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:33
@@ -12283,17 +12356,17 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_f
 Error in testset sdsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.04821315407752991 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.2308904230594635 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.04821315407752991 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.2308904230594635 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:42
   Expression: ≈(getmat(ν), ones(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.048213163254823624] ≈ [1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.23086876229159292] ≈ [1.0] (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_horn:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -12401,7 +12474,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quarti
 Error in testset sdsos_quartic_comparison:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quartic_comparison.jl:32
   Expression: ≈(JuMP.objective_value(model), expected_objective_value, atol = atol, rtol = rtol)
-   Evaluated: 2.734536234755069 ≈ -3.172412 (atol=0.001, rtol=0.0)
+   Evaluated: 3.645613484084606 ≈ -3.172412 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_concave_then_convex_cubic:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -12455,7 +12528,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:22
   Expression: termination_status(model) == MOI.OPTIMAL
-   Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
+   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.OPTIMAL
 
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:25
@@ -12465,27 +12538,32 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.j
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:26
   Expression: ≈(value(α), 0.0, atol = atol, rtol = rtol)
-   Evaluated: 10805.963697087336 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 6312.9932871276715 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:30
   Expression: ≈(getmat(p), zeros(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [10805.96369715288] ≈ [0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [6312.993288766268] ≈ [0.0] (atol=0.001, rtol=0.0)
+
+Error in testset sdsos_term:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:33
+  Expression: dual_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.UNKNOWN_RESULT_STATUS == MathOptInterface.FEASIBLE_POINT
 
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 1.7742301225662231 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.881778359413147 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 1.7742301225662231 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.881778359413147 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sdsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:42
   Expression: ≈(getmat(ν), ones(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.0019807939997961233] ≈ [1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.05227889420048029] ≈ [1.0] (atol=0.001, rtol=0.0)
 
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -12495,7 +12573,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 10.361508645117283 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 6.415869027376175 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -12505,7 +12583,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 8.284311652183533 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 22.56753706932068 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -12515,7 +12593,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 5.553717888891697 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 55.14080333709717 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -12525,7 +12603,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -3.5903081446886063 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: -6.3175875544548035 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -12535,7 +12613,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -12.68274438381195 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: -8.593999981880188 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset dsos_univariate_sum:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -12594,7 +12672,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 8.11297819018364 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 24.312275409698486 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -12604,7 +12682,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 10.128925204277039 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 18.145631790161133 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -12614,7 +12692,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 72.40190982818604 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 91.05803155899048 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -12624,7 +12702,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 14.963206768035889 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 0.9241734743118286 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -12634,7 +12712,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -11.024043560028076 ≈ 132.63 (atol=0.1, rtol=0.0)
+   Evaluated: 124.52953004837036 ≈ 132.63 (atol=0.1, rtol=0.0)
 
 Error in testset dsos_quartic_comparison:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quartic_comparison.jl:31
@@ -12644,7 +12722,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quarti
 Error in testset dsos_quartic_comparison:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quartic_comparison.jl:32
   Expression: ≈(JuMP.objective_value(model), expected_objective_value, atol = atol, rtol = rtol)
-   Evaluated: 4.783077047206461 ≈ -3.6666666666666665 (atol=0.001, rtol=0.0)
+   Evaluated: 5.022973992396146 ≈ -3.6666666666666665 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_horn:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -12698,7 +12776,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:22
   Expression: termination_status(model) == MOI.OPTIMAL
-   Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
+   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.OPTIMAL
 
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:25
@@ -12708,27 +12786,32 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.j
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:26
   Expression: ≈(value(α), 0.0, atol = atol, rtol = rtol)
-   Evaluated: 10805.963697087336 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 6312.9932871276715 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:30
   Expression: ≈(getmat(p), zeros(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [10805.96369715288] ≈ [0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [6312.993288766268] ≈ [0.0] (atol=0.001, rtol=0.0)
+
+Error in testset dsos_term:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:33
+  Expression: dual_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.UNKNOWN_RESULT_STATUS == MathOptInterface.FEASIBLE_POINT
 
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 1.7742301225662231 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.881778359413147 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 1.7742301225662231 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.881778359413147 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:42
   Expression: ≈(getmat(ν), ones(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.0019807939997961233] ≈ [1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.05227889420048029] ≈ [1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:22
@@ -12738,7 +12821,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_f
 Error in testset dsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:23
   Expression: ≈(objective_value(model), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.04821315407752991 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.2308904230594635 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:25
@@ -12748,12 +12831,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_f
 Error in testset dsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:26
   Expression: ≈(value(α), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 5163.942016753883 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 6608.35358841053 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:30
   Expression: ≈(getmat(p), zeros(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [5162.942018392643] ≈ [0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [6607.353596604334] ≈ [0.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:33
@@ -12763,17 +12846,17 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_f
 Error in testset dsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.04821315407752991 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.2308904230594635 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.04821315407752991 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.2308904230594635 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset dsos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:42
   Expression: ≈(getmat(ν), ones(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.048213163254823624] ≈ [1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.23086876229159292] ≈ [1.0] (atol=0.001, rtol=0.0)
 
 Error in testset dsos_concave_then_convex_cubic:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -12978,7 +13061,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_f
 Error in testset sos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:23
   Expression: ≈(objective_value(model), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.04821315407752991 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.2308904230594635 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:25
@@ -12988,12 +13071,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_f
 Error in testset sos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:26
   Expression: ≈(value(α), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 5163.942016753883 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 6608.35358841053 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:30
   Expression: ≈(getmat(p), zeros(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [5162.942018392643] ≈ [0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [6607.353596604334] ≈ [0.0] (atol=0.001, rtol=0.0)
 
 Error in testset sos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:33
@@ -13003,17 +13086,17 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_f
 Error in testset sos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.04821315407752991 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.2308904230594635 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 0.04821315407752991 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.2308904230594635 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term_fixed:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term_fixed.jl:42
   Expression: ≈(getmat(ν), ones(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.048213163254823624] ≈ [1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.23086876229159292] ≈ [1.0] (atol=0.001, rtol=0.0)
 
 Error in testset rearrangement:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -13166,7 +13249,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:22
   Expression: termination_status(model) == MOI.OPTIMAL
-   Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
+   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.OPTIMAL
 
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:25
@@ -13176,27 +13259,32 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.j
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:26
   Expression: ≈(value(α), 0.0, atol = atol, rtol = rtol)
-   Evaluated: 10805.963697087336 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 6312.9932871276715 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:30
   Expression: ≈(getmat(p), zeros(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [10805.96369715288] ≈ [0.0] (atol=0.001, rtol=0.0)
+   Evaluated: [6312.993288766268] ≈ [0.0] (atol=0.001, rtol=0.0)
+
+Error in testset sos_term:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:33
+  Expression: dual_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.UNKNOWN_RESULT_STATUS == MathOptInterface.FEASIBLE_POINT
 
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 1.7742301225662231 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.881778359413147 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:37
   Expression: ≈(moment_value((moments(μ))[1]), 1.0, atol = atol, rtol = rtol)
-   Evaluated: 1.7742301225662231 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 0.881778359413147 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset sos_term:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/term.jl:42
   Expression: ≈(getmat(ν), ones(1, 1), atol = atol, rtol = rtol)
-   Evaluated: [0.0019807939997961233] ≈ [1.0] (atol=0.001, rtol=0.0)
+   Evaluated: [0.05227889420048029] ≈ [1.0] (atol=0.001, rtol=0.0)
 
 Error in testset quartic_ideal_rem:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -13309,12 +13397,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebys
 Error in testset chebyshev:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebyshev.jl:34
   Expression: isapprox(JuMP.value(p), (((128 * x ^ 8 - 256 * x ^ 6) + 160 * x ^ 4) - 32 * x ^ 2) + 1, ztol = 4 * config.atol, atol = 4 * config.atol, rtol = 4 * config.rtol)
-   Evaluated: isapprox(2.9093479079326974x⁸ - 0.8972052316454746x⁷ - 6.156020423103464x⁶ + 1.4640950303939335x⁵ + 4.205102974964444x⁴ - 0.6920648580554601x³ - 0.9650633804778028x² + 0.14747364092747411x - 0.0037055016467594654, 128x⁸ - 256x⁶ + 160x⁴ - 32x² + 1; ztol = 0.004, atol = 0.004, rtol = 0.0)
+   Evaluated: isapprox(-6.93512586123051x⁸ - 5.029871245943085x⁷ + 15.412062255125043x⁶ + 8.97410654673294x⁵ - 11.261416327826804x⁴ - 4.6110195206850895x³ + 2.7741149674902643x² + 0.6410879699439812x + 0.13160979945279924, 128x⁸ - 256x⁶ + 160x⁴ - 32x² + 1; ztol = 0.004, atol = 0.004, rtol = 0.0)
 
 Error in testset chebyshev:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/chebyshev.jl:35
   Expression: isapprox(JuMP.value(γ), 128, atol = config.atol, rtol = config.rtol)
-   Evaluated: isapprox(2.9093479079326974, 128; atol = 0.001, rtol = 0.0)
+   Evaluated: isapprox(-6.93512586123051, 128; atol = 0.001, rtol = 0.0)
 
 Error in testset sosdemo9:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -13519,7 +13607,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:33
   Expression: ≈(objective_value(model), α_value, atol = atol, rtol = rtol)
-   Evaluated: 6.681338429450989 ≈ 6.0 (atol=0.001, rtol=0.0)
+   Evaluated: 8.388617157936096 ≈ 6.0 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:35
@@ -13529,12 +13617,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:36
   Expression: ≈(JuMP.value(α), α_value, atol = atol, rtol = rtol)
-   Evaluated: 2.8810247162208857 ≈ 6.0 (atol=0.001, rtol=0.0)
+   Evaluated: 3.2979628727100248 ≈ 6.0 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:41
   Expression: ≈(getmat(p), [1 -3; -3 9], atol = atol, rtol = rtol)
-   Evaluated: [1.0000000285197144 -1.4405123581104433; -1.4405123581104433 9.000000057019449] ≈ [1 -3; -3 9] (atol=0.001, rtol=0.0)
+   Evaluated: [1.0000000285197144 -1.6489814363550126; -1.6489814363550126 9.000000057019449] ≈ [1 -3; -3 9] (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:52
@@ -13543,12 +13631,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
     else
         0.0
     end, atol = atol, rtol = rtol)
-   Evaluated: -2.9694836288690567 ≈ -2.6666666666666665 (atol=0.001, rtol=0.0)
+   Evaluated: -3.7282741516828537 ≈ -2.6666666666666665 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:54
   Expression: ≈(moment_value((moments(μ))[2]), 1, atol = atol, rtol = rtol)
-   Evaluated: 0.6270567178726196 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 1.0529048144817352 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:56
@@ -13557,22 +13645,85 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
     else
         1.0
     end, atol = atol, rtol = rtol)
-   Evaluated: 0.3711854815483093 ≈ 0.3333333333333333 (atol=0.001, rtol=0.0)
+   Evaluated: 0.46603429317474365 ≈ 0.3333333333333333 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:63
   Expression: ≈(moment_value((moments(μ))[1]), 3, atol = atol, rtol = rtol)
-   Evaluated: 3.340669110417366 ≈ 3 (atol=0.001, rtol=0.0)
+   Evaluated: 4.194308444857597 ≈ 3 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:65
   Expression: ≈(moment_value((moments(μ))[2]), 1, atol = atol, rtol = rtol)
-   Evaluated: 0.6270567178726196 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 1.0529048144817352 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_rem:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:67
   Expression: ≈(moment_value((moments(μ))[3]), 1 / 3, atol = atol, rtol = rtol)
-   Evaluated: 0.3711854815483093 ≈ 0.3333333333333333 (atol=0.001, rtol=0.0)
+   Evaluated: 0.46603429317474365 ≈ 0.3333333333333333 (atol=0.001, rtol=0.0)
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:86
+  Expression: termination_status(model) == MOI.OPTIMAL
+   Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:87
+  Expression: ≈(objective_value(model), -α_value, atol = atol, rtol = rtol)
+   Evaluated: -7.67264711856842 ≈ -6.0 (atol=0.001, rtol=0.0)
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:89
+  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.UNKNOWN_RESULT_STATUS == MathOptInterface.FEASIBLE_POINT
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:90
+  Expression: ≈(JuMP.value(α), -α_value, atol = atol, rtol = rtol)
+   Evaluated: -3.306058704911104 ≈ -6.0 (atol=0.001, rtol=0.0)
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:95
+  Expression: ≈(getmat(p), [1 3; 3 9], atol = atol, rtol = rtol)
+   Evaluated: [1.0000000285197144 1.653029352455552; 1.653029352455552 9.000000057019449] ≈ [1 3; 3 9] (atol=0.001, rtol=0.0)
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:106
+  Expression: ≈(moment_value((moments(μ))[1]), if remainder
+        -8 / 3
+    else
+        0.0
+    end, atol = atol, rtol = rtol)
+   Evaluated: -3.410065323114395 ≈ -2.6666666666666665 (atol=0.001, rtol=0.0)
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:108
+  Expression: ≈(moment_value((moments(μ))[2]), -1, atol = atol, rtol = rtol)
+   Evaluated: -0.9326822012662888 ≈ -1 (atol=0.001, rtol=0.0)
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:110
+  Expression: ≈(moment_value((moments(μ))[3]), if remainder
+        1 / 3
+    else
+        1.0
+    end, atol = atol, rtol = rtol)
+   Evaluated: 0.4262581765651703 ≈ 0.3333333333333333 (atol=0.001, rtol=0.0)
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:117
+  Expression: ≈(moment_value((moments(μ))[1]), 3, atol = atol, rtol = rtol)
+   Evaluated: 3.8363234996795654 ≈ 3 (atol=0.001, rtol=0.0)
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:119
+  Expression: ≈(moment_value((moments(μ))[2]), -1, atol = atol, rtol = rtol)
+   Evaluated: -0.9326822012662888 ≈ -1 (atol=0.001, rtol=0.0)
+
+Error in testset BPT12e399_rem:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:121
+  Expression: ≈(moment_value((moments(μ))[3]), 1 / 3, atol = atol, rtol = rtol)
+   Evaluated: 0.4262581765651703 ≈ 0.3333333333333333 (atol=0.001, rtol=0.0)
 
 Error in testset quadratic_infeasible_lyapunov_switched_system:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -13923,7 +14074,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:33
   Expression: ≈(objective_value(model), α_value, atol = atol, rtol = rtol)
-   Evaluated: 48.80319023132324 ≈ 10.0 (atol=0.001, rtol=0.0)
+   Evaluated: 63.274024963378906 ≈ 10.0 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:35
@@ -13933,12 +14084,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:36
   Expression: ≈(JuMP.value(α), α_value, atol = atol, rtol = rtol)
-   Evaluated: 1.3192911628678972 ≈ 10.0 (atol=0.001, rtol=0.0)
+   Evaluated: 1.10010555894829 ≈ 10.0 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:44
   Expression: ≈(getmat(p), [4.0 0.0 0.0; 0.0 5.0 -5.0; 0.0 -5.0 5.0], atol = atol, rtol = rtol)
-   Evaluated: [5.827545574462408 0.0 0.0; 0.0 6.827545574457509 -0.6596455814339486; 0.0 -0.6596455814339486 3.1724545235406882] ≈ [4.0 0.0 0.0; 0.0 5.0 -5.0; 0.0 -5.0 5.0] (atol=0.001, rtol=0.0)
+   Evaluated: [5.832735139805478 0.0 0.0; 0.0 6.832735139800578 -0.550052779474145; 0.0 -0.550052779474145 3.16726495819762] ≈ [4.0 0.0 0.0; 0.0 5.0 -5.0; 0.0 -5.0 5.0] (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:52
@@ -13947,12 +14098,12 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
     else
         0.0
     end, atol = atol, rtol = rtol)
-   Evaluated: 2.7286123633384705 ≈ 0.0 (atol=0.001, rtol=0.0)
+   Evaluated: 3.5505600571632385 ≈ 0.0 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:54
   Expression: ≈(moment_value((moments(μ))[2]), 1, atol = atol, rtol = rtol)
-   Evaluated: 1.0300356149673462 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 1.0109215378761292 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:56
@@ -13961,85 +14112,22 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e
     else
         1.0
     end, atol = atol, rtol = rtol)
-   Evaluated: 5.153180241584778 ≈ 1.0 (atol=0.001, rtol=0.0)
+   Evaluated: 6.682458460330963 ≈ 1.0 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:73
   Expression: ≈(moment_value((moments(μ))[2]), 1, atol = atol, rtol = rtol)
-   Evaluated: 2.4245678782463074 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 3.1318984031677246 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:77
   Expression: ≈(moment_value((moments(μ))[4]), 1, atol = atol, rtol = rtol)
-   Evaluated: 1.0300356149673462 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 1.0109215378761292 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset BPT12e399_maxdegree:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:79
   Expression: ≈(moment_value((moments(μ))[5]), 1, atol = atol, rtol = rtol)
-   Evaluated: 5.153180241584778 ≈ 1 (atol=0.001, rtol=0.0)
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:86
-  Expression: termination_status(model) == MOI.OPTIMAL
-   Evaluated: MathOptInterface.SLOW_PROGRESS == MathOptInterface.OPTIMAL
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:87
-  Expression: ≈(objective_value(model), -α_value, atol = atol, rtol = rtol)
-   Evaluated: -63.19703149795532 ≈ -10.0 (atol=0.001, rtol=0.0)
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:89
-  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
-   Evaluated: MathOptInterface.UNKNOWN_RESULT_STATUS == MathOptInterface.FEASIBLE_POINT
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:90
-  Expression: ≈(JuMP.value(α), -α_value, atol = atol, rtol = rtol)
-   Evaluated: -1.1077672733373713 ≈ -10.0 (atol=0.001, rtol=0.0)
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:98
-  Expression: ≈(getmat(p), [4.0 0.0 0.0; 0.0 5.0 5.0; 0.0 5.0 5.0], atol = atol, rtol = rtol)
-   Evaluated: [5.829260235432956 0.0 0.0; 0.0 6.829260235428057 0.5538836366686857; 0.0 0.5538836366686857 3.17073986257014] ≈ [4.0 0.0 0.0; 0.0 5.0 5.0; 0.0 5.0 5.0] (atol=0.001, rtol=0.0)
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:106
-  Expression: ≈(moment_value((moments(μ))[1]), if remainder
-        -8 / 3
-    else
-        0.0
-    end, atol = atol, rtol = rtol)
-   Evaluated: 3.52848744392395 ≈ 0.0 (atol=0.001, rtol=0.0)
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:108
-  Expression: ≈(moment_value((moments(μ))[2]), -1, atol = atol, rtol = rtol)
-   Evaluated: -1.0149893760681152 ≈ -1 (atol=0.001, rtol=0.0)
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:110
-  Expression: ≈(moment_value((moments(μ))[3]), if remainder
-        1 / 3
-    else
-        1.0
-    end, atol = atol, rtol = rtol)
-   Evaluated: 6.672551929950714 ≈ 1.0 (atol=0.001, rtol=0.0)
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:127
-  Expression: ≈(moment_value((moments(μ))[2]), 1, atol = atol, rtol = rtol)
-   Evaluated: 3.144064486026764 ≈ 1 (atol=0.001, rtol=0.0)
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:131
-  Expression: ≈(moment_value((moments(μ))[4]), -1, atol = atol, rtol = rtol)
-   Evaluated: -1.0149893760681152 ≈ -1 (atol=0.001, rtol=0.0)
-
-Error in testset BPT12e399_maxdegree:
-Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/BPT12e399.jl:133
-  Expression: ≈(moment_value((moments(μ))[5]), 1, atol = atol, rtol = rtol)
-   Evaluated: 6.672551929950714 ≈ 1 (atol=0.001, rtol=0.0)
+   Evaluated: 6.682458460330963 ≈ 1 (atol=0.001, rtol=0.0)
 
 Error in testset quartic_infeasible_lyapunov_switched_system:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -14098,7 +14186,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 30:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 11.244132816791534 ≈ 21.51 (atol=0.1, rtol=0.0)
+   Evaluated: 11.602116361260414 ≈ 21.51 (atol=0.1, rtol=0.0)
 
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -14108,7 +14196,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 35:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 8.448910176753998 ≈ 17.17 (atol=0.1, rtol=0.0)
+   Evaluated: 6.880144327878952 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -14118,7 +14206,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 40:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 6.535996377468109 ≈ 13.2 (atol=0.1, rtol=0.0)
+   Evaluated: 1.0411239713430405 ≈ 13.2 (atol=0.1, rtol=0.0)
 
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -14128,7 +14216,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 45:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: 0.09508895874023438 ≈ 9.85 (atol=0.1, rtol=0.0)
+   Evaluated: 2.158135235309601 ≈ 9.85 (atol=0.1, rtol=0.0)
 
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:31
@@ -14138,7 +14226,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/option
 Error in testset K = 50:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/options_pricing.jl:32
   Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
-   Evaluated: -1.6590863317251205 ≈ 7.3 (atol=0.1, rtol=0.0)
+   Evaluated: -2.5149394869804382 ≈ 7.3 (atol=0.1, rtol=0.0)
 
 Error in testset quartic_infeasible_scaled_lyapunov_switched_system:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -14392,7 +14480,7 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quarti
 Error in testset sos_quartic_comparison:
 Test Failed at /home/runner/.julia/packages/SumOfSquares/eTfn2/test/Tests/quartic_comparison.jl:32
   Expression: ≈(JuMP.objective_value(model), expected_objective_value, atol = atol, rtol = rtol)
-   Evaluated: 3.7451846674084663 ≈ -0.184667 (atol=0.001, rtol=0.0)
+   Evaluated: 3.988379593472928 ≈ -0.184667 (atol=0.001, rtol=0.0)
 
 Error in testset quartic_ideal_2_rem:
 Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
@@ -14451,162 +14539,162 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
  ──────────────────────────────────────────────────────────────────────────────
                                        Time                   Allocations      
                                ──────────────────────   ───────────────────────
-       Tot / % measured:            25.0s / 100%             336MiB / 99.1%    
+       Tot / % measured:            31.1s / 100%             329MiB / 99.1%    
 
  Section               ncalls     time   %tot     avg     alloc   %tot      avg
  ──────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1    21.8s  87.2%   21.8s    137MiB  41.0%   137MiB
-   sdp                      1    10.7s  42.9%   10.7s   84.7MiB  25.4%  84.7MiB
-     sos_options_pr...      1    1.81s  7.24%   1.81s   9.64MiB  2.89%  9.64MiB
-     BPT12e399_maxd...      1    476ms  1.90%   476ms   3.11MiB  0.93%  3.11MiB
-     BPT12e399_rem          1    445ms  1.78%   445ms   2.19MiB  0.66%  2.19MiB
-     sos_concave_th...      1    353ms  1.41%   353ms   1.17MiB  0.35%  1.17MiB
-     sos_term_fixed         1    339ms  1.36%   339ms   1.70MiB  0.51%  1.70MiB
-     sos_horn               1    326ms  1.30%   326ms   1.17MiB  0.35%  1.17MiB
-     quartic_ideal          1    269ms  1.07%   269ms    947KiB  0.28%   947KiB
-     maxcut                 1    257ms  1.03%   257ms   4.66MiB  1.40%  4.66MiB
-     quartic_ideal_...      1    252ms  1.01%   252ms    943KiB  0.28%   943KiB
-     sos_scaled_uni...      1    251ms  1.00%   251ms   0.97MiB  0.29%  0.97MiB
-     quartic_ideal_4        1    247ms  0.99%   247ms    932KiB  0.27%   932KiB
-     sos_scaled_biv...      1    244ms  0.98%   244ms   0.97MiB  0.29%  0.97MiB
-     quartic_ideal_rem      1    243ms  0.97%   243ms    953KiB  0.28%   953KiB
-     sos_univariate...      1    243ms  0.97%   243ms   0.97MiB  0.29%  0.97MiB
-     rearrangement          1    242ms  0.97%   242ms   1.17MiB  0.35%  1.17MiB
-     quartic_ideal_...      1    241ms  0.96%   241ms    949KiB  0.28%   949KiB
-     quadratic_feas...      1    236ms  0.94%   236ms   0.96MiB  0.29%  0.96MiB
-     sos_cheby_univ...      1    235ms  0.94%   235ms   1.01MiB  0.30%  1.01MiB
-     chebyshev              1    235ms  0.94%   235ms   2.24MiB  0.67%  2.24MiB
-     sos_bivariate_...      1    234ms  0.93%   234ms   0.97MiB  0.29%  0.97MiB
-     quadratic_infe...      1    230ms  0.92%   230ms   0.96MiB  0.29%  0.96MiB
-     quadratic_infe...      1    222ms  0.89%   222ms   0.96MiB  0.29%  0.96MiB
-     sosdemo5_infea...      1    216ms  0.86%   216ms   14.9MiB  4.48%  14.9MiB
-     sosdemo5_feasible      1    211ms  0.84%   211ms   14.9MiB  4.47%  14.9MiB
-     sos_quartic_co...      1    207ms  0.83%   207ms    808KiB  0.24%   808KiB
-     sos_univariate...      1    207ms  0.83%   207ms    895KiB  0.26%   895KiB
-     sos_term               1    203ms  0.81%   203ms   1.35MiB  0.41%  1.35MiB
-     quartic_infeas...      1    198ms  0.79%   198ms   0.97MiB  0.29%  0.97MiB
-     quadratic_feas...      1    194ms  0.78%   194ms    972KiB  0.28%   972KiB
-     sosdemo9               1    194ms  0.77%   194ms   1.28MiB  0.38%  1.28MiB
-     motzkin                1    193ms  0.77%   193ms    933KiB  0.27%   933KiB
-     choi                   1    193ms  0.77%   193ms   1.20MiB  0.36%  1.20MiB
-     quartic_infeas...      1    189ms  0.76%   189ms   1.00MiB  0.30%  1.00MiB
-     quartic_feasib...      1    185ms  0.74%   185ms   1.00MiB  0.30%  1.00MiB
-     quartic_feasib...      1    179ms  0.72%   179ms   0.97MiB  0.29%  0.97MiB
-     simple_matrix          1    178ms  0.71%   178ms    959KiB  0.28%   959KiB
-     sosdemo10              1    176ms  0.70%   176ms   2.07MiB  0.62%  2.07MiB
-     sos_quartic_co...      1    176ms  0.70%   176ms   1.02MiB  0.31%  1.02MiB
-   socp                     1    6.23s  24.9%   6.23s   26.9MiB  8.09%  26.9MiB
-     sdsos_options_...      1    2.61s  10.4%   2.61s   13.1MiB  3.94%  13.1MiB
-     sdsos_term_fixed       1    417ms  1.67%   417ms   1.71MiB  0.51%  1.71MiB
-     sdsos_horn             1    400ms  1.60%   400ms   1.28MiB  0.38%  1.28MiB
-     sdsos_cheby_un...      1    319ms  1.28%   319ms   1.01MiB  0.30%  1.01MiB
-     sdsos_scaled_b...      1    312ms  1.25%   312ms   0.98MiB  0.30%  0.98MiB
-     sdsos_concave_...      1    310ms  1.24%   310ms   1.25MiB  0.38%  1.25MiB
-     sdsos_univaria...      1    291ms  1.16%   291ms   0.98MiB  0.29%  0.98MiB
-     sdsos_bivariat...      1    285ms  1.14%   285ms   0.98MiB  0.29%  0.98MiB
-     sdsos_scaled_u...      1    284ms  1.14%   284ms   0.98MiB  0.29%  0.98MiB
-     sdsos_quartic_...      1    273ms  1.09%   273ms   1.54MiB  0.46%  1.54MiB
-     sdsos_term             1    264ms  1.06%   264ms   1.36MiB  0.41%  1.36MiB
-     sdsos_univaria...      1    262ms  1.05%   262ms    905KiB  0.27%   905KiB
-     sdsos_quartic_...      1    200ms  0.80%   200ms    817KiB  0.24%   817KiB
-   lp                       1    4.86s  19.4%   4.86s   25.1MiB  7.54%  25.1MiB
-     dsos_options_p...      1    1.72s  6.86%   1.72s   11.1MiB  3.32%  11.1MiB
-     dsos_term_fixed        1    354ms  1.41%   354ms   1.69MiB  0.51%  1.69MiB
-     dsos_horn              1    294ms  1.17%   294ms   1.19MiB  0.36%  1.19MiB
-     dsos_concave_t...      1    272ms  1.09%   272ms   1.15MiB  0.34%  1.15MiB
-     dsos_cheby_uni...      1    259ms  1.04%   259ms   0.98MiB  0.29%  0.98MiB
-     dsos_cheby_biv...      1    257ms  1.03%   257ms   1.00MiB  0.30%  1.00MiB
-     dsos_scaled_un...      1    248ms  0.99%   248ms   0.96MiB  0.29%  0.96MiB
-     dsos_scaled_bi...      1    245ms  0.98%   245ms   0.97MiB  0.29%  0.97MiB
-     dsos_bivariate...      1    243ms  0.97%   243ms   0.97MiB  0.29%  0.97MiB
-     dsos_univariat...      1    239ms  0.96%   239ms   0.96MiB  0.29%  0.96MiB
-     dsos_term              1    206ms  0.82%   206ms   1.34MiB  0.40%  1.34MiB
-     dsos_univariat...      1    204ms  0.82%   204ms    876KiB  0.26%   876KiB
-     dsos_quartic_c...      1    178ms  0.71%   178ms    798KiB  0.23%   798KiB
-     dsos_quartic_c...      1    148ms  0.59%   148ms   1.15MiB  0.35%  1.15MiB
- Convex                     1    3.19s  12.8%   3.19s    196MiB  59.0%   196MiB
-   affine                   1    1.18s  4.72%   1.18s    125MiB  37.4%   125MiB
-     affine_Partial...      1    405ms  1.62%   405ms   92.9MiB  27.9%  92.9MiB
-     affine_vcat_atom       1    120ms  0.48%   120ms   8.32MiB  2.50%  8.32MiB
-     affine_transpo...      1    119ms  0.48%   119ms   1.69MiB  0.51%  1.69MiB
-     affine_dot_mul...      1   90.3ms  0.36%  90.3ms   3.00MiB  0.90%  3.00MiB
-     affine_permute...      1   46.4ms  0.19%  46.4ms    894KiB  0.26%   894KiB
-     affine_add_atom        1   44.0ms  0.18%  44.0ms   1.43MiB  0.43%  1.43MiB
-     affine_reshape...      1   36.2ms  0.14%  36.2ms   1.63MiB  0.49%  1.63MiB
-     affine_multipl...      1   36.1ms  0.14%  36.1ms   2.13MiB  0.64%  2.13MiB
-     affine_diag_atom       1   34.5ms  0.14%  34.5ms   1.00MiB  0.30%  1.00MiB
-     affine_dualvalue       1   33.5ms  0.13%  33.5ms   1.57MiB  0.47%  1.57MiB
-     affine_index_atom      1   32.2ms  0.13%  32.2ms   1.65MiB  0.49%  1.65MiB
-     affine_dot_ato...      1   32.1ms  0.13%  32.1ms    538KiB  0.16%   538KiB
-     affine_sum_atom        1   25.3ms  0.10%  25.3ms   1.34MiB  0.40%  1.34MiB
-     affine_trace_atom      1   20.4ms  0.08%  20.4ms    453KiB  0.13%   453KiB
-     affine_hcat_atom       1   19.3ms  0.08%  19.3ms    920KiB  0.27%   920KiB
-     affine_satisfy...      1   18.5ms  0.07%  18.5ms   1.38MiB  0.41%  1.38MiB
-     affine_Diagona...      1   15.4ms  0.06%  15.4ms   1.09MiB  0.33%  1.09MiB
-     affine_dot_atom        1   12.2ms  0.05%  12.2ms    526KiB  0.15%   526KiB
-     affine_conv_atom       1   10.5ms  0.04%  10.5ms    766KiB  0.22%   766KiB
-     affine_single_...      1   10.0ms  0.04%  10.0ms    536KiB  0.16%   536KiB
-     affine_single_...      1   9.65ms  0.04%  9.65ms    520KiB  0.15%   520KiB
-     affine_negate_...      1   8.89ms  0.04%  8.89ms    437KiB  0.13%   437KiB
-     affine_kron_atom       1    122μs  0.00%   122μs   29.1KiB  0.01%  29.1KiB
-   socp                     1    1.01s  4.04%   1.01s   28.0MiB  8.41%  28.0MiB
-     socp_rational_...      1    218ms  0.87%   218ms   7.16MiB  2.15%  7.16MiB
-     socp_quad_form...      1    143ms  0.57%   143ms   2.13MiB  0.64%  2.13MiB
-     socp_dual_norm...      1    106ms  0.42%   106ms   2.69MiB  0.81%  2.69MiB
-     socp_dual_mini...      1   80.1ms  0.32%  80.1ms   1.93MiB  0.58%  1.93MiB
-     socp_square_atom       1   73.0ms  0.29%  73.0ms   1.98MiB  0.60%  1.98MiB
-     socp_dual_frob...      1   72.5ms  0.29%  72.5ms   1.37MiB  0.41%  1.37MiB
-     socp_inv_pos_atom      1   69.7ms  0.28%  69.7ms   2.29MiB  0.69%  2.29MiB
-     socp_fix_multi...      1   45.4ms  0.18%  45.4ms   1.16MiB  0.35%  1.16MiB
-     socp_rational_...      1   42.8ms  0.17%  42.8ms   1.96MiB  0.59%  1.96MiB
-     socp_rational_...      1   42.6ms  0.17%  42.6ms   1.34MiB  0.40%  1.34MiB
-     socp_geo_mean_...      1   28.1ms  0.11%  28.1ms    699KiB  0.20%   699KiB
-     socp_huber_atom        1   25.4ms  0.10%  25.4ms    820KiB  0.24%   820KiB
-     socp_sum_squar...      1   22.6ms  0.09%  22.6ms    648KiB  0.19%   648KiB
-     socp_quad_over...      1   20.2ms  0.08%  20.2ms    664KiB  0.19%   664KiB
-     socp_fix_and_f...      1   19.5ms  0.08%  19.5ms   1.13MiB  0.34%  1.13MiB
-     socp_norm_cons...      1    308μs  0.00%   308μs   62.7KiB  0.02%  62.7KiB
-     socp_sqrt_atom         1   73.6μs  0.00%  73.6μs   22.2KiB  0.01%  22.2KiB
-   sdp                      1    465ms  1.86%   465ms   20.5MiB  6.15%  20.5MiB
-     sdp_nuclear_no...      1   79.6ms  0.32%  79.6ms   0.99MiB  0.30%  0.99MiB
-     sdp_sum_larges...      1   69.7ms  0.28%  69.7ms   4.18MiB  1.25%  4.18MiB
-     sdp_operator_n...      1   49.0ms  0.20%  49.0ms    826KiB  0.24%   826KiB
-     sdp_sdp_variables      1   41.1ms  0.16%  41.1ms   2.27MiB  0.68%  2.27MiB
-     sdp_dual_lambd...      1   31.7ms  0.13%  31.7ms   1.66MiB  0.50%  1.66MiB
-     sdp_socp_sumsq...      1   26.6ms  0.11%  26.6ms    787KiB  0.23%   787KiB
-     sdp_Complex_Va...      1   24.9ms  0.10%  24.9ms   1.92MiB  0.58%  1.92MiB
-     sdp_socp_abs_atom      1   23.0ms  0.09%  23.0ms    716KiB  0.21%   716KiB
-     sdp_Real_Varia...      1   16.8ms  0.07%  16.8ms   1.32MiB  0.40%  1.32MiB
-     sdp_Partial_trace      1   14.6ms  0.06%  14.6ms    816KiB  0.24%   816KiB
-     sdp_sigma_max_...      1   14.0ms  0.06%  14.0ms    825KiB  0.24%   825KiB
-     sdp_kron_atom          1   13.2ms  0.05%  13.2ms    907KiB  0.27%   907KiB
-     sdp_socp_norm2...      1   12.2ms  0.05%  12.2ms    449KiB  0.13%   449KiB
-     sdp_Issue_198          1   10.9ms  0.04%  10.9ms    572KiB  0.17%   572KiB
-     sdp_matrix_fra...      1   10.3ms  0.04%  10.3ms    687KiB  0.20%   687KiB
-     sdp_sdp_constr...      1   9.59ms  0.04%  9.59ms    578KiB  0.17%   578KiB
-     sdp_lambda_min...      1   9.56ms  0.04%  9.56ms    540KiB  0.16%   540KiB
-     sdp_matrix_fra...      1   8.06ms  0.03%  8.06ms    596KiB  0.17%   596KiB
-   lp                       1    388ms  1.55%   388ms   18.3MiB  5.48%  18.3MiB
-     lp_dual_abs_atom       1   78.4ms  0.31%  78.4ms   1.58MiB  0.48%  1.58MiB
-     lp_sumsmallest...      1   64.8ms  0.26%  64.8ms   1.70MiB  0.51%  1.70MiB
-     lp_sumlargest_...      1   36.2ms  0.14%  36.2ms   1.35MiB  0.41%  1.35MiB
-     lp_minimum_atom        1   32.8ms  0.13%  32.8ms   2.20MiB  0.66%  2.20MiB
-     lp_min_atom            1   32.7ms  0.13%  32.7ms   3.52MiB  1.06%  3.52MiB
-     lp_max_atom            1   32.2ms  0.13%  32.2ms   3.52MiB  1.06%  3.52MiB
-     lp_dual_norm_i...      1   26.8ms  0.11%  26.8ms    780KiB  0.23%   780KiB
-     lp_dual_norm_1...      1   24.4ms  0.10%  24.4ms    747KiB  0.22%   747KiB
-     lp_dotsort_atom        1   21.3ms  0.08%  21.3ms   1.24MiB  0.37%  1.24MiB
-     lp_maximum_atom        1   13.8ms  0.06%  13.8ms    620KiB  0.18%   620KiB
-     lp_pos_atom            1   13.7ms  0.05%  13.7ms    581KiB  0.17%   581KiB
-     lp_neg_atom            1   10.4ms  0.04%  10.4ms    440KiB  0.13%   440KiB
-     lp_hinge_loss_...      1   47.7μs  0.00%  47.7μs   21.4KiB  0.01%  21.4KiB
-   constant                 1    149ms  0.60%   149ms   5.01MiB  1.50%  5.01MiB
-     constant_fix!_...      1   61.1ms  0.24%  61.1ms   1.27MiB  0.38%  1.27MiB
-     constant_Issue...      1   29.4ms  0.12%  29.4ms    548KiB  0.16%   548KiB
-     constant_fix!_...      1   24.2ms  0.10%  24.2ms   1.02MiB  0.31%  1.02MiB
-     constant_Test_...      1   15.3ms  0.06%  15.3ms   1.02MiB  0.30%  1.02MiB
-     constant_Issue...      1   10.5ms  0.04%  10.5ms    705KiB  0.21%   705KiB
-     constant_fix!_...      1   8.80ms  0.04%  8.80ms    457KiB  0.13%   457KiB
+ SumOfSquares               1    27.2s  87.4%   27.2s    138MiB  42.4%   138MiB
+   sdp                      1    13.1s  42.2%   13.1s   86.1MiB  26.4%  86.1MiB
+     sos_options_pr...      1    2.17s  6.99%   2.17s   9.58MiB  2.94%  9.58MiB
+     BPT12e399_rem          1    557ms  1.79%   557ms   3.07MiB  0.94%  3.07MiB
+     BPT12e399_maxd...      1    506ms  1.63%   506ms   2.22MiB  0.68%  2.22MiB
+     sos_horn               1    403ms  1.30%   403ms   1.17MiB  0.36%  1.17MiB
+     sos_term_fixed         1    402ms  1.29%   402ms   1.70MiB  0.52%  1.70MiB
+     sos_scaled_biv...      1    387ms  1.25%   387ms   0.98MiB  0.30%  0.98MiB
+     sos_concave_th...      1    366ms  1.18%   366ms   1.17MiB  0.36%  1.17MiB
+     quartic_ideal_...      1    327ms  1.05%   327ms    943KiB  0.28%   943KiB
+     quartic_ideal_4        1    323ms  1.04%   323ms    932KiB  0.28%   932KiB
+     quartic_ideal          1    321ms  1.03%   321ms    947KiB  0.28%   947KiB
+     sos_scaled_uni...      1    320ms  1.03%   320ms   0.97MiB  0.30%  0.97MiB
+     maxcut                 1    313ms  1.01%   313ms   4.66MiB  1.43%  4.66MiB
+     quartic_ideal_rem      1    312ms  1.00%   312ms    953KiB  0.29%   953KiB
+     sos_bivariate_...      1    308ms  0.99%   308ms   0.97MiB  0.30%  0.97MiB
+     quartic_ideal_...      1    307ms  0.99%   307ms    949KiB  0.28%   949KiB
+     quadratic_feas...      1    296ms  0.95%   296ms   0.96MiB  0.30%  0.96MiB
+     sos_cheby_univ...      1    295ms  0.95%   295ms   1.01MiB  0.31%  1.01MiB
+     rearrangement          1    293ms  0.94%   293ms   1.17MiB  0.36%  1.17MiB
+     chebyshev              1    287ms  0.92%   287ms   2.24MiB  0.69%  2.24MiB
+     quartic_infeas...      1    283ms  0.91%   283ms   1.00MiB  0.31%  1.00MiB
+     sos_univariate...      1    283ms  0.91%   283ms   0.97MiB  0.30%  0.97MiB
+     sosdemo5_feasible      1    274ms  0.88%   274ms   15.6MiB  4.79%  15.6MiB
+     quadratic_infe...      1    270ms  0.87%   270ms   0.96MiB  0.29%  0.96MiB
+     quadratic_infe...      1    265ms  0.85%   265ms   0.96MiB  0.30%  0.96MiB
+     sosdemo5_infea...      1    263ms  0.85%   263ms   15.6MiB  4.79%  15.6MiB
+     quartic_feasib...      1    258ms  0.83%   258ms   1.00MiB  0.31%  1.00MiB
+     sos_term               1    254ms  0.82%   254ms   1.43MiB  0.44%  1.43MiB
+     sos_univariate...      1    254ms  0.82%   254ms    895KiB  0.27%   895KiB
+     sosdemo9               1    249ms  0.80%   249ms   1.28MiB  0.39%  1.28MiB
+     quadratic_feas...      1    231ms  0.74%   231ms    972KiB  0.29%   972KiB
+     simple_matrix          1    230ms  0.74%   230ms    959KiB  0.29%   959KiB
+     motzkin                1    230ms  0.74%   230ms    933KiB  0.28%   933KiB
+     quartic_infeas...      1    227ms  0.73%   227ms   0.97MiB  0.30%  0.97MiB
+     quartic_feasib...      1    215ms  0.69%   215ms   0.97MiB  0.30%  0.97MiB
+     choi                   1    214ms  0.69%   214ms   1.20MiB  0.37%  1.20MiB
+     sos_quartic_co...      1    211ms  0.68%   211ms    807KiB  0.24%   807KiB
+     sosdemo10              1    208ms  0.67%   208ms   2.07MiB  0.64%  2.07MiB
+     sos_quartic_co...      1    192ms  0.62%   192ms   1.02MiB  0.31%  1.02MiB
+   socp                     1    8.08s  26.0%   8.08s   26.9MiB  8.26%  26.9MiB
+     sdsos_options_...      1    3.44s  11.1%   3.44s   13.0MiB  4.00%  13.0MiB
+     sdsos_horn             1    553ms  1.78%   553ms   1.28MiB  0.39%  1.28MiB
+     sdsos_term_fixed       1    546ms  1.76%   546ms   1.71MiB  0.52%  1.71MiB
+     sdsos_concave_...      1    401ms  1.29%   401ms   1.25MiB  0.38%  1.25MiB
+     sdsos_scaled_b...      1    386ms  1.24%   386ms   0.98MiB  0.30%  0.98MiB
+     sdsos_cheby_un...      1    386ms  1.24%   386ms   1.01MiB  0.31%  1.01MiB
+     sdsos_univaria...      1    362ms  1.16%   362ms   0.98MiB  0.30%  0.98MiB
+     sdsos_bivariat...      1    361ms  1.16%   361ms   0.98MiB  0.30%  0.98MiB
+     sdsos_quartic_...      1    360ms  1.16%   360ms   1.54MiB  0.47%  1.54MiB
+     sdsos_scaled_u...      1    349ms  1.12%   349ms   0.98MiB  0.30%  0.98MiB
+     sdsos_univaria...      1    342ms  1.10%   342ms    905KiB  0.27%   905KiB
+     sdsos_term             1    338ms  1.09%   338ms   1.44MiB  0.44%  1.44MiB
+     sdsos_quartic_...      1    262ms  0.84%   262ms    817KiB  0.24%   817KiB
+   lp                       1    5.97s  19.2%   5.97s   25.2MiB  7.72%  25.2MiB
+     dsos_options_p...      1    2.11s  6.80%   2.11s   11.1MiB  3.40%  11.1MiB
+     dsos_term_fixed        1    438ms  1.41%   438ms   1.69MiB  0.52%  1.69MiB
+     dsos_horn              1    388ms  1.25%   388ms   1.19MiB  0.37%  1.19MiB
+     dsos_concave_t...      1    320ms  1.03%   320ms   1.15MiB  0.35%  1.15MiB
+     dsos_cheby_uni...      1    316ms  1.02%   316ms   0.98MiB  0.30%  0.98MiB
+     dsos_cheby_biv...      1    312ms  1.00%   312ms   1.00MiB  0.31%  1.00MiB
+     dsos_scaled_bi...      1    297ms  0.96%   297ms   0.97MiB  0.30%  0.97MiB
+     dsos_scaled_un...      1    294ms  0.95%   294ms   0.96MiB  0.30%  0.96MiB
+     dsos_univariat...      1    279ms  0.90%   279ms   0.96MiB  0.30%  0.96MiB
+     dsos_bivariate...      1    278ms  0.90%   278ms   0.97MiB  0.30%  0.97MiB
+     dsos_term              1    267ms  0.86%   267ms   1.42MiB  0.44%  1.42MiB
+     dsos_univariat...      1    244ms  0.79%   244ms    876KiB  0.26%   876KiB
+     dsos_quartic_c...      1    230ms  0.74%   230ms    798KiB  0.24%   798KiB
+     dsos_quartic_c...      1    197ms  0.64%   197ms   1.15MiB  0.35%  1.15MiB
+ Convex                     1    3.91s  12.6%   3.91s    188MiB  57.6%   188MiB
+   socp                     1    1.36s  4.39%   1.36s   27.4MiB  8.40%  27.4MiB
+     socp_rational_...      1    397ms  1.28%   397ms   7.16MiB  2.20%  7.16MiB
+     socp_dual_norm...      1    209ms  0.67%   209ms   2.69MiB  0.83%  2.69MiB
+     socp_inv_pos_atom      1    103ms  0.33%   103ms   2.21MiB  0.68%  2.21MiB
+     socp_dual_mini...      1   95.0ms  0.31%  95.0ms   1.93MiB  0.59%  1.93MiB
+     socp_dual_frob...      1   89.9ms  0.29%  89.9ms   1.37MiB  0.42%  1.37MiB
+     socp_quad_form...      1   84.6ms  0.27%  84.6ms   2.13MiB  0.65%  2.13MiB
+     socp_square_atom       1   79.0ms  0.25%  79.0ms   1.51MiB  0.46%  1.51MiB
+     socp_rational_...      1   65.3ms  0.21%  65.3ms   1.34MiB  0.41%  1.34MiB
+     socp_fix_multi...      1   55.4ms  0.18%  55.4ms   1.16MiB  0.36%  1.16MiB
+     socp_rational_...      1   52.9ms  0.17%  52.9ms   1.96MiB  0.60%  1.96MiB
+     socp_huber_atom        1   34.6ms  0.11%  34.6ms    821KiB  0.25%   821KiB
+     socp_sum_squar...      1   29.5ms  0.10%  29.5ms    648KiB  0.19%   648KiB
+     socp_quad_over...      1   26.7ms  0.09%  26.7ms    664KiB  0.20%   664KiB
+     socp_geo_mean_...      1   24.7ms  0.08%  24.7ms    699KiB  0.21%   699KiB
+     socp_fix_and_f...      1   17.6ms  0.06%  17.6ms   1.04MiB  0.32%  1.04MiB
+     socp_norm_cons...      1    471μs  0.00%   471μs   62.7KiB  0.02%  62.7KiB
+     socp_sqrt_atom         1   78.6μs  0.00%  78.6μs   22.2KiB  0.01%  22.2KiB
+   affine                   1    1.23s  3.95%   1.23s    117MiB  35.8%   117MiB
+     affine_Partial...      1    558ms  1.80%   558ms   92.9MiB  28.5%  92.9MiB
+     affine_dot_mul...      1    102ms  0.33%   102ms   3.00MiB  0.92%  3.00MiB
+     affine_dualvalue       1   59.0ms  0.19%  59.0ms   1.57MiB  0.48%  1.57MiB
+     affine_add_atom        1   58.5ms  0.19%  58.5ms   1.44MiB  0.44%  1.44MiB
+     affine_transpo...      1   54.2ms  0.17%  54.2ms   1.68MiB  0.52%  1.68MiB
+     affine_multipl...      1   44.6ms  0.14%  44.6ms   2.13MiB  0.65%  2.13MiB
+     affine_reshape...      1   43.9ms  0.14%  43.9ms   1.63MiB  0.50%  1.63MiB
+     affine_index_atom      1   42.4ms  0.14%  42.4ms   1.72MiB  0.53%  1.72MiB
+     affine_diag_atom       1   35.1ms  0.11%  35.1ms   1.00MiB  0.31%  1.00MiB
+     affine_sum_atom        1   34.5ms  0.11%  34.5ms   1.42MiB  0.43%  1.42MiB
+     affine_trace_atom      1   23.2ms  0.07%  23.2ms    527KiB  0.16%   527KiB
+     affine_Diagona...      1   22.5ms  0.07%  22.5ms   1.17MiB  0.36%  1.17MiB
+     affine_vcat_atom       1   22.5ms  0.07%  22.5ms   1.00MiB  0.31%  1.00MiB
+     affine_hcat_atom       1   21.2ms  0.07%  21.2ms    920KiB  0.28%   920KiB
+     affine_satisfy...      1   20.9ms  0.07%  20.9ms   1.38MiB  0.42%  1.38MiB
+     affine_single_...      1   16.2ms  0.05%  16.2ms    520KiB  0.16%   520KiB
+     affine_conv_atom       1   15.1ms  0.05%  15.1ms    766KiB  0.23%   766KiB
+     affine_single_...      1   14.4ms  0.05%  14.4ms    536KiB  0.16%   536KiB
+     affine_dot_ato...      1   13.9ms  0.04%  13.9ms    538KiB  0.16%   538KiB
+     affine_negate_...      1   10.1ms  0.03%  10.1ms    437KiB  0.13%   437KiB
+     affine_permute...      1   7.69ms  0.02%  7.69ms    177KiB  0.05%   177KiB
+     affine_dot_atom        1   6.83ms  0.02%  6.83ms    362KiB  0.11%   362KiB
+     affine_kron_atom       1    152μs  0.00%   152μs   29.1KiB  0.01%  29.1KiB
+   sdp                      1    696ms  2.24%   696ms   20.7MiB  6.34%  20.7MiB
+     sdp_sum_larges...      1   96.1ms  0.31%  96.1ms   4.18MiB  1.28%  4.18MiB
+     sdp_nuclear_no...      1   75.1ms  0.24%  75.1ms   0.99MiB  0.30%  0.99MiB
+     sdp_operator_n...      1   74.7ms  0.24%  74.7ms    826KiB  0.25%   826KiB
+     sdp_sdp_variables      1   53.6ms  0.17%  53.6ms   2.27MiB  0.70%  2.27MiB
+     sdp_socp_sumsq...      1   51.1ms  0.16%  51.1ms    787KiB  0.24%   787KiB
+     sdp_Partial_trace      1   46.3ms  0.15%  46.3ms    816KiB  0.24%   816KiB
+     sdp_dual_lambd...      1   39.9ms  0.13%  39.9ms   1.66MiB  0.51%  1.66MiB
+     sdp_socp_abs_atom      1   32.3ms  0.10%  32.3ms    716KiB  0.21%   716KiB
+     sdp_socp_norm2...      1   28.7ms  0.09%  28.7ms    684KiB  0.20%   684KiB
+     sdp_matrix_fra...      1   28.5ms  0.09%  28.5ms    851KiB  0.25%   851KiB
+     sdp_kron_atom          1   27.6ms  0.09%  27.6ms    907KiB  0.27%   907KiB
+     sdp_lambda_min...      1   27.3ms  0.09%  27.3ms    540KiB  0.16%   540KiB
+     sdp_Complex_Va...      1   27.3ms  0.09%  27.3ms   1.73MiB  0.53%  1.73MiB
+     sdp_sigma_max_...      1   26.2ms  0.08%  26.2ms    825KiB  0.25%   825KiB
+     sdp_Real_Varia...      1   22.9ms  0.07%  22.9ms   1.32MiB  0.41%  1.32MiB
+     sdp_Issue_198          1   15.5ms  0.05%  15.5ms    572KiB  0.17%   572KiB
+     sdp_sdp_constr...      1   12.0ms  0.04%  12.0ms    578KiB  0.17%   578KiB
+     sdp_matrix_fra...      1   10.1ms  0.03%  10.1ms    596KiB  0.18%   596KiB
+   lp                       1    464ms  1.49%   464ms   18.3MiB  5.60%  18.3MiB
+     lp_dual_abs_atom       1   86.2ms  0.28%  86.2ms   1.58MiB  0.49%  1.58MiB
+     lp_sumsmallest...      1   64.1ms  0.21%  64.1ms   1.70MiB  0.52%  1.70MiB
+     lp_dual_norm_i...      1   45.8ms  0.15%  45.8ms    780KiB  0.23%   780KiB
+     lp_max_atom            1   44.7ms  0.14%  44.7ms   3.52MiB  1.08%  3.52MiB
+     lp_dual_norm_1...      1   44.5ms  0.14%  44.5ms    747KiB  0.22%   747KiB
+     lp_minimum_atom        1   37.2ms  0.12%  37.2ms   2.20MiB  0.67%  2.20MiB
+     lp_min_atom            1   34.6ms  0.11%  34.6ms   3.52MiB  1.08%  3.52MiB
+     lp_sumlargest_...      1   32.3ms  0.10%  32.3ms   1.35MiB  0.41%  1.35MiB
+     lp_dotsort_atom        1   27.5ms  0.09%  27.5ms   1.24MiB  0.38%  1.24MiB
+     lp_pos_atom            1   20.3ms  0.07%  20.3ms    581KiB  0.17%   581KiB
+     lp_maximum_atom        1   17.6ms  0.06%  17.6ms    620KiB  0.19%   620KiB
+     lp_neg_atom            1   8.51ms  0.03%  8.51ms    440KiB  0.13%   440KiB
+     lp_hinge_loss_...      1   57.6μs  0.00%  57.6μs   21.4KiB  0.01%  21.4KiB
+   constant                 1    158ms  0.51%   158ms   4.77MiB  1.46%  4.77MiB
+     constant_fix!_...      1   51.0ms  0.16%  51.0ms   0.97MiB  0.30%  0.97MiB
+     constant_Issue...      1   32.8ms  0.11%  32.8ms    548KiB  0.16%   548KiB
+     constant_fix!_...      1   30.5ms  0.10%  30.5ms   1.02MiB  0.31%  1.02MiB
+     constant_fix!_...      1   16.2ms  0.05%  16.2ms    533KiB  0.16%   533KiB
+     constant_Test_...      1   15.3ms  0.05%  15.3ms   1.02MiB  0.31%  1.02MiB
+     constant_Issue...      1   11.6ms  0.04%  11.6ms    705KiB  0.21%   705KiB
  ──────────────────────────────────────────────────────────────────────────────
 
 ```
@@ -14618,10 +14706,10 @@ Julia Version 1.5.4
 Commit 69fcb5745b (2021-03-11 19:13 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
+  CPU: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-9.0.1 (ORCJIT, skylake-avx512)
+  LLVM: libLLVM-9.0.1 (ORCJIT, broadwell)
 ```
 
 Manifest:
