@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         version:
-          - '1.5'
+          - '1.6'
         os:
           - ubuntu-latest
         arch:
@@ -26,6 +26,7 @@ jobs:
           - SDPA_GMP
           - ECOS
           - Hypatia
+          - Clarabel
     steps:
       - uses: actions/checkout@v2
       - uses: julia-actions/setup-julia@v1
@@ -70,7 +71,7 @@ jobs:
           ref: 'master'
       - uses: julia-actions/setup-julia@v1
         with:
-          version: '1.5'
+          version: '1.6'
       - run: |
           julia --project=docs -e '
             using Pkg;
