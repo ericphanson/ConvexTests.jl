@@ -27,7 +27,7 @@ handle_problem_function(opt) = opt
 
 function _test(test_func::Function, opt, ::Val{true}, atol, rtol, T)
     T == Float64 || return
-    config = JuMP.MOI.Test.TestConfig(atol=atol, rtol=rtol, query=false)
+    config = JuMP.MOI.Test.Config(atol=atol, rtol=rtol)
     test_func(opt, config)
 end
 
