@@ -6,10 +6,10 @@ Depth = 4
 ```
 
 
-Compilation warmup gives an estimate of 55 seconds of compilation time.
+Compilation warmup gives an estimate of 52 seconds of compilation time.
 
 ## Clarabel 
-These tests were run on July 7, 2022 at 23:08 (UTC).
+These tests were run on July 7, 2022 at 23:50 (UTC).
 
 
 Excluded problems and classes of problems:
@@ -32,17 +32,17 @@ Tests took 6 minutes, 11 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">Clarabel tests</td>
-<td style="text-align:center;color:green;">2034</td>
+<td style="text-align:center;color:green;">2038</td>
 <td style="text-align:center;color:red;">11</td>
-<td style="text-align:center;color:red;">25</td>
+<td style="text-align:center;color:red;">24</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">2070</td>
+<td style="text-align:center;color:blue;">2073</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;Convex</td>
-<td style="text-align:center;color:green;">543</td>
+<td style="text-align:center;color:green;">547</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">19</td>
+<td style="text-align:center;color:red;">18</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">562</td>
+<td style="text-align:center;color:blue;">565</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;constant</td>
 <td style="text-align:center;color:green;">28</td>
 <td style="text-align:center;">0</td>
@@ -68,11 +68,11 @@ Tests took 6 minutes, 11 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">65</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">208</td>
+<td style="text-align:center;color:green;">212</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">19</td>
+<td style="text-align:center;color:red;">18</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">227</td>
+<td style="text-align:center;color:blue;">230</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_quantum_relative_entropy4_lowrank</td>
 <td style="text-align:center;color:green;">6</td>
 <td style="text-align:center;">0</td>
@@ -254,11 +254,11 @@ Tests took 6 minutes, 11 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_lieb_ando</td>
-<td style="text-align:center;color:green;">11</td>
+<td style="text-align:center;color:green;">13</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">12</td>
+<td style="text-align:center;color:blue;">14</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_matrix_frac_atom_both_arguments_variable</td>
 <td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
@@ -392,11 +392,11 @@ Tests took 6 minutes, 11 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_Complex_Semidefinite_constraint</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_trace_logm_argcheck</td>
 <td style="text-align:center;color:green;">6</td>
 <td style="text-align:center;">0</td>
@@ -870,11 +870,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_relative_entropy(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_relative_entropy(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1002
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -884,9 +884,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_relative_entropy))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_relative_entropy))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -906,7 +906,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -916,10 +916,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -968,11 +968,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_geom_mean_hypocone_cplx_3_8(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_geom_mean_hypocone_cplx_3_8(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1174
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -982,9 +982,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_geom_mean_hypocone_cplx_3_8))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_geom_mean_hypocone_cplx_3_8))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1004,7 +1004,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1014,10 +1014,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -1066,11 +1066,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_trace_mpower_cplx_5_4(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_trace_mpower_cplx_5_4(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1948
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -1080,9 +1080,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_trace_mpower_cplx_5_4))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_trace_mpower_cplx_5_4))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1102,7 +1102,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1112,10 +1112,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -1164,11 +1164,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_trace_logm_cplx(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_trace_logm_cplx(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2097
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -1178,9 +1178,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_trace_logm_cplx))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_trace_logm_cplx))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1200,7 +1200,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1210,10 +1210,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -1262,11 +1262,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
-   [20] (::ConvexTests.ConvexBench.var"#2#3"{UnionAll})(p::Convex.Problem{Float64})
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
+   [20] (::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)})(p::Convex.Problem{Float64})
       @ ConvexTests.ConvexBench ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12
-   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
+   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1492
    [22] sdp_quantum_relative_entropy3_lowrank(handle_problem!::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1654
@@ -1278,9 +1278,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [26] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy3_lowrank))
+   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy3_lowrank))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [29] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1300,7 +1300,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [37] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [38] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [38] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [39] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1310,10 +1310,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [42] macro expansion
       @ ./timing.jl:368 [inlined]
-   [43] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [43] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [44] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [45] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [46] exec_options(opts::Base.JLOptions)
@@ -1362,11 +1362,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
-   [20] (::ConvexTests.ConvexBench.var"#2#3"{UnionAll})(p::Convex.Problem{Float64})
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
+   [20] (::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)})(p::Convex.Problem{Float64})
       @ ConvexTests.ConvexBench ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12
-   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
+   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1492
    [22] sdp_quantum_relative_entropy3_fullrank(handle_problem!::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1564
@@ -1378,9 +1378,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [26] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy3_fullrank))
+   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy3_fullrank))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [29] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1400,7 +1400,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [37] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [38] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [38] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [39] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1410,10 +1410,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [42] macro expansion
       @ ./timing.jl:368 [inlined]
-   [43] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [43] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [44] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [45] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [46] exec_options(opts::Base.JLOptions)
@@ -1462,11 +1462,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_geom_mean_hypocone_cplx_3_5(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_geom_mean_hypocone_cplx_3_5(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1200
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -1476,9 +1476,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_geom_mean_hypocone_cplx_3_5))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_geom_mean_hypocone_cplx_3_5))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1498,7 +1498,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1508,10 +1508,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -1560,11 +1560,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_nuclear_norm_atom_complex(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_nuclear_norm_atom_complex(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:130
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -1574,9 +1574,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_nuclear_norm_atom_complex))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_nuclear_norm_atom_complex))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1596,7 +1596,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1606,10 +1606,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -1639,7 +1639,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
     [8] calc_step_length(variables::Clarabel.DefaultVariables{Float64}, step::Clarabel.DefaultVariables{Float64}, cones::Clarabel.ConeSet{Float64})
       @ Clarabel ~/.julia/packages/Clarabel/ZrqWV/src/variables.jl:23
     [9] macro expansion
-      @ ~/.julia/packages/Clarabel/ZrqWV/src/solver.jl:233 [inlined]
+      @ ~/.julia/packages/Clarabel/ZrqWV/src/solver.jl:211 [inlined]
    [10] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:252 [inlined]
    [11] macro expansion
@@ -1658,12 +1658,12 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_lieb_ando(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
-      @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2195
+   [21] sdp_lieb_ando(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+      @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2217
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [23] macro expansion
@@ -1672,9 +1672,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_lieb_ando))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_lieb_ando))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1694,7 +1694,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1704,10 +1704,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -1756,11 +1756,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
-   [20] (::ConvexTests.ConvexBench.var"#2#3"{UnionAll})(p::Convex.Problem{Float64})
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
+   [20] (::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)})(p::Convex.Problem{Float64})
       @ ConvexTests.ConvexBench ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12
-   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
+   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1492
    [22] sdp_quantum_relative_entropy2_lowrank(handle_problem!::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1636
@@ -1772,9 +1772,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [26] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy2_lowrank))
+   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy2_lowrank))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [29] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1794,7 +1794,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [37] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [38] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [38] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [39] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1804,10 +1804,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [42] macro expansion
       @ ./timing.jl:368 [inlined]
-   [43] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [43] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [44] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [45] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [46] exec_options(opts::Base.JLOptions)
@@ -1856,11 +1856,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_quantum_channel_capacity(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_quantum_channel_capacity(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1764
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -1870,9 +1870,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_channel_capacity))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_channel_capacity))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1892,7 +1892,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -1902,10 +1902,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -1954,11 +1954,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
-   [20] (::ConvexTests.ConvexBench.var"#2#3"{UnionAll})(p::Convex.Problem{Float64})
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
+   [20] (::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)})(p::Convex.Problem{Float64})
       @ ConvexTests.ConvexBench ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12
-   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
+   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1492
    [22] sdp_quantum_relative_entropy1_lowrank(handle_problem!::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1618
@@ -1970,9 +1970,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [26] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy1_lowrank))
+   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy1_lowrank))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [29] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -1992,7 +1992,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [37] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [38] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [38] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [39] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -2002,10 +2002,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [42] macro expansion
       @ ./timing.jl:368 [inlined]
-   [43] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [43] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [44] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [45] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [46] exec_options(opts::Base.JLOptions)
@@ -2054,11 +2054,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
-   [20] (::ConvexTests.ConvexBench.var"#2#3"{UnionAll})(p::Convex.Problem{Float64})
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
+   [20] (::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)})(p::Convex.Problem{Float64})
       @ ConvexTests.ConvexBench ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12
-   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
+   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1492
    [22] sdp_quantum_relative_entropy2_fullrank(handle_problem!::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1546
@@ -2070,9 +2070,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [26] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy2_fullrank))
+   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy2_fullrank))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [29] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -2092,7 +2092,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [37] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [38] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [38] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [39] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -2102,113 +2102,15 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [42] macro expansion
       @ ./timing.jl:368 [inlined]
-   [43] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [43] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [44] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [45] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [46] exec_options(opts::Base.JLOptions)
       @ Base ./client.jl:285
    [47] _start()
-      @ Base ./client.jl:485
-
-Error in testset sdp_Complex_Semidefinite_constraint:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  ArgumentError: matrix contains Infs or NaNs
-  Stacktrace:
-    [1] chkuplofinite(A::Matrix{Float64}, uplo::Char)
-      @ LinearAlgebra.LAPACK /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/LinearAlgebra/src/lapack.jl:104
-    [2] syevr!(jobz::Char, range::Char, uplo::Char, A::Matrix{Float64}, vl::Float64, vu::Float64, il::Int64, iu::Int64, abstol::Float64)
-      @ LinearAlgebra.LAPACK /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/LinearAlgebra/src/lapack.jl:5084
-    [3] eigvals!
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/LinearAlgebra/src/symmetric.jl:749 [inlined]
-    [4] eigvals
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/LinearAlgebra/src/symmetric.jl:781 [inlined]
-    [5] _step_length_psd_component(K::Clarabel.PSDTriangleCone{Float64}, d::Vector{Float64}, Λisqrt::LinearAlgebra.Diagonal{Float64, Vector{Float64}})
-      @ Clarabel ~/.julia/packages/Clarabel/ZrqWV/src/cones/coneops_psdtrianglecone.jl:300
-    [6] step_length
-      @ ~/.julia/packages/Clarabel/ZrqWV/src/cones/coneops_psdtrianglecone.jl:278 [inlined]
-    [7] cones_step_length(cones::Clarabel.ConeSet{Float64}, dz::Clarabel.ConicVector{Float64}, ds::Clarabel.ConicVector{Float64}, z::Clarabel.ConicVector{Float64}, s::Clarabel.ConicVector{Float64})
-      @ Clarabel ~/.julia/packages/Clarabel/ZrqWV/src/cones/coneops.jl:12
-    [8] calc_step_length(variables::Clarabel.DefaultVariables{Float64}, step::Clarabel.DefaultVariables{Float64}, cones::Clarabel.ConeSet{Float64})
-      @ Clarabel ~/.julia/packages/Clarabel/ZrqWV/src/variables.jl:23
-    [9] macro expansion
-      @ ~/.julia/packages/Clarabel/ZrqWV/src/solver.jl:211 [inlined]
-   [10] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:252 [inlined]
-   [11] macro expansion
-      @ ~/.julia/packages/Clarabel/ZrqWV/src/solver.jl:154 [inlined]
-   [12] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [13] solve!(s::Clarabel.Solver{Float64})
-      @ Clarabel ~/.julia/packages/Clarabel/ZrqWV/src/solver.jl:148
-   [14] optimize!
-      @ ~/.julia/packages/Clarabel/ZrqWV/src/MOI_wrapper/MOI_wrapper.jl:114 [inlined]
-   [15] optimize!
-      @ ~/.julia/packages/MathOptInterface/AiEiQ/src/MathOptInterface.jl:87 [inlined]
-   [16] optimize!(m::MathOptInterface.Utilities.CachingOptimizer{Optimizer{Float64}, MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}})
-      @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/AiEiQ/src/Utilities/cachingoptimizer.jl:316
-   [17] optimize!
-      @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
-   [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
-   [20] #2
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_Complex_Semidefinite_constraint(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
-      @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:669
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-   [23] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [24] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-   [25] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_Complex_Semidefinite_constraint))
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
-   [28] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [29] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [30] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [31] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [32] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(Convex.ProblemDepot.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [33] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [34] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [35] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [36] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [38] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [39] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [40] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [41] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
-   [44] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [45] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [46] _start()
       @ Base ./client.jl:485
 
 Error in testset sdp_geom_mean_hypocone_cplx_1_2:
@@ -2252,11 +2154,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_geom_mean_hypocone_cplx_1_2(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_geom_mean_hypocone_cplx_1_2(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1149
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -2266,9 +2168,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_geom_mean_hypocone_cplx_1_2))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_geom_mean_hypocone_cplx_1_2))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -2288,7 +2190,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -2298,10 +2200,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -2350,11 +2252,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
-   [20] (::ConvexTests.ConvexBench.var"#2#3"{UnionAll})(p::Convex.Problem{Float64})
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
+   [20] (::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)})(p::Convex.Problem{Float64})
       @ ConvexTests.ConvexBench ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12
-   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
+   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1492
    [22] sdp_quantum_relative_entropy1_fullrank(handle_problem!::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1528
@@ -2366,9 +2268,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [26] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy1_fullrank))
+   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy1_fullrank))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [29] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -2388,7 +2290,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [37] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [38] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [38] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [39] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -2398,10 +2300,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [42] macro expansion
       @ ./timing.jl:368 [inlined]
-   [43] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [43] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [44] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [45] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [46] exec_options(opts::Base.JLOptions)
@@ -2450,11 +2352,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
-   [20] (::ConvexTests.ConvexBench.var"#2#3"{UnionAll})(p::Convex.Problem{Float64})
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
+   [20] (::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)})(p::Convex.Problem{Float64})
       @ ConvexTests.ConvexBench ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12
-   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
+   [21] sdp_quantum_relative_entropy_impl(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64}, lowrank::Bool, mode::Int64)
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1492
    [22] sdp_quantum_relative_entropy4_fullrank(handle_problem!::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1582
@@ -2466,9 +2368,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [26] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy4_fullrank))
+   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_quantum_relative_entropy4_fullrank))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [29] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -2488,7 +2390,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [37] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [38] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [38] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [39] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -2498,10 +2400,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [42] macro expansion
       @ ./timing.jl:368 [inlined]
-   [43] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [43] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [44] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [45] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [46] exec_options(opts::Base.JLOptions)
@@ -2550,11 +2452,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_trace_mpower_cplx_neg1_4(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_trace_mpower_cplx_neg1_4(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2020
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -2564,9 +2466,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_trace_mpower_cplx_neg1_4))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_trace_mpower_cplx_neg1_4))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -2586,7 +2488,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -2596,10 +2498,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -2648,11 +2550,11 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/MathOptInterface/AiEiQ/src/Bridges/bridge_optimizer.jl:379 [inlined]
    [18] solve!(problem::Convex.Problem{Float64}, optimizer::Optimizer{Float64}; check_vexity::Bool, verbose::Bool, warmstart::Bool, silent_solver::Bool)
       @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:327
-   [19] solve!(problem::Convex.Problem{Float64}, optimizer_factory::Type; kwargs::Base.Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:silent_solver,), Tuple{Bool}}})
-      @ Convex ~/.julia/packages/Convex/FQF1R/src/solution.jl:270
+   [19] #solve!#14
+      @ ~/.julia/packages/Convex/FQF1R/src/solution.jl:270 [inlined]
    [20] #2
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/convex.jl:12 [inlined]
-   [21] sdp_trace_mpower_cplx_2_3(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{UnionAll}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
+   [21] sdp_trace_mpower_cplx_2_3(handle_problem!::ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}, #unused#::Val{true}, atol::Float64, rtol::Float64, #unused#::Type{Float64})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1876
    [22] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
@@ -2662,9 +2564,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [25] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_trace_mpower_cplx_2_3))
+   [26] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}})(name::String, problem_func::typeof(Convex.ProblemDepot.sdp_trace_mpower_cplx_2_3))
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{UnionAll}}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [27] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, ConvexTests.ConvexBench.var"#2#3"{typeof(opt)}}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ Convex.ProblemDepot ~/.julia/packages/Convex/FQF1R/src/problem_depot/problem_depot.jl:86
    [28] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -2684,7 +2586,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [36] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [37] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [37] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [38] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -2694,10 +2596,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [41] macro expansion
       @ ./timing.jl:368 [inlined]
-   [42] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [42] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [43] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [44] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [45] exec_options(opts::Base.JLOptions)
@@ -2757,7 +2659,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ JuMP ~/.julia/packages/JuMP/Y4piv/src/optimizer_interface.jl:161
    [18] optimize!
       @ ~/.julia/packages/JuMP/Y4piv/src/optimizer_interface.jl:143 [inlined]
-   [19] univariate_sum_test(optimizer::Type, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SDSOSCone)
+   [19] univariate_sum_test(optimizer::Function, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SDSOSCone)
       @ ConvexTests.SumOfSquaresBench.Tests ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/univariate_sum.jl:17
    [20] sdsos_univariate_sum_test
       @ ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/univariate_sum.jl:43 [inlined]
@@ -2773,9 +2675,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [26] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_univariate_sum_test)})
+   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_univariate_sum_test)})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
    [29] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -2785,7 +2687,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
    [32] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [33] _run_tests(handle_problem!::Type, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
+   [33] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
    [34] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
@@ -2795,7 +2697,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [37] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [38] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [38] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [39] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -2805,10 +2707,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [42] macro expansion
       @ ./timing.jl:368 [inlined]
-   [43] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [43] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [44] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [45] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [46] exec_options(opts::Base.JLOptions)
@@ -2893,13 +2795,13 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/
       @ JuMP ~/.julia/packages/JuMP/Y4piv/src/optimizer_interface.jl:161
    [18] optimize!
       @ ~/.julia/packages/JuMP/Y4piv/src/optimizer_interface.jl:143 [inlined]
-   [19] options_pricing_test(optimizer::Type, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SDSOSCone, K::Int64, expected::Float64)
+   [19] options_pricing_test(optimizer::Function, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SDSOSCone, K::Int64, expected::Float64)
       @ ConvexTests.SumOfSquaresBench.Tests ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:30
    [20] macro expansion
       @ ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:41 [inlined]
    [21] macro expansion
       @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1226 [inlined]
-   [22] options_pricing_test(optimizer::Type, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SDSOSCone, Ks::Vector{Int64}, expected::Vector{Float64})
+   [22] options_pricing_test(optimizer::Function, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SDSOSCone, Ks::Vector{Int64}, expected::Vector{Float64})
       @ ConvexTests.SumOfSquaresBench.Tests ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:40
    [23] sdsos_options_pricing_test
       @ ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:51 [inlined]
@@ -2915,9 +2817,9 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [29] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [30] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_options_pricing_test)})
+   [30] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_options_pricing_test)})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [31] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [31] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
    [32] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -2927,7 +2829,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
    [35] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [36] _run_tests(handle_problem!::Type, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
+   [36] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
    [37] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
@@ -2937,7 +2839,7 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [40] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [41] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [41] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [42] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -2947,10 +2849,10 @@ Error During Test at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [45] macro expansion
       @ ./timing.jl:368 [inlined]
-   [46] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [46] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [47] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [48] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [49] exec_options(opts::Base.JLOptions)
@@ -3013,7 +2915,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ JuMP ~/.julia/packages/JuMP/Y4piv/src/optimizer_interface.jl:161
    [20] optimize!
       @ ~/.julia/packages/JuMP/Y4piv/src/optimizer_interface.jl:143 [inlined]
-   [21] horn_test(optimizer::Type, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SOSCone)
+   [21] horn_test(optimizer::Function, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SOSCone)
       @ ConvexTests.SumOfSquaresBench.Tests ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/horn.jl:48
    [22] sos_horn_test
       @ ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/horn.jl:63 [inlined]
@@ -3029,9 +2931,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [28] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [29] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_horn_test)})
+   [29] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_horn_test)})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [30] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [30] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
    [31] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -3041,7 +2943,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
    [34] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [35] _run_tests(handle_problem!::Type, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
+   [35] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
    [36] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
@@ -3051,7 +2953,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [39] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [40] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [40] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [41] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -3061,10 +2963,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [44] macro expansion
       @ ./timing.jl:368 [inlined]
-   [45] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [45] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [46] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [47] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [48] exec_options(opts::Base.JLOptions)
@@ -3097,7 +2999,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/JuMP/Y4piv/src/objective.jl:151 [inlined]
    [10] macro expansion
       @ ~/.julia/packages/JuMP/Y4piv/src/macros.jl:1288 [inlined]
-   [11] BPT12e399_test(optimizer::Type, config::MathOptInterface.Test.Config{Float64}, remainder::Bool)
+   [11] BPT12e399_test(optimizer::Function, config::MathOptInterface.Test.Config{Float64}, remainder::Bool)
       @ ConvexTests.SumOfSquaresBench.Tests ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/BPT12e399.jl:84
    [12] BPT12e399_rem_test
       @ ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/BPT12e399.jl:141 [inlined]
@@ -3113,9 +3015,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [18] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.BPT12e399_rem_test)})
+   [19] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.BPT12e399_rem_test)})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [20] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [20] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
    [21] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -3125,7 +3027,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
    [24] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [25] _run_tests(handle_problem!::Type, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
+   [25] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
    [26] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
@@ -3135,7 +3037,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [29] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [30] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [30] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [31] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -3145,10 +3047,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [34] macro expansion
       @ ./timing.jl:368 [inlined]
-   [35] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [35] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [36] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [37] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [38] exec_options(opts::Base.JLOptions)
@@ -3181,7 +3083,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/.julia/packages/JuMP/Y4piv/src/objective.jl:151 [inlined]
    [10] macro expansion
       @ ~/.julia/packages/JuMP/Y4piv/src/macros.jl:1288 [inlined]
-   [11] BPT12e399_test(optimizer::Type, config::MathOptInterface.Test.Config{Float64}, remainder::Bool)
+   [11] BPT12e399_test(optimizer::Function, config::MathOptInterface.Test.Config{Float64}, remainder::Bool)
       @ ConvexTests.SumOfSquaresBench.Tests ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/BPT12e399.jl:84
    [12] BPT12e399_maxdegree_test
       @ ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/BPT12e399.jl:143 [inlined]
@@ -3197,9 +3099,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [18] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.BPT12e399_maxdegree_test)})
+   [19] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.BPT12e399_maxdegree_test)})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [20] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [20] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
    [21] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -3209,7 +3111,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
    [24] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [25] _run_tests(handle_problem!::Type, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
+   [25] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
    [26] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
@@ -3219,7 +3121,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [29] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [30] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [30] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [31] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -3229,10 +3131,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [34] macro expansion
       @ ./timing.jl:368 [inlined]
-   [35] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [35] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [36] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [37] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [38] exec_options(opts::Base.JLOptions)
@@ -3282,7 +3184,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ JuMP ~/.julia/packages/JuMP/Y4piv/src/optimizer_interface.jl:161
    [18] optimize!
       @ ~/.julia/packages/JuMP/Y4piv/src/optimizer_interface.jl:143 [inlined]
-   [19] univariate_sum_test(optimizer::Type, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SOSCone)
+   [19] univariate_sum_test(optimizer::Function, config::MathOptInterface.Test.Config{Float64}, cone::SumOfSquares.SOSCone)
       @ ConvexTests.SumOfSquaresBench.Tests ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/univariate_sum.jl:17
    [20] sos_univariate_sum_test
       @ ~/.julia/packages/SumOfSquares/JDoOM/test/Tests/univariate_sum.jl:41 [inlined]
@@ -3298,9 +3200,9 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
    [26] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_univariate_sum_test)})
+   [27] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_univariate_sum_test)})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, UnionAll}, class::String, problems::Nothing; exclude::Vector{Regex})
+   [28] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, typeof(opt)}, class::String, problems::Nothing; exclude::Vector{Regex})
       @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
    [29] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
@@ -3310,7 +3212,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
    [32] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [33] _run_tests(handle_problem!::Type, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
+   [33] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
    [34] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
@@ -3320,7 +3222,7 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
    [37] macro expansion
       @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [38] _run_tests(::Type; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
+   [38] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
    [39] macro expansion
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
@@ -3330,10 +3232,10 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
       @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
    [42] macro expansion
       @ ./timing.jl:368 [inlined]
-   [43] do_tests(name::String, opt::Type; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+   [43] do_tests(name::String, opt::typeof(opt); variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
       @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
    [44] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:5
+      @ ~/work/ConvexTests.jl/ConvexTests.jl/Clarabel/test.jl:13
    [45] include(mod::Module, _path::String)
       @ Base ./Base.jl:384
    [46] exec_options(opts::Base.JLOptions)
@@ -3349,209 +3251,209 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
  ────────────────────────────────────────────────────────────────────────────────
                                         Time                    Allocations      
                                ───────────────────────   ────────────────────────
-       Tot / % measured:             371s /  99.8%           35.1GiB /  99.9%    
+       Tot / % measured:             370s /  99.8%           35.1GiB /  99.9%    
 
  Section               ncalls     time    %tot     avg     alloc    %tot      avg
  ────────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1     197s   53.1%    197s   17.3GiB   49.2%  17.3GiB
-   sdp                      1    82.3s   22.2%   82.3s   7.11GiB   20.3%  7.11GiB
-     sosdemo5_infea...      1    6.73s    1.8%   6.73s    541MiB    1.5%   541MiB
-     quartic_ideal_rem      1    5.89s    1.6%   5.89s    557MiB    1.5%   557MiB
-     rearrangement          1    5.55s    1.5%   5.55s    435MiB    1.2%   435MiB
-     sos_concave_th...      1    3.94s    1.1%   3.94s    418MiB    1.2%   418MiB
-     sos_horn               1    3.88s    1.0%   3.88s    286MiB    0.8%   286MiB
-     simple_matrix          1    3.55s    1.0%   3.55s    373MiB    1.0%   373MiB
-     quartic_ideal          1    3.34s    0.9%   3.34s    214MiB    0.6%   214MiB
-     quartic_ideal_4        1    3.31s    0.9%   3.31s    283MiB    0.8%   283MiB
-     sos_scaled_biv...      1    3.29s    0.9%   3.29s    220MiB    0.6%   220MiB
-     sos_term_fixed         1    3.17s    0.9%   3.17s    207MiB    0.6%   207MiB
-     chebyshev              1    3.07s    0.8%   3.07s    259MiB    0.7%   259MiB
-     maxcut                 1    2.89s    0.8%   2.89s    193MiB    0.5%   193MiB
-     sos_cheby_univ...      1    2.89s    0.8%   2.89s    195MiB    0.5%   195MiB
-     sos_term               1    2.67s    0.7%   2.67s    178MiB    0.5%   178MiB
-     BPT12e399_rem          1    2.63s    0.7%   2.63s    107MiB    0.3%   107MiB
-     quartic_ideal_...      1    2.57s    0.7%   2.57s    168MiB    0.5%   168MiB
-     sos_quartic_co...      1    2.42s    0.7%   2.42s    164MiB    0.5%   164MiB
-     quartic_feasib...      1    2.36s    0.6%   2.36s    117MiB    0.3%   117MiB
-     sos_options_pr...      1    2.11s    0.6%   2.11s    194MiB    0.5%   194MiB
-     sosdemo5_feasible      1    1.67s    0.5%   1.67s    108MiB    0.3%   108MiB
-     sosdemo10              1    1.50s    0.4%   1.50s    182MiB    0.5%   182MiB
-     sos_univariate...      1    1.02s    0.3%   1.02s   79.1MiB    0.2%  79.1MiB
-     sos_univariate...      1    720ms    0.2%   720ms   35.8MiB    0.1%  35.8MiB
-     sosdemo9               1    643ms    0.2%   643ms   50.3MiB    0.1%  50.3MiB
-     quadratic_feas...      1    633ms    0.2%   633ms   50.3MiB    0.1%  50.3MiB
-     quadratic_infe...      1    576ms    0.2%   576ms   41.1MiB    0.1%  41.1MiB
-     choi                   1    435ms    0.1%   435ms   64.0MiB    0.2%  64.0MiB
-     BPT12e399_maxd...      1    356ms    0.1%   356ms   10.3MiB    0.0%  10.3MiB
-     sos_quartic_co...      1    167ms    0.0%   167ms   21.6MiB    0.1%  21.6MiB
-     motzkin                1   81.7ms    0.0%  81.7ms   5.36MiB    0.0%  5.36MiB
-     sos_scaled_uni...      1   18.6ms    0.0%  18.6ms    435KiB    0.0%   435KiB
-     quartic_ideal_...      1   17.4ms    0.0%  17.4ms   1.10MiB    0.0%  1.10MiB
-     quartic_infeas...      1   17.1ms    0.0%  17.1ms   1.79MiB    0.0%  1.79MiB
-     sos_bivariate_...      1   10.3ms    0.0%  10.3ms    437KiB    0.0%   437KiB
-     quartic_infeas...      1   4.96ms    0.0%  4.96ms   1.07MiB    0.0%  1.07MiB
-     quartic_feasib...      1   4.72ms    0.0%  4.72ms    933KiB    0.0%   933KiB
-     quadratic_infe...      1   4.45ms    0.0%  4.45ms    674KiB    0.0%   674KiB
-     quadratic_feas...      1   4.28ms    0.0%  4.28ms    562KiB    0.0%   562KiB
-   socp                     1    79.2s   21.4%   79.2s   7.20GiB   20.5%  7.20GiB
-     sdsos_term_fixed       1    18.6s    5.0%   18.6s   1.56GiB    4.4%  1.56GiB
-     sdsos_horn             1    12.1s    3.3%   12.1s   1.02GiB    2.9%  1.02GiB
-     sdsos_concave_...      1    9.92s    2.7%   9.92s    811MiB    2.3%   811MiB
-     sdsos_univaria...      1    8.98s    2.4%   8.98s    796MiB    2.2%   796MiB
-     sdsos_cheby_un...      1    5.67s    1.5%   5.67s    445MiB    1.2%   445MiB
-     sdsos_univaria...      1    4.13s    1.1%   4.13s    332MiB    0.9%   332MiB
-     sdsos_scaled_u...      1    3.51s    0.9%   3.51s    284MiB    0.8%   284MiB
-     sdsos_term             1    3.29s    0.9%   3.29s    247MiB    0.7%   247MiB
-     sdsos_quartic_...      1    3.22s    0.9%   3.22s    253MiB    0.7%   253MiB
-     sdsos_options_...      1    2.97s    0.8%   2.97s    221MiB    0.6%   221MiB
-     sdsos_quartic_...      1    579ms    0.2%   579ms   26.7MiB    0.1%  26.7MiB
-     sdsos_scaled_b...      1   36.5ms    0.0%  36.5ms   5.81MiB    0.0%  5.81MiB
-     sdsos_bivariat...      1   20.5ms    0.0%  20.5ms    439KiB    0.0%   439KiB
-   lp                       1    35.1s    9.5%   35.1s   2.93GiB    8.4%  2.93GiB
-     dsos_options_p...      1    5.00s    1.4%   5.00s    432MiB    1.2%   432MiB
-     dsos_concave_t...      1    4.61s    1.2%   4.61s    435MiB    1.2%   435MiB
-     dsos_univariat...      1    4.15s    1.1%   4.15s    288MiB    0.8%   288MiB
-     dsos_cheby_biv...      1    3.66s    1.0%   3.66s    273MiB    0.8%   273MiB
-     dsos_term_fixed        1    3.19s    0.9%   3.19s    215MiB    0.6%   215MiB
-     dsos_horn              1    2.96s    0.8%   2.96s    237MiB    0.7%   237MiB
-     dsos_scaled_bi...      1    2.87s    0.8%   2.87s    209MiB    0.6%   209MiB
-     dsos_term              1    2.79s    0.8%   2.79s    188MiB    0.5%   188MiB
-     dsos_quartic_c...      1    2.40s    0.6%   2.40s    173MiB    0.5%   173MiB
-     dsos_bivariate...      1    824ms    0.2%   824ms   39.1MiB    0.1%  39.1MiB
-     dsos_quartic_c...      1    167ms    0.0%   167ms   21.2MiB    0.1%  21.2MiB
-     dsos_univariat...      1   12.8ms    0.0%  12.8ms    411KiB    0.0%   411KiB
-     dsos_cheby_uni...      1   7.93ms    0.0%  7.93ms    437KiB    0.0%   437KiB
-     dsos_scaled_un...      1   7.61ms    0.0%  7.61ms    412KiB    0.0%   412KiB
- Convex                     1     174s   46.9%    174s   17.8GiB   50.8%  17.8GiB
-   sdp                      1     112s   30.3%    112s   10.6GiB   30.3%  10.6GiB
-     sdp_quantum_re...      1    15.1s    4.1%   15.1s   1.65GiB    4.7%  1.65GiB
-     sdp_quantum_re...      1    10.9s    2.9%   10.9s    493MiB    1.4%   493MiB
-     sdp_quantum_re...      1    8.79s    2.4%   8.79s    364MiB    1.0%   364MiB
-     sdp_quantum_re...      1    8.59s    2.3%   8.59s    364MiB    1.0%   364MiB
-     sdp_quantum_re...      1    8.14s    2.2%   8.14s    355MiB    1.0%   355MiB
-     sdp_operator_n...      1    3.65s    1.0%   3.65s    309MiB    0.9%   309MiB
-     sdp_lieb_ando          1    3.41s    0.9%   3.41s    269MiB    0.7%   269MiB
-     sdp_relative_e...      1    3.06s    0.8%   3.06s    309MiB    0.9%   309MiB
-     sdp_geom_mean_...      1    2.73s    0.7%   2.73s    108MiB    0.3%   108MiB
-     sdp_quantum_re...      1    1.83s    0.5%   1.83s   30.1MiB    0.1%  30.1MiB
-     sdp_Partial_trace      1    1.81s    0.5%   1.81s    194MiB    0.5%   194MiB
-     sdp_trace_mpow...      1    1.64s    0.4%   1.64s    217MiB    0.6%   217MiB
-     sdp_trace_mpow...      1    1.58s    0.4%   1.58s   28.0MiB    0.1%  28.0MiB
-     sdp_quantum_re...      1    1.48s    0.4%   1.48s   13.2MiB    0.0%  13.2MiB
-     sdp_trace_logm...      1    1.43s    0.4%   1.43s    163MiB    0.5%   163MiB
-     sdp_matrix_fra...      1    1.43s    0.4%   1.43s    131MiB    0.4%   131MiB
-     sdp_sum_larges...      1    1.43s    0.4%   1.43s    118MiB    0.3%   118MiB
-     sdp_geom_mean_...      1    1.43s    0.4%   1.43s    198MiB    0.6%   198MiB
-     sdp_trace_logm...      1    1.09s    0.3%   1.09s   97.6MiB    0.3%  97.6MiB
-     sdp_dual_lambd...      1    1.02s    0.3%   1.02s   65.7MiB    0.2%  65.7MiB
-     sdp_geom_mean_...      1    1.00s    0.3%   1.00s    113MiB    0.3%   113MiB
-     sdp_quantum_ch...      1    968ms    0.3%   968ms   49.8MiB    0.1%  49.8MiB
-     sdp_quantum_re...      1    857ms    0.2%   857ms    112MiB    0.3%   112MiB
-     sdp_min_maxeig...      1    755ms    0.2%   755ms   99.0MiB    0.3%  99.0MiB
-     sdp_lambda_min...      1    670ms    0.2%   670ms   83.2MiB    0.2%  83.2MiB
-     sdp_nuclear_no...      1    662ms    0.2%   662ms   79.5MiB    0.2%  79.5MiB
-     sdp_trace_mpow...      1    652ms    0.2%   652ms   30.1MiB    0.1%  30.1MiB
-     sdp_geom_mean_...      1    637ms    0.2%   637ms   73.6MiB    0.2%  73.6MiB
-     sdp_Complex_Va...      1    605ms    0.2%   605ms   35.9MiB    0.1%  35.9MiB
-     sdp_socp_sumsq...      1    558ms    0.2%   558ms   53.4MiB    0.1%  53.4MiB
-     sdp_relative_e...      1    506ms    0.1%   506ms   18.0MiB    0.1%  18.0MiB
-     sdp_socp_norm2...      1    423ms    0.1%   423ms   46.4MiB    0.1%  46.4MiB
-     sdp_geom_mean_...      1    421ms    0.1%   421ms   70.7MiB    0.2%  70.7MiB
-     sdp_geom_mean_...      1    403ms    0.1%   403ms   52.3MiB    0.1%  52.3MiB
-     sdp_geom_mean_...      1    401ms    0.1%   401ms   50.6MiB    0.1%  50.6MiB
-     sdp_trace_mpow...      1    381ms    0.1%   381ms   12.4MiB    0.0%  12.4MiB
-     sdp_Complex_Se...      1    327ms    0.1%   327ms   33.1MiB    0.1%  33.1MiB
-     sdp_trace_mpow...      1    280ms    0.1%   280ms   23.2MiB    0.1%  23.2MiB
-     sdp_geom_mean_...      1    254ms    0.1%   254ms   24.1MiB    0.1%  24.1MiB
-     sdp_socp_abs_atom      1    240ms    0.1%   240ms   21.4MiB    0.1%  21.4MiB
+ SumOfSquares               1     193s   52.2%    193s   17.1GiB   48.9%  17.1GiB
+   sdp                      1    80.1s   21.7%   80.1s   7.07GiB   20.2%  7.07GiB
+     sosdemo5_infea...      1    6.58s    1.8%   6.58s    539MiB    1.5%   539MiB
+     quartic_ideal_rem      1    5.79s    1.6%   5.79s    554MiB    1.5%   554MiB
+     rearrangement          1    5.44s    1.5%   5.44s    431MiB    1.2%   431MiB
+     sos_concave_th...      1    3.77s    1.0%   3.77s    414MiB    1.2%   414MiB
+     sos_horn               1    3.72s    1.0%   3.72s    282MiB    0.8%   282MiB
+     simple_matrix          1    3.47s    0.9%   3.47s    371MiB    1.0%   371MiB
+     quartic_ideal_4        1    3.28s    0.9%   3.28s    282MiB    0.8%   282MiB
+     sos_scaled_biv...      1    3.27s    0.9%   3.27s    218MiB    0.6%   218MiB
+     quartic_ideal          1    3.22s    0.9%   3.22s    212MiB    0.6%   212MiB
+     sos_term_fixed         1    3.12s    0.8%   3.12s    205MiB    0.6%   205MiB
+     chebyshev              1    3.06s    0.8%   3.06s    255MiB    0.7%   255MiB
+     maxcut                 1    2.79s    0.8%   2.79s    193MiB    0.5%   193MiB
+     sos_cheby_univ...      1    2.79s    0.8%   2.79s    193MiB    0.5%   193MiB
+     sos_term               1    2.67s    0.7%   2.67s    176MiB    0.5%   176MiB
+     BPT12e399_rem          1    2.58s    0.7%   2.58s    107MiB    0.3%   107MiB
+     quartic_ideal_...      1    2.32s    0.6%   2.32s    165MiB    0.5%   165MiB
+     sos_quartic_co...      1    2.31s    0.6%   2.31s    163MiB    0.5%   163MiB
+     quartic_feasib...      1    2.29s    0.6%   2.29s    117MiB    0.3%   117MiB
+     sos_options_pr...      1    2.02s    0.5%   2.02s    190MiB    0.5%   190MiB
+     sosdemo5_feasible      1    1.56s    0.4%   1.56s    108MiB    0.3%   108MiB
+     sosdemo10              1    1.42s    0.4%   1.42s    182MiB    0.5%   182MiB
+     sos_univariate...      1    953ms    0.3%   953ms   77.0MiB    0.2%  77.0MiB
+     sos_univariate...      1    756ms    0.2%   756ms   35.8MiB    0.1%  35.8MiB
+     sosdemo9               1    632ms    0.2%   632ms   50.3MiB    0.1%  50.3MiB
+     quadratic_feas...      1    627ms    0.2%   627ms   50.4MiB    0.1%  50.4MiB
+     choi                   1    473ms    0.1%   473ms   64.0MiB    0.2%  64.0MiB
+     quadratic_infe...      1    466ms    0.1%   466ms   38.3MiB    0.1%  38.3MiB
+     BPT12e399_maxd...      1    345ms    0.1%   345ms   10.2MiB    0.0%  10.2MiB
+     sos_quartic_co...      1    111ms    0.0%   111ms   21.4MiB    0.1%  21.4MiB
+     motzkin                1   78.1ms    0.0%  78.1ms   5.26MiB    0.0%  5.26MiB
+     quartic_ideal_...      1   24.2ms    0.0%  24.2ms   1.06MiB    0.0%  1.06MiB
+     quartic_infeas...      1   16.6ms    0.0%  16.6ms   1.75MiB    0.0%  1.75MiB
+     sos_scaled_uni...      1   12.5ms    0.0%  12.5ms    397KiB    0.0%   397KiB
+     sos_bivariate_...      1   8.85ms    0.0%  8.85ms    399KiB    0.0%   399KiB
+     quartic_infeas...      1   4.19ms    0.0%  4.19ms   1.03MiB    0.0%  1.03MiB
+     quartic_feasib...      1   3.78ms    0.0%  3.78ms    890KiB    0.0%   890KiB
+     quadratic_infe...      1   3.72ms    0.0%  3.72ms    632KiB    0.0%   632KiB
+     quadratic_feas...      1   3.58ms    0.0%  3.58ms    519KiB    0.0%   519KiB
+   socp                     1    78.2s   21.1%   78.2s   7.16GiB   20.4%  7.16GiB
+     sdsos_term_fixed       1    18.9s    5.1%   18.9s   1.56GiB    4.4%  1.56GiB
+     sdsos_horn             1    11.9s    3.2%   11.9s   1.01GiB    2.9%  1.01GiB
+     sdsos_concave_...      1    9.30s    2.5%   9.30s    805MiB    2.2%   805MiB
+     sdsos_univaria...      1    8.67s    2.3%   8.67s    789MiB    2.2%   789MiB
+     sdsos_cheby_un...      1    5.56s    1.5%   5.56s    443MiB    1.2%   443MiB
+     sdsos_univaria...      1    4.04s    1.1%   4.04s    329MiB    0.9%   329MiB
+     sdsos_scaled_u...      1    3.52s    1.0%   3.52s    282MiB    0.8%   282MiB
+     sdsos_quartic_...      1    3.44s    0.9%   3.44s    250MiB    0.7%   250MiB
+     sdsos_term             1    3.30s    0.9%   3.30s    244MiB    0.7%   244MiB
+     sdsos_options_...      1    2.97s    0.8%   2.97s    216MiB    0.6%   216MiB
+     sdsos_quartic_...      1    576ms    0.2%   576ms   26.4MiB    0.1%  26.4MiB
+     sdsos_scaled_b...      1   38.3ms    0.0%  38.3ms   5.77MiB    0.0%  5.77MiB
+     sdsos_bivariat...      1   18.5ms    0.0%  18.5ms    401KiB    0.0%   401KiB
+   lp                       1    34.6s    9.4%   34.6s   2.89GiB    8.3%  2.89GiB
+     dsos_options_p...      1    5.00s    1.4%   5.00s    424MiB    1.2%   424MiB
+     dsos_concave_t...      1    4.44s    1.2%   4.44s    430MiB    1.2%   430MiB
+     dsos_univariat...      1    4.13s    1.1%   4.13s    286MiB    0.8%   286MiB
+     dsos_cheby_biv...      1    3.68s    1.0%   3.68s    271MiB    0.8%   271MiB
+     dsos_term_fixed        1    3.14s    0.8%   3.14s    212MiB    0.6%   212MiB
+     dsos_horn              1    2.87s    0.8%   2.87s    232MiB    0.6%   232MiB
+     dsos_scaled_bi...      1    2.85s    0.8%   2.85s    206MiB    0.6%   206MiB
+     dsos_term              1    2.75s    0.7%   2.75s    185MiB    0.5%   185MiB
+     dsos_quartic_c...      1    2.35s    0.6%   2.35s    171MiB    0.5%   171MiB
+     dsos_bivariate...      1    844ms    0.2%   844ms   39.0MiB    0.1%  39.0MiB
+     dsos_quartic_c...      1    112ms    0.0%   112ms   21.0MiB    0.1%  21.0MiB
+     dsos_univariat...      1   7.79ms    0.0%  7.79ms    369KiB    0.0%   369KiB
+     dsos_cheby_uni...      1   7.04ms    0.0%  7.04ms    395KiB    0.0%   395KiB
+     dsos_scaled_un...      1   5.45ms    0.0%  5.45ms    370KiB    0.0%   370KiB
+ Convex                     1     177s   47.8%    177s   17.9GiB   51.1%  17.9GiB
+   sdp                      1     115s   31.0%    115s   10.7GiB   30.4%  10.7GiB
+     sdp_quantum_re...      1    15.2s    4.1%   15.2s   1.65GiB    4.7%  1.65GiB
+     sdp_quantum_re...      1    10.6s    2.9%   10.6s    493MiB    1.4%   493MiB
+     sdp_quantum_re...      1    9.52s    2.6%   9.52s    383MiB    1.1%   383MiB
+     sdp_quantum_re...      1    8.61s    2.3%   8.61s    364MiB    1.0%   364MiB
+     sdp_quantum_re...      1    8.57s    2.3%   8.57s    364MiB    1.0%   364MiB
+     sdp_operator_n...      1    3.65s    1.0%   3.65s    310MiB    0.9%   310MiB
+     sdp_lieb_ando          1    3.45s    0.9%   3.45s    277MiB    0.8%   277MiB
+     sdp_relative_e...      1    3.08s    0.8%   3.08s    304MiB    0.8%   304MiB
+     sdp_geom_mean_...      1    2.76s    0.7%   2.76s    108MiB    0.3%   108MiB
+     sdp_Partial_trace      1    1.87s    0.5%   1.87s    194MiB    0.5%   194MiB
+     sdp_quantum_re...      1    1.84s    0.5%   1.84s   30.1MiB    0.1%  30.1MiB
+     sdp_geom_mean_...      1    1.68s    0.5%   1.68s    199MiB    0.6%   199MiB
+     sdp_trace_mpow...      1    1.64s    0.4%   1.64s   27.4MiB    0.1%  27.4MiB
+     sdp_trace_mpow...      1    1.59s    0.4%   1.59s    218MiB    0.6%   218MiB
+     sdp_sum_larges...      1    1.55s    0.4%   1.55s    118MiB    0.3%   118MiB
+     sdp_quantum_re...      1    1.50s    0.4%   1.50s   13.2MiB    0.0%  13.2MiB
+     sdp_matrix_fra...      1    1.45s    0.4%   1.45s    132MiB    0.4%   132MiB
+     sdp_trace_logm...      1    1.37s    0.4%   1.37s    158MiB    0.4%   158MiB
+     sdp_geom_mean_...      1    1.21s    0.3%   1.21s    113MiB    0.3%   113MiB
+     sdp_trace_logm...      1    1.01s    0.3%   1.01s    100MiB    0.3%   100MiB
+     sdp_quantum_ch...      1    952ms    0.3%   952ms   49.9MiB    0.1%  49.9MiB
+     sdp_quantum_re...      1    808ms    0.2%   808ms    111MiB    0.3%   111MiB
+     sdp_dual_lambd...      1    781ms    0.2%   781ms   65.8MiB    0.2%  65.8MiB
+     sdp_min_maxeig...      1    754ms    0.2%   754ms   99.1MiB    0.3%  99.1MiB
+     sdp_nuclear_no...      1    698ms    0.2%   698ms   80.0MiB    0.2%  80.0MiB
+     sdp_trace_mpow...      1    677ms    0.2%   677ms   27.8MiB    0.1%  27.8MiB
+     sdp_lambda_min...      1    670ms    0.2%   670ms   83.3MiB    0.2%  83.3MiB
+     sdp_Complex_Va...      1    630ms    0.2%   630ms   35.9MiB    0.1%  35.9MiB
+     sdp_geom_mean_...      1    628ms    0.2%   628ms   73.8MiB    0.2%  73.8MiB
+     sdp_socp_norm2...      1    516ms    0.1%   516ms   46.4MiB    0.1%  46.4MiB
+     sdp_relative_e...      1    512ms    0.1%   512ms   18.0MiB    0.1%  18.0MiB
+     sdp_socp_sumsq...      1    511ms    0.1%   511ms   53.4MiB    0.1%  53.4MiB
+     sdp_geom_mean_...      1    408ms    0.1%   408ms   52.8MiB    0.1%  52.8MiB
+     sdp_geom_mean_...      1    394ms    0.1%   394ms   49.3MiB    0.1%  49.3MiB
+     sdp_trace_mpow...      1    386ms    0.1%   386ms   12.4MiB    0.0%  12.4MiB
+     sdp_geom_mean_...      1    383ms    0.1%   383ms   71.0MiB    0.2%  71.0MiB
+     sdp_trace_mpow...      1    311ms    0.1%   311ms   22.8MiB    0.1%  22.8MiB
+     sdp_Complex_Se...      1    274ms    0.1%   274ms   32.3MiB    0.1%  32.3MiB
+     sdp_socp_abs_atom      1    245ms    0.1%   245ms   21.4MiB    0.1%  21.4MiB
      sdp_geom_mean_...      1    234ms    0.1%   234ms   19.7MiB    0.1%  19.7MiB
-     sdp_sdp_variables      1    233ms    0.1%   233ms   27.9MiB    0.1%  27.9MiB
-     sdp_trace_mpow...      1    208ms    0.1%   208ms   19.8MiB    0.1%  19.8MiB
-     sdp_trace_mpow...      1    199ms    0.1%   199ms   15.3MiB    0.0%  15.3MiB
-     sdp_geom_mean_...      1    194ms    0.1%   194ms   15.9MiB    0.0%  15.9MiB
-     sdp_operator_n...      1    181ms    0.0%   181ms   23.9MiB    0.1%  23.9MiB
-     sdp_quantum_re...      1    175ms    0.0%   175ms   23.2MiB    0.1%  23.2MiB
-     sdp_nuclear_no...      1    171ms    0.0%   171ms   18.7MiB    0.1%  18.7MiB
-     sdp_matrix_fra...      1    167ms    0.0%   167ms   17.5MiB    0.0%  17.5MiB
-     sdp_quantum_re...      1    127ms    0.0%   127ms   19.4MiB    0.1%  19.4MiB
-     sdp_sigma_max_...      1    125ms    0.0%   125ms   16.5MiB    0.0%  16.5MiB
-     sdp_sdp_constr...      1    117ms    0.0%   117ms   9.89MiB    0.0%  9.89MiB
-     sdp_geom_mean_...      1    114ms    0.0%   114ms   12.0MiB    0.0%  12.0MiB
-     sdp_Issue_198          1    110ms    0.0%   110ms   11.3MiB    0.0%  11.3MiB
-     sdp_Real_Varia...      1    106ms    0.0%   106ms   5.29MiB    0.0%  5.29MiB
-     sdp_geom_mean_...      1    105ms    0.0%   105ms   19.6MiB    0.1%  19.6MiB
-     sdp_trace_logm...      1   92.9ms    0.0%  92.9ms   6.76MiB    0.0%  6.76MiB
-     sdp_geom_mean_...      1   74.8ms    0.0%  74.8ms   20.7MiB    0.1%  20.7MiB
-     sdp_geom_mean_...      1   74.0ms    0.0%  74.0ms   21.0MiB    0.1%  21.0MiB
-     sdp_geom_mean_...      1   72.9ms    0.0%  72.9ms   20.4MiB    0.1%  20.4MiB
-     sdp_geom_mean_...      1   70.4ms    0.0%  70.4ms   20.5MiB    0.1%  20.5MiB
-     sdp_kron_atom          1   59.0ms    0.0%  59.0ms   11.0MiB    0.0%  11.0MiB
-     sdp_geom_mean_...      1   55.4ms    0.0%  55.4ms   14.5MiB    0.0%  14.5MiB
-     sdp_quantum_re...      1   52.2ms    0.0%  52.2ms   3.02MiB    0.0%  3.02MiB
-     sdp_quantum_re...      1   6.48ms    0.0%  6.48ms    347KiB    0.0%   347KiB
-   affine                   1    29.6s    8.0%   29.6s   3.44GiB    9.8%  3.44GiB
-     affine_Partial...      1    2.85s    0.8%   2.85s    351MiB    1.0%   351MiB
-     affine_hcat_atom       1    2.38s    0.6%   2.38s    238MiB    0.7%   238MiB
-     affine_dot_mul...      1    2.37s    0.6%   2.37s    174MiB    0.5%   174MiB
-     affine_permute...      1    2.35s    0.6%   2.35s    380MiB    1.1%   380MiB
-     affine_multipl...      1    2.15s    0.6%   2.15s    243MiB    0.7%   243MiB
-     affine_vcat_atom       1    1.82s    0.5%   1.82s    207MiB    0.6%   207MiB
-     affine_transpo...      1    1.35s    0.4%   1.35s   95.3MiB    0.3%  95.3MiB
-     affine_add_atom        1    1.18s    0.3%   1.18s   79.5MiB    0.2%  79.5MiB
+     sdp_sdp_variables      1    228ms    0.1%   228ms   28.1MiB    0.1%  28.1MiB
+     sdp_geom_mean_...      1    228ms    0.1%   228ms   24.4MiB    0.1%  24.4MiB
+     sdp_operator_n...      1    214ms    0.1%   214ms   24.3MiB    0.1%  24.3MiB
+     sdp_trace_mpow...      1    208ms    0.1%   208ms   19.6MiB    0.1%  19.6MiB
+     sdp_trace_mpow...      1    201ms    0.1%   201ms   16.6MiB    0.0%  16.6MiB
+     sdp_geom_mean_...      1    197ms    0.1%   197ms   15.9MiB    0.0%  15.9MiB
+     sdp_quantum_re...      1    187ms    0.1%   187ms   19.6MiB    0.1%  19.6MiB
+     sdp_matrix_fra...      1    169ms    0.0%   169ms   17.5MiB    0.0%  17.5MiB
+     sdp_quantum_re...      1    151ms    0.0%   151ms   22.1MiB    0.1%  22.1MiB
+     sdp_nuclear_no...      1    133ms    0.0%   133ms   18.7MiB    0.1%  18.7MiB
+     sdp_sigma_max_...      1    123ms    0.0%   123ms   16.5MiB    0.0%  16.5MiB
+     sdp_sdp_constr...      1    114ms    0.0%   114ms   9.92MiB    0.0%  9.92MiB
+     sdp_Issue_198          1    114ms    0.0%   114ms   11.3MiB    0.0%  11.3MiB
+     sdp_Real_Varia...      1    109ms    0.0%   109ms   5.35MiB    0.0%  5.35MiB
+     sdp_geom_mean_...      1    106ms    0.0%   106ms   20.2MiB    0.1%  20.2MiB
+     sdp_trace_logm...      1   93.5ms    0.0%  93.5ms   6.76MiB    0.0%  6.76MiB
+     sdp_geom_mean_...      1   78.0ms    0.0%  78.0ms   14.6MiB    0.0%  14.6MiB
+     sdp_geom_mean_...      1   74.9ms    0.0%  74.9ms   12.1MiB    0.0%  12.1MiB
+     sdp_geom_mean_...      1   73.8ms    0.0%  73.8ms   21.0MiB    0.1%  21.0MiB
+     sdp_geom_mean_...      1   72.4ms    0.0%  72.4ms   20.7MiB    0.1%  20.7MiB
+     sdp_geom_mean_...      1   72.4ms    0.0%  72.4ms   19.4MiB    0.1%  19.4MiB
+     sdp_geom_mean_...      1   67.7ms    0.0%  67.7ms   19.2MiB    0.1%  19.2MiB
+     sdp_kron_atom          1   58.1ms    0.0%  58.1ms   11.0MiB    0.0%  11.0MiB
+     sdp_quantum_re...      1   53.9ms    0.0%  53.9ms   3.02MiB    0.0%  3.02MiB
+     sdp_quantum_re...      1   6.87ms    0.0%  6.87ms    347KiB    0.0%   347KiB
+   affine                   1    30.1s    8.1%   30.1s   3.47GiB    9.9%  3.47GiB
+     affine_Partial...      1    2.96s    0.8%   2.96s    352MiB    1.0%   352MiB
+     affine_hcat_atom       1    2.43s    0.7%   2.43s    243MiB    0.7%   243MiB
+     affine_dot_mul...      1    2.40s    0.6%   2.40s    175MiB    0.5%   175MiB
+     affine_permute...      1    2.29s    0.6%   2.29s    380MiB    1.1%   380MiB
+     affine_multipl...      1    2.16s    0.6%   2.16s    243MiB    0.7%   243MiB
+     affine_vcat_atom       1    1.84s    0.5%   1.84s    208MiB    0.6%   208MiB
+     affine_transpo...      1    1.39s    0.4%   1.39s   95.5MiB    0.3%  95.5MiB
+     affine_add_atom        1    1.19s    0.3%   1.19s   79.5MiB    0.2%  79.5MiB
+     affine_satisfy...      1    1.05s    0.3%   1.05s   55.1MiB    0.2%  55.1MiB
      affine_Diagona...      1    1.05s    0.3%   1.05s    114MiB    0.3%   114MiB
-     affine_satisfy...      1    996ms    0.3%   996ms   55.0MiB    0.2%  55.0MiB
-     affine_conv_atom       1    841ms    0.2%   841ms   49.0MiB    0.1%  49.0MiB
-     affine_index_atom      1    678ms    0.2%   678ms   43.4MiB    0.1%  43.4MiB
-     affine_dot_atom        1    664ms    0.2%   664ms   15.1MiB    0.0%  15.1MiB
-     affine_dualvalue       1    628ms    0.2%   628ms   75.0MiB    0.2%  75.0MiB
-     affine_reshape...      1    590ms    0.2%   590ms   30.5MiB    0.1%  30.5MiB
-     affine_sum_atom        1    319ms    0.1%   319ms   23.7MiB    0.1%  23.7MiB
-     affine_kron_atom       1    235ms    0.1%   235ms   16.3MiB    0.0%  16.3MiB
-     affine_single_...      1    165ms    0.0%   165ms   21.9MiB    0.1%  21.9MiB
-     affine_diag_atom       1    129ms    0.0%   129ms   15.8MiB    0.0%  15.8MiB
-     affine_dot_ato...      1    125ms    0.0%   125ms   6.00MiB    0.0%  6.00MiB
-     affine_single_...      1    108ms    0.0%   108ms   17.5MiB    0.0%  17.5MiB
-     affine_negate_...      1   86.6ms    0.0%  86.6ms   3.72MiB    0.0%  3.72MiB
-     affine_trace_atom      1   54.7ms    0.0%  54.7ms   3.28MiB    0.0%  3.28MiB
+     affine_conv_atom       1    857ms    0.2%   857ms   49.1MiB    0.1%  49.1MiB
+     affine_index_atom      1    695ms    0.2%   695ms   43.5MiB    0.1%  43.5MiB
+     affine_dot_atom        1    663ms    0.2%   663ms   15.2MiB    0.0%  15.2MiB
+     affine_dualvalue       1    631ms    0.2%   631ms   75.2MiB    0.2%  75.2MiB
+     affine_reshape...      1    586ms    0.2%   586ms   30.6MiB    0.1%  30.6MiB
+     affine_sum_atom        1    285ms    0.1%   285ms   23.8MiB    0.1%  23.8MiB
+     affine_kron_atom       1    208ms    0.1%   208ms   16.3MiB    0.0%  16.3MiB
+     affine_single_...      1    167ms    0.0%   167ms   22.0MiB    0.1%  22.0MiB
+     affine_single_...      1    139ms    0.0%   139ms   17.5MiB    0.0%  17.5MiB
+     affine_diag_atom       1    131ms    0.0%   131ms   15.8MiB    0.0%  15.8MiB
+     affine_dot_ato...      1    127ms    0.0%   127ms   6.03MiB    0.0%  6.03MiB
+     affine_negate_...      1   85.2ms    0.0%  85.2ms   3.74MiB    0.0%  3.74MiB
+     affine_trace_atom      1   52.1ms    0.0%  52.1ms   3.31MiB    0.0%  3.31MiB
    socp                     1    17.9s    4.8%   17.9s   2.24GiB    6.4%  2.24GiB
-     socp_quad_form...      1    2.78s    0.7%   2.78s    125MiB    0.3%   125MiB
-     socp_dual_mini...      1    2.25s    0.6%   2.25s    169MiB    0.5%   169MiB
-     socp_sum_squar...      1    1.12s    0.3%   1.12s    113MiB    0.3%   113MiB
+     socp_quad_form...      1    2.80s    0.8%   2.80s    125MiB    0.3%   125MiB
+     socp_dual_mini...      1    2.24s    0.6%   2.24s    169MiB    0.5%   169MiB
+     socp_sum_squar...      1    1.14s    0.3%   1.14s    113MiB    0.3%   113MiB
      socp_rational_...      1    1.10s    0.3%   1.10s    137MiB    0.4%   137MiB
-     socp_inv_pos_atom      1    925ms    0.2%   925ms   82.1MiB    0.2%  82.1MiB
-     socp_quad_over...      1    750ms    0.2%   750ms   40.8MiB    0.1%  40.8MiB
-     socp_dual_norm...      1    695ms    0.2%   695ms   79.3MiB    0.2%  79.3MiB
-     socp_norm_cons...      1    598ms    0.2%   598ms   57.2MiB    0.2%  57.2MiB
-     socp_rational_...      1    512ms    0.1%   512ms   51.1MiB    0.1%  51.1MiB
-     socp_huber_atom        1    396ms    0.1%   396ms   36.7MiB    0.1%  36.7MiB
-     socp_square_atom       1    379ms    0.1%   379ms   25.8MiB    0.1%  25.8MiB
-     socp_fix_multi...      1    353ms    0.1%   353ms   41.2MiB    0.1%  41.2MiB
-     socp_dual_frob...      1    291ms    0.1%   291ms   37.2MiB    0.1%  37.2MiB
-     socp_geo_mean_...      1    285ms    0.1%   285ms   25.2MiB    0.1%  25.2MiB
-     socp_fix_and_f...      1    235ms    0.1%   235ms   20.5MiB    0.1%  20.5MiB
-     socp_rational_...      1    144ms    0.0%   144ms   9.41MiB    0.0%  9.41MiB
-     socp_sqrt_atom         1   54.8ms    0.0%  54.8ms   1.29MiB    0.0%  1.29MiB
-   constant                 1    8.49s    2.3%   8.49s    883MiB    2.5%   883MiB
-     constant_fix!_...      1    3.23s    0.9%   3.23s    285MiB    0.8%   285MiB
-     constant_Issue...      1    1.91s    0.5%   1.91s    164MiB    0.5%   164MiB
-     constant_Issue...      1    964ms    0.3%   964ms   86.4MiB    0.2%  86.4MiB
-     constant_fix!_...      1    624ms    0.2%   624ms   60.5MiB    0.2%  60.5MiB
-     constant_Test_...      1    361ms    0.1%   361ms   18.5MiB    0.1%  18.5MiB
-     constant_fix!_...      1    288ms    0.1%   288ms   19.8MiB    0.1%  19.8MiB
-   lp                       1    5.17s    1.4%   5.17s    647MiB    1.8%   647MiB
-     lp_dotsort_atom        1    785ms    0.2%   785ms   76.0MiB    0.2%  76.0MiB
-     lp_min_atom            1    515ms    0.1%   515ms   38.2MiB    0.1%  38.2MiB
-     lp_sumlargest_...      1    489ms    0.1%   489ms   47.9MiB    0.1%  47.9MiB
-     lp_sumsmallest...      1    350ms    0.1%   350ms   31.2MiB    0.1%  31.2MiB
-     lp_minimum_atom        1    345ms    0.1%   345ms   39.5MiB    0.1%  39.5MiB
-     lp_max_atom            1    334ms    0.1%   334ms   32.7MiB    0.1%  32.7MiB
-     lp_dual_abs_atom       1    274ms    0.1%   274ms   20.7MiB    0.1%  20.7MiB
-     lp_neg_atom            1    223ms    0.1%   223ms   19.3MiB    0.1%  19.3MiB
-     lp_maximum_atom        1    178ms    0.0%   178ms   13.2MiB    0.0%  13.2MiB
-     lp_dual_norm_i...      1   90.5ms    0.0%  90.5ms   3.95MiB    0.0%  3.95MiB
-     lp_pos_atom            1   79.4ms    0.0%  79.4ms   9.08MiB    0.0%  9.08MiB
-     lp_dual_norm_1...      1   67.9ms    0.0%  67.9ms   3.87MiB    0.0%  3.87MiB
-     lp_hinge_loss_...      1    174μs    0.0%   174μs   57.3KiB    0.0%  57.3KiB
+     socp_inv_pos_atom      1    889ms    0.2%   889ms   82.3MiB    0.2%  82.3MiB
+     socp_quad_over...      1    745ms    0.2%   745ms   40.8MiB    0.1%  40.8MiB
+     socp_dual_norm...      1    693ms    0.2%   693ms   79.4MiB    0.2%  79.4MiB
+     socp_norm_cons...      1    649ms    0.2%   649ms   57.2MiB    0.2%  57.2MiB
+     socp_rational_...      1    506ms    0.1%   506ms   51.1MiB    0.1%  51.1MiB
+     socp_square_atom       1    375ms    0.1%   375ms   25.9MiB    0.1%  25.9MiB
+     socp_huber_atom        1    366ms    0.1%   366ms   36.7MiB    0.1%  36.7MiB
+     socp_fix_multi...      1    353ms    0.1%   353ms   41.3MiB    0.1%  41.3MiB
+     socp_geo_mean_...      1    326ms    0.1%   326ms   25.3MiB    0.1%  25.3MiB
+     socp_dual_frob...      1    293ms    0.1%   293ms   37.2MiB    0.1%  37.2MiB
+     socp_fix_and_f...      1    230ms    0.1%   230ms   20.6MiB    0.1%  20.6MiB
+     socp_rational_...      1    141ms    0.0%   141ms   9.41MiB    0.0%  9.41MiB
+     socp_sqrt_atom         1   55.1ms    0.0%  55.1ms   1.29MiB    0.0%  1.29MiB
+   constant                 1    8.59s    2.3%   8.59s    886MiB    2.5%   886MiB
+     constant_fix!_...      1    3.30s    0.9%   3.30s    281MiB    0.8%   281MiB
+     constant_Issue...      1    1.89s    0.5%   1.89s    164MiB    0.5%   164MiB
+     constant_Issue...      1    967ms    0.3%   967ms   86.5MiB    0.2%  86.5MiB
+     constant_fix!_...      1    622ms    0.2%   622ms   60.6MiB    0.2%  60.6MiB
+     constant_Test_...      1    368ms    0.1%   368ms   18.5MiB    0.1%  18.5MiB
+     constant_fix!_...      1    297ms    0.1%   297ms   19.9MiB    0.1%  19.9MiB
+   lp                       1    5.26s    1.4%   5.26s    648MiB    1.8%   648MiB
+     lp_dotsort_atom        1    834ms    0.2%   834ms   76.1MiB    0.2%  76.1MiB
+     lp_sumlargest_...      1    529ms    0.1%   529ms   48.0MiB    0.1%  48.0MiB
+     lp_min_atom            1    474ms    0.1%   474ms   38.3MiB    0.1%  38.3MiB
+     lp_minimum_atom        1    367ms    0.1%   367ms   39.6MiB    0.1%  39.6MiB
+     lp_sumsmallest...      1    350ms    0.1%   350ms   31.6MiB    0.1%  31.6MiB
+     lp_max_atom            1    327ms    0.1%   327ms   32.7MiB    0.1%  32.7MiB
+     lp_dual_abs_atom       1    275ms    0.1%   275ms   20.7MiB    0.1%  20.7MiB
+     lp_neg_atom            1    224ms    0.1%   224ms   19.3MiB    0.1%  19.3MiB
+     lp_maximum_atom        1    181ms    0.0%   181ms   13.2MiB    0.0%  13.2MiB
+     lp_dual_norm_i...      1   92.9ms    0.0%  92.9ms   3.98MiB    0.0%  3.98MiB
+     lp_pos_atom            1   77.7ms    0.0%  77.7ms   9.11MiB    0.0%  9.11MiB
+     lp_dual_norm_1...      1   66.9ms    0.0%  66.9ms   3.90MiB    0.0%  3.90MiB
+     lp_hinge_loss_...      1    202μs    0.0%   202μs   57.3KiB    0.0%  57.3KiB
  ────────────────────────────────────────────────────────────────────────────────
 
 ```
