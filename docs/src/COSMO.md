@@ -6,10 +6,10 @@ Depth = 4
 ```
 
 
-Compilation warmup gives an estimate of 55 seconds of compilation time.
+Compilation warmup gives an estimate of 1 minute, 3 seconds of compilation time.
 
 ## COSMO 
-These tests were run on July 7, 2022 at 22:52 (UTC).
+These tests were run on July 7, 2022 at 23:12 (UTC).
 
 Tests run with `decompose = false`, `max_iter = 40000`, `eps_abs = 5e-7`, and `eps_rel = 5e-7`.
 
@@ -20,7 +20,7 @@ Regex[r"mip", r"dual"]
 
 ### Tests
 
-Tests took 5 minutes, 58 seconds to run (after warmup).
+Tests took 8 minutes, 42 seconds to run (after warmup).
 
 ```@raw html
 <table>
@@ -33,14 +33,14 @@ Tests took 5 minutes, 58 seconds to run (after warmup).
 <td style="text-align:center;">total</td>
 </tr>
 <tr><td style="text-align:left;border-right: solid 2px;">COSMO tests</td>
-<td style="text-align:center;color:green;">639</td>
-<td style="text-align:center;color:red;">6</td>
-<td style="text-align:center;color:red;">65</td>
+<td style="text-align:center;color:green;">2254</td>
+<td style="text-align:center;color:red;">18</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">710</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2272</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;Convex</td>
-<td style="text-align:center;color:green;">639</td>
-<td style="text-align:center;color:red;">6</td>
+<td style="text-align:center;color:green;">638</td>
+<td style="text-align:center;color:red;">7</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">645</td>
@@ -81,8 +81,8 @@ Tests took 5 minutes, 58 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
-<td style="text-align:center;color:green;">344</td>
-<td style="text-align:center;color:red;">6</td>
+<td style="text-align:center;color:green;">343</td>
+<td style="text-align:center;color:red;">7</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">350</td>
@@ -267,8 +267,8 @@ Tests took 5 minutes, 58 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdp_lieb_ando</td>
-<td style="text-align:center;color:green;">76</td>
-<td style="text-align:center;color:red;">4</td>
+<td style="text-align:center;color:green;">75</td>
+<td style="text-align:center;color:red;">5</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">80</td>
@@ -471,417 +471,519 @@ Tests took 5 minutes, 58 seconds to run (after warmup).
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;SumOfSquares</td>
+<td style="text-align:center;color:green;">1616</td>
+<td style="text-align:center;color:red;">11</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">65</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">65</td>
+<td style="text-align:center;color:blue;">1627</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;socp</td>
+<td style="text-align:center;color:green;">445</td>
+<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">13</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">13</td>
+<td style="text-align:center;color:blue;">446</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_term_fixed</td>
+<td style="text-align:center;color:green;">44</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">44</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_horn</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_scaled_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_univariate_sum</td>
+<td style="text-align:center;color:green;">34</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">34</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_quartic_comparison</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_scaled_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_concave_then_convex_cubic</td>
+<td style="text-align:center;color:green;">11</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">11</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_cheby_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_term</td>
+<td style="text-align:center;color:green;">44</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">44</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_quartic_constant</td>
+<td style="text-align:center;color:green;">33</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">33</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_options_pricing</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">10</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 30</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 35</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 40</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 45</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 50</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sdsos_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;lp</td>
+<td style="text-align:center;color:green;">495</td>
+<td style="text-align:center;color:red;">4</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">14</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">14</td>
+<td style="text-align:center;color:blue;">499</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_univariate_sum</td>
+<td style="text-align:center;color:green;">34</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">34</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_options_pricing</td>
+<td style="text-align:center;color:green;">6</td>
+<td style="text-align:center;color:red;">4</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">10</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 30</td>
+<td style="text-align:center;color:green;">1</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 35</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 40</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:red;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 45</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 50</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_cheby_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_quartic_comparison</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_cheby_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_horn</td>
+<td style="text-align:center;color:green;">3</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">3</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_term</td>
+<td style="text-align:center;color:green;">44</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">44</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_term_fixed</td>
+<td style="text-align:center;color:green;">44</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">44</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_scaled_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_scaled_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_quartic_constant</td>
+<td style="text-align:center;color:green;">33</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">33</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_concave_then_convex_cubic</td>
+<td style="text-align:center;color:green;">11</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">11</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dsos_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;sdp</td>
+<td style="text-align:center;color:green;">676</td>
+<td style="text-align:center;color:red;">6</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">38</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">38</td>
+<td style="text-align:center;color:blue;">682</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sosdemo5_infeasible</td>
+<td style="text-align:center;color:green;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;simple_matrix</td>
+<td style="text-align:center;color:green;">6</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_concave_then_convex_cubic</td>
+<td style="text-align:center;color:green;">11</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">11</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_term_fixed</td>
+<td style="text-align:center;color:green;">44</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">44</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rearrangement</td>
+<td style="text-align:center;color:green;">25</td>
 <td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">25</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxcut</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with γ=3.9 it should be infeasible</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
-</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxcut</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with γ=4.1 it should be feasible</td>
+<td style="text-align:center;color:green;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_term</td>
+<td style="text-align:center;color:green;">44</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">44</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_scaled_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal_rem</td>
+<td style="text-align:center;color:green;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sosdemo5_feasible</td>
+<td style="text-align:center;color:green;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chebyshev</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">4</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sosdemo9</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_cheby_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_feasible_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">7</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_horn</td>
+<td style="text-align:center;color:green;">5</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">5</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BPT12e399_rem</td>
+<td style="text-align:center;color:green;">48</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">48</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic_infeasible_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">6</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic_feasible_scaled_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">7</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal_4</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic_infeasible_scaled_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">6</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quadratic_feasible_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">7</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_scaled_univariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;motzkin</td>
+<td style="text-align:center;color:green;">4</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">4</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sosdemo10</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BPT12e399_maxdegree</td>
+<td style="text-align:center;color:green;">56</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">56</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_infeasible_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">4</td>
+<td style="text-align:center;color:red;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_options_pricing</td>
-<td style="text-align:center;">0</td>
-<td style="text-align:center;">0</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">10</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 30</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 35</td>
+<td style="text-align:center;color:green;">1</td>
+<td style="text-align:center;color:red;">1</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 40</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 45</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
+</tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K = 50</td>
+<td style="text-align:center;color:green;">2</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;">0</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_quartic_constant</td>
+<td style="text-align:center;color:green;">33</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">33</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_infeasible_scaled_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">6</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">6</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_univariate_sum</td>
+<td style="text-align:center;color:green;">34</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">34</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_bivariate_quadratic</td>
+<td style="text-align:center;color:green;">53</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">53</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;choi</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_feasible_scaled_lyapunov_switched_system</td>
+<td style="text-align:center;color:green;">7</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">7</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal_4_rem</td>
+<td style="text-align:center;color:green;">9</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">9</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sos_quartic_comparison</td>
+<td style="text-align:center;color:green;">2</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:blue;">1</td>
+<td style="text-align:center;color:blue;">2</td>
 </tr><tr><td style="text-align:left;border-right: solid 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quartic_ideal_2_rem</td>
+<td style="text-align:center;color:green;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;">0</td>
-<td style="text-align:center;color:red;">1</td>
 <td style="text-align:center;">0</td>
 <td style="text-align:center;color:blue;">1</td>
 </tr></table>
@@ -893,4062 +995,92 @@ Tests took 5 minutes, 58 seconds to run (after warmup).
 Error in testset sdp_quantum_relative_entropy3_lowrank:
 Test Failed at /home/runner/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:1509
   Expression: ≈(p.optval, evaluate(quantum_relative_entropy(B, A)), atol = atol, rtol = rtol)
-   Evaluated: -7.696254926354217e-5 ≈ Inf (atol=0.001, rtol=0.0)
-
-Error in testset sdp_lieb_ando:
-Test Failed at /home/runner/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2208
-  Expression: ≈(p.optval, QtAB, atol = atol * 5, rtol = rtol)
-   Evaluated: 0.7741389344136007 ≈ 0.7578352591531773 (atol=0.005, rtol=0.0)
+   Evaluated: -7.162372205101683e-5 ≈ Inf (atol=0.001, rtol=0.0)
 
 Error in testset sdp_lieb_ando:
 Test Failed at /home/runner/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2219
   Expression: ≈(p.optval, QtAB, atol = atol * 5, rtol = rtol)
-   Evaluated: 0.7873777104880079 ≈ 0.7578352591531773 (atol=0.005, rtol=0.0)
+   Evaluated: 0.9076330389113325 ≈ 0.9021268326206089 (atol=0.005, rtol=0.0)
+
+Error in testset sdp_lieb_ando:
+Test Failed at /home/runner/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2197
+  Expression: ≈(p.optval, QtAB, atol = atol * 5, rtol = rtol)
+   Evaluated: 8.506559277976827 ≈ 8.52415543754116 (atol=0.005, rtol=0.0)
 
 Error in testset sdp_lieb_ando:
 Test Failed at /home/runner/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2219
   Expression: ≈(p.optval, QtAB, atol = atol * 5, rtol = rtol)
-   Evaluated: 4.448230347331844 ≈ 4.518778619286791 (atol=0.005, rtol=0.0)
+   Evaluated: 8.46185120349194 ≈ 8.52415543754116 (atol=0.005, rtol=0.0)
+
+Error in testset sdp_lieb_ando:
+Test Failed at /home/runner/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2197
+  Expression: ≈(p.optval, QtAB, atol = atol * 5, rtol = rtol)
+   Evaluated: 13.365802951143714 ≈ 13.709515542957462 (atol=0.005, rtol=0.0)
 
 Error in testset sdp_lieb_ando:
 Test Failed at /home/runner/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:2219
   Expression: ≈(p.optval, QtAB, atol = atol * 5, rtol = rtol)
-   Evaluated: 4.107777835575196 ≈ 4.149886989433471 (atol=0.005, rtol=0.0)
+   Evaluated: 11.437953481066089 ≈ 13.709515542957462 (atol=0.005, rtol=0.0)
 
 Error in testset sdp_sdp_constraints:
 Test Failed at /home/runner/.julia/packages/Convex/FQF1R/src/problem_depot/problems/sdp.jl:86
   Expression: ≈(p.optval, 1, atol = atol, rtol = rtol)
    Evaluated: 1.0011298893448197 ≈ 1 (atol=0.001, rtol=0.0)
 
-Error in testset sdsos_term_fixed:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_term_fixed_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_term_fixed_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Error in testset K = 40:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:32
+  Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
+   Evaluated: 13.038876233333013 ≈ 13.2 (atol=0.1, rtol=0.0)
 
-Error in testset sdsos_univariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_univariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_univariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Error in testset K = 30:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:32
+  Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
+   Evaluated: 1.333663628680684e13 ≈ 132.63 (atol=0.1, rtol=0.0)
 
-Error in testset sdsos_horn:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_horn_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_horn_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Error in testset K = 40:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:31
+  Expression: JuMP.primal_status(model) == MOI.FEASIBLE_POINT
+   Evaluated: MathOptInterface.NO_SOLUTION == MathOptInterface.FEASIBLE_POINT
 
-Error in testset sdsos_scaled_univariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_scaled_univariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_scaled_univariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Error in testset K = 40:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:32
+  Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
+   Evaluated: 3.795329664916024e12 ≈ 132.63 (atol=0.1, rtol=0.0)
 
-Error in testset sdsos_univariate_sum:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_univariate_sum_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_univariate_sum_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Error in testset K = 50:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:32
+  Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
+   Evaluated: 4.676455363928556e12 ≈ 132.63 (atol=0.1, rtol=0.0)
 
-Error in testset sdsos_quartic_comparison:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_quartic_comparison_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_quartic_comparison_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sdsos_scaled_bivariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_scaled_bivariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_scaled_bivariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sdsos_concave_then_convex_cubic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_concave_then_convex_cubic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_concave_then_convex_cubic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sdsos_cheby_univariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_cheby_univariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_cheby_univariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sdsos_term:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_term_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_term_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sdsos_quartic_constant:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_quartic_constant_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_quartic_constant_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sdsos_options_pricing:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_options_pricing_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_options_pricing_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sdsos_bivariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_bivariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sdsos_bivariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_univariate_sum:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_univariate_sum_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_univariate_sum_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_options_pricing:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_options_pricing_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_options_pricing_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_cheby_bivariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_cheby_bivariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_cheby_bivariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_quartic_comparison:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_quartic_comparison_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_quartic_comparison_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_cheby_univariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_cheby_univariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_cheby_univariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_horn:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_horn_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_horn_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_term:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_term_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_term_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_term_fixed:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_term_fixed_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_term_fixed_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_scaled_bivariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_scaled_bivariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_scaled_bivariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_scaled_univariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_scaled_univariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_scaled_univariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_bivariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_bivariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_bivariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_quartic_constant:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_quartic_constant_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_quartic_constant_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_concave_then_convex_cubic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_concave_then_convex_cubic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_concave_then_convex_cubic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset dsos_univariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_univariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.dsos_univariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sosdemo5_infeasible:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sosdemo5_infeasible_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sosdemo5_infeasible_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset simple_matrix:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.simple_matrix_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.simple_matrix_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_concave_then_convex_cubic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_concave_then_convex_cubic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_concave_then_convex_cubic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_term_fixed:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_term_fixed_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_term_fixed_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset rearrangement:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.rearrangement_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.rearrangement_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset maxcut:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.maxcut_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.maxcut_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_term:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_term_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_term_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_scaled_bivariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_scaled_bivariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_scaled_bivariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quartic_ideal_rem:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_rem_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_rem_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sosdemo5_feasible:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sosdemo5_feasible_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sosdemo5_feasible_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Error in testset with γ=3.9 it should be infeasible:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/maxcut.jl:37
+  Expression: JuMP.dual_status(model) == MOI.INFEASIBILITY_CERTIFICATE
+   Evaluated: MathOptInterface.NEARLY_FEASIBLE_POINT == MathOptInterface.INFEASIBILITY_CERTIFICATE
 
 Error in testset chebyshev:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.chebyshev_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.chebyshev_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/chebyshev.jl:34
+  Expression: isapprox(JuMP.value(p), (((128 * x ^ 8 - 256 * x ^ 6) + 160 * x ^ 4) - 32 * x ^ 2) + 1, ztol = 4 * config.atol, atol = 4 * config.atol, rtol = 4 * config.rtol)
+   Evaluated: isapprox(128.0466294187455x⁸ - 0.00021482472788080624x⁷ - 256.08288681166334x⁶ + 0.0004868465141597236x⁵ + 160.04341443352598x⁴ - 0.00031469816167418806x³ - 32.00648600838867x² + 4.9718229769366186e-5x + 1.0001152190148836, 128x⁸ - 256x⁶ + 160x⁴ - 32x² + 1; ztol = 0.004, atol = 0.004, rtol = 0.0)
 
-Error in testset sosdemo9:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sosdemo9_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sosdemo9_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_univariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_univariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_univariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_cheby_univariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_cheby_univariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_cheby_univariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quartic_ideal:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quartic_feasible_lyapunov_switched_system:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_feasible_lyapunov_switched_system_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_feasible_lyapunov_switched_system_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_horn:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_horn_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_horn_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset BPT12e399_rem:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.BPT12e399_rem_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.BPT12e399_rem_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quadratic_infeasible_lyapunov_switched_system:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quadratic_infeasible_lyapunov_switched_system_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quadratic_infeasible_lyapunov_switched_system_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quadratic_feasible_scaled_lyapunov_switched_system:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quadratic_feasible_scaled_lyapunov_switched_system_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quadratic_feasible_scaled_lyapunov_switched_system_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quartic_ideal_4:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_4_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_4_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quadratic_infeasible_scaled_lyapunov_switched_system:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quadratic_infeasible_scaled_lyapunov_switched_system_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quadratic_infeasible_scaled_lyapunov_switched_system_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quadratic_feasible_lyapunov_switched_system:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quadratic_feasible_lyapunov_switched_system_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quadratic_feasible_lyapunov_switched_system_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_scaled_univariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_scaled_univariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_scaled_univariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset motzkin:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.motzkin_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.motzkin_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sosdemo10:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sosdemo10_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sosdemo10_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset BPT12e399_maxdegree:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.BPT12e399_maxdegree_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.BPT12e399_maxdegree_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Error in testset chebyshev:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/chebyshev.jl:35
+  Expression: isapprox(JuMP.value(γ), 128, atol = config.atol, rtol = config.rtol)
+   Evaluated: isapprox(128.0466294187455, 128; atol = 0.001, rtol = 0.0)
 
 Error in testset quartic_infeasible_lyapunov_switched_system:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_infeasible_lyapunov_switched_system_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_infeasible_lyapunov_switched_system_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/lyapunov_switched_system.jl:66
+  Expression: JuMP.termination_status(model) == MOI.INFEASIBLE
+   Evaluated: MathOptInterface.ITERATION_LIMIT == MathOptInterface.INFEASIBLE
 
-Error in testset sos_options_pricing:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_options_pricing_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_options_pricing_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Error in testset quartic_infeasible_lyapunov_switched_system:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/lyapunov_switched_system.jl:67
+  Expression: JuMP.dual_status(model) == MOI.INFEASIBILITY_CERTIFICATE
+   Evaluated: MathOptInterface.INFEASIBLE_POINT == MathOptInterface.INFEASIBILITY_CERTIFICATE
 
-Error in testset sos_quartic_constant:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_quartic_constant_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_quartic_constant_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quartic_infeasible_scaled_lyapunov_switched_system:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_infeasible_scaled_lyapunov_switched_system_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_infeasible_scaled_lyapunov_switched_system_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_univariate_sum:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_univariate_sum_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_univariate_sum_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_bivariate_quadratic:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_bivariate_quadratic_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_bivariate_quadratic_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset choi:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.choi_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.choi_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quartic_feasible_scaled_lyapunov_switched_system:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_feasible_scaled_lyapunov_switched_system_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_feasible_scaled_lyapunov_switched_system_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quartic_ideal_4_rem:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_4_rem_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_4_rem_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset sos_quartic_comparison:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.sos_quartic_comparison_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.sos_quartic_comparison_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
-
-Error in testset quartic_ideal_2_rem:
-Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:37
-  Got exception outside of a @test
-  UndefVarError: TestConfig not defined
-  Stacktrace:
-    [1] getproperty
-      @ ./Base.jl:26 [inlined]
-    [2] _test(test_func::typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_2_rem_test), opt::Function, #unused#::Val{true}, atol::Float64, rtol::Float64, T::Type)
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:30
-    [3] #3
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36 [inlined]
-    [4] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [5] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-    [6] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:38 [inlined]
-    [7] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-    [8] (::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"})(name::String, problem_func::ConvexTests.SumOfSquaresBench.var"#3#4"{typeof(ConvexTests.SumOfSquaresBench.Tests.quartic_ideal_2_rem_test)})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:36
-    [9] foreach_problem(apply::ConvexTests.var"#3#4"{DataType, Float64, Float64, TimerOutputs.TimerOutput, var"#1#2"}, class::String, problems::Nothing; exclude::Vector{Regex})
-      @ ConvexTests.SumOfSquaresBench ~/work/ConvexTests.jl/ConvexTests.jl/src/sumofsquares.jl:36
-   [10] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [11] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [12] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:35 [inlined]
-   [13] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [14] _run_tests(handle_problem!::Function, problems::Dict{String, Dict{String, Function}}, foreach_problem::typeof(ConvexTests.SumOfSquaresBench.foreach_problem), problems_exclude::Nothing; exclude::Vector{Regex}, T::Type, atol::Float64, rtol::Float64, to::TimerOutputs.TimerOutput)
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:33
-   [15] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [16] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [17] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:52 [inlined]
-   [18] macro expansion
-      @ ~/.julia/packages/TimerOutputs/jgSVI/src/TimerOutput.jl:236 [inlined]
-   [19] _run_tests(::Function; to::TimerOutputs.TimerOutput, excluded_modules::Vector{Module}, kws::Base.Iterators.Pairs{Symbol, Any, Tuple{Symbol, Symbol}, NamedTuple{(:T, :exclude), Tuple{DataType, Vector{Regex}}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:50
-   [20] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [21] macro expansion
-      @ /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Test/src/Test.jl:1151 [inlined]
-   [22] macro expansion
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:77 [inlined]
-   [23] macro expansion
-      @ ./timing.jl:368 [inlined]
-   [24] do_tests(name::String, opt::var"#1#2"; variant::String, first::Bool, last::Bool, description::String, T::Type, exclude::Vector{Regex}, kwargs::Base.Iterators.Pairs{Union{}, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
-      @ ConvexTests ~/work/ConvexTests.jl/ConvexTests.jl/src/ConvexTests.jl:75
-   [25] top-level scope
-      @ ~/work/ConvexTests.jl/ConvexTests.jl/COSMO/test.jl:5
-   [26] include(mod::Module, _path::String)
-      @ Base ./Base.jl:384
-   [27] exec_options(opts::Base.JLOptions)
-      @ Base ./client.jl:285
-   [28] _start()
-      @ Base ./client.jl:485
+Error in testset K = 35:
+Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/options_pricing.jl:32
+  Expression: ≈(JuMP.objective_value(model), expected, atol = atol, rtol = rtol)
+   Evaluated: 17.296607935536045 ≈ 17.17 (atol=0.1, rtol=0.0)
 
 ```
 
@@ -4958,210 +1090,210 @@ Error During Test at /home/runner/work/ConvexTests.jl/ConvexTests.jl/src/ConvexT
  ────────────────────────────────────────────────────────────────────────────────
                                         Time                    Allocations      
                                ───────────────────────   ────────────────────────
-       Tot / % measured:             358s /  99.8%           38.1GiB /  99.9%    
+       Tot / % measured:             521s /  99.8%           47.2GiB /  99.9%    
 
  Section               ncalls     time    %tot     avg     alloc    %tot      avg
  ────────────────────────────────────────────────────────────────────────────────
- Convex                     1     330s   92.4%    330s   33.5GiB   87.9%  33.5GiB
-   sdp                      1     263s   73.5%    263s   25.9GiB   68.0%  25.9GiB
-     sdp_quantum_re...      1    73.3s   20.5%   73.3s   5.79GiB   15.2%  5.79GiB
-     sdp_lieb_ando          1    70.9s   19.8%   70.9s   7.80GiB   20.5%  7.80GiB
-     sdp_quantum_re...      1    31.5s    8.8%   31.5s   2.53GiB    6.7%  2.53GiB
-     sdp_quantum_re...      1    15.4s    4.3%   15.4s   1.22GiB    3.2%  1.22GiB
-     sdp_quantum_re...      1    13.7s    3.8%   13.7s   1.53GiB    4.0%  1.53GiB
-     sdp_operator_n...      1    3.64s    1.0%   3.64s    307MiB    0.8%   307MiB
-     sdp_trace_logm...      1    3.57s    1.0%   3.57s    447MiB    1.1%   447MiB
-     sdp_geom_mean_...      1    2.87s    0.8%   2.87s    114MiB    0.3%   114MiB
-     sdp_quantum_re...      1    2.85s    0.8%   2.85s    252MiB    0.6%   252MiB
-     sdp_Partial_trace      1    1.83s    0.5%   1.83s    195MiB    0.5%   195MiB
-     sdp_trace_mpow...      1    1.73s    0.5%   1.73s    222MiB    0.6%   222MiB
-     sdp_quantum_re...      1    1.70s    0.5%   1.70s   18.4MiB    0.0%  18.4MiB
-     sdp_trace_mpow...      1    1.61s    0.5%   1.61s   28.4MiB    0.1%  28.4MiB
-     sdp_relative_e...      1    1.54s    0.4%   1.54s    168MiB    0.4%   168MiB
-     sdp_quantum_re...      1    1.49s    0.4%   1.49s   13.2MiB    0.0%  13.2MiB
-     sdp_sum_larges...      1    1.44s    0.4%   1.44s    115MiB    0.3%   115MiB
-     sdp_geom_mean_...      1    1.38s    0.4%   1.38s    196MiB    0.5%   196MiB
-     sdp_matrix_fra...      1    1.38s    0.4%   1.38s    131MiB    0.3%   131MiB
-     sdp_quantum_ch...      1    1.17s    0.3%   1.17s   64.2MiB    0.2%  64.2MiB
-     sdp_geom_mean_...      1    1.03s    0.3%   1.03s    110MiB    0.3%   110MiB
-     sdp_quantum_re...      1    931ms    0.3%   931ms   71.3MiB    0.2%  71.3MiB
-     sdp_min_maxeig...      1    898ms    0.3%   898ms    115MiB    0.3%   115MiB
-     sdp_trace_mpow...      1    661ms    0.2%   661ms   27.5MiB    0.1%  27.5MiB
-     sdp_lambda_min...      1    657ms    0.2%   657ms   82.5MiB    0.2%  82.5MiB
-     sdp_nuclear_no...      1    643ms    0.2%   643ms   75.7MiB    0.2%  75.7MiB
-     sdp_Complex_Va...      1    603ms    0.2%   603ms   36.7MiB    0.1%  36.7MiB
-     sdp_geom_mean_...      1    599ms    0.2%   599ms   72.6MiB    0.2%  72.6MiB
-     sdp_relative_e...      1    564ms    0.2%   564ms   18.0MiB    0.0%  18.0MiB
-     sdp_quantum_re...      1    519ms    0.1%   519ms   44.0MiB    0.1%  44.0MiB
-     sdp_socp_sumsq...      1    516ms    0.1%   516ms   53.4MiB    0.1%  53.4MiB
-     sdp_socp_norm2...      1    467ms    0.1%   467ms   47.5MiB    0.1%  47.5MiB
-     sdp_geom_mean_...      1    453ms    0.1%   453ms   54.4MiB    0.1%  54.4MiB
-     sdp_trace_logm...      1    388ms    0.1%   388ms   36.5MiB    0.1%  36.5MiB
-     sdp_trace_mpow...      1    382ms    0.1%   382ms   12.4MiB    0.0%  12.4MiB
-     sdp_geom_mean_...      1    381ms    0.1%   381ms   69.6MiB    0.2%  69.6MiB
-     sdp_trace_mpow...      1    340ms    0.1%   340ms   24.1MiB    0.1%  24.1MiB
-     sdp_geom_mean_...      1    312ms    0.1%   312ms   35.1MiB    0.1%  35.1MiB
-     sdp_socp_abs_atom      1    311ms    0.1%   311ms   32.1MiB    0.1%  32.1MiB
-     sdp_trace_mpow...      1    241ms    0.1%   241ms   18.5MiB    0.0%  18.5MiB
-     sdp_geom_mean_...      1    236ms    0.1%   236ms   19.7MiB    0.1%  19.7MiB
-     sdp_Complex_Se...      1    236ms    0.1%   236ms   23.9MiB    0.1%  23.9MiB
-     sdp_sdp_variables      1    228ms    0.1%   228ms   27.7MiB    0.1%  27.7MiB
-     sdp_trace_mpow...      1    203ms    0.1%   203ms   18.3MiB    0.0%  18.3MiB
-     sdp_geom_mean_...      1    199ms    0.1%   199ms   15.9MiB    0.0%  15.9MiB
-     sdp_operator_n...      1    182ms    0.1%   182ms   23.9MiB    0.1%  23.9MiB
-     sdp_matrix_fra...      1    178ms    0.0%   178ms   17.7MiB    0.0%  17.7MiB
-     sdp_geom_mean_...      1    168ms    0.0%   168ms   28.1MiB    0.1%  28.1MiB
-     sdp_geom_mean_...      1    155ms    0.0%   155ms   18.2MiB    0.0%  18.2MiB
-     sdp_geom_mean_...      1    146ms    0.0%   146ms   21.8MiB    0.1%  21.8MiB
-     sdp_geom_mean_...      1    137ms    0.0%   137ms   22.7MiB    0.1%  22.7MiB
-     sdp_sdp_constr...      1    136ms    0.0%   136ms   21.1MiB    0.1%  21.1MiB
-     sdp_nuclear_no...      1    134ms    0.0%   134ms   18.2MiB    0.0%  18.2MiB
-     sdp_sigma_max_...      1    123ms    0.0%   123ms   16.3MiB    0.0%  16.3MiB
-     sdp_quantum_re...      1    109ms    0.0%   109ms   12.3MiB    0.0%  12.3MiB
-     sdp_Real_Varia...      1    109ms    0.0%   109ms   5.40MiB    0.0%  5.40MiB
-     sdp_trace_logm...      1    100ms    0.0%   100ms   6.75MiB    0.0%  6.75MiB
-     sdp_geom_mean_...      1   94.0ms    0.0%  94.0ms   18.7MiB    0.0%  18.7MiB
-     sdp_geom_mean_...      1   81.4ms    0.0%  81.4ms   18.4MiB    0.0%  18.4MiB
-     sdp_geom_mean_...      1   72.1ms    0.0%  72.1ms   11.6MiB    0.0%  11.6MiB
-     sdp_geom_mean_...      1   62.5ms    0.0%  62.5ms   14.4MiB    0.0%  14.4MiB
-     sdp_Issue_198          1   60.8ms    0.0%  60.8ms   5.35MiB    0.0%  5.35MiB
-     sdp_kron_atom          1   59.8ms    0.0%  59.8ms   11.2MiB    0.0%  11.2MiB
-     sdp_quantum_re...      1   52.3ms    0.0%  52.3ms   3.09MiB    0.0%  3.09MiB
-     sdp_quantum_re...      1   7.31ms    0.0%  7.31ms    459KiB    0.0%   459KiB
-   affine                   1    29.9s    8.4%   29.9s   3.36GiB    8.8%  3.36GiB
-     affine_Partial...      1    2.99s    0.8%   2.99s    359MiB    0.9%   359MiB
-     affine_hcat_atom       1    2.47s    0.7%   2.47s    236MiB    0.6%   236MiB
-     affine_permute...      1    2.39s    0.7%   2.39s    379MiB    1.0%   379MiB
-     affine_multipl...      1    2.24s    0.6%   2.24s    245MiB    0.6%   245MiB
-     affine_dot_mul...      1    2.23s    0.6%   2.23s    141MiB    0.4%   141MiB
-     affine_vcat_atom       1    1.87s    0.5%   1.87s    207MiB    0.5%   207MiB
-     affine_transpo...      1    1.45s    0.4%   1.45s    111MiB    0.3%   111MiB
-     affine_Diagona...      1    1.25s    0.4%   1.25s    132MiB    0.3%   132MiB
-     affine_add_atom        1    1.24s    0.3%   1.24s   78.9MiB    0.2%  78.9MiB
-     affine_satisfy...      1    1.01s    0.3%   1.01s   55.2MiB    0.1%  55.2MiB
-     affine_conv_atom       1    817ms    0.2%   817ms   48.9MiB    0.1%  48.9MiB
-     affine_dot_atom        1    739ms    0.2%   739ms   20.1MiB    0.1%  20.1MiB
-     affine_index_atom      1    674ms    0.2%   674ms   43.5MiB    0.1%  43.5MiB
-     affine_reshape...      1    653ms    0.2%   653ms   32.2MiB    0.1%  32.2MiB
-     affine_sum_atom        1    295ms    0.1%   295ms   23.6MiB    0.1%  23.6MiB
-     affine_kron_atom       1    261ms    0.1%   261ms   16.3MiB    0.0%  16.3MiB
-     affine_single_...      1    176ms    0.0%   176ms   22.0MiB    0.1%  22.0MiB
-     affine_dot_ato...      1    130ms    0.0%   130ms   6.06MiB    0.0%  6.06MiB
-     affine_diag_atom       1    129ms    0.0%   129ms   15.9MiB    0.0%  15.9MiB
-     affine_single_...      1    113ms    0.0%   113ms   17.5MiB    0.0%  17.5MiB
-     affine_negate_...      1   92.2ms    0.0%  92.2ms   3.77MiB    0.0%  3.77MiB
-     affine_trace_atom      1   56.6ms    0.0%  56.6ms   3.33MiB    0.0%  3.33MiB
-   socp                     1    16.1s    4.5%   16.1s   1.92GiB    5.0%  1.92GiB
-     socp_quad_form...      1    3.17s    0.9%   3.17s    139MiB    0.4%   139MiB
-     socp_sum_squar...      1    2.18s    0.6%   2.18s    193MiB    0.5%   193MiB
-     socp_rational_...      1    1.46s    0.4%   1.46s    171MiB    0.4%   171MiB
-     socp_inv_pos_atom      1    991ms    0.3%   991ms   83.6MiB    0.2%  83.6MiB
-     socp_quad_over...      1    781ms    0.2%   781ms   40.8MiB    0.1%  40.8MiB
-     socp_norm_cons...      1    750ms    0.2%   750ms   62.5MiB    0.2%  62.5MiB
-     socp_fix_multi...      1    499ms    0.1%   499ms   41.9MiB    0.1%  41.9MiB
-     socp_square_atom       1    378ms    0.1%   378ms   25.9MiB    0.1%  25.9MiB
-     socp_huber_atom        1    371ms    0.1%   371ms   36.8MiB    0.1%  36.8MiB
-     socp_rational_...      1    291ms    0.1%   291ms   21.7MiB    0.1%  21.7MiB
-     socp_geo_mean_...      1    288ms    0.1%   288ms   25.3MiB    0.1%  25.3MiB
-     socp_fix_and_f...      1    227ms    0.1%   227ms   20.6MiB    0.1%  20.6MiB
-     socp_sqrt_atom         1   55.9ms    0.0%  55.9ms   1.29MiB    0.0%  1.29MiB
-   constant                 1    9.10s    2.5%   9.10s   0.95GiB    2.5%  0.95GiB
-     constant_fix!_...      1    3.30s    0.9%   3.30s    292MiB    0.8%   292MiB
-     constant_Issue...      1    2.58s    0.7%   2.58s    250MiB    0.6%   250MiB
-     constant_Issue...      1    908ms    0.3%   908ms   85.9MiB    0.2%  85.9MiB
-     constant_fix!_...      1    652ms    0.2%   652ms   61.1MiB    0.2%  61.1MiB
-     constant_Test_...      1    343ms    0.1%   343ms   18.6MiB    0.0%  18.6MiB
-     constant_fix!_...      1    264ms    0.1%   264ms   14.7MiB    0.0%  14.7MiB
-   lp                       1    4.70s    1.3%   4.70s    601MiB    1.5%   601MiB
-     lp_dotsort_atom        1    902ms    0.3%   902ms   81.8MiB    0.2%  81.8MiB
-     lp_sumlargest_...      1    506ms    0.1%   506ms   47.9MiB    0.1%  47.9MiB
-     lp_min_atom            1    474ms    0.1%   474ms   41.5MiB    0.1%  41.5MiB
-     lp_minimum_atom        1    349ms    0.1%   349ms   40.4MiB    0.1%  40.4MiB
-     lp_max_atom            1    343ms    0.1%   343ms   37.7MiB    0.1%  37.7MiB
-     lp_sumsmallest...      1    343ms    0.1%   343ms   31.5MiB    0.1%  31.5MiB
+ Convex                     1     287s   55.1%    287s   28.4GiB   60.1%  28.4GiB
+   sdp                      1     210s   40.4%    210s   20.7GiB   43.9%  20.7GiB
+     sdp_lieb_ando          1    97.5s   18.7%   97.5s   9.62GiB   20.4%  9.62GiB
+     sdp_quantum_re...      1    18.2s    3.5%   18.2s   1.42GiB    3.0%  1.42GiB
+     sdp_quantum_re...      1    14.6s    2.8%   14.6s   1.52GiB    3.2%  1.52GiB
+     sdp_quantum_re...      1    11.3s    2.2%   11.3s    922MiB    1.9%   922MiB
+     sdp_operator_n...      1    4.15s    0.8%   4.15s    307MiB    0.6%   307MiB
+     sdp_trace_logm...      1    4.02s    0.8%   4.02s    455MiB    0.9%   455MiB
+     sdp_quantum_re...      1    3.38s    0.6%   3.38s    286MiB    0.6%   286MiB
+     sdp_geom_mean_...      1    3.37s    0.6%   3.37s    117MiB    0.2%   117MiB
+     sdp_quantum_re...      1    3.24s    0.6%   3.24s    275MiB    0.6%   275MiB
+     sdp_Partial_trace      1    2.12s    0.4%   2.12s    195MiB    0.4%   195MiB
+     sdp_quantum_re...      1    1.94s    0.4%   1.94s   18.4MiB    0.0%  18.4MiB
+     sdp_trace_mpow...      1    1.84s    0.4%   1.84s   27.9MiB    0.1%  27.9MiB
+     sdp_trace_mpow...      1    1.77s    0.3%   1.77s    215MiB    0.4%   215MiB
+     sdp_quantum_re...      1    1.69s    0.3%   1.69s   13.2MiB    0.0%  13.2MiB
+     sdp_sum_larges...      1    1.63s    0.3%   1.63s    115MiB    0.2%   115MiB
+     sdp_matrix_fra...      1    1.63s    0.3%   1.63s    131MiB    0.3%   131MiB
+     sdp_relative_e...      1    1.61s    0.3%   1.61s    168MiB    0.3%   168MiB
+     sdp_geom_mean_...      1    1.46s    0.3%   1.46s    196MiB    0.4%   196MiB
+     sdp_quantum_ch...      1    1.33s    0.3%   1.33s   65.6MiB    0.1%  65.6MiB
+     sdp_geom_mean_...      1    1.22s    0.2%   1.22s    110MiB    0.2%   110MiB
+     sdp_min_maxeig...      1    1.06s    0.2%   1.06s    115MiB    0.2%   115MiB
+     sdp_quantum_re...      1    902ms    0.2%   902ms   61.5MiB    0.1%  61.5MiB
+     sdp_trace_mpow...      1    818ms    0.2%   818ms   25.9MiB    0.1%  25.9MiB
+     sdp_geom_mean_...      1    717ms    0.1%   717ms   72.9MiB    0.2%  72.9MiB
+     sdp_Complex_Va...      1    697ms    0.1%   697ms   36.8MiB    0.1%  36.8MiB
+     sdp_lambda_min...      1    690ms    0.1%   690ms   82.5MiB    0.2%  82.5MiB
+     sdp_socp_sumsq...      1    663ms    0.1%   663ms   53.3MiB    0.1%  53.3MiB
+     sdp_nuclear_no...      1    644ms    0.1%   644ms   75.8MiB    0.2%  75.8MiB
+     sdp_relative_e...      1    611ms    0.1%   611ms   18.0MiB    0.0%  18.0MiB
+     sdp_socp_norm2...      1    588ms    0.1%   588ms   47.5MiB    0.1%  47.5MiB
+     sdp_geom_mean_...      1    587ms    0.1%   587ms   55.8MiB    0.1%  55.8MiB
+     sdp_trace_logm...      1    485ms    0.1%   485ms   35.5MiB    0.1%  35.5MiB
+     sdp_trace_mpow...      1    433ms    0.1%   433ms   12.4MiB    0.0%  12.4MiB
+     sdp_geom_mean_...      1    402ms    0.1%   402ms   69.6MiB    0.1%  69.6MiB
+     sdp_geom_mean_...      1    398ms    0.1%   398ms   32.7MiB    0.1%  32.7MiB
+     sdp_socp_abs_atom      1    370ms    0.1%   370ms   32.1MiB    0.1%  32.1MiB
+     sdp_sdp_variables      1    341ms    0.1%   341ms   27.7MiB    0.1%  27.7MiB
+     sdp_geom_mean_...      1    320ms    0.1%   320ms   19.7MiB    0.0%  19.7MiB
+     sdp_Complex_Se...      1    274ms    0.1%   274ms   24.0MiB    0.0%  24.0MiB
+     sdp_trace_mpow...      1    265ms    0.1%   265ms   18.9MiB    0.0%  18.9MiB
+     sdp_trace_mpow...      1    262ms    0.1%   262ms   20.4MiB    0.0%  20.4MiB
+     sdp_quantum_re...      1    253ms    0.0%   253ms   21.8MiB    0.0%  21.8MiB
+     sdp_matrix_fra...      1    235ms    0.0%   235ms   17.7MiB    0.0%  17.7MiB
+     sdp_geom_mean_...      1    225ms    0.0%   225ms   15.9MiB    0.0%  15.9MiB
+     sdp_trace_mpow...      1    223ms    0.0%   223ms   18.8MiB    0.0%  18.8MiB
+     sdp_operator_n...      1    215ms    0.0%   215ms   23.9MiB    0.0%  23.9MiB
+     sdp_geom_mean_...      1    186ms    0.0%   186ms   27.8MiB    0.1%  27.8MiB
+     sdp_geom_mean_...      1    183ms    0.0%   183ms   23.2MiB    0.0%  23.2MiB
+     sdp_geom_mean_...      1    170ms    0.0%   170ms   17.8MiB    0.0%  17.8MiB
+     sdp_sdp_constr...      1    153ms    0.0%   153ms   21.1MiB    0.0%  21.1MiB
+     sdp_nuclear_no...      1    148ms    0.0%   148ms   18.2MiB    0.0%  18.2MiB
+     sdp_sigma_max_...      1    140ms    0.0%   140ms   16.3MiB    0.0%  16.3MiB
+     sdp_geom_mean_...      1    127ms    0.0%   127ms   21.6MiB    0.0%  21.6MiB
+     sdp_Real_Varia...      1    124ms    0.0%   124ms   5.40MiB    0.0%  5.40MiB
+     sdp_geom_mean_...      1    112ms    0.0%   112ms   18.6MiB    0.0%  18.6MiB
+     sdp_trace_logm...      1    107ms    0.0%   107ms   6.75MiB    0.0%  6.75MiB
+     sdp_geom_mean_...      1   89.6ms    0.0%  89.6ms   18.4MiB    0.0%  18.4MiB
+     sdp_geom_mean_...      1   87.6ms    0.0%  87.6ms   11.6MiB    0.0%  11.6MiB
+     sdp_quantum_re...      1   78.6ms    0.0%  78.6ms   9.56MiB    0.0%  9.56MiB
+     sdp_geom_mean_...      1   76.2ms    0.0%  76.2ms   14.2MiB    0.0%  14.2MiB
+     sdp_quantum_re...      1   67.7ms    0.0%  67.7ms   3.09MiB    0.0%  3.09MiB
+     sdp_kron_atom          1   66.4ms    0.0%  66.4ms   11.2MiB    0.0%  11.2MiB
+     sdp_Issue_198          1   66.3ms    0.0%  66.3ms   5.35MiB    0.0%  5.35MiB
+     sdp_quantum_re...      1   9.09ms    0.0%  9.09ms    461KiB    0.0%   461KiB
+   affine                   1    33.8s    6.5%   33.8s   3.38GiB    7.2%  3.38GiB
+     affine_Partial...      1    3.36s    0.6%   3.36s    359MiB    0.7%   359MiB
+     affine_permute...      1    2.87s    0.6%   2.87s    381MiB    0.8%   381MiB
+     affine_hcat_atom       1    2.81s    0.5%   2.81s    236MiB    0.5%   236MiB
+     affine_dot_mul...      1    2.60s    0.5%   2.60s    149MiB    0.3%   149MiB
+     affine_multipl...      1    2.56s    0.5%   2.56s    245MiB    0.5%   245MiB
+     affine_vcat_atom       1    2.10s    0.4%   2.10s    207MiB    0.4%   207MiB
+     affine_transpo...      1    1.73s    0.3%   1.73s    111MiB    0.2%   111MiB
+     affine_Diagona...      1    1.36s    0.3%   1.36s    132MiB    0.3%   132MiB
+     affine_add_atom        1    1.34s    0.3%   1.34s   78.8MiB    0.2%  78.8MiB
+     affine_satisfy...      1    1.19s    0.2%   1.19s   55.2MiB    0.1%  55.2MiB
+     affine_conv_atom       1    928ms    0.2%   928ms   48.9MiB    0.1%  48.9MiB
+     affine_dot_atom        1    817ms    0.2%   817ms   20.1MiB    0.0%  20.1MiB
+     affine_index_atom      1    776ms    0.1%   776ms   43.6MiB    0.1%  43.6MiB
+     affine_reshape...      1    721ms    0.1%   721ms   32.2MiB    0.1%  32.2MiB
+     affine_kron_atom       1    296ms    0.1%   296ms   16.3MiB    0.0%  16.3MiB
+     affine_sum_atom        1    287ms    0.1%   287ms   23.6MiB    0.0%  23.6MiB
+     affine_single_...      1    196ms    0.0%   196ms   22.0MiB    0.0%  22.0MiB
+     affine_diag_atom       1    148ms    0.0%   148ms   15.9MiB    0.0%  15.9MiB
+     affine_dot_ato...      1    134ms    0.0%   134ms   6.06MiB    0.0%  6.06MiB
+     affine_single_...      1    132ms    0.0%   132ms   17.5MiB    0.0%  17.5MiB
+     affine_negate_...      1    107ms    0.0%   107ms   3.76MiB    0.0%  3.76MiB
+     affine_trace_atom      1   65.3ms    0.0%  65.3ms   3.34MiB    0.0%  3.34MiB
+   socp                     1    18.5s    3.5%   18.5s   1.92GiB    4.1%  1.92GiB
+     socp_quad_form...      1    3.76s    0.7%   3.76s    139MiB    0.3%   139MiB
+     socp_sum_squar...      1    2.49s    0.5%   2.49s    192MiB    0.4%   192MiB
+     socp_rational_...      1    1.78s    0.3%   1.78s    171MiB    0.4%   171MiB
+     socp_inv_pos_atom      1    1.11s    0.2%   1.11s   83.6MiB    0.2%  83.6MiB
+     socp_norm_cons...      1    900ms    0.2%   900ms   62.5MiB    0.1%  62.5MiB
+     socp_quad_over...      1    886ms    0.2%   886ms   40.8MiB    0.1%  40.8MiB
+     socp_fix_multi...      1    596ms    0.1%   596ms   41.9MiB    0.1%  41.9MiB
+     socp_huber_atom        1    443ms    0.1%   443ms   36.8MiB    0.1%  36.8MiB
+     socp_square_atom       1    397ms    0.1%   397ms   25.9MiB    0.1%  25.9MiB
+     socp_rational_...      1    353ms    0.1%   353ms   21.7MiB    0.0%  21.7MiB
+     socp_geo_mean_...      1    307ms    0.1%   307ms   25.3MiB    0.1%  25.3MiB
+     socp_fix_and_f...      1    256ms    0.0%   256ms   20.6MiB    0.0%  20.6MiB
+     socp_sqrt_atom         1   58.7ms    0.0%  58.7ms   1.29MiB    0.0%  1.29MiB
+   constant                 1    10.6s    2.0%   10.6s   0.95GiB    2.0%  0.95GiB
+     constant_fix!_...      1    3.85s    0.7%   3.85s    292MiB    0.6%   292MiB
+     constant_Issue...      1    2.93s    0.6%   2.93s    250MiB    0.5%   250MiB
+     constant_Issue...      1    1.06s    0.2%   1.06s   85.9MiB    0.2%  85.9MiB
+     constant_fix!_...      1    787ms    0.2%   787ms   61.1MiB    0.1%  61.1MiB
+     constant_Test_...      1    382ms    0.1%   382ms   18.6MiB    0.0%  18.6MiB
+     constant_fix!_...      1    307ms    0.1%   307ms   14.7MiB    0.0%  14.7MiB
+   lp                       1    5.32s    1.0%   5.32s    601MiB    1.2%   601MiB
+     lp_dotsort_atom        1    1.05s    0.2%   1.05s   81.8MiB    0.2%  81.8MiB
+     lp_sumlargest_...      1    591ms    0.1%   591ms   47.9MiB    0.1%  47.9MiB
+     lp_min_atom            1    464ms    0.1%   464ms   42.5MiB    0.1%  42.5MiB
+     lp_minimum_atom        1    430ms    0.1%   430ms   41.0MiB    0.1%  41.0MiB
+     lp_sumsmallest...      1    387ms    0.1%   387ms   31.6MiB    0.1%  31.6MiB
+     lp_max_atom            1    384ms    0.1%   384ms   36.1MiB    0.1%  36.1MiB
+     lp_neg_atom            1    339ms    0.1%   339ms   19.4MiB    0.0%  19.4MiB
      lp_maximum_atom        1    310ms    0.1%   310ms   18.5MiB    0.0%  18.5MiB
-     lp_neg_atom            1    230ms    0.1%   230ms   19.4MiB    0.0%  19.4MiB
-     lp_pos_atom            1   79.1ms    0.0%  79.1ms   9.19MiB    0.0%  9.19MiB
-     lp_hinge_loss_...      1    185μs    0.0%   185μs   57.3KiB    0.0%  57.3KiB
-   exp                      1    4.12s    1.2%   4.12s    392MiB    1.0%   392MiB
-     exp_log_atom           1    1.79s    0.5%   1.79s    135MiB    0.3%   135MiB
-     exp_entropy_atom       1    465ms    0.1%   465ms   41.7MiB    0.1%  41.7MiB
-     exp_exp_atom           1    305ms    0.1%   305ms   24.3MiB    0.1%  24.3MiB
-     exp_logistic_l...      1    287ms    0.1%   287ms   16.5MiB    0.0%  16.5MiB
-     exp_log_sum_ex...      1    280ms    0.1%   280ms   29.5MiB    0.1%  29.5MiB
-     exp_log_perspe...      1    231ms    0.1%   231ms   13.4MiB    0.0%  13.4MiB
-     exp_relative_e...      1   58.7ms    0.0%  58.7ms   5.21MiB    0.0%  5.21MiB
-   sdp_and_exp              1    3.34s    0.9%   3.34s    381MiB    1.0%   381MiB
-     sdp_and_exp_lo...      1    3.26s    0.9%   3.26s    366MiB    0.9%   366MiB
- SumOfSquares               1    27.1s    7.6%   27.1s   4.59GiB   12.1%  4.59GiB
-   sdp                      1    13.7s    3.8%   13.7s   2.24GiB    5.9%  2.24GiB
-     BPT12e399_rem          1    174ms    0.0%   174ms   51.3MiB    0.1%  51.3MiB
-     sos_term               1    164ms    0.0%   164ms   16.1MiB    0.0%  16.1MiB
-     sos_cheby_univ...      1    144ms    0.0%   144ms   22.0MiB    0.1%  22.0MiB
-     quartic_ideal_4        1    144ms    0.0%   144ms   8.38MiB    0.0%  8.38MiB
-     sos_univariate...      1    143ms    0.0%   143ms   22.0MiB    0.1%  22.0MiB
-     sos_scaled_biv...      1    142ms    0.0%   142ms   22.0MiB    0.1%  22.0MiB
-     sos_options_pr...      1    142ms    0.0%   142ms   28.4MiB    0.1%  28.4MiB
-     sos_horn               1    137ms    0.0%   137ms   25.6MiB    0.1%  25.6MiB
-     maxcut                 1    134ms    0.0%   134ms   29.4MiB    0.1%  29.4MiB
-     sosdemo5_infea...      1    129ms    0.0%   129ms   33.6MiB    0.1%  33.6MiB
-     quartic_feasib...      1    117ms    0.0%   117ms   21.2MiB    0.1%  21.2MiB
-     quadratic_feas...      1    115ms    0.0%   115ms   21.6MiB    0.1%  21.6MiB
-     sos_term_fixed         1    113ms    0.0%   113ms   19.6MiB    0.1%  19.6MiB
-     rearrangement          1    113ms    0.0%   113ms   19.8MiB    0.1%  19.8MiB
-     sos_quartic_co...      1    111ms    0.0%   111ms   21.4MiB    0.1%  21.4MiB
-     chebyshev              1    106ms    0.0%   106ms   13.6MiB    0.0%  13.6MiB
-     sosdemo10              1    105ms    0.0%   105ms   21.3MiB    0.1%  21.3MiB
-     sos_univariate...      1    100ms    0.0%   100ms   14.5MiB    0.0%  14.5MiB
-     simple_matrix          1    100ms    0.0%   100ms   15.5MiB    0.0%  15.5MiB
-     sos_concave_th...      1   92.6ms    0.0%  92.6ms   13.6MiB    0.0%  13.6MiB
-     sos_quartic_co...      1   85.5ms    0.0%  85.5ms   8.47MiB    0.0%  8.47MiB
-     quartic_ideal_rem      1   81.7ms    0.0%  81.7ms   8.61MiB    0.0%  8.61MiB
-     motzkin                1   72.5ms    0.0%  72.5ms   4.59MiB    0.0%  4.59MiB
-     sosdemo9               1   68.4ms    0.0%  68.4ms   3.17MiB    0.0%  3.17MiB
-     choi                   1   68.4ms    0.0%  68.4ms   2.85MiB    0.0%  2.85MiB
-     BPT12e399_maxd...      1   66.2ms    0.0%  66.2ms   1.12MiB    0.0%  1.12MiB
-     quadratic_infe...      1   65.4ms    0.0%  65.4ms   1.44MiB    0.0%  1.44MiB
-     quartic_ideal_...      1   65.4ms    0.0%  65.4ms   1.12MiB    0.0%  1.12MiB
-     quadratic_infe...      1   65.1ms    0.0%  65.1ms   1.44MiB    0.0%  1.44MiB
-     quartic_infeas...      1   65.0ms    0.0%  65.0ms   1.19MiB    0.0%  1.19MiB
-     quadratic_feas...      1   65.0ms    0.0%  65.0ms   1.44MiB    0.0%  1.44MiB
-     quartic_feasib...      1   64.7ms    0.0%  64.7ms   1.19MiB    0.0%  1.19MiB
-     quartic_infeas...      1   64.7ms    0.0%  64.7ms   1.19MiB    0.0%  1.19MiB
-     quartic_ideal          1   64.5ms    0.0%  64.5ms   1.12MiB    0.0%  1.12MiB
-     quartic_ideal_...      1   64.4ms    0.0%  64.4ms   1.12MiB    0.0%  1.12MiB
-     sosdemo5_feasible      1   64.3ms    0.0%  64.3ms   1.18MiB    0.0%  1.18MiB
-     sos_scaled_uni...      1   64.2ms    0.0%  64.2ms   1.13MiB    0.0%  1.13MiB
-     sos_bivariate_...      1   64.1ms    0.0%  64.1ms   1.13MiB    0.0%  1.13MiB
-   socp                     1    9.22s    2.6%   9.22s   1.67GiB    4.4%  1.67GiB
-     sdsos_term_fixed       1    1.34s    0.4%   1.34s    114MiB    0.3%   114MiB
-     sdsos_cheby_un...      1    203ms    0.1%   203ms   22.0MiB    0.1%  22.0MiB
-     sdsos_scaled_u...      1    146ms    0.0%   146ms   22.0MiB    0.1%  22.0MiB
-     sdsos_univaria...      1    144ms    0.0%   144ms   22.0MiB    0.1%  22.0MiB
-     sdsos_options_...      1    138ms    0.0%   138ms   28.4MiB    0.1%  28.4MiB
-     sdsos_horn             1    128ms    0.0%   128ms   25.1MiB    0.1%  25.1MiB
-     sdsos_quartic_...      1    109ms    0.0%   109ms   21.4MiB    0.1%  21.4MiB
-     sdsos_term             1    104ms    0.0%   104ms   16.1MiB    0.0%  16.1MiB
-     sdsos_univaria...      1    100ms    0.0%   100ms   14.5MiB    0.0%  14.5MiB
-     sdsos_concave_...      1   94.8ms    0.0%  94.8ms   13.6MiB    0.0%  13.6MiB
-     sdsos_quartic_...      1   87.2ms    0.0%  87.2ms   8.47MiB    0.0%  8.47MiB
-     sdsos_bivariat...      1   65.4ms    0.0%  65.4ms   1.13MiB    0.0%  1.13MiB
-     sdsos_scaled_b...      1   65.1ms    0.0%  65.1ms   1.13MiB    0.0%  1.13MiB
-   lp                       1    4.05s    1.1%   4.05s    691MiB    1.8%   691MiB
-     dsos_scaled_bi...      1    147ms    0.0%   147ms   22.0MiB    0.1%  22.0MiB
-     dsos_bivariate...      1    146ms    0.0%   146ms   22.0MiB    0.1%  22.0MiB
-     dsos_cheby_biv...      1    144ms    0.0%   144ms   22.0MiB    0.1%  22.0MiB
-     dsos_options_p...      1    138ms    0.0%   138ms   28.4MiB    0.1%  28.4MiB
-     dsos_horn              1    125ms    0.0%   125ms   25.1MiB    0.1%  25.1MiB
-     dsos_term_fixed        1    112ms    0.0%   112ms   19.6MiB    0.1%  19.6MiB
-     dsos_quartic_c...      1    112ms    0.0%   112ms   21.7MiB    0.1%  21.7MiB
-     dsos_term              1    103ms    0.0%   103ms   16.1MiB    0.0%  16.1MiB
-     dsos_univariat...      1    102ms    0.0%   102ms   14.5MiB    0.0%  14.5MiB
-     dsos_concave_t...      1   92.6ms    0.0%  92.6ms   13.6MiB    0.0%  13.6MiB
-     dsos_quartic_c...      1   85.3ms    0.0%  85.3ms   8.47MiB    0.0%  8.47MiB
-     dsos_cheby_uni...      1   66.9ms    0.0%  66.9ms   1.13MiB    0.0%  1.13MiB
-     dsos_scaled_un...      1   65.7ms    0.0%  65.7ms   1.13MiB    0.0%  1.13MiB
-     dsos_univariat...      1   64.5ms    0.0%  64.5ms   1.13MiB    0.0%  1.13MiB
+     lp_pos_atom            1   87.8ms    0.0%  87.8ms   9.19MiB    0.0%  9.19MiB
+     lp_hinge_loss_...      1    303μs    0.0%   303μs   57.3KiB    0.0%  57.3KiB
+   exp                      1    4.70s    0.9%   4.70s    392MiB    0.8%   392MiB
+     exp_log_atom           1    2.05s    0.4%   2.05s    135MiB    0.3%   135MiB
+     exp_entropy_atom       1    556ms    0.1%   556ms   41.7MiB    0.1%  41.7MiB
+     exp_exp_atom           1    348ms    0.1%   348ms   24.3MiB    0.1%  24.3MiB
+     exp_logistic_l...      1    325ms    0.1%   325ms   16.5MiB    0.0%  16.5MiB
+     exp_log_sum_ex...      1    323ms    0.1%   323ms   29.5MiB    0.1%  29.5MiB
+     exp_log_perspe...      1    265ms    0.1%   265ms   13.4MiB    0.0%  13.4MiB
+     exp_relative_e...      1   65.2ms    0.0%  65.2ms   5.21MiB    0.0%  5.21MiB
+   sdp_and_exp              1    3.80s    0.7%   3.80s    381MiB    0.8%   381MiB
+     sdp_and_exp_lo...      1    3.72s    0.7%   3.72s    366MiB    0.8%   366MiB
+ SumOfSquares               1     234s   44.9%    234s   18.8GiB   39.9%  18.8GiB
+   sdp                      1     102s   19.5%    102s   7.92GiB   16.8%  7.92GiB
+     maxcut                 1    9.90s    1.9%   9.90s   1.02GiB    2.2%  1.02GiB
+     quartic_ideal_rem      1    6.86s    1.3%   6.86s    547MiB    1.1%   547MiB
+     sosdemo5_infea...      1    6.72s    1.3%   6.72s    481MiB    1.0%   481MiB
+     rearrangement          1    6.46s    1.2%   6.46s    425MiB    0.9%   425MiB
+     sos_horn               1    4.58s    0.9%   4.58s    284MiB    0.6%   284MiB
+     sos_concave_th...      1    4.53s    0.9%   4.53s    410MiB    0.8%   410MiB
+     chebyshev              1    4.43s    0.9%   4.43s    324MiB    0.7%   324MiB
+     quartic_ideal_4        1    4.24s    0.8%   4.24s    269MiB    0.6%   269MiB
+     simple_matrix          1    4.22s    0.8%   4.22s    370MiB    0.8%   370MiB
+     sos_scaled_biv...      1    3.87s    0.7%   3.87s    217MiB    0.4%   217MiB
+     quartic_ideal          1    3.86s    0.7%   3.86s    211MiB    0.4%   211MiB
+     sos_term_fixed         1    3.68s    0.7%   3.68s    204MiB    0.4%   204MiB
+     sos_cheby_univ...      1    3.38s    0.6%   3.38s    192MiB    0.4%   192MiB
+     sos_term               1    3.19s    0.6%   3.19s    175MiB    0.4%   175MiB
+     BPT12e399_rem          1    2.84s    0.5%   2.84s   79.8MiB    0.2%  79.8MiB
+     sos_quartic_co...      1    2.79s    0.5%   2.79s    162MiB    0.3%   162MiB
+     quartic_ideal_...      1    2.77s    0.5%   2.77s    165MiB    0.3%   165MiB
+     sos_options_pr...      1    2.71s    0.5%   2.71s    224MiB    0.5%   224MiB
+     quartic_feasib...      1    2.68s    0.5%   2.68s    117MiB    0.2%   117MiB
+     sosdemo10              1    1.68s    0.3%   1.68s    181MiB    0.4%   181MiB
+     sos_univariate...      1    1.57s    0.3%   1.57s    101MiB    0.2%   101MiB
+     sos_univariate...      1    943ms    0.2%   943ms   35.7MiB    0.1%  35.7MiB
+     sosdemo9               1    764ms    0.1%   764ms   49.9MiB    0.1%  49.9MiB
+     quartic_infeas...      1    754ms    0.1%   754ms   94.3MiB    0.2%  94.3MiB
+     quadratic_feas...      1    692ms    0.1%   692ms   50.2MiB    0.1%  50.2MiB
+     choi                   1    581ms    0.1%   581ms   63.8MiB    0.1%  63.8MiB
+     quadratic_infe...      1    555ms    0.1%   555ms   38.8MiB    0.1%  38.8MiB
+     BPT12e399_maxd...      1    361ms    0.1%   361ms   9.34MiB    0.0%  9.34MiB
+     sosdemo5_feasible      1    261ms    0.1%   261ms   48.0MiB    0.1%  48.0MiB
+     sos_quartic_co...      1    124ms    0.0%   124ms   21.0MiB    0.0%  21.0MiB
+     motzkin                1   84.9ms    0.0%  84.9ms   4.51MiB    0.0%  4.51MiB
+     sos_bivariate_...      1   32.4ms    0.0%  32.4ms    507KiB    0.0%   507KiB
+     quartic_infeas...      1   22.3ms    0.0%  22.3ms   1.72MiB    0.0%  1.72MiB
+     quartic_ideal_...      1   19.0ms    0.0%  19.0ms   1.09MiB    0.0%  1.09MiB
+     sos_scaled_uni...      1   14.5ms    0.0%  14.5ms    506KiB    0.0%   506KiB
+     quartic_feasib...      1   4.74ms    0.0%  4.74ms    582KiB    0.0%   582KiB
+     quadratic_infe...      1   4.35ms    0.0%  4.35ms    668KiB    0.0%   668KiB
+     quadratic_feas...      1   4.34ms    0.0%  4.34ms    525KiB    0.0%   525KiB
+   socp                     1    90.4s   17.4%   90.4s   7.17GiB   15.2%  7.17GiB
+     sdsos_term_fixed       1    23.8s    4.6%   23.8s   1.70GiB    3.6%  1.70GiB
+     sdsos_horn             1    12.3s    2.4%   12.3s    919MiB    1.9%   919MiB
+     sdsos_concave_...      1    10.2s    2.0%   10.2s    746MiB    1.5%   746MiB
+     sdsos_univaria...      1    10.0s    1.9%   10.0s    730MiB    1.5%   730MiB
+     sdsos_cheby_un...      1    6.53s    1.3%   6.53s    436MiB    0.9%   436MiB
+     sdsos_univaria...      1    5.29s    1.0%   5.29s    371MiB    0.8%   371MiB
+     sdsos_scaled_u...      1    4.09s    0.8%   4.09s    277MiB    0.6%   277MiB
+     sdsos_term             1    3.64s    0.7%   3.64s    243MiB    0.5%   243MiB
+     sdsos_options_...      1    3.45s    0.7%   3.45s    304MiB    0.6%   304MiB
+     sdsos_quartic_...      1    3.38s    0.6%   3.38s    235MiB    0.5%   235MiB
+     sdsos_quartic_...      1    669ms    0.1%   669ms   26.5MiB    0.1%  26.5MiB
+     sdsos_scaled_b...      1   37.9ms    0.0%  37.9ms   5.88MiB    0.0%  5.88MiB
+     sdsos_bivariat...      1   9.72ms    0.0%  9.72ms    509KiB    0.0%   509KiB
+   lp                       1    41.3s    7.9%   41.3s   3.73GiB    7.9%  3.73GiB
+     dsos_options_p...      1    7.48s    1.4%   7.48s   1.30GiB    2.8%  1.30GiB
+     dsos_concave_t...      1    5.13s    1.0%   5.13s    428MiB    0.9%   428MiB
+     dsos_cheby_biv...      1    4.25s    0.8%   4.25s    271MiB    0.6%   271MiB
+     dsos_univariat...      1    4.00s    0.8%   4.00s    246MiB    0.5%   246MiB
+     dsos_term_fixed        1    3.73s    0.7%   3.73s    212MiB    0.4%   212MiB
+     dsos_horn              1    3.41s    0.7%   3.41s    224MiB    0.5%   224MiB
+     dsos_scaled_bi...      1    3.40s    0.7%   3.40s    205MiB    0.4%   205MiB
+     dsos_term              1    3.26s    0.6%   3.26s    184MiB    0.4%   184MiB
+     dsos_quartic_c...      1    2.81s    0.5%   2.81s    170MiB    0.4%   170MiB
+     dsos_bivariate...      1    980ms    0.2%   980ms   38.9MiB    0.1%  38.9MiB
+     dsos_quartic_c...      1    186ms    0.0%   186ms   21.1MiB    0.0%  21.1MiB
+     dsos_univariat...      1   14.5ms    0.0%  14.5ms    387KiB    0.0%   387KiB
+     dsos_cheby_uni...      1   8.31ms    0.0%  8.31ms    413KiB    0.0%   413KiB
+     dsos_scaled_un...      1   7.85ms    0.0%  7.85ms    388KiB    0.0%   388KiB
  ────────────────────────────────────────────────────────────────────────────────
 
 ```
