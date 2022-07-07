@@ -3,5 +3,13 @@ import MathOptInterface as MOI
 
 @info "Starting SCS tests"
 
-do_tests("SCS", () -> MOI.OptimizerWithAttributes(SCS.Optimizer, "verbose" => 0, "eps_rel" => 1e-6, "eps_abs" => 1e-6);
-         exclude = [r"mip"], description = "Tests run with `eps=1e-6`.")
+function opt()
+    opt = SCS.Optimizer()
+    MOI.set(opt, MOI.RawOptimizerAttribute("verbose"), 0)
+    MOI.set(opt, MOI.RawOptimizerAttribute("eps_rel"), 1e-6)
+    MOI.set(opt, MOI.RawOptimizerAttribute("eps_abs"), 1e-6)
+    MOI.set(opt, MOI.Silent(), true)
+    return opt
+end
+
+do_tests("SCS", opt; exclude = [r"mip"], description = "Tests run with `eps=1e-6`.")

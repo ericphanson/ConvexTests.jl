@@ -3,4 +3,11 @@ import MathOptInterface as MOI
 
 @info "Starting Clarabel tests"
 
-do_tests("Clarabel", () -> MOI.OptimizerWithAttributes(Clarabel.Optimizer, "verbose" => false); exclude = [r"mip", r"exp"])
+function opt()
+    opt = Clarabel.Optimizer()
+    MOI.set(opt, MOI.RawOptimizerAttribute("verbose"), 0)
+    MOI.set(opt, MOI.Silent(), true)
+    return opt
+end
+
+do_tests("Clarabel", opt; exclude = [r"mip", r"exp"])
