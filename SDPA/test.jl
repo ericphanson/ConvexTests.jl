@@ -1,11 +1,12 @@
 using ConvexTests, SDPA
 
-using MathOptInterface, Dualization
-const MOI = MathOptInterface
+using Dualization
+import MathOptInterface as MOI
 
 function opt(mode)
     () -> begin
-        opt = SDPA.Optimizer(Mode=mode)
+        opt = SDPA.Optimizer()
+        MOI.set(opt, MOI.RawOptimizerAttribute("Mode"), mode)
         MOI.set(opt, MOI.Silent(), true)
         opt
     end
