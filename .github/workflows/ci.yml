@@ -18,7 +18,6 @@ jobs:
         solver:
           - SCS
           - GLPK
-          - ProxSDP
           - COSMO
           - Tulip
           - SDPA
