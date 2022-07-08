@@ -9,6 +9,6 @@ function dummy_problem(opt; T = Float64)
     solve!(p, opt)
 end
 
-handle_problem_function(opt) = p -> solve!(p, opt; silent_solver=true)
+handle_problem_function(opt) = p -> solve!(p, opt)
 
 end

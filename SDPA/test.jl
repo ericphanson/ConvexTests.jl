@@ -6,12 +6,12 @@ import MathOptInterface as MOI
 
 function opt(mode)
     () -> begin
-        opt = SDPA.Optimizer()
+        o = SDPA.Optimizer()
         # Can't do multiple modes currently:
         # https://github.com/jump-dev/SDPA.jl/issues/40
-        # MOI.set(opt, MOI.RawOptimizerAttribute("Mode"), mode)
-        MOI.set(opt, MOI.Silent(), true)
-        opt
+        # MOI.set(o, MOI.RawOptimizerAttribute("Mode"), mode)
+        MOI.set(o, MOI.Silent(), true)
+        return o
     end
 end
 
@@ -27,7 +27,8 @@ do_tests("SDPA", opt(PARAMETER_DEFAULT); exclude = exclusions, variant="`PARAMET
 # do_tests("SDPA", opt(PARAMETER_STABLE_BUT_SLOW); exclude = exclusions, variant="`PARAMETER_STABLE_BUT_SLOW`", first = false, last = false)
 
 function dual_opt(mode)
-    () -> DualOptimizer(SDPA.Optimizer(Mode=mode))
+    o = opt(mode)
+    () -> DualOptimizer(o())
 end
 
 @info "Starting SDPA tests with `Mode=PARAMETER_DEFAULT` (dualized)"
