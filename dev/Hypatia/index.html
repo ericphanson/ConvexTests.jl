@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Hypatia · ConvexTests.jl</title><script data-outdated-warner src="../assets/warner.js"></script><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/Hypatia/"/><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.044/juliamono.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../assets/documenter.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href="../">ConvexTests.jl</a></span></div><form class="docs-search" action="../search/"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="../">Home</a></li><li><a class="tocitem" href="../COSMO/">COSMO</a></li><li><a class="tocitem" href="../CSDP/">CSDP</a></li><li><a class="tocitem" href="../Clarabel/">Clarabel</a></li><li><a class="tocitem" href="../ECOS/">ECOS</a></li><li><a class="tocitem" href="../GLPK/">GLPK</a></li><li class="is-active"><a class="tocitem" href>Hypatia</a><ul class="internal"><li><a class="tocitem" href="#Hypatia"><span>Hypatia</span></a></li><li><a class="tocitem" href="#Version-information"><span>Version information</span></a></li></ul></li><li><a class="tocitem" href="../Mosek/">Mosek</a></li><li><a class="tocitem" href="../ProxSDP/">ProxSDP</a></li><li><a class="tocitem" href="../SCS/">SCS</a></li><li><a class="tocitem" href="../SDPA/">SDPA</a></li><li><a class="tocitem" href="../SDPA_GMP/">SDPA_GMP</a></li><li><a class="tocitem" href="../Tulip/">Tulip</a></li><li><a class="tocitem" href="../implementation_notes/">Implementation notes</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href>Hypatia</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Hypatia</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/Hypatia.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><p>Table of contents:</p><ul><li class="no-marker"><ul><li><a href="#Hypatia">Hypatia</a></li><li class="no-marker"><ul><li><a href="#Tests">Tests</a></li><li><a href="#Errors">Errors</a></li><li><a href="#Timing-information">Timing information</a></li></ul></li><li><a href="#Version-information">Version information</a></li></ul></li></ul><p>Compilation warmup gives an estimate of 1 minute, 22 seconds of compilation time.</p><h2 id="Hypatia"><a class="docs-heading-anchor" href="#Hypatia">Hypatia</a><a id="Hypatia-1"></a><a class="docs-heading-anchor-permalink" href="#Hypatia" title="Permalink"></a></h2><p>These tests were run on July 8, 2022 at 02:10 (UTC).</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia hljs">Regex[r&quot;mip&quot;]</code></pre><h3 id="Tests"><a class="docs-heading-anchor" href="#Tests">Tests</a><a id="Tests-1"></a><a class="docs-heading-anchor-permalink" href="#Tests" title="Permalink"></a></h3><p>Tests took 7 minutes, 32 seconds to run (after warmup).</p><table>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Hypatia · ConvexTests.jl</title><script data-outdated-warner src="../assets/warner.js"></script><link rel="canonical" href="https://ericphanson.github.io/ConvexTests.jl/Hypatia/"/><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.045/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../assets/documenter.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href="../">ConvexTests.jl</a></span></div><form class="docs-search" action="../search/"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="../">Home</a></li><li><a class="tocitem" href="../COSMO/">COSMO</a></li><li><a class="tocitem" href="../CSDP/">CSDP</a></li><li><a class="tocitem" href="../Clarabel/">Clarabel</a></li><li><a class="tocitem" href="../ECOS/">ECOS</a></li><li><a class="tocitem" href="../GLPK/">GLPK</a></li><li class="is-active"><a class="tocitem" href>Hypatia</a><ul class="internal"><li><a class="tocitem" href="#Hypatia"><span>Hypatia</span></a></li><li><a class="tocitem" href="#Version-information"><span>Version information</span></a></li></ul></li><li><a class="tocitem" href="../Mosek/">Mosek</a></li><li><a class="tocitem" href="../ProxSDP/">ProxSDP</a></li><li><a class="tocitem" href="../SCS/">SCS</a></li><li><a class="tocitem" href="../SDPA/">SDPA</a></li><li><a class="tocitem" href="../SDPA_GMP/">SDPA_GMP</a></li><li><a class="tocitem" href="../Tulip/">Tulip</a></li><li><a class="tocitem" href="../implementation_notes/">Implementation notes</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href>Hypatia</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Hypatia</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/ericphanson/ConvexTests.jl/blob/master/docs/src/Hypatia.md#L" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><p>Table of contents:</p><ul><li class="no-marker"><ul><li><a href="#Hypatia">Hypatia</a></li><li class="no-marker"><ul><li><a href="#Tests">Tests</a></li><li><a href="#Errors">Errors</a></li><li><a href="#Timing-information">Timing information</a></li></ul></li><li><a href="#Version-information">Version information</a></li></ul></li></ul><p>Compilation warmup gives an estimate of 1 minute, 24 seconds of compilation time.</p><h2 id="Hypatia"><a class="docs-heading-anchor" href="#Hypatia">Hypatia</a><a id="Hypatia-1"></a><a class="docs-heading-anchor-permalink" href="#Hypatia" title="Permalink"></a></h2><p>These tests were run on September 13, 2022 at 13:09 (UTC).</p><p>Excluded problems and classes of problems:</p><pre><code class="language-julia hljs">Regex[r&quot;mip&quot;]</code></pre><h3 id="Tests"><a class="docs-heading-anchor" href="#Tests">Tests</a><a id="Tests-1"></a><a class="docs-heading-anchor-permalink" href="#Tests" title="Permalink"></a></h3><p>Tests took 8 minutes, 3 seconds to run (after warmup).</p><table>
 <tr class="header">
 <td style="text-align:left;border-right: solid 2px;">testset</td>
 <td style="text-align:center;">pass</td>
@@ -638,254 +638,253 @@ Test Failed at /home/runner/.julia/packages/SumOfSquares/JDoOM/test/Tests/option
 </code></pre><h3 id="Timing-information"><a class="docs-heading-anchor" href="#Timing-information">Timing information</a><a id="Timing-information-1"></a><a class="docs-heading-anchor-permalink" href="#Timing-information" title="Permalink"></a></h3><pre><code class="language-julia hljs"> ────────────────────────────────────────────────────────────────────────────────
                                         Time                    Allocations      
                                ───────────────────────   ────────────────────────
-       Tot / % measured:             452s /  99.8%           37.2GiB /  99.9%    
+       Tot / % measured:             483s /  99.8%           38.2GiB /  99.9%    
 
  Section               ncalls     time    %tot     avg     alloc    %tot      avg
  ────────────────────────────────────────────────────────────────────────────────
- SumOfSquares               1     239s   53.0%    239s   17.0GiB   45.9%  17.0GiB
-   socp                     1     100s   22.1%    100s   7.18GiB   19.3%  7.18GiB
-     sdsos_term_fixed       1    21.6s    4.8%   21.6s   1.33GiB    3.6%  1.33GiB
-     sdsos_horn             1    14.1s    3.1%   14.1s    939MiB    2.5%   939MiB
-     sdsos_univaria...      1    12.3s    2.7%   12.3s   0.99GiB    2.7%  0.99GiB
-     sdsos_concave_...      1    11.0s    2.4%   11.0s    751MiB    2.0%   751MiB
-     sdsos_cheby_un...      1    6.68s    1.5%   6.68s    434MiB    1.1%   434MiB
-     sdsos_univaria...      1    6.27s    1.4%   6.27s    374MiB    1.0%   374MiB
-     sdsos_options_...      1    5.35s    1.2%   5.35s    342MiB    0.9%   342MiB
-     sdsos_scaled_u...      1    4.90s    1.1%   4.90s    276MiB    0.7%   276MiB
-     sdsos_term             1    4.43s    1.0%   4.43s    273MiB    0.7%   273MiB
-     sdsos_quartic_...      1    3.85s    0.9%   3.85s    236MiB    0.6%   236MiB
-     sdsos_quartic_...      1    769ms    0.2%   769ms   27.7MiB    0.1%  27.7MiB
-     sdsos_scaled_b...      1   46.9ms    0.0%  46.9ms   5.98MiB    0.0%  5.98MiB
-     sdsos_bivariat...      1   10.0ms    0.0%  10.0ms    593KiB    0.0%   593KiB
-   sdp                      1    97.0s   21.5%   97.0s   6.98GiB   18.8%  6.98GiB
-     sosdemo5_infea...      1    7.41s    1.6%   7.41s    511MiB    1.3%   511MiB
-     quartic_ideal_rem      1    7.00s    1.6%   7.00s    548MiB    1.4%   548MiB
-     rearrangement          1    6.56s    1.5%   6.56s    429MiB    1.1%   429MiB
-     sos_concave_th...      1    5.03s    1.1%   5.03s    411MiB    1.1%   411MiB
-     sos_horn               1    4.51s    1.0%   4.51s    287MiB    0.8%   287MiB
-     quartic_ideal          1    4.23s    0.9%   4.23s    209MiB    0.6%   209MiB
-     simple_matrix          1    4.20s    0.9%   4.20s    369MiB    1.0%   369MiB
-     sos_scaled_biv...      1    3.94s    0.9%   3.94s    217MiB    0.6%   217MiB
-     chebyshev              1    3.89s    0.9%   3.89s    270MiB    0.7%   270MiB
-     quartic_ideal_4        1    3.84s    0.9%   3.84s    266MiB    0.7%   266MiB
-     sos_term_fixed         1    3.62s    0.8%   3.62s    203MiB    0.5%   203MiB
-     sos_cheby_univ...      1    3.47s    0.8%   3.47s    191MiB    0.5%   191MiB
-     maxcut                 1    3.47s    0.8%   3.47s    190MiB    0.5%   190MiB
-     sos_term               1    2.95s    0.7%   2.95s    174MiB    0.5%   174MiB
-     BPT12e399_rem          1    2.86s    0.6%   2.86s   79.0MiB    0.2%  79.0MiB
-     sos_quartic_co...      1    2.82s    0.6%   2.82s    162MiB    0.4%   162MiB
-     quartic_ideal_...      1    2.73s    0.6%   2.73s    164MiB    0.4%   164MiB
-     sos_options_pr...      1    2.73s    0.6%   2.73s    193MiB    0.5%   193MiB
-     quartic_feasib...      1    2.69s    0.6%   2.69s    117MiB    0.3%   117MiB
-     sosdemo10              1    1.80s    0.4%   1.80s    181MiB    0.5%   181MiB
-     sos_univariate...      1    1.51s    0.3%   1.51s    100MiB    0.3%   100MiB
-     quadratic_feas...      1    1.11s    0.2%   1.11s   51.9MiB    0.1%  51.9MiB
-     sos_univariate...      1    907ms    0.2%   907ms   35.0MiB    0.1%  35.0MiB
-     sosdemo9               1    814ms    0.2%   814ms   50.0MiB    0.1%  50.0MiB
-     quadratic_infe...      1    703ms    0.2%   703ms   41.5MiB    0.1%  41.5MiB
-     choi                   1    572ms    0.1%   572ms   63.8MiB    0.2%  63.8MiB
-     sosdemo5_feasible      1    374ms    0.1%   374ms   73.8MiB    0.2%  73.8MiB
-     BPT12e399_maxd...      1    350ms    0.1%   350ms   9.28MiB    0.0%  9.28MiB
-     sos_quartic_co...      1    209ms    0.0%   209ms   21.2MiB    0.1%  21.2MiB
-     motzkin                1   90.1ms    0.0%  90.1ms   4.91MiB    0.0%  4.91MiB
-     sos_bivariate_...      1   30.5ms    0.0%  30.5ms    590KiB    0.0%   590KiB
-     quartic_infeas...      1   23.8ms    0.0%  23.8ms   2.11MiB    0.0%  2.11MiB
-     quadratic_feas...      1   19.2ms    0.0%  19.2ms   1.98MiB    0.0%  1.98MiB
-     quartic_ideal_...      1   15.3ms    0.0%  15.3ms   1.15MiB    0.0%  1.15MiB
-     quartic_infeas...      1   11.6ms    0.0%  11.6ms   1.46MiB    0.0%  1.46MiB
-     sos_scaled_uni...      1   9.87ms    0.0%  9.87ms    588KiB    0.0%   588KiB
-     quadratic_infe...      1   6.24ms    0.0%  6.24ms   1.17MiB    0.0%  1.17MiB
-     quartic_feasib...      1   4.55ms    0.0%  4.55ms    759KiB    0.0%   759KiB
-   lp                       1    42.0s    9.3%   42.0s   2.87GiB    7.7%  2.87GiB
-     dsos_options_p...      1    5.96s    1.3%   5.96s    427MiB    1.1%   427MiB
-     dsos_concave_t...      1    5.59s    1.2%   5.59s    429MiB    1.1%   429MiB
-     dsos_univariat...      1    4.94s    1.1%   4.94s    251MiB    0.7%   251MiB
-     dsos_cheby_biv...      1    4.56s    1.0%   4.56s    271MiB    0.7%   271MiB
-     dsos_term_fixed        1    3.61s    0.8%   3.61s    212MiB    0.6%   212MiB
-     dsos_horn              1    3.46s    0.8%   3.46s    236MiB    0.6%   236MiB
-     dsos_scaled_bi...      1    3.45s    0.8%   3.45s    204MiB    0.5%   204MiB
-     dsos_term              1    3.05s    0.7%   3.05s    183MiB    0.5%   183MiB
-     dsos_quartic_c...      1    2.99s    0.7%   2.99s    170MiB    0.4%   170MiB
-     dsos_bivariate...      1    967ms    0.2%   967ms   38.2MiB    0.1%  38.2MiB
-     dsos_quartic_c...      1    139ms    0.0%   139ms   21.5MiB    0.1%  21.5MiB
-     dsos_univariat...      1   8.59ms    0.0%  8.59ms    656KiB    0.0%   656KiB
-     dsos_cheby_uni...      1   7.17ms    0.0%  7.17ms    681KiB    0.0%   681KiB
-     dsos_scaled_un...      1   6.60ms    0.0%  6.60ms    656KiB    0.0%   656KiB
- Convex                     1     212s   47.0%    212s   20.1GiB   54.1%  20.1GiB
-   sdp                      1     114s   25.2%    114s   10.6GiB   28.6%  10.6GiB
-     sdp_quantum_re...      1    19.2s    4.2%   19.2s   1.75GiB    4.7%  1.75GiB
-     sdp_lieb_ando          1    10.0s    2.2%   10.0s    894MiB    2.4%   894MiB
-     sdp_trace_logm...      1    6.10s    1.4%   6.10s    608MiB    1.6%   608MiB
-     sdp_operator_n...      1    4.62s    1.0%   4.62s    320MiB    0.8%   320MiB
-     sdp_geom_mean_...      1    3.74s    0.8%   3.74s    124MiB    0.3%   124MiB
-     sdp_quantum_re...      1    3.52s    0.8%   3.52s    264MiB    0.7%   264MiB
-     sdp_quantum_re...      1    2.62s    0.6%   2.62s    147MiB    0.4%   147MiB
-     sdp_Partial_trace      1    2.40s    0.5%   2.40s    207MiB    0.5%   207MiB
-     sdp_relative_e...      1    2.30s    0.5%   2.30s    200MiB    0.5%   200MiB
-     sdp_quantum_re...      1    2.28s    0.5%   2.28s    143MiB    0.4%   143MiB
-     sdp_trace_mpow...      1    2.09s    0.5%   2.09s    223MiB    0.6%   223MiB
-     sdp_geom_mean_...      1    2.06s    0.5%   2.06s    234MiB    0.6%   234MiB
-     sdp_sum_larges...      1    2.01s    0.4%   2.01s    130MiB    0.3%   130MiB
-     sdp_matrix_fra...      1    1.86s    0.4%   1.86s    147MiB    0.4%   147MiB
-     sdp_quantum_re...      1    1.86s    0.4%   1.86s   18.4MiB    0.0%  18.4MiB
-     sdp_trace_mpow...      1    1.84s    0.4%   1.84s   26.9MiB    0.1%  26.9MiB
-     sdp_quantum_re...      1    1.79s    0.4%   1.79s    141MiB    0.4%   141MiB
-     sdp_quantum_re...      1    1.59s    0.4%   1.59s   13.2MiB    0.0%  13.2MiB
-     sdp_quantum_ch...      1    1.46s    0.3%   1.46s   60.6MiB    0.2%  60.6MiB
-     sdp_geom_mean_...      1    1.23s    0.3%   1.23s    122MiB    0.3%   122MiB
-     sdp_min_maxeig...      1    1.01s    0.2%   1.01s    111MiB    0.3%   111MiB
-     sdp_dual_lambd...      1    1.01s    0.2%   1.01s   66.0MiB    0.2%  66.0MiB
-     sdp_lambda_min...      1    880ms    0.2%   880ms   95.2MiB    0.3%  95.2MiB
-     sdp_nuclear_no...      1    833ms    0.2%   833ms   87.7MiB    0.2%  87.7MiB
-     sdp_geom_mean_...      1    805ms    0.2%   805ms   85.3MiB    0.2%  85.3MiB
-     sdp_Complex_Va...      1    739ms    0.2%   739ms   36.6MiB    0.1%  36.6MiB
-     sdp_relative_e...      1    672ms    0.1%   672ms   18.0MiB    0.0%  18.0MiB
-     sdp_trace_mpow...      1    652ms    0.1%   652ms   21.6MiB    0.1%  21.6MiB
-     sdp_socp_sumsq...      1    645ms    0.1%   645ms   54.0MiB    0.1%  54.0MiB
-     sdp_geom_mean_...      1    576ms    0.1%   576ms   51.5MiB    0.1%  51.5MiB
-     sdp_socp_norm2...      1    552ms    0.1%   552ms   46.7MiB    0.1%  46.7MiB
-     sdp_trace_logm...      1    550ms    0.1%   550ms   38.0MiB    0.1%  38.0MiB
-     sdp_geom_mean_...      1    532ms    0.1%   532ms   82.3MiB    0.2%  82.3MiB
-     sdp_trace_mpow...      1    436ms    0.1%   436ms   12.4MiB    0.0%  12.4MiB
-     sdp_sdp_variables      1    329ms    0.1%   329ms   28.6MiB    0.1%  28.6MiB
-     sdp_socp_abs_atom      1    322ms    0.1%   322ms   21.9MiB    0.1%  21.9MiB
-     sdp_geom_mean_...      1    322ms    0.1%   322ms   35.7MiB    0.1%  35.7MiB
-     sdp_quantum_re...      1    312ms    0.1%   312ms   22.6MiB    0.1%  22.6MiB
-     sdp_Complex_Se...      1    303ms    0.1%   303ms   27.5MiB    0.1%  27.5MiB
-     sdp_geom_mean_...      1    276ms    0.1%   276ms   19.7MiB    0.1%  19.7MiB
-     sdp_trace_mpow...      1    256ms    0.1%   256ms   18.4MiB    0.0%  18.4MiB
-     sdp_trace_mpow...      1    247ms    0.1%   247ms   17.6MiB    0.0%  17.6MiB
-     sdp_trace_mpow...      1    242ms    0.1%   242ms   14.7MiB    0.0%  14.7MiB
-     sdp_geom_mean_...      1    232ms    0.1%   232ms   15.9MiB    0.0%  15.9MiB
-     sdp_quantum_re...      1    223ms    0.0%   223ms   15.8MiB    0.0%  15.8MiB
-     sdp_operator_n...      1    221ms    0.0%   221ms   23.2MiB    0.1%  23.2MiB
-     sdp_geom_mean_...      1    221ms    0.0%   221ms   11.9MiB    0.0%  11.9MiB
-     sdp_matrix_fra...      1    208ms    0.0%   208ms   18.1MiB    0.0%  18.1MiB
-     sdp_quantum_re...      1    186ms    0.0%   186ms   13.4MiB    0.0%  13.4MiB
-     sdp_nuclear_no...      1    181ms    0.0%   181ms   18.7MiB    0.0%  18.7MiB
-     sdp_geom_mean_...      1    172ms    0.0%   172ms   18.5MiB    0.0%  18.5MiB
-     sdp_geom_mean_...      1    166ms    0.0%   166ms   18.9MiB    0.0%  18.9MiB
-     sdp_trace_logm...      1    162ms    0.0%   162ms   6.75MiB    0.0%  6.75MiB
-     sdp_sigma_max_...      1    153ms    0.0%   153ms   16.6MiB    0.0%  16.6MiB
-     sdp_Real_Varia...      1    131ms    0.0%   131ms   5.45MiB    0.0%  5.45MiB
-     sdp_geom_mean_...      1    121ms    0.0%   121ms   17.9MiB    0.0%  17.9MiB
-     sdp_geom_mean_...      1    121ms    0.0%   121ms   18.1MiB    0.0%  18.1MiB
+ SumOfSquares               1     260s   53.9%    260s   18.0GiB   47.1%  18.0GiB
+   socp                     1     107s   22.2%    107s   7.63GiB   20.0%  7.63GiB
+     sdsos_term_fixed       1    23.5s    4.9%   23.5s   1.45GiB    3.8%  1.45GiB
+     sdsos_horn             1    14.9s    3.1%   14.9s   0.97GiB    2.5%  0.97GiB
+     sdsos_univaria...      1    13.0s    2.7%   13.0s   1.01GiB    2.7%  1.01GiB
+     sdsos_concave_...      1    11.9s    2.5%   11.9s    789MiB    2.0%   789MiB
+     sdsos_cheby_un...      1    7.57s    1.6%   7.57s    451MiB    1.2%   451MiB
+     sdsos_univaria...      1    6.40s    1.3%   6.40s    388MiB    1.0%   388MiB
+     sdsos_options_...      1    5.54s    1.1%   5.54s    364MiB    0.9%   364MiB
+     sdsos_term             1    5.28s    1.1%   5.28s    383MiB    1.0%   383MiB
+     sdsos_scaled_u...      1    4.90s    1.0%   4.90s    292MiB    0.7%   292MiB
+     sdsos_quartic_...      1    4.26s    0.9%   4.26s    249MiB    0.6%   249MiB
+     sdsos_quartic_...      1    774ms    0.2%   774ms   28.4MiB    0.1%  28.4MiB
+     sdsos_scaled_b...      1   48.4ms    0.0%  48.4ms   5.97MiB    0.0%  5.97MiB
+     sdsos_bivariat...      1   9.45ms    0.0%  9.45ms    601KiB    0.0%   601KiB
+   sdp                      1     106s   22.0%    106s   7.25GiB   19.0%  7.25GiB
+     quartic_ideal_rem      1    8.04s    1.7%   8.04s    562MiB    1.4%   562MiB
+     sosdemo5_infea...      1    8.02s    1.7%   8.02s    524MiB    1.3%   524MiB
+     rearrangement          1    7.39s    1.5%   7.39s    449MiB    1.2%   449MiB
+     sos_concave_th...      1    5.37s    1.1%   5.37s    441MiB    1.1%   441MiB
+     sos_horn               1    5.33s    1.1%   5.33s    308MiB    0.8%   308MiB
+     simple_matrix          1    4.73s    1.0%   4.73s    383MiB    1.0%   383MiB
+     sos_scaled_biv...      1    4.39s    0.9%   4.39s    229MiB    0.6%   229MiB
+     chebyshev              1    4.32s    0.9%   4.32s    289MiB    0.7%   289MiB
+     quartic_ideal          1    4.26s    0.9%   4.26s    221MiB    0.6%   221MiB
+     sos_term_fixed         1    4.14s    0.9%   4.14s    216MiB    0.6%   216MiB
+     quartic_ideal_4        1    3.89s    0.8%   3.89s    247MiB    0.6%   247MiB
+     maxcut                 1    3.85s    0.8%   3.85s    190MiB    0.5%   190MiB
+     sos_cheby_univ...      1    3.84s    0.8%   3.84s    203MiB    0.5%   203MiB
+     sos_term               1    3.34s    0.7%   3.34s    184MiB    0.5%   184MiB
+     BPT12e399_rem          1    3.16s    0.7%   3.16s   79.5MiB    0.2%  79.5MiB
+     quartic_feasib...      1    3.10s    0.6%   3.10s    117MiB    0.3%   117MiB
+     sos_quartic_co...      1    3.09s    0.6%   3.09s    172MiB    0.4%   172MiB
+     quartic_ideal_...      1    3.04s    0.6%   3.04s    176MiB    0.5%   176MiB
+     sos_options_pr...      1    2.84s    0.6%   2.84s    212MiB    0.5%   212MiB
+     sosdemo10              1    1.89s    0.4%   1.89s    182MiB    0.5%   182MiB
+     sos_univariate...      1    1.67s    0.3%   1.67s    110MiB    0.3%   110MiB
+     sosdemo9               1    962ms    0.2%   962ms   50.1MiB    0.1%  50.1MiB
+     quadratic_feas...      1    910ms    0.2%   910ms   51.8MiB    0.1%  51.8MiB
+     sos_univariate...      1    890ms    0.2%   890ms   35.1MiB    0.1%  35.1MiB
+     quadratic_infe...      1    782ms    0.2%   782ms   41.9MiB    0.1%  41.9MiB
+     choi                   1    557ms    0.1%   557ms   63.9MiB    0.2%  63.9MiB
+     sosdemo5_feasible      1    435ms    0.1%   435ms   73.8MiB    0.2%  73.8MiB
+     BPT12e399_maxd...      1    332ms    0.1%   332ms   9.38MiB    0.0%  9.38MiB
+     sos_quartic_co...      1    154ms    0.0%   154ms   21.9MiB    0.1%  21.9MiB
+     motzkin                1    103ms    0.0%   103ms   4.92MiB    0.0%  4.92MiB
+     sos_bivariate_...      1   26.0ms    0.0%  26.0ms    598KiB    0.0%   598KiB
+     quartic_infeas...      1   24.3ms    0.0%  24.3ms   2.11MiB    0.0%  2.11MiB
+     quadratic_feas...      1   20.4ms    0.0%  20.4ms   1.99MiB    0.0%  1.99MiB
+     quartic_ideal_...      1   19.9ms    0.0%  19.9ms   1.15MiB    0.0%  1.15MiB
+     quartic_infeas...      1   10.1ms    0.0%  10.1ms   1.47MiB    0.0%  1.47MiB
+     sos_scaled_uni...      1   9.63ms    0.0%  9.63ms    596KiB    0.0%   596KiB
+     quadratic_infe...      1   5.41ms    0.0%  5.41ms   1.18MiB    0.0%  1.18MiB
+     quartic_feasib...      1   4.74ms    0.0%  4.74ms    766KiB    0.0%   766KiB
+   lp                       1    46.7s    9.7%   46.7s   3.07GiB    8.1%  3.07GiB
+     dsos_options_p...      1    7.01s    1.5%   7.01s    469MiB    1.2%   469MiB
+     dsos_concave_t...      1    6.35s    1.3%   6.35s    464MiB    1.2%   464MiB
+     dsos_univariat...      1    4.98s    1.0%   4.98s    263MiB    0.7%   263MiB
+     dsos_cheby_biv...      1    4.83s    1.0%   4.83s    285MiB    0.7%   285MiB
+     dsos_term_fixed        1    4.23s    0.9%   4.23s    227MiB    0.6%   227MiB
+     dsos_horn              1    3.92s    0.8%   3.92s    259MiB    0.7%   259MiB
+     dsos_scaled_bi...      1    3.87s    0.8%   3.87s    219MiB    0.6%   219MiB
+     dsos_term              1    3.52s    0.7%   3.52s    195MiB    0.5%   195MiB
+     dsos_quartic_c...      1    3.28s    0.7%   3.28s    182MiB    0.5%   182MiB
+     dsos_bivariate...      1    986ms    0.2%   986ms   38.5MiB    0.1%  38.5MiB
+     dsos_quartic_c...      1    165ms    0.0%   165ms   22.1MiB    0.1%  22.1MiB
+     dsos_univariat...      1   9.32ms    0.0%  9.32ms    663KiB    0.0%   663KiB
+     dsos_cheby_uni...      1   7.76ms    0.0%  7.76ms    689KiB    0.0%   689KiB
+     dsos_scaled_un...      1   7.75ms    0.0%  7.75ms    664KiB    0.0%   664KiB
+ Convex                     1     222s   46.1%    222s   20.2GiB   52.9%  20.2GiB
+   sdp                      1     119s   24.7%    119s   10.7GiB   28.1%  10.7GiB
+     sdp_quantum_re...      1    19.2s    4.0%   19.2s   1.75GiB    4.6%  1.75GiB
+     sdp_lieb_ando          1    11.8s    2.4%   11.8s    906MiB    2.3%   906MiB
+     sdp_trace_logm...      1    5.54s    1.1%   5.54s    576MiB    1.5%   576MiB
+     sdp_quantum_re...      1    5.03s    1.0%   5.03s    292MiB    0.7%   292MiB
+     sdp_operator_n...      1    4.75s    1.0%   4.75s    320MiB    0.8%   320MiB
+     sdp_geom_mean_...      1    3.60s    0.7%   3.60s    124MiB    0.3%   124MiB
+     sdp_quantum_re...      1    2.83s    0.6%   2.83s    150MiB    0.4%   150MiB
+     sdp_Partial_trace      1    2.43s    0.5%   2.43s    208MiB    0.5%   208MiB
+     sdp_relative_e...      1    2.39s    0.5%   2.39s    207MiB    0.5%   207MiB
+     sdp_quantum_re...      1    2.32s    0.5%   2.32s   18.4MiB    0.0%  18.4MiB
+     sdp_quantum_re...      1    2.28s    0.5%   2.28s    146MiB    0.4%   146MiB
+     sdp_quantum_re...      1    2.20s    0.5%   2.20s    146MiB    0.4%   146MiB
+     sdp_trace_mpow...      1    2.12s    0.4%   2.12s    228MiB    0.6%   228MiB
+     sdp_geom_mean_...      1    2.06s    0.4%   2.06s    234MiB    0.6%   234MiB
+     sdp_trace_mpow...      1    1.98s    0.4%   1.98s   26.8MiB    0.1%  26.8MiB
+     sdp_quantum_re...      1    1.94s    0.4%   1.94s   13.2MiB    0.0%  13.2MiB
+     sdp_matrix_fra...      1    1.93s    0.4%   1.93s    147MiB    0.4%   147MiB
+     sdp_sum_larges...      1    1.89s    0.4%   1.89s    130MiB    0.3%   130MiB
+     sdp_quantum_ch...      1    1.59s    0.3%   1.59s   66.7MiB    0.2%  66.7MiB
+     sdp_geom_mean_...      1    1.36s    0.3%   1.36s    122MiB    0.3%   122MiB
+     sdp_dual_lambd...      1    1.09s    0.2%   1.09s   66.0MiB    0.2%  66.0MiB
+     sdp_min_maxeig...      1    1.08s    0.2%   1.08s    111MiB    0.3%   111MiB
+     sdp_lambda_min...      1    958ms    0.2%   958ms   95.2MiB    0.2%  95.2MiB
+     sdp_geom_mean_...      1    932ms    0.2%   932ms   85.4MiB    0.2%  85.4MiB
+     sdp_nuclear_no...      1    862ms    0.2%   862ms   87.8MiB    0.2%  87.8MiB
+     sdp_Complex_Va...      1    780ms    0.2%   780ms   36.6MiB    0.1%  36.6MiB
+     sdp_relative_e...      1    663ms    0.1%   663ms   18.0MiB    0.0%  18.0MiB
+     sdp_geom_mean_...      1    655ms    0.1%   655ms   56.4MiB    0.1%  56.4MiB
+     sdp_socp_norm2...      1    655ms    0.1%   655ms   46.7MiB    0.1%  46.7MiB
+     sdp_trace_mpow...      1    645ms    0.1%   645ms   21.4MiB    0.1%  21.4MiB
+     sdp_socp_sumsq...      1    637ms    0.1%   637ms   54.0MiB    0.1%  54.0MiB
+     sdp_geom_mean_...      1    621ms    0.1%   621ms   82.3MiB    0.2%  82.3MiB
+     sdp_trace_logm...      1    529ms    0.1%   529ms   37.8MiB    0.1%  37.8MiB
+     sdp_trace_mpow...      1    524ms    0.1%   524ms   12.4MiB    0.0%  12.4MiB
+     sdp_geom_mean_...      1    375ms    0.1%   375ms   35.5MiB    0.1%  35.5MiB
+     sdp_Complex_Se...      1    373ms    0.1%   373ms   27.6MiB    0.1%  27.6MiB
+     sdp_sdp_variables      1    306ms    0.1%   306ms   28.7MiB    0.1%  28.7MiB
+     sdp_socp_abs_atom      1    298ms    0.1%   298ms   21.9MiB    0.1%  21.9MiB
+     sdp_geom_mean_...      1    294ms    0.1%   294ms   19.7MiB    0.1%  19.7MiB
+     sdp_quantum_re...      1    273ms    0.1%   273ms   21.6MiB    0.1%  21.6MiB
+     sdp_trace_mpow...      1    264ms    0.1%   264ms   15.8MiB    0.0%  15.8MiB
+     sdp_geom_mean_...      1    257ms    0.1%   257ms   15.9MiB    0.0%  15.9MiB
+     sdp_trace_mpow...      1    256ms    0.1%   256ms   17.6MiB    0.0%  17.6MiB
+     sdp_quantum_re...      1    253ms    0.1%   253ms   17.2MiB    0.0%  17.2MiB
+     sdp_trace_mpow...      1    244ms    0.1%   244ms   18.1MiB    0.0%  18.1MiB
+     sdp_geom_mean_...      1    241ms    0.0%   241ms   11.9MiB    0.0%  11.9MiB
+     sdp_operator_n...      1    237ms    0.0%   237ms   23.4MiB    0.1%  23.4MiB
+     sdp_matrix_fra...      1    233ms    0.0%   233ms   18.1MiB    0.0%  18.1MiB
+     sdp_geom_mean_...      1    209ms    0.0%   209ms   23.7MiB    0.1%  23.7MiB
+     sdp_geom_mean_...      1    197ms    0.0%   197ms   18.5MiB    0.0%  18.5MiB
+     sdp_nuclear_no...      1    190ms    0.0%   190ms   18.7MiB    0.0%  18.7MiB
+     sdp_Real_Varia...      1    173ms    0.0%   173ms   5.50MiB    0.0%  5.50MiB
+     sdp_sigma_max_...      1    166ms    0.0%   166ms   16.6MiB    0.0%  16.6MiB
+     sdp_quantum_re...      1    156ms    0.0%   156ms   14.4MiB    0.0%  14.4MiB
+     sdp_geom_mean_...      1    146ms    0.0%   146ms   17.6MiB    0.0%  17.6MiB
+     sdp_trace_logm...      1    126ms    0.0%   126ms   6.75MiB    0.0%  6.75MiB
+     sdp_geom_mean_...      1    118ms    0.0%   118ms   18.0MiB    0.0%  18.0MiB
+     sdp_geom_mean_...      1    117ms    0.0%   117ms   18.6MiB    0.0%  18.6MiB
      sdp_sdp_constr...      1    116ms    0.0%   116ms   10.0MiB    0.0%  10.0MiB
-     sdp_geom_mean_...      1    113ms    0.0%   113ms   18.3MiB    0.0%  18.3MiB
-     sdp_kron_atom          1    105ms    0.0%   105ms   11.2MiB    0.0%  11.2MiB
-     sdp_geom_mean_...      1    104ms    0.0%   104ms   17.7MiB    0.0%  17.7MiB
-     sdp_Issue_198          1   80.1ms    0.0%  80.1ms   5.39MiB    0.0%  5.39MiB
-     sdp_geom_mean_...      1   76.3ms    0.0%  76.3ms   13.9MiB    0.0%  13.9MiB
-     sdp_quantum_re...      1   69.9ms    0.0%  69.9ms   3.10MiB    0.0%  3.10MiB
-     sdp_quantum_re...      1   7.44ms    0.0%  7.44ms    426KiB    0.0%   426KiB
-   affine                   1    40.3s    8.9%   40.3s   3.76GiB   10.1%  3.76GiB
-     affine_Partial...      1    4.40s    1.0%   4.40s    515MiB    1.4%   515MiB
-     affine_hcat_atom       1    3.02s    0.7%   3.02s    249MiB    0.7%   249MiB
-     affine_multipl...      1    3.02s    0.7%   3.02s    246MiB    0.6%   246MiB
-     affine_permute...      1    2.95s    0.7%   2.95s    376MiB    1.0%   376MiB
-     affine_dot_mul...      1    2.76s    0.6%   2.76s    174MiB    0.5%   174MiB
-     affine_vcat_atom       1    2.54s    0.6%   2.54s    230MiB    0.6%   230MiB
-     affine_transpo...      1    1.84s    0.4%   1.84s    105MiB    0.3%   105MiB
-     affine_add_atom        1    1.47s    0.3%   1.47s   80.1MiB    0.2%  80.1MiB
-     affine_Diagona...      1    1.42s    0.3%   1.42s    125MiB    0.3%   125MiB
-     affine_satisfy...      1    1.22s    0.3%   1.22s   55.7MiB    0.1%  55.7MiB
-     affine_conv_atom       1    985ms    0.2%   985ms   49.5MiB    0.1%  49.5MiB
-     affine_reshape...      1    856ms    0.2%   856ms   31.3MiB    0.1%  31.3MiB
-     affine_dot_atom        1    846ms    0.2%   846ms   27.2MiB    0.1%  27.2MiB
-     affine_index_atom      1    840ms    0.2%   840ms   44.1MiB    0.1%  44.1MiB
-     affine_dualvalue       1    741ms    0.2%   741ms   75.4MiB    0.2%  75.4MiB
-     affine_sum_atom        1    375ms    0.1%   375ms   24.0MiB    0.1%  24.0MiB
-     affine_kron_atom       1    263ms    0.1%   263ms   16.3MiB    0.0%  16.3MiB
-     affine_single_...      1    221ms    0.0%   221ms   22.6MiB    0.1%  22.6MiB
-     affine_diag_atom       1    203ms    0.0%   203ms   16.2MiB    0.0%  16.2MiB
-     affine_single_...      1    159ms    0.0%   159ms   17.7MiB    0.0%  17.7MiB
-     affine_dot_ato...      1    144ms    0.0%   144ms   6.21MiB    0.0%  6.21MiB
-     affine_negate_...      1    122ms    0.0%   122ms   3.87MiB    0.0%  3.87MiB
-     affine_trace_atom      1   73.2ms    0.0%  73.2ms   3.44MiB    0.0%  3.44MiB
-   socp                     1    24.8s    5.5%   24.8s   2.65GiB    7.1%  2.65GiB
-     socp_dual_mini...      1    5.06s    1.1%   5.06s    510MiB    1.3%   510MiB
-     socp_quad_form...      1    2.95s    0.7%   2.95s   98.7MiB    0.3%  98.7MiB
-     socp_rational_...      1    1.55s    0.3%   1.55s    161MiB    0.4%   161MiB
-     socp_inv_pos_atom      1    1.36s    0.3%   1.36s   99.1MiB    0.3%  99.1MiB
-     socp_sum_squar...      1    1.30s    0.3%   1.30s    108MiB    0.3%   108MiB
-     socp_quad_over...      1    833ms    0.2%   833ms   41.1MiB    0.1%  41.1MiB
-     socp_dual_norm...      1    832ms    0.2%   832ms   81.0MiB    0.2%  81.0MiB
-     socp_norm_cons...      1    757ms    0.2%   757ms   57.3MiB    0.2%  57.3MiB
-     socp_rational_...      1    608ms    0.1%   608ms   54.9MiB    0.1%  54.9MiB
-     socp_square_atom       1    445ms    0.1%   445ms   27.4MiB    0.1%  27.4MiB
-     socp_huber_atom        1    418ms    0.1%   418ms   37.1MiB    0.1%  37.1MiB
-     socp_fix_multi...      1    408ms    0.1%   408ms   42.1MiB    0.1%  42.1MiB
-     socp_geo_mean_...      1    357ms    0.1%   357ms   25.8MiB    0.1%  25.8MiB
-     socp_dual_frob...      1    268ms    0.1%   268ms   37.7MiB    0.1%  37.7MiB
-     socp_fix_and_f...      1    257ms    0.1%   257ms   20.9MiB    0.1%  20.9MiB
-     socp_rational_...      1    190ms    0.0%   190ms   11.0MiB    0.0%  11.0MiB
-     socp_sqrt_atom         1   70.0ms    0.0%  70.0ms   1.29MiB    0.0%  1.29MiB
-   constant                 1    11.0s    2.4%   11.0s   0.95GiB    2.5%  0.95GiB
-     constant_fix!_...      1    3.93s    0.9%   3.93s    291MiB    0.8%   291MiB
-     constant_Issue...      1    2.83s    0.6%   2.83s    242MiB    0.6%   242MiB
-     constant_Issue...      1    1.07s    0.2%   1.07s   81.5MiB    0.2%  81.5MiB
-     constant_fix!_...      1    851ms    0.2%   851ms   61.5MiB    0.2%  61.5MiB
-     constant_Test_...      1    449ms    0.1%   449ms   19.2MiB    0.1%  19.2MiB
-     constant_fix!_...      1    401ms    0.1%   401ms   19.1MiB    0.1%  19.1MiB
-   exp                      1    9.29s    2.1%   9.29s    913MiB    2.4%   913MiB
-     exp_log_atom           1    6.55s    1.5%   6.55s    653MiB    1.7%   653MiB
-     exp_entropy_atom       1    501ms    0.1%   501ms   42.1MiB    0.1%  42.1MiB
-     exp_log_sum_ex...      1    389ms    0.1%   389ms   32.2MiB    0.1%  32.2MiB
-     exp_logistic_l...      1    348ms    0.1%   348ms   17.1MiB    0.0%  17.1MiB
-     exp_exp_atom           1    346ms    0.1%   346ms   25.1MiB    0.1%  25.1MiB
-     exp_log_perspe...      1    243ms    0.1%   243ms   13.7MiB    0.0%  13.7MiB
-     exp_relative_e...      1   67.5ms    0.0%  67.5ms   5.47MiB    0.0%  5.47MiB
-   lp                       1    7.11s    1.6%   7.11s    711MiB    1.9%   711MiB
-     lp_dotsort_atom        1    1.16s    0.3%   1.16s   91.2MiB    0.2%  91.2MiB
-     lp_min_atom            1    799ms    0.2%   799ms   64.1MiB    0.2%  64.1MiB
-     lp_sumlargest_...      1    625ms    0.1%   625ms   48.1MiB    0.1%  48.1MiB
-     lp_max_atom            1    526ms    0.1%   526ms   44.0MiB    0.1%  44.0MiB
-     lp_minimum_atom        1    515ms    0.1%   515ms   40.6MiB    0.1%  40.6MiB
-     lp_sumsmallest...      1    408ms    0.1%   408ms   31.3MiB    0.1%  31.3MiB
-     lp_dual_abs_atom       1    316ms    0.1%   316ms   21.2MiB    0.1%  21.2MiB
-     lp_neg_atom            1    262ms    0.1%   262ms   19.6MiB    0.1%  19.6MiB
-     lp_maximum_atom        1    233ms    0.1%   233ms   13.5MiB    0.0%  13.5MiB
-     lp_pos_atom            1    101ms    0.0%   101ms   9.42MiB    0.0%  9.42MiB
-     lp_dual_norm_i...      1    100ms    0.0%   100ms   4.29MiB    0.0%  4.29MiB
-     lp_dual_norm_1...      1   70.5ms    0.0%  70.5ms   4.14MiB    0.0%  4.14MiB
-     lp_hinge_loss_...      1    163μs    0.0%   163μs   57.3KiB    0.0%  57.3KiB
-   sdp_and_exp              1    5.61s    1.2%   5.61s    504MiB    1.3%   504MiB
-     sdp_and_exp_lo...      1    5.52s    1.2%   5.52s    488MiB    1.3%   488MiB
+     sdp_kron_atom          1    112ms    0.0%   112ms   11.2MiB    0.0%  11.2MiB
+     sdp_geom_mean_...      1    101ms    0.0%   101ms   17.8MiB    0.0%  17.8MiB
+     sdp_geom_mean_...      1   86.7ms    0.0%  86.7ms   14.1MiB    0.0%  14.1MiB
+     sdp_Issue_198          1   73.7ms    0.0%  73.7ms   5.40MiB    0.0%  5.40MiB
+     sdp_quantum_re...      1   62.7ms    0.0%  62.7ms   3.10MiB    0.0%  3.10MiB
+     sdp_quantum_re...      1   7.58ms    0.0%  7.58ms    432KiB    0.0%   432KiB
+   affine                   1    41.5s    8.6%   41.5s   3.77GiB    9.9%  3.77GiB
+     affine_Partial...      1    4.34s    0.9%   4.34s    516MiB    1.3%   516MiB
+     affine_hcat_atom       1    3.19s    0.7%   3.19s    249MiB    0.6%   249MiB
+     affine_permute...      1    3.09s    0.6%   3.09s    375MiB    1.0%   375MiB
+     affine_dot_mul...      1    2.94s    0.6%   2.94s    174MiB    0.4%   174MiB
+     affine_multipl...      1    2.88s    0.6%   2.88s    246MiB    0.6%   246MiB
+     affine_vcat_atom       1    2.50s    0.5%   2.50s    231MiB    0.6%   231MiB
+     affine_transpo...      1    1.85s    0.4%   1.85s    105MiB    0.3%   105MiB
+     affine_add_atom        1    1.67s    0.3%   1.67s   80.1MiB    0.2%  80.1MiB
+     affine_Diagona...      1    1.57s    0.3%   1.57s    125MiB    0.3%   125MiB
+     affine_satisfy...      1    1.30s    0.3%   1.30s   55.8MiB    0.1%  55.8MiB
+     affine_conv_atom       1    1.04s    0.2%   1.04s   49.5MiB    0.1%  49.5MiB
+     affine_dot_atom        1    915ms    0.2%   915ms   27.2MiB    0.1%  27.2MiB
+     affine_index_atom      1    899ms    0.2%   899ms   44.1MiB    0.1%  44.1MiB
+     affine_dualvalue       1    852ms    0.2%   852ms   75.5MiB    0.2%  75.5MiB
+     affine_reshape...      1    756ms    0.2%   756ms   31.3MiB    0.1%  31.3MiB
+     affine_sum_atom        1    357ms    0.1%   357ms   24.0MiB    0.1%  24.0MiB
+     affine_kron_atom       1    267ms    0.1%   267ms   16.3MiB    0.0%  16.3MiB
+     affine_single_...      1    234ms    0.0%   234ms   22.6MiB    0.1%  22.6MiB
+     affine_diag_atom       1    195ms    0.0%   195ms   16.2MiB    0.0%  16.2MiB
+     affine_dot_ato...      1    162ms    0.0%   162ms   6.21MiB    0.0%  6.21MiB
+     affine_single_...      1    144ms    0.0%   144ms   17.7MiB    0.0%  17.7MiB
+     affine_negate_...      1    108ms    0.0%   108ms   3.88MiB    0.0%  3.88MiB
+     affine_trace_atom      1   65.6ms    0.0%  65.6ms   3.43MiB    0.0%  3.43MiB
+   socp                     1    26.9s    5.6%   26.9s   2.65GiB    7.0%  2.65GiB
+     socp_dual_mini...      1    5.51s    1.1%   5.51s    510MiB    1.3%   510MiB
+     socp_quad_form...      1    3.28s    0.7%   3.28s   98.7MiB    0.3%  98.7MiB
+     socp_rational_...      1    1.56s    0.3%   1.56s    161MiB    0.4%   161MiB
+     socp_inv_pos_atom      1    1.56s    0.3%   1.56s   99.1MiB    0.3%  99.1MiB
+     socp_sum_squar...      1    1.43s    0.3%   1.43s    108MiB    0.3%   108MiB
+     socp_quad_over...      1    1.02s    0.2%   1.02s   41.1MiB    0.1%  41.1MiB
+     socp_norm_cons...      1    953ms    0.2%   953ms   57.3MiB    0.1%  57.3MiB
+     socp_dual_norm...      1    953ms    0.2%   953ms   81.0MiB    0.2%  81.0MiB
+     socp_rational_...      1    673ms    0.1%   673ms   54.9MiB    0.1%  54.9MiB
+     socp_fix_multi...      1    519ms    0.1%   519ms   42.2MiB    0.1%  42.2MiB
+     socp_square_atom       1    475ms    0.1%   475ms   27.4MiB    0.1%  27.4MiB
+     socp_huber_atom        1    438ms    0.1%   438ms   37.1MiB    0.1%  37.1MiB
+     socp_geo_mean_...      1    365ms    0.1%   365ms   25.8MiB    0.1%  25.8MiB
+     socp_dual_frob...      1    317ms    0.1%   317ms   37.7MiB    0.1%  37.7MiB
+     socp_fix_and_f...      1    294ms    0.1%   294ms   21.0MiB    0.1%  21.0MiB
+     socp_rational_...      1    184ms    0.0%   184ms   11.0MiB    0.0%  11.0MiB
+     socp_sqrt_atom         1   76.1ms    0.0%  76.1ms   1.29MiB    0.0%  1.29MiB
+   constant                 1    11.8s    2.4%   11.8s   0.95GiB    2.5%  0.95GiB
+     constant_fix!_...      1    4.32s    0.9%   4.32s    292MiB    0.7%   292MiB
+     constant_Issue...      1    3.11s    0.6%   3.11s    250MiB    0.6%   250MiB
+     constant_Issue...      1    1.21s    0.3%   1.21s   81.7MiB    0.2%  81.7MiB
+     constant_fix!_...      1    839ms    0.2%   839ms   61.5MiB    0.2%  61.5MiB
+     constant_Test_...      1    469ms    0.1%   469ms   19.2MiB    0.0%  19.2MiB
+     constant_fix!_...      1    369ms    0.1%   369ms   19.2MiB    0.0%  19.2MiB
+   exp                      1    9.47s    2.0%   9.47s    913MiB    2.3%   913MiB
+     exp_log_atom           1    6.53s    1.4%   6.53s    654MiB    1.7%   654MiB
+     exp_entropy_atom       1    537ms    0.1%   537ms   42.1MiB    0.1%  42.1MiB
+     exp_log_sum_ex...      1    438ms    0.1%   438ms   32.2MiB    0.1%  32.2MiB
+     exp_exp_atom           1    368ms    0.1%   368ms   25.1MiB    0.1%  25.1MiB
+     exp_logistic_l...      1    346ms    0.1%   346ms   17.1MiB    0.0%  17.1MiB
+     exp_log_perspe...      1    269ms    0.1%   269ms   13.7MiB    0.0%  13.7MiB
+     exp_relative_e...      1   73.2ms    0.0%  73.2ms   5.47MiB    0.0%  5.47MiB
+   lp                       1    7.33s    1.5%   7.33s    685MiB    1.8%   685MiB
+     lp_dotsort_atom        1    1.30s    0.3%   1.30s   91.3MiB    0.2%  91.3MiB
+     lp_sumlargest_...      1    700ms    0.1%   700ms   48.1MiB    0.1%  48.1MiB
+     lp_min_atom            1    674ms    0.1%   674ms   49.3MiB    0.1%  49.3MiB
+     lp_max_atom            1    536ms    0.1%   536ms   44.0MiB    0.1%  44.0MiB
+     lp_minimum_atom        1    453ms    0.1%   453ms   40.6MiB    0.1%  40.6MiB
+     lp_sumsmallest...      1    437ms    0.1%   437ms   31.5MiB    0.1%  31.5MiB
+     lp_dual_abs_atom       1    358ms    0.1%   358ms   21.2MiB    0.1%  21.2MiB
+     lp_neg_atom            1    335ms    0.1%   335ms   19.6MiB    0.1%  19.6MiB
+     lp_maximum_atom        1    293ms    0.1%   293ms   13.5MiB    0.0%  13.5MiB
+     lp_dual_norm_i...      1    125ms    0.0%   125ms   4.29MiB    0.0%  4.29MiB
+     lp_pos_atom            1    107ms    0.0%   107ms   9.41MiB    0.0%  9.41MiB
+     lp_dual_norm_1...      1   91.3ms    0.0%  91.3ms   4.13MiB    0.0%  4.13MiB
+     lp_hinge_loss_...      1    264μs    0.0%   264μs   57.3KiB    0.0%  57.3KiB
+   sdp_and_exp              1    5.91s    1.2%   5.91s    504MiB    1.3%   504MiB
+     sdp_and_exp_lo...      1    5.75s    1.2%   5.75s    489MiB    1.3%   489MiB
  ────────────────────────────────────────────────────────────────────────────────
-</code></pre><h2 id="Version-information"><a class="docs-heading-anchor" href="#Version-information">Version information</a><a id="Version-information-1"></a><a class="docs-heading-anchor-permalink" href="#Version-information" title="Permalink"></a></h2><p><code>versioninfo()</code>:</p><pre><code class="language-julia hljs">Julia Version 1.6.6
-Commit b8708f954a (2022-03-28 07:17 UTC)
+</code></pre><h2 id="Version-information"><a class="docs-heading-anchor" href="#Version-information">Version information</a><a id="Version-information-1"></a><a class="docs-heading-anchor-permalink" href="#Version-information" title="Permalink"></a></h2><p><code>versioninfo()</code>:</p><pre><code class="language-julia hljs">Julia Version 1.6.7
+Commit 3b76b25b64 (2022-07-19 15:11 UTC)
 Platform Info:
   OS: Linux (x86_64-pc-linux-gnu)
-  CPU: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+  CPU: Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-11.0.1 (ORCJIT, broadwell)</code></pre><p>Manifest:</p><pre><code class="language-julia hljs">      Status `~/work/ConvexTests.jl/ConvexTests.jl/Hypatia/Manifest.toml`
-  [14f7f29c] AMD v0.4.0
+  LLVM: libLLVM-11.0.1 (ORCJIT, haswell)</code></pre><p>Manifest:</p><pre><code class="language-julia hljs">      Status `~/work/ConvexTests.jl/ConvexTests.jl/Hypatia/Manifest.toml`
+  [14f7f29c] AMD v0.5.0
   [c3fe647b] AbstractAlgebra v0.22.3
-  [1520ce14] AbstractTrees v0.3.4
+  [1520ce14] AbstractTrees v0.4.2
   [6e4b80f9] BenchmarkTools v1.3.1
-  [49dc2e85] Calculus v0.5.1
-  [d360d2e6] ChainRulesCore v1.15.1
-  [9e997f8a] ChangesOfVariables v0.1.3
+  [d360d2e6] ChainRulesCore v1.15.5
+  [9e997f8a] ChangesOfVariables v0.1.4
   [523fee87] CodecBzip2 v0.7.2
   [944b1d66] CodecZlib v0.7.0
   [861a8166] Combinatorics v1.0.2
   [bbf7d656] CommonSubexpressions v0.3.0
-  [34da2185] Compat v4.1.0
+  [34da2185] Compat v4.2.0
   [25c3070e] ComplexOptInterface v0.1.2
-  [f65535da] Convex v0.15.1
+  [f65535da] Convex v0.15.2
   [cb7cb77b] ConvexTests v0.1.0 `~/work/ConvexTests.jl/ConvexTests.jl`
   [da8f5974] Cyclotomics v0.3.2
   [9a962f9c] DataAPI v1.10.0
   [864edb3b] DataStructures v0.18.13
   [e2d170a0] DataValueInterfaces v1.0.0
   [163ba53b] DiffResults v1.0.3
-  [b552c78f] DiffRules v1.11.0
+  [b552c78f] DiffRules v1.11.1
   [ffbed154] DocStringExtensions v0.8.6
   [7c1d4256] DynamicPolynomials v0.4.5
   [e2ba6199] ExprTools v0.1.8
-  [f6369f11] ForwardDiff v0.10.30
-  [14197337] GenericLinearAlgebra v0.3.1
+  [f6369f11] ForwardDiff v0.10.32
+  [14197337] GenericLinearAlgebra v0.3.3
   [d5909c97] GroupsCore v0.4.0
   [b99e6be6] Hypatia v0.7.0
   [18e54dd8] IntegerMathUtils v0.1.0
@@ -895,21 +894,21 @@ Platform Info:
   [82899510] IteratorInterfaceExtensions v1.0.0
   [692b3bcd] JLLWrappers v1.4.1
   [682c06a0] JSON v0.21.3
-  [4076af6c] JuMP v1.1.1
-  [40e66cde] LDLFactorizations v0.8.2
+  [4076af6c] JuMP v1.3.0
+  [40e66cde] LDLFactorizations v0.9.0
   [8ac3fa9e] LRUCache v1.3.0
   [7a12625a] LinearMaps v3.8.0
-  [2ab3a3ac] LogExpFunctions v0.3.15
+  [2ab3a3ac] LogExpFunctions v0.3.18
   [1914dd2f] MacroTools v0.5.9
-  [b8f27783] MathOptInterface v1.6.0
+  [b8f27783] MathOptInterface v1.8.1
   [c03570c3] Memoize v0.4.4
   [be282fd4] MultivariateBases v0.1.5
   [f4abf1af] MultivariateMoments v0.3.9
   [102ac46a] MultivariatePolynomials v0.4.6
   [d8a4904e] MutableArithmetics v1.0.4
-  [77ba4419] NaNMath v1.0.0
+  [77ba4419] NaNMath v1.0.1
   [bac558e1] OrderedCollections v1.4.1
-  [69de0a69] Parsers v2.3.2
+  [69de0a69] Parsers v2.4.0
   [8bc5a954] PermutationGroups v0.3.2
   [ddf597a6] PolyJuMP v0.6.2
   [3a141323] PolynomialRoots v1.0.0
@@ -923,15 +922,15 @@ Platform Info:
   [8e049039] SemialgebraicSets v0.2.5
   [276daf66] SpecialFunctions v2.1.7
   [0c0c59c1] StarAlgebras v0.1.7
-  [90137ffa] StaticArrays v1.5.0
-  [1e83bf80] StaticArraysCore v1.0.1
+  [90137ffa] StaticArrays v1.5.6
+  [1e83bf80] StaticArraysCore v1.3.0
   [4b9e565b] SumOfSquares v0.6.2
   [858aa9a9] SymbolicWedderburn v0.3.0
   [f9bf3ced] TableTestSets v0.1.0 `https://github.com/ericphanson/TableTestSets.jl#master`
   [3783bdb8] TableTraits v1.0.1
   [bd369af6] Tables v1.7.0
-  [a759f4b9] TimerOutputs v0.5.20
-  [3bb67fe8] TranscodingStreams v0.9.6
+  [a759f4b9] TimerOutputs v0.5.21
+  [3bb67fe8] TranscodingStreams v0.9.9
   [6e34b625] Bzip2_jll v1.0.8+0
   [efe28fd5] OpenSpecFun_jll v0.5.5+0
   [8e850b90] libblastrampoline_jll v3.1.0+2
@@ -974,4 +973,4 @@ Platform Info:
   [05823500] OpenLibm_jll
   [83775a58] Zlib_jll
   [8e850ede] nghttp2_jll
-  [3f19e933] p7zip_jll</code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../GLPK/">« GLPK</a><a class="docs-footer-nextpage" href="../Mosek/">Mosek »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 0.27.19 on <span class="colophon-date" title="Friday 8 July 2022 02:18">Friday 8 July 2022</span>. Using Julia version 1.6.6.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+  [3f19e933] p7zip_jll</code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../GLPK/">« GLPK</a><a class="docs-footer-nextpage" href="../Mosek/">Mosek »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 0.27.23 on <span class="colophon-date" title="Tuesday 13 September 2022 13:19">Tuesday 13 September 2022</span>. Using Julia version 1.6.7.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
