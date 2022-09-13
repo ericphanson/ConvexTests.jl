@@ -10,4 +10,4 @@ function opt()
     return opt
 end
 
-do_tests("Clarabel", opt; exclude = [r"mip", r"exp"])
+do_tests("Clarabel", opt; exclude = [r"mip"])
